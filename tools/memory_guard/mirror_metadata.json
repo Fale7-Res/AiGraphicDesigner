@@ -1,0 +1,389 @@
+{
+  "files": {
+    "tools/memory_guard/sync_code_mirrors.py": {
+      "role": "Memory Guard — AST Code Mirror & Function Registry Generator",
+      "summary": "يقوم بفحص جميع الملفات البرمجية في المشروع باستخدام شجرة الكود (AST)، ويستخرج كل دالة وكلاس مع أرقام الأسطر الدقيقة (Lines Start–End) والمقتطف الفعلي للكود، ويكتشف الدوال المكررة، ويحدّث ملفات المرآة في memory/code_mirrors/ وسجل memory/FUNCTION_REGISTRY.md.",
+      "takes_from": [
+        {
+          "source": "جميع ملفات الكود البرمجي في المشروع (*.py, *.ts, *.tsx, *.js)",
+          "payload": "النص البرمجي الكامل وشجرة الـ AST وأرقام الأسطر الفعلية",
+          "impact": "أي تعديل في أسطر أي ملف كود يستدعي إعادة تشغيل هذا السكربت لتحديث أرقام الأسطر والمقتطفات."
+        },
+        {
+          "source": "tools/memory_guard/mirror_metadata.json",
+          "payload": "الأوصاف الدلالية وخريطة العلاقات (بياخد منين وبيرمي فين) لكل ملف ولدواله",
+          "impact": "يُدمج الوصف الدلالي مع أرقام الأسطر المستخرجة آلياً."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "memory/code_mirrors/*.md",
+          "payload": "ملفات المرآة الكاملة لكل ملف برمجي شاملة أرقام الأسطر والمقتطفات وجدول العلاقات",
+          "impact": "يقرؤها الـ Agent والمطور لفهم الكود فوراً بدون قراءة آلاف الأسطر."
+        },
+        {
+          "target": "memory/FUNCTION_REGISTRY.md",
+          "payload": "السجل المركزي الموحد لجميع الدوال والكلاسات وأرقام أسطرها ومقتطفاتها وحالة عدم التكرار",
+          "impact": "يمنع الـ Agent من كتابة دوال مكررة في المشروع."
+        }
+      ],
+      "symbols": {
+        "mirror_filename_for": "تحول المسار النسبي للملف البرمجي إلى اسم ملف المرآة المقابل في memory/code_mirrors/ باستبدال الفواصل بـ (__).",
+        "discover_code_files": "تبحث في شجرة المشروع عن جميع الملفات البرمجية المملوكة للمشروع مع استبعاد مجلدات الكاش والمكتبات الخارجية.",
+        "extract_python_symbols": "تحلل ملف Python عبر مكتبة ast وتستخرج كل كلاس ودالة مع رقم سطر البداية والنهاية الدقيق (Lines Start–End) والتوقيع ومقتطف الكود الفعلي.",
+        "extract_ts_js_symbols": "تستخرج الدوال والكلاسات من ملفات TypeScript/JavaScript مع حساب رقم سطر البداية والنهاية الدقيق والمقتطف الفعلي.",
+        "detect_duplicate_functions": "تفحص جميع الدوال المستخرجة عبر المشروع لاكتشاف أي تكرار في أسماء الدوال المستقلة لمنع مشكلة الـ Duplicated Functions.",
+        "render_mirror_markdown": "تبني محتوى ملف الـ Markdown التفصيلي لمرآة الملف البرمجي شاملاً البطاقة التعريفية، جدول العلاقات (بياخد منين وبيرمي فين)، جدول الدوال، ومقتطفات الكود بالأسطر.",
+        "render_function_registry": "تبني ملف memory/FUNCTION_REGISTRY.md المركزي الذي يجمع كل دالة في المشروع مع ملفها وأسطرها ومقتطفها ونتيجة فحص عدم التكرار.",
+        "main": "نقطة الدخول الرئيسية التي تنفذ عملية الفحص وتحديث المرايا وسجل الدوال عند تمرير الخيار --write.",
+        "compute_python_ast_skeleton": "تحسب البصمة الهيكلية المجردة (Normalized AST Skeleton) لدالة Python لرصد التشابه الهيكلي (المستوى الثاني من التكرار).",
+        "visit_block": "دالة داخلية عودية (Nested Recursive Visitor) تستخرج الكلاسات والـ Methods والدوال المتداخلة مع أسمائها المؤهلة وأرقام أسطرها.",
+        "strip_js_comments_and_strings": "تفرغ النصوص والتعليقات من سطر TS/JS مع الحفاظ على الأقواس لحساب نهايات البلوكات بدقة.",
+        "find_block_end": "تحسب رقم سطر النهاية الدقيق لأي دالة أو كلاس أو Arrow Function في TS/JS عبر موازنة الأقواس.",
+        "detect_structural_similarity": "تكتشف الدوال ذات الهيكل البرمجي المتطابق (Structural AST Similarity — المستوى الثاني) عبر الملفات."
+      }
+    },
+    "tools/memory_guard/verify_brain_sync.py": {
+      "role": "Memory Guard — Automated External Brain & Line-Number Auditor",
+      "summary": "يتحقق آلياً من أن كل ملف برمجي في المشروع يمتلك ملف مرآة محدثاً في memory/code_mirrors/، وأن أرقام الأسطر (Lines Start–End) والمقتطفات في المرآة وفي memory/FUNCTION_REGISTRY.md مطابقة 100% للكود الفعلي، مع التحقق من عدم وجود دوال مكررة ومن توافق قواعد Antigravity مع سقف 24KB والـ YAML Frontmatter.",
+      "takes_from": [
+        {
+          "source": "جميع ملفات الكود + memory/code_mirrors/*.md + memory/FUNCTION_REGISTRY.md",
+          "payload": "بيانات الدوال الفعلية مقارنةً بأرقام الأسطر والمقتطفات المسجلة في الذاكرة",
+          "impact": "يكتشف فوراً أي نسيان لتحديث الذاكرة بعد تعديل الكود."
+        },
+        {
+          "source": ".agents/rules/*.md & .agent_rules/*.md & AGENTS.md & GEMINI.md",
+          "payload": "محتوى وأحجام ملفات القواعد والـ YAML Frontmatter",
+          "impact": "يضمن عدم تجاوز حد الـ 24KB الخاص بـ Antigravity وعدم سقوط أي قاعدة."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "tools/memory_guard/brain_validation.json",
+          "payload": "تقرير JSON مفصل بنتيجة فحص تزامن الذاكرة الحية وأرقام الأسطر وفحص عدم التكرار",
+          "impact": "يُعتمد عليه في بوابة الجودة (Quality Gate) وبوابة الإغلاق (Stop Hook)."
+        }
+      ],
+      "symbols": {
+        "verify_antigravity_rules": "تفحص جميع ملفات القواعد في .agents/rules/ للتأكد من وجود YAML frontmatter صالح (trigger, description) وعدم تجاوز حجم 24,000 بايت.",
+        "verify_code_mirrors_and_lines": "تقارن الدوال وأرقام الأسطر الفعلية في الكود مع ما هو مكتوب في memory/code_mirrors/ وmemory/FUNCTION_REGISTRY.md وتكشف أي اختلاف أو نقص.",
+        "main": "تشغل جميع فحوصات تزامن الذاكرة وتكتب التقرير النهائي في brain_validation.json وترجع كود الخروج (0 للنجاح، 1 للفشل).",
+        "verify_vision_and_approval_semantics": "تتحقق من وجود النص الأصلي الحرفي لرؤية المالك في OWNER_ORIGINAL_VISION.md ومن عدم ادعاء اعتماد المعمارية (OWNER_APPROVED) بدون تفويض موثق.",
+        "verify_immutable_owner_vision": "تقارن نص رؤية المالك في OWNER_ORIGINAL_VISION.md حرفياً وجملةً بجملة مع النسخة المرجعية المحفوظة وملف البصمات لكشف أي تعديل داخلي حتى لو بقي العنوان والمقدمة.",
+        "verify_owner_approval_provenance": "تمنع أي ادعاء مزور بـ OWNER_APPROVED للمعمارية أو المرحلة P0 وترفض أي نصوص توكن مخترعة مثل OWNER_AUTHORIZATION_TOKEN."
+      }
+    },
+    "tools/memory_guard/session_start_hook.py": {
+      "role": "Antigravity Lifecycle Hook — SessionStart Memory Recall",
+      "summary": "سكربت يعمل تلقائياً عند حدث SessionStart في Google Antigravity ليحقن رسالة تذكير للـ Agent بقراءة الذاكرة الحية (MEMORY_INDEX.md وCURRENT_TASK_CHECKPOINT.md وACTIVE_SESSION_WAL.md) قبل أي خطوة.",
+      "takes_from": [
+        {
+          "source": ".agents/hooks.json (Antigravity SessionStart Event via stdin)",
+          "payload": "بيانات الجلسة الحالية (conversationId, workspacePaths)",
+          "impact": "يعمل تلقائياً عند فتح أي محادثة جديدة في Antigravity."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "Antigravity Agent Trajectory (stdout JSON injectSteps)",
+          "payload": "رسالة نظام توجيهية تلزم الـ Agent بقراءة الذاكرة الحية وقراءة الملفات كاملة",
+          "impact": "تمنع بدء الجلسة بدون استرجاع السياق."
+        }
+      ],
+      "symbols": {
+        "main": "تقرأ مدخلات حدث SessionStart من stdin وتطبع كائن JSON يحتوي على injectSteps لتوجيه الـ Agent نحو ملفات الذاكرة."
+      }
+    },
+    "tools/memory_guard/stop_gate_hook.py": {
+      "role": "Antigravity Lifecycle Hook — Stop Gate Memory Verifier",
+      "summary": "سكربت يعمل تلقائياً عند حدث Stop في Google Antigravity ليشغل فحص تزامن الذاكرة (verify_brain_sync.py)؛ وإذا وجد أن الـ Agent عدّل كوداً دون تحديث أرقام الأسطر في المرآة أو ترك دالة مكررة، يمنعه من التوقف (decision: continue) ويطلب منه تحديث الذاكرة أولاً.",
+      "takes_from": [
+        {
+          "source": ".agents/hooks.json (Antigravity Stop Event via stdin) + verify_brain_sync.py",
+          "payload": "حالة توقف الـ Agent ونتيجة فحص تزامن الذاكرة",
+          "impact": "يضمن عدم انتهاء أي جلسة بذاكرة غير متزامنة مع الكود."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "Antigravity Execution Loop (stdout JSON decision: allow/continue)",
+          "payload": "قرار السماح بالتوقف أو إرجاع الـ Agent لتحديث مرآة الكود والـ WAL",
+          "impact": "يحمي المشروع آلياً من نسيان توثيق التعديلات."
+        }
+      ],
+      "symbols": {
+        "main": "تشغل فحص verify_brain_sync.py عند محاولة الـ Agent التوقف، وترجع decision='continue' إذا كان هناك خلل في تزامن الذاكرة."
+      }
+    },
+    "tools/project_catalog/build_catalog.py": {
+      "role": "Repository Governance — Full Tree & Relationship Catalog Builder",
+      "summary": "يبني ويحدّث ملف PROJECT_FILE_CATALOG.md وملفات الميتاداتا والعلاقات لجميع ملفات المشروع المملوكة (First-Party Files) لضمان تغطية 100% من شجرة المشروع.",
+      "takes_from": [
+        {
+          "source": "شجرة ملفات المشروع الفعلية + tools/project_catalog/catalog_descriptions.json",
+          "payload": "قائمة جميع ملفات المشروع وأوصافها وعلاقاتها",
+          "impact": "يُشغّل عند إضافة أو حذف أو تعديل مسؤولية أي ملف."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "PROJECT_FILE_CATALOG.md & tools/project_catalog/file_metadata.json & tools/project_catalog/relationships.json",
+          "payload": "الفهرس الكامل للمشروع وخريطة العلاقات بصيغة Markdown وJSON",
+          "impact": "يوفر خريطة تنقل شاملة ومحدثة للمشروع."
+        }
+      ],
+      "symbols": {
+        "discover_first_party_files": "تجمع كل ملفات المشروع الفعلية مع استثناء المجلدات المؤقتة ومخرجات الفحص المشتقة لمنع الحلقات الدائرية.",
+        "describe_file": "ترجع الوصف الدقيق والغرض والسلطة ومشغل التحديث لكل ملف في المشروع بناءً على مساره ونوعه.",
+        "build_relationships": "تبني قائمة الروابط والعلاقات الثنائية (Upstream / Downstream / Change Impact) بين ملفات المشروع.",
+        "main": "تولد ملف PROJECT_FILE_CATALOG.md وملفات file_metadata.json وrelationships.json عند تمرير --write."
+      }
+    },
+    "tools/project_catalog/verify_catalog.py": {
+      "role": "Repository Governance — Independent Catalog & Relationship Validator",
+      "summary": "يتحقق بشكل مستقل من تطابق PROJECT_FILE_CATALOG.md مع شجرة الملفات الفعلية على القرص (0 ملفات غير مفهرسة، 0 مسارات قديمة، وتوازن علامات الكود وصحة جميع الروابط).",
+      "takes_from": [
+        {
+          "source": "شجرة الملفات الفعلية + PROJECT_FILE_CATALOG.md + tools/project_catalog/file_metadata.json + tools/project_catalog/relationships.json",
+          "payload": "الواقع الفعلي للملفات مقابل ما هو مسجل في الفهرس",
+          "impact": "يكتشف أي ملف منسي أو مسار محذوف."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "tools/project_catalog/validation.json",
+          "payload": "تقرير التحقق الرسمي بنسبة التغطية (100%) وعدد الأخطاء (0)",
+          "impact": "شرط أساسي في Definition of Done قبل إغلاق أي مهمة."
+        }
+      ],
+      "symbols": {
+        "main": "تقارن شجرة الملفات الفعلية مع PROJECT_FILE_CATALOG.md وتفحص سلامة جميع الحقول والعلاقات وتكتب النتيجة في validation.json."
+      }
+    },
+    "tools/review_updates/export_updates.py": {
+      "role": "Portable Review Governance — Incremental Update Exporter & Validator",
+      "summary": "ينشئ حزم مراجعة تراكمية مضغوطة (UPDATE-NNNN.zip) في مجلد updates/ مع حساب بصمات SHA-256 والتحقق من سلامة الأرشيف وفصل حالة التصدير عن حالة تأكيد المراجع.",
+      "takes_from": [
+        {
+          "source": "جميع ملفات المشروع + updates/baselines/state.json",
+          "payload": "الملفات الحالية وبصمات SHA-256 الخاصة بها",
+          "impact": "يرصد الملفات المضافة أو المعدلة أو المحذوفة منذ آخر خط أساس."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "updates/packages/UPDATE-NNNN.zip & updates/latest/AI_DESIGNER_LATEST.zip & updates/UPDATE_HISTORY.md",
+          "payload": "حزمة المراجعة المضغوطة وملفUPDATE_MANIFEST.json وسجل التحديثات",
+          "impact": "يمكّن المالك من مراجعة نسخ المشروع بشكل تراكمي وموثوق."
+        }
+      ],
+      "symbols": {
+        "compute_sha256": "تحسب بصمة SHA-256 لأي ملف على القرص بدقة.",
+        "scan_workspace_files": "تمسح ملفات المشروع المصدرية التي تدخل في نطاق المراجعة مع استبعاد الحزم المولدة نفسها لمنع التكرار اللانهائي.",
+        "export_package": "تنشئ حزمة تحديث مرقمة جديدة (مثل UPDATE-0001) وتكتب المانيفست والأرشيف المضغوط وتحدث state.json.",
+        "validate_package": "تتحقق من سلامة ملف الـ ZIP والمانيفست وتطابق بصمات SHA-256 لجميع الملفات المضمنة.",
+        "acknowledge_package": "تسجل تأكيد استلام ومراجعة الحزمة من قِبل المستخدم عند تمرير --confirm-reviewed صراحةً.",
+        "main": "تعالج أوامر سطر الأوامر (export, validate, status, acknowledge)."
+      }
+    },
+    "make_project_zip.py": {
+      "role": "Utility — Full Repository ZIP Archiver",
+      "summary": "أداة مساعدة لضغط كامل ملفات المشروع في أرشيف مضغوط واحد جاهز للنقل أو النسخ الاحتياطي السريع.",
+      "takes_from": [
+        {
+          "source": "جميع ملفات المستودع",
+          "payload": "ملفات القواعد والذاكرة والوثائق والأدوات",
+          "impact": "يجمع كل شيء في ملف .zip واحد."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "ai_graphic_designer_project.zip",
+          "payload": "الأرشيف المضغوط الكامل للمشروع",
+          "impact": "نسخة محمولة جاهزة للاستخدام."
+        }
+      ],
+      "symbols": {
+        "build_archive": "تجمع كافة ملفات المستودع (باستثناء ملفات الكاش المؤقت والأرشيف الناتج نفسه) وتضغطها بصيغة ZIP_DEFLATED."
+      }
+    },
+    "tools/findings_guard/manage_findings.py": {
+      "role": "Subagent Findings Guard — Independent Findings, Append-Only Review & Promotion Engine",
+      "summary": "يدير نظام المكتشفات المستقل لكل Subagent ولكل مهمة في memory/findings/entries/، ويتحقق من عدم تضارب أقفال ملكية الملفات (subagent_ownership_locks.json)، ويدعم المراجعة المستقلة الإلحاقية (Append-Only Review Events) والترقية الموثقة بدون حذف المكتشفات.",
+      "takes_from": [
+        {
+          "source": "memory/findings/entries/*.json & memory/findings/subagent_ownership_locks.json",
+          "payload": "ملفات المكتشفات المعزولة لكل Subagent وأقفال ملكية الملفات",
+          "impact": "يمنع التضارب المتوازي ويتحقق من صحة الأسطر وبصمات SHA-256."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "memory/findings/FINDINGS_LEDGER.md & tools/memory_guard/verify_brain_sync.py",
+          "payload": "السجل الموحد للمكتشفات ونتيجة التحقق من الترقية والمراجعة",
+          "impact": "يمنع إغلاق المهمة إذا وُجد اكتشاف معتمد لم تتم ترقيته أو مراجعة غير صالحة."
+        }
+      ],
+      "symbols": {
+        "compute_file_sha256": "تحسب بصمة SHA-256 للملف المصدري الذي استند إليه الاكتشاف.",
+        "load_all_findings": "تقرأ جميع ملفات المكتشفات المعزولة من memory/findings/entries/ مرتبة حسب المعرف.",
+        "verify_ownership_locks": "تتحقق من عدم وجود أي تعارض في ملكية ملفات الكتابة بين الـ Subagents النشطين بالتوازي.",
+        "verify_findings": "تتحقق من سلامة حقول كل اكتشاف، وصحة نطاق الأسطر، وعدم الاعتماد الذاتي، ووجود سبب صريح عند الرفض، وترقية جميع المكتشفات المعتمدة مع بقائها محفوظة.",
+        "compile_ledger": "تولد ملف memory/findings/FINDINGS_LEDGER.md آلياً من ملفات المكتشفات المعزولة.",
+        "main": "نقطة الدخول لتجميع سجل المكتشفات (compile-ledger) أو التحقق الصارم منها (verify).",
+        "reconcile_findings_inventories": "تطابق المكتشفات عبر 5 مصادر مستقلة (ملفات entries/، وfindings_manifest.json، والنسخة المرجعية الثابتة، وFINDINGS_LEDGER.md، وPROJECT_FILE_CATALOG.md / ACTIVE_SESSION_WAL.md) لكشف أي حذف للمكتشفات.",
+        "verify_promotion_evidence_integrity": "تتحقق من سلامة المحتوى الفعلي المرقّى في الوثائق المستهدفة (النص الحرفي الكامل للفقرة المرقّاة، نطاق الأسطر، بصمة الفقرة، والنسخة المرجعية المحفوظة) لمنع تعديل محتوى الهدف مع الإبقاء على رمز التحقق فقط.",
+        "atomic_write_text": "تكتب الملفات بشكل ذري (Atomic Write via Temp & Rename) لمنع تلف الملفات عند الانقطاع.",
+        "transactional_operation": "مدير سياق تبادلي (Context Manager) يحجز قفل ملف حصري (flock) ويكتب سجل التراجع (.tx_journal.json) قبل أي تعديل.",
+        "recover_interrupted_transaction": "تسترجع الحالة السابقة بالكامل وتلغي أي تعديل جزئي إذا حدث انقطاع أثناء العملية التبادلية.",
+        "find_entry_by_id": "تبحث عن ملف الاكتشاف المعزول بواسطة معرف الاكتشاف.",
+        "capture_finding": "تلتقط اكتشافاً جديداً في ملف معزول وتحدث الـ WAL المعزول والمانيفست والفهرس الموحد داخل عملية تبادلية.",
+        "submit_finding": "ترفع الاكتشاف الملتقط إلى حالة PENDING_PARENT_REVIEW مع منع الإرسال المكرر.",
+        "review_finding": "تضيف حدث مراجعة إلحاقي من الـ Parent Agent (اعتماد، رفض بسبب صريح، أو طلب تعديل) مع منع الاعتماد الذاتي وتكرار الأحداث.",
+        "promote_finding": "ترقي الاكتشاف المعتمد إلى الوثيقة الهدف وتنشئ اللقطة التاريخية الثابتة وتحدث المانيفست والفهرس ذرياً.",
+        "record_document_revision": "تسجل مراجعة لاحقة مشروعة لوثيقة مرقّى إليها مع الحفاظ على اللقطة التاريخية والتحقق من بقاء النص المرقّى سليماً.",
+        "arg_val": "تستخرج قيمة المعامل من سطر الأوامر.",
+        "is_valid_superseding_event": "تتحقق من أن معرف الحدث الناسخ (Superseding Event) يمثل انتقال موافقة مالك موثق أو اكتشافاً مرقّى صريحاً."
+      }
+    },
+    "tools/memory_guard/sync_rules.py": {
+      "role": "Memory Guard — Automated Rule Synchronizer (.agent_rules/ -> .agents/rules/)",
+      "summary": "يمنع التكرار اليدوي لملفات القواعد باعتبار .agent_rules/ المصدر الوحيد للتأليف ومزامنته آلياً مع .agents/rules/ والتحقق من تطابق البايتات.",
+      "takes_from": [
+        {
+          "source": ".agent_rules/*.md",
+          "payload": "ملفات القواعد الأصلية المعتمدة",
+          "impact": "أي تعديل في .agent_rules/ يُنسخ آلياً إلى .agents/rules/."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": ".agents/rules/*.md & tools/memory_guard/verify_brain_sync.py",
+          "payload": "ملفات القواعد المتوافقة مع Antigravity وحالة التزامن",
+          "impact": "يضمن عدم انحراف القواعد بين المسارين."
+        }
+      ],
+      "symbols": {
+        "sha256_bytes": "تحسب بصمة SHA-256 لمحتوى ملف القاعدة.",
+        "sync_or_check": "تطابق أو تنسخ ملفات القواعد من .agent_rules/ إلى .agents/rules/ وتكشف أي اختلاف أو ملف يتيم.",
+        "main": "نقطة الدخول لتشغيل المزامنة (--write) أو فحص التطابق."
+      }
+    },
+    "tools/memory_guard/recover_context.py": {
+      "role": "Memory Guard — Deterministic Context Recovery Engine",
+      "summary": "يسترجع حالة السياق الكاملة بعد أي انقطاع أو Context Compaction عبر قراءة نقطة التوقف وسجل الـ WAL الرئيسي وسجلات الـ WAL المعزولة للـ Subagents والمكتشفات وأقفال الملكية.",
+      "takes_from": [
+        {
+          "source": "memory/session/CURRENT_TASK_CHECKPOINT.md, ACTIVE_SESSION_WAL.md, subagent_wals/*.wal.md, memory/findings/",
+          "payload": "كافة سجلات الجلسة والمكتشفات المعزولة",
+          "impact": "يبني حزمة استرجاع حتمية بدون الاعتماد على ذاكرة الشات."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "memory/session/RECOVERY_PACKET.json",
+          "payload": "ملف JSON مهيكل بحالة الجلسة المسترجعة",
+          "impact": "يمكّن أي Agent جديد من الاستئناف الفوري بعد الانقطاع."
+        }
+      ],
+      "symbols": {
+        "build_recovery_packet": "تجمع حالة الجلسة وسجلات الـ WAL والمكتشفات وتتحقق من حالة عدم اعتماد المعمارية وتكتب RECOVERY_PACKET.json.",
+        "main": "تشغل عملية استرجاع السياق وتتحقق من اكتمال ملفات الجلسة."
+      }
+    },
+    "tools/tests/test_governance_suite.py": {
+      "role": "Verification Suite — Comprehensive Positive & Negative Governance Tests",
+      "summary": "حزمة الاختبارات الآلية الشاملة (14 اختباراً) التي تختبر جميع حالات الفشل السلبية والإيجابية (فقدان المرآة، تغير الأسطر، الدوال غير الموثقة، تكرار الرموز، كسر روابط الفهرس، الاعتماد الخاطئ للمكتشفات، عدم ترقية المكتشفات المعتمدة، تضارب ملكية الـ Subagents، استرجاع السياق، غياب موافقة المالك، واختبار Clean Checkout Portability).",
+      "takes_from": [
+        {
+          "source": "جميع أدوات الحوكمة في tools/ وملفات المستودع",
+          "payload": "نسخ معزولة من المستودع لحقن الأخطاء السلبية والتحقق من كشفها",
+          "impact": "يثبت تجريبياً أن أدوات الحوكمة تكتشف كل خرق."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "tools/tests/governance_test_report.json",
+          "payload": "تقرير نتائج الاختبارات الإيجابية والسلبية الـ 14 بالتفصيل",
+          "impact": "دليل التحقق الإلزامي قبل تسليم الحوكمة."
+        }
+      ],
+      "symbols": {
+        "GovernanceHardeningTestSuite": "كلاس الاختبارات الشامل الذي يضم الـ 14 اختباراً إيجابياً وسلبياً في بيئات معزولة.",
+        "run_cmd": "تشغل أي أداة حوكمة داخل المجلد المعزول وترجع كود الخروج والمخرجات.",
+        "clone_repo_to_temp": "تنسخ المستودع إلى مجلد مؤقت معزول لحقن حالات الفشل السلبية بأمان.",
+        "test_01_positive_baseline_and_rule_sync": "تختبر نجاح الحالة الأساسية وتطابق القواعد والذاكرة والفهرس.",
+        "test_02_negative_missing_code_mirror": "تختبر كشف غياب ملف مرآة لملف برمجي جديد.",
+        "test_03_negative_stale_line_references": "تختبر كشف تغير أرقام الأسطر في الكود دون تحديث المرآة.",
+        "test_04_negative_undocumented_functions": "تختبر كشف وجود دالة في الكود غير مسجلة في FUNCTION_REGISTRY.md.",
+        "test_05_negative_duplicate_symbol_entries": "تختبر كشف الدوال المكررة في الكود أو المكررة في سجل الدوال.",
+        "test_06_negative_broken_file_catalog_links": "تختبر كشف الملفات غير المفهرسة والمسارات القديمة والروابط المكسورة في الفهرس.",
+        "test_07_negative_invalid_finding_approvals": "تختبر رفض الاعتماد الذاتي للمكتشفات ورفض القرار REJECTED بدون سبب.",
+        "test_08_negative_approved_findings_not_promoted": "تختبر رفض بقاء اكتشاف معتمد بدون ترقية أو غياب أثر الترقية في الوثيقة المستهدفة.",
+        "test_09_negative_conflicting_subagent_ownership": "تختبر كشف ومنع تضارب ملكية ملفات الكتابة بين اثنين من الـ Subagents النشطين.",
+        "test_10_context_recovery_after_interruption": "تختبر استرجاع السياق الكامل بعد محاكاة انقطاع الجلسة.",
+        "test_11_negative_missing_owner_approval": "تختبر منع ادعاء اعتماد المعمارية (OWNER_APPROVED) بدون تفويض المالك أو حذف رؤية المالك الأصلية.",
+        "test_12_clean_checkout_portability": "تختبر فك ضغط الأرشيف في مجلد جديد نظيف تماماً وتشغيل كافة أدوات الفحص بداخله.",
+        "test_13_python_and_ts_js_ast_symbol_extraction": "تختبر دقة استخراج الـ Methods والدوال المتداخلة والـ Arrow Functions والـ Exported Declarations في Python وTS/JS.",
+        "test_14_hook_contracts_and_environment_boundary": "تختبر عقود الإدخال والإخراج JSON لسكربتات SessionStart وStop Hook وتوثق حدود بيئة Antigravity الحية.",
+        "main": "تشغل جميع الاختبارات وتكتب تقرير JSON مفصل في tools/tests/governance_test_report.json.",
+        "test_15_negative_vision_sentence_tampering_preserving_header": "تختبر كشف تعديل جملة داخل OWNER_ORIGINAL_VISION.md مع الحفاظ على العنوان والمقدمة.",
+        "test_16_negative_fabricated_owner_approved_with_invented_token": "تختبر كشف ورفض ادعاء OWNER_APPROVED للمعمارية حتى مع إضافة OWNER_AUTHORIZATION_TOKEN مخترع.",
+        "test_17_negative_promoted_target_content_tampering_preserving_marker": "تختبر كشف تعديل المحتوى الفعلي لوثيقة مرقّى إليها مع الإبقاء على رمز التحقق (verification_marker) موجوداً.",
+        "test_18_negative_deleted_finding_reconciliation_and_tamper_detection": "تختبر كشف حذف ملف اكتشاف سواء حُذف وحده أو حُذف مع تعديل الفهرس والمانيفست.",
+        "test_19_negative_derived_doc_fabricated_approval": "تختبر كشف ورفض إضافة ادعاء اعتماد المعمارية (OWNER_APPROVED) داخل وثيقة مشتقة مثل TECHNOLOGY_COMPARISON_AND_GATES.md.",
+        "test_20_promoted_doc_legitimate_evolution_vs_unauthorized_edit": "تختبر نجاح التطور المشروع لوثيقة مرقّى إليها (إضافة ملاحظة وتسجيل مراجعة مع بقاء النص المرقّى واللقطة التاريخية) مقابل فشل التعديل غير المصرح به في النص المرقّى نفسه.",
+        "test_21_findings_transactional_lifecycle_end_to_end": "تختبر دورة حياة المكتشفات الكاملة (capture -> submit -> review/reject -> review/approve -> promote) عبر واجهة manage_findings.py.",
+        "test_22_findings_interruption_rollback_and_duplicate_event_rejection": "تختبر الانقطاع في منتصف العملية التبادلية واسترجاع الحالة (recover-tx)، ورفض إرسال نفس الحدث أو الاكتشاف مرتين.",
+        "test_23_findings_concurrent_writes_locking": "تختبر تشغيل عمليات كتابة متوازية للمكتشفات والتأكد من التسلسل الآمن عبر قفل الملفات الحصري بدون تلف المانيفست.",
+        "test_24_controlled_future_approval_transition_positive_and_negative": "تختبر رفض انتقال الاعتماد بدون تقارير التجارب أو بدون تأكيد المالك، ونجاح الانتقال المحكوم عند استيفاء تقارير EXP-01..05 وتأكيد المالك بدون تعديل كود الفاحص."
+      }
+    },
+    "tools/memory_guard/manage_approvals.py": {
+      "role": "Memory Guard — Single Authoritative Approval State & Controlled Transition Manager",
+      "summary": "يدير السجل الوحيد المعتمد لحالة الموافقات (OWNER_APPROVAL_PROVENANCE.json) ويدعم الانتقال المستقبلي المحكوم إلى OWNER_APPROVED بشرط توفر تقارير تجارب الجدوى الخمس (EXP-01..05) وسلسلة المراجعات المؤرشفة وتزامن الوثائق الحاكمة، مع رفض التنفيذ التلقائي بدون تأكيد المالك.",
+      "takes_from": [
+        {
+          "source": "docs/architecture/experiments/EXP-01..05_report.json & memory/decisions/OWNER_APPROVAL_PROVENANCE.json",
+          "payload": "نتائج تجارب الجدوى الكمية وسجل الاعتماد الحالي",
+          "impact": "يرفض أي انتقال للموافقة إذا غابت تقارير التجارب أو لم تحقق معايير القبول."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "memory/decisions/OWNER_APPROVAL_PROVENANCE.json, DECISION_LOG.md, MASTER_PLAN.md, CURRENT_TASK_CHECKPOINT.md",
+          "payload": "تحديث متزامن لحالة الاعتماد وأرشفة النسخة السابقة في docs/history/immutable_baselines/",
+          "impact": "يضمن وحدة حالة الاعتماد عبر المستودع بدون تعديل كود الفاحص."
+        }
+      ],
+      "symbols": {
+        "sha256_file": "تحسب بصمة SHA-256 لملف على القرص.",
+        "validate_experiment_report": "تتحقق من وجود تقرير تجربة الجدوى واجتيازه لمعايير القبول الكمية (EXPERIMENTALLY_VALIDATED).",
+        "authorize_architecture_transition": "تنفذ الانتقال المحكوم إلى OWNER_APPROVED بعد التحقق من تقارير التجارب الخمس وأرشفة خط الأساس السابق ومزامنة الوثائق الحاكمة.",
+        "main": "نقطة الدخول لأمر authorize (الذي يتطلب --confirm-owner-authorized) أو عرض الحالة."
+      }
+    },
+    "tools/memory_guard/pre_tool_use_hook.py": {
+      "role": "Antigravity Lifecycle Hook — PreToolUse Owner Gate",
+      "summary": "سكربت يعمل عند حدث PreToolUse في Google Antigravity لاعتراض أي محاولة من الـ Agent لتشغيل أوامر اعتماد المالك (manage_approvals.py authorize أو export_updates.py acknowledge) وإجبار النظام على طلب تأكيد المستخدم التفاعلي (decision: force_ask).",
+      "takes_from": [
+        {
+          "source": ".agents/hooks.json (PreToolUse stdin payload)",
+          "payload": "تفاصيل أمر run_command المقترح تنفيذه",
+          "impact": "يمنع الـ Agent من التوقيع نيابة عن المالك."
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "Antigravity Permission Engine (stdout decision: force_ask / allow)",
+          "payload": "قرار إجبار سؤال المستخدم أو السماح للأوامر العادية",
+          "impact": "يضيف طبقة حماية وقت التشغيل لمنع الاعتماد الذاتي."
+        }
+      ],
+      "symbols": {
+        "main": "تفحص الأمر الممرر في PreToolUse وترجع decision='force_ask' إذا كان يستدعي بوابة اعتماد المالك."
+      }
+    }
+  }
+}

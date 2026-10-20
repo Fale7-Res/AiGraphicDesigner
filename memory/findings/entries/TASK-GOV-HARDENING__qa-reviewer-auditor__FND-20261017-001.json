@@ -1,0 +1,68 @@
+{
+  "finding_id": "FND-20261017-001",
+  "task_id": "TASK-GOV-HARDENING",
+  "subagent_id": "qa-reviewer-auditor",
+  "created_at": "2026-10-17T08:20:00Z",
+  "source_file_paths": [
+    "docs/product/OWNER_ORIGINAL_VISION.md",
+    "memory/decisions/DECISION_LOG.md"
+  ],
+  "line_ranges": [
+    {
+      "file": "docs/product/OWNER_ORIGINAL_VISION.md",
+      "start_line": 1,
+      "end_line": 12
+    },
+    {
+      "file": "memory/decisions/DECISION_LOG.md",
+      "start_line": 1,
+      "end_line": 35
+    }
+  ],
+  "source_revisions": [
+    {
+      "file": "docs/product/OWNER_ORIGINAL_VISION.md",
+      "sha256": "25e231ed855786d5efcf4dae614b1bb5efdda9ff49e0f2597f0711c7759d93fe"
+    },
+    {
+      "file": "memory/decisions/DECISION_LOG.md",
+      "sha256": "0970f7bb9af026ccc3c0fae951da076b1a149b44a6dfc0898e2c0d821b89dff3"
+    }
+  ],
+  "evidence": "Initial decision table used generic APPROVED status for both owner product rules and AI-proposed technical implementations, and lacked a standalone verbatim owner vision file.",
+  "confidence": "HIGH",
+  "proposed_action": "Preserve verbatim Arabic prompt in docs/product/OWNER_ORIGINAL_VISION.md and record append-only audit event DEC-REV-20261017-01 in memory/decisions/DECISION_LOG.md separating OWNER_REQUIREMENT from PROPOSED and UNDER_RESEARCH.",
+  "current_approval_state": "PROMOTED",
+  "review_events": [
+    {
+      "event_id": "REV-20261017-001",
+      "timestamp": "2026-10-17T08:21:00Z",
+      "reviewer_agent": "orchestrator-planner",
+      "decision": "APPROVED_FOR_PROMOTION",
+      "rejection_reason": "",
+      "notes": "Verified against owner governance hardening requirements 1 and 3."
+    }
+  ],
+  "promotion_record": {
+    "promoted_at": "2026-10-17T08:22:00Z",
+    "target_documents": [
+      "memory/decisions/DECISION_LOG.md"
+    ],
+    "target_section_or_id": "DEC-REV-20261017-01",
+    "verification_marker": "DEC-REV-20261017-01",
+    "target_sha256_after": "0970f7bb9af026ccc3c0fae951da076b1a149b44a6dfc0898e2c0d821b89dff3",
+    "retained_after_promotion": true,
+    "promoted_targets": [
+      {
+        "target_file": "memory/decisions/DECISION_LOG.md",
+        "verification_marker": "DEC-REV-20261017-01",
+        "promoted_block_line_start": 27,
+        "promoted_block_line_end": 32,
+        "promoted_verbatim_block": "| `ADR-005` | **نظام مرآة الكود `1:1` بأرقام الأسطر والمقتطفات ومنع تكرار الدوال** | `OWNER_REQUIREMENT` (`OV-13`, `OV-14`) | أداة `sync_code_mirrors.py` (استخراج AST شامل لـ Python وTS/JS) + `verify_brain_sync.py`. | `TECHNICALLY_REVIEWED` | `OWNER_REQUIREMENT` (مفوض كقاعدة حوكمة) | اجتاز الاختبارات الإيجابية والسلبية في `test_governance_suite.py`. |\n| `ADR-006` | **بروتوكول الكتابة المسبقة (`WAL`)، ونظام مكتشفات الـ Sub-Agents المستقل، وحظر القراءة الجزئية** | `OWNER_REQUIREMENT` (`OV-15`, `OV-16`, `OV-17`) | `ACTIVE_SESSION_WAL.md` + عزل `memory/findings/entries/` لكل Subagent + `manage_findings.py` + `recover_context.py`. | `TECHNICALLY_REVIEWED` | `OWNER_REQUIREMENT` (مفوض كقاعدة حوكمة) | اجتاز اختبارات التضارب والترقية والاسترجاع في `test_governance_suite.py`. |\n| `ADR-007` | **المكدس التقني المقترح للتطبيق (`FastAPI + React/TS Canvas + Google GenAI`)** | `PROPOSED` (مقترح معماري لتنفيذ رؤية المالك) | مصفوفة البدائل في `docs/architecture/TECHNOLOGY_COMPARISON_AND_GATES.md`. | `PROPOSED` | `NOT_APPROVED` (يتطلب موافقة صريحة من المالك) | مقارنة البدائل واعتماد المالك قبل بدء تنفيذ المنتج (`P0`). |\n\n## 3. سجل أحداث التدقيق وتصحيح الحالات (`Append-Only Governance Audit Events`)\n",
+        "promoted_block_sha256": "d90af358dafcc396c578be76ece447fba5c2719dda35fd2fbb1428549d1f246c",
+        "target_file_sha256": "0970f7bb9af026ccc3c0fae951da076b1a149b44a6dfc0898e2c0d821b89dff3",
+        "snapshot_file": "docs/history/promoted_targets/FND-20261017-001__memory__decisions__DECISION_LOG.md.snapshot.md"
+      }
+    ]
+  }
+}

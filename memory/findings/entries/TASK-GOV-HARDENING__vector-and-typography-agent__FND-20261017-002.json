@@ -1,0 +1,68 @@
+{
+  "finding_id": "FND-20261017-002",
+  "task_id": "TASK-GOV-HARDENING",
+  "subagent_id": "vector-and-typography-agent",
+  "created_at": "2026-10-17T08:20:30Z",
+  "source_file_paths": [
+    "docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md",
+    "docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md"
+  ],
+  "line_ranges": [
+    {
+      "file": "docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md",
+      "start_line": 1,
+      "end_line": 68
+    },
+    {
+      "file": "docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md",
+      "start_line": 1,
+      "end_line": 29
+    }
+  ],
+  "source_revisions": [
+    {
+      "file": "docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md",
+      "sha256": "3842d71379b25dfa7476d7d694943edd22fc40d53acd7939d29cd0cf5cfa8d3e"
+    },
+    {
+      "file": "docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md",
+      "sha256": "99d4151ccfa39b65afa84495744bd942ac5288e5bacf57315d8b17c10aa9a43c"
+    }
+  ],
+  "evidence": "Semantic pixel separation under color similarity (Potato vs Bread) and non-fragmented Clean SVG <g> reconstruction (Falafel/Potato shadows) are high-risk capabilities that require empirical benchmarking before final stack commitment.",
+  "confidence": "HIGH",
+  "proposed_action": "Establish mandatory feasibility experiments EXP-01 through EXP-05 with quantitative IoU/SSIM/Node-count pass criteria in docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md.",
+  "current_approval_state": "PROMOTED",
+  "review_events": [
+    {
+      "event_id": "REV-20261017-002",
+      "timestamp": "2026-10-17T08:21:30Z",
+      "reviewer_agent": "orchestrator-planner",
+      "decision": "APPROVED_FOR_PROMOTION",
+      "rejection_reason": "",
+      "notes": "Verified against owner requirement 6 (Architecture and Feasibility Gates)."
+    }
+  ],
+  "promotion_record": {
+    "promoted_at": "2026-10-17T08:22:30Z",
+    "target_documents": [
+      "docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md"
+    ],
+    "target_section_or_id": "EXP-01",
+    "verification_marker": "EXP-01",
+    "target_sha256_after": "99d4151ccfa39b65afa84495744bd942ac5288e5bacf57315d8b17c10aa9a43c",
+    "retained_after_promotion": true,
+    "promoted_targets": [
+      {
+        "target_file": "docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md",
+        "verification_marker": "EXP-01",
+        "promoted_block_line_start": 21,
+        "promoted_block_line_end": 29,
+        "promoted_verbatim_block": "قبل الالتزام النهائي بأي مكتبة أو معمارية لمحرك الجرافيك، يجب تنفيذ التجارب الخمس التالية وتوثيق نتائجها في `memory/findings/`:\n\n| كود التجربة (`Experiment ID`) | المخاطرة التقنية المستهدفة (`High-Risk Capability`) | حالة الاختبار المرجعية (`Benchmark Asset`) | المرشحون للمقارنة (`Candidates to Compare`) | معايير النجاح الكمية (`Quantitative Pass Criteria`) | الحالة الحالية |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| `EXP-01` | **الفصل الدلالي الدقيق لعناصر متقاربة اللون بدون نزيف بكسلات (`Semantic Decomposition without Color Bleeding`)** | `A03`: ساندوتش البطاطس والعيش (فصل اللون الأصفر للبطاطس عن البيج/البني للعيش). | 1) `SAM 2 + Grounding DINO`<br>2) `Florence-2 + SAM 2`<br>3) `Multimodal VLM BBox + GrabCut/Watershed` | - `Boundary IoU >= 0.92`<br>- `Cross-Layer Pixel Bleed <= 1.5%`<br>- زمن الفصل `< 4s` للصورة. | `UNDER_RESEARCH` (لم تنفذ بعد) |\n| `EXP-02` | **منع تشظي الـ SVG وتجميع `<g>` (الشكل الأساسي + الظل كقطعة نظيفة) (`High-Fidelity Clean SVG & Anti-Fragmentation`)** | `A02` (الفلافل) & `A03` (البطاطس والظل بتاعها). | 1) `Morphological Quantization + Shapely Union + VTracer`<br>2) `DiffVG Differentiable Bézier Fitting`<br>3) `Potrace Multi-Pass + Douglas-Peucker Curve Fitting` | - صفر شظايا مجهرية (`0 micro-shards < 16px²`)<br>- عدد نقاط الـ Bézier (`Anchor Nodes`) لكل شكل `<= 36`<br>- تطابق بصري `SSIM >= 0.93` داخل `<g>` منظم. | `UNDER_RESEARCH` (لم تنفذ بعد) |\n| `EXP-03` | **استنتاج ترتيب الطبقات (`Z-Order`) وإكمال الأجزاء المخفية (`Amodal Completion / Inpainting`)** | `A01` (الدرع الفضي وتفاصيله) & `A03` (العيش تحت البطاطس). | 1) `Depth-Anything v2 + Occlusion Graph + LaMa Inpainting`<br>2) `VLM Layer Ordering + Gemini Image Edit Inpainting`<br>3) `Geometric Convex/Spline Contour Completion` | - دقة ترتيب `Z-Order = 100%` على الحالات المرجعية<br>- اتصال وسلامة الطبقة السفلية بعد إخفاء الطبقة العلوية بدون ثقوب. | `UNDER_RESEARCH` (لم تنفذ بعد) |\n| `EXP-04` | **حلقة المراجعة البصرية بشفافية `50% Opacity` وتصحيح الأبعاد التلقائي (`50% Opacity Critic Convergence`)** | `A01`, `A02`, `A03` | 1) `Programmatic Raster Overlay (CairoSVG) + IoU/Pixel-Diff Map`<br>2) `Hybrid Programmatic Diff + Vision LLM Critic` | - وصول التطابق إلى `IoU >= 0.94` خلال `<= 3` دورات تصحيح<br>- إجمالي زمن التحقق للطبقة `< 2s`. | `UNDER_RESEARCH` (لم تنفذ بعد) |\n| `EXP-05` | **التعرف على الخطوط، تخيير المستخدم، وإعادة رسم النصوص بنفس الهوية (`Smart Typography & Style DNA Synthesis`)** | `A04`: شعار نصي عربي/إنجليزي بستايل خاص. | 1) `PaddleOCR/EasyOCR + Font Embedding Matcher + SVG Path Warp`<br>2) `VLM Glyph Style Extractor + Few-Shot Vector Glyph Generator` | - دقة فصل الحروف واستخلاص سمك/لون/انحناء الخط<br>- نجاح تعديل كلمة مع الحفاظ على الهوية البصرية. | `UNDER_RESEARCH` (لم تنفذ بعد) |",
+        "promoted_block_sha256": "f95328296c816359db52116fdc36321ccb8e4d6cb781f38def3e9e20c6179a31",
+        "target_file_sha256": "99d4151ccfa39b65afa84495744bd942ac5288e5bacf57315d8b17c10aa9a43c",
+        "snapshot_file": "docs/history/promoted_targets/FND-20261017-002__docs__architecture__FEASIBILITY_EXPERIMENTS_AND_GATES.md.snapshot.md"
+      }
+    ]
+  }
+}

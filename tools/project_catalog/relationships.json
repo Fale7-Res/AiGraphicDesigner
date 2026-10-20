@@ -1,0 +1,818 @@
+[
+  {
+    "source": "AGENTS.md",
+    "target": "GEMINI.md",
+    "relationship": "Synchronized root agent entry points for standard and Antigravity surfaces",
+    "direction": "Bidirectional",
+    "change_impact": "Keep core rules and startup sequence aligned across both files.",
+    "evidence": "Direct @AGENTS.md reference in GEMINI.md"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": "memory/MEMORY_INDEX.md",
+    "relationship": "Routes every session startup to the External Brain master index",
+    "direction": "AGENTS.md -> memory/MEMORY_INDEX.md",
+    "change_impact": "Update AGENTS.md startup sequence if memory index path or structure changes.",
+    "evidence": "Mandatory Session Startup Sequence in AGENTS.md"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": "MASTER_PLAN.md",
+    "relationship": "Links agent entry constitution to the whole-project modular master plan",
+    "direction": "AGENTS.md -> MASTER_PLAN.md",
+    "change_impact": "Synchronize module codes and completion states.",
+    "evidence": "Rule routing table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/anti_compaction_write_ahead_rules.md",
+    "target": ".agents/rules/anti_compaction_write_ahead_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/anti_compaction_write_ahead_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/anti_compaction_write_ahead_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/antigravity_full_read_and_ide_rules.md",
+    "target": ".agents/rules/antigravity_full_read_and_ide_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/antigravity_full_read_and_ide_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/antigravity_full_read_and_ide_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/architecture_rules.md",
+    "target": ".agents/rules/architecture_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/architecture_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/architecture_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/asset_and_function_deduplication_rules.md",
+    "target": ".agents/rules/asset_and_function_deduplication_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/asset_and_function_deduplication_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/asset_and_function_deduplication_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/coding_standards.md",
+    "target": ".agents/rules/coding_standards.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/coding_standards.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/coding_standards.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/design_ground_truth_rules.md",
+    "target": ".agents/rules/design_ground_truth_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/design_ground_truth_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/design_ground_truth_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/external_brain_and_code_mirror_rules.md",
+    "target": ".agents/rules/external_brain_and_code_mirror_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/external_brain_and_code_mirror_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/external_brain_and_code_mirror_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/file_catalog_rules.md",
+    "target": ".agents/rules/file_catalog_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/file_catalog_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/file_catalog_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/inspected_assets_catalog_rules.md",
+    "target": ".agents/rules/inspected_assets_catalog_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/inspected_assets_catalog_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/inspected_assets_catalog_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/project_memory.md",
+    "target": ".agents/rules/project_memory.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/project_memory.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/project_memory.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/quality_gates.md",
+    "target": ".agents/rules/quality_gates.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/quality_gates.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/quality_gates.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/question_driven_research_rules.md",
+    "target": ".agents/rules/question_driven_research_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/question_driven_research_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/question_driven_research_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/review_update_exports.md",
+    "target": ".agents/rules/review_update_exports.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/review_update_exports.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/review_update_exports.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/subagent_findings_and_promotion_rules.md",
+    "target": ".agents/rules/subagent_findings_and_promotion_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/subagent_findings_and_promotion_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/subagent_findings_and_promotion_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/subagent_orchestration_and_review_rules.md",
+    "target": ".agents/rules/subagent_orchestration_and_review_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/subagent_orchestration_and_review_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/subagent_orchestration_and_review_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/tech_stack.md",
+    "target": ".agents/rules/tech_stack.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/tech_stack.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/tech_stack.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/testing_and_delivery.md",
+    "target": ".agents/rules/testing_and_delivery.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/testing_and_delivery.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/testing_and_delivery.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agent_rules/vector_and_layer_integrity_rules.md",
+    "target": ".agents/rules/vector_and_layer_integrity_rules.md",
+    "relationship": "Mirrored rule file between .agent_rules/ and Antigravity native .agents/rules/",
+    "direction": "Bidirectional",
+    "change_impact": "Update both files together whenever rule instructions change.",
+    "evidence": "Dual-surface rule compatibility"
+  },
+  {
+    "source": "AGENTS.md",
+    "target": ".agent_rules/vector_and_layer_integrity_rules.md",
+    "relationship": "Routes tasks to domain-specific governance rule",
+    "direction": "AGENTS.md -> .agent_rules/vector_and_layer_integrity_rules.md",
+    "change_impact": "Update AGENTS.md routing table if rule scope changes.",
+    "evidence": "Rule Routing Table in AGENTS.md"
+  },
+  {
+    "source": ".agents/tools/memory_guard/pre_tool_use_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": ".agents/tools/memory_guard/pre_tool_use_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": ".agents/tools/memory_guard/session_start_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": ".agents/tools/memory_guard/session_start_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": ".agents/tools/memory_guard/stop_gate_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": ".agents/tools/memory_guard/stop_gate_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "benchmarks/harness/run_benchmark.py",
+    "target": "memory/code_mirrors/benchmarks__harness__run_benchmark.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "benchmarks/harness/run_benchmark.py -> memory/code_mirrors/benchmarks__harness__run_benchmark.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "benchmarks/harness/run_benchmark.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "benchmarks/harness/run_benchmark.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "make_project_zip.py",
+    "target": "memory/code_mirrors/make_project_zip.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "make_project_zip.py -> memory/code_mirrors/make_project_zip.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "make_project_zip.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "make_project_zip.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/findings_guard/file_lock.py",
+    "target": "memory/code_mirrors/tools__findings_guard__file_lock.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/findings_guard/file_lock.py -> memory/code_mirrors/tools__findings_guard__file_lock.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/findings_guard/file_lock.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/findings_guard/file_lock.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/findings_guard/manage_findings.py",
+    "target": "memory/code_mirrors/tools__findings_guard__manage_findings.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/findings_guard/manage_findings.py -> memory/code_mirrors/tools__findings_guard__manage_findings.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/findings_guard/manage_findings.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/findings_guard/manage_findings.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/governance/change_tracking.py",
+    "target": "memory/code_mirrors/tools__governance__change_tracking.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/governance/change_tracking.py -> memory/code_mirrors/tools__governance__change_tracking.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/governance/change_tracking.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/governance/change_tracking.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/manage_approvals.py",
+    "target": "memory/code_mirrors/tools__memory_guard__manage_approvals.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/manage_approvals.py -> memory/code_mirrors/tools__memory_guard__manage_approvals.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/manage_approvals.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/manage_approvals.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/pre_tool_use_hook.py",
+    "target": "memory/code_mirrors/tools__memory_guard__pre_tool_use_hook.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/pre_tool_use_hook.py -> memory/code_mirrors/tools__memory_guard__pre_tool_use_hook.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/pre_tool_use_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/pre_tool_use_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/recover_context.py",
+    "target": "memory/code_mirrors/tools__memory_guard__recover_context.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/recover_context.py -> memory/code_mirrors/tools__memory_guard__recover_context.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/recover_context.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/recover_context.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/session_start_hook.py",
+    "target": "memory/code_mirrors/tools__memory_guard__session_start_hook.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/session_start_hook.py -> memory/code_mirrors/tools__memory_guard__session_start_hook.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/session_start_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/session_start_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/stop_gate_hook.py",
+    "target": "memory/code_mirrors/tools__memory_guard__stop_gate_hook.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/stop_gate_hook.py -> memory/code_mirrors/tools__memory_guard__stop_gate_hook.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/stop_gate_hook.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/stop_gate_hook.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/sync_code_mirrors.py",
+    "target": "memory/code_mirrors/tools__memory_guard__sync_code_mirrors.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/sync_code_mirrors.py -> memory/code_mirrors/tools__memory_guard__sync_code_mirrors.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/sync_code_mirrors.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/sync_code_mirrors.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/sync_rules.py",
+    "target": "memory/code_mirrors/tools__memory_guard__sync_rules.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/sync_rules.py -> memory/code_mirrors/tools__memory_guard__sync_rules.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/sync_rules.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/sync_rules.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/memory_guard/verify_brain_sync.py",
+    "target": "memory/code_mirrors/tools__memory_guard__verify_brain_sync.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/memory_guard/verify_brain_sync.py -> memory/code_mirrors/tools__memory_guard__verify_brain_sync.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/memory_guard/verify_brain_sync.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/memory_guard/verify_brain_sync.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/project_catalog/build_catalog.py",
+    "target": "memory/code_mirrors/tools__project_catalog__build_catalog.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/project_catalog/build_catalog.py -> memory/code_mirrors/tools__project_catalog__build_catalog.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/project_catalog/build_catalog.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/project_catalog/build_catalog.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/project_catalog/verify_catalog.py",
+    "target": "memory/code_mirrors/tools__project_catalog__verify_catalog.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/project_catalog/verify_catalog.py -> memory/code_mirrors/tools__project_catalog__verify_catalog.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/project_catalog/verify_catalog.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/project_catalog/verify_catalog.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/review_updates/export_updates.py",
+    "target": "memory/code_mirrors/tools__review_updates__export_updates.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/review_updates/export_updates.py -> memory/code_mirrors/tools__review_updates__export_updates.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/review_updates/export_updates.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/review_updates/export_updates.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/tests/test_final_governance.py",
+    "target": "memory/code_mirrors/tools__tests__test_final_governance.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/tests/test_final_governance.py -> memory/code_mirrors/tools__tests__test_final_governance.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/tests/test_final_governance.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/tests/test_final_governance.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/tests/test_governance_suite.py",
+    "target": "memory/code_mirrors/tools__tests__test_governance_suite.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/tests/test_governance_suite.py -> memory/code_mirrors/tools__tests__test_governance_suite.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/tests/test_governance_suite.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/tests/test_governance_suite.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/__init__.py",
+    "target": "memory/code_mirrors/tools__update_packages____init__.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/__init__.py -> memory/code_mirrors/tools__update_packages____init__.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/__init__.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/__init__.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/applier.py",
+    "target": "memory/code_mirrors/tools__update_packages__applier.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/applier.py -> memory/code_mirrors/tools__update_packages__applier.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/applier.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/applier.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/cli.py",
+    "target": "memory/code_mirrors/tools__update_packages__cli.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/cli.py -> memory/code_mirrors/tools__update_packages__cli.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/cli.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/cli.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/differ.py",
+    "target": "memory/code_mirrors/tools__update_packages__differ.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/differ.py -> memory/code_mirrors/tools__update_packages__differ.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/differ.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/differ.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/models.py",
+    "target": "memory/code_mirrors/tools__update_packages__models.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/models.py -> memory/code_mirrors/tools__update_packages__models.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/models.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/models.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/packager.py",
+    "target": "memory/code_mirrors/tools__update_packages__packager.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/packager.py -> memory/code_mirrors/tools__update_packages__packager.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/packager.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/packager.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/scanner.py",
+    "target": "memory/code_mirrors/tools__update_packages__scanner.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/scanner.py -> memory/code_mirrors/tools__update_packages__scanner.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/scanner.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/scanner.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/state_manager.py",
+    "target": "memory/code_mirrors/tools__update_packages__state_manager.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/state_manager.py -> memory/code_mirrors/tools__update_packages__state_manager.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/state_manager.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/state_manager.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/tests/__init__.py",
+    "target": "memory/code_mirrors/tools__update_packages__tests____init__.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/tests/__init__.py -> memory/code_mirrors/tools__update_packages__tests____init__.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/tests/__init__.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/tests/__init__.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/tests/run_controlled_acceptance_gate.py",
+    "target": "memory/code_mirrors/tools__update_packages__tests__run_controlled_acceptance_gate.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/tests/run_controlled_acceptance_gate.py -> memory/code_mirrors/tools__update_packages__tests__run_controlled_acceptance_gate.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/tests/run_controlled_acceptance_gate.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/tests/run_controlled_acceptance_gate.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/tests/test_update_system.py",
+    "target": "memory/code_mirrors/tools__update_packages__tests__test_update_system.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/tests/test_update_system.py -> memory/code_mirrors/tools__update_packages__tests__test_update_system.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/tests/test_update_system.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/tests/test_update_system.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  },
+  {
+    "source": "tools/update_packages/verifier.py",
+    "target": "memory/code_mirrors/tools__update_packages__verifier.py.md",
+    "relationship": "1:1 Codebase Markdown Mirror documenting functions, exact lines, snippets, and data flow",
+    "direction": "tools/update_packages/verifier.py -> memory/code_mirrors/tools__update_packages__verifier.py.md",
+    "change_impact": "Run `python3 tools/memory_guard/sync_code_mirrors.py --write` whenever the Python file changes.",
+    "evidence": "AST extraction via sync_code_mirrors.py"
+  },
+  {
+    "source": "tools/update_packages/verifier.py",
+    "target": "memory/FUNCTION_REGISTRY.md",
+    "relationship": "Registers all functions and exact line numbers in the central function index",
+    "direction": "tools/update_packages/verifier.py -> memory/FUNCTION_REGISTRY.md",
+    "change_impact": "Re-sync FUNCTION_REGISTRY.md whenever functions or line numbers change.",
+    "evidence": "Central anti-duplication registry"
+  }
+]

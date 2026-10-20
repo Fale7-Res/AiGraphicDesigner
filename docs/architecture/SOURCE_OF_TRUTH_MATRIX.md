@@ -1,0 +1,16 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": null, "last_action": "IMPORTED_LEGACY", "last_change_id": "BASELINE-IMPORT", "last_edited_at_utc": null, "last_editor": "governance-baseline", "tracking_started_at_utc": "2026-10-17T06:52:16Z"}
+END_DOC_PROVENANCE -->
+# مصفوفة مصادر الحقيقة ومنع تضخم الحوكمة (`docs/architecture/SOURCE_OF_TRUTH_MATRIX.md`)
+
+للحفاظ على قوة نظام **الذاكرة الخارجية الحية (`External Brain`)** مع منع تضخم السياق (`Context Bloat`) أو تكرار التوثيق يدوياً، يحدد هذا الجدول **المسؤولية الوحيدة والواضحة (`Single Canonical Responsibility`)** لكل ملف في المستودع، وما يُكتب يدوياً مقابل ما يُولّد آلياً:
+
+| النطاق (`Domain`) | المصدر الوحيد للحقيقة (`Single Authoritative Source`) | طريقة التحديث (`Authoring Mode`) | المخرجات المشتقة آلياً (`Auto-Generated Projections — DO NOT HAND-EDIT`) | أداة التوليد والتحقق (`Generator & Verifier`) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. رؤية المالك الأصلية** | `docs/product/OWNER_ORIGINAL_VISION.md` | نص حرفي ثابت (`Immutable Verbatim`) | لا يُعدّل؛ تشتق منه المتطلبات في `VISION_TO_REQUIREMENTS_TRACEABILITY.md` و`PRODUCT_VISION_AND_MODES.md`. | `verify_brain_sync.py` (يتحقق من وجوده وبصمته) |
+| **2. قواعد الـ Agent (`Rules`)** | `.agent_rules/*.md` (المصدر الوحيد للتأليف) | تحرير محكوم (`Canonical Rule Source`) | `.agents/rules/*.md` (يُنسخ ويُزامن آلياً بنسبة 100% من `.agent_rules/`). | `tools/memory_guard/sync_rules.py --write` & `verify_brain_sync.py` |
+| **3. الكود البرمجي ومرآة الأسطر (`Code & Line Mirrors`)** | ملفات الكود الفعلية (`*.py`, `*.ts`, `*.tsx`, `*.js`) | المصدر التنفيذي الوحيد (`Implementation Authority`) | `memory/code_mirrors/*.md` + `memory/FUNCTION_REGISTRY.md` (تُولّد آلياً بالـ AST مع أرقام الأسطر والمقتطفات). | `tools/memory_guard/sync_code_mirrors.py --write` & `verify_brain_sync.py` |
+| **4. مكتشفات الـ Sub-Agents (`Subagent Findings`)** | `memory/findings/entries/<task>__<agent>__<id>.json` | يكتب كل Subagent ملفه المعزول؛ ويضيف الـ Parent أحداث المراجعة الإلحاقية (`Append-Only`) | `memory/findings/FINDINGS_LEDGER.md` (سجل قراءة موحد يُجمّع آلياً من ملفات الـ JSON المعزولة). | `tools/findings_guard/manage_findings.py compile-ledger` & `verify` |
+| **5. سجل الجلسة والـ WAL (`Session State`)** | `memory/session/CURRENT_TASK_CHECKPOINT.md` + `memory/session/ACTIVE_SESSION_WAL.md` + `memory/session/subagent_wals/*.wal.md` | كتابة مسبقة فورية (`Write-Ahead Logging`) مع عزل ملفات الـ Subagents | حزمة استرجاع السياق بعد الانقطاع (`memory/session/RECOVERY_PACKET.json`). | `tools/memory_guard/recover_context.py` |
+| **6. فهرس ملفات المشروع (`Repository Catalog`)** | شجرة الملفات الفعلية على القرص + `tools/project_catalog/build_catalog.py` | يُولّد آلياً (`Auto-Generated`) | `PROJECT_FILE_CATALOG.md`, `tools/project_catalog/file_metadata.json`, `tools/project_catalog/relationships.json`. | `tools/project_catalog/build_catalog.py --write` & `verify_catalog.py` |
+| **7. سجل القرارات واعتمادات المالك (`Decisions & Approvals`)** | `memory/decisions/DECISION_LOG.md` | سجل إلحاقي تدقيقي (`Append-Only Ledger`) | يفصل بصرامة بين `OWNER_REQUIREMENT`, `PROPOSED`, `UNDER_RESEARCH`, `TECHNICALLY_REVIEWED`, `EXPERIMENTALLY_VALIDATED`, `OWNER_APPROVED`, و`REJECTED`. | `verify_brain_sync.py` (يرفض أي ادعاء `OWNER_APPROVED` بدون تفويض موثق) |

@@ -1,0 +1,216 @@
+{
+  "timestamp_utc": "2026-10-17T19:57:01Z",
+  "task_id": "TASK-V01-FINAL-GEOMETRY-INVESTIGATION",
+  "work_package": "WP2: Geometry-Correct Planar Alternative",
+  "agent": "vector-and-typography-agent",
+  "evaluations": {
+    "A01_shield": {
+      "method_1_baseline_stroke_1_0": {
+        "description": "Baseline Version 01 with Naive Area Sorting and Stroke Trapping (stroke=1.0)",
+        "paths_count": 96,
+        "nodes_count": 2452,
+        "svg_size_bytes": 124862,
+        "metrics_vs_quant": {
+          "mse": 763.29,
+          "rmse": 27.63,
+          "psnr_db": 19.3,
+          "ssim": 0.7509
+        },
+        "metrics_vs_orig": {
+          "mse": 765.28,
+          "rmse": 27.66,
+          "psnr_db": 19.29,
+          "ssim": 0.7589
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 88232,
+          "rendered_fg_pixels": 88905,
+          "bloat_pixels": 673,
+          "bloat_percentage": 0.763,
+          "silhouette_iou": 0.9891
+        }
+      },
+      "method_2_baseline_no_stroke": {
+        "description": "Baseline Version 01 with Naive Area Sorting and No Stroke (raw gap leakage)",
+        "paths_count": 96,
+        "nodes_count": 2452,
+        "svg_size_bytes": 119102,
+        "metrics_vs_quant": {
+          "mse": 1347.76,
+          "rmse": 36.71,
+          "psnr_db": 16.83,
+          "ssim": 0.6809
+        },
+        "metrics_vs_orig": {
+          "mse": 1350.11,
+          "rmse": 36.74,
+          "psnr_db": 16.83,
+          "ssim": 0.6927
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 88232,
+          "rendered_fg_pixels": 89039,
+          "bloat_pixels": 807,
+          "bloat_percentage": 0.915,
+          "silhouette_iou": 0.9869
+        }
+      },
+      "method_3_exact_planar_tiling": {
+        "description": "Geometry-Correct Exact Dual-Grid Planar Tiling (Collinear Rectilinear, 0% Bloat)",
+        "paths_count": 15,
+        "nodes_count": 20464,
+        "svg_size_bytes": 317589,
+        "elapsed_ms": 1930.05,
+        "metrics_vs_quant": {
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": 99.0,
+          "ssim": 1.0
+        },
+        "metrics_vs_orig": {
+          "mse": 88.99,
+          "rmse": 9.43,
+          "psnr_db": 28.64,
+          "ssim": 0.9059
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 88232,
+          "rendered_fg_pixels": 88232,
+          "bloat_pixels": 0,
+          "bloat_percentage": 0.0,
+          "silhouette_iou": 1.0
+        }
+      },
+      "method_4_smooth_planar_zero_bloat": {
+        "description": "Geometry-Correct Smooth Planar SVG (Schneider B\u00e9zier + Master Silhouette Clip, 0% Bloat)",
+        "paths_count": 15,
+        "nodes_count": 14828,
+        "svg_size_bytes": 1016014,
+        "elapsed_ms": 1642.38,
+        "metrics_vs_quant": {
+          "mse": 234.33,
+          "rmse": 15.31,
+          "psnr_db": 24.43,
+          "ssim": 0.8822
+        },
+        "metrics_vs_orig": {
+          "mse": 306.11,
+          "rmse": 17.5,
+          "psnr_db": 23.27,
+          "ssim": 0.8247
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 88232,
+          "rendered_fg_pixels": 88471,
+          "bloat_pixels": 239,
+          "bloat_percentage": 0.271,
+          "silhouette_iou": 0.9884
+        }
+      }
+    },
+    "synthetic_nested": {
+      "method_1_baseline_stroke_1_0": {
+        "description": "Baseline Version 01 with Naive Area Sorting and Stroke Trapping (stroke=1.0)",
+        "paths_count": 5,
+        "nodes_count": 232,
+        "svg_size_bytes": 11613,
+        "metrics_vs_quant": {
+          "mse": 5154.96,
+          "rmse": 71.8,
+          "psnr_db": 11.01,
+          "ssim": 0.7218
+        },
+        "metrics_vs_orig": {
+          "mse": 5154.96,
+          "rmse": 71.8,
+          "psnr_db": 11.01,
+          "ssim": 0.7218
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 39291,
+          "rendered_fg_pixels": 59339,
+          "bloat_pixels": 20048,
+          "bloat_percentage": 51.024,
+          "silhouette_iou": 0.6617
+        }
+      },
+      "method_2_baseline_no_stroke": {
+        "description": "Baseline Version 01 with Naive Area Sorting and No Stroke (raw gap leakage)",
+        "paths_count": 5,
+        "nodes_count": 232,
+        "svg_size_bytes": 11313,
+        "metrics_vs_quant": {
+          "mse": 5122.55,
+          "rmse": 71.57,
+          "psnr_db": 11.04,
+          "ssim": 0.6945
+        },
+        "metrics_vs_orig": {
+          "mse": 5122.55,
+          "rmse": 71.57,
+          "psnr_db": 11.04,
+          "ssim": 0.6945
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 39291,
+          "rendered_fg_pixels": 58768,
+          "bloat_pixels": 19477,
+          "bloat_percentage": 49.571,
+          "silhouette_iou": 0.6622
+        }
+      },
+      "method_3_exact_planar_tiling": {
+        "description": "Geometry-Correct Exact Dual-Grid Planar Tiling (Collinear Rectilinear, 0% Bloat)",
+        "paths_count": 3,
+        "nodes_count": 1188,
+        "svg_size_bytes": 17823,
+        "elapsed_ms": 749.74,
+        "metrics_vs_quant": {
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": 99.0,
+          "ssim": 1.0
+        },
+        "metrics_vs_orig": {
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": 99.0,
+          "ssim": 1.0
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 39291,
+          "rendered_fg_pixels": 39291,
+          "bloat_pixels": 0,
+          "bloat_percentage": 0.0,
+          "silhouette_iou": 1.0
+        }
+      },
+      "method_4_smooth_planar_zero_bloat": {
+        "description": "Geometry-Correct Smooth Planar SVG (Schneider B\u00e9zier + Master Silhouette Clip, 0% Bloat)",
+        "paths_count": 3,
+        "nodes_count": 156,
+        "svg_size_bytes": 23851,
+        "elapsed_ms": 34.13,
+        "metrics_vs_quant": {
+          "mse": 5412.99,
+          "rmse": 73.57,
+          "psnr_db": 10.8,
+          "ssim": 0.7277
+        },
+        "metrics_vs_orig": {
+          "mse": 5412.99,
+          "rmse": 73.57,
+          "psnr_db": 10.8,
+          "ssim": 0.7277
+        },
+        "silhouette_bloat": {
+          "reference_fg_pixels": 39291,
+          "rendered_fg_pixels": 60017,
+          "bloat_pixels": 20726,
+          "bloat_percentage": 52.75,
+          "silhouette_iou": 0.6547
+        }
+      }
+    }
+  }
+}

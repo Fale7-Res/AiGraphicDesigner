@@ -1,0 +1,126 @@
+{
+  "executed_at": "2026-10-19T02:50:58.404138+00:00",
+  "total_tests": 28,
+  "passed_tests": 28,
+  "failed_tests": 0,
+  "status": "ALL_PASSED",
+  "hook_integration_boundary": {
+    "python_hook_stdin_stdout_contract_tested": true,
+    "live_antigravity_ide_desktop_host_tested": false,
+    "reason": "UNAVAILABLE_IN_SANDBOX_VM: Live Antigravity IDE/CLI host loop is external to this offline Linux VM sandbox; hook JSON contracts (SessionStart and Stop allow/continue blocking) were verified via subprocess stdin/stdout simulation."
+  },
+  "test_cases": [
+    {
+      "test_name": "test_01_positive_baseline_and_rule_sync",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_02_negative_missing_code_mirror",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_03_negative_stale_line_references",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_04_negative_undocumented_functions",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_05_negative_duplicate_symbol_entries",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_06_negative_broken_file_catalog_links",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_07_negative_invalid_finding_approvals",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_08_negative_approved_findings_not_promoted",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_09_negative_conflicting_subagent_ownership",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_10_context_recovery_after_interruption",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_11_negative_missing_owner_approval",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_12_clean_checkout_portability",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_13_python_and_ts_js_ast_symbol_extraction",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_14_hook_contracts_and_environment_boundary",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_15_negative_vision_sentence_tampering_preserving_header",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_16_negative_fabricated_owner_approved_with_invented_token",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_17_negative_promoted_target_content_tampering_preserving_marker",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_18_negative_deleted_finding_reconciliation_and_tamper_detection",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_19_negative_derived_doc_fabricated_approval",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_20_promoted_doc_legitimate_evolution_vs_unauthorized_edit",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_21_findings_transactional_lifecycle_end_to_end",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_22_findings_interruption_rollback_and_duplicate_event_rejection",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_23_findings_concurrent_writes_locking",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_24_controlled_future_approval_transition_positive_and_negative",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_25_version_code_mirrors_and_registry_isolation",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_26_version_deduplication_isolation_positive_and_negative",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_27_version_file_catalog_isolation",
+      "status": "PASSED"
+    },
+    {
+      "test_name": "test_28_benchmark_telemetry_schema_validation",
+      "status": "PASSED"
+    }
+  ]
+}

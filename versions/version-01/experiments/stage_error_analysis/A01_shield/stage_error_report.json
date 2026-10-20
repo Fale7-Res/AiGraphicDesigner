@@ -1,0 +1,80 @@
+{
+  "image": "A01_shield.png",
+  "dimensions": [
+    369,
+    249
+  ],
+  "n_colors": 24,
+  "stages": {
+    "stage_1_quantization": {
+      "description": "CIELAB K-Means Color Clustering",
+      "metrics_vs_original": {
+        "mse": 49.61,
+        "rmse": 7.04,
+        "psnr_db": 31.17,
+        "ssim": 0.9253
+      },
+      "mse_share_pct": 7.6
+    },
+    "stage_2_polygon": {
+      "description": "approxPolyDP Contour Simplification",
+      "total_vertices": 4243,
+      "metrics_vs_quantized": {
+        "mse": 951.11,
+        "rmse": 30.84,
+        "psnr_db": 18.35,
+        "ssim": 0.7829
+      },
+      "metrics_vs_original": {
+        "mse": 979.64,
+        "rmse": 31.3,
+        "psnr_db": 18.22,
+        "ssim": 0.7408
+      },
+      "mse_share_pct": 142.3
+    },
+    "stage_3_and_4_svg_rendering": {
+      "description": "Safe Cubic B\u00e9zier + Stroke Trapping + SVG Compositing",
+      "telemetry": {
+        "image_path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\AI_Graphic_Designer_Test_Images_Initial_12\\A01_shield.png",
+        "dimensions": [
+          369,
+          249
+        ],
+        "clusters_count": 24,
+        "total_layers": 195,
+        "total_paths": 195,
+        "total_nodes": 4025,
+        "elapsed_ms": 1052.74,
+        "svg_size_bytes": 214078
+      },
+      "metrics_vs_polygon": {
+        "mse": 743.93,
+        "rmse": 27.28,
+        "psnr_db": 19.42,
+        "ssim": 0.7611
+      },
+      "metrics_vs_quantized": {
+        "mse": 644.55,
+        "rmse": 25.39,
+        "psnr_db": 20.04,
+        "ssim": 0.7777
+      },
+      "metrics_vs_original": {
+        "mse": 653.43,
+        "rmse": 25.56,
+        "psnr_db": 19.98,
+        "ssim": 0.7724
+      },
+      "mse_share_pct": 0.0
+    }
+  },
+  "summary": {
+    "total_mse": 653.43,
+    "quantization_mse": 49.61,
+    "polygon_incremental_mse": 930.03,
+    "curve_and_render_incremental_mse": 0.0,
+    "final_psnr_db": 19.98,
+    "final_ssim": 0.7724
+  }
+}

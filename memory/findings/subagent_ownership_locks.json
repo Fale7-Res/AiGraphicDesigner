@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "locks": [
+    {
+      "lock_id": "LOCK-20261017-01",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "qa-reviewer-auditor",
+      "status": "COMPLETED",
+      "write_files": [
+        "memory/session/subagent_wals/qa-reviewer-auditor__TASK-GOV-HARDENING.wal.md",
+        "memory/findings/entries/TASK-GOV-HARDENING__qa-reviewer-auditor__FND-20261017-001.json"
+      ],
+      "read_files": [
+        "memory/decisions/DECISION_LOG.md",
+        "docs/PRODUCT_VISION_AND_MODES.md"
+      ]
+    },
+    {
+      "lock_id": "LOCK-20261017-02",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "vector-and-typography-agent",
+      "status": "COMPLETED",
+      "write_files": [
+        "memory/session/subagent_wals/vector-and-typography-agent__TASK-GOV-HARDENING.wal.md",
+        "memory/findings/entries/TASK-GOV-HARDENING__vector-and-typography-agent__FND-20261017-002.json"
+      ],
+      "read_files": [
+        "docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md"
+      ]
+    }
+  ]
+}

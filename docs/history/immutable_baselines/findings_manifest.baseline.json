@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "policy": "APPEND_ONLY_NON_DELETABLE_FINDINGS_REGISTRY",
+  "registered_findings": {
+    "FND-20261017-001": {
+      "finding_id": "FND-20261017-001",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "qa-reviewer-auditor",
+      "entry_file": "memory/findings/entries/TASK-GOV-HARDENING__qa-reviewer-auditor__FND-20261017-001.json",
+      "created_at": "2026-10-17T08:20:00Z",
+      "current_approval_state": "PROMOTED",
+      "entry_sha256": "a2ba523899a6e9929a9136c4f91998e6f42dcc0f9ed0a5306dbdea7a2de03ac8",
+      "deleted": false
+    },
+    "FND-20261017-002": {
+      "finding_id": "FND-20261017-002",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "vector-and-typography-agent",
+      "entry_file": "memory/findings/entries/TASK-GOV-HARDENING__vector-and-typography-agent__FND-20261017-002.json",
+      "created_at": "2026-10-17T08:20:30Z",
+      "current_approval_state": "PROMOTED",
+      "entry_sha256": "2f525d5a6822e415b94e1b516315bbbeefa06b8cb6f1ef25a9e72bc9a720828d",
+      "deleted": false
+    }
+  },
+  "audit_trail": [
+    {
+      "audit_id": "FAUD-0001",
+      "timestamp": "2026-10-17T08:20:00Z",
+      "action": "REGISTER_AND_PROMOTE",
+      "finding_id": "FND-20261017-001",
+      "actor": "orchestrator-planner"
+    },
+    {
+      "audit_id": "FAUD-0002",
+      "timestamp": "2026-10-17T08:20:30Z",
+      "action": "REGISTER_AND_PROMOTE",
+      "finding_id": "FND-20261017-002",
+      "actor": "orchestrator-planner"
+    }
+  ]
+}

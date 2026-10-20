@@ -1,0 +1,138 @@
+{
+  "gate": "CONTROLLED_DELTA_ACCEPTANCE",
+  "timestamp_utc": "2026-10-18T02:30:00Z",
+  "steps": {
+    "1_baseline_captured": {
+      "baseline_id": "BASE_ACCEPTANCE_AUTHENTIC",
+      "files_count": 9,
+      "files": [
+        "assets/logo.png",
+        "docs/ARCHITECTURE.md",
+        "docs/DEPRECATED.md",
+        "docs/GUIDE.md",
+        "docs/INDEX.md",
+        "src/constants.py",
+        "src/core/math_utils.py",
+        "src/old_name.py",
+        "src/pipeline.py"
+      ]
+    },
+    "2_diff_computed": {
+      "summary": {
+        "added": 1,
+        "modified": 5,
+        "deleted": 1,
+        "renamed": 1,
+        "unchanged": 2
+      },
+      "entries_count": 8,
+      "entries": [
+        {
+          "operation": "ADD",
+          "path": "docs/NEW_FEATURE_SPEC.md",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 58
+        },
+        {
+          "operation": "DELETE",
+          "path": "docs/DEPRECATED.md",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 0
+        },
+        {
+          "operation": "MODIFY",
+          "path": "assets/logo.png",
+          "renamed_from": null,
+          "is_binary": true,
+          "size_bytes": 40
+        },
+        {
+          "operation": "MODIFY",
+          "path": "docs/ARCHITECTURE.md",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 64
+        },
+        {
+          "operation": "MODIFY",
+          "path": "docs/GUIDE.md",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 56
+        },
+        {
+          "operation": "MODIFY",
+          "path": "src/core/math_utils.py",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 63
+        },
+        {
+          "operation": "MODIFY",
+          "path": "src/pipeline.py",
+          "renamed_from": null,
+          "is_binary": false,
+          "size_bytes": 45
+        },
+        {
+          "operation": "RENAME",
+          "path": "src/renamed_feature.py",
+          "renamed_from": "src/old_name.py",
+          "is_binary": false,
+          "size_bytes": 40
+        }
+      ]
+    },
+    "3_package_verified": {
+      "archive_name": "AGD_CONTROLLED_DELTA_TEST.zip",
+      "size_bytes": 4776,
+      "status": "VALID",
+      "entries_count": 8,
+      "payload_files_count": 7
+    },
+    "4_applied_to_matching_baseline": {
+      "status": "APPLIED",
+      "applied_count": 8,
+      "applied_entries": [
+        "MODIFY: assets/logo.png",
+        "MODIFY: docs/ARCHITECTURE.md",
+        "DELETE: docs/DEPRECATED.md",
+        "MODIFY: docs/GUIDE.md",
+        "ADD: docs/NEW_FEATURE_SPEC.md",
+        "MODIFY: src/core/math_utils.py",
+        "MODIFY: src/pipeline.py",
+        "RENAME: src/old_name.py -> src/renamed_feature.py"
+      ]
+    },
+    "5_byte_for_byte_verification": {
+      "status": "EXACT_BYTE_FOR_BYTE_MATCH",
+      "reconstructed_files_count": 9,
+      "target_files_count": 9,
+      "hash_mismatches_count": 0
+    },
+    "6_incompatible_baseline_rejected": {
+      "status": "FAILED",
+      "stage": "PREREQUISITE_CHECK",
+      "errors": [
+        "Base file content mismatch for assets/logo.png: expected cc902a62053e..., got c40184891ef3...",
+        "Base file content mismatch for docs/ARCHITECTURE.md: expected 586445e6cd69..., got 091df92da617...",
+        "Required base file missing from target workspace: docs/DEPRECATED.md",
+        "Base file content mismatch for docs/GUIDE.md: expected 668f1e08b7ae..., got 16f35a7025a0...",
+        "Base file content mismatch for src/core/math_utils.py: expected 57df89fa4642..., got ffd3570a2443...",
+        "Required base file missing from target workspace: src/old_name.py",
+        "Base file content mismatch for src/pipeline.py: expected c36f8a1844ef..., got cdc40984a105...",
+        "Base hash collision for assets/logo.png: expected cc902a62053e..., found c40184891ef3...",
+        "Base hash collision for docs/ARCHITECTURE.md: expected 586445e6cd69..., found 091df92da617...",
+        "Expected file to modify/delete not found in target: docs/DEPRECATED.md",
+        "Base hash collision for docs/GUIDE.md: expected 668f1e08b7ae..., found 16f35a7025a0...",
+        "Base hash collision for src/core/math_utils.py: expected 57df89fa4642..., found ffd3570a2443...",
+        "Base hash collision for src/pipeline.py: expected c36f8a1844ef..., found cdc40984a105...",
+        "Source file for rename not found: src/old_name.py"
+      ],
+      "files_modified_in_target": 0
+    }
+  },
+  "verdict": "CONTROLLED_ACCEPTANCE_PASSED_100_PERCENT"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "3.0",
+  "revision_no": 0,
+  "current_project_stage": "ARCHITECTURE_AND_GOVERNANCE_PREPARATION",
+  "architecture_approval_status": "NOT_APPROVED",
+  "p0_implementation_gate": "BLOCKED_PENDING_OWNER_APPROVAL_AND_FEASIBILITY_EXPERIMENTS",
+  "approved_architecture_decisions": [],
+  "approved_feasibility_experiments": [],
+  "unapproved_technical_proposals": [
+    "ADR-001",
+    "ADR-002",
+    "ADR-003",
+    "ADR-004",
+    "ADR-007"
+  ],
+  "owner_governance_mandates": [
+    {
+      "decision_id": "ADR-005",
+      "classification": "OWNER_REQUIREMENT",
+      "status": "TECHNICALLY_REVIEWED",
+      "provenance_source": "docs/product/VISION_TO_REQUIREMENTS_TRACEABILITY.md#OV-13"
+    },
+    {
+      "decision_id": "ADR-006",
+      "classification": "OWNER_REQUIREMENT",
+      "status": "TECHNICALLY_REVIEWED",
+      "provenance_source": "docs/product/VISION_TO_REQUIREMENTS_TRACEABILITY.md#OV-15"
+    }
+  ],
+  "approval_revision_history": [],
+  "policy_note": "Single authoritative approval state registry. Derived documentation must NEVER independently declare OWNER_APPROVED. Syntactic validity proves technical preconditions and provenance chain consistency, not cryptographic human identity; autonomous agent execution of approval transitions is blocked by rule and PreToolUse hook."
+}

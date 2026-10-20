@@ -1,0 +1,82 @@
+{
+  "schema_version": "2.0",
+  "policy": "APPEND_ONLY_NON_DELETABLE_FINDINGS_REGISTRY",
+  "registered_findings": {
+    "FND-20261017-001": {
+      "finding_id": "FND-20261017-001",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "qa-reviewer-auditor",
+      "entry_file": "memory/findings/entries/TASK-GOV-HARDENING__qa-reviewer-auditor__FND-20261017-001.json",
+      "created_at": "2026-10-17T08:20:00Z",
+      "current_approval_state": "PROMOTED",
+      "entry_sha256": "a2ba523899a6e9929a9136c4f91998e6f42dcc0f9ed0a5306dbdea7a2de03ac8",
+      "deleted": false
+    },
+    "FND-20261017-002": {
+      "finding_id": "FND-20261017-002",
+      "task_id": "TASK-GOV-HARDENING",
+      "subagent_id": "vector-and-typography-agent",
+      "entry_file": "memory/findings/entries/TASK-GOV-HARDENING__vector-and-typography-agent__FND-20261017-002.json",
+      "created_at": "2026-10-17T08:20:30Z",
+      "current_approval_state": "PROMOTED",
+      "entry_sha256": "2f525d5a6822e415b94e1b516315bbbeefa06b8cb6f1ef25a9e72bc9a720828d",
+      "deleted": false
+    },
+    "FND-20261017-003": {
+      "finding_id": "FND-20261017-003",
+      "task_id": "TASK-V01-CORRECTION-01",
+      "subagent_id": "vector-and-typography-agent",
+      "entry_file": "memory/findings/entries/TASK-V01-CORRECTION-01__vector-and-typography-agent__FND-20261017-003.json",
+      "created_at": "2026-10-17T18:05:58.651518+00:00",
+      "current_approval_state": "PROMOTED",
+      "entry_sha256": "81bf61c6ef871b257a943e7979e8cb9cc93c6849297d602e5d5840038c809930",
+      "deleted": false
+    }
+  },
+  "audit_trail": [
+    {
+      "audit_id": "FAUD-0001",
+      "timestamp": "2026-10-17T08:20:00Z",
+      "action": "REGISTER_AND_PROMOTE",
+      "finding_id": "FND-20261017-001",
+      "actor": "orchestrator-planner"
+    },
+    {
+      "audit_id": "FAUD-0002",
+      "timestamp": "2026-10-17T08:20:30Z",
+      "action": "REGISTER_AND_PROMOTE",
+      "finding_id": "FND-20261017-002",
+      "actor": "orchestrator-planner"
+    },
+    {
+      "audit_id": "FAUD-0004",
+      "timestamp": "2026-10-17T18:05:58.651518+00:00",
+      "action": "CAPTURE",
+      "finding_id": "FND-20261017-003",
+      "actor": "vector-and-typography-agent"
+    },
+    {
+      "audit_id": "FAUD-0005",
+      "timestamp": "2026-10-17T18:06:07.618108+00:00",
+      "action": "SUBMIT_FOR_REVIEW",
+      "finding_id": "FND-20261017-003",
+      "actor": "vector-and-typography-agent"
+    },
+    {
+      "audit_id": "FAUD-0005",
+      "timestamp": "2026-10-17T19:11:47.763082+00:00",
+      "action": "REVIEW_APPROVED_FOR_PROMOTION",
+      "finding_id": "FND-20261017-003",
+      "actor": "orchestrator-planner",
+      "event_id": "REV-FND-20261017-003-001"
+    },
+    {
+      "audit_id": "FAUD-0006",
+      "timestamp": "2026-10-17T19:18:14.926962+00:00",
+      "action": "PROMOTE",
+      "finding_id": "FND-20261017-003",
+      "target_file": "versions/version-01/docs/ARCHITECTURE.md",
+      "actor": "orchestrator-planner"
+    }
+  ]
+}

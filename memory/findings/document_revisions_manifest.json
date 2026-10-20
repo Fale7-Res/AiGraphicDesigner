@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "policy": "IMMUTABLE_PROMOTION_SNAPSHOTS_WITH_VERSIONED_DOCUMENT_EVOLUTION",
+  "documents": {
+    "versions/version-01/docs/ARCHITECTURE.md": {
+      "initial_promotion_sha256": "ccc65fd9a86731cb49530df6ee0d9b72ceedb169e035e7ae19d0431f6163ae29",
+      "current_authorized_sha256": "b4f708ec5857a0947baf75b78871c371353e114148714630e4fde444c54210c8",
+      "revisions": [
+        {
+          "revision_id": "DOCREV-0001",
+          "recorded_at": "2026-10-17T20:06:45.971902+00:00",
+          "author": "orchestrator-planner",
+          "reason": "Authorize revision after promotion of FND-20261017-003",
+          "previous_sha256": "ccc65fd9a86731cb49530df6ee0d9b72ceedb169e035e7ae19d0431f6163ae29",
+          "new_sha256": "b4f708ec5857a0947baf75b78871c371353e114148714630e4fde444c54210c8",
+          "snapshot_file": "docs/history/promoted_targets/versions__version-01__docs__ARCHITECTURE.md__DOCREV-0001.snapshot.md",
+          "preserved_promotions": [
+            {
+              "finding_id": "FND-20261017-003",
+              "promoted_block_sha256": "1ff12c39b0cbbef017c4feb1ea1d8dfa12c01a8e87fcf5df657b2a323fe47bd7",
+              "new_line_start": 49,
+              "new_line_end": 53,
+              "superseded_by": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

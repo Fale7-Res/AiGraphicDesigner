@@ -1,0 +1,194 @@
+{
+  "timestamp_utc": "2026-10-17T19:14:39Z",
+  "task_id": "TASK-V01-ITERATION-07",
+  "agent": "vector-and-typography-agent",
+  "image": "A01_shield.png",
+  "dimensions": [
+    369,
+    249
+  ],
+  "experiment_1_pixel_run_upper_bound": {
+    "description": "Experiment 1: Lossless Pixel-Run Vector Representation (Theoretical Upper Bound)",
+    "svg_file_size_bytes": 203977,
+    "quant_vs_original": {
+      "mse": 88.99,
+      "rmse": 9.43,
+      "psnr_db": 28.64,
+      "ssim": 0.9059
+    },
+    "pixel_run_svg_vs_quant": {
+      "mse": 0.0,
+      "rmse": 0.0,
+      "psnr_db": 99.0,
+      "ssim": 1.0
+    },
+    "pixel_run_svg_vs_original": {
+      "mse": 88.99,
+      "rmse": 9.43,
+      "psnr_db": 28.64,
+      "ssim": 0.9059
+    },
+    "theoretical_upper_bound_psnr_db": 28.64,
+    "fidelity_loss_due_to_exact_vector_representation_mse": 0.0
+  },
+  "experiment_2_topology_breakdown": {
+    "step_a_pixel_grid_alignment": {
+      "raw_integer_centers_vs_quant": {
+        "mse": 1619.23,
+        "rmse": 40.24,
+        "psnr_db": 16.04,
+        "ssim": 0.7021
+      },
+      "shifted_half_pixel_vs_quant": {
+        "mse": 1349.12,
+        "rmse": 36.73,
+        "psnr_db": 16.83,
+        "ssim": 0.7312
+      },
+      "interpretation": "Integer centers clip boundary pixels, leading to seam gaps. Half-pixel shifting reduces boundary clipping."
+    },
+    "step_b_polygon_simplification_sweep": {
+      "epsilon_0.25": {
+        "vertices": 7740,
+        "metrics_vs_quant": {
+          "mse": 1619.23,
+          "rmse": 40.24,
+          "psnr_db": 16.04,
+          "ssim": 0.7021
+        },
+        "metrics_vs_orig": {
+          "mse": 1695.94,
+          "rmse": 41.18,
+          "psnr_db": 15.84,
+          "ssim": 0.6612
+        }
+      },
+      "epsilon_0.5": {
+        "vertices": 4716,
+        "metrics_vs_quant": {
+          "mse": 1531.83,
+          "rmse": 39.14,
+          "psnr_db": 16.28,
+          "ssim": 0.7081
+        },
+        "metrics_vs_orig": {
+          "mse": 1606.99,
+          "rmse": 40.09,
+          "psnr_db": 16.07,
+          "ssim": 0.6669
+        }
+      },
+      "epsilon_1.0": {
+        "vertices": 1832,
+        "metrics_vs_quant": {
+          "mse": 1409.14,
+          "rmse": 37.54,
+          "psnr_db": 16.64,
+          "ssim": 0.7197
+        },
+        "metrics_vs_orig": {
+          "mse": 1483.13,
+          "rmse": 38.51,
+          "psnr_db": 16.42,
+          "ssim": 0.6766
+        }
+      },
+      "epsilon_1.5": {
+        "vertices": 1104,
+        "metrics_vs_quant": {
+          "mse": 1467.47,
+          "rmse": 38.31,
+          "psnr_db": 16.47,
+          "ssim": 0.7194
+        },
+        "metrics_vs_orig": {
+          "mse": 1542.68,
+          "rmse": 39.28,
+          "psnr_db": 16.25,
+          "ssim": 0.6745
+        }
+      },
+      "epsilon_2.0": {
+        "vertices": 773,
+        "metrics_vs_quant": {
+          "mse": 1595.17,
+          "rmse": 39.94,
+          "psnr_db": 16.1,
+          "ssim": 0.6983
+        },
+        "metrics_vs_orig": {
+          "mse": 1668.63,
+          "rmse": 40.85,
+          "psnr_db": 15.91,
+          "ssim": 0.6605
+        }
+      }
+    },
+    "step_c_bezier_fitting_no_stroke": {
+      "total_nodes": 3274,
+      "metrics_vs_quant": {
+        "mse": 1343.57,
+        "rmse": 36.65,
+        "psnr_db": 16.85,
+        "ssim": 0.7287
+      },
+      "metrics_vs_orig": {
+        "mse": 1418.86,
+        "rmse": 37.67,
+        "psnr_db": 16.61,
+        "ssim": 0.6855
+      }
+    },
+    "step_d_stroke_trapping_sweep": {
+      "stroke_width_0.5": {
+        "metrics_vs_quant": {
+          "mse": 788.36,
+          "rmse": 28.08,
+          "psnr_db": 19.16,
+          "ssim": 0.7886
+        },
+        "metrics_vs_orig": {
+          "mse": 857.37,
+          "rmse": 29.28,
+          "psnr_db": 18.8,
+          "ssim": 0.7379
+        }
+      },
+      "stroke_width_1.0": {
+        "metrics_vs_quant": {
+          "mse": 533.59,
+          "rmse": 23.1,
+          "psnr_db": 20.86,
+          "ssim": 0.8315
+        },
+        "metrics_vs_orig": {
+          "mse": 597.41,
+          "rmse": 24.44,
+          "psnr_db": 20.37,
+          "ssim": 0.7774
+        }
+      },
+      "stroke_width_1.5": {
+        "metrics_vs_quant": {
+          "mse": 422.17,
+          "rmse": 20.55,
+          "psnr_db": 21.88,
+          "ssim": 0.8545
+        },
+        "metrics_vs_orig": {
+          "mse": 482.13,
+          "rmse": 21.96,
+          "psnr_db": 21.3,
+          "ssim": 0.8005
+        }
+      }
+    },
+    "silhouette_bloating_analysis": {
+      "foreground_pixels_original": 58476,
+      "foreground_pixels_stroke_0_0": 55119,
+      "foreground_pixels_stroke_1_0": 60017,
+      "bloat_pixels_added_by_stroke_1_0": 1541,
+      "bloat_percentage": 2.64
+    }
+  }
+}

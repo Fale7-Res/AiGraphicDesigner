@@ -1,0 +1,37 @@
+{
+  "session-memory-init": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python tools/memory_guard/session_start_hook.py",
+        "timeout": 10
+      }
+    ]
+  },
+  "owner-approval-pre-tool-gate": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python tools/memory_guard/pre_tool_use_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "brain-sync-stop-gate": {
+    "enabled": true,
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python tools/memory_guard/stop_gate_hook.py",
+        "timeout": 15
+      }
+    ]
+  }
+}

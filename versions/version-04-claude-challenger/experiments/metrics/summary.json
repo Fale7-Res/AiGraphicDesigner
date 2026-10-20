@@ -1,0 +1,332 @@
+{
+  "dataset_images": 12,
+  "budget_cells": 9000,
+  "renderer": "Inkscape CLI; source native dimensions; same renderer for V01 and V04",
+  "v01_baseline": "versions/version-01/experiments/preliminary_visual_tests/outputs/A##_v01_vector.svg",
+  "v04_representation": "hybrid vector-only adaptive surface tessellation + 5-bit/channel source-derived dilated Canny edge-band residual",
+  "previous_saved_svg_matched_current_generator_for_processed_images": null,
+  "per_image_saved_svg_match_checks_for_newly_processed_images": [],
+  "all_v04_xml_well_formed": true,
+  "all_v04_embedded_raster_count_zero": true,
+  "comparisons": {
+    "mse": {
+      "v01_mean": 1074.5813257241878,
+      "v04_mean": 109.51543940885999,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    },
+    "psnr_db": {
+      "v01_mean": 18.022506726003698,
+      "v04_mean": 28.04429616843075,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    },
+    "ssim": {
+      "v01_mean": 0.59877226503569,
+      "v04_mean": 0.883122665277993,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    },
+    "edge_precision_1px": {
+      "v01_mean": 0.7071931485362227,
+      "v04_mean": 0.832964356633089,
+      "v04_better_count": 10,
+      "v04_worse_count": 2,
+      "n": 12,
+      "v04_worse_images": [
+        "A09",
+        "A10"
+      ]
+    },
+    "edge_recall_1px": {
+      "v01_mean": 0.8391816255981418,
+      "v04_mean": 0.9852629997654501,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    },
+    "edge_f1_1px": {
+      "v01_mean": 0.7556169050652074,
+      "v04_mean": 0.9008926653430671,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    },
+    "small_edge_component_recall_proxy": {
+      "v01_mean": 0.7826425961684279,
+      "v04_mean": 0.9740747143775424,
+      "v04_better_count": 11,
+      "v04_worse_count": 1,
+      "n": 12,
+      "v04_worse_images": [
+        "A04"
+      ]
+    },
+    "foreground_iou_proxy": {
+      "v01_mean": 0.921094340183013,
+      "v04_mean": 0.962881605096796,
+      "v04_better_count": 12,
+      "v04_worse_count": 0,
+      "n": 12,
+      "v04_worse_images": []
+    }
+  },
+  "complexity": {
+    "v01_mean_paths": 632.5833333333334,
+    "v04_mean_paths": 2838.5833333333335,
+    "v04_mean_residual_color_paths": 2838.5833333333335,
+    "v01_mean_svg_bytes": 604251.0833333334,
+    "v04_mean_svg_bytes": 1253266.75,
+    "v01_mean_estimated_path_anchors_controls": 34485.333333333336,
+    "v04_mean_path_anchors_controls": 120359.33333333333,
+    "v04_mean_rectangles": 9000.0,
+    "v04_mean_gradients": 434.3333333333333,
+    "v04_mean_residual_runs": 30089.833333333332
+  },
+  "performance": {
+    "v04_mean_generation_ms": 1446.7016666666666,
+    "v04_median_generation_ms": 1517.8775,
+    "v04_mean_surface_generation_ms": 1351.2934166666666,
+    "v04_mean_inkscape_render_ms": 594.9665000000001,
+    "v01_mean_inkscape_render_ms": 257.9654166666667,
+    "fresh_render_timing_images": 12,
+    "process_peak_rss_sampled_mb": 123.859,
+    "rss_sampling_interval_ms": 10,
+    "note": "Local runtime; Python process RSS sampled every 10 ms. Per-image v04_render_ms=0 in benchmark_results indicates a cached render reuse. Fresh renderer timings, when present, are separate paired reruns recorded in render_performance.csv."
+  },
+  "verification": {
+    "images": 12,
+    "all_deterministic_byte_identical": true,
+    "all_svg_xml_well_formed": true,
+    "no_embedded_raster_images": true,
+    "all_render_dimensions_match_source": true,
+    "all_hybrid_representation_labels_present": true,
+    "per_image": [
+      {
+        "image_id": "A01",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 911280,
+        "render_png_dimensions": [
+          369,
+          249
+        ],
+        "source_dimensions": [
+          369,
+          249
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A02",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1497219,
+        "render_png_dimensions": [
+          377,
+          249
+        ],
+        "source_dimensions": [
+          377,
+          249
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A03",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1554469,
+        "render_png_dimensions": [
+          374,
+          249
+        ],
+        "source_dimensions": [
+          374,
+          249
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A04",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1124438,
+        "render_png_dimensions": [
+          371,
+          249
+        ],
+        "source_dimensions": [
+          371,
+          249
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A05",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1130680,
+        "render_png_dimensions": [
+          369,
+          250
+        ],
+        "source_dimensions": [
+          369,
+          250
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A06",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1397840,
+        "render_png_dimensions": [
+          377,
+          250
+        ],
+        "source_dimensions": [
+          377,
+          250
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A07",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1617357,
+        "render_png_dimensions": [
+          374,
+          250
+        ],
+        "source_dimensions": [
+          374,
+          250
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A08",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1087315,
+        "render_png_dimensions": [
+          371,
+          250
+        ],
+        "source_dimensions": [
+          371,
+          250
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A09",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 855634,
+        "render_png_dimensions": [
+          369,
+          245
+        ],
+        "source_dimensions": [
+          369,
+          245
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A10",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 960892,
+        "render_png_dimensions": [
+          377,
+          245
+        ],
+        "source_dimensions": [
+          377,
+          245
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A11",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1584389,
+        "render_png_dimensions": [
+          374,
+          245
+        ],
+        "source_dimensions": [
+          374,
+          245
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      },
+      {
+        "image_id": "A12",
+        "deterministic_reproduction_byte_identical": true,
+        "svg_xml_well_formed": true,
+        "embedded_image_elements": 0,
+        "external_image_href": false,
+        "svg_bytes": 1317688,
+        "render_png_dimensions": [
+          371,
+          245
+        ],
+        "source_dimensions": [
+          371,
+          245
+        ],
+        "render_dimensions_match": true,
+        "representation_declares_hybrid_vector_only": true
+      }
+    ]
+  },
+  "deterministic_svg_reproduction_all_images": true
+}

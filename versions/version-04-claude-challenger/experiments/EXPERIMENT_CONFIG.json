@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "version_id": "version-04-claude-challenger",
+  "status": "isolated experimental challenger; not approved or promoted",
+  "owner_vision": "docs/product/OWNER_ORIGINAL_VISION.md (read-only source of truth)",
+  "inputs": {
+    "synthetic": "versions/version-04-claude-challenger/experiments/synthetic/S00_known_geometry_source.png",
+    "benchmark_directory": "AI_Graphic_Designer_Test_Images_Initial_12/",
+    "benchmark_count": 12,
+    "baseline_svg_pattern": "versions/version-01/experiments/preliminary_visual_tests/outputs/A##_v01_vector.svg",
+    "source_dimensions": "original native width and height; no rescaling before scoring"
+  },
+  "method": {
+    "surface": "adaptive quadtree rectangular SVG tessellation; local SSE-guided split queue; optional per-cell rank-1 linear gradient",
+    "leaf_cell_budget": 9000,
+    "edge_priority_weight": 1.5,
+    "edge_residual": "Canny(80,160) over grayscale, one 3x3 dilation, source-derived RGB quantization, horizontal same-color run encoding",
+    "edge_residual_bits_per_channel": 5,
+    "edge_residual_dilation_iterations": 1,
+    "embedded_raster_images_allowed": false,
+    "semantic_layer_recovery_claimed": false
+  },
+  "controlled_experiments": [
+    "S00 known geometry surface-only and hybrid residual outputs",
+    "A01 surface-only budget sweep at 1000, 2500, 5000 and 9000 cells",
+    "12-image native-size final hybrid set"
+  ],
+  "renderer": {
+    "name": "Inkscape CLI",
+    "same_renderer_for_v01_and_v04": true,
+    "native_dimensions": true,
+    "raster_output_format": "PNG"
+  },
+  "metrics": [
+    "MSE", "PSNR", "SSIM", "Canny edge precision/recall/F1 within a dilated one-pixel band",
+    "heuristic small-edge-component recall proxy", "heuristic foreground IoU proxy",
+    "SVG bytes", "path count", "estimated path commands/anchors", "rectangle count", "linear gradients",
+    "generation wall time", "fresh paired Inkscape render wall time", "sampled Python process RSS"
+  ],
+  "limitations": [
+    "edge/foreground quality metrics are proxies and not semantic annotations",
+    "the residual layer uses source-derived edge locations and colors",
+    "pixel metrics do not measure semantic structure or professional editability",
+    "measurements are specific to this local environment and Inkscape build"
+  ]
+}

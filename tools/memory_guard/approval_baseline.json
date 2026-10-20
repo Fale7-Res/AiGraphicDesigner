@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.0",
+  "required_project_stage": "ARCHITECTURE_AND_GOVERNANCE_PREPARATION",
+  "required_architecture_approval_status": "NOT_APPROVED",
+  "required_p0_gate": "BLOCKED_PENDING_OWNER_APPROVAL_AND_FEASIBILITY_EXPERIMENTS",
+  "allow_architecture_owner_approved": false,
+  "allow_p0_owner_approved": false,
+  "must_remain_not_approved_adrs": [
+    "ADR-001",
+    "ADR-002",
+    "ADR-003",
+    "ADR-004",
+    "ADR-007"
+  ],
+  "required_experiment_reports_before_approval": [
+    "docs/architecture/experiments/EXP-01_report.json",
+    "docs/architecture/experiments/EXP-02_report.json",
+    "docs/architecture/experiments/EXP-03_report.json",
+    "docs/architecture/experiments/EXP-04_report.json",
+    "docs/architecture/experiments/EXP-05_report.json"
+  ],
+  "forbid_token_strings": [
+    "OWNER_AUTHORIZATION_TOKEN"
+  ]
+}

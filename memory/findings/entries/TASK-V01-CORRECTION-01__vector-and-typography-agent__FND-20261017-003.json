@@ -1,0 +1,58 @@
+{
+  "finding_id": "FND-20261017-003",
+  "task_id": "TASK-V01-CORRECTION-01",
+  "subagent_id": "vector-and-typography-agent",
+  "created_at": "2026-10-17T18:05:58.651518+00:00",
+  "source_file_paths": [
+    "versions/version-01/src/pipeline.py"
+  ],
+  "line_ranges": [
+    {
+      "file": "versions/version-01/src/pipeline.py",
+      "start_line": 128,
+      "end_line": 130
+    }
+  ],
+  "source_revisions": [
+    {
+      "file": "versions/version-01/src/pipeline.py",
+      "sha256": "20bce081ae7d150680ee7049132852afb79a4a7341d56684fb8b08bd457c3f09"
+    }
+  ],
+  "evidence": "cluster_areas.sort globally by pixel count violates local topological enclosure, inverting layer order in nested shapes and text.",
+  "confidence": "HIGH",
+  "proposed_action": "Implement topological enclosure DAG and Kahn's topological sort for layer ordering, and silhouette-constrained dilation for seam trapping.",
+  "current_approval_state": "PROMOTED",
+  "review_events": [
+    {
+      "event_id": "REV-FND-20261017-003-001",
+      "timestamp": "2026-10-17T19:11:47.763082+00:00",
+      "reviewer_agent": "orchestrator-planner",
+      "decision": "APPROVED_FOR_PROMOTION",
+      "rejection_reason": "",
+      "notes": "Approved: Topological enclosure and silhouette trapping are valid findings for Iteration 07 experiments"
+    }
+  ],
+  "promotion_record": {
+    "promoted_at": "2026-10-17T19:18:14.926962+00:00",
+    "target_documents": [
+      "versions/version-01/docs/ARCHITECTURE.md"
+    ],
+    "target_section_or_id": "FND-20261017-003",
+    "verification_marker": "FND-20261017-003",
+    "target_sha256_after": "ccc65fd9a86731cb49530df6ee0d9b72ceedb169e035e7ae19d0431f6163ae29",
+    "retained_after_promotion": true,
+    "promoted_targets": [
+      {
+        "target_file": "versions/version-01/docs/ARCHITECTURE.md",
+        "verification_marker": "FND-20261017-003",
+        "promoted_block_line_start": 49,
+        "promoted_block_line_end": 53,
+        "promoted_verbatim_block": "## 4. المكتشفات التقنية المعتمدة لترتيب الطبقات وسد الشروخ (`FND-20261017-003`)\n\n- **المرجع:** `FND-20261017-003` (ترتيب الطبقات الطوبولوجي وسد الشروخ الظلية).\n- **التشخيص:** فرز العناقيد اللونيّة عالمياً بمجرد عدد البكسلات (`cluster_areas.sort`) يخل بالعلاقات المكانية للتضمين والاحتواء الطوبولوجي، مما يقلب ترتيب الطبقات في الأشكال المتداخلة والنصوص.\n- **الحل المعتمد:** تطبيق مخطط الاحتواء الطوبولوجي الموجه (Topological Enclosure DAG) وفرز كان (Kahn's Topological Sort) لترتيب الطبقات، مع تمديد مقيد بالمحيط الخارجي (Silhouette-constrained dilation) لسد الشروخ البينية دون تشويه الحواف الحادة.",
+        "promoted_block_sha256": "1ff12c39b0cbbef017c4feb1ea1d8dfa12c01a8e87fcf5df657b2a323fe47bd7",
+        "target_file_sha256": "ccc65fd9a86731cb49530df6ee0d9b72ceedb169e035e7ae19d0431f6163ae29",
+        "snapshot_file": "docs/history/promoted_targets/FND-20261017-003__versions__version-01__docs__ARCHITECTURE.md.snapshot.md"
+      }
+    ]
+  }
+}

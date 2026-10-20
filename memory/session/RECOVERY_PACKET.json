@@ -1,0 +1,32 @@
+{
+  "recovered_at": "2026-10-17T06:25:56.629746+00:00",
+  "status": "RECOVERED_CLEAN",
+  "architecture_approval_status": "NOT_APPROVED",
+  "main_wal_entry_count": 4,
+  "latest_main_wal_id": "WAL-0004",
+  "isolated_subagent_wals": [
+    {
+      "file": "memory/session/subagent_wals/qa-reviewer-auditor__TASK-GOV-HARDENING.wal.md",
+      "step_count": 2,
+      "last_step": "STEP-02"
+    },
+    {
+      "file": "memory/session/subagent_wals/vector-and-typography-agent__TASK-GOV-HARDENING.wal.md",
+      "step_count": 2,
+      "last_step": "STEP-02"
+    }
+  ],
+  "active_subagent_locks": [],
+  "findings": [
+    {
+      "finding_id": "FND-20261017-001",
+      "subagent_id": "qa-reviewer-auditor",
+      "state": "PROMOTED"
+    },
+    {
+      "finding_id": "FND-20261017-002",
+      "subagent_id": "vector-and-typography-agent",
+      "state": "PROMOTED"
+    }
+  ]
+}

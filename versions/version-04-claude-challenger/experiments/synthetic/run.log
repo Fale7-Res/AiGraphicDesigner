@@ -1,0 +1,76 @@
+{
+  "surface_only": {
+    "experiment": "S00_known_nested_geometry_gradient_shadow_and_highlights",
+    "source_size": [
+      320,
+      240
+    ],
+    "budget": 9000,
+    "source": "/mnt/data/agd_work/versions/version-04-claude-challenger/experiments/synthetic/S00_known_geometry_source.png",
+    "width": 320,
+    "height": 240,
+    "leaf_cells": 9000,
+    "rectangles": 9000,
+    "linear_gradients": 126,
+    "path_count": 0,
+    "path_anchor_and_control_points": 0,
+    "implicit_rectangle_corners": 36000,
+    "embedded_raster_images": 0,
+    "svg_bytes": 555005,
+    "generation_ms": 1148.287,
+    "representation": "pure vector surface tessellation; non-semantic cell objects",
+    "requested_cell_budget": 9000,
+    "render_ms": 444.222,
+    "mse": 396.0909027777778,
+    "psnr_db": 22.15285493012424,
+    "ssim": 0.8547072642402629,
+    "edge_precision_1px": 0.5300821627352239,
+    "edge_recall_1px": 0.8873812754409769,
+    "edge_f1_1px": 0.6636996383648835,
+    "small_edge_component_recall_proxy": 0.9602888086642599,
+    "border_background_foreground_iou_proxy": 0.9715791886316755,
+    "known_geometry": [
+      "rounded plaque",
+      "nested shield polygons",
+      "gold border",
+      "red inset",
+      "highlight patch",
+      "ring with hole",
+      "blurred shadow",
+      "two small marks"
+    ],
+    "limitations": [
+      "test is synthetic and not evidence of semantic layer recovery",
+      "input shadow was pre-composited to RGB",
+      "tessellation is not object-aware"
+    ]
+  },
+  "hybrid_edge_residual": {
+    "experiment": "S00_known_geometry_hybrid_edge_residual_iteration",
+    "source_size": [
+      320,
+      240
+    ],
+    "edge_residual_method": "Canny(80,160), dilated 3x3 neighborhood, horizontal same-color runs; vector-only, source-derived color correction",
+    "edge_residual_dilation_iterations": 1,
+    "edge_residual_color_bits_per_channel": 5,
+    "edge_residual_pixels": 7019,
+    "edge_residual_horizontal_runs": 5525,
+    "edge_residual_color_paths": 445,
+    "edge_residual_implicit_corners": 22100,
+    "embedded_raster_images": 0,
+    "representation": "hybrid vector surface tessellation plus quantized edge-band residual; non-semantic objects",
+    "svg_bytes": 666198,
+    "generation_plus_overlay_ms": 1173.932,
+    "render_ms": 424.117,
+    "mse": 178.7998046875,
+    "psnr_db": 25.607133208106248,
+    "ssim": 0.8947045434143911,
+    "edge_precision_1px": 0.517121702915317,
+    "edge_recall_1px": 0.9995477159656264,
+    "edge_f1_1px": 0.6816090712854748,
+    "small_edge_component_recall_proxy": 0.9963898916967509,
+    "border_background_foreground_iou_proxy": 0.9768508819709222,
+    "note": "Source-derived edge residual is intentionally a hybrid vector-only correction, not semantic recovery."
+  }
+}
