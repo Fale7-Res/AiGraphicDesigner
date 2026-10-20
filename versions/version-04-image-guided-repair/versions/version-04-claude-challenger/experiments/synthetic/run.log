@@ -1,0 +1,63 @@
+{
+  "test": "known geometry with nested shield layers, color highlights, ring-like details and a pre-composited soft shadow",
+  "source_dimensions": [
+    320,
+    240
+  ],
+  "generation_ms": 2093.516,
+  "render_ms": 208.11683499982792,
+  "source": "<array>",
+  "width": 320,
+  "height": 240,
+  "initial_slic_segments": 850,
+  "target_regions": 220,
+  "initial_regions": 712,
+  "merge_count": 492,
+  "actual_regions": 220,
+  "emitted_paths": 220,
+  "region_boundary_segments": 15670,
+  "gradient_count": 182,
+  "linear_gradient_count": 172,
+  "radial_gradient_count": 10,
+  "silhouette_cubic_segments": 27,
+  "dropped_tiny_or_invalid_regions": 0,
+  "silhouette": {
+    "grabcut_used": true,
+    "foreground_pixels": 29880,
+    "foreground_fraction": 0.3890625,
+    "silhouette_contours": 2,
+    "silhouette_cubic_segments": 27
+  },
+  "embedded_raster_images": 0,
+  "svg_bytes": 233604,
+  "method": "SLIC regions + simplified closed contours + cubic curves + local multi-stop gradients; no edge pixel stencil",
+  "config": {
+    "initial_segments": 850,
+    "target_regions": 220,
+    "compactness": 8.0,
+    "sigma": 0.65,
+    "boundary_weight": 0.018,
+    "merge_threshold": 0.0015,
+    "contour_epsilon_px": 1.8,
+    "min_region_area_px": 3,
+    "min_gradient_pixels": 30,
+    "min_gradient_r2": 0.28,
+    "min_gradient_gain": 0.2,
+    "gradient_stops": 5,
+    "seam_stroke_px": 0.0,
+    "seam_stroke_opacity": 0.0,
+    "corner_turn_degrees": 86.0,
+    "max_dimension": 4096
+  },
+  "mse": 205.75594618055555,
+  "psnr_db": 24.997279660427097,
+  "ssim": 0.9348899953351754,
+  "edge_precision_1px": 0.8186440677966101,
+  "edge_recall_1px": 0.9331020812685827,
+  "edge_f1_1px": 0.8721337665127268,
+  "foreground_iou_proxy": 0.9486693910096681,
+  "limitations": [
+    "single foreground clip is not semantic object decomposition",
+    "source contains a pre-composited shadow so this does not test independent shadow-layer recovery"
+  ]
+}

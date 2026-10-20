@@ -1,0 +1,90 @@
+{
+  "mse": {
+    "v01_mean": 1074.5813257241878,
+    "v04_mean": 459.9150337703912,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "psnr_db": {
+    "v01_mean": 18.022506726003698,
+    "v04_mean": 21.763447134251354,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "ssim": {
+    "v01_mean": 0.59877226503569,
+    "v04_mean": 0.7347900139255032,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "edge_precision_1px": {
+    "v01_mean": 0.7071931485362227,
+    "v04_mean": 0.818089478823608,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "edge_recall_1px": {
+    "v01_mean": 0.8391816255981418,
+    "v04_mean": 0.6936763086378778,
+    "v04_better_count": 1,
+    "v04_worse_or_tied_images": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A10",
+      "A11",
+      "A12"
+    ]
+  },
+  "edge_f1_1px": {
+    "v01_mean": 0.7556169050652074,
+    "v04_mean": 0.7438967565355891,
+    "v04_better_count": 5,
+    "v04_worse_or_tied_images": [
+      "A02",
+      "A03",
+      "A05",
+      "A06",
+      "A07",
+      "A11",
+      "A12"
+    ]
+  },
+  "foreground_iou_proxy": {
+    "v01_mean": 0.921094340183013,
+    "v04_mean": 0.9372801907510667,
+    "v04_better_count": 8,
+    "v04_worse_or_tied_images": [
+      "A04",
+      "A05",
+      "A09",
+      "A12"
+    ]
+  },
+  "complexity": {
+    "v01_mean_svg_kib": 590.0889485677084,
+    "v04_mean_svg_kib": 494.4375813802083,
+    "v01_mean_paths": 632.5833333333334,
+    "v04_mean_paths": 744.5,
+    "v04_mean_regions": 371.25,
+    "v04_mean_region_boundary_segments": 34749.333333333336,
+    "v04_mean_silhouette_cubic_segments": 49.75
+  },
+  "performance": {
+    "v04_mean_generation_ms": 1754.3937671666188,
+    "v04_mean_render_ms": 294.5977412500156,
+    "v01_mean_render_ms": 269.7599491666172,
+    "v04_render_timing_samples": 12,
+    "v01_render_timing_samples": 12,
+    "v04_render_reused_count": 12,
+    "v01_render_reused_count": 12,
+    "render_time_note": "If --reuse-existing-renders was used, stored per-image renderer timings are retained only when the prior full benchmark has them; the SVG is regenerated and must byte-match the existing file before reusing the PNG.",
+    "process_peak_rss_sampled_mb": 181.3984375,
+    "rss_sampling_interval_ms": 10
+  }
+}

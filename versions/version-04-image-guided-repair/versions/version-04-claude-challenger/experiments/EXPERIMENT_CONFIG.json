@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "version_id": "version-04-claude-challenger",
+  "task": "image-guided repair of SVG vectorization artifacts",
+  "isolated_scope": "versions/version-04-claude-challenger/",
+  "approval_status": "experiment only; no global architecture approval changed",
+  "owner_vision": "docs/product/OWNER_ORIGINAL_VISION.md (read-only)",
+  "review_reference": "user-provided V01/V04 visual review sheet showing jagged edges, blocky gradients/blur and missing detail",
+  "benchmark": {
+    "image_count": 12,
+    "input_directory": "AI_Graphic_Designer_Test_Images_Initial_12/",
+    "baseline_svg_pattern": "versions/version-01/experiments/preliminary_visual_tests/outputs/A##_v01_vector.svg",
+    "native_input_dimensions": true,
+    "render_engine": "Inkscape CLI",
+    "both_versions_use_same_render_dimensions_and_engine": true
+  },
+  "selected_algorithm": {
+    "initial_slic_segments": 850,
+    "adaptive_target_regions": {"min": 220, "max": 560},
+    "slic_compactness": 9.0,
+    "bilateral_filter": {"diameter": 5, "sigma_color": 14, "sigma_space": 3},
+    "region_merge": "adjacent SLIC regions merged by normalized 2D quadratic RGB surface-fit error plus Lab shared-boundary penalty",
+    "internal_geometry": "shared integer pixel-cell boundaries; collinear point removal only",
+    "external_geometry": "GrabCut composite foreground/background mask, simplified contours and cubic silhouette curves, complementary clip paths",
+    "region_appearance": "flat fill or local measured multi-stop SVG linear/radial gradient",
+    "contour_epsilon_px": 1.8,
+    "source_edge_pixel_stencil": false,
+    "embedded_or_external_raster_allowed": false,
+    "semantic_base_shadow_highlight_blur_decomposition_claimed": false
+  },
+  "measured_metrics": [
+    "MSE", "PSNR", "SSIM", "Canny edge precision/recall/F1 with one-pixel tolerance",
+    "heuristic foreground IoU proxy", "path count", "shared boundary segments", "silhouette cubic segment count",
+    "SVG bytes", "generation wall time", "paired Inkscape render wall time", "sampled Python-process RSS"
+  ],
+  "validation": [
+    "byte-identical SVG regeneration",
+    "XML well-formedness",
+    "no embedded image elements or raster external links",
+    "native render dimensions match source",
+    "four unit tests"
+  ],
+  "known_limitations": [
+    "GrabCut yields only a composite foreground/background mask, not per-object semantic layers",
+    "source RGB does not uniquely determine separate base color, cast shadow, highlight, transparency or blur layers",
+    "edge recall falls on 11/12 and edge F1 falls on 7/12 relative to V01 in the selected default run",
+    "high-region parameter probes improve selected images but are not the selected full-suite configuration"
+  ]
+}

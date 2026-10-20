@@ -1,0 +1,104 @@
+[1/12] A01 (target=220, regions=220): PSNR 19.92 -> 22.89 dB | SSIM 0.7444 -> 0.8290 | edgeF1 0.740 -> 0.813 | paths 148->442 | size 289 KiB
+[2/12] A02 (target=461, regions=461): PSNR 19.31 -> 21.79 dB | SSIM 0.5897 -> 0.6870 | edgeF1 0.760 -> 0.661 | paths 989->924 | size 624 KiB
+[3/12] A03 (target=472, regions=472): PSNR 17.26 -> 20.79 dB | SSIM 0.5487 -> 0.6998 | edgeF1 0.840 -> 0.750 | paths 915->946 | size 599 KiB
+[4/12] A04 (target=293, regions=293): PSNR 17.74 -> 23.46 dB | SSIM 0.5074 -> 0.7474 | edgeF1 0.593 -> 0.699 | paths 582->588 | size 487 KiB
+[5/12] A05 (target=281, regions=281): PSNR 20.79 -> 24.09 dB | SSIM 0.6561 -> 0.7810 | edgeF1 0.713 -> 0.629 | paths 350->564 | size 365 KiB
+[6/12] A06 (target=390, regions=390): PSNR 17.94 -> 21.64 dB | SSIM 0.4730 -> 0.6437 | edgeF1 0.773 -> 0.675 | paths 671->782 | size 545 KiB
+[7/12] A07 (target=551, regions=551): PSNR 18.31 -> 22.07 dB | SSIM 0.5967 -> 0.7172 | edgeF1 0.838 -> 0.779 | paths 1052->1104 | size 710 KiB
+[8/12] A08 (target=296, regions=296): PSNR 17.39 -> 23.18 dB | SSIM 0.5364 -> 0.7704 | edgeF1 0.602 -> 0.715 | paths 552->594 | size 443 KiB
+[9/12] A09 (target=220, regions=220): PSNR 18.12 -> 21.00 dB | SSIM 0.7410 -> 0.8023 | edgeF1 0.789 -> 0.877 | paths 219->442 | size 288 KiB
+[10/12] A10 (target=260, regions=260): PSNR 15.62 -> 18.46 dB | SSIM 0.7648 -> 0.7933 | edgeF1 0.849 -> 0.858 | paths 290->522 | size 323 KiB
+[11/12] A11 (target=538, regions=538): PSNR 16.73 -> 21.08 dB | SSIM 0.5219 -> 0.7002 | edgeF1 0.806 -> 0.761 | paths 993->1078 | size 688 KiB
+[12/12] A12 (target=473, regions=473): PSNR 17.15 -> 20.69 dB | SSIM 0.5052 -> 0.6464 | edgeF1 0.764 -> 0.710 | paths 830->948 | size 573 KiB
+
+SUMMARY
+{
+  "mse": {
+    "v01_mean": 1074.5813257241878,
+    "v04_mean": 459.9150337703912,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "psnr_db": {
+    "v01_mean": 18.022506726003698,
+    "v04_mean": 21.763447134251354,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "ssim": {
+    "v01_mean": 0.59877226503569,
+    "v04_mean": 0.7347900139255032,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "edge_precision_1px": {
+    "v01_mean": 0.7071931485362227,
+    "v04_mean": 0.818089478823608,
+    "v04_better_count": 12,
+    "v04_worse_or_tied_images": []
+  },
+  "edge_recall_1px": {
+    "v01_mean": 0.8391816255981418,
+    "v04_mean": 0.6936763086378778,
+    "v04_better_count": 1,
+    "v04_worse_or_tied_images": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A10",
+      "A11",
+      "A12"
+    ]
+  },
+  "edge_f1_1px": {
+    "v01_mean": 0.7556169050652074,
+    "v04_mean": 0.7438967565355891,
+    "v04_better_count": 5,
+    "v04_worse_or_tied_images": [
+      "A02",
+      "A03",
+      "A05",
+      "A06",
+      "A07",
+      "A11",
+      "A12"
+    ]
+  },
+  "foreground_iou_proxy": {
+    "v01_mean": 0.921094340183013,
+    "v04_mean": 0.9372801907510667,
+    "v04_better_count": 8,
+    "v04_worse_or_tied_images": [
+      "A04",
+      "A05",
+      "A09",
+      "A12"
+    ]
+  },
+  "complexity": {
+    "v01_mean_svg_kib": 590.0889485677084,
+    "v04_mean_svg_kib": 494.4375813802083,
+    "v01_mean_paths": 632.5833333333334,
+    "v04_mean_paths": 744.5,
+    "v04_mean_regions": 371.25,
+    "v04_mean_region_boundary_segments": 34749.333333333336,
+    "v04_mean_silhouette_cubic_segments": 49.75
+  },
+  "performance": {
+    "v04_mean_generation_ms": 1754.3937671666188,
+    "v04_mean_render_ms": 294.5977412500156,
+    "v01_mean_render_ms": 269.7599491666172,
+    "v04_render_timing_samples": 12,
+    "v01_render_timing_samples": 12,
+    "v04_render_reused_count": 12,
+    "v01_render_reused_count": 12,
+    "render_time_note": "If --reuse-existing-renders was used, stored per-image renderer timings are retained only when the prior full benchmark has them; the SVG is regenerated and must byte-match the existing file before reusing the PNG.",
+    "process_peak_rss_sampled_mb": 181.3984375,
+    "rss_sampling_interval_ms": 10
+  }
+}
