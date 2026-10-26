@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 2.8933421346975448,
+    "mse": 129.82476850578507,
+    "rmse": 11.39406725036258,
+    "psnr_db": 26.997228040028943,
+    "identical": false,
+    "ssim": 0.7377665458427596,
+    "edge_precision_1_5px": 0.7063845198675497,
+    "edge_recall_1_5px": 0.9901423877327492,
+    "edge_f1_1_5px": 0.8245330528219251,
+    "source_edge_pixels": 13695,
+    "render_edge_pixels": 19328,
+    "delta_e76_mean": 1.40941203272694,
+    "delta_e76_p95": 5.620608238309562,
+    "highpass_rmse_sigma1": 9.245880460634806
+  },
+  "score": 0.7238676233519871,
+  "structure": {
+    "bytes": 3591794,
+    "elements": {
+      "svg": 1,
+      "path": 65392
+    },
+    "path_commands": {
+      "M": 65937,
+      "L": 283351,
+      "Z": 65937,
+      "C": 348
+    },
+    "cubic_segments": 348,
+    "explicit_path_coordinate_pairs": 350332,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5974823340000057,
+    "trace_cpu_seconds": 0.5973684769999998,
+    "trace_process_peak_mib": 142.8359375,
+    "render_seconds": 2.2457573549999665,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 168.04296875,
+    "renderer_child_peak_mib": 641.56640625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.9368704920000255
+}

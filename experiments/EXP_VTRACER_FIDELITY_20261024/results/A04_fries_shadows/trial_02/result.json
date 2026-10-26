@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.5637103670747683,
+    "mse": 58.30390745371423,
+    "rmse": 7.635699539250758,
+    "psnr_db": 30.473826992697845,
+    "identical": false,
+    "ssim": 0.9413627106548909,
+    "edge_precision_1_5px": 0.9596107949329906,
+    "edge_recall_1_5px": 0.9487897398843931,
+    "edge_f1_1_5px": 0.9541695885154962,
+    "source_edge_pixels": 11072,
+    "render_edge_pixels": 10894,
+    "delta_e76_mean": 2.4291165224653426,
+    "delta_e76_p95": 8.384795095311246,
+    "highpass_rmse_sigma1": 5.479134577071467
+  },
+  "score": 0.8421120588618607,
+  "structure": {
+    "bytes": 2256879,
+    "elements": {
+      "svg": 1,
+      "path": 20898
+    },
+    "path_commands": {
+      "M": 21388,
+      "C": 71425,
+      "Z": 21388
+    },
+    "cubic_segments": 71425,
+    "explicit_path_coordinate_pairs": 235663,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6437082680000117,
+    "trace_cpu_seconds": 0.643483711,
+    "trace_process_peak_mib": 72.3828125,
+    "render_seconds": 1.0841191609999896,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 79.3828125,
+    "renderer_child_peak_mib": 245.9140625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.7151653539999643
+}

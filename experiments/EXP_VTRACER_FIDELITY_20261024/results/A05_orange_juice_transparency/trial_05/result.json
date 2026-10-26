@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 2.8662402890695575,
+    "mse": 54.798829268292685,
+    "rmse": 7.402623134287784,
+    "psnr_db": 30.74309080627181,
+    "identical": false,
+    "ssim": 0.8899342455116322,
+    "edge_precision_1_5px": 0.892507176086311,
+    "edge_recall_1_5px": 0.9933847850055126,
+    "edge_f1_1_5px": 0.9402479755193238,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 10103,
+    "delta_e76_mean": 1.5815450829551814,
+    "delta_e76_p95": 7.277554642335743,
+    "highpass_rmse_sigma1": 4.32179734641743
+  },
+  "score": 0.8329253537279876,
+  "structure": {
+    "bytes": 2893732,
+    "elements": {
+      "svg": 1,
+      "path": 52523
+    },
+    "path_commands": {
+      "M": 52778,
+      "L": 228004,
+      "Z": 52778,
+      "C": 410
+    },
+    "cubic_segments": 410,
+    "explicit_path_coordinate_pairs": 282012,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6601008340000192,
+    "trace_cpu_seconds": 0.6600503470000003,
+    "trace_process_peak_mib": 123.796875,
+    "render_seconds": 2.163061153000001,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 144.12890625,
+    "renderer_child_peak_mib": 525.01171875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.04647808499999
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "polygon",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.307432469008823,
+    "mse": 232.95849798805463,
+    "rmse": 15.262978018330978,
+    "psnr_db": 24.458018033620384,
+    "identical": false,
+    "ssim": 0.9345648532761132,
+    "edge_precision_1_5px": 0.9853727144866385,
+    "edge_recall_1_5px": 0.9845317725752508,
+    "edge_f1_1_5px": 0.9849520640340952,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7110,
+    "delta_e76_mean": 2.764288601649665,
+    "delta_e76_p95": 12.405765475424262,
+    "highpass_rmse_sigma1": 11.401693587826394
+  },
+  "score": 0.8076466094481548,
+  "structure": {
+    "bytes": 485339,
+    "elements": {
+      "svg": 1,
+      "path": 10067
+    },
+    "path_commands": {
+      "M": 10285,
+      "L": 26119,
+      "Z": 10285
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 36404,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.225964657999981,
+    "trace_cpu_seconds": 0.22591370099999963,
+    "trace_process_peak_mib": 71.19140625,
+    "render_seconds": 0.6210862869999971,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 76.4375,
+    "renderer_child_peak_mib": 145.8984375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.6335251630000016
+}

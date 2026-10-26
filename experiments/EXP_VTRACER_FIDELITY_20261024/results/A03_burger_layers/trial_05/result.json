@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.7838233504427692,
+    "mse": 39.82998303373923,
+    "rmse": 6.311099986035654,
+    "psnr_db": 32.128702394536866,
+    "identical": false,
+    "ssim": 0.918847729022403,
+    "edge_precision_1_5px": 0.9400886637112096,
+    "edge_recall_1_5px": 0.9853467709852805,
+    "edge_f1_1_5px": 0.96218581265876,
+    "source_edge_pixels": 15082,
+    "render_edge_pixels": 15790,
+    "delta_e76_mean": 1.1675801392729068,
+    "delta_e76_p95": 7.058021799443203,
+    "highpass_rmse_sigma1": 4.33571587590471
+  },
+  "score": 0.8569010432704887,
+  "structure": {
+    "bytes": 3728815,
+    "elements": {
+      "svg": 1,
+      "path": 68749
+    },
+    "path_commands": {
+      "M": 68862,
+      "L": 286669,
+      "Z": 68862,
+      "C": 124
+    },
+    "cubic_segments": 124,
+    "explicit_path_coordinate_pairs": 355903,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.7192508420000081,
+    "trace_cpu_seconds": 0.7192509889999998,
+    "trace_process_peak_mib": 144.46875,
+    "render_seconds": 2.4287516299999936,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 170.9921875,
+    "renderer_child_peak_mib": 670.9765625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.608005547999994
+}

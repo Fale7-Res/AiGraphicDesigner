@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 11.126429469901169,
+    "mse": 295.57206469002693,
+    "rmse": 17.192209418513578,
+    "psnr_db": 23.42416975543886,
+    "identical": false,
+    "ssim": 0.6821613051076815,
+    "edge_precision_1_5px": 0.6762048192771084,
+    "edge_recall_1_5px": 0.8983924780103124,
+    "edge_f1_1_5px": 0.7716224640794449,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 13280,
+    "delta_e76_mean": 5.512295178926662,
+    "delta_e76_p95": 18.66485630324231,
+    "highpass_rmse_sigma1": 10.356043114289365
+  },
+  "score": 0.6400856695438834,
+  "structure": {
+    "bytes": 215295,
+    "elements": {
+      "svg": 1,
+      "path": 1054
+    },
+    "path_commands": {
+      "M": 1061,
+      "C": 6872,
+      "Z": 1061,
+      "L": 3139
+    },
+    "cubic_segments": 6872,
+    "explicit_path_coordinate_pairs": 24816,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.059427634000030594,
+    "trace_cpu_seconds": 0.0594283040000001,
+    "trace_process_peak_mib": 61.09375,
+    "render_seconds": 0.19970901399995,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.4140625,
+    "renderer_child_peak_mib": 69.90625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8043145510000045
+}

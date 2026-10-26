@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 11.366095754290876,
+    "mse": 291.840487804878,
+    "rmse": 17.08333948046687,
+    "psnr_db": 23.47934818305424,
+    "identical": false,
+    "ssim": 0.7515120405403751,
+    "edge_precision_1_5px": 0.7072586588061901,
+    "edge_recall_1_5px": 0.8553472987872106,
+    "edge_f1_1_5px": 0.7742857761600218,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 10856,
+    "delta_e76_mean": 6.630910580189189,
+    "delta_e76_p95": 19.254097176632232,
+    "highpass_rmse_sigma1": 9.201377325609897
+  },
+  "score": 0.6636041944458388,
+  "structure": {
+    "bytes": 202573,
+    "elements": {
+      "svg": 1,
+      "path": 1060
+    },
+    "path_commands": {
+      "M": 1079,
+      "L": 3438,
+      "C": 6393,
+      "Z": 1079
+    },
+    "cubic_segments": 6393,
+    "explicit_path_coordinate_pairs": 23696,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.07266492899998411,
+    "trace_cpu_seconds": 0.07265979799999966,
+    "trace_process_peak_mib": 60.65625,
+    "render_seconds": 0.33872299300000464,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.06640625,
+    "renderer_child_peak_mib": 69.42578125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.0935232439999822
+}

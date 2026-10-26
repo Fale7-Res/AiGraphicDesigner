@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A11_chocolate_cake_texture/frozen/output.svg",
+  "source_png": "extension/A11_chocolate_cake_texture/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.17071555895085308,
+    "mse": 0.5303721488595439,
+    "rmse": 0.7282665369626314,
+    "psnr_db": 50.88499650739281,
+    "identical": false,
+    "ssim": 0.996340428936933,
+    "edge_precision_1_5px": 0.9991094751840418,
+    "edge_recall_1_5px": 0.9998217362885495,
+    "edge_f1_1_5px": 0.9994654788395126,
+    "source_edge_pixels": 16829,
+    "render_edge_pixels": 16844,
+    "delta_e76_mean": 0.12140779937480008,
+    "delta_e76_p95": 0.720981109693745,
+    "highpass_rmse_sigma1": 0.34878048878534107
+  },
+  "score": 0.9724030278275437,
+  "structure": {
+    "bytes": 4309369,
+    "elements": {
+      "svg": 1,
+      "path": 76290
+    },
+    "path_commands": {
+      "M": 76525,
+      "L": 356293,
+      "Z": 76525
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 432818,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6158175489999849,
+    "trace_cpu_seconds": 0.6147974199999999,
+    "trace_process_peak_mib": 113.66015625,
+    "render_seconds": 2.3152301030000046,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 113.66015625,
+    "renderer_child_peak_mib": 750.484375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.030777131999997,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          93,
+          61
+        ],
+        "rmse": 1.1025612645243332
+      },
+      {
+        "bbox": [
+          93,
+          0,
+          187,
+          61
+        ],
+        "rmse": 0.4985154102241007
+      },
+      {
+        "bbox": [
+          187,
+          0,
+          280,
+          61
+        ],
+        "rmse": 0.3885970886143013
+      },
+      {
+        "bbox": [
+          280,
+          0,
+          374,
+          61
+        ],
+        "rmse": 2.163433413443311
+      },
+      {
+        "bbox": [
+          0,
+          61,
+          93,
+          122
+        ],
+        "rmse": 0.5107689236381616
+      },
+      {
+        "bbox": [
+          93,
+          61,
+          187,
+          122
+        ],
+        "rmse": 0.19911442119150277
+      },
+      {
+        "bbox": [
+          187,
+          61,
+          280,
+          122
+        ],
+        "rmse": 0.17663641486563245
+      },
+      {
+        "bbox": [
+          280,
+          61,
+          374,
+          122
+        ],
+        "rmse": 0.9097132452496901
+      },
+      {
+        "bbox": [
+          0,
+          122,
+          93,
+          183
+        ],
+        "rmse": 0.5070164026225884
+      },
+      {
+        "bbox": [
+          93,
+          122,
+          187,
+          183
+        ],
+        "rmse": 0.11787168144565985
+      },
+      {
+        "bbox": [
+          187,
+          122,
+          280,
+          183
+        ],
+        "rmse": 0.1254874741775089
+      },
+      {
+        "bbox": [
+          280,
+          122,
+          374,
+          183
+        ],
+        "rmse": 0.4298884652411346
+      },
+      {
+        "bbox": [
+          0,
+          183,
+          93,
+          245
+        ],
+        "rmse": 0.3057433808196329
+      },
+      {
+        "bbox": [
+          93,
+          183,
+          187,
+          245
+        ],
+        "rmse": 0.4769330256530687
+      },
+      {
+        "bbox": [
+          187,
+          183,
+          280,
+          245
+        ],
+        "rmse": 0.42148617467784166
+      },
+      {
+        "bbox": [
+          280,
+          183,
+          374,
+          245
+        ],
+        "rmse": 0.25422533180617674
+      }
+    ],
+    "tile_rmse_worst": 2.163433413443311,
+    "tile_rmse_median": 0.42568731995948816
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_07/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9630065922241442,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_13/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9630065922241442,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_14/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9630065922241442,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_15/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9630065922241442,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_16/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9630065922241442,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_04/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8559296314748475,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_05/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.855775927907607,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_02/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7929833826494352,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_06/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7926920271804707,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_03/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7922471221190943,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_01/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7909754294936479,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_00/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7895247353132484,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_09/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7895059266411654,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_08/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7390875683646004,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_11/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.5893520952964255,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_10/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.34147894841277115,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A11_chocolate_cake_texture/trial_12/output.svg",
+      "source_png": "results/A11_chocolate_cake_texture/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.2777107506817765,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A11_chocolate_cake_texture/frozen/output.svg",
+      "source_png": "extension/A11_chocolate_cake_texture/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9724030278275437
+    }
+  ]
+}

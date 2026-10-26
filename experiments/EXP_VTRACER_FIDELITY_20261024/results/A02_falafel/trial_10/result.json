@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 30.751739051697506,
+    "mse": 1666.3988154208346,
+    "rmse": 40.82154842017675,
+    "psnr_db": 15.913014126514433,
+    "identical": false,
+    "ssim": 0.3516197933652438,
+    "edge_precision_1_5px": 0.8965911690688629,
+    "edge_recall_1_5px": 0.2585863613738178,
+    "edge_f1_1_5px": 0.40140366643137165,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 4371,
+    "delta_e76_mean": 19.41984472715678,
+    "delta_e76_p95": 45.40056549708296,
+    "highpass_rmse_sigma1": 11.750080898502896
+  },
+  "score": 0.346017150368968,
+  "structure": {
+    "bytes": 51445,
+    "elements": {
+      "svg": 1,
+      "path": 33
+    },
+    "path_commands": {
+      "M": 33,
+      "C": 1974,
+      "L": 24,
+      "Z": 33
+    },
+    "cubic_segments": 1974,
+    "explicit_path_coordinate_pairs": 5979,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.05816657899998745,
+    "trace_cpu_seconds": 0.058168827999999895,
+    "trace_process_peak_mib": 61.1015625,
+    "render_seconds": 0.37607174600003646,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.01953125,
+    "renderer_child_peak_mib": 61.1015625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.3832133530000306
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.230134770889488,
+    "mse": 85.84516442048518,
+    "rmse": 9.26526655960233,
+    "psnr_db": 28.793645240925404,
+    "identical": false,
+    "ssim": 0.9382051620826025,
+    "edge_precision_1_5px": 0.9362819347672422,
+    "edge_recall_1_5px": 0.9473258517844505,
+    "edge_f1_1_5px": 0.9417715170816211,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 9903,
+    "delta_e76_mean": 2.3938446442822405,
+    "delta_e76_p95": 7.953810594441098,
+    "highpass_rmse_sigma1": 6.430924221054352
+  },
+  "score": 0.8309958177090365,
+  "structure": {
+    "bytes": 1687857,
+    "elements": {
+      "svg": 1,
+      "path": 19036
+    },
+    "path_commands": {
+      "M": 19772,
+      "C": 50691,
+      "Z": 19772
+    },
+    "cubic_segments": 50691,
+    "explicit_path_coordinate_pairs": 171845,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.36930285399995455,
+    "trace_cpu_seconds": 0.36929461099999994,
+    "trace_process_peak_mib": 69.78125,
+    "render_seconds": 0.7809651020000388,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 77.82421875,
+    "renderer_child_peak_mib": 226.41796875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.795380730999966
+}

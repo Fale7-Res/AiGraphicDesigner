@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 5,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 2.1580885275519424,
+    "mse": 27.714511291779584,
+    "rmse": 5.264457359669616,
+    "psnr_db": 33.70373136072379,
+    "identical": false,
+    "ssim": 0.9679980821803191,
+    "edge_precision_1_5px": 0.9409033347403968,
+    "edge_recall_1_5px": 0.9847850055126791,
+    "edge_f1_1_5px": 0.96234419279648,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 9476,
+    "delta_e76_mean": 1.230541712294651,
+    "delta_e76_p95": 5.629401681232302,
+    "highpass_rmse_sigma1": 1.1648613697195227
+  },
+  "score": 0.8936500710878146,
+  "structure": {
+    "bytes": 3057942,
+    "elements": {
+      "svg": 1,
+      "path": 52788
+    },
+    "path_commands": {
+      "M": 55309,
+      "L": 259473,
+      "Z": 55309
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 314782,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6146308320000173,
+    "trace_cpu_seconds": 0.6145908550000003,
+    "trace_process_peak_mib": 96.51953125,
+    "render_seconds": 2.116015478999998,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 96.51953125,
+    "renderer_child_peak_mib": 537.29296875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.405463179999998
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.132093441150045,
+    "mse": 80.09853369272237,
+    "rmse": 8.94977841584485,
+    "psnr_db": 29.094557950332135,
+    "identical": false,
+    "ssim": 0.941192603762116,
+    "edge_precision_1_5px": 0.9391592920353983,
+    "edge_recall_1_5px": 0.9508644222020018,
+    "edge_f1_1_5px": 0.9449756115226302,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 9944,
+    "delta_e76_mean": 2.341985199658396,
+    "delta_e76_p95": 7.796825063641079,
+    "highpass_rmse_sigma1": 6.2801763109036015
+  },
+  "score": 0.834664599270379,
+  "structure": {
+    "bytes": 2020390,
+    "elements": {
+      "svg": 1,
+      "path": 19036
+    },
+    "path_commands": {
+      "M": 19772,
+      "C": 62287,
+      "Z": 19772
+    },
+    "cubic_segments": 62287,
+    "explicit_path_coordinate_pairs": 206633,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.4380741960000023,
+    "trace_cpu_seconds": 0.42683993799999986,
+    "trace_process_peak_mib": 69.8828125,
+    "render_seconds": 0.7038972670000021,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 79.578125,
+    "renderer_child_peak_mib": 228.61328125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.8186905200000183
+}

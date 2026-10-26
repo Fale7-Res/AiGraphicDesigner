@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 14.18946373730215,
+    "mse": 453.3010688028406,
+    "rmse": 21.290868202185663,
+    "psnr_db": 21.56693617819307,
+    "identical": false,
+    "ssim": 0.6531046490305333,
+    "edge_precision_1_5px": 0.8517168885774352,
+    "edge_recall_1_5px": 0.821243866861159,
+    "edge_f1_1_5px": 0.8362028442955447,
+    "source_edge_pixels": 15082,
+    "render_edge_pixels": 14270,
+    "delta_e76_mean": 9.141085447418924,
+    "delta_e76_p95": 24.383052082065014,
+    "highpass_rmse_sigma1": 13.421388220600376
+  },
+  "score": 0.6035427435987638,
+  "structure": {
+    "bytes": 237409,
+    "elements": {
+      "svg": 1,
+      "path": 1062
+    },
+    "path_commands": {
+      "M": 1073,
+      "C": 8281,
+      "L": 2696,
+      "Z": 1073
+    },
+    "cubic_segments": 8281,
+    "explicit_path_coordinate_pairs": 28612,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.07309416000003921,
+    "trace_cpu_seconds": 0.07307492999999998,
+    "trace_process_peak_mib": 60.7421875,
+    "render_seconds": 0.2985265220000315,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.26953125,
+    "renderer_child_peak_mib": 69.8046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.1024639030000003
+}

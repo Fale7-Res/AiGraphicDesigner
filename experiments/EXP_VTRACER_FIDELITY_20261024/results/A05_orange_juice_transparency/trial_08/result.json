@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 11.342760614272809,
+    "mse": 320.0281517615176,
+    "rmse": 17.889330668348595,
+    "psnr_db": 23.07892177495126,
+    "identical": false,
+    "ssim": 0.8452248614162349,
+    "edge_precision_1_5px": 0.7754615842763549,
+    "edge_recall_1_5px": 0.872877618522602,
+    "edge_f1_1_5px": 0.8212909816007891,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 10074,
+    "delta_e76_mean": 6.6204811794232405,
+    "delta_e76_p95": 18.697738433179364,
+    "highpass_rmse_sigma1": 7.208243841384062
+  },
+  "score": 0.7161792160715209,
+  "structure": {
+    "bytes": 607061,
+    "elements": {
+      "svg": 1,
+      "path": 4590
+    },
+    "path_commands": {
+      "M": 4615,
+      "C": 20099,
+      "Z": 4615
+    },
+    "cubic_segments": 20099,
+    "explicit_path_coordinate_pairs": 64912,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.19132375999998885,
+    "trace_cpu_seconds": 0.19132767299999998,
+    "trace_process_peak_mib": 61.2109375,
+    "render_seconds": 0.423931481000011,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 75.20703125,
+    "renderer_child_peak_mib": 100.69921875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.282328401000001
+}

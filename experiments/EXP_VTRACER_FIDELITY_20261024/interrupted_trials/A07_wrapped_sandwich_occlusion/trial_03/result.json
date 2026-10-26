@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 0.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.416577540106952,
+    "mse": 108.67885918003564,
+    "rmse": 10.424915308050979,
+    "psnr_db": 27.76935289959155,
+    "identical": false,
+    "ssim": 0.9192775127636796,
+    "edge_precision_1_5px": 0.9688330514617057,
+    "edge_recall_1_5px": 0.9648863098057793,
+    "edge_f1_1_5px": 0.9668556529630239,
+    "source_edge_pixels": 16888,
+    "render_edge_pixels": 16556,
+    "delta_e76_mean": 3.596819446624203,
+    "delta_e76_p95": 12.570217834786275,
+    "highpass_rmse_sigma1": 7.817343439706534
+  },
+  "score": 0.809304708025434,
+  "structure": {
+    "bytes": 2302927,
+    "elements": {
+      "svg": 1,
+      "path": 23302
+    },
+    "path_commands": {
+      "M": 23664,
+      "C": 73407,
+      "Z": 23664
+    },
+    "cubic_segments": 73407,
+    "explicit_path_coordinate_pairs": 243885,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.7842437250000103,
+    "trace_cpu_seconds": 0.783521941,
+    "trace_process_peak_mib": 75.07421875,
+    "render_seconds": 1.1689091260000168,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 81.88671875,
+    "renderer_child_peak_mib": 266.23046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.941295784000033
+}

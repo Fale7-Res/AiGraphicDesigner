@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.327321665086518,
+    "mse": 112.96184206321307,
+    "rmse": 10.628350862820303,
+    "psnr_db": 27.60148595083642,
+    "identical": false,
+    "ssim": 0.91923895225865,
+    "edge_precision_1_5px": 0.9493266960239964,
+    "edge_recall_1_5px": 0.9489795918367347,
+    "edge_f1_1_5px": 0.9491531121964675,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 15669,
+    "delta_e76_mean": 3.76735690987425,
+    "delta_e76_p95": 13.7795637040496,
+    "highpass_rmse_sigma1": 7.914405699807373
+  },
+  "score": 0.8034331422050311,
+  "structure": {
+    "bytes": 2206783,
+    "elements": {
+      "svg": 1,
+      "path": 23711
+    },
+    "path_commands": {
+      "M": 24151,
+      "C": 69327,
+      "Z": 24151
+    },
+    "cubic_segments": 69327,
+    "explicit_path_coordinate_pairs": 232132,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6931271059999631,
+    "trace_cpu_seconds": 0.6931033039999996,
+    "trace_process_peak_mib": 74.16796875,
+    "render_seconds": 1.17320292200003,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 81.26171875,
+    "renderer_child_peak_mib": 268.66796875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.8041928299999768
+}

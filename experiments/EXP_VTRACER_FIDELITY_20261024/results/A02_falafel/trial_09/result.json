@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 8,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.541003980555289,
+    "mse": 116.73288378980111,
+    "rmse": 10.804299319706073,
+    "psnr_db": 27.45887146324309,
+    "identical": false,
+    "ssim": 0.9141605886510704,
+    "edge_precision_1_5px": 0.950741490821193,
+    "edge_recall_1_5px": 0.9354156296665007,
+    "edge_f1_1_5px": 0.943016295542359,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 15307,
+    "delta_e76_mean": 3.900575740490911,
+    "delta_e76_p95": 13.924422338012812,
+    "highpass_rmse_sigma1": 7.9974986906805565
+  },
+  "score": 0.7983289650616034,
+  "structure": {
+    "bytes": 1924002,
+    "elements": {
+      "svg": 1,
+      "path": 16093
+    },
+    "path_commands": {
+      "M": 16096,
+      "C": 63377,
+      "Z": 16096
+    },
+    "cubic_segments": 63377,
+    "explicit_path_coordinate_pairs": 206227,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.9767582830000379,
+    "trace_cpu_seconds": 0.9766802270000001,
+    "trace_process_peak_mib": 70.98828125,
+    "render_seconds": 1.333652936999954,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 80.55078125,
+    "renderer_child_peak_mib": 204.203125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.7669721490000256
+}

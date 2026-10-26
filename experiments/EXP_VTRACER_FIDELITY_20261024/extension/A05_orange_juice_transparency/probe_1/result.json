@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.552126467931346,
+    "mse": 15.079158084914182,
+    "rmse": 3.8831891641940626,
+    "psnr_db": 36.34703266634101,
+    "identical": false,
+    "ssim": 0.974123615366727,
+    "edge_precision_1_5px": 0.9621627432011179,
+    "edge_recall_1_5px": 0.9880926130099228,
+    "edge_f1_1_5px": 0.9749553011534048,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 9303,
+    "delta_e76_mean": 0.7908014127227541,
+    "delta_e76_p95": 4.293805412446482,
+    "highpass_rmse_sigma1": 0.9817249256259468
+  },
+  "score": 0.9111516449350543,
+  "structure": {
+    "bytes": 3056114,
+    "elements": {
+      "svg": 1,
+      "path": 53275
+    },
+    "path_commands": {
+      "M": 53692,
+      "L": 257560,
+      "Z": 53692
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 311252,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.4179584499999578,
+    "trace_cpu_seconds": 0.4641542500000002,
+    "trace_process_peak_mib": 96.04296875,
+    "render_seconds": 1.9090258300000187,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 96.04296875,
+    "renderer_child_peak_mib": 540.19921875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.3018548290000354
+}

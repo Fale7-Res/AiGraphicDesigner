@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 7.598246088886483,
+    "mse": 388.94638300943717,
+    "rmse": 19.721723631808583,
+    "psnr_db": 22.23190623727404,
+    "identical": false,
+    "ssim": 0.9094703425116194,
+    "edge_precision_1_5px": 0.9433404940923737,
+    "edge_recall_1_5px": 0.9767279821627648,
+    "edge_f1_1_5px": 0.9597439556784182,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7448,
+    "delta_e76_mean": 3.7471831963730686,
+    "delta_e76_p95": 15.431380069467496,
+    "highpass_rmse_sigma1": 13.80120777328867
+  },
+  "score": 0.7712393793657772,
+  "structure": {
+    "bytes": 384105,
+    "elements": {
+      "svg": 1,
+      "path": 3799
+    },
+    "path_commands": {
+      "M": 3805,
+      "C": 11512,
+      "Z": 3805
+    },
+    "cubic_segments": 11512,
+    "explicit_path_coordinate_pairs": 38341,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.12715525300001218,
+    "trace_cpu_seconds": 0.12722572799999998,
+    "trace_process_peak_mib": 58.90625,
+    "render_seconds": 0.3673639860000151,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 74.33984375,
+    "renderer_child_peak_mib": 92.9375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.2893252030000042
+}

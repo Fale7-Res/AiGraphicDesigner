@@ -1,0 +1,30 @@
+{
+  "development": [
+    "A01",
+    "A03",
+    "A05",
+    "A10"
+  ],
+  "holdout": [
+    "A02",
+    "A04",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A11",
+    "A12"
+  ],
+  "protocol": "Select one common preset using only four developmentimages; freeze before evaluating other8. Then independently tune each holdoutimage as separate perimageoptimization, not generalization. No universalpreset claim.",
+  "acceptance_proposal": {
+    "all12_min_ssim": 0.95,
+    "mean_ssim": 0.97,
+    "all12_min_psnr_db": 30,
+    "all12_min_edge_f1": 0.9,
+    "all12_max_mean_deltaE76": 3,
+    "no_critical_visual_detail_loss": true,
+    "raster_free": true
+  },
+  "scope": "Thresholds researchproposals, not ownerapproval. No complexitycap. Alpha whitecomposited; no alpha-preservation claim.",
+  "created_utc": "2026-10-24T09:55:34.375270+00:00"
+}

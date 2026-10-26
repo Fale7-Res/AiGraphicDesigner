@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 0.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.875890362511052,
+    "mse": 113.61749955791335,
+    "rmse": 10.65915097734868,
+    "psnr_db": 27.5763513357629,
+    "identical": false,
+    "ssim": 0.8917163450841276,
+    "edge_precision_1_5px": 0.9647711734899059,
+    "edge_recall_1_5px": 0.895849873691808,
+    "edge_f1_1_5px": 0.9290340289566985,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 12433,
+    "delta_e76_mean": 3.4377557636492067,
+    "delta_e76_p95": 13.863213114320597,
+    "highpass_rmse_sigma1": 8.028408473589161
+  },
+  "score": 0.7910064347383283,
+  "structure": {
+    "bytes": 2281227,
+    "elements": {
+      "svg": 1,
+      "path": 21755
+    },
+    "path_commands": {
+      "M": 22427,
+      "C": 74298,
+      "Z": 22427
+    },
+    "cubic_segments": 74298,
+    "explicit_path_coordinate_pairs": 245321,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.7499620170000298,
+    "trace_cpu_seconds": 0.749942925,
+    "trace_process_peak_mib": 74.28125,
+    "render_seconds": 1.0801170000000297,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 80.65625,
+    "renderer_child_peak_mib": 253.26171875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.823655064000036
+}

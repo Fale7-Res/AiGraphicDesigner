@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 13.590993270623613,
+    "mse": 477.6258100005501,
+    "rmse": 21.854651907558495,
+    "psnr_db": 21.339925736554108,
+    "identical": false,
+    "ssim": 0.5714958870550467,
+    "edge_precision_1_5px": 0.7915604454582047,
+    "edge_recall_1_5px": 0.8695144213216502,
+    "edge_f1_1_5px": 0.8287082496263144,
+    "source_edge_pixels": 13695,
+    "render_edge_pixels": 14906,
+    "delta_e76_mean": 9.028021053691056,
+    "delta_e76_p95": 26.888984896204573,
+    "highpass_rmse_sigma1": 14.470928058370014
+  },
+  "score": 0.5668824517819046,
+  "structure": {
+    "bytes": 217470,
+    "elements": {
+      "svg": 1,
+      "path": 1057
+    },
+    "path_commands": {
+      "M": 1120,
+      "C": 7256,
+      "L": 2867,
+      "Z": 1120
+    },
+    "cubic_segments": 7256,
+    "explicit_path_coordinate_pairs": 25755,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.08465955799999847,
+    "trace_cpu_seconds": 0.08465877200000005,
+    "trace_process_peak_mib": 60.765625,
+    "render_seconds": 0.2204208640000047,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.296875,
+    "renderer_child_peak_mib": 69.50390625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8402927129999966
+}

@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.6181609195402298,
+    "mse": 78.49577011494253,
+    "rmse": 8.85978386389547,
+    "psnr_db": 29.18234106227551,
+    "identical": false,
+    "ssim": 0.8118434288488605,
+    "edge_precision_1_5px": 0.7842553921849076,
+    "edge_recall_1_5px": 0.9869361241429087,
+    "edge_f1_1_5px": 0.8739991920307888,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 17479,
+    "delta_e76_mean": 0.7869133564087464,
+    "delta_e76_p95": 0.930267954182986,
+    "highpass_rmse_sigma1": 7.315979856021733
+  },
+  "score": 0.7823364483406259,
+  "structure": {
+    "bytes": 4214831,
+    "elements": {
+      "svg": 1,
+      "path": 76587
+    },
+    "path_commands": {
+      "M": 76758,
+      "L": 337165,
+      "Z": 76758,
+      "C": 136
+    },
+    "cubic_segments": 136,
+    "explicit_path_coordinate_pairs": 414331,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.9393237400000203,
+    "trace_cpu_seconds": 0.9393048039999998,
+    "trace_process_peak_mib": 157.95703125,
+    "render_seconds": 3.2510895660000187,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 188.78515625,
+    "renderer_child_peak_mib": 743.5859375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 5.812253158000033
+}

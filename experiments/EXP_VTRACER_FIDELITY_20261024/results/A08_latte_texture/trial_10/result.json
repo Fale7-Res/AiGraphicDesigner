@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 22.140503144654087,
+    "mse": 977.177721473495,
+    "rmse": 31.25984199373847,
+    "psnr_db": 18.231068038675957,
+    "identical": false,
+    "ssim": 0.5676956465553836,
+    "edge_precision_1_5px": 0.898902989890299,
+    "edge_recall_1_5px": 0.4328177130724901,
+    "edge_f1_1_5px": 0.5842983975435186,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 4649,
+    "delta_e76_mean": 11.040044730915662,
+    "delta_e76_p95": 29.56003888614577,
+    "highpass_rmse_sigma1": 8.378087467758457
+  },
+  "score": 0.515069950794022,
+  "structure": {
+    "bytes": 45694,
+    "elements": {
+      "svg": 1,
+      "path": 31
+    },
+    "path_commands": {
+      "M": 32,
+      "C": 1672,
+      "Z": 32,
+      "L": 17
+    },
+    "cubic_segments": 1672,
+    "explicit_path_coordinate_pairs": 5065,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.02811716600001546,
+    "trace_cpu_seconds": 0.028118311000000062,
+    "trace_process_peak_mib": 61.15625,
+    "render_seconds": 0.1886510119999798,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.51953125,
+    "renderer_child_peak_mib": 61.15625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.7844266629999765
+}

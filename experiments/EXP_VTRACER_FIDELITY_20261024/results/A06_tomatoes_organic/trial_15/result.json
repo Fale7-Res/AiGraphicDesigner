@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": 0.25,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.12919893899204243,
+    "mse": 0.1905393457117595,
+    "rmse": 0.4365081278873963,
+    "psnr_db": 55.33095691296615,
+    "identical": false,
+    "ssim": 0.997507607183731,
+    "edge_precision_1_5px": 0.9992038216560509,
+    "edge_recall_1_5px": 0.9963911945146157,
+    "edge_f1_1_5px": 0.9977955260019515,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 13816,
+    "delta_e76_mean": 0.10816732454329427,
+    "delta_e76_p95": 0.679500226830385,
+    "highpass_rmse_sigma1": 0.30225100096613217
+  },
+  "score": 0.9840436315140373,
+  "structure": {
+    "bytes": 4495072,
+    "elements": {
+      "svg": 1,
+      "path": 76878
+    },
+    "path_commands": {
+      "M": 81303,
+      "L": 391139,
+      "Z": 81303
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 472442,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.9130374060000008,
+    "trace_cpu_seconds": 0.912699527,
+    "trace_process_peak_mib": 117.3046875,
+    "render_seconds": 3.0570768610000414,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 117.3046875,
+    "renderer_child_peak_mib": 761.19921875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 5.6034659310000166
+}

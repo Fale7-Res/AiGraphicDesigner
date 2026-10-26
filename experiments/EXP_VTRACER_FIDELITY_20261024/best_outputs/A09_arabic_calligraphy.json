@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A09_arabic_calligraphy/frozen/output.svg",
+  "source_png": "extension/A09_arabic_calligraphy/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.1931051011190383,
+    "mse": 6.245569013513264,
+    "rmse": 2.4991136455778205,
+    "psnr_db": 40.175083491951504,
+    "identical": false,
+    "ssim": 0.9727374288277835,
+    "edge_precision_1_5px": 1.0,
+    "edge_recall_1_5px": 1.0,
+    "edge_f1_1_5px": 1.0,
+    "source_edge_pixels": 4863,
+    "render_edge_pixels": 4862,
+    "delta_e76_mean": 0.544926065330047,
+    "delta_e76_p95": 2.1447887401138805,
+    "highpass_rmse_sigma1": 0.8443964281263576
+  },
+  "score": 0.9287393506545553,
+  "structure": {
+    "bytes": 2500007,
+    "elements": {
+      "svg": 1,
+      "path": 42058
+    },
+    "path_commands": {
+      "M": 42486,
+      "L": 223856,
+      "Z": 42486
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 266342,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.34863141100004214,
+    "trace_cpu_seconds": 0.3483323599999999,
+    "trace_process_peak_mib": 89.08203125,
+    "render_seconds": 1.285555128999988,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 89.08203125,
+    "renderer_child_peak_mib": 440.4921875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.4787044449999485,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          92,
+          61
+        ],
+        "rmse": 3.3913926799785816
+      },
+      {
+        "bbox": [
+          92,
+          0,
+          184,
+          61
+        ],
+        "rmse": 6.684609970206901
+      },
+      {
+        "bbox": [
+          184,
+          0,
+          276,
+          61
+        ],
+        "rmse": 0.527965833289813
+      },
+      {
+        "bbox": [
+          276,
+          0,
+          369,
+          61
+        ],
+        "rmse": 0.490763143972722
+      },
+      {
+        "bbox": [
+          0,
+          61,
+          92,
+          122
+        ],
+        "rmse": 1.5699989331320061
+      },
+      {
+        "bbox": [
+          92,
+          61,
+          184,
+          122
+        ],
+        "rmse": 2.2017644493508564
+      },
+      {
+        "bbox": [
+          184,
+          61,
+          276,
+          122
+        ],
+        "rmse": 0.6417134493718949
+      },
+      {
+        "bbox": [
+          276,
+          61,
+          369,
+          122
+        ],
+        "rmse": 0.4612615385496377
+      },
+      {
+        "bbox": [
+          0,
+          122,
+          92,
+          183
+        ],
+        "rmse": 2.6564829901451255
+      },
+      {
+        "bbox": [
+          92,
+          122,
+          184,
+          183
+        ],
+        "rmse": 1.7790623823585043
+      },
+      {
+        "bbox": [
+          184,
+          122,
+          276,
+          183
+        ],
+        "rmse": 0.6238317663451856
+      },
+      {
+        "bbox": [
+          276,
+          122,
+          369,
+          183
+        ],
+        "rmse": 0.5030023263035278
+      },
+      {
+        "bbox": [
+          0,
+          183,
+          92,
+          245
+        ],
+        "rmse": 3.9036430641787065
+      },
+      {
+        "bbox": [
+          92,
+          183,
+          184,
+          245
+        ],
+        "rmse": 2.7530530462141147
+      },
+      {
+        "bbox": [
+          184,
+          183,
+          276,
+          245
+        ],
+        "rmse": 1.2534664417594557
+      },
+      {
+        "bbox": [
+          276,
+          183,
+          369,
+          245
+        ],
+        "rmse": 0.547859750660516
+      }
+    ],
+    "tile_rmse_worst": 6.684609970206901,
+    "tile_rmse_median": 1.4117326874457308
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_07/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9155767903283389,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_13/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9155767903283389,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_14/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9155767903283389,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_15/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9155767903283389,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_16/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9155767903283389,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_06/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7986160926715157,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_02/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7967442640875988,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_03/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7947886073929828,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_09/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7928501365758649,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_01/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7919815369722615,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_00/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7901213774360526,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_08/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.700881267545546,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_10/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.6727371705521987,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_11/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.6547121382893991,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_04/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.6274976579045012,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_05/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.6274277468701109,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A09_arabic_calligraphy/trial_12/output.svg",
+      "source_png": "results/A09_arabic_calligraphy/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.36761120647327294,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A09_arabic_calligraphy/frozen/output.svg",
+      "source_png": "extension/A09_arabic_calligraphy/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9287393506545553
+    }
+  ]
+}

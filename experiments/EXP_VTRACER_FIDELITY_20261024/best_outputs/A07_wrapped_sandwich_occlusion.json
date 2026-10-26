@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A07_wrapped_sandwich_occlusion/frozen/output.svg",
+  "source_png": "extension/A07_wrapped_sandwich_occlusion/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.1033475935828877,
+    "mse": 0.25887700534759356,
+    "rmse": 0.5087995728649873,
+    "psnr_db": 53.9998688476352,
+    "identical": false,
+    "ssim": 0.998392555337135,
+    "edge_precision_1_5px": 0.9999407020872866,
+    "edge_recall_1_5px": 0.9994078635717669,
+    "edge_f1_1_5px": 0.9996742118271792,
+    "source_edge_pixels": 16888,
+    "render_edge_pixels": 16864,
+    "delta_e76_mean": 0.07672179128378616,
+    "delta_e76_p95": 0.6214869635463329,
+    "highpass_rmse_sigma1": 0.2831119644799402
+  },
+  "score": 0.9819299855689274,
+  "structure": {
+    "bytes": 4636322,
+    "elements": {
+      "svg": 1,
+      "path": 82216
+    },
+    "path_commands": {
+      "M": 82350,
+      "L": 382406,
+      "Z": 82350
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 464756,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5972622849999993,
+    "trace_cpu_seconds": 0.5971503379999998,
+    "trace_process_peak_mib": 118.2265625,
+    "render_seconds": 2.480937591999975,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 118.2265625,
+    "renderer_child_peak_mib": 805.2109375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.280507948000036,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          93,
+          62
+        ],
+        "rmse": 1.6232107913671519
+      },
+      {
+        "bbox": [
+          93,
+          0,
+          187,
+          62
+        ],
+        "rmse": 0.57918007033895
+      },
+      {
+        "bbox": [
+          187,
+          0,
+          280,
+          62
+        ],
+        "rmse": 0.4493671762143412
+      },
+      {
+        "bbox": [
+          280,
+          0,
+          374,
+          62
+        ],
+        "rmse": 0.5802653248080223
+      },
+      {
+        "bbox": [
+          0,
+          62,
+          93,
+          125
+        ],
+        "rmse": 0.3491714361358399
+      },
+      {
+        "bbox": [
+          93,
+          62,
+          187,
+          125
+        ],
+        "rmse": 0.14254722659200883
+      },
+      {
+        "bbox": [
+          187,
+          62,
+          280,
+          125
+        ],
+        "rmse": 0.1133918505997806
+      },
+      {
+        "bbox": [
+          280,
+          62,
+          374,
+          125
+        ],
+        "rmse": 0.2778959559485264
+      },
+      {
+        "bbox": [
+          0,
+          125,
+          93,
+          187
+        ],
+        "rmse": 0.27117247769717184
+      },
+      {
+        "bbox": [
+          93,
+          125,
+          187,
+          187
+        ],
+        "rmse": 0.14289390643729866
+      },
+      {
+        "bbox": [
+          187,
+          125,
+          280,
+          187
+        ],
+        "rmse": 0.2660068145559781
+      },
+      {
+        "bbox": [
+          280,
+          125,
+          374,
+          187
+        ],
+        "rmse": 0.2880801319671761
+      },
+      {
+        "bbox": [
+          0,
+          187,
+          93,
+          250
+        ],
+        "rmse": 0.251071550064871
+      },
+      {
+        "bbox": [
+          93,
+          187,
+          187,
+          250
+        ],
+        "rmse": 0.17353299492161797
+      },
+      {
+        "bbox": [
+          187,
+          187,
+          280,
+          250
+        ],
+        "rmse": 0.17462644726900314
+      },
+      {
+        "bbox": [
+          280,
+          187,
+          374,
+          250
+        ],
+        "rmse": 0.2607585985513248
+      }
+    ],
+    "tile_rmse_worst": 1.6232107913671519,
+    "tile_rmse_median": 0.268589646126575
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_07/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9756531882828274,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_13/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9756531882828274,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_14/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9756531882828274,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_15/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9756531882828274,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_16/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9756531882828274,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_05/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9143990967929484,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_04/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9143290600988218,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_02/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8095883553039439,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_06/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8095404136246434,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_03/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.809304708025434,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_01/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8086553562331492,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_00/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8068381277437185,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_09/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8039475159852647,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_08/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7608816183120584,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_11/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.6189869666751528,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_10/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.35837592168849974,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A07_wrapped_sandwich_occlusion/trial_12/output.svg",
+      "source_png": "results/A07_wrapped_sandwich_occlusion/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.3262108937514398,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A07_wrapped_sandwich_occlusion/frozen/output.svg",
+      "source_png": "extension/A07_wrapped_sandwich_occlusion/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9819299855689274
+    }
+  ]
+}

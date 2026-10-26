@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.687364541503933,
+    "mse": 188.12565781029392,
+    "rmse": 13.715890704226755,
+    "psnr_db": 25.386323293498915,
+    "identical": false,
+    "ssim": 0.8625284226585208,
+    "edge_precision_1_5px": 0.9627844500632111,
+    "edge_recall_1_5px": 0.9125958378970427,
+    "edge_f1_1_5px": 0.937018574377061,
+    "source_edge_pixels": 13695,
+    "render_edge_pixels": 12656,
+    "delta_e76_mean": 4.163717078531944,
+    "delta_e76_p95": 16.57886360677189,
+    "highpass_rmse_sigma1": 10.222516133206403
+  },
+  "score": 0.7618861828000736,
+  "structure": {
+    "bytes": 1395009,
+    "elements": {
+      "svg": 1,
+      "path": 18240
+    },
+    "path_commands": {
+      "M": 18722,
+      "C": 59029,
+      "Z": 18722
+    },
+    "cubic_segments": 59029,
+    "explicit_path_coordinate_pairs": 195809,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.40447719500002677,
+    "trace_cpu_seconds": 0.404457496,
+    "trace_process_peak_mib": 71.29296875,
+    "render_seconds": 0.7759845649999875,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 76.9140625,
+    "renderer_child_peak_mib": 220.87890625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.8004263310000397
+}

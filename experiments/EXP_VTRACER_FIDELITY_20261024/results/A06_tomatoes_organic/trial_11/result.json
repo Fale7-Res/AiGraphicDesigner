@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 12.545810786914235,
+    "mse": 386.7842617152962,
+    "rmse": 19.66683151184492,
+    "psnr_db": 22.256115665770576,
+    "identical": false,
+    "ssim": 0.5375058819856194,
+    "edge_precision_1_5px": 0.6759094534077664,
+    "edge_recall_1_5px": 0.8015878744135692,
+    "edge_f1_1_5px": 0.7334034544104236,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 16301,
+    "delta_e76_mean": 8.007865791967925,
+    "delta_e76_p95": 23.776821994402678,
+    "highpass_rmse_sigma1": 12.893407099279173
+  },
+  "score": 0.5467689891352874,
+  "structure": {
+    "bytes": 235084,
+    "elements": {
+      "svg": 1,
+      "path": 1059
+    },
+    "path_commands": {
+      "M": 1074,
+      "C": 8142,
+      "L": 3008,
+      "Z": 1074
+    },
+    "cubic_segments": 8142,
+    "explicit_path_coordinate_pairs": 28508,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.07808452799997667,
+    "trace_cpu_seconds": 0.0780866170000003,
+    "trace_process_peak_mib": 60.93359375,
+    "render_seconds": 0.3046274399999902,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.65234375,
+    "renderer_child_peak_mib": 69.5625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.0712533299999905
+}

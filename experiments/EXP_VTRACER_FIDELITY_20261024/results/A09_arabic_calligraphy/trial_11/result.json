@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 7.551698836716258,
+    "mse": 211.77087550467343,
+    "rmse": 14.552349484006815,
+    "psnr_db": 24.872141287854888,
+    "identical": false,
+    "ssim": 0.7420885839860137,
+    "edge_precision_1_5px": 0.4847360610557558,
+    "edge_recall_1_5px": 0.9494139420111043,
+    "edge_f1_1_5px": 0.6417950334033855,
+    "source_edge_pixels": 4863,
+    "render_edge_pixels": 9434,
+    "delta_e76_mean": 3.9617109511190343,
+    "delta_e76_p95": 18.574560629955467,
+    "highpass_rmse_sigma1": 10.379118631273354
+  },
+  "score": 0.6547121382893991,
+  "structure": {
+    "bytes": 140150,
+    "elements": {
+      "svg": 1,
+      "path": 1029
+    },
+    "path_commands": {
+      "M": 1034,
+      "L": 4043,
+      "C": 3724,
+      "Z": 1034
+    },
+    "cubic_segments": 3724,
+    "explicit_path_coordinate_pairs": 16249,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.048984565000012026,
+    "trace_cpu_seconds": 0.048984348000000066,
+    "trace_process_peak_mib": 60.55078125,
+    "render_seconds": 0.23752790300000015,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 72.4921875,
+    "renderer_child_peak_mib": 68.03125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8431994249999661
+}

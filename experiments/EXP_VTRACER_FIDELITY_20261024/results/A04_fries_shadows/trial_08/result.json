@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 7.486712348044469,
+    "mse": 163.13654618473896,
+    "rmse": 12.772491776655759,
+    "psnr_db": 26.005290973848595,
+    "identical": false,
+    "ssim": 0.8501688079346742,
+    "edge_precision_1_5px": 0.8768102985875201,
+    "edge_recall_1_5px": 0.8796062138728323,
+    "edge_f1_1_5px": 0.8782060309202263,
+    "source_edge_pixels": 11072,
+    "render_edge_pixels": 11186,
+    "delta_e76_mean": 5.162587232112624,
+    "delta_e76_p95": 16.652505898040275,
+    "highpass_rmse_sigma1": 6.252904336150533
+  },
+  "score": 0.7514282249209653,
+  "structure": {
+    "bytes": 870199,
+    "elements": {
+      "svg": 1,
+      "path": 6494
+    },
+    "path_commands": {
+      "M": 6511,
+      "C": 28435,
+      "Z": 6511
+    },
+    "cubic_segments": 28435,
+    "explicit_path_coordinate_pairs": 91816,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.2672465739999552,
+    "trace_cpu_seconds": 0.26723997200000005,
+    "trace_process_peak_mib": 62.8984375,
+    "render_seconds": 0.4926263650000351,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 75.921875,
+    "renderer_child_peak_mib": 118.23046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.4312228960000084
+}

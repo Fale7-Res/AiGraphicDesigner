@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A08_latte_texture/frozen/output.svg",
+  "source_png": "extension/A08_latte_texture/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.8182964959568733,
+    "mse": 7.51377897574124,
+    "rmse": 2.7411273184113942,
+    "psnr_db": 39.372219450976566,
+    "identical": false,
+    "ssim": 0.9860429443981458,
+    "edge_precision_1_5px": 0.9901852779168753,
+    "edge_recall_1_5px": 0.9986856738449095,
+    "edge_f1_1_5px": 0.9944173106171105,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 9985,
+    "delta_e76_mean": 0.4215412492995923,
+    "delta_e76_p95": 2.085023627724395,
+    "highpass_rmse_sigma1": 0.6846547113003575
+  },
+  "score": 0.9331880566847512,
+  "structure": {
+    "bytes": 3530013,
+    "elements": {
+      "svg": 1,
+      "path": 61615
+    },
+    "path_commands": {
+      "M": 61930,
+      "L": 300450,
+      "Z": 61930
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 362380,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5018102009999552,
+    "trace_cpu_seconds": 0.5005807050000002,
+    "trace_process_peak_mib": 103.390625,
+    "render_seconds": 1.7318452910000133,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 103.390625,
+    "renderer_child_peak_mib": 617.48046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.288508118999971,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          92,
+          62
+        ],
+        "rmse": 0.8560826553881786
+      },
+      {
+        "bbox": [
+          92,
+          0,
+          185,
+          62
+        ],
+        "rmse": 0.910048476650097
+      },
+      {
+        "bbox": [
+          185,
+          0,
+          278,
+          62
+        ],
+        "rmse": 1.179344917332761
+      },
+      {
+        "bbox": [
+          278,
+          0,
+          371,
+          62
+        ],
+        "rmse": 0.53152442107368
+      },
+      {
+        "bbox": [
+          0,
+          62,
+          92,
+          125
+        ],
+        "rmse": 2.034835793319475
+      },
+      {
+        "bbox": [
+          92,
+          62,
+          185,
+          125
+        ],
+        "rmse": 4.378784053439152
+      },
+      {
+        "bbox": [
+          185,
+          62,
+          278,
+          125
+        ],
+        "rmse": 1.5291817316801477
+      },
+      {
+        "bbox": [
+          278,
+          62,
+          371,
+          125
+        ],
+        "rmse": 1.000625622128595
+      },
+      {
+        "bbox": [
+          0,
+          125,
+          92,
+          187
+        ],
+        "rmse": 0.7171592836010463
+      },
+      {
+        "bbox": [
+          92,
+          125,
+          185,
+          187
+        ],
+        "rmse": 7.6945345505337945
+      },
+      {
+        "bbox": [
+          185,
+          125,
+          278,
+          187
+        ],
+        "rmse": 5.2932721911001215
+      },
+      {
+        "bbox": [
+          278,
+          125,
+          371,
+          187
+        ],
+        "rmse": 0.9520228750563682
+      },
+      {
+        "bbox": [
+          0,
+          187,
+          92,
+          250
+        ],
+        "rmse": 0.44781759982666575
+      },
+      {
+        "bbox": [
+          92,
+          187,
+          185,
+          250
+        ],
+        "rmse": 0.9976361661493146
+      },
+      {
+        "bbox": [
+          185,
+          187,
+          278,
+          250
+        ],
+        "rmse": 0.6939706525073687
+      },
+      {
+        "bbox": [
+          278,
+          187,
+          371,
+          250
+        ],
+        "rmse": 0.5029355708518333
+      }
+    ],
+    "tile_rmse_worst": 7.6945345505337945,
+    "tile_rmse_median": 0.9748295206028414
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_07/output.svg",
+      "source_png": "results/A08_latte_texture/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9301645620732042,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_13/output.svg",
+      "source_png": "results/A08_latte_texture/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9301645620732042,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_14/output.svg",
+      "source_png": "results/A08_latte_texture/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9301645620732042,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_15/output.svg",
+      "source_png": "results/A08_latte_texture/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9301645620732042,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_16/output.svg",
+      "source_png": "results/A08_latte_texture/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9301645620732042,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_06/output.svg",
+      "source_png": "results/A08_latte_texture/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8350121194942963,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_02/output.svg",
+      "source_png": "results/A08_latte_texture/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.834664599270379,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_03/output.svg",
+      "source_png": "results/A08_latte_texture/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8341210451950398,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_01/output.svg",
+      "source_png": "results/A08_latte_texture/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8309958177090365,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_00/output.svg",
+      "source_png": "results/A08_latte_texture/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8297102918236363,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_09/output.svg",
+      "source_png": "results/A08_latte_texture/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.827674074390683,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_05/output.svg",
+      "source_png": "results/A08_latte_texture/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7589139447640978,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_04/output.svg",
+      "source_png": "results/A08_latte_texture/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7582905131659083,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_08/output.svg",
+      "source_png": "results/A08_latte_texture/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.6843302695929344,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_11/output.svg",
+      "source_png": "results/A08_latte_texture/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.6400856695438834,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_10/output.svg",
+      "source_png": "results/A08_latte_texture/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.515069950794022,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A08_latte_texture/trial_12/output.svg",
+      "source_png": "results/A08_latte_texture/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.2631983054335521,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A08_latte_texture/frozen/output.svg",
+      "source_png": "extension/A08_latte_texture/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9331880566847512
+    }
+  ]
+}

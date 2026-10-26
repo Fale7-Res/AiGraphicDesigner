@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 20.34823125564589,
+    "mse": 834.2086467931346,
+    "rmse": 28.882670354264935,
+    "psnr_db": 18.918056737576634,
+    "identical": false,
+    "ssim": 0.6348424482974476,
+    "edge_precision_1_5px": 0.8222692409415499,
+    "edge_recall_1_5px": 0.35644983461962515,
+    "edge_f1_1_5px": 0.49731567262009335,
+    "source_edge_pixels": 9070,
+    "render_edge_pixels": 3781,
+    "delta_e76_mean": 11.937712015884333,
+    "delta_e76_p95": 31.01250136179357,
+    "highpass_rmse_sigma1": 9.084273163255908
+  },
+  "score": 0.5196590531068245,
+  "structure": {
+    "bytes": 42714,
+    "elements": {
+      "svg": 1,
+      "path": 29
+    },
+    "path_commands": {
+      "M": 31,
+      "C": 1537,
+      "L": 19,
+      "Z": 31
+    },
+    "cubic_segments": 1537,
+    "explicit_path_coordinate_pairs": 4661,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.03535611500001323,
+    "trace_cpu_seconds": 0.035356955000000134,
+    "trace_process_peak_mib": 60.8828125,
+    "render_seconds": 0.2093193769999857,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 70.64453125,
+    "renderer_child_peak_mib": 60.8828125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8245819809999944
+}

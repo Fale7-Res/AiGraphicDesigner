@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 16.29041868823001,
+    "mse": 636.5435579514825,
+    "rmse": 25.229814861617246,
+    "psnr_db": 20.092522335840908,
+    "identical": false,
+    "ssim": 0.7762491545347966,
+    "edge_precision_1_5px": 0.8444001139925905,
+    "edge_recall_1_5px": 0.9071883530482256,
+    "edge_f1_1_5px": 0.8746688655935548,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 10527,
+    "delta_e76_mean": 7.6404387662074,
+    "delta_e76_p95": 24.073219107954124,
+    "highpass_rmse_sigma1": 7.33148109658031
+  },
+  "score": 0.6843302695929344,
+  "structure": {
+    "bytes": 645748,
+    "elements": {
+      "svg": 1,
+      "path": 5574
+    },
+    "path_commands": {
+      "M": 5594,
+      "C": 20124,
+      "Z": 5594
+    },
+    "cubic_segments": 20124,
+    "explicit_path_coordinate_pairs": 65966,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.1281874339999831,
+    "trace_cpu_seconds": 0.12818578999999986,
+    "trace_process_peak_mib": 61.0546875,
+    "render_seconds": 0.3124037590000057,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 75.62109375,
+    "renderer_child_peak_mib": 109.140625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.9756025890000046
+}

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 11.332716593564864,
+    "mse": 330.0508338684458,
+    "rmse": 18.167301226886888,
+    "psnr_db": 22.944995265404728,
+    "identical": false,
+    "ssim": 0.9079439423948639,
+    "edge_precision_1_5px": 0.7715201465201466,
+    "edge_recall_1_5px": 0.9481923220275811,
+    "edge_f1_1_5px": 0.8507811539422987,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 6552,
+    "delta_e76_mean": 4.85822731228628,
+    "delta_e76_p95": 16.145759554216912,
+    "highpass_rmse_sigma1": 7.503603074989932
+  },
+  "score": 0.759474145120628,
+  "structure": {
+    "bytes": 764180,
+    "elements": {
+      "svg": 1,
+      "path": 10190
+    },
+    "path_commands": {
+      "M": 10660,
+      "C": 31459,
+      "Z": 10660
+    },
+    "cubic_segments": 31459,
+    "explicit_path_coordinate_pairs": 105037,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.30990591499998743,
+    "trace_cpu_seconds": 0.3098216549999999,
+    "trace_process_peak_mib": 63.41015625,
+    "render_seconds": 0.6023273979999999,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 76.109375,
+    "renderer_child_peak_mib": 149.015625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.6625718680000006
+}

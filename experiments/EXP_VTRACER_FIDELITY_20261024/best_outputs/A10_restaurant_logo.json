@@ -1,0 +1,724 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A10_restaurant_logo/probe_1/output.svg",
+  "source_png": "extension/A10_restaurant_logo/probe_1/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.4694491059023079,
+    "mse": 0.7513596420000361,
+    "rmse": 0.866810038012964,
+    "psnr_db": 49.372324969004595,
+    "identical": false,
+    "ssim": 0.9939386635277003,
+    "edge_precision_1_5px": 0.9997214096670846,
+    "edge_recall_1_5px": 1.0,
+    "edge_f1_1_5px": 0.9998606854276958,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7179,
+    "delta_e76_mean": 0.31343248770729304,
+    "delta_e76_p95": 0.9572906947240586,
+    "highpass_rmse_sigma1": 0.5129292781766462
+  },
+  "score": 0.9645791941762478,
+  "structure": {
+    "bytes": 2355821,
+    "elements": {
+      "svg": 1,
+      "path": 41128
+    },
+    "path_commands": {
+      "M": 41548,
+      "L": 198138,
+      "Z": 41548
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 239686,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.3407074109999826,
+    "trace_cpu_seconds": 0.39232739299999997,
+    "trace_process_peak_mib": 86.31640625,
+    "render_seconds": 1.4141954180000198,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 86.31640625,
+    "renderer_child_peak_mib": 429.4296875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.5811128990000043,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          94,
+          61
+        ],
+        "rmse": 1.0621868490151214
+      },
+      {
+        "bbox": [
+          94,
+          0,
+          188,
+          61
+        ],
+        "rmse": 1.0400647489525445
+      },
+      {
+        "bbox": [
+          188,
+          0,
+          282,
+          61
+        ],
+        "rmse": 1.0974757266494852
+      },
+      {
+        "bbox": [
+          282,
+          0,
+          377,
+          61
+        ],
+        "rmse": 1.085396036316433
+      },
+      {
+        "bbox": [
+          0,
+          61,
+          94,
+          122
+        ],
+        "rmse": 0.9059993303820455
+      },
+      {
+        "bbox": [
+          94,
+          61,
+          188,
+          122
+        ],
+        "rmse": 0.7905969893576904
+      },
+      {
+        "bbox": [
+          188,
+          61,
+          282,
+          122
+        ],
+        "rmse": 0.7215116093602213
+      },
+      {
+        "bbox": [
+          282,
+          61,
+          377,
+          122
+        ],
+        "rmse": 1.0391253152363422
+      },
+      {
+        "bbox": [
+          0,
+          122,
+          94,
+          183
+        ],
+        "rmse": 0.7241254261751837
+      },
+      {
+        "bbox": [
+          94,
+          122,
+          188,
+          183
+        ],
+        "rmse": 0.7501501613038069
+      },
+      {
+        "bbox": [
+          188,
+          122,
+          282,
+          183
+        ],
+        "rmse": 0.7272895723704748
+      },
+      {
+        "bbox": [
+          282,
+          122,
+          377,
+          183
+        ],
+        "rmse": 0.835507660935052
+      },
+      {
+        "bbox": [
+          0,
+          183,
+          94,
+          245
+        ],
+        "rmse": 0.833104521320966
+      },
+      {
+        "bbox": [
+          94,
+          183,
+          188,
+          245
+        ],
+        "rmse": 0.6053978198235298
+      },
+      {
+        "bbox": [
+          188,
+          183,
+          282,
+          245
+        ],
+        "rmse": 0.6899530652242284
+      },
+      {
+        "bbox": [
+          282,
+          183,
+          377,
+          245
+        ],
+        "rmse": 0.7363932661593408
+      }
+    ],
+    "tile_rmse_worst": 1.0974757266494852,
+    "tile_rmse_median": 0.8118507553393282
+  },
+  "evaluated_candidate_count": 23,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_07/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_13/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_14/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_15/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_16/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_05/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8611461837129317,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_04/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8608300388211207,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_06/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8076466094481548,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_02/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8049196450792897,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_03/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8033631007885644,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_01/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8007962685691592,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_00/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7990356076941922,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_09/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7968515033659453,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_11/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.7922008107006938,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_08/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7712393793657772,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_10/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.7098845754319025,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A10_restaurant_logo/trial_12/output.svg",
+      "source_png": "results/A10_restaurant_logo/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.588651391075838,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A10_restaurant_logo/probe_0/output.svg",
+      "source_png": "extension/A10_restaurant_logo/probe_0/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A10_restaurant_logo/probe_1/output.svg",
+      "source_png": "extension/A10_restaurant_logo/probe_1/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9645791941762478
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A10_restaurant_logo/probe_2/output.svg",
+      "source_png": "extension/A10_restaurant_logo/probe_2/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9556182692533589
+    },
+    {
+      "origin": "fixed_geometry_refit_original",
+      "source_svg": "refinement/A10_restaurant_logo/original.svg",
+      "source_png": "refinement/A10_restaurant_logo/original.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713
+    },
+    {
+      "origin": "fixed_geometry_refit_crisp_control",
+      "source_svg": "refinement/A10_restaurant_logo/crisp_control.svg",
+      "source_png": "refinement/A10_restaurant_logo/crisp_control.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9407906819997713
+    },
+    {
+      "origin": "fixed_geometry_refit_visible_color_refit",
+      "source_svg": "refinement/A10_restaurant_logo/visible_color_refit.svg",
+      "source_png": "refinement/A10_restaurant_logo/visible_color_refit.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9411337095036568
+    }
+  ]
+}

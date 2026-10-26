@@ -1,0 +1,61 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": null, "last_action": "EDITED", "last_change_id": "GOV-FINAL-20261017", "last_edited_at_utc": "2026-10-17T06:54:00Z", "last_editor": "governance-maintainer", "tracking_started_at_utc": "2026-10-17T06:52:16Z"}
+END_DOC_PROVENANCE -->
+# AI Graphic Designer — Agent Entry Point & Operating Constitution (`AGENTS.md`)
+
+**الحالة (Status):** ACTIVE CONSTITUTION — اقرأ هذا الملف بالكامل قبل تنفيذ أي خطوة في المشروع.
+**طبيعة النظام:** محرك تصميم جرافيكي ذكي متكامل (AI Graphic Designer) يجمع بين توليد الصور المخطط بالطبقات (Scene-Graph Driven Image Generation)، وتفكيك الصور إلى طبقات فيكتور نظيفة (Magic Layers & Clean SVG)، والتعامل الذكي مع النصوص والخطوط (Smart Typography)، والتعديل الجراحي على الطبقات (Layer-Aware Editing).
+
+## 1. التسلسل الإلزامي لبدء أي جلسة (Mandatory Session Startup Sequence)
+
+عند بدء أي محادثة جديدة أو بعد أي عملية ضغط للسياق (Context Compaction)، **يُحظر تماماً** كتابة أي كود أو إصدار افتراضات قبل قراءة ملفات "الذاكرة الخارجية الحية" بالترتيب التالي:
+
+1. `memory/MEMORY_INDEX.md` — الفهرس الرئيسي لذاكرة المشروع (ماذا نبني، ما الذي تم إنجازه، وما هي هيكلة الذاكرة).
+2. `memory/session/CURRENT_TASK_CHECKPOINT.md` — نقطة التوقف الحالية (ماذا كنا نفعل في الجلسة السابقة أو قبل الـ Compaction، وما هي الخطوة التالية).
+3. `memory/session/ACTIVE_SESSION_WAL.md` — سجل الكتابة المسبقة (Write-Ahead Log) الذي يحفظ كل تفصيلة أو اكتشاف لحظة بلحظة.
+4. `memory/ARCHITECTURE_AND_DATA_FLOW.md` — خريطة المعمارية وتدفق البيانات بين الملفات (مين بياخد منين وبيرمي فين).
+5. `memory/FUNCTION_REGISTRY.md` — السجل المركزي لجميع الدوال والكلاسات وأرقام أسطرها ومقتطفاتها لمنع تكرار أي دالة (`Zero Duplicated Functions`).
+6. `PROJECT_FILE_CATALOG.md` — الفهرس الكامل لجميع ملفات المستودع وعلاقاتها المتبادلة.
+7. `docs/product/OWNER_ORIGINAL_VISION.md` — النص الأصلي الحرفي لرؤية المالك (`OWNER_REQUIREMENT` Authority).
+8. `memory/findings/FINDINGS_LEDGER.md` — سجل مكتشفات الـ Sub-Agents وحالة مراجعتها وترقيتها.
+9. `MASTER_PLAN.md` — خارطة الطريق الشاملة لكافة أجزاء المشروع (الحالة الحالية: `ARCHITECTURE_AND_GOVERNANCE_PREPARATION — NOT_APPROVED`).
+
+## 2. القواعد الذهبية الخمس لمنع أخطاء الـ Vibe Coding والهلوسة (The 5 Iron Laws)
+
+1. **الذاكرة الخارجية الحية وليست مجرد توثيق (`External Brain, Not Passive Docs`):**
+   - مجلد `memory/` هو **ذاكرتك الفعلية**. إذا مسحت المحادثة أو جاء مطور أو Agent آخر مكانك، يجب أن يفهم كل شيء حدث منذ أول لحظة في المشروع من خلال قراءة `memory/` دون الحاجة لقراءة آلاف الأسطر من الكود.
+2. **التسجيل الفوري قبل ضغط السياق (`Write-Ahead Logging — Anti-Compaction`):**
+   - **ممنوع منعاً باتاً** تجميع معلومات أو نتائج بحث أو تفاصيل تقنية في ذاكرة المحادثة والانتظار لنهاية الجلسة لتسجيلها. أي حقيقة، معادلة، قرار، أو سبب خطأ تكتشفه يجب كتابته **فوراً وفي نفس الخطوة** داخل `memory/session/ACTIVE_SESSION_WAL.md` وتحديث `CURRENT_TASK_CHECKPOINT.md`.
+3. **حظر القراءة الجزئية للملفات في Antigravity (`Mandatory Full-File Read`):**
+   - في بيئة Google Antigravity، **يُحظر** الاعتماد على مقتطفات صغيرة (`snippets`) أو قراءة بضعة أسطر فقط قبل التعديل. قبل تعديل أي ملف برمجي، يجب قراءة الملف **بالكامل من السطر الأول حتى السطر الأخير** (أو على دفعات متتالية كاملة إذا زاد عن 800 سطر)، ومراجعة ملف المرآة الخاص به في `memory/code_mirrors/`.
+4. **مرآة الكود وأرقام الأسطر ومنع تكرار الدوال (`1:1 Code Mirror & Line-Number Registry`):**
+   - كل ملف برمجي في المشروع له ملف Markdown مقابل في `memory/code_mirrors/<file_path>.md` ومُسجل في `memory/FUNCTION_REGISTRY.md`.
+   - أي دالة أو منطق برمجي يُكتب أو يُوثق يجب ذكر **مكانه بالضبط بأرقام الأسطر (`Lines Start–End`)** مع **كتابة الكود الفعلي/المقتطف (`Verbatim Code Snippet`)**، وتوضيح **علاقاته بالملفات الأخرى (بياخد الداتا منين وبيرميها فين)**.
+   - قبل كتابة أي دالة جديدة، ابحث في `memory/FUNCTION_REGISTRY.md`؛ إذا وُجدت دالة تؤدي نفس الغرض، أعد استخدامها ولا تكررها.
+5. **تقسيم المهام على Sub-Agents مع مراجع مستقل إلزامي (`Sub-Agent Decomposition & Reviewer Gate`):**
+   - لا تنفذ المهام المركبة في خيط واحد مزدحم. قسّم المهمة إلى حزم عمل مستقلة (Disjoint Work Packages) عبر الـ Sub-Agents المتخصصين في `.agents/agents/`، ثم استدعِ وجوباً **Sub-Agent المراجع المستقل (`qa-reviewer-auditor`)** لمراجعة الكود، والتأكد من عدم وجود تعارض أو تكرار دوال، ومطابقة أرقام الأسطر في الذاكرة قبل إعلان انتهاء المهمة.
+
+## 3. جدول توجيه القواعد (`Rule Routing Table`)
+
+| نوع العمل أو المهمة | الملفات الإلزامية التي يجب قراءتها أولاً |
+| :--- | :--- |
+| بدء جلسة جديدة أو الاستئناف بعد Compaction | [.agent_rules/anti_compaction_write_ahead_rules.md](.agent_rules/anti_compaction_write_ahead_rules.md), [memory/MEMORY_INDEX.md](memory/MEMORY_INDEX.md), [memory/session/CURRENT_TASK_CHECKPOINT.md](memory/session/CURRENT_TASK_CHECKPOINT.md) |
+| قراءة أو تعديل أي ملف كود في Antigravity | [.agent_rules/antigravity_full_read_and_ide_rules.md](.agent_rules/antigravity_full_read_and_ide_rules.md), [.agent_rules/external_brain_and_code_mirror_rules.md](.agent_rules/external_brain_and_code_mirror_rules.md), [memory/FUNCTION_REGISTRY.md](memory/FUNCTION_REGISTRY.md) |
+| تشغيل وتنسيق الـ Sub-Agents والمكتشفات المستقلة | [.agent_rules/subagent_orchestration_and_review_rules.md](.agent_rules/subagent_orchestration_and_review_rules.md), [.agent_rules/subagent_findings_and_promotion_rules.md](.agent_rules/subagent_findings_and_promotion_rules.md), [.agents/agents/qa-reviewer-auditor.md](.agents/agents/qa-reviewer-auditor.md) |
+| الرؤية الأصلية للمالك وبوابات الجدوى والاعتماد | [docs/product/OWNER_ORIGINAL_VISION.md](docs/product/OWNER_ORIGINAL_VISION.md), [docs/product/VISION_TO_REQUIREMENTS_TRACEABILITY.md](docs/product/VISION_TO_REQUIREMENTS_TRACEABILITY.md), [docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md](docs/architecture/FEASIBILITY_EXPERIMENTS_AND_GATES.md), [memory/decisions/DECISION_LOG.md](memory/decisions/DECISION_LOG.md) |
+| تصميم المعمارية، الـ APIs، وتدفق البيانات | [.agent_rules/architecture_rules.md](.agent_rules/architecture_rules.md), [memory/ARCHITECTURE_AND_DATA_FLOW.md](memory/ARCHITECTURE_AND_DATA_FLOW.md), [memory/FILE_RELATIONSHIPS_GRAPH.md](memory/FILE_RELATIONSHIPS_GRAPH.md) |
+| منطق الـ Scene Graph، الطبقات، والـ Clean SVG | [.agent_rules/vector_and_layer_integrity_rules.md](.agent_rules/vector_and_layer_integrity_rules.md), [.agent_rules/design_ground_truth_rules.md](.agent_rules/design_ground_truth_rules.md), [docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md](docs/SCENE_GRAPH_AND_CLEAN_SVG_SPEC.md) |
+| التعامل مع النصوص والخطوط والتعديل (Typography & Editing) | [docs/SMART_TYPOGRAPHY_AND_EDITING_SPEC.md](docs/SMART_TYPOGRAPHY_AND_EDITING_SPEC.md), [.agent_rules/question_driven_research_rules.md](.agent_rules/question_driven_research_rules.md) |
+| منع تكرار الدوال أو إعادة معالجة الأصول البصرية | [.agent_rules/asset_and_function_deduplication_rules.md](.agent_rules/asset_and_function_deduplication_rules.md), [.agent_rules/inspected_assets_catalog_rules.md](.agent_rules/inspected_assets_catalog_rules.md) |
+| معايير كتابة الكود واختيار المكتبات | [.agent_rules/coding_standards.md](.agent_rules/coding_standards.md), [.agent_rules/tech_stack.md](.agent_rules/tech_stack.md) |
+| فحص الجودة والاختبارات قبل تسليم أي مهمة | [.agent_rules/quality_gates.md](.agent_rules/quality_gates.md), [.agent_rules/testing_and_delivery.md](.agent_rules/testing_and_delivery.md), [.agent_rules/file_catalog_rules.md](.agent_rules/file_catalog_rules.md) |
+| تصدير حزم المراجعة المستقلة | [.agent_rules/review_update_exports.md](.agent_rules/review_update_exports.md), [updates/README.md](updates/README.md) |
+
+## 4. نطاق المشروع الشامل وعدم تقييد نقطة البداية (`Whole-System Non-Prescriptive Scope`)
+
+تغطي هذه القواعد **المشروع بالكامل** بجميع أوضاعه ومكوناته (توليد الصور بالـ Layers، تفكيك الصور بـ Magic Layers، رسم الـ Clean SVG المجمّع في Groups، التعامل مع الخطوط والنصوص، التعديل على الطبقات، واجهة الـ Canvas، والـ Backend/APIs). لا تفرض هذه القواعد نقطة بداية إجبارية واحدة؛ يتبع الـ Agent توجيه المستخدم المباشر في الجلسة لتحديد أي موديول أو وضع يبدأ بتطويره أو تعديله، مع الالتزام الكامل بقواعد المعمارية والذاكرة في كل خطوة.
+
+## Mandatory code/comment timestamps and Markdown provenance
+
+Before any source-code addition or edit, read [Code & Document Change Provenance](docs/governance/CODE_AND_DOCUMENT_CHANGE_PROVENANCE.md). Record matched `START CHANGE` / `END CHANGE` language-valid comments around each coherent authored/edited code region with real UTC date+time, `CREATED`/`EDITED`, change ID and agent identity. For mutable human-authored Markdown, maintain `DOC_PROVENANCE` and the document change ledger; never invent legacy creation dates. Run `python tools/governance/change_tracking.py verify` before final delivery. No references to external/preceding projects are needed to operate this repository.
+

@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.2474890649943804,
+    "mse": 12.602205613899448,
+    "rmse": 3.5499585369267974,
+    "psnr_db": 37.126337997093025,
+    "identical": false,
+    "ssim": 0.9779722751101083,
+    "edge_precision_1_5px": 0.9976057462090981,
+    "edge_recall_1_5px": 0.9944967510940194,
+    "edge_f1_1_5px": 0.9960488226090638,
+    "source_edge_pixels": 15082,
+    "render_edge_pixels": 15036,
+    "delta_e76_mean": 0.9195847075164231,
+    "delta_e76_p95": 6.415492113590825,
+    "highpass_rmse_sigma1": 0.6530519000348073
+  },
+  "score": 0.9189365825045346,
+  "structure": {
+    "bytes": 3741536,
+    "elements": {
+      "svg": 1,
+      "path": 68761
+    },
+    "path_commands": {
+      "M": 68910,
+      "L": 289946,
+      "Z": 68910
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 358856,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5949077859999647,
+    "trace_cpu_seconds": 0.5948640799999998,
+    "trace_process_peak_mib": 144.83984375,
+    "render_seconds": 1.8879464800000392,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 171.3984375,
+    "renderer_child_peak_mib": 671.11328125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.6240998590000117
+}

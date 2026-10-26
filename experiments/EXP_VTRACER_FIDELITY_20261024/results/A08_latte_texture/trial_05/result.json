@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 2.7116226415094338,
+    "mse": 85.9669469901168,
+    "rmse": 9.2718362253718,
+    "psnr_db": 28.78748857287607,
+    "identical": false,
+    "ssim": 0.7930859621986182,
+    "edge_precision_1_5px": 0.7112562371587907,
+    "edge_recall_1_5px": 0.9749267010413507,
+    "edge_f1_1_5px": 0.8224762345519577,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 13628,
+    "delta_e76_mean": 1.2308705216180398,
+    "delta_e76_p95": 6.016478400582722,
+    "highpass_rmse_sigma1": 7.179640594230287
+  },
+  "score": 0.7589139447640978,
+  "structure": {
+    "bytes": 3251427,
+    "elements": {
+      "svg": 1,
+      "path": 58069
+    },
+    "path_commands": {
+      "M": 58238,
+      "L": 267512,
+      "Z": 58238,
+      "C": 408
+    },
+    "cubic_segments": 408,
+    "explicit_path_coordinate_pairs": 326974,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.555006614999968,
+    "trace_cpu_seconds": 0.5549509210000001,
+    "trace_process_peak_mib": 136.3125,
+    "render_seconds": 1.6628206449999539,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 151.62109375,
+    "renderer_child_peak_mib": 576.6796875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.214895664999972
+}

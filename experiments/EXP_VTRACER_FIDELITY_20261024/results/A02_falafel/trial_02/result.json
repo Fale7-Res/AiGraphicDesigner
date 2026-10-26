@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.307560924511486,
+    "mse": 113.11034411740685,
+    "rmse": 10.635334697009156,
+    "psnr_db": 27.59578037218445,
+    "identical": false,
+    "ssim": 0.9199618448885231,
+    "edge_precision_1_5px": 0.9556896994605703,
+    "edge_recall_1_5px": 0.9509706321553012,
+    "edge_f1_1_5px": 0.9533243258594503,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 15572,
+    "delta_e76_mean": 3.7564524716514813,
+    "delta_e76_p95": 13.808489876881115,
+    "highpass_rmse_sigma1": 7.939062105401985
+  },
+  "score": 0.8045589606773179,
+  "structure": {
+    "bytes": 2535649,
+    "elements": {
+      "svg": 1,
+      "path": 23711
+    },
+    "path_commands": {
+      "M": 24151,
+      "C": 81207,
+      "Z": 24151
+    },
+    "cubic_segments": 81207,
+    "explicit_path_coordinate_pairs": 267772,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.7687990729999683,
+    "trace_cpu_seconds": 0.7687864869999999,
+    "trace_process_peak_mib": 74.46875,
+    "render_seconds": 1.3776451790000124,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 83.14453125,
+    "renderer_child_peak_mib": 271.109375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.2208533809999835
+}

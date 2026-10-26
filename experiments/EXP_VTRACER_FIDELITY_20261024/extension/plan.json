@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-24T23:42:31.338528+00:00",
+  "development": [
+    "A01_shield",
+    "A03_burger_layers",
+    "A05_orange_juice_transparency",
+    "A10_restaurant_logo"
+  ],
+  "configs": [
+    {
+      "clustering": "color-cluster",
+      "color_precision": 8,
+      "layer_difference": 0,
+      "hierarchical": "cutout",
+      "filter_speckle": 0,
+      "mode": "pixel",
+      "simplify": null,
+      "path_precision": 0,
+      "optimize": 1,
+      "corner_threshold": 60,
+      "length_threshold": 4.0,
+      "max_iterations": 10,
+      "splice_threshold": 45
+    },
+    {
+      "clustering": "color-cluster",
+      "color_precision": 8,
+      "layer_difference": 1,
+      "hierarchical": "stacked",
+      "filter_speckle": 0,
+      "mode": "pixel",
+      "simplify": null,
+      "path_precision": 0,
+      "optimize": 1,
+      "corner_threshold": 60,
+      "length_threshold": 4.0,
+      "max_iterations": 10,
+      "splice_threshold": 45
+    },
+    {
+      "clustering": "color-cluster",
+      "color_precision": 8,
+      "layer_difference": 1,
+      "hierarchical": "cutout",
+      "filter_speckle": 0,
+      "mode": "pixel",
+      "simplify": null,
+      "path_precision": 0,
+      "optimize": 1,
+      "corner_threshold": 60,
+      "length_threshold": 4.0,
+      "max_iterations": 10,
+      "splice_threshold": 45
+    }
+  ],
+  "reason": "Visible-color refit negligible; probe diagonal clustering switch at layer_difference0 vs1 and previously untested pixel cutout. Post-hoc diagnostic, no claim of exhaustive optimum.",
+  "selection": "Choose highest mean composite score among3probes, compare to pixelstacked0. Require mean score improvement>0.0001 before extending to holdout."
+}

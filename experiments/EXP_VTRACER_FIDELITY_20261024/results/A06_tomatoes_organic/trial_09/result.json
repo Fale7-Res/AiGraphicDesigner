@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 8,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.131296198054819,
+    "mse": 115.51437665782494,
+    "rmse": 10.747761471944981,
+    "psnr_db": 27.50444321967826,
+    "identical": false,
+    "ssim": 0.8817539092703357,
+    "edge_precision_1_5px": 0.9572936660268714,
+    "edge_recall_1_5px": 0.8920245398773006,
+    "edge_f1_1_5px": 0.9235073112229157,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 12504,
+    "delta_e76_mean": 3.62380036000139,
+    "delta_e76_p95": 13.855735646459271,
+    "highpass_rmse_sigma1": 8.06445531489521
+  },
+  "score": 0.783883012655033,
+  "structure": {
+    "bytes": 1739517,
+    "elements": {
+      "svg": 1,
+      "path": 13497
+    },
+    "path_commands": {
+      "M": 13500,
+      "C": 59239,
+      "Z": 13500
+    },
+    "cubic_segments": 59239,
+    "explicit_path_coordinate_pairs": 191217,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.8236764100000187,
+    "trace_cpu_seconds": 0.821995013,
+    "trace_process_peak_mib": 70.66015625,
+    "render_seconds": 0.8914331729999958,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 78.45703125,
+    "renderer_child_peak_mib": 181.92578125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.931791873999998
+}

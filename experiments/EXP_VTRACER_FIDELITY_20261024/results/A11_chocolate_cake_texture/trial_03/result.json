@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 0.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 6.368074502528284,
+    "mse": 159.233184182764,
+    "rmse": 12.618763179597437,
+    "psnr_db": 26.110467810990666,
+    "identical": false,
+    "ssim": 0.9096640822710235,
+    "edge_precision_1_5px": 0.9663081107814046,
+    "edge_recall_1_5px": 0.9592370313149919,
+    "edge_f1_1_5px": 0.962759587669173,
+    "source_edge_pixels": 16829,
+    "render_edge_pixels": 16176,
+    "delta_e76_mean": 3.945048904129923,
+    "delta_e76_p95": 14.364465185412998,
+    "highpass_rmse_sigma1": 9.37436122169624
+  },
+  "score": 0.7922471221190943,
+  "structure": {
+    "bytes": 2134328,
+    "elements": {
+      "svg": 1,
+      "path": 21902
+    },
+    "path_commands": {
+      "M": 22231,
+      "C": 67510,
+      "Z": 22231
+    },
+    "cubic_segments": 67510,
+    "explicit_path_coordinate_pairs": 224761,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.45244993400001476,
+    "trace_cpu_seconds": 0.45233618600000014,
+    "trace_process_peak_mib": 73.59765625,
+    "render_seconds": 0.8218114249999644,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 79.86328125,
+    "renderer_child_peak_mib": 253.390625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.9872814170000197
+}

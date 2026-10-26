@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.4579714795008913,
+    "mse": 9.778556149732621,
+    "rmse": 3.1270682994991685,
+    "psnr_db": 38.228056269898644,
+    "identical": false,
+    "ssim": 0.9629934576320229,
+    "edge_precision_1_5px": 0.9859878561419897,
+    "edge_recall_1_5px": 0.9985788725722407,
+    "edge_f1_1_5px": 0.9922434227183552,
+    "source_edge_pixels": 16888,
+    "render_edge_pixels": 17128,
+    "delta_e76_mean": 0.22563805142546353,
+    "delta_e76_p95": 0.7404882949376288,
+    "highpass_rmse_sigma1": 2.577820442026195
+  },
+  "score": 0.9143290600988218,
+  "structure": {
+    "bytes": 4379958,
+    "elements": {
+      "svg": 1,
+      "path": 80253
+    },
+    "path_commands": {
+      "M": 80346,
+      "L": 342891,
+      "Z": 80346,
+      "C": 132
+    },
+    "cubic_segments": 132,
+    "explicit_path_coordinate_pairs": 423633,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.907693882999979,
+    "trace_cpu_seconds": 0.907669651,
+    "trace_process_peak_mib": 160.2265625,
+    "render_seconds": 3.096168857000009,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 191.3359375,
+    "renderer_child_peak_mib": 775.7578125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 5.495380362999981
+}

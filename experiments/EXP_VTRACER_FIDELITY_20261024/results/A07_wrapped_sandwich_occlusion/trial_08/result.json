@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 8.192869875222817,
+    "mse": 176.8321568627451,
+    "rmse": 13.297825268168667,
+    "psnr_db": 25.655191167171367,
+    "identical": false,
+    "ssim": 0.8590478302708169,
+    "edge_precision_1_5px": 0.9428125187721511,
+    "edge_recall_1_5px": 0.9403718616769303,
+    "edge_f1_1_5px": 0.9415906086462528,
+    "source_edge_pixels": 16888,
+    "render_edge_pixels": 16647,
+    "delta_e76_mean": 5.0014442644388675,
+    "delta_e76_p95": 14.517502899529147,
+    "highpass_rmse_sigma1": 8.330867083184243
+  },
+  "score": 0.7608816183120584,
+  "structure": {
+    "bytes": 1370631,
+    "elements": {
+      "svg": 1,
+      "path": 10669
+    },
+    "path_commands": {
+      "M": 10683,
+      "C": 46120,
+      "Z": 10683
+    },
+    "cubic_segments": 46120,
+    "explicit_path_coordinate_pairs": 149043,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.3189640510000231,
+    "trace_cpu_seconds": 0.3185404839999999,
+    "trace_process_peak_mib": 66.23828125,
+    "render_seconds": 0.540646315999993,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 78.6328125,
+    "renderer_child_peak_mib": 155.6015625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.4169980700000337
+}

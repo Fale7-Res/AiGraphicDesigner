@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.403535940121306,
+    "mse": 223.6890142506867,
+    "rmse": 14.956236633949288,
+    "psnr_db": 24.634357051908676,
+    "identical": false,
+    "ssim": 0.8974810710099327,
+    "edge_precision_1_5px": 0.9607803292013818,
+    "edge_recall_1_5px": 0.9763520460621016,
+    "edge_f1_1_5px": 0.9685036006941924,
+    "source_edge_pixels": 4863,
+    "render_edge_pixels": 4921,
+    "delta_e76_mean": 3.0339233277091475,
+    "delta_e76_p95": 12.448886544043162,
+    "highpass_rmse_sigma1": 10.433688562170216
+  },
+  "score": 0.7901213774360526,
+  "structure": {
+    "bytes": 800645,
+    "elements": {
+      "svg": 1,
+      "path": 9950
+    },
+    "path_commands": {
+      "M": 11493,
+      "C": 34558,
+      "Z": 11493
+    },
+    "cubic_segments": 34558,
+    "explicit_path_coordinate_pairs": 115167,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.23933354500002224,
+    "trace_cpu_seconds": 0.23931955699999996,
+    "trace_process_peak_mib": 63.8515625,
+    "render_seconds": 0.4504211579999833,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 76.9140625,
+    "renderer_child_peak_mib": 147.72265625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.211202562999972
+}

@@ -1,0 +1,516 @@
+{
+  "contract": "RGB sRGB numeric values; explicit white composition before tracing. Raw arbitrary alpha is diagnostic only, not supported contract. No ICC conversion tested here.",
+  "records": [
+    {
+      "fixture": "partial_red",
+      "clustering": "color-cluster",
+      "route": "raw",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 84.66666666666667,
+        "mse": 10752.666666666666,
+        "rmse": 103.6950657778212,
+        "psnr_db": 7.815641780116779,
+        "identical": false,
+        "ssim": 0.3336019955581386,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "partial_red",
+      "clustering": "color-cluster",
+      "route": "white",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "partial_red",
+      "clustering": "watershed",
+      "route": "raw",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 84.66666666666667,
+        "mse": 10752.666666666666,
+        "rmse": 103.6950657778212,
+        "psnr_db": 7.815641780116779,
+        "identical": false,
+        "ssim": 0.3336019955581386,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "partial_red",
+      "clustering": "watershed",
+      "route": "white",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "alpha_ramp",
+      "clustering": "color-cluster",
+      "route": "raw",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 85.0,
+        "mse": 14931.666666666666,
+        "rmse": 122.19519903280434,
+        "psnr_db": 6.389720746607335,
+        "identical": false,
+        "ssim": 0.3333556254042718,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 44,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "alpha_ramp",
+      "clustering": "color-cluster",
+      "route": "white",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 44,
+        "render_edge_pixels": 44
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "alpha_ramp",
+      "clustering": "watershed",
+      "route": "raw",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 85.0,
+        "mse": 14931.666666666666,
+        "rmse": 122.19519903280434,
+        "psnr_db": 6.389720746607335,
+        "identical": false,
+        "ssim": 0.3333556254042718,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 44,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "alpha_ramp",
+      "clustering": "watershed",
+      "route": "white",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 44,
+        "render_edge_pixels": 44
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "fully_transparent",
+      "clustering": "color-cluster",
+      "route": "raw",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 1,
+      "stderr": "\nthread '<unnamed>' (101) panicked at /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/visioncortex-0.9.3/src/color_clusters/builder.rs:323:22:\nattempt to divide by zero\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\npyo3_runtime.PanicException: attempt to divide by zero\n"
+    },
+    {
+      "fixture": "fully_transparent",
+      "clustering": "color-cluster",
+      "route": "white",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "fully_transparent",
+      "clustering": "watershed",
+      "route": "raw",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 170.0,
+        "mse": 43350.0,
+        "rmse": 208.20662813657015,
+        "psnr_db": 1.7609125905568124,
+        "identical": false,
+        "ssim": 0.33339999333399994,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "fully_transparent",
+      "clustering": "watershed",
+      "route": "white",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": null,
+        "edge_recall_1_5px": null,
+        "edge_f1_1_5px": null,
+        "source_edge_pixels": 0,
+        "render_edge_pixels": 0
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "srgb_patches",
+      "clustering": "color-cluster",
+      "route": "raw",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 25,
+        "render_edge_pixels": 25
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "srgb_patches",
+      "clustering": "color-cluster",
+      "route": "white",
+      "config": {
+        "clustering": "color-cluster",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 25,
+        "render_edge_pixels": 25
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "srgb_patches",
+      "clustering": "watershed",
+      "route": "raw",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 25,
+        "render_edge_pixels": 25
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    },
+    {
+      "fixture": "srgb_patches",
+      "clustering": "watershed",
+      "route": "white",
+      "config": {
+        "clustering": "watershed",
+        "filter_speckle": 0,
+        "color_precision": 8,
+        "layer_difference": 0,
+        "mode": "pixel",
+        "path_precision": 3,
+        "watershed_detail": 512
+      },
+      "returncode": 0,
+      "stderr": "",
+      "white_composited_metrics": {
+        "mae": 0.0,
+        "mse": 0.0,
+        "rmse": 0.0,
+        "psnr_db": null,
+        "identical": true,
+        "ssim": 1.0,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 25,
+        "render_edge_pixels": 25
+      },
+      "rendered_alpha_range": [
+        255,
+        255
+      ]
+    }
+  ]
+}

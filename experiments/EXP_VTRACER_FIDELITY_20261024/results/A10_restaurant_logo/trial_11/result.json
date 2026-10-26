@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 6.6843393060141825,
+    "mse": 207.70844295277792,
+    "rmse": 14.412093635304272,
+    "psnr_db": 24.956262107301214,
+    "identical": false,
+    "ssim": 0.912981176379276,
+    "edge_precision_1_5px": 0.9458973294589733,
+    "edge_recall_1_5px": 0.9711538461538461,
+    "edge_f1_1_5px": 0.9583592146694604,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7227,
+    "delta_e76_mean": 3.3599819078713278,
+    "delta_e76_p95": 14.685117691253883,
+    "highpass_rmse_sigma1": 10.357639290118918
+  },
+  "score": 0.7922008107006938,
+  "structure": {
+    "bytes": 136901,
+    "elements": {
+      "svg": 1,
+      "path": 1030
+    },
+    "path_commands": {
+      "M": 1036,
+      "C": 3420,
+      "L": 3794,
+      "Z": 1036
+    },
+    "cubic_segments": 3420,
+    "explicit_path_coordinate_pairs": 15090,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.050374920999985306,
+    "trace_cpu_seconds": 0.050376670999999984,
+    "trace_process_peak_mib": 61.15234375,
+    "render_seconds": 0.26341210800001136,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 72.390625,
+    "renderer_child_peak_mib": 68.80078125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.0517082730000027
+}

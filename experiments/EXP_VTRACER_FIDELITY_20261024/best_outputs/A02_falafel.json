@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A02_falafel/frozen/output.svg",
+  "source_png": "extension/A02_falafel/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.13811213021848667,
+    "mse": 0.3043225066490542,
+    "rmse": 0.5516543362007175,
+    "psnr_db": 53.297462883913184,
+    "identical": false,
+    "ssim": 0.9978084838722889,
+    "edge_precision_1_5px": 0.9991262014729747,
+    "edge_recall_1_5px": 0.9964534594325535,
+    "edge_f1_1_5px": 0.9977880406094031,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 16022,
+    "delta_e76_mean": 0.10740581063498496,
+    "delta_e76_p95": 0.6773364834388631,
+    "highpass_rmse_sigma1": 0.30286018739105164
+  },
+  "score": 0.979085183643296,
+  "structure": {
+    "bytes": 4404971,
+    "elements": {
+      "svg": 1,
+      "path": 77959
+    },
+    "path_commands": {
+      "M": 78123,
+      "L": 364693,
+      "Z": 78123
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 442816,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5987861629999998,
+    "trace_cpu_seconds": 0.5867773709999999,
+    "trace_process_peak_mib": 115.078125,
+    "render_seconds": 2.3893573419999825,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 115.078125,
+    "renderer_child_peak_mib": 766.22265625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.322658242999978,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          94,
+          62
+        ],
+        "rmse": 0.3840654780977895
+      },
+      {
+        "bbox": [
+          94,
+          0,
+          188,
+          62
+        ],
+        "rmse": 0.47938513963460916
+      },
+      {
+        "bbox": [
+          188,
+          0,
+          282,
+          62
+        ],
+        "rmse": 0.7990070479289454
+      },
+      {
+        "bbox": [
+          282,
+          0,
+          377,
+          62
+        ],
+        "rmse": 1.475435534673721
+      },
+      {
+        "bbox": [
+          0,
+          62,
+          94,
+          124
+        ],
+        "rmse": 0.43451258860833586
+      },
+      {
+        "bbox": [
+          94,
+          62,
+          188,
+          124
+        ],
+        "rmse": 0.2086276804185717
+      },
+      {
+        "bbox": [
+          188,
+          62,
+          282,
+          124
+        ],
+        "rmse": 0.3819000289615021
+      },
+      {
+        "bbox": [
+          282,
+          62,
+          377,
+          124
+        ],
+        "rmse": 0.6946313651473849
+      },
+      {
+        "bbox": [
+          0,
+          124,
+          94,
+          186
+        ],
+        "rmse": 0.22788856062771928
+      },
+      {
+        "bbox": [
+          94,
+          124,
+          188,
+          186
+        ],
+        "rmse": 0.11268239998769533
+      },
+      {
+        "bbox": [
+          188,
+          124,
+          282,
+          186
+        ],
+        "rmse": 0.13033403049792447
+      },
+      {
+        "bbox": [
+          282,
+          124,
+          377,
+          186
+        ],
+        "rmse": 0.634153402288759
+      },
+      {
+        "bbox": [
+          0,
+          186,
+          94,
+          249
+        ],
+        "rmse": 0.38218518862711565
+      },
+      {
+        "bbox": [
+          94,
+          186,
+          188,
+          249
+        ],
+        "rmse": 0.2672612419124244
+      },
+      {
+        "bbox": [
+          188,
+          186,
+          282,
+          249
+        ],
+        "rmse": 0.22090966641587761
+      },
+      {
+        "bbox": [
+          282,
+          186,
+          377,
+          249
+        ],
+        "rmse": 0.24480113719037752
+      }
+    ],
+    "tile_rmse_worst": 1.475435534673721,
+    "tile_rmse_median": 0.38204260879430885
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_07/output.svg",
+      "source_png": "results/A02_falafel/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9753879211142111,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_13/output.svg",
+      "source_png": "results/A02_falafel/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9753879211142111,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_14/output.svg",
+      "source_png": "results/A02_falafel/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9753879211142111,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_15/output.svg",
+      "source_png": "results/A02_falafel/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9753879211142111,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_16/output.svg",
+      "source_png": "results/A02_falafel/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9753879211142111,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_05/output.svg",
+      "source_png": "results/A02_falafel/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8428051257895776,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_04/output.svg",
+      "source_png": "results/A02_falafel/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.842545612220821,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_02/output.svg",
+      "source_png": "results/A02_falafel/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8045589606773179,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_06/output.svg",
+      "source_png": "results/A02_falafel/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8038947320425958,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_03/output.svg",
+      "source_png": "results/A02_falafel/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8038712568240133,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_01/output.svg",
+      "source_png": "results/A02_falafel/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8034331422050311,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_00/output.svg",
+      "source_png": "results/A02_falafel/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8021240590558096,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_09/output.svg",
+      "source_png": "results/A02_falafel/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7983289650616034,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_08/output.svg",
+      "source_png": "results/A02_falafel/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7240678881710144,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_11/output.svg",
+      "source_png": "results/A02_falafel/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.5752237465225752,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_10/output.svg",
+      "source_png": "results/A02_falafel/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.346017150368968,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A02_falafel/trial_12/output.svg",
+      "source_png": "results/A02_falafel/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.24892200529993797,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A02_falafel/frozen/output.svg",
+      "source_png": "extension/A02_falafel/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.979085183643296
+    }
+  ]
+}

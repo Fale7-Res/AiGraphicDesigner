@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 8.736394539313533,
+    "mse": 228.4465994057531,
+    "rmse": 15.114450019956172,
+    "psnr_db": 24.54295663218181,
+    "identical": false,
+    "ssim": 0.9492628853413762,
+    "edge_precision_1_5px": 0.8592723192819363,
+    "edge_recall_1_5px": 0.9981364144614238,
+    "edge_f1_1_5px": 0.923513469311089,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 6239,
+    "delta_e76_mean": 3.2236082079589075,
+    "delta_e76_p95": 13.90289471974242,
+    "highpass_rmse_sigma1": 2.0987657221008114
+  },
+  "score": 0.8304666937655161,
+  "structure": {
+    "bytes": 1983738,
+    "elements": {
+      "svg": 1,
+      "path": 36256
+    },
+    "path_commands": {
+      "M": 36573,
+      "L": 154865,
+      "Z": 36573
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 191438,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.3173045819999629,
+    "trace_cpu_seconds": 0.31727008300000015,
+    "trace_process_peak_mib": 101.37109375,
+    "render_seconds": 1.1602648859999931,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 115.37109375,
+    "renderer_child_peak_mib": 379.15234375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.237902537000025
+}

@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 1.0866241269232544,
+    "mse": 40.41710253924629,
+    "rmse": 6.3574446548315535,
+    "psnr_db": 32.065151847000244,
+    "identical": false,
+    "ssim": 0.8859822837207644,
+    "edge_precision_1_5px": 0.8954491625782439,
+    "edge_recall_1_5px": 0.9877426580388253,
+    "edge_f1_1_5px": 0.9393343007340141,
+    "source_edge_pixels": 16072,
+    "render_edge_pixels": 17733,
+    "delta_e76_mean": 0.550689583416215,
+    "delta_e76_p95": 1.126804891158638,
+    "highpass_rmse_sigma1": 5.198605851733792
+  },
+  "score": 0.8428051257895776,
+  "structure": {
+    "bytes": 4186721,
+    "elements": {
+      "svg": 1,
+      "path": 76512
+    },
+    "path_commands": {
+      "M": 76578,
+      "L": 329859,
+      "Z": 76578,
+      "C": 172
+    },
+    "cubic_segments": 172,
+    "explicit_path_coordinate_pairs": 406953,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.8674222200000372,
+    "trace_cpu_seconds": 0.867410768,
+    "trace_process_peak_mib": 156.24609375,
+    "render_seconds": 4.103549224999995,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 185.73828125,
+    "renderer_child_peak_mib": 742.1015625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 6.383762595000007
+}

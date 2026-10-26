@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 6,
+    "layer_difference": 16,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 14.45807076544661,
+    "mse": 450.81637480364094,
+    "rmse": 21.23243685504895,
+    "psnr_db": 21.59080678521108,
+    "identical": false,
+    "ssim": 0.8768959915943187,
+    "edge_precision_1_5px": 0.7255639097744361,
+    "edge_recall_1_5px": 0.9280655982109579,
+    "edge_f1_1_5px": 0.8144156846662186,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 6916,
+    "delta_e76_mean": 6.387536345423648,
+    "delta_e76_p95": 17.900522336227283,
+    "highpass_rmse_sigma1": 8.385065770224802
+  },
+  "score": 0.721460690633799,
+  "structure": {
+    "bytes": 356798,
+    "elements": {
+      "svg": 1,
+      "path": 2809
+    },
+    "path_commands": {
+      "M": 2815,
+      "C": 11161,
+      "Z": 2815
+    },
+    "cubic_segments": 11161,
+    "explicit_path_coordinate_pairs": 36298,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.12934099299999957,
+    "trace_cpu_seconds": 0.12934399400000007,
+    "trace_process_peak_mib": 58.40625,
+    "render_seconds": 0.3504628369999807,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 73.18359375,
+    "renderer_child_peak_mib": 84.66796875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.1707274139999981
+}

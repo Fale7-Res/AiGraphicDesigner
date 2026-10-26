@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A12_ramadan_ad_composition/frozen/output.svg",
+  "source_png": "extension/A12_ramadan_ad_composition/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.25003942277719715,
+    "mse": 0.7316354034875405,
+    "rmse": 0.8553568866195796,
+    "psnr_db": 49.48785648252616,
+    "identical": false,
+    "ssim": 0.9952230069334501,
+    "edge_precision_1_5px": 0.9990507484483389,
+    "edge_recall_1_5px": 0.9990507484483389,
+    "edge_f1_1_5px": 0.9990507484483389,
+    "source_edge_pixels": 13695,
+    "render_edge_pixels": 13695,
+    "delta_e76_mean": 0.20205433302534362,
+    "delta_e76_p95": 1.0187355986607431,
+    "highpass_rmse_sigma1": 0.42691350985219967
+  },
+  "score": 0.9670025122875243,
+  "structure": {
+    "bytes": 3880968,
+    "elements": {
+      "svg": 1,
+      "path": 68601
+    },
+    "path_commands": {
+      "M": 68893,
+      "L": 322183,
+      "Z": 68893
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 391076,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5266149359999872,
+    "trace_cpu_seconds": 0.5264433960000001,
+    "trace_process_peak_mib": 108.20703125,
+    "render_seconds": 2.0321602900000073,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 108.20703125,
+    "renderer_child_peak_mib": 680.2265625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.6090233339999997,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          92,
+          61
+        ],
+        "rmse": 0.91935446895191
+      },
+      {
+        "bbox": [
+          92,
+          0,
+          185,
+          61
+        ],
+        "rmse": 0.6062913202832658
+      },
+      {
+        "bbox": [
+          185,
+          0,
+          278,
+          61
+        ],
+        "rmse": 0.7681447901981125
+      },
+      {
+        "bbox": [
+          278,
+          0,
+          371,
+          61
+        ],
+        "rmse": 1.6498713063675794
+      },
+      {
+        "bbox": [
+          0,
+          61,
+          92,
+          122
+        ],
+        "rmse": 0.32212690058543586
+      },
+      {
+        "bbox": [
+          92,
+          61,
+          185,
+          122
+        ],
+        "rmse": 0.26773977630083295
+      },
+      {
+        "bbox": [
+          185,
+          61,
+          278,
+          122
+        ],
+        "rmse": 0.5716226492543902
+      },
+      {
+        "bbox": [
+          278,
+          61,
+          371,
+          122
+        ],
+        "rmse": 2.3890873592257647
+      },
+      {
+        "bbox": [
+          0,
+          122,
+          92,
+          183
+        ],
+        "rmse": 0.17284806974628164
+      },
+      {
+        "bbox": [
+          92,
+          122,
+          185,
+          183
+        ],
+        "rmse": 0.3199315397712943
+      },
+      {
+        "bbox": [
+          185,
+          122,
+          278,
+          183
+        ],
+        "rmse": 0.3898048524856112
+      },
+      {
+        "bbox": [
+          278,
+          122,
+          371,
+          183
+        ],
+        "rmse": 0.5856360834058704
+      },
+      {
+        "bbox": [
+          0,
+          183,
+          92,
+          245
+        ],
+        "rmse": 0.2586737490776714
+      },
+      {
+        "bbox": [
+          92,
+          183,
+          185,
+          245
+        ],
+        "rmse": 0.17831316077179568
+      },
+      {
+        "bbox": [
+          185,
+          183,
+          278,
+          245
+        ],
+        "rmse": 0.37772404452151176
+      },
+      {
+        "bbox": [
+          278,
+          183,
+          371,
+          245
+        ],
+        "rmse": 0.3527143971367038
+      }
+    ],
+    "tile_rmse_worst": 2.3890873592257647,
+    "tile_rmse_median": 0.3837644485035615
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_07/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9417932122690131,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_13/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9417932122690131,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_14/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9417932122690131,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_15/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9417932122690131,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_16/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9417932122690131,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_06/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7649429312347481,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_02/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7644856257117802,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_09/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7641620077036622,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_03/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7637912394995056,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_01/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7633555872418225,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_00/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7618861828000736,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_05/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7241337468290122,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_04/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7238676233519871,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_08/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.6846092861388858,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_11/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.5668824517819046,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_10/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.38700747605451624,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A12_ramadan_ad_composition/trial_12/output.svg",
+      "source_png": "results/A12_ramadan_ad_composition/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.2290135275703276,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A12_ramadan_ad_composition/frozen/output.svg",
+      "source_png": "extension/A12_ramadan_ad_composition/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9670025122875243
+    }
+  ]
+}

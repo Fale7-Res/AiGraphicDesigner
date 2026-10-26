@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.8182964959568733,
+    "mse": 7.51377897574124,
+    "rmse": 2.7411273184113942,
+    "psnr_db": 39.372219450976566,
+    "identical": false,
+    "ssim": 0.9860429443981458,
+    "edge_precision_1_5px": 0.9901852779168753,
+    "edge_recall_1_5px": 0.9986856738449095,
+    "edge_f1_1_5px": 0.9944173106171105,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 9985,
+    "delta_e76_mean": 0.4215412492995923,
+    "delta_e76_p95": 2.085023627724395,
+    "highpass_rmse_sigma1": 0.6846547113003575
+  },
+  "score": 0.9331880566847512,
+  "structure": {
+    "bytes": 3530013,
+    "elements": {
+      "svg": 1,
+      "path": 61615
+    },
+    "path_commands": {
+      "M": 61930,
+      "L": 300450,
+      "Z": 61930
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 362380,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5018102009999552,
+    "trace_cpu_seconds": 0.5005807050000002,
+    "trace_process_peak_mib": 103.390625,
+    "render_seconds": 1.7318452910000133,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 103.390625,
+    "renderer_child_peak_mib": 617.48046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.288508118999971
+}

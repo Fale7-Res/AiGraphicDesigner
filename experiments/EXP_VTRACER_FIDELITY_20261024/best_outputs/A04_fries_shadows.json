@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A04_fries_shadows/frozen/output.svg",
+  "source_png": "extension/A04_fries_shadows/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.30049037118825705,
+    "mse": 1.1148168595315675,
+    "rmse": 1.0558488810107096,
+    "psnr_db": 47.658768328806794,
+    "identical": false,
+    "ssim": 0.9941708562749761,
+    "edge_precision_1_5px": 0.998826714801444,
+    "edge_recall_1_5px": 0.9978323699421965,
+    "edge_f1_1_5px": 0.9983292947778002,
+    "source_edge_pixels": 11072,
+    "render_edge_pixels": 11080,
+    "delta_e76_mean": 0.19482783175030413,
+    "delta_e76_p95": 1.0710413204915876,
+    "highpass_rmse_sigma1": 0.3948945761570001
+  },
+  "score": 0.9621103297363061,
+  "structure": {
+    "bytes": 3964709,
+    "elements": {
+      "svg": 1,
+      "path": 70312
+    },
+    "path_commands": {
+      "M": 70525,
+      "L": 326747,
+      "Z": 70525
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 397272,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.5466053009999996,
+    "trace_cpu_seconds": 0.5465699649999998,
+    "trace_process_peak_mib": 108.76953125,
+    "render_seconds": 2.0369775369999843,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 108.76953125,
+    "renderer_child_peak_mib": 695.5625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 3.699198630000012,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          92,
+          62
+        ],
+        "rmse": 2.7295715799036433
+      },
+      {
+        "bbox": [
+          92,
+          0,
+          185,
+          62
+        ],
+        "rmse": 1.8861851794454518
+      },
+      {
+        "bbox": [
+          185,
+          0,
+          278,
+          62
+        ],
+        "rmse": 1.1135134164300746
+      },
+      {
+        "bbox": [
+          278,
+          0,
+          371,
+          62
+        ],
+        "rmse": 1.139886382177332
+      },
+      {
+        "bbox": [
+          0,
+          62,
+          92,
+          124
+        ],
+        "rmse": 0.4893083152736927
+      },
+      {
+        "bbox": [
+          92,
+          62,
+          185,
+          124
+        ],
+        "rmse": 0.26589812943824165
+      },
+      {
+        "bbox": [
+          185,
+          62,
+          278,
+          124
+        ],
+        "rmse": 0.27998315196325885
+      },
+      {
+        "bbox": [
+          278,
+          62,
+          371,
+          124
+        ],
+        "rmse": 0.413034813261695
+      },
+      {
+        "bbox": [
+          0,
+          124,
+          92,
+          186
+        ],
+        "rmse": 0.26624411355697625
+      },
+      {
+        "bbox": [
+          92,
+          124,
+          185,
+          186
+        ],
+        "rmse": 0.17069363297190907
+      },
+      {
+        "bbox": [
+          185,
+          124,
+          278,
+          186
+        ],
+        "rmse": 0.23211863596691293
+      },
+      {
+        "bbox": [
+          278,
+          124,
+          371,
+          186
+        ],
+        "rmse": 0.2557015473246046
+      },
+      {
+        "bbox": [
+          0,
+          186,
+          92,
+          249
+        ],
+        "rmse": 0.6915640748081247
+      },
+      {
+        "bbox": [
+          92,
+          186,
+          185,
+          249
+        ],
+        "rmse": 0.5640921204470578
+      },
+      {
+        "bbox": [
+          185,
+          186,
+          278,
+          249
+        ],
+        "rmse": 0.9347793153659447
+      },
+      {
+        "bbox": [
+          278,
+          186,
+          371,
+          249
+        ],
+        "rmse": 1.3768913455862113
+      }
+    ],
+    "tile_rmse_worst": 2.7295715799036433,
+    "tile_rmse_median": 0.5267002178603752
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_07/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9582445867216591,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_13/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9582445867216591,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_14/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9582445867216591,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_15/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9582445867216591,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_16/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9582445867216591,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_02/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8421120588618607,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_06/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8420405138294107,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_03/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8409303266017709,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_01/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.839788355233099,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_00/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8374363319791289,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_09/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8329226623945246,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_05/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8298021944216496,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_04/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.8294167012411443,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_08/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7514282249209653,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_11/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.6419753126481573,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_10/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.4467181077992348,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A04_fries_shadows/trial_12/output.svg",
+      "source_png": "results/A04_fries_shadows/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.2755648699715943,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A04_fries_shadows/frozen/output.svg",
+      "source_png": "extension/A04_fries_shadows/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9621103297363061
+    }
+  ]
+}

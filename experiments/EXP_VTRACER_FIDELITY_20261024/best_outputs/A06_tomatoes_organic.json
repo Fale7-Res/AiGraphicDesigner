@@ -1,0 +1,619 @@
+{
+  "origin": "posthoc_extension",
+  "source_svg": "extension/A06_tomatoes_organic/frozen/output.svg",
+  "source_png": "extension/A06_tomatoes_organic/frozen/render.png",
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 1,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "simplify": null,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 0.08822988505747126,
+    "mse": 0.11934571175950487,
+    "rmse": 0.3454644869729809,
+    "psnr_db": 57.362735419879954,
+    "identical": false,
+    "ssim": 0.998544568641767,
+    "edge_precision_1_5px": 0.9994222992489891,
+    "edge_recall_1_5px": 0.9990617105738001,
+    "edge_f1_1_5px": 0.9992419723806882,
+    "source_edge_pixels": 13855,
+    "render_edge_pixels": 13848,
+    "delta_e76_mean": 0.07747098914125913,
+    "delta_e76_p95": 0.5622495435787943,
+    "highpass_rmse_sigma1": 0.25797485774286055
+  },
+  "score": 0.990426201252908,
+  "structure": {
+    "bytes": 4560639,
+    "elements": {
+      "svg": 1,
+      "path": 80075
+    },
+    "path_commands": {
+      "M": 80251,
+      "L": 384957,
+      "Z": 80251
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 465208,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.6439280470000313,
+    "trace_cpu_seconds": 0.643387706,
+    "trace_process_peak_mib": 117.60546875,
+    "render_seconds": 2.3126284919999875,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 117.60546875,
+    "renderer_child_peak_mib": 786.96484375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.160508158000027,
+  "local": {
+    "tiles": [
+      {
+        "bbox": [
+          0,
+          0,
+          94,
+          62
+        ],
+        "rmse": 0.39572758343693853
+      },
+      {
+        "bbox": [
+          94,
+          0,
+          188,
+          62
+        ],
+        "rmse": 0.26361355630794203
+      },
+      {
+        "bbox": [
+          188,
+          0,
+          282,
+          62
+        ],
+        "rmse": 0.36481928910620653
+      },
+      {
+        "bbox": [
+          282,
+          0,
+          377,
+          62
+        ],
+        "rmse": 0.3535733987079777
+      },
+      {
+        "bbox": [
+          0,
+          62,
+          94,
+          125
+        ],
+        "rmse": 0.3299388117483564
+      },
+      {
+        "bbox": [
+          94,
+          62,
+          188,
+          125
+        ],
+        "rmse": 0.13649576220226842
+      },
+      {
+        "bbox": [
+          188,
+          62,
+          282,
+          125
+        ],
+        "rmse": 0.1561166125459499
+      },
+      {
+        "bbox": [
+          282,
+          62,
+          377,
+          125
+        ],
+        "rmse": 0.22163665540145625
+      },
+      {
+        "bbox": [
+          0,
+          125,
+          94,
+          187
+        ],
+        "rmse": 0.19793604433790082
+      },
+      {
+        "bbox": [
+          94,
+          125,
+          188,
+          187
+        ],
+        "rmse": 0.3555295784760484
+      },
+      {
+        "bbox": [
+          188,
+          125,
+          282,
+          187
+        ],
+        "rmse": 0.3801738334949112
+      },
+      {
+        "bbox": [
+          282,
+          125,
+          377,
+          187
+        ],
+        "rmse": 0.35325313288255666
+      },
+      {
+        "bbox": [
+          0,
+          187,
+          94,
+          250
+        ],
+        "rmse": 0.11980508768040737
+      },
+      {
+        "bbox": [
+          94,
+          187,
+          188,
+          250
+        ],
+        "rmse": 0.587306151118206
+      },
+      {
+        "bbox": [
+          188,
+          187,
+          282,
+          250
+        ],
+        "rmse": 0.5166919953264689
+      },
+      {
+        "bbox": [
+          282,
+          187,
+          377,
+          250
+        ],
+        "rmse": 0.403479712730829
+      }
+    ],
+    "tile_rmse_worst": 0.587306151118206,
+    "tile_rmse_median": 0.3534132657952672
+  },
+  "evaluated_candidate_count": 18,
+  "all_candidate_scores": [
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_07/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_07/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9840436315140373,
+      "trial": "trial_07"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_13/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_13/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 1,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9840436315140373,
+      "trial": "trial_13"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_14/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_14/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 5,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9840436315140373,
+      "trial": "trial_14"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_15/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_15/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": 0.25,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9840436315140373,
+      "trial": "trial_15"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_16/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_16/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 0,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.9840436315140373,
+      "trial": "trial_16"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_06/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_06/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "polygon",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7917070649842546,
+      "trial": "trial_06"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_02/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_02/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7915946878333001,
+      "trial": "trial_02"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_03/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_03/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 0.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7910064347383283,
+      "trial": "trial_03"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_01/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_01/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7898739187295712,
+      "trial": "trial_01"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_00/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_00/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7885098226269779,
+      "trial": "trial_00"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_09/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_09/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 8,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.783883012655033,
+      "trial": "trial_09"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_05/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_05/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": 1.5,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7824213637453844,
+      "trial": "trial_05"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_04/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_04/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7823364483406259,
+      "trial": "trial_04"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_08/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_08/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 6,
+        "layer_difference": 16,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.7055477400985646,
+      "trial": "trial_08"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_11/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_11/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 256
+      },
+      "score": 0.5467689891352874,
+      "trial": "trial_11"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_10/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_10/render.png",
+      "config": {
+        "clustering": "watershed",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "cutout",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45,
+        "watershed_detail": 128
+      },
+      "score": 0.3443659403859509,
+      "trial": "trial_10"
+    },
+    {
+      "origin": "primary",
+      "source_svg": "results/A06_tomatoes_organic/trial_12/output.svg",
+      "source_png": "results/A06_tomatoes_organic/trial_12/render.png",
+      "config": {
+        "clustering": "bw",
+        "color_precision": 8,
+        "layer_difference": 0,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "spline",
+        "simplify": null,
+        "path_precision": 3,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.25418314984511364,
+      "trial": "trial_12"
+    },
+    {
+      "origin": "posthoc_extension",
+      "source_svg": "extension/A06_tomatoes_organic/frozen/output.svg",
+      "source_png": "extension/A06_tomatoes_organic/frozen/render.png",
+      "config": {
+        "clustering": "color-cluster",
+        "color_precision": 8,
+        "layer_difference": 1,
+        "hierarchical": "stacked",
+        "filter_speckle": 0,
+        "mode": "pixel",
+        "simplify": null,
+        "path_precision": 0,
+        "optimize": 1,
+        "corner_threshold": 60,
+        "length_threshold": 4.0,
+        "max_iterations": 10,
+        "splice_threshold": 45
+      },
+      "score": 0.990426201252908
+    }
+  ]
+}

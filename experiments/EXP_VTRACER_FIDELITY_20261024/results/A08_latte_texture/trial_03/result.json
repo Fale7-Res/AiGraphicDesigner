@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 0.5,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.160100628930818,
+    "mse": 81.49510871518419,
+    "rmse": 9.02746413535851,
+    "psnr_db": 29.019488174255038,
+    "identical": false,
+    "ssim": 0.9404427074911409,
+    "edge_precision_1_5px": 0.9407788539144472,
+    "edge_recall_1_5px": 0.9510666262258619,
+    "edge_f1_1_5px": 0.9458947678440286,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 9912,
+    "delta_e76_mean": 2.3566024639145153,
+    "delta_e76_p95": 7.840104906735006,
+    "highpass_rmse_sigma1": 6.304701222047502
+  },
+  "score": 0.8341210451950398,
+  "structure": {
+    "bytes": 1757421,
+    "elements": {
+      "svg": 1,
+      "path": 19036
+    },
+    "path_commands": {
+      "M": 19772,
+      "C": 52987,
+      "Z": 19772
+    },
+    "cubic_segments": 52987,
+    "explicit_path_coordinate_pairs": 178733,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.38929329899997356,
+    "trace_cpu_seconds": 0.3892392530000002,
+    "trace_process_peak_mib": 70.09765625,
+    "render_seconds": 0.7299871510000457,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 78.65625,
+    "renderer_child_peak_mib": 226.94140625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.7872208250000199
+}

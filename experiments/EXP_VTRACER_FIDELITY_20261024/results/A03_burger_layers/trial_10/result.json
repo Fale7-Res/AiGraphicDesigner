@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 30.774373787485057,
+    "mse": 1869.345320676646,
+    "rmse": 43.235926272911584,
+    "psnr_db": 15.413908256680068,
+    "identical": false,
+    "ssim": 0.3706079464192947,
+    "edge_precision_1_5px": 0.9412209889001009,
+    "edge_recall_1_5px": 0.26302877602439995,
+    "edge_f1_1_5px": 0.4111575719417141,
+    "source_edge_pixels": 15082,
+    "render_edge_pixels": 3964,
+    "delta_e76_mean": 19.753321101124474,
+    "delta_e76_p95": 48.93306255857683,
+    "highpass_rmse_sigma1": 13.766620518403139
+  },
+  "score": 0.34817061514832826,
+  "structure": {
+    "bytes": 47055,
+    "elements": {
+      "svg": 1,
+      "path": 30
+    },
+    "path_commands": {
+      "M": 30,
+      "C": 1846,
+      "Z": 30,
+      "L": 6
+    },
+    "cubic_segments": 1846,
+    "explicit_path_coordinate_pairs": 5574,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.030724716999998236,
+    "trace_cpu_seconds": 0.03072444200000035,
+    "trace_process_peak_mib": 61.09375,
+    "render_seconds": 0.24176536299995632,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 70.92578125,
+    "renderer_child_peak_mib": 61.09375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.041681906000008
+}
