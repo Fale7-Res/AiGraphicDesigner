@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 95.34048461914062,
+    "mse": 10807.479359944662,
+    "rmse": 103.95902731338276,
+    "psnr_db": 7.793559460742681,
+    "identical": false,
+    "ssim": 0.12286440932576088,
+    "edge_precision_1_5px": 0.6816484580279353,
+    "edge_recall_1_5px": 0.4216384319502414,
+    "edge_f1_1_5px": 0.5210053515452968,
+    "source_edge_pixels": 12219,
+    "render_edge_pixels": 7231,
+    "delta_e76_mean": 49.26094104291722,
+    "delta_e76_p95": 64.78588561181084,
+    "highpass_rmse_sigma1": 30.99966342561238
+  },
+  "score": 0.1965291961237262,
+  "structure": {
+    "bytes": 57453,
+    "elements": {
+      "svg": 1,
+      "path": 209
+    },
+    "path_commands": {
+      "M": 592,
+      "C": 1852,
+      "L": 1109,
+      "Z": 592
+    },
+    "cubic_segments": 1852,
+    "explicit_path_coordinate_pairs": 7257,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.11351100000320002,
+    "trace_cpu_seconds": 0.0625,
+    "render_seconds": 0.18728640000335872,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "256",
+      "--height",
+      "256",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G05_chelsea_nativecrop\\baseline_search\\trial_11\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G05_chelsea_nativecrop\\baseline_search\\trial_11\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.18728640000335872,
+      "sampled_tree_peak_mib": 11.23046875,
+      "observed_process_cpu_seconds": 0,
+      "memory_samples": 3,
+      "observed_pids": [
+        7824,
+        26924
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "26924": 4.265625,
+        "7824": 7.3046875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 6.291365399985807,
+      "sampled_tree_peak_mib": 89.93359375,
+      "observed_process_cpu_seconds": 4.609375,
+      "memory_samples": 110,
+      "observed_pids": [
+        7824,
+        15684,
+        23392,
+        26924,
+        31500,
+        31852,
+        34640
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "31852": 3.91015625,
+        "31500": 7.12109375,
+        "23392": 81.1953125,
+        "26924": 2.7421875,
+        "7824": 6.96484375,
+        "34640": 3.5390625,
+        "15684": 6.96875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 6.295383400021819
+}

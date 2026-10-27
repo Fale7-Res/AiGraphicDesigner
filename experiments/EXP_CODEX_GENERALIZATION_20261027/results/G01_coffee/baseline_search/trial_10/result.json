@@ -1,0 +1,114 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "path_precision": 0,
+    "optimize": 1,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 77.28526017214398,
+    "mse": 9703.577484350548,
+    "rmse": 98.50673826876285,
+    "psnr_db": 8.26148482758975,
+    "identical": false,
+    "ssim": 0.18999982759208456,
+    "edge_precision_1_5px": 0.6956801027782239,
+    "edge_recall_1_5px": 0.4885608024343514,
+    "edge_f1_1_5px": 0.5740082575342745,
+    "source_edge_pixels": 8873,
+    "render_edge_pixels": 6227,
+    "delta_e76_mean": 54.636454876390964,
+    "delta_e76_p95": 82.00040760652338,
+    "highpass_rmse_sigma1": 36.47883030982306
+  },
+  "score": 0.22917440533585437,
+  "structure": {
+    "bytes": 47878,
+    "elements": {
+      "svg": 1,
+      "path": 506
+    },
+    "path_commands": {
+      "M": 932,
+      "L": 6374,
+      "Z": 932
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 7306,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.10431969998171553,
+    "trace_cpu_seconds": 0.046875,
+    "render_seconds": 0.19957820000126958,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "213",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G01_coffee\\baseline_search\\trial_10\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G01_coffee\\baseline_search\\trial_10\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.19957820000126958,
+      "sampled_tree_peak_mib": 8.6796875,
+      "observed_process_cpu_seconds": 0.03125,
+      "memory_samples": 3,
+      "observed_pids": [
+        20900,
+        29352
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "29352": 2.51953125,
+        "20900": 6.16015625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 6.426494699990144,
+      "sampled_tree_peak_mib": 91.828125,
+      "observed_process_cpu_seconds": 5.046875,
+      "memory_samples": 111,
+      "observed_pids": [
+        2128,
+        8212,
+        10384,
+        12316,
+        20900,
+        26104,
+        26224,
+        29352
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "12316": 4.3359375,
+        "26224": 7.171875,
+        "8212": 81.81640625,
+        "10384": 4.69921875,
+        "29352": 5.7578125,
+        "20900": 7.30859375,
+        "26104": 2.51953125,
+        "2128": 6.29296875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 6.429871899978025
+}

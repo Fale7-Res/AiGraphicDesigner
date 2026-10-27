@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-27T11:08:53.904511+00:00",
+  "baseline_commit": "b398de3d95539a77ee4ea1cafea2e1ecc7f2efdf",
+  "max_candidates": 24,
+  "dispatch_seconds": 240,
+  "worker_timeout_seconds": 180,
+  "alpha_selection": "max worst-background inherited score across white black bluegray; mean then RGB score tiebreak",
+  "opaque_selection": "frozen inherited baseline until residual-driven experiment",
+  "architecture": "NOT_APPROVED",
+  "sizing": "normalized <=320 max edge; source sizes and transforms retained in dataset manifest",
+  "dataset_policy": "freeze manifest before conversion; no metric-based input exclusion; real previously unused raster assets; licensing/provenance retained",
+  "prohibitions": [
+    "embedded raster",
+    "external images",
+    "raster filters",
+    "exact pixel replacement as improvement",
+    "semantic or cleanSVG milestone"
+  ]
+}

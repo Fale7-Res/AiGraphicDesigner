@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.875811815336463,
+    "mse": 110.5757726917058,
+    "rmse": 10.515501542565898,
+    "psnr_db": 27.694203780121466,
+    "identical": false,
+    "ssim": 0.8689565682325071,
+    "edge_precision_1_5px": 0.9423571166319912,
+    "edge_recall_1_5px": 0.8868477403358503,
+    "edge_f1_1_5px": 0.9137601797754044,
+    "source_edge_pixels": 8873,
+    "render_edge_pixels": 8171,
+    "delta_e76_mean": 3.1802552790382586,
+    "delta_e76_p95": 11.118466618502538,
+    "highpass_rmse_sigma1": 8.049823591288652
+  },
+  "score": 0.7815138407462543,
+  "structure": {
+    "bytes": 1132679,
+    "elements": {
+      "svg": 1,
+      "path": 15285
+    },
+    "path_commands": {
+      "M": 15694,
+      "C": 46654,
+      "Z": 15694
+    },
+    "cubic_segments": 46654,
+    "explicit_path_coordinate_pairs": 155656,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 3.120099499996286,
+    "trace_cpu_seconds": 2.21875,
+    "render_seconds": 0.6035965000046417,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "213",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G01_coffee\\baseline_search\\trial_00\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G01_coffee\\baseline_search\\trial_00\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.6035965000046417,
+      "sampled_tree_peak_mib": 26.4296875,
+      "observed_process_cpu_seconds": 0.453125,
+      "memory_samples": 11,
+      "observed_pids": [
+        7696,
+        25844
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "7696": 19.953125,
+        "25844": 6.96875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 10.580677599995397,
+      "sampled_tree_peak_mib": 107.72265625,
+      "observed_process_cpu_seconds": 8.453125,
+      "memory_samples": 202,
+      "observed_pids": [
+        4080,
+        4648,
+        7696,
+        15984,
+        20128,
+        25844,
+        27600
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "4648": 3.91015625,
+        "27600": 7.453125,
+        "15984": 83.640625,
+        "7696": 19.953125,
+        "25844": 6.96875,
+        "20128": 3.140625,
+        "4080": 6.95703125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 10.586235900002066
+}

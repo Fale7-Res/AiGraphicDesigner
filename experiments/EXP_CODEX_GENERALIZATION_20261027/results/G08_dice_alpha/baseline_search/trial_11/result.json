@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 29.542456597222223,
+    "mse": 3901.117717013889,
+    "rmse": 62.45892824099601,
+    "psnr_db": 12.21891305434813,
+    "identical": false,
+    "ssim": 0.7304423507622886,
+    "edge_precision_1_5px": 0.8962472406181016,
+    "edge_recall_1_5px": 0.6512613521695257,
+    "edge_f1_1_5px": 0.7543624539773449,
+    "source_edge_pixels": 4955,
+    "render_edge_pixels": 3624,
+    "delta_e76_mean": 23.470511489622595,
+    "delta_e76_p95": 92.63840832987843,
+    "highpass_rmse_sigma1": 19.476969769468663
+  },
+  "score": 0.5325754872232544,
+  "structure": {
+    "bytes": 19973,
+    "elements": {
+      "svg": 1,
+      "path": 20
+    },
+    "path_commands": {
+      "M": 148,
+      "C": 678,
+      "Z": 148,
+      "L": 204
+    },
+    "cubic_segments": 678,
+    "explicit_path_coordinate_pairs": 2386,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.054311900021275505,
+    "trace_cpu_seconds": 0.0625,
+    "render_seconds": 0.1716809000063222,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "240",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_11\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_11\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.1716809000063222,
+      "sampled_tree_peak_mib": 10.28515625,
+      "observed_process_cpu_seconds": 0.03125,
+      "memory_samples": 3,
+      "observed_pids": [
+        30492,
+        31672
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "31672": 3.28515625,
+        "30492": 7.0
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 5.23572129997774,
+      "sampled_tree_peak_mib": 90.43359375,
+      "observed_process_cpu_seconds": 3.8125,
+      "memory_samples": 109,
+      "observed_pids": [
+        12244,
+        17748,
+        20684,
+        25116,
+        25372,
+        30492,
+        31672
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "12244": 4.3359375,
+        "25372": 7.12890625,
+        "20684": 82.91796875,
+        "17748": 4.296875,
+        "31672": 3.11328125,
+        "30492": 7.0,
+        "25116": 2.51953125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 5.241976399993291
+}

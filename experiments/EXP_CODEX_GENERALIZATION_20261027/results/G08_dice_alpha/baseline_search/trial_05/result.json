@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.099869791666667,
+    "mse": 249.22569444444446,
+    "rmse": 15.786883620412372,
+    "psnr_db": 24.16487546074237,
+    "identical": false,
+    "ssim": 0.9401427165002986,
+    "edge_precision_1_5px": 0.9726775956284153,
+    "edge_recall_1_5px": 0.9709384460141272,
+    "edge_f1_1_5px": 0.9718072427248479,
+    "source_edge_pixels": 4955,
+    "render_edge_pixels": 4941,
+    "delta_e76_mean": 2.2274781481108916,
+    "delta_e76_p95": 9.13459996630526,
+    "highpass_rmse_sigma1": 13.239332640379144
+  },
+  "score": 0.8070022892603077,
+  "structure": {
+    "bytes": 523396,
+    "elements": {
+      "svg": 1,
+      "path": 4987
+    },
+    "path_commands": {
+      "M": 5074,
+      "C": 16363,
+      "Z": 5074
+    },
+    "cubic_segments": 16363,
+    "explicit_path_coordinate_pairs": 54163,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.4793618000112474,
+    "trace_cpu_seconds": 0.484375,
+    "render_seconds": 0.1490219000261277,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "240",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_05\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_05\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.1490219000261277,
+      "sampled_tree_peak_mib": 16.37109375,
+      "observed_process_cpu_seconds": 0.109375,
+      "memory_samples": 4,
+      "observed_pids": [
+        11452,
+        31328
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "11452": 9.60546875,
+        "31328": 7.30078125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.87190160001046,
+      "sampled_tree_peak_mib": 99.2578125,
+      "observed_process_cpu_seconds": 4.59375,
+      "memory_samples": 126,
+      "observed_pids": [
+        2320,
+        7960,
+        11452,
+        16564,
+        18320,
+        19536,
+        25328,
+        31328
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "7960": 3.91015625,
+        "2320": 7.125,
+        "19536": 85.4140625,
+        "16564": 4.2421875,
+        "11452": 9.87109375,
+        "31328": 6.9609375,
+        "18320": 3.23828125,
+        "25328": 6.96484375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.874969500000589
+}

@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.362873263888889,
+    "mse": 282.3650260416667,
+    "rmse": 16.803720601154577,
+    "psnr_db": 23.622694572195048,
+    "identical": false,
+    "ssim": 0.932663894085077,
+    "edge_precision_1_5px": 0.9620909816440543,
+    "edge_recall_1_5px": 0.9703329969727548,
+    "edge_f1_1_5px": 0.9661944127264975,
+    "source_edge_pixels": 4955,
+    "render_edge_pixels": 5012,
+    "delta_e76_mean": 2.405674042970719,
+    "delta_e76_p95": 9.76251872276062,
+    "highpass_rmse_sigma1": 13.385593829635415
+  },
+  "score": 0.7993204642409263,
+  "structure": {
+    "bytes": 350979,
+    "elements": {
+      "svg": 1,
+      "path": 4987
+    },
+    "path_commands": {
+      "M": 5074,
+      "C": 13729,
+      "Z": 5074
+    },
+    "cubic_segments": 13729,
+    "explicit_path_coordinate_pairs": 46261,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.7199858000094537,
+    "trace_cpu_seconds": 0.59375,
+    "render_seconds": 0.2347013000107836,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "240",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_00\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\baseline_search\\trial_00\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.2347013000107836,
+      "sampled_tree_peak_mib": 16.80078125,
+      "observed_process_cpu_seconds": 0.1875,
+      "memory_samples": 5,
+      "observed_pids": [
+        28032,
+        32112
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "32112": 9.83203125,
+        "28032": 6.96875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 6.194702399981907,
+      "sampled_tree_peak_mib": 98.125,
+      "observed_process_cpu_seconds": 5.34375,
+      "memory_samples": 133,
+      "observed_pids": [
+        13708,
+        17776,
+        27592,
+        28032,
+        29360,
+        29496,
+        29908,
+        32112
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "29360": 3.91015625,
+        "13708": 7.13671875,
+        "29908": 85.51953125,
+        "17776": 4.703125,
+        "32112": 9.83203125,
+        "28032": 6.96875,
+        "27592": 2.51953125,
+        "29496": 5.9609375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 6.199066899978789
+}

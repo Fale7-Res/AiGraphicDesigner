@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 4.405721028645833,
+    "mse": 49.048370361328125,
+    "rmse": 7.003454173572361,
+    "psnr_db": 31.224557784045423,
+    "identical": false,
+    "ssim": 0.8904549437760155,
+    "edge_precision_1_5px": 0.9432165318957771,
+    "edge_recall_1_5px": 0.8845241018086586,
+    "edge_f1_1_5px": 0.9129279508277373,
+    "source_edge_pixels": 12219,
+    "render_edge_pixels": 11130,
+    "delta_e76_mean": 2.6493305972799464,
+    "delta_e76_p95": 6.972701812752373,
+    "highpass_rmse_sigma1": 5.3769103421847655
+  },
+  "score": 0.8135393496464113,
+  "structure": {
+    "bytes": 1294229,
+    "elements": {
+      "svg": 1,
+      "path": 17257
+    },
+    "path_commands": {
+      "M": 17458,
+      "C": 54244,
+      "Z": 17458
+    },
+    "cubic_segments": 54244,
+    "explicit_path_coordinate_pairs": 180190,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 3.2144137999857776,
+    "trace_cpu_seconds": 2.4375,
+    "render_seconds": 0.7460741999966558,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "256",
+      "--height",
+      "256",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G05_chelsea_nativecrop\\baseline_search\\trial_00\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G05_chelsea_nativecrop\\baseline_search\\trial_00\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.7460741999966558,
+      "sampled_tree_peak_mib": 28.41015625,
+      "observed_process_cpu_seconds": 0.53125,
+      "memory_samples": 11,
+      "observed_pids": [
+        8676,
+        23720
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "8676": 22.16796875,
+        "23720": 6.96484375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 11.478312199993525,
+      "sampled_tree_peak_mib": 111.0859375,
+      "observed_process_cpu_seconds": 9.1875,
+      "memory_samples": 205,
+      "observed_pids": [
+        8676,
+        16872,
+        20616,
+        22620,
+        23720,
+        24492,
+        24964,
+        35688
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "35688": 3.91015625,
+        "16872": 7.12109375,
+        "24492": 84.62890625,
+        "22620": 4.4140625,
+        "8676": 22.16796875,
+        "23720": 6.96484375,
+        "24964": 2.51953125,
+        "20616": 6.3671875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 11.484706900024321
+}

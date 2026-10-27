@@ -1,0 +1,115 @@
+{
+  "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+  "alpha_mae_0_255": 0.0,
+  "alpha_max_error_0_255": 0.0,
+  "alpha_exact_fraction": 1.0,
+  "background_metrics": {
+    "white": {
+      "mae": 0.010406746031746033,
+      "mse": 0.011041666666666667,
+      "rmse": 0.10507933510765409,
+      "psnr_db": 67.70045728642708,
+      "identical": false,
+      "ssim": 0.9999947737819537,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 2528,
+      "render_edge_pixels": 2527,
+      "delta_e76_mean": 0.005226813364005758,
+      "delta_e76_p95": 0.0,
+      "highpass_rmse_sigma1": 0.08870368860545648
+    },
+    "black": {
+      "mae": 0.010406746031746033,
+      "mse": 0.011041666666666667,
+      "rmse": 0.10507933510765409,
+      "psnr_db": 67.70045728642708,
+      "identical": false,
+      "ssim": 0.9997442120920863,
+      "edge_precision_1_5px": null,
+      "edge_recall_1_5px": null,
+      "edge_f1_1_5px": null,
+      "source_edge_pixels": 0,
+      "render_edge_pixels": 0,
+      "delta_e76_mean": 0.003859946137187286,
+      "delta_e76_p95": 0.0,
+      "highpass_rmse_sigma1": 0.08870368860545648
+    },
+    "bluegray": {
+      "mae": 0.012192460317460317,
+      "mse": 0.012876984126984127,
+      "rmse": 0.11347679995040452,
+      "psnr_db": 67.03266200513067,
+      "identical": false,
+      "ssim": 0.9999765828603637,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 2528,
+      "render_edge_pixels": 2526,
+      "delta_e76_mean": 0.009538383122544038,
+      "delta_e76_p95": 0.0,
+      "highpass_rmse_sigma1": 0.09881808691212726
+    }
+  },
+  "mean_background_fidelity_score": 0.9994081268227278,
+  "render": {
+    "render_seconds": 0.1774812999938149,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "210",
+      "--height",
+      "320",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G06_arabic\\alpha_candidates\\trial_01\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G06_arabic\\alpha_candidates\\trial_01\\render_rgba.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.1774812999938149,
+      "sampled_tree_peak_mib": 14.80078125,
+      "observed_process_cpu_seconds": 0.046875,
+      "memory_samples": 4,
+      "observed_pids": [
+        23476,
+        34840
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "34840": 7.8359375,
+        "23476": 7.3046875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "structure": {
+    "bytes": 272125,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "mask": 1,
+      "path": 2029,
+      "g": 1
+    },
+    "path_commands": {
+      "M": 9693,
+      "H": 15838,
+      "V": 7919,
+      "Z": 9693,
+      "L": 5694
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 15387,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim."
+}

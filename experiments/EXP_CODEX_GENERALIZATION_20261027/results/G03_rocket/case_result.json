@@ -1,0 +1,95 @@
+{
+  "id": "G03_rocket",
+  "status": "ok",
+  "source_sha256": "61e5611210758fe32e0eb3c251ae2fa920a12d9b5bf3411d790a7e887c84da0d",
+  "dataset_manifest_sha256": "90b98c7d1dfef43a36d5009819cdf65089f16cb2d583db5d74b30eb2c743c8b1",
+  "has_alpha": false,
+  "normalization": {
+    "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\inputs\\G03_rocket.png",
+    "source_sha256": "61e5611210758fe32e0eb3c251ae2fa920a12d9b5bf3411d790a7e887c84da0d",
+    "dimensions": [
+      320,
+      214
+    ],
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "color_policy": "embedded profile transformed to sRGB",
+    "alpha_policy": "preserve original 8-bit alpha as SVG vector mask; no white compositing",
+    "pixel_budget": 1048576,
+    "status": "EXPERIMENTAL_REQUIRES_RENDER_VALIDATION"
+  },
+  "baseline_commit": "b398de3d95539a77ee4ea1cafea2e1ecc7f2efdf",
+  "baseline_candidates": 19,
+  "failed_candidates": 0,
+  "baseline_stop": "stagnation",
+  "baseline_search_wall_seconds": 164.73674870000104,
+  "families_evaluated": [
+    "bw",
+    "color-cluster",
+    "watershed"
+  ],
+  "selection_policy": "maximize minimum inherited fidelity score over white/black/bluegray, mean then RGB score tie-break; no complexity penalty",
+  "inherited": {
+    "trial": "trial_06",
+    "metrics": {
+      "mae": 0.2840488707165109,
+      "mse": 0.3497517523364486,
+      "rmse": 0.5913981335246575,
+      "psnr_db": 52.69320461783692,
+      "identical": false,
+      "ssim": 0.996047144718033,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 0.999763816721776,
+      "edge_f1_1_5px": 0.9998818944136056,
+      "source_edge_pixels": 4234,
+      "render_edge_pixels": 4231,
+      "delta_e76_mean": 0.28574889231587886,
+      "delta_e76_p95": 0.9964784884458486,
+      "highpass_rmse_sigma1": 0.3809745034530226,
+      "worst_32px_tile_rmse": 0.8579059413284574,
+      "median_32px_tile_rmse": 0.5986638151627108
+    },
+    "robust_score": 0.9747117344357583,
+    "mean_score": 0.9747117344357583,
+    "svg_relative": "baseline_search\\trial_06\\output.svg",
+    "png_relative": "baseline_search\\trial_06\\render.png",
+    "inherited_rgb_score": 0.9747117344357583
+  },
+  "new": {
+    "trial": "trial_06",
+    "metrics": {
+      "mae": 0.2840488707165109,
+      "mse": 0.3497517523364486,
+      "rmse": 0.5913981335246575,
+      "psnr_db": 52.69320461783692,
+      "identical": false,
+      "ssim": 0.996047144718033,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 0.999763816721776,
+      "edge_f1_1_5px": 0.9998818944136056,
+      "source_edge_pixels": 4234,
+      "render_edge_pixels": 4231,
+      "delta_e76_mean": 0.28574889231587886,
+      "delta_e76_p95": 0.9964784884458486,
+      "highpass_rmse_sigma1": 0.3809745034530226,
+      "worst_32px_tile_rmse": 0.8579059413284574,
+      "median_32px_tile_rmse": 0.5986638151627108
+    },
+    "robust_score": 0.9747117344357583,
+    "mean_score": 0.9747117344357583,
+    "svg_relative": "baseline_search\\trial_06\\output.svg",
+    "png_relative": "baseline_search\\trial_06\\render.png",
+    "inherited_rgb_score": 0.9747117344357583
+  },
+  "alpha_candidate_assessments": [],
+  "rgb_metric_leaders": {
+    "ssim": "trial_06",
+    "psnr_db": "trial_06",
+    "edge_f1_1_5px": "trial_01"
+  },
+  "maximum_sampled_worker_tree_mib": 125.91796875,
+  "total_wall_seconds": 171.22578119998798,
+  "architecture": "NOT_APPROVED"
+}

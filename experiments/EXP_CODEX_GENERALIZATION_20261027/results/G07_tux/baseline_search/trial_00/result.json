@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.781140087329247,
+    "mse": 459.5418819853383,
+    "rmse": 21.43692799785777,
+    "psnr_db": 21.507552623683406,
+    "identical": false,
+    "ssim": 0.9113237363465223,
+    "edge_precision_1_5px": 0.9268527430221367,
+    "edge_recall_1_5px": 0.9719289209374196,
+    "edge_f1_1_5px": 0.9488557884163141,
+    "source_edge_pixels": 3883,
+    "render_edge_pixels": 4156,
+    "delta_e76_mean": 1.8360550358248708,
+    "delta_e76_p95": 5.819529090002231,
+    "highpass_rmse_sigma1": 14.274020004357608
+  },
+  "score": 0.7857712002210028,
+  "structure": {
+    "bytes": 170976,
+    "elements": {
+      "svg": 1,
+      "path": 2299
+    },
+    "path_commands": {
+      "M": 2569,
+      "C": 6823,
+      "Z": 2569
+    },
+    "cubic_segments": 6823,
+    "explicit_path_coordinate_pairs": 23038,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.34648889998788945,
+    "trace_cpu_seconds": 0.328125,
+    "render_seconds": 0.14581330001237802,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "265",
+      "--height",
+      "314",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G07_tux\\baseline_search\\trial_00\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G07_tux\\baseline_search\\trial_00\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.14581330001237802,
+      "sampled_tree_peak_mib": 14.56640625,
+      "observed_process_cpu_seconds": 0.09375,
+      "memory_samples": 4,
+      "observed_pids": [
+        9900,
+        15936
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "15936": 7.59765625,
+        "9900": 6.96875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.430043399974238,
+      "sampled_tree_peak_mib": 94.95703125,
+      "observed_process_cpu_seconds": 4.078125,
+      "memory_samples": 119,
+      "observed_pids": [
+        3580,
+        9900,
+        13568,
+        15936,
+        16984,
+        24648,
+        35296
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "24648": 4.3359375,
+        "13568": 7.37890625,
+        "16984": 85.4453125,
+        "3580": 3.82421875,
+        "15936": 6.75390625,
+        "9900": 6.96875,
+        "35296": 2.51953125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.432533599989256
+}

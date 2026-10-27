@@ -1,0 +1,3224 @@
+{
+  "id": "G08_dice_alpha",
+  "status": "ok",
+  "source_sha256": "532fb946f29ac529d630bef2be2aa7e50a842744457afce783b45a27a8b83a52",
+  "dataset_manifest_sha256": "90b98c7d1dfef43a36d5009819cdf65089f16cb2d583db5d74b30eb2c743c8b1",
+  "has_alpha": true,
+  "normalization": {
+    "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\inputs\\G08_dice_alpha.png",
+    "source_sha256": "532fb946f29ac529d630bef2be2aa7e50a842744457afce783b45a27a8b83a52",
+    "dimensions": [
+      320,
+      240
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "color_policy": "untagged RGB assumed sRGB",
+    "alpha_policy": "preserve original 8-bit alpha as SVG vector mask; no white compositing",
+    "pixel_budget": 1048576,
+    "status": "EXPERIMENTAL_REQUIRES_RENDER_VALIDATION"
+  },
+  "baseline_commit": "b398de3d95539a77ee4ea1cafea2e1ecc7f2efdf",
+  "baseline_candidates": 19,
+  "failed_candidates": 0,
+  "baseline_stop": "stagnation",
+  "baseline_search_wall_seconds": 104.22264320001705,
+  "families_evaluated": [
+    "bw",
+    "color-cluster",
+    "watershed"
+  ],
+  "selection_policy": "maximize minimum inherited fidelity score over white/black/bluegray, mean then RGB score tie-break; no complexity penalty",
+  "inherited": {
+    "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+    "alpha_mae_0_255": 0.0,
+    "alpha_max_error_0_255": 0.0,
+    "alpha_exact_fraction": 1.0,
+    "background_metrics": {
+      "white": {
+        "mae": 0.08782552083333334,
+        "mse": 0.09131510416666666,
+        "rmse": 0.30218389130902834,
+        "psnr_db": 58.52537742000639,
+        "identical": false,
+        "ssim": 0.9996217261611925,
+        "edge_precision_1_5px": 0.9989232839838492,
+        "edge_recall_1_5px": 0.9914461373964181,
+        "edge_f1_1_5px": 0.9951706661312468,
+        "source_edge_pixels": 3741,
+        "render_edge_pixels": 3715,
+        "delta_e76_mean": 0.08770882525687186,
+        "delta_e76_p95": 0.60528668808902,
+        "highpass_rmse_sigma1": 0.21135635062383523
+      },
+      "black": {
+        "mae": 0.08782552083333334,
+        "mse": 0.09131510416666666,
+        "rmse": 0.30218389130902834,
+        "psnr_db": 58.52537742000639,
+        "identical": false,
+        "ssim": 0.9995438909966677,
+        "edge_precision_1_5px": 0.9988708220415538,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 0.999435092079991,
+        "source_edge_pixels": 4432,
+        "render_edge_pixels": 4428,
+        "delta_e76_mean": 0.08572863752641473,
+        "delta_e76_p95": 0.5820581624734804,
+        "highpass_rmse_sigma1": 0.21135635062383523
+      },
+      "bluegray": {
+        "mae": 0.1033984375,
+        "mse": 0.11030815972222222,
+        "rmse": 0.33212672238502916,
+        "psnr_db": 57.70472721580362,
+        "identical": false,
+        "ssim": 0.9996273112767619,
+        "edge_precision_1_5px": 0.9884659746251442,
+        "edge_recall_1_5px": 0.9995332555425904,
+        "edge_f1_1_5px": 0.9939688090591348,
+        "source_edge_pixels": 4285,
+        "render_edge_pixels": 4335,
+        "delta_e76_mean": 0.1090110015701083,
+        "delta_e76_p95": 0.6604752722390742,
+        "highpass_rmse_sigma1": 0.23257632018531044
+      }
+    },
+    "mean_background_fidelity_score": 0.992448529752537,
+    "render": {
+      "render_seconds": 0.34222459999728017,
+      "renderer_kind": "resvg",
+      "renderer": "0.49.0",
+      "renderer_command": [
+        "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "--width",
+        "320",
+        "--height",
+        "240",
+        "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\output.svg",
+        "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\render_rgba.png"
+      ],
+      "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "renderer_resources": {
+        "returncode": 0,
+        "termination_reason": null,
+        "wall_seconds": 0.34222459999728017,
+        "sampled_tree_peak_mib": 30.57421875,
+        "observed_process_cpu_seconds": 0.28125,
+        "memory_samples": 10,
+        "observed_pids": [
+          5428,
+          17776
+        ],
+        "windows_peak_wset_mib_by_pid": {
+          "5428": 24.03125,
+          "17776": 6.96484375
+        },
+        "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+      },
+      "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+    },
+    "structure": {
+      "bytes": 1430162,
+      "elements": {
+        "svg": 1,
+        "defs": 1,
+        "mask": 1,
+        "path": 18454,
+        "g": 1
+      },
+      "path_commands": {
+        "M": 37241,
+        "H": 37924,
+        "V": 18962,
+        "Z": 37241,
+        "L": 77599
+      },
+      "cubic_segments": 0,
+      "explicit_path_coordinate_pairs": 114840,
+      "raster_free": true,
+      "external_href_count": 0,
+      "script_count": 0,
+      "foreign_object_count": 0,
+      "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+    },
+    "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+    "trial": "trial_06",
+    "svg_relative": "alpha_candidates\\trial_06\\output.svg",
+    "png_relative": "alpha_candidates\\trial_06\\render_rgba.png",
+    "vector_alpha": {
+      "alpha_run_count": 18962,
+      "alpha_level_paths": 255,
+      "alpha_geometry_wall_seconds": 0.5544114999938756,
+      "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+      "structure": {
+        "bytes": 1430162,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18454,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37241,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37241,
+          "L": 77599
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 114840,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      }
+    },
+    "robust_score": 0.9903938911471996,
+    "mean_score": 0.992448529752537,
+    "inherited_rgb_score": 0.9983995652130745
+  },
+  "new": {
+    "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+    "alpha_mae_0_255": 0.0,
+    "alpha_max_error_0_255": 0.0,
+    "alpha_exact_fraction": 1.0,
+    "background_metrics": {
+      "white": {
+        "mae": 0.08782552083333334,
+        "mse": 0.09131510416666666,
+        "rmse": 0.30218389130902834,
+        "psnr_db": 58.52537742000639,
+        "identical": false,
+        "ssim": 0.9996217261611925,
+        "edge_precision_1_5px": 0.9989232839838492,
+        "edge_recall_1_5px": 0.9914461373964181,
+        "edge_f1_1_5px": 0.9951706661312468,
+        "source_edge_pixels": 3741,
+        "render_edge_pixels": 3715,
+        "delta_e76_mean": 0.08770882525687186,
+        "delta_e76_p95": 0.60528668808902,
+        "highpass_rmse_sigma1": 0.21135635062383523
+      },
+      "black": {
+        "mae": 0.08782552083333334,
+        "mse": 0.09131510416666666,
+        "rmse": 0.30218389130902834,
+        "psnr_db": 58.52537742000639,
+        "identical": false,
+        "ssim": 0.9995438909966677,
+        "edge_precision_1_5px": 0.9988708220415538,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 0.999435092079991,
+        "source_edge_pixels": 4432,
+        "render_edge_pixels": 4428,
+        "delta_e76_mean": 0.08572863752641473,
+        "delta_e76_p95": 0.5820581624734804,
+        "highpass_rmse_sigma1": 0.21135635062383523
+      },
+      "bluegray": {
+        "mae": 0.1033984375,
+        "mse": 0.11030815972222222,
+        "rmse": 0.33212672238502916,
+        "psnr_db": 57.70472721580362,
+        "identical": false,
+        "ssim": 0.9996273112767619,
+        "edge_precision_1_5px": 0.9884659746251442,
+        "edge_recall_1_5px": 0.9995332555425904,
+        "edge_f1_1_5px": 0.9939688090591348,
+        "source_edge_pixels": 4285,
+        "render_edge_pixels": 4335,
+        "delta_e76_mean": 0.1090110015701083,
+        "delta_e76_p95": 0.6604752722390742,
+        "highpass_rmse_sigma1": 0.23257632018531044
+      }
+    },
+    "mean_background_fidelity_score": 0.992448529752537,
+    "render": {
+      "render_seconds": 0.34222459999728017,
+      "renderer_kind": "resvg",
+      "renderer": "0.49.0",
+      "renderer_command": [
+        "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "--width",
+        "320",
+        "--height",
+        "240",
+        "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\output.svg",
+        "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\render_rgba.png"
+      ],
+      "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "renderer_resources": {
+        "returncode": 0,
+        "termination_reason": null,
+        "wall_seconds": 0.34222459999728017,
+        "sampled_tree_peak_mib": 30.57421875,
+        "observed_process_cpu_seconds": 0.28125,
+        "memory_samples": 10,
+        "observed_pids": [
+          5428,
+          17776
+        ],
+        "windows_peak_wset_mib_by_pid": {
+          "5428": 24.03125,
+          "17776": 6.96484375
+        },
+        "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+      },
+      "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+    },
+    "structure": {
+      "bytes": 1430162,
+      "elements": {
+        "svg": 1,
+        "defs": 1,
+        "mask": 1,
+        "path": 18454,
+        "g": 1
+      },
+      "path_commands": {
+        "M": 37241,
+        "H": 37924,
+        "V": 18962,
+        "Z": 37241,
+        "L": 77599
+      },
+      "cubic_segments": 0,
+      "explicit_path_coordinate_pairs": 114840,
+      "raster_free": true,
+      "external_href_count": 0,
+      "script_count": 0,
+      "foreign_object_count": 0,
+      "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+    },
+    "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+    "trial": "trial_06",
+    "svg_relative": "alpha_candidates\\trial_06\\output.svg",
+    "png_relative": "alpha_candidates\\trial_06\\render_rgba.png",
+    "vector_alpha": {
+      "alpha_run_count": 18962,
+      "alpha_level_paths": 255,
+      "alpha_geometry_wall_seconds": 0.5544114999938756,
+      "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+      "structure": {
+        "bytes": 1430162,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18454,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37241,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37241,
+          "L": 77599
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 114840,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      }
+    },
+    "robust_score": 0.9903938911471996,
+    "mean_score": 0.992448529752537,
+    "inherited_rgb_score": 0.9983995652130745
+  },
+  "alpha_candidate_assessments": [
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.08782552083333334,
+          "mse": 0.09131510416666666,
+          "rmse": 0.30218389130902834,
+          "psnr_db": 58.52537742000639,
+          "identical": false,
+          "ssim": 0.9996217261611925,
+          "edge_precision_1_5px": 0.9989232839838492,
+          "edge_recall_1_5px": 0.9914461373964181,
+          "edge_f1_1_5px": 0.9951706661312468,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3715,
+          "delta_e76_mean": 0.08770882525687186,
+          "delta_e76_p95": 0.60528668808902,
+          "highpass_rmse_sigma1": 0.21135635062383523
+        },
+        "black": {
+          "mae": 0.08782552083333334,
+          "mse": 0.09131510416666666,
+          "rmse": 0.30218389130902834,
+          "psnr_db": 58.52537742000639,
+          "identical": false,
+          "ssim": 0.9995438909966677,
+          "edge_precision_1_5px": 0.9988708220415538,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.999435092079991,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4428,
+          "delta_e76_mean": 0.08572863752641473,
+          "delta_e76_p95": 0.5820581624734804,
+          "highpass_rmse_sigma1": 0.21135635062383523
+        },
+        "bluegray": {
+          "mae": 0.1033984375,
+          "mse": 0.11030815972222222,
+          "rmse": 0.33212672238502916,
+          "psnr_db": 57.70472721580362,
+          "identical": false,
+          "ssim": 0.9996273112767619,
+          "edge_precision_1_5px": 0.9884659746251442,
+          "edge_recall_1_5px": 0.9995332555425904,
+          "edge_f1_1_5px": 0.9939688090591348,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4335,
+          "delta_e76_mean": 0.1090110015701083,
+          "delta_e76_p95": 0.6604752722390742,
+          "highpass_rmse_sigma1": 0.23257632018531044
+        }
+      },
+      "mean_background_fidelity_score": 0.992448529752537,
+      "render": {
+        "render_seconds": 0.34222459999728017,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.34222459999728017,
+          "sampled_tree_peak_mib": 30.57421875,
+          "observed_process_cpu_seconds": 0.28125,
+          "memory_samples": 10,
+          "observed_pids": [
+            5428,
+            17776
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "5428": 24.03125,
+            "17776": 6.96484375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1430162,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18454,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37241,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37241,
+          "L": 77599
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 114840,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_06",
+      "svg_relative": "alpha_candidates\\trial_06\\output.svg",
+      "png_relative": "alpha_candidates\\trial_06\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.5544114999938756,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1430162,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 18454,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 37241,
+            "H": 37924,
+            "V": 18962,
+            "Z": 37241,
+            "L": 77599
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 114840,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9903938911471996,
+      "mean_score": 0.992448529752537,
+      "inherited_rgb_score": 0.9983995652130745
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.08782552083333334,
+          "mse": 0.09131510416666666,
+          "rmse": 0.30218389130902834,
+          "psnr_db": 58.52537742000639,
+          "identical": false,
+          "ssim": 0.9996217261611925,
+          "edge_precision_1_5px": 0.9989232839838492,
+          "edge_recall_1_5px": 0.9914461373964181,
+          "edge_f1_1_5px": 0.9951706661312468,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3715,
+          "delta_e76_mean": 0.08770882525687186,
+          "delta_e76_p95": 0.60528668808902,
+          "highpass_rmse_sigma1": 0.21135635062383523
+        },
+        "black": {
+          "mae": 0.08782552083333334,
+          "mse": 0.09131510416666666,
+          "rmse": 0.30218389130902834,
+          "psnr_db": 58.52537742000639,
+          "identical": false,
+          "ssim": 0.9995438909966677,
+          "edge_precision_1_5px": 0.9988708220415538,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.999435092079991,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4428,
+          "delta_e76_mean": 0.08572863752641473,
+          "delta_e76_p95": 0.5820581624734804,
+          "highpass_rmse_sigma1": 0.21135635062383523
+        },
+        "bluegray": {
+          "mae": 0.1033984375,
+          "mse": 0.11030815972222222,
+          "rmse": 0.33212672238502916,
+          "psnr_db": 57.70472721580362,
+          "identical": false,
+          "ssim": 0.9996273112767619,
+          "edge_precision_1_5px": 0.9884659746251442,
+          "edge_recall_1_5px": 0.9995332555425904,
+          "edge_f1_1_5px": 0.9939688090591348,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4335,
+          "delta_e76_mean": 0.1090110015701083,
+          "delta_e76_p95": 0.6604752722390742,
+          "highpass_rmse_sigma1": 0.23257632018531044
+        }
+      },
+      "mean_background_fidelity_score": 0.992448529752537,
+      "render": {
+        "render_seconds": 0.34222459999728017,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_06\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.34222459999728017,
+          "sampled_tree_peak_mib": 30.57421875,
+          "observed_process_cpu_seconds": 0.28125,
+          "memory_samples": 10,
+          "observed_pids": [
+            5428,
+            17776
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "5428": 24.03125,
+            "17776": 6.96484375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1430162,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18454,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37241,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37241,
+          "L": 77599
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 114840,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_13",
+      "svg_relative": "alpha_candidates\\trial_06\\output.svg",
+      "png_relative": "alpha_candidates\\trial_06\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.5544114999938756,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1430162,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 18454,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 37241,
+            "H": 37924,
+            "V": 18962,
+            "Z": 37241,
+            "L": 77599
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 114840,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9903938911471996,
+      "mean_score": 0.992448529752537,
+      "inherited_rgb_score": 0.9983995652130745,
+      "cache_reused_from": "trial_06"
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.0952734375,
+          "mse": 0.1205859375,
+          "rmse": 0.3472548595772275,
+          "psnr_db": 57.31783696697664,
+          "identical": false,
+          "ssim": 0.9995189743340651,
+          "edge_precision_1_5px": 0.9986486486486487,
+          "edge_recall_1_5px": 0.9895749799518845,
+          "edge_f1_1_5px": 0.9940911095207754,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3700,
+          "delta_e76_mean": 0.08936291982423374,
+          "delta_e76_p95": 0.6256235171545457,
+          "highpass_rmse_sigma1": 0.21931149655230342
+        },
+        "black": {
+          "mae": 0.0952734375,
+          "mse": 0.1205859375,
+          "rmse": 0.3472548595772275,
+          "psnr_db": 57.31783696697664,
+          "identical": false,
+          "ssim": 0.9996508090883585,
+          "edge_precision_1_5px": 0.9945958117541094,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.9972905847821179,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4441,
+          "delta_e76_mean": 0.08809147960090762,
+          "delta_e76_p95": 0.5868072520069676,
+          "highpass_rmse_sigma1": 0.21931149655230342
+        },
+        "bluegray": {
+          "mae": 0.11329861111111111,
+          "mse": 0.14461805555555557,
+          "rmse": 0.38028680697015455,
+          "psnr_db": 56.528578428843346,
+          "identical": false,
+          "ssim": 0.9995241023991775,
+          "edge_precision_1_5px": 0.9882271468144044,
+          "edge_recall_1_5px": 0.9995332555425904,
+          "edge_f1_1_5px": 0.9938480473800764,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4332,
+          "delta_e76_mean": 0.11229097658927252,
+          "delta_e76_p95": 0.6819480251260497,
+          "highpass_rmse_sigma1": 0.242658663295976
+        }
+      },
+      "mean_background_fidelity_score": 0.9891466490122203,
+      "render": {
+        "render_seconds": 0.47363880000193603,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_01\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_01\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.47363880000193603,
+          "sampled_tree_peak_mib": 30.8515625,
+          "observed_process_cpu_seconds": 0.296875,
+          "memory_samples": 12,
+          "observed_pids": [
+            8760,
+            34656
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "34656": 24.50390625,
+            "8760": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1502732,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 19361,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 38110,
+          "H": 37924,
+          "V": 18962,
+          "Z": 38110,
+          "L": 85460
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 123570,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_01",
+      "svg_relative": "alpha_candidates\\trial_01\\output.svg",
+      "png_relative": "alpha_candidates\\trial_01\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.8216797999921255,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1502732,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 19361,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 38110,
+            "H": 37924,
+            "V": 18962,
+            "Z": 38110,
+            "L": 85460
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 123570,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9872976435973948,
+      "mean_score": 0.9891466490122203,
+      "inherited_rgb_score": 0.9943632567385573
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.09821180555555556,
+          "mse": 0.12692708333333333,
+          "rmse": 0.356268274385095,
+          "psnr_db": 57.09526060386736,
+          "identical": false,
+          "ssim": 0.9995017533382992,
+          "edge_precision_1_5px": 0.998651927743327,
+          "edge_recall_1_5px": 0.991980753809142,
+          "edge_f1_1_5px": 0.9953051622795503,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3709,
+          "delta_e76_mean": 0.09309199814673515,
+          "delta_e76_p95": 0.6284821035357795,
+          "highpass_rmse_sigma1": 0.22180658994700264
+        },
+        "black": {
+          "mae": 0.09821180555555556,
+          "mse": 0.12692708333333333,
+          "rmse": 0.356268274385095,
+          "psnr_db": 57.09526060386736,
+          "identical": false,
+          "ssim": 0.9996423672663609,
+          "edge_precision_1_5px": 0.9945982444294396,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.9972918077183479,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4443,
+          "delta_e76_mean": 0.09183725268119737,
+          "delta_e76_p95": 0.6229398105375312,
+          "highpass_rmse_sigma1": 0.22180658994700264
+        },
+        "bluegray": {
+          "mae": 0.11644965277777777,
+          "mse": 0.15140625,
+          "rmse": 0.38910956040683453,
+          "psnr_db": 56.32936557801032,
+          "identical": false,
+          "ssim": 0.9995146651208598,
+          "edge_precision_1_5px": 0.9882298638356797,
+          "edge_recall_1_5px": 0.9995332555425904,
+          "edge_f1_1_5px": 0.9938494213868307,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4333,
+          "delta_e76_mean": 0.11584275209512708,
+          "delta_e76_p95": 0.6997965182766754,
+          "highpass_rmse_sigma1": 0.24444115631719934
+        }
+      },
+      "mean_background_fidelity_score": 0.9886293770136101,
+      "render": {
+        "render_seconds": 0.6253504999913275,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_03\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_03\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.6253504999913275,
+          "sampled_tree_peak_mib": 30.86328125,
+          "observed_process_cpu_seconds": 0.40625,
+          "memory_samples": 12,
+          "observed_pids": [
+            4520,
+            22732
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "4520": 24.30078125,
+            "22732": 6.97265625
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1459813,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 19017,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37816,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37816,
+          "L": 79479
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 117295,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_03",
+      "svg_relative": "alpha_candidates\\trial_03\\output.svg",
+      "png_relative": "alpha_candidates\\trial_03\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 1.2142336000106297,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1459813,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 19017,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 37816,
+            "H": 37924,
+            "V": 18962,
+            "Z": 37816,
+            "L": 79479
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 117295,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9867433295958901,
+      "mean_score": 0.9886293770136101,
+      "inherited_rgb_score": 0.9933851024826429
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.10430555555555555,
+          "mse": 0.1390017361111111,
+          "rmse": 0.3728293659452151,
+          "psnr_db": 56.700601363061395,
+          "identical": false,
+          "ssim": 0.9994325914201814,
+          "edge_precision_1_5px": 0.9989171629669734,
+          "edge_recall_1_5px": 0.9882384389200748,
+          "edge_f1_1_5px": 0.993549107884168,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3694,
+          "delta_e76_mean": 0.09617844212223892,
+          "delta_e76_p95": 0.6328803226403634,
+          "highpass_rmse_sigma1": 0.23130249970785866
+        },
+        "black": {
+          "mae": 0.10430555555555555,
+          "mse": 0.1390017361111111,
+          "rmse": 0.3728293659452151,
+          "psnr_db": 56.700601363061395,
+          "identical": false,
+          "ssim": 0.9995267097704416,
+          "edge_precision_1_5px": 0.9948163173315303,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.9974014235679585,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4437,
+          "delta_e76_mean": 0.09445444560756362,
+          "delta_e76_p95": 0.6159353623710869,
+          "highpass_rmse_sigma1": 0.23130249970785866
+        },
+        "bluegray": {
+          "mae": 0.12067708333333334,
+          "mse": 0.1602517361111111,
+          "rmse": 0.40031454646454095,
+          "psnr_db": 56.08277617657453,
+          "identical": false,
+          "ssim": 0.9994558651300901,
+          "edge_precision_1_5px": 0.987943426849061,
+          "edge_recall_1_5px": 0.9962660443407234,
+          "edge_f1_1_5px": 0.9920872812981261,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4313,
+          "delta_e76_mean": 0.11780484851968012,
+          "delta_e76_p95": 0.6981038195165992,
+          "highpass_rmse_sigma1": 0.2540240616291048
+        }
+      },
+      "mean_background_fidelity_score": 0.9874276530561872,
+      "render": {
+        "render_seconds": 0.4783787000051234,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_02\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_02\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.4783787000051234,
+          "sampled_tree_peak_mib": 29.8828125,
+          "observed_process_cpu_seconds": 0.359375,
+          "memory_samples": 12,
+          "observed_pids": [
+            12372,
+            34296
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "34296": 23.859375,
+            "12372": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1471388,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18434,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 38044,
+          "H": 37924,
+          "V": 18962,
+          "Z": 38044,
+          "L": 85258
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 123302,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_02",
+      "svg_relative": "alpha_candidates\\trial_02\\output.svg",
+      "png_relative": "alpha_candidates\\trial_02\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 1.170318500022404,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1471388,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 18434,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 38044,
+            "H": 37924,
+            "V": 18962,
+            "Z": 38044,
+            "L": 85258
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 123302,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9856792983459435,
+      "mean_score": 0.9874276530561872,
+      "inherited_rgb_score": 0.9916641005321263
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.10474392361111111,
+          "mse": 0.13834635416666666,
+          "rmse": 0.3719493973199401,
+          "psnr_db": 56.721126421770734,
+          "identical": false,
+          "ssim": 0.9994533231474508,
+          "edge_precision_1_5px": 0.9970326409495549,
+          "edge_recall_1_5px": 0.9895749799518845,
+          "edge_f1_1_5px": 0.9932898125411751,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3707,
+          "delta_e76_mean": 0.09731713638294942,
+          "delta_e76_p95": 0.6358336011026802,
+          "highpass_rmse_sigma1": 0.2465768396699999
+        },
+        "black": {
+          "mae": 0.10474392361111111,
+          "mse": 0.13834635416666666,
+          "rmse": 0.3719493973199401,
+          "psnr_db": 56.721126421770734,
+          "identical": false,
+          "ssim": 0.9996103719786019,
+          "edge_precision_1_5px": 0.9945933768866861,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 0.997289360740908,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4439,
+          "delta_e76_mean": 0.09597652337162864,
+          "delta_e76_p95": 0.6234049822076434,
+          "highpass_rmse_sigma1": 0.2465768396699999
+        },
+        "bluegray": {
+          "mae": 0.12223524305555555,
+          "mse": 0.16231336805555555,
+          "rmse": 0.40288133247341645,
+          "psnr_db": 56.02726071271631,
+          "identical": false,
+          "ssim": 0.9994695643408922,
+          "edge_precision_1_5px": 0.987987987987988,
+          "edge_recall_1_5px": 0.9995332555425904,
+          "edge_f1_1_5px": 0.9937270892424693,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4329,
+          "delta_e76_mean": 0.11967325457943984,
+          "delta_e76_p95": 0.7054213080088343,
+          "highpass_rmse_sigma1": 0.26798377397485834
+        }
+      },
+      "mean_background_fidelity_score": 0.9874239266248789,
+      "render": {
+        "render_seconds": 0.42872200001147576,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_14\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_14\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.42872200001147576,
+          "sampled_tree_peak_mib": 30.3828125,
+          "observed_process_cpu_seconds": 0.359375,
+          "memory_samples": 11,
+          "observed_pids": [
+            10160,
+            13288
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "13288": 23.89453125,
+            "10160": 7.3046875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1451537,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 18390,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 37127,
+          "H": 37924,
+          "V": 18962,
+          "Z": 37127,
+          "L": 82263
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 119390,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_14",
+      "svg_relative": "alpha_candidates\\trial_14\\output.svg",
+      "png_relative": "alpha_candidates\\trial_14\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.8180157000024337,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1451537,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 18390,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 37127,
+            "H": 37924,
+            "V": 18962,
+            "Z": 37127,
+            "L": 82263
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 119390,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9857819322447,
+      "mean_score": 0.9874239266248789,
+      "inherited_rgb_score": 0.9913136139726585
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 0.2659331597222222,
+          "mse": 0.7582942708333333,
+          "rmse": 0.8708009363989759,
+          "psnr_db": 49.332425861089206,
+          "identical": false,
+          "ssim": 0.9975250225186721,
+          "edge_precision_1_5px": 0.9913396481732071,
+          "edge_recall_1_5px": 0.9807538091419407,
+          "edge_f1_1_5px": 0.9860183172281916,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3695,
+          "delta_e76_mean": 0.21406795366271075,
+          "delta_e76_p95": 1.1862082884721257,
+          "highpass_rmse_sigma1": 0.612510087009535
+        },
+        "black": {
+          "mae": 0.2659331597222222,
+          "mse": 0.7582942708333333,
+          "rmse": 0.8708009363989759,
+          "psnr_db": 49.332425861089206,
+          "identical": false,
+          "ssim": 0.9982714495254412,
+          "edge_precision_1_5px": 0.9952638700947226,
+          "edge_recall_1_5px": 0.9981949458483754,
+          "edge_f1_1_5px": 0.996727253122649,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4434,
+          "delta_e76_mean": 0.21219313143284682,
+          "delta_e76_p95": 1.1665716805193058,
+          "highpass_rmse_sigma1": 0.612510087009535
+        },
+        "bluegray": {
+          "mae": 0.2795182291666667,
+          "mse": 0.7864019097222222,
+          "rmse": 0.88679304785402,
+          "psnr_db": 49.17435801388673,
+          "identical": false,
+          "ssim": 0.9978254385061697,
+          "edge_precision_1_5px": 0.9943595769682726,
+          "edge_recall_1_5px": 0.9936989498249709,
+          "edge_f1_1_5px": 0.9940291536342036,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4255,
+          "delta_e76_mean": 0.23363507086010907,
+          "delta_e76_p95": 1.2611958190643662,
+          "highpass_rmse_sigma1": 0.6231212170943468
+        }
+      },
+      "mean_background_fidelity_score": 0.9650428289505002,
+      "render": {
+        "render_seconds": 0.37322799998219125,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_17\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_17\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.37322799998219125,
+          "sampled_tree_peak_mib": 25.26953125,
+          "observed_process_cpu_seconds": 0.25,
+          "memory_samples": 9,
+          "observed_pids": [
+            19264,
+            30300
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "30300": 18.55859375,
+            "19264": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 1146019,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 12651,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 31367,
+          "H": 37924,
+          "V": 18962,
+          "Z": 31367,
+          "L": 62453
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 93820,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_17",
+      "svg_relative": "alpha_candidates\\trial_17\\output.svg",
+      "png_relative": "alpha_candidates\\trial_17\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.5560705999960192,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 1146019,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 12651,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 31367,
+            "H": 37924,
+            "V": 18962,
+            "Z": 31367,
+            "L": 62453
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 93820,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.9638764841721755,
+      "mean_score": 0.9650428289505002,
+      "inherited_rgb_score": 0.9627583552312766
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 1.8599262152777778,
+          "mse": 25.19669704861111,
+          "rmse": 5.019631166590939,
+          "psnr_db": 34.11736746577515,
+          "identical": false,
+          "ssim": 0.9643038051284228,
+          "edge_precision_1_5px": 0.962258876153201,
+          "edge_recall_1_5px": 0.9270248596631917,
+          "edge_f1_1_5px": 0.9443133211964232,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3577,
+          "delta_e76_mean": 1.2946971121994908,
+          "delta_e76_p95": 6.840704942531734,
+          "highpass_rmse_sigma1": 3.8005878818448036
+        },
+        "black": {
+          "mae": 1.8599262152777778,
+          "mse": 25.19669704861111,
+          "rmse": 5.019631166590939,
+          "psnr_db": 34.11736746577515,
+          "identical": false,
+          "ssim": 0.9793786175311187,
+          "edge_precision_1_5px": 0.9807029634734665,
+          "edge_recall_1_5px": 0.9666064981949458,
+          "edge_f1_1_5px": 0.9736037090687242,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4353,
+          "delta_e76_mean": 1.2793476313096122,
+          "delta_e76_p95": 6.775456923900854,
+          "highpass_rmse_sigma1": 3.8005878818448036
+        },
+        "bluegray": {
+          "mae": 1.86859375,
+          "mse": 25.26355034722222,
+          "rmse": 5.026285939659842,
+          "psnr_db": 34.10585977916247,
+          "identical": false,
+          "ssim": 0.9729257212335368,
+          "edge_precision_1_5px": 0.9766826923076923,
+          "edge_recall_1_5px": 0.9498249708284714,
+          "edge_f1_1_5px": 0.9630666178816641,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4160,
+          "delta_e76_mean": 1.3173649592748224,
+          "delta_e76_p95": 6.911153344860546,
+          "highpass_rmse_sigma1": 3.8027382045226807
+        }
+      },
+      "mean_background_fidelity_score": 0.8835525118860058,
+      "render": {
+        "render_seconds": 0.19390839998959564,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_07\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_07\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.19390839998959564,
+          "sampled_tree_peak_mib": 15.8828125,
+          "observed_process_cpu_seconds": 0.125,
+          "memory_samples": 5,
+          "observed_pids": [
+            35192,
+            35496
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "35496": 8.91796875,
+            "35192": 7.3046875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 524170,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 1360,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 20157,
+          "H": 37924,
+          "V": 18962,
+          "Z": 20157,
+          "L": 18007
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 38164,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_07",
+      "svg_relative": "alpha_candidates\\trial_07\\output.svg",
+      "png_relative": "alpha_candidates\\trial_07\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.12185279998811893,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 524170,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 1360,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 20157,
+            "H": 37924,
+            "V": 18962,
+            "Z": 20157,
+            "L": 18007
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 38164,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.8772298467226138,
+      "mean_score": 0.8835525118860058,
+      "inherited_rgb_score": 0.8679480857701848
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 1.860993923611111,
+          "mse": 25.198875868055556,
+          "rmse": 5.019848191734044,
+          "psnr_db": 34.11699193705007,
+          "identical": false,
+          "ssim": 0.9643057443398345,
+          "edge_precision_1_5px": 0.9625174825174825,
+          "edge_recall_1_5px": 0.9270248596631917,
+          "edge_f1_1_5px": 0.9444378294527999,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3575,
+          "delta_e76_mean": 1.2961917510166643,
+          "delta_e76_p95": 6.8454087311090115,
+          "highpass_rmse_sigma1": 3.800450267521756
+        },
+        "black": {
+          "mae": 1.860993923611111,
+          "mse": 25.198875868055556,
+          "rmse": 5.019848191734044,
+          "psnr_db": 34.11699193705007,
+          "identical": false,
+          "ssim": 0.979382490807272,
+          "edge_precision_1_5px": 0.9806985294117647,
+          "edge_recall_1_5px": 0.9666064981949458,
+          "edge_f1_1_5px": 0.9736015240146472,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4352,
+          "delta_e76_mean": 1.2809212608084621,
+          "delta_e76_p95": 6.778496001285297,
+          "highpass_rmse_sigma1": 3.800450267521756
+        },
+        "bluegray": {
+          "mae": 1.8696571180555555,
+          "mse": 25.265516493055557,
+          "rmse": 5.026481522203733,
+          "psnr_db": 34.105521800909614,
+          "identical": false,
+          "ssim": 0.972927535130835,
+          "edge_precision_1_5px": 0.9766826923076923,
+          "edge_recall_1_5px": 0.9498249708284714,
+          "edge_f1_1_5px": 0.9630666178816641,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4160,
+          "delta_e76_mean": 1.3187999029631827,
+          "delta_e76_p95": 6.915027125559078,
+          "highpass_rmse_sigma1": 3.802646814844555
+        }
+      },
+      "mean_background_fidelity_score": 0.8835444406490885,
+      "render": {
+        "render_seconds": 0.17148950000409968,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_16\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_16\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.17148950000409968,
+          "sampled_tree_peak_mib": 15.43359375,
+          "observed_process_cpu_seconds": 0.140625,
+          "memory_samples": 5,
+          "observed_pids": [
+            22324,
+            25508
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "22324": 8.56640625,
+            "25508": 6.97265625
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 508656,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 1309,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 20081,
+          "H": 37924,
+          "V": 18962,
+          "Z": 20081,
+          "L": 14913
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 34994,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_16",
+      "svg_relative": "alpha_candidates\\trial_16\\output.svg",
+      "png_relative": "alpha_candidates\\trial_16\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.1444183999847155,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 508656,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 1309,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 20081,
+            "H": 37924,
+            "V": 18962,
+            "Z": 20081,
+            "L": 14913
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 34994,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.8772383830894156,
+      "mean_score": 0.8835444406490885,
+      "inherited_rgb_score": 0.8679328003715926
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 1.4089539930555555,
+          "mse": 29.100230034722223,
+          "rmse": 5.394462905120604,
+          "psnr_db": 33.491839388093005,
+          "identical": false,
+          "ssim": 0.9731877975681383,
+          "edge_precision_1_5px": 0.9590980597797588,
+          "edge_recall_1_5px": 0.9700614808874632,
+          "edge_f1_1_5px": 0.9645486177513982,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3814,
+          "delta_e76_mean": 1.0158701941799653,
+          "delta_e76_p95": 5.5579179268315,
+          "highpass_rmse_sigma1": 3.9583348841066
+        },
+        "black": {
+          "mae": 1.4089539930555555,
+          "mse": 29.100230034722223,
+          "rmse": 5.394462905120604,
+          "psnr_db": 33.491839388093005,
+          "identical": false,
+          "ssim": 0.9850602075886186,
+          "edge_precision_1_5px": 0.9866997294860235,
+          "edge_recall_1_5px": 0.9912003610108303,
+          "edge_f1_1_5px": 0.9889449247460771,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4436,
+          "delta_e76_mean": 1.0087095548369156,
+          "delta_e76_p95": 5.504638310536617,
+          "highpass_rmse_sigma1": 3.9583348841066
+        },
+        "bluegray": {
+          "mae": 1.4152213541666667,
+          "mse": 29.121749131944444,
+          "rmse": 5.396457090716505,
+          "psnr_db": 33.48862904528485,
+          "identical": false,
+          "ssim": 0.9808492744487474,
+          "edge_precision_1_5px": 0.9800332778702163,
+          "edge_recall_1_5px": 0.9764294049008168,
+          "edge_f1_1_5px": 0.9782280221552306,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4207,
+          "delta_e76_mean": 1.036349713285322,
+          "delta_e76_p95": 5.661381046112923,
+          "highpass_rmse_sigma1": 3.960404338954514
+        }
+      },
+      "mean_background_fidelity_score": 0.8908690019525186,
+      "render": {
+        "render_seconds": 0.20406069999444298,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_04\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_04\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.20406069999444298,
+          "sampled_tree_peak_mib": 18.22265625,
+          "observed_process_cpu_seconds": 0.140625,
+          "memory_samples": 6,
+          "observed_pids": [
+            28372,
+            33340
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "33340": 11.9140625,
+            "28372": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 656466,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 5242,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 24036,
+          "H": 37924,
+          "V": 18962,
+          "Z": 24036,
+          "L": 13826
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 37862,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_04",
+      "svg_relative": "alpha_candidates\\trial_04\\output.svg",
+      "png_relative": "alpha_candidates\\trial_04\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.3522413999889977,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 656466,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 5242,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 24036,
+            "H": 37924,
+            "V": 18962,
+            "Z": 24036,
+            "L": 13826
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 37862,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.8857825234877763,
+      "mean_score": 0.8908690019525186,
+      "inherited_rgb_score": 0.8132701673914506
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 1.4325607638888889,
+          "mse": 30.953993055555557,
+          "rmse": 5.563631283213829,
+          "psnr_db": 33.223636800437376,
+          "identical": false,
+          "ssim": 0.9721595498527157,
+          "edge_precision_1_5px": 0.9575981037661312,
+          "edge_recall_1_5px": 0.9716653301256348,
+          "edge_f1_1_5px": 0.9645804313479772,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3797,
+          "delta_e76_mean": 1.0316597444028068,
+          "delta_e76_p95": 5.658644590572282,
+          "highpass_rmse_sigma1": 4.071037118310332
+        },
+        "black": {
+          "mae": 1.4325607638888889,
+          "mse": 30.953993055555557,
+          "rmse": 5.563631283213829,
+          "psnr_db": 33.223636800437376,
+          "identical": false,
+          "ssim": 0.9844500159189247,
+          "edge_precision_1_5px": 0.9873417721518988,
+          "edge_recall_1_5px": 0.9905234657039711,
+          "edge_f1_1_5px": 0.9889300598117561,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4424,
+          "delta_e76_mean": 1.0254757182667713,
+          "delta_e76_p95": 5.562837547501198,
+          "highpass_rmse_sigma1": 4.071037118310332
+        },
+        "bluegray": {
+          "mae": 1.4387543402777778,
+          "mse": 30.978450520833334,
+          "rmse": 5.565828826044989,
+          "psnr_db": 33.22020669429259,
+          "identical": false,
+          "ssim": 0.9801463778381881,
+          "edge_precision_1_5px": 0.9813441760344416,
+          "edge_recall_1_5px": 0.9773628938156359,
+          "edge_f1_1_5px": 0.9793494887334592,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4181,
+          "delta_e76_mean": 1.0529907966092849,
+          "delta_e76_p95": 5.747303474280587,
+          "highpass_rmse_sigma1": 4.073020583228235
+        }
+      },
+      "mean_background_fidelity_score": 0.8893129869256207,
+      "render": {
+        "render_seconds": 0.30303660000208765,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_05\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_05\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.30303660000208765,
+          "sampled_tree_peak_mib": 18.9140625,
+          "observed_process_cpu_seconds": 0.21875,
+          "memory_samples": 7,
+          "observed_pids": [
+            10448,
+            24492
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "24492": 12.58984375,
+            "10448": 6.97265625
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 937641,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 5242,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 24036,
+          "H": 37924,
+          "V": 18962,
+          "Z": 24036,
+          "C": 16363
+        },
+        "cubic_segments": 16363,
+        "explicit_path_coordinate_pairs": 73125,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_05",
+      "svg_relative": "alpha_candidates\\trial_05\\output.svg",
+      "png_relative": "alpha_candidates\\trial_05\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.3023879999818746,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 937641,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 5242,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 24036,
+            "H": 37924,
+            "V": 18962,
+            "Z": 24036,
+            "C": 16363
+          },
+          "cubic_segments": 16363,
+          "explicit_path_coordinate_pairs": 73125,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.8840648254296143,
+      "mean_score": 0.8893129869256207,
+      "inherited_rgb_score": 0.8070022892603077
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.0,
+      "alpha_max_error_0_255": 0.0,
+      "alpha_exact_fraction": 1.0,
+      "background_metrics": {
+        "white": {
+          "mae": 1.5025303819444444,
+          "mse": 36.28773003472222,
+          "rmse": 6.023929783349256,
+          "psnr_db": 32.53320558945332,
+          "identical": false,
+          "ssim": 0.9688547527340224,
+          "edge_precision_1_5px": 0.9535126664925568,
+          "edge_recall_1_5px": 0.9676557070302059,
+          "edge_f1_1_5px": 0.9605321284414531,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3829,
+          "delta_e76_mean": 1.0732960319741505,
+          "delta_e76_p95": 5.829263025978214,
+          "highpass_rmse_sigma1": 4.315097616324027
+        },
+        "black": {
+          "mae": 1.5025303819444444,
+          "mse": 36.28773003472222,
+          "rmse": 6.023929783349256,
+          "psnr_db": 32.53320558945332,
+          "identical": false,
+          "ssim": 0.9823185384438498,
+          "edge_precision_1_5px": 0.9834729454380802,
+          "edge_recall_1_5px": 0.9891696750902527,
+          "edge_f1_1_5px": 0.9863130845652,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4417,
+          "delta_e76_mean": 1.0664256398648282,
+          "delta_e76_p95": 5.738449006681815,
+          "highpass_rmse_sigma1": 4.315097616324027
+        },
+        "bluegray": {
+          "mae": 1.5088454861111111,
+          "mse": 36.30535590277778,
+          "rmse": 6.025392593248823,
+          "psnr_db": 32.53109662348587,
+          "identical": false,
+          "ssim": 0.9776902870610641,
+          "edge_precision_1_5px": 0.9774614472123369,
+          "edge_recall_1_5px": 0.9747957992998834,
+          "edge_f1_1_5px": 0.9761268033937928,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4215,
+          "delta_e76_mean": 1.0947807148824769,
+          "delta_e76_p95": 5.892968489690225,
+          "highpass_rmse_sigma1": 4.316289701706462
+        }
+      },
+      "mean_background_fidelity_score": 0.8844135668882821,
+      "render": {
+        "render_seconds": 0.2382735999999568,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_00\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_00\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.2382735999999568,
+          "sampled_tree_peak_mib": 19.28125,
+          "observed_process_cpu_seconds": 0.171875,
+          "memory_samples": 7,
+          "observed_pids": [
+            25896,
+            30480
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "25896": 12.44140625,
+            "30480": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 765224,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 5242,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 24036,
+          "H": 37924,
+          "V": 18962,
+          "Z": 24036,
+          "C": 13729
+        },
+        "cubic_segments": 13729,
+        "explicit_path_coordinate_pairs": 65223,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_00",
+      "svg_relative": "alpha_candidates\\trial_00\\output.svg",
+      "png_relative": "alpha_candidates\\trial_00\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.23587820000830106,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 765224,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 5242,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 24036,
+            "H": 37924,
+            "V": 18962,
+            "Z": 24036,
+            "C": 13729
+          },
+          "cubic_segments": 13729,
+          "explicit_path_coordinate_pairs": 65223,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.8787409097375366,
+      "mean_score": 0.8844135668882821,
+      "inherited_rgb_score": 0.7993204642409263
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 0.6169661458333333,
+      "alpha_max_error_0_255": 64.0,
+      "alpha_exact_fraction": 0.9817578125,
+      "background_metrics": {
+        "white": {
+          "mae": 6.274878472222222,
+          "mse": 286.0164409722222,
+          "rmse": 16.912020605836023,
+          "psnr_db": 23.566893626399516,
+          "identical": false,
+          "ssim": 0.8193208327307548,
+          "edge_precision_1_5px": 0.7991254441104126,
+          "edge_recall_1_5px": 0.764501470195135,
+          "edge_f1_1_5px": 0.7814301113690969,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3659,
+          "delta_e76_mean": 4.317602670328691,
+          "delta_e76_p95": 21.491058271707843,
+          "highpass_rmse_sigma1": 4.975017336442936
+        },
+        "black": {
+          "mae": 6.1952734375,
+          "mse": 281.0342230902778,
+          "rmse": 16.7640753723633,
+          "psnr_db": 23.643211513035567,
+          "identical": false,
+          "ssim": 0.8811479775438511,
+          "edge_precision_1_5px": 0.9520099719538797,
+          "edge_recall_1_5px": 0.6929151624548736,
+          "edge_f1_1_5px": 0.8020573466550976,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 3209,
+          "delta_e76_mean": 4.275935922056623,
+          "delta_e76_p95": 20.697266002627817,
+          "highpass_rmse_sigma1": 4.764122478841884
+        },
+        "bluegray": {
+          "mae": 6.149327256944445,
+          "mse": 277.9323480902778,
+          "rmse": 16.671303131137584,
+          "psnr_db": 23.691412643261287,
+          "identical": false,
+          "ssim": 0.8477408687210962,
+          "edge_precision_1_5px": 0.9282178217821783,
+          "edge_recall_1_5px": 0.4371061843640607,
+          "edge_f1_1_5px": 0.5943347491312919,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 2020,
+          "delta_e76_mean": 4.364705452274174,
+          "delta_e76_p95": 21.23630233091948,
+          "highpass_rmse_sigma1": 4.5450626157730785
+        }
+      },
+      "mean_background_fidelity_score": 0.727508851876649,
+      "render": {
+        "render_seconds": 0.23115940002026036,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_08\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_08\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.23115940002026036,
+          "sampled_tree_peak_mib": 14.35546875,
+          "observed_process_cpu_seconds": 0.09375,
+          "memory_samples": 5,
+          "observed_pids": [
+            23328,
+            33980
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "23328": 7.64453125,
+            "33980": 6.9609375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 428691,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 284,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 18997,
+          "H": 37924,
+          "V": 18962,
+          "Z": 18997,
+          "C": 850,
+          "L": 14
+        },
+        "cubic_segments": 850,
+        "explicit_path_coordinate_pairs": 21561,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_08",
+      "svg_relative": "alpha_candidates\\trial_08\\output.svg",
+      "png_relative": "alpha_candidates\\trial_08\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.07858860000851564,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 428691,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 284,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 18997,
+            "H": 37924,
+            "V": 18962,
+            "Z": 18997,
+            "C": 850,
+            "L": 14
+          },
+          "cubic_segments": 850,
+          "explicit_path_coordinate_pairs": 21561,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.7011260372288657,
+      "mean_score": 0.727508851876649,
+      "inherited_rgb_score": 0.6414034547793864
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 26.67875,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.8597526041666667,
+      "background_metrics": {
+        "white": {
+          "mae": 23.364270833333332,
+          "mse": 2530.540842013889,
+          "rmse": 50.304481331327615,
+          "psnr_db": 14.098670098106862,
+          "identical": false,
+          "ssim": 0.7695614314411864,
+          "edge_precision_1_5px": 0.7310045894951556,
+          "edge_recall_1_5px": 0.7588879978615344,
+          "edge_f1_1_5px": 0.7446853740426866,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 3922,
+          "delta_e76_mean": 17.814742127065983,
+          "delta_e76_p95": 73.13297828928458,
+          "highpass_rmse_sigma1": 14.00817505501055
+        },
+        "black": {
+          "mae": 34.269748263888886,
+          "mse": 5037.321753472223,
+          "rmse": 70.97409212855226,
+          "psnr_db": 11.108806690344814,
+          "identical": false,
+          "ssim": 0.6329711851216396,
+          "edge_precision_1_5px": null,
+          "edge_recall_1_5px": null,
+          "edge_f1_1_5px": null,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 0,
+          "delta_e76_mean": 22.579208261181094,
+          "delta_e76_p95": 80.93508014594138,
+          "highpass_rmse_sigma1": 5.624404722457845
+        },
+        "bluegray": {
+          "mae": 26.236888020833334,
+          "mse": 3071.198224826389,
+          "rmse": 55.418392477826245,
+          "psnr_db": 13.257725127836746,
+          "identical": false,
+          "ssim": 0.7302773363181091,
+          "edge_precision_1_5px": 0.8268870867124142,
+          "edge_recall_1_5px": 0.6182030338389731,
+          "edge_f1_1_5px": 0.7074771301499696,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 3206,
+          "delta_e76_mean": 20.19041088811937,
+          "delta_e76_p95": 76.69684534075232,
+          "highpass_rmse_sigma1": 5.631141461161508
+        }
+      },
+      "mean_background_fidelity_score": 0.5505421463833468,
+      "render": {
+        "render_seconds": 0.13221420001355,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_11\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_11\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.13221420001355,
+          "sampled_tree_peak_mib": 14.3046875,
+          "observed_process_cpu_seconds": 0.09375,
+          "memory_samples": 4,
+          "observed_pids": [
+            4528,
+            25592
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "25592": 7.5234375,
+            "4528": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 424284,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 275,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19110,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19110,
+          "C": 678,
+          "L": 204
+        },
+        "cubic_segments": 678,
+        "explicit_path_coordinate_pairs": 21348,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_11",
+      "svg_relative": "alpha_candidates\\trial_11\\output.svg",
+      "png_relative": "alpha_candidates\\trial_11\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.09596639999654144,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 424284,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 275,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19110,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19110,
+            "C": 678,
+            "L": 204
+          },
+          "cubic_segments": 678,
+          "explicit_path_coordinate_pairs": 21348,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.5058928425143449,
+      "mean_score": 0.5505421463833468,
+      "inherited_rgb_score": 0.5325754872232544
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 27.41794270833333,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.8705338541666666,
+      "background_metrics": {
+        "white": {
+          "mae": 24.66762152777778,
+          "mse": 2740.847638888889,
+          "rmse": 52.353105341411116,
+          "psnr_db": 13.751954666742458,
+          "identical": false,
+          "ssim": 0.7604891421376982,
+          "edge_precision_1_5px": 0.7326490713587488,
+          "edge_recall_1_5px": 0.780807270783213,
+          "edge_f1_1_5px": 0.755961973821933,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 4092,
+          "delta_e76_mean": 18.10551585357424,
+          "delta_e76_p95": 73.87673910696716,
+          "highpass_rmse_sigma1": 19.760534511761524
+        },
+        "black": {
+          "mae": 34.269748263888886,
+          "mse": 5037.321753472223,
+          "rmse": 70.97409212855226,
+          "psnr_db": 11.108806690344814,
+          "identical": false,
+          "ssim": 0.6329711851216396,
+          "edge_precision_1_5px": null,
+          "edge_recall_1_5px": null,
+          "edge_f1_1_5px": null,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 0,
+          "delta_e76_mean": 22.579208261181094,
+          "delta_e76_p95": 80.93508014594138,
+          "highpass_rmse_sigma1": 5.624404722457845
+        },
+        "bluegray": {
+          "mae": 26.0867578125,
+          "mse": 3051.4603428819446,
+          "rmse": 55.240024826949025,
+          "psnr_db": 13.285726306780198,
+          "identical": false,
+          "ssim": 0.7314949759074468,
+          "edge_precision_1_5px": 0.8249566724436742,
+          "edge_recall_1_5px": 0.6511085180863477,
+          "edge_f1_1_5px": 0.7277948425670436,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 3462,
+          "delta_e76_mean": 20.162044004540597,
+          "delta_e76_p95": 76.69684534075232,
+          "highpass_rmse_sigma1": 6.994139212348469
+        }
+      },
+      "mean_background_fidelity_score": 0.5452934777637358,
+      "render": {
+        "render_seconds": 0.19143749997601844,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_10\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_10\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.19143749997601844,
+          "sampled_tree_peak_mib": 14.45703125,
+          "observed_process_cpu_seconds": 0.125,
+          "memory_samples": 4,
+          "observed_pids": [
+            27340,
+            32108
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "27340": 7.57421875,
+            "32108": 7.31640625
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 418323,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 279,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19142,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19142,
+          "L": 2834
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 21976,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_10",
+      "svg_relative": "alpha_candidates\\trial_10\\output.svg",
+      "png_relative": "alpha_candidates\\trial_10\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.1314325999992434,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 418323,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 279,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19142,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19142,
+            "L": 2834
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 21976,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.5058928425143449,
+      "mean_score": 0.5452934777637358,
+      "inherited_rgb_score": 0.5293066547232969
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 51.1590625,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.7501171875,
+      "background_metrics": {
+        "white": {
+          "mae": 28.137473958333334,
+          "mse": 3453.430390625,
+          "rmse": 58.76589479132433,
+          "psnr_db": 12.748296543326436,
+          "identical": false,
+          "ssim": 0.7199308851296488,
+          "edge_precision_1_5px": 0.5265306122448979,
+          "edge_recall_1_5px": 0.3710237904303662,
+          "edge_f1_1_5px": 0.43530594457660554,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 2695,
+          "delta_e76_mean": 18.240380724705606,
+          "delta_e76_p95": 74.04240084703079,
+          "highpass_rmse_sigma1": 18.209372032202687
+        },
+        "black": {
+          "mae": 34.269748263888886,
+          "mse": 5037.321753472223,
+          "rmse": 70.97409212855226,
+          "psnr_db": 11.108806690344814,
+          "identical": false,
+          "ssim": 0.6329711851216396,
+          "edge_precision_1_5px": null,
+          "edge_recall_1_5px": null,
+          "edge_f1_1_5px": null,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 0,
+          "delta_e76_mean": 22.579208261181094,
+          "delta_e76_p95": 80.93508014594138,
+          "highpass_rmse_sigma1": 5.624404722457845
+        },
+        "bluegray": {
+          "mae": 21.98197482638889,
+          "mse": 2356.2423567708333,
+          "rmse": 48.54114086803928,
+          "psnr_db": 14.408604020894522,
+          "identical": false,
+          "ssim": 0.7417738709337757,
+          "edge_precision_1_5px": 0.7474980754426482,
+          "edge_recall_1_5px": 0.4366394399066511,
+          "edge_f1_1_5px": 0.5512656034654879,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 2598,
+          "delta_e76_mean": 19.557148645885608,
+          "delta_e76_p95": 75.53660863084416,
+          "highpass_rmse_sigma1": 6.8926294576707905
+        }
+      },
+      "mean_background_fidelity_score": 0.509688390960267,
+      "render": {
+        "render_seconds": 0.1762734000221826,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_12\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_12\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.1762734000221826,
+          "sampled_tree_peak_mib": 13.7890625,
+          "observed_process_cpu_seconds": 0.109375,
+          "memory_samples": 4,
+          "observed_pids": [
+            28108,
+            30504
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "30504": 7.45703125,
+            "28108": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 420627,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 345,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19138,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19138,
+          "L": 2874
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 22012,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_12",
+      "svg_relative": "alpha_candidates\\trial_12\\output.svg",
+      "png_relative": "alpha_candidates\\trial_12\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.17973329999949783,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 420627,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 345,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19138,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19138,
+            "L": 2874
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 22012,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.47994359099429296,
+      "mean_score": 0.509688390960267,
+      "inherited_rgb_score": 0.5082872418828951
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 55.283893229166665,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.7261848958333333,
+      "background_metrics": {
+        "white": {
+          "mae": 27.591549479166666,
+          "mse": 3366.481115451389,
+          "rmse": 58.02138498391252,
+          "psnr_db": 12.859041782672012,
+          "identical": false,
+          "ssim": 0.742775538473099,
+          "edge_precision_1_5px": 0.5976168652612283,
+          "edge_recall_1_5px": 0.3413525795241914,
+          "edge_f1_1_5px": 0.4345147963162967,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 2182,
+          "delta_e76_mean": 18.3239721833489,
+          "delta_e76_p95": 76.19199779770865,
+          "highpass_rmse_sigma1": 12.156497558712324
+        },
+        "black": {
+          "mae": 34.269748263888886,
+          "mse": 5037.321753472223,
+          "rmse": 70.97409212855226,
+          "psnr_db": 11.108806690344814,
+          "identical": false,
+          "ssim": 0.6329711851216396,
+          "edge_precision_1_5px": null,
+          "edge_recall_1_5px": null,
+          "edge_f1_1_5px": null,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 0,
+          "delta_e76_mean": 22.579208261181094,
+          "delta_e76_p95": 80.93508014594138,
+          "highpass_rmse_sigma1": 5.624404722457845
+        },
+        "bluegray": {
+          "mae": 20.969596354166665,
+          "mse": 2201.9062977430553,
+          "rmse": 46.92447440028557,
+          "psnr_db": 14.702815272671439,
+          "identical": false,
+          "ssim": 0.7476402309769252,
+          "edge_precision_1_5px": 0.7728407388916625,
+          "edge_recall_1_5px": 0.35542590431738624,
+          "edge_f1_1_5px": 0.48691968368862104,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 2003,
+          "delta_e76_mean": 19.28795993536373,
+          "delta_e76_p95": 74.67820148560813,
+          "highpass_rmse_sigma1": 5.670771777188752
+        }
+      },
+      "mean_background_fidelity_score": 0.5158856043652126,
+      "render": {
+        "render_seconds": 0.17368370000622235,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_15\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_15\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.17368370000622235,
+          "sampled_tree_peak_mib": 14.5,
+          "observed_process_cpu_seconds": 0.078125,
+          "memory_samples": 4,
+          "observed_pids": [
+            5272,
+            10780
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "10780": 7.53515625,
+            "5272": 6.96484375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 421565,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 316,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19064,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19064,
+          "C": 535,
+          "L": 178
+        },
+        "cubic_segments": 535,
+        "explicit_path_coordinate_pairs": 20847,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_15",
+      "svg_relative": "alpha_candidates\\trial_15\\output.svg",
+      "png_relative": "alpha_candidates\\trial_15\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.11758130000089295,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 421565,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 316,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19064,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19064,
+            "C": 535,
+            "L": 178
+          },
+          "cubic_segments": 535,
+          "explicit_path_coordinate_pairs": 20847,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.5031921930632147,
+      "mean_score": 0.5158856043652126,
+      "inherited_rgb_score": 0.5050305481583337
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 13.661940104166666,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.9269270833333333,
+      "background_metrics": {
+        "white": {
+          "mae": 25.51194878472222,
+          "mse": 2984.2576432291667,
+          "rmse": 54.62835933129574,
+          "psnr_db": 13.382440460208667,
+          "identical": false,
+          "ssim": 0.767478077646062,
+          "edge_precision_1_5px": 0.7924209510016896,
+          "edge_recall_1_5px": 0.8724939855653568,
+          "edge_f1_1_5px": 0.8305319372178176,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 4143,
+          "delta_e76_mean": 18.629864680342674,
+          "delta_e76_p95": 75.36298199041734,
+          "highpass_rmse_sigma1": 11.182828832321738
+        },
+        "black": {
+          "mae": 34.269748263888886,
+          "mse": 5037.321753472223,
+          "rmse": 70.97409212855226,
+          "psnr_db": 11.108806690344814,
+          "identical": false,
+          "ssim": 0.6329711851216396,
+          "edge_precision_1_5px": null,
+          "edge_recall_1_5px": null,
+          "edge_f1_1_5px": null,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 0,
+          "delta_e76_mean": 22.579208261181094,
+          "delta_e76_p95": 80.93508014594138,
+          "highpass_rmse_sigma1": 5.624404722457845
+        },
+        "bluegray": {
+          "mae": 29.97952690972222,
+          "mse": 3767.4554210069446,
+          "rmse": 61.37960101700682,
+          "psnr_db": 12.370322387067842,
+          "identical": false,
+          "ssim": 0.6844218354412415,
+          "edge_precision_1_5px": 0.8370570107858244,
+          "edge_recall_1_5px": 0.5241540256709452,
+          "edge_f1_1_5px": 0.644641852245828,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 2596,
+          "delta_e76_mean": 21.099058272466767,
+          "delta_e76_p95": 77.66919513142376,
+          "highpass_rmse_sigma1": 5.313202631617396
+        }
+      },
+      "mean_background_fidelity_score": 0.5458397579419568,
+      "render": {
+        "render_seconds": 0.19686430000001565,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_18\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_18\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.19686430000001565,
+          "sampled_tree_peak_mib": 14.1484375,
+          "observed_process_cpu_seconds": 0.109375,
+          "memory_samples": 5,
+          "observed_pids": [
+            7724,
+            25736
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "25736": 7.3515625,
+            "7724": 6.96484375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 417648,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 266,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19113,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19113,
+          "C": 425,
+          "L": 252
+        },
+        "cubic_segments": 425,
+        "explicit_path_coordinate_pairs": 20640,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_18",
+      "svg_relative": "alpha_candidates\\trial_18\\output.svg",
+      "png_relative": "alpha_candidates\\trial_18\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.19631769999978133,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 417648,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 266,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19113,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19113,
+            "C": 425,
+            "L": 252
+          },
+          "cubic_segments": 425,
+          "explicit_path_coordinate_pairs": 20640,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.5058928425143449,
+      "mean_score": 0.5458397579419568,
+      "inherited_rgb_score": 0.501896651049548
+    },
+    {
+      "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+      "alpha_mae_0_255": 15.347161458333334,
+      "alpha_max_error_0_255": 255.0,
+      "alpha_exact_fraction": 0.8692578125,
+      "background_metrics": {
+        "white": {
+          "mae": 8.669613715277778,
+          "mse": 905.1189800347222,
+          "rmse": 30.08519536308053,
+          "psnr_db": 18.563746888713702,
+          "identical": false,
+          "ssim": 0.8284005877391368,
+          "edge_precision_1_5px": 0.737056054771074,
+          "edge_recall_1_5px": 0.8781074578989575,
+          "edge_f1_1_5px": 0.8014227829034479,
+          "source_edge_pixels": 3741,
+          "render_edge_pixels": 4674,
+          "delta_e76_mean": 4.93784215005776,
+          "delta_e76_p95": 35.142324912881975,
+          "highpass_rmse_sigma1": 9.523647180478179
+        },
+        "black": {
+          "mae": 8.883832465277777,
+          "mse": 1001.6263585069445,
+          "rmse": 31.648481140600484,
+          "psnr_db": 18.1237461608433,
+          "identical": false,
+          "ssim": 0.8355220814570176,
+          "edge_precision_1_5px": 0.8491743858236005,
+          "edge_recall_1_5px": 0.9257671480144405,
+          "edge_f1_1_5px": 0.8858181910149182,
+          "source_edge_pixels": 4432,
+          "render_edge_pixels": 4966,
+          "delta_e76_mean": 5.862757850135725,
+          "delta_e76_p95": 59.81459644635197,
+          "highpass_rmse_sigma1": 10.66029307982212
+        },
+        "bluegray": {
+          "mae": 6.207838541666667,
+          "mse": 455.08565104166667,
+          "rmse": 21.332736604609984,
+          "psnr_db": 21.54987218553491,
+          "identical": false,
+          "ssim": 0.8687325775067656,
+          "edge_precision_1_5px": 0.8870817843866171,
+          "edge_recall_1_5px": 0.8795799299883313,
+          "edge_f1_1_5px": 0.8833149294580862,
+          "source_edge_pixels": 4285,
+          "render_edge_pixels": 4304,
+          "delta_e76_mean": 5.377913721344115,
+          "delta_e76_p95": 45.154187236667994,
+          "highpass_rmse_sigma1": 7.1078384882983405
+        }
+      },
+      "mean_background_fidelity_score": 0.7169670163126681,
+      "render": {
+        "render_seconds": 0.31918650001171045,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "320",
+          "--height",
+          "240",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_09\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_09\\render_rgba.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.31918650001171045,
+          "sampled_tree_peak_mib": 15.26171875,
+          "observed_process_cpu_seconds": 0.171875,
+          "memory_samples": 7,
+          "observed_pids": [
+            11144,
+            13924
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "13924": 8.29296875,
+            "11144": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "structure": {
+        "bytes": 465936,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "mask": 1,
+          "path": 1235,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 19668,
+          "H": 37924,
+          "V": 18962,
+          "Z": 19978,
+          "L": 5688
+        },
+        "cubic_segments": 0,
+        "explicit_path_coordinate_pairs": 25356,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim.",
+      "trial": "trial_09",
+      "svg_relative": "alpha_candidates\\trial_09\\output.svg",
+      "png_relative": "alpha_candidates\\trial_09\\render_rgba.png",
+      "vector_alpha": {
+        "alpha_run_count": 18962,
+        "alpha_level_paths": 255,
+        "alpha_geometry_wall_seconds": 0.17066940001677722,
+        "representation": "source-derived equal-alpha horizontal vector runs; no semantic/clean-geometry claim",
+        "structure": {
+          "bytes": 465936,
+          "elements": {
+            "svg": 1,
+            "defs": 1,
+            "mask": 1,
+            "path": 1235,
+            "g": 1
+          },
+          "path_commands": {
+            "M": 19668,
+            "H": 37924,
+            "V": 18962,
+            "Z": 19978,
+            "L": 5688
+          },
+          "cubic_segments": 0,
+          "explicit_path_coordinate_pairs": 25356,
+          "raster_free": true,
+          "external_href_count": 0,
+          "script_count": 0,
+          "foreign_object_count": 0,
+          "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+        }
+      },
+      "robust_score": 0.6995688145150591,
+      "mean_score": 0.7169670163126681,
+      "inherited_rgb_score": 0.27268663356854733
+    }
+  ],
+  "rgb_metric_leaders": {
+    "ssim": "trial_01",
+    "psnr_db": "trial_06",
+    "edge_f1_1_5px": "trial_06"
+  },
+  "maximum_sampled_worker_tree_mib": 112.1640625,
+  "total_wall_seconds": 195.00267310001072,
+  "architecture": "NOT_APPROVED"
+}

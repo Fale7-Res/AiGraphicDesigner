@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 0.33268849206349205,
+    "mse": 13.839335317460318,
+    "rmse": 3.720125712588261,
+    "psnr_db": 36.71965128759544,
+    "identical": false,
+    "ssim": 0.902962323187167,
+    "edge_precision_1_5px": 1.0,
+    "edge_recall_1_5px": 0.48,
+    "edge_f1_1_5px": 0.6486486486486487,
+    "source_edge_pixels": 400,
+    "render_edge_pixels": 190,
+    "delta_e76_mean": 0.1318156097927416,
+    "delta_e76_p95": 0.0,
+    "highpass_rmse_sigma1": 3.064208359073784
+  },
+  "score": 0.8168700262109925,
+  "structure": {
+    "bytes": 2364,
+    "elements": {
+      "svg": 1,
+      "path": 28
+    },
+    "path_commands": {
+      "M": 55,
+      "C": 6,
+      "Z": 55,
+      "L": 208
+    },
+    "cubic_segments": 6,
+    "explicit_path_coordinate_pairs": 281,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.06555669999215752,
+    "trace_cpu_seconds": 0.0625,
+    "render_seconds": 0.12872939999215305,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "210",
+      "--height",
+      "320",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G06_arabic\\baseline_search\\trial_08\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G06_arabic\\baseline_search\\trial_08\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.12872939999215305,
+      "sampled_tree_peak_mib": 10.23046875,
+      "observed_process_cpu_seconds": 0.046875,
+      "memory_samples": 3,
+      "observed_pids": [
+        31184,
+        33880
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "33880": 5.234375,
+        "31184": 7.30859375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.789238099998329,
+      "sampled_tree_peak_mib": 88.74609375,
+      "observed_process_cpu_seconds": 4.203125,
+      "memory_samples": 103,
+      "observed_pids": [
+        15896,
+        18344,
+        22324,
+        23352,
+        25908,
+        31184,
+        33880,
+        34444
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "34444": 3.91015625,
+        "15896": 7.12890625,
+        "25908": 80.88671875,
+        "23352": 4.40625,
+        "33880": 2.51953125,
+        "31184": 7.30859375,
+        "18344": 2.51953125,
+        "22324": 6.1640625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.795069700019667
+}

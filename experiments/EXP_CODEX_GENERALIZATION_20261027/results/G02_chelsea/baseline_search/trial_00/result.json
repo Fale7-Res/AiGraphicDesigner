@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.551775234741784,
+    "mse": 36.691974765258216,
+    "rmse": 6.057390095186062,
+    "psnr_db": 32.48509274716339,
+    "identical": false,
+    "ssim": 0.9200073635922656,
+    "edge_precision_1_5px": 0.9268133304291004,
+    "edge_recall_1_5px": 0.8759345322287331,
+    "edge_f1_1_5px": 0.9006559573515417,
+    "source_edge_pixels": 9898,
+    "render_edge_pixels": 9182,
+    "delta_e76_mean": 2.2192012571541313,
+    "delta_e76_p95": 6.264148412684622,
+    "highpass_rmse_sigma1": 4.585844404954949
+  },
+  "score": 0.833530425247454,
+  "structure": {
+    "bytes": 1276885,
+    "elements": {
+      "svg": 1,
+      "path": 17111
+    },
+    "path_commands": {
+      "M": 17475,
+      "C": 53109,
+      "Z": 17475
+    },
+    "cubic_segments": 53109,
+    "explicit_path_coordinate_pairs": 176802,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 2.6145709000120405,
+    "trace_cpu_seconds": 2.25,
+    "render_seconds": 0.5586959000211209,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "213",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G02_chelsea\\baseline_search\\trial_00\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G02_chelsea\\baseline_search\\trial_00\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.5586959000211209,
+      "sampled_tree_peak_mib": 28.1328125,
+      "observed_process_cpu_seconds": 0.40625,
+      "memory_samples": 10,
+      "observed_pids": [
+        5100,
+        28808
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "5100": 21.9296875,
+        "28808": 6.97265625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 10.257889400003478,
+      "sampled_tree_peak_mib": 111.09375,
+      "observed_process_cpu_seconds": 8.796875,
+      "memory_samples": 213,
+      "observed_pids": [
+        5100,
+        13584,
+        20184,
+        22644,
+        25372,
+        28808,
+        30912
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "30912": 3.90625,
+        "22644": 7.12890625,
+        "25372": 84.671875,
+        "5100": 21.9296875,
+        "28808": 6.97265625,
+        "20184": 2.51953125,
+        "13584": 6.16015625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 10.261235500016483
+}

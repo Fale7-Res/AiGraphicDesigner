@@ -1,0 +1,115 @@
+{
+  "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+  "alpha_mae_0_255": 0.0,
+  "alpha_max_error_0_255": 0.0,
+  "alpha_exact_fraction": 1.0,
+  "background_metrics": {
+    "white": {
+      "mae": 0.09821180555555556,
+      "mse": 0.12692708333333333,
+      "rmse": 0.356268274385095,
+      "psnr_db": 57.09526060386736,
+      "identical": false,
+      "ssim": 0.9995017533382992,
+      "edge_precision_1_5px": 0.998651927743327,
+      "edge_recall_1_5px": 0.991980753809142,
+      "edge_f1_1_5px": 0.9953051622795503,
+      "source_edge_pixels": 3741,
+      "render_edge_pixels": 3709,
+      "delta_e76_mean": 0.09309199814673515,
+      "delta_e76_p95": 0.6284821035357795,
+      "highpass_rmse_sigma1": 0.22180658994700264
+    },
+    "black": {
+      "mae": 0.09821180555555556,
+      "mse": 0.12692708333333333,
+      "rmse": 0.356268274385095,
+      "psnr_db": 57.09526060386736,
+      "identical": false,
+      "ssim": 0.9996423672663609,
+      "edge_precision_1_5px": 0.9945982444294396,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.9972918077183479,
+      "source_edge_pixels": 4432,
+      "render_edge_pixels": 4443,
+      "delta_e76_mean": 0.09183725268119737,
+      "delta_e76_p95": 0.6229398105375312,
+      "highpass_rmse_sigma1": 0.22180658994700264
+    },
+    "bluegray": {
+      "mae": 0.11644965277777777,
+      "mse": 0.15140625,
+      "rmse": 0.38910956040683453,
+      "psnr_db": 56.32936557801032,
+      "identical": false,
+      "ssim": 0.9995146651208598,
+      "edge_precision_1_5px": 0.9882298638356797,
+      "edge_recall_1_5px": 0.9995332555425904,
+      "edge_f1_1_5px": 0.9938494213868307,
+      "source_edge_pixels": 4285,
+      "render_edge_pixels": 4333,
+      "delta_e76_mean": 0.11584275209512708,
+      "delta_e76_p95": 0.6997965182766754,
+      "highpass_rmse_sigma1": 0.24444115631719934
+    }
+  },
+  "mean_background_fidelity_score": 0.9886293770136101,
+  "render": {
+    "render_seconds": 0.6253504999913275,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "240",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_03\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_GENERALIZATION_20261027\\results\\G08_dice_alpha\\alpha_candidates\\trial_03\\render_rgba.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.6253504999913275,
+      "sampled_tree_peak_mib": 30.86328125,
+      "observed_process_cpu_seconds": 0.40625,
+      "memory_samples": 12,
+      "observed_pids": [
+        4520,
+        22732
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "4520": 24.30078125,
+        "22732": 6.97265625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "structure": {
+    "bytes": 1459813,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "mask": 1,
+      "path": 19017,
+      "g": 1
+    },
+    "path_commands": {
+      "M": 37816,
+      "H": 37924,
+      "V": 18962,
+      "Z": 37816,
+      "L": 79479
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 117295,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim."
+}
