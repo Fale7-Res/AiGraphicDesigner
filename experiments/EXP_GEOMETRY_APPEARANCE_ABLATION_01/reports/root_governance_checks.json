@@ -1,0 +1,17 @@
+[
+  {
+    "check": "tools/governance/change_tracking.py",
+    "exit_code": 1,
+    "log": "reports\\root_change_tracking.log"
+  },
+  {
+    "check": "tools/memory_guard/verify_brain_sync.py",
+    "exit_code": 1,
+    "log": "reports\\root_verify_brain_sync.log"
+  },
+  {
+    "check": "tools/project_catalog/verify_catalog.py",
+    "exit_code": 1,
+    "log": "reports\\root_verify_catalog.log"
+  }
+]

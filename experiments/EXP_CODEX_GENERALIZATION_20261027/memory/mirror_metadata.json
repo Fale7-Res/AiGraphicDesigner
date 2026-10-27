@@ -1,0 +1,76 @@
+{
+  "files": {
+    "acquire_dataset.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-GENERALIZATION-DATA | 2026-10-27T11:09:10Z | CREATED | Author: codex-dataset-agent; Parent: AGD-GENERALIZATION-20261027",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "package_evidence.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Verify and package saved outputs only; never trace or render an SVG.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "runner.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Frozen-baseline search and explicit alpha-aware candidate selection research.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_saved_evidence.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Regression checks against actual saved research evidence; never trace or render.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    }
+  }
+}

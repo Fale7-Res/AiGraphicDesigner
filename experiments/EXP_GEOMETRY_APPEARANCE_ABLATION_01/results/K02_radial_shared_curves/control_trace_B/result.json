@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 128
+  },
+  "metrics": {
+    "mae": 8.781119791666667,
+    "mse": 323.9787326388889,
+    "rmse": 17.999409230274445,
+    "psnr_db": 23.025638586882234,
+    "identical": false,
+    "ssim": 0.8178461677315901,
+    "edge_precision_1_5px": 0.47696038803556995,
+    "edge_recall_1_5px": 0.9828767123287672,
+    "edge_f1_1_5px": 0.6422542049197894,
+    "source_edge_pixels": 584,
+    "render_edge_pixels": 1237,
+    "delta_e76_mean": 5.075656233294594,
+    "delta_e76_p95": 20.461637044844075,
+    "highpass_rmse_sigma1": 5.169821665281341
+  },
+  "score": 0.6886396061450742,
+  "structure": {
+    "bytes": 13061,
+    "elements": {
+      "svg": 1,
+      "path": 18
+    },
+    "path_commands": {
+      "M": 19,
+      "L": 24,
+      "C": 428,
+      "Z": 19
+    },
+    "cubic_segments": 428,
+    "explicit_path_coordinate_pairs": 1327,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.05379160004667938,
+    "trace_cpu_seconds": 0.046875,
+    "render_seconds": 0.11453729995992035,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\results\\K02_radial_shared_curves\\control_trace_B\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\results\\K02_radial_shared_curves\\control_trace_B\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.11453729995992035,
+      "sampled_tree_peak_mib": 11.4296875,
+      "observed_process_cpu_seconds": 0.0625,
+      "memory_samples": 3,
+      "observed_pids": [
+        17456,
+        26908
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "26908": 4.96875,
+        "17456": 6.9765625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.882906700018793,
+      "sampled_tree_peak_mib": 91.08984375,
+      "observed_process_cpu_seconds": 3.96875,
+      "memory_samples": 104,
+      "observed_pids": [
+        14532,
+        16760,
+        17456,
+        17612,
+        17668,
+        21580,
+        26908
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "14532": 3.91015625,
+        "21580": 7.1328125,
+        "16760": 73.8515625,
+        "26908": 4.7109375,
+        "17456": 6.9765625,
+        "17668": 2.5234375,
+        "17612": 6.1015625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.886439200025052
+}

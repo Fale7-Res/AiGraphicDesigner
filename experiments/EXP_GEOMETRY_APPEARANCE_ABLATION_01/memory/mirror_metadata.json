@@ -1,0 +1,76 @@
+{
+  "files": {
+    "fit_appearance.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE EXP-GEOMETRY-APPEARANCE-01 | 2026-10-27T14:37:00Z | CREATED | Author: /root/appearance_fit",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "run_experiment.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Approved fixed-geometry SVG appearance ablation; historical artifacts read-only.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_artifacts.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Independent artifact contract checks; no trace/search reruns.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_fit_appearance.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE EXP-GEOMETRY-APPEARANCE-01 | 2026-10-27T14:43:00Z | CREATED | Author: /root/appearance_fit",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    }
+  }
+}

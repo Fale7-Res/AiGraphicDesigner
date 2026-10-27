@@ -1,0 +1,49 @@
+{
+  "task": "AGD-ABLATION-01",
+  "approved_by": "owner explicit GO in current conversation",
+  "frozen_at_utc": "2026-10-27T14:40:07Z",
+  "architecture": "NOT_APPROVED",
+  "hypothesis": "Continuous SVG appearance may improve fixed coherent spline geometry without adding pixel cells.",
+  "conditions": {
+    "A": "strongest saved adaptive pixel winner for seven real cases; fixed watershed512 pixel control for two new analytic fixtures, not an adaptive search claim",
+    "B": "saved inherited watershed128 cutout spline pilot08; same uniform config traced once for known-vector controls",
+    "C": "identical B geometry, train-only optimized flat fills",
+    "D": "identical C geometry; flat/linear/radial <=4 equally spaced stops selected using disjoint selection pixels"
+  },
+  "budget": {
+    "cases": 9,
+    "geometry_configurations": 1,
+    "per_case_process_timeout_seconds": 600,
+    "fit_dispatch_seconds": 540,
+    "sampled_process_tree_mib": 4096,
+    "max_model_evaluations_per_region": 100
+  },
+  "samples": "periodic spatially disjoint train/selection/test; interpolation, not independent spatial/domain generalization",
+  "metrics": [
+    "actual SVG SSIM PSNR MSE DeltaE76 highpass worst32px tile",
+    "alpha MAE max and premultiplied RGB",
+    "white black bluegray appearance",
+    "exact Bezier bounds cubic segments integer lattice shared segment pairs",
+    "geometry and mask invariance",
+    "native renderer and actual vector viewport crops1x4x16x",
+    "sampled process-tree resources"
+  ],
+  "support_criterion": "Held-out test and full-render gains beyond repeat noise on independent smooth cases at identical geometry; no new primitives. D>C is only appearance-capacity evidence, not milestone success.",
+  "rejection_criterion": "No stable heldout/render gain, topology/geometry drift, illegal SVG/raster, or gains only from microgeometry. Any material gap to A remains failure to reach owner fidelity goal.",
+  "limitations": [
+    "no promise of globally optimal fills",
+    "interior ownership excludes AA seams",
+    "one uniform geometry granularity, not complete sweep",
+    "alpha run mask remains grid-based",
+    "no physical/semantic ground truth on photographs",
+    "no architectural approval",
+    "zeroalpha excluded; partial alpha weighted alpha\u00b2; actual composited full render remains decisive"
+  ],
+  "source_color_policy_amendment": {
+    "at_utc": "2026-10-27T14:47:50.990273+00:00",
+    "reason": "Align with saved inherited ICC-normalized source to avoid invalid comparison",
+    "affected_case": "G03_rocket",
+    "evidence_preserved": "negative_results/raw_rgb_color_confounded",
+    "other_sources": "decoded RGBA arrays verified equal to saved normalized sources"
+  }
+}
