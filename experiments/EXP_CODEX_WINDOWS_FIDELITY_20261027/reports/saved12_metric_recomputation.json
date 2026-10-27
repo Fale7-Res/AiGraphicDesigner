@@ -1,0 +1,259 @@
+{
+  "scope": "Independent metric recomputation from saved historical renders, not tracing or rerendering all twelve",
+  "cases": [
+    {
+      "case": "A01_shield",
+      "metrics": {
+        "mae": 0.375492938329651,
+        "mse": 0.4543267922639066,
+        "rmse": 0.6740376786678224,
+        "psnr_db": 51.55712012366561,
+        "identical": false,
+        "ssim": 0.995660178903147,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 0.9994409243384271,
+        "edge_f1_1_5px": 0.9997203840059652,
+        "source_edge_pixels": 5366,
+        "render_edge_pixels": 5359,
+        "delta_e76_mean": 0.30105302480621177,
+        "delta_e76_p95": 0.7890996111055573,
+        "highpass_rmse_sigma1": 0.4022984874284709
+      },
+      "maximum_numeric_difference": 1.7985612998927536e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A02_falafel",
+      "metrics": {
+        "mae": 0.13472812558811728,
+        "mse": 0.15363310003941497,
+        "rmse": 0.39196058480338936,
+        "psnr_db": 56.26595566944534,
+        "identical": false,
+        "ssim": 0.9988801405307298,
+        "edge_precision_1_5px": 0.9998750546635847,
+        "edge_recall_1_5px": 0.9960179193628671,
+        "edge_f1_1_5px": 0.9979427599865461,
+        "source_edge_pixels": 16072,
+        "render_edge_pixels": 16007,
+        "delta_e76_mean": 0.1398669293322377,
+        "delta_e76_p95": 0.6850699411093277,
+        "highpass_rmse_sigma1": 0.2832295128309513
+      },
+      "maximum_numeric_difference": 7.216449660063518e-15,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A03_burger_layers",
+      "metrics": {
+        "mae": 0.19190487439955903,
+        "mse": 0.2384940832850117,
+        "rmse": 0.48835856016354595,
+        "psnr_db": 54.35602751615653,
+        "identical": false,
+        "ssim": 0.9978378880123775,
+        "edge_precision_1_5px": 0.9998008364867557,
+        "edge_recall_1_5px": 0.9988728285373293,
+        "edge_f1_1_5px": 0.9993366170694795,
+        "source_edge_pixels": 15082,
+        "render_edge_pixels": 15063,
+        "delta_e76_mean": 0.20037176863184883,
+        "delta_e76_p95": 0.8944752590204905,
+        "highpass_rmse_sigma1": 0.3089469031860954
+      },
+      "maximum_numeric_difference": 2.1094237467877974e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A04_fries_shadows",
+      "metrics": {
+        "mae": 0.19246798514813973,
+        "mse": 0.2279738901698438,
+        "rmse": 0.4774661141587367,
+        "psnr_db": 54.55195250729225,
+        "identical": false,
+        "ssim": 0.9977877915971277,
+        "edge_precision_1_5px": 0.9948819251144833,
+        "edge_recall_1_5px": 0.997471098265896,
+        "edge_f1_1_5px": 0.9961748293032006,
+        "source_edge_pixels": 11072,
+        "render_edge_pixels": 11137,
+        "delta_e76_mean": 0.18496757261465527,
+        "delta_e76_p95": 0.7455210662617425,
+        "highpass_rmse_sigma1": 0.33233795386876946
+      },
+      "maximum_numeric_difference": 2.5424107263916085e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A05_orange_juice_transparency",
+      "metrics": {
+        "mae": 0.3068545618789521,
+        "mse": 0.37506775067750675,
+        "rmse": 0.6124277513939965,
+        "psnr_db": 52.38970636906232,
+        "identical": false,
+        "ssim": 0.9964839986116126,
+        "edge_precision_1_5px": 0.9991167053108093,
+        "edge_recall_1_5px": 0.9980154355016538,
+        "edge_f1_1_5px": 0.9985657667720433,
+        "source_edge_pixels": 9070,
+        "render_edge_pixels": 9057,
+        "delta_e76_mean": 0.2662163210356615,
+        "delta_e76_p95": 0.8882161050869155,
+        "highpass_rmse_sigma1": 0.3936662039944607
+      },
+      "maximum_numeric_difference": 3.885780586188048e-16,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A06_tomatoes_organic",
+      "metrics": {
+        "mae": 0.08822988505747126,
+        "mse": 0.11934571175950487,
+        "rmse": 0.3454644869729809,
+        "psnr_db": 57.362735419879954,
+        "identical": false,
+        "ssim": 0.998544568641767,
+        "edge_precision_1_5px": 0.9994222992489891,
+        "edge_recall_1_5px": 0.9990617105738001,
+        "edge_f1_1_5px": 0.9992419723806882,
+        "source_edge_pixels": 13855,
+        "render_edge_pixels": 13848,
+        "delta_e76_mean": 0.07747098914125919,
+        "delta_e76_p95": 0.5622495435787943,
+        "highpass_rmse_sigma1": 0.25797485774286055
+      },
+      "maximum_numeric_difference": 5.551115123125783e-17,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A07_wrapped_sandwich_occlusion",
+      "metrics": {
+        "mae": 0.10359001782531194,
+        "mse": 0.1154830659536542,
+        "rmse": 0.33982799465855396,
+        "psnr_db": 57.50562055445525,
+        "identical": false,
+        "ssim": 0.9992711291378485,
+        "edge_precision_1_5px": 0.9997032464834709,
+        "edge_recall_1_5px": 0.997690667929891,
+        "edge_f1_1_5px": 0.998695943267366,
+        "source_edge_pixels": 16888,
+        "render_edge_pixels": 16849,
+        "delta_e76_mean": 0.10507291523557334,
+        "delta_e76_p95": 0.6513240114791816,
+        "highpass_rmse_sigma1": 0.2538995426379766
+      },
+      "maximum_numeric_difference": 3.297362383136715e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A08_latte_texture",
+      "metrics": {
+        "mae": 0.2420377358490566,
+        "mse": 0.2840934411500449,
+        "rmse": 0.5330041661657485,
+        "psnr_db": 53.59619153562518,
+        "identical": false,
+        "ssim": 0.9977749752624239,
+        "edge_precision_1_5px": 0.9962516462364502,
+        "edge_recall_1_5px": 0.9941360833080578,
+        "edge_f1_1_5px": 0.9951927404670653,
+        "source_edge_pixels": 9891,
+        "render_edge_pixels": 9871,
+        "delta_e76_mean": 0.23546489261139322,
+        "delta_e76_p95": 0.8077938459232652,
+        "highpass_rmse_sigma1": 0.36179743788048235
+      },
+      "maximum_numeric_difference": 8.43769498715119e-15,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A09_arabic_calligraphy",
+      "metrics": {
+        "mae": 0.3387865715391848,
+        "mse": 0.3995575465958741,
+        "rmse": 0.6321056451226125,
+        "psnr_db": 52.115010231022666,
+        "identical": false,
+        "ssim": 0.9961045612263894,
+        "edge_precision_1_5px": 1.0,
+        "edge_recall_1_5px": 1.0,
+        "edge_f1_1_5px": 1.0,
+        "source_edge_pixels": 4863,
+        "render_edge_pixels": 4863,
+        "delta_e76_mean": 0.3019335057399704,
+        "delta_e76_p95": 0.927272329880647,
+        "highpass_rmse_sigma1": 0.4076911009639204
+      },
+      "maximum_numeric_difference": 2.7644553313166398e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A10_restaurant_logo",
+      "metrics": {
+        "mae": 0.36630397517097024,
+        "mse": 0.443107959364117,
+        "rmse": 0.6656635481713844,
+        "psnr_db": 51.66570809714949,
+        "identical": false,
+        "ssim": 0.9960196432221683,
+        "edge_precision_1_5px": 0.9994421977409008,
+        "edge_recall_1_5px": 0.9988851727982163,
+        "edge_f1_1_5px": 0.9991636076354353,
+        "source_edge_pixels": 7176,
+        "render_edge_pixels": 7171,
+        "delta_e76_mean": 0.30178753758088495,
+        "delta_e76_p95": 0.8705677120184504,
+        "highpass_rmse_sigma1": 0.44147284687097427
+      },
+      "maximum_numeric_difference": 1.4210854715202004e-14,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A11_chocolate_cake_texture",
+      "metrics": {
+        "mae": 0.12920077121757795,
+        "mse": 0.14877951180472188,
+        "rmse": 0.3857194729394951,
+        "psnr_db": 56.40537231558481,
+        "identical": false,
+        "ssim": 0.9989439001997177,
+        "edge_precision_1_5px": 0.9956794507575758,
+        "edge_recall_1_5px": 0.9995840513399489,
+        "edge_f1_1_5px": 0.9976279305243825,
+        "source_edge_pixels": 16829,
+        "render_edge_pixels": 16896,
+        "delta_e76_mean": 0.13210768336674025,
+        "delta_e76_p95": 0.7039033682486171,
+        "highpass_rmse_sigma1": 0.2749477889757761
+      },
+      "maximum_numeric_difference": 5.551115123125783e-17,
+      "selected_svg_copy_matches": true
+    },
+    {
+      "case": "A12_ramadan_ad_composition",
+      "metrics": {
+        "mae": 0.20409263435832553,
+        "mse": 0.24739534627867318,
+        "rmse": 0.49738852648475235,
+        "psnr_db": 54.19688834954363,
+        "identical": false,
+        "ssim": 0.997863658519189,
+        "edge_precision_1_5px": 0.9992686316097418,
+        "edge_recall_1_5px": 0.9976633807959109,
+        "edge_f1_1_5px": 0.9984653610055539,
+        "source_edge_pixels": 13695,
+        "render_edge_pixels": 13673,
+        "delta_e76_mean": 0.222544985527671,
+        "delta_e76_p95": 0.9295251122536312,
+        "highpass_rmse_sigma1": 0.35152834194226384
+      },
+      "maximum_numeric_difference": 8.881784197001252e-16,
+      "selected_svg_copy_matches": true
+    }
+  ],
+  "mean_ssim": 0.9975977028220414,
+  "mean_psnr_db": 54.330690724073584
+}

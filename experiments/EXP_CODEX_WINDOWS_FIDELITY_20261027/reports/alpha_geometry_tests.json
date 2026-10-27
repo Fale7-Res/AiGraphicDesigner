@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "cases": {
+    "all_levels": {
+      "exact_array_reconstruction": true,
+      "raster_free": true,
+      "alpha_run_count": 255
+    },
+    "all_transparent": {
+      "exact_array_reconstruction": true,
+      "raster_free": true,
+      "alpha_run_count": 0
+    },
+    "all_opaque": {
+      "exact_array_reconstruction": true,
+      "raster_free": true,
+      "alpha_run_count": 16
+    },
+    "checker": {
+      "exact_array_reconstruction": true,
+      "raster_free": true,
+      "alpha_run_count": 128
+    }
+  },
+  "scope": "serialized vector geometry only; actual renderer alpha correctness requires separate evaluate_alpha run"
+}

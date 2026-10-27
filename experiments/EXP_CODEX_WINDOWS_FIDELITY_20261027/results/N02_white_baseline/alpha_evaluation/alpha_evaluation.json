@@ -1,0 +1,110 @@
+{
+  "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+  "alpha_mae_0_255": 198.6789833969971,
+  "alpha_max_error_0_255": 255.0,
+  "alpha_exact_fraction": 0.06089028402859196,
+  "background_metrics": {
+    "white": {
+      "mae": 0.47717559850232594,
+      "mse": 0.48680710512713843,
+      "rmse": 0.6977156334260673,
+      "psnr_db": 51.257234525773626,
+      "identical": false,
+      "ssim": 0.9988710199275849,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 161,
+      "render_edge_pixels": 161,
+      "delta_e76_mean": 0.21877816307468745,
+      "delta_e76_p95": 0.622907099880295,
+      "highpass_rmse_sigma1": 0.24160870360147207
+    },
+    "black": {
+      "mae": 198.2245250431779,
+      "mse": 44638.09260870113,
+      "rmse": 211.27728843560334,
+      "psnr_db": 1.6337473199962997,
+      "identical": false,
+      "ssim": 0.10189783451297148,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 160,
+      "render_edge_pixels": 161,
+      "delta_e76_mean": 78.24772820382152,
+      "delta_e76_p95": 99.65492237082836,
+      "highpass_rmse_sigma1": 3.606186411903668
+    },
+    "bluegray": {
+      "mae": 135.8931331391904,
+      "mse": 21710.482546045914,
+      "rmse": 147.34477441038047,
+      "psnr_db": 4.764108844998088,
+      "identical": false,
+      "ssim": 0.5180671350140055,
+      "edge_precision_1_5px": 0.2857142857142857,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.4444444444444445,
+      "source_edge_pixels": 46,
+      "render_edge_pixels": 161,
+      "delta_e76_mean": 56.35735664892765,
+      "delta_e76_p95": 71.88641321040772,
+      "highpass_rmse_sigma1": 2.534912994682915
+    }
+  },
+  "mean_background_fidelity_score": 0.5666124343982991,
+  "render": {
+    "render_seconds": 0.38640660000965,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "193",
+      "--height",
+      "137",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\results\\N02_white_baseline\\best.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\results\\N02_white_baseline\\alpha_evaluation\\render_rgba.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.38640660000965,
+      "sampled_tree_peak_mib": 20.94140625,
+      "observed_process_cpu_seconds": 0.28125,
+      "memory_samples": 8,
+      "observed_pids": [
+        15556,
+        34868
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "34868": 15.17578125,
+        "15556": 6.9609375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "structure": {
+    "bytes": 645520,
+    "elements": {
+      "svg": 1,
+      "path": 11052
+    },
+    "path_commands": {
+      "M": 11136,
+      "L": 58488,
+      "Z": 11136
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 69624,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim."
+}

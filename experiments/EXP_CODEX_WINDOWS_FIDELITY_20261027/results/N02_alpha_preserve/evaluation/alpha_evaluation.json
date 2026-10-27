@@ -1,0 +1,115 @@
+{
+  "status": "EXPERIMENTAL_MEASURED_NOT_OWNER_ACCEPTED",
+  "alpha_mae_0_255": 0.0,
+  "alpha_max_error_0_255": 0.0,
+  "alpha_exact_fraction": 1.0,
+  "background_metrics": {
+    "white": {
+      "mae": 0.1993999218385588,
+      "mse": 0.1993999218385588,
+      "rmse": 0.44654218371678933,
+      "psnr_db": 55.13355377128428,
+      "identical": false,
+      "ssim": 0.9985585940555021,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 161,
+      "render_edge_pixels": 160,
+      "delta_e76_mean": 0.20693395002159107,
+      "delta_e76_p95": 0.6700049145135051,
+      "highpass_rmse_sigma1": 0.3054951335138284
+    },
+    "black": {
+      "mae": 0.1993999218385588,
+      "mse": 0.1993999218385588,
+      "rmse": 0.44654218371678933,
+      "psnr_db": 55.13355377128428,
+      "identical": false,
+      "ssim": 0.9972659220352965,
+      "edge_precision_1_5px": 1.0,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 1.0,
+      "source_edge_pixels": 160,
+      "render_edge_pixels": 160,
+      "delta_e76_mean": 0.2216819941189148,
+      "delta_e76_p95": 0.778236981384812,
+      "highpass_rmse_sigma1": 0.3054951335138284
+    },
+    "bluegray": {
+      "mae": 0.21234698637217453,
+      "mse": 0.21254869331719678,
+      "rmse": 0.4610300351573602,
+      "psnr_db": 54.85621921463029,
+      "identical": false,
+      "ssim": 0.9978929883185792,
+      "edge_precision_1_5px": 0.9387755102040817,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.968421052631579,
+      "source_edge_pixels": 46,
+      "render_edge_pixels": 49,
+      "delta_e76_mean": 0.2507072112721405,
+      "delta_e76_p95": 0.8193302086774608,
+      "highpass_rmse_sigma1": 0.31670959055786774
+    }
+  },
+  "mean_background_fidelity_score": 0.9803217665072442,
+  "render": {
+    "render_seconds": 0.667614699981641,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "193",
+      "--height",
+      "137",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\results\\N02_alpha_preserve\\best_alpha.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\results\\N02_alpha_preserve\\evaluation\\render_rgba.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.667614699981641,
+      "sampled_tree_peak_mib": 36.296875,
+      "observed_process_cpu_seconds": 0.421875,
+      "memory_samples": 13,
+      "observed_pids": [
+        25860,
+        30464
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "25860": 30.09765625,
+        "30464": 7.296875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "structure": {
+    "bytes": 1667681,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "mask": 1,
+      "path": 25903,
+      "g": 1
+    },
+    "path_commands": {
+      "M": 38658,
+      "H": 25768,
+      "V": 12884,
+      "Z": 38658,
+      "L": 101340
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 139998,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "limits": "Native-resolution 8-bit alpha; no scale-invariance, semantic geometry, or independent application interoperability claim."
+}

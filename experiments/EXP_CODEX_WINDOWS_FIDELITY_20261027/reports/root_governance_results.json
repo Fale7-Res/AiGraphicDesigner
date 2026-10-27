@@ -1,0 +1,27 @@
+[
+  {
+    "command": [
+      "C:\\Python314\\python.exe",
+      "tools/governance/change_tracking.py",
+      "verify"
+    ],
+    "returncode": 1,
+    "log": "change_tracking_root.log"
+  },
+  {
+    "command": [
+      "C:\\Python314\\python.exe",
+      "tools/memory_guard/verify_brain_sync.py"
+    ],
+    "returncode": 1,
+    "log": "verify_brain_sync_root.log"
+  },
+  {
+    "command": [
+      "C:\\Python314\\python.exe",
+      "tools/project_catalog/verify_catalog.py"
+    ],
+    "returncode": 1,
+    "log": "verify_catalog_root.log"
+  }
+]

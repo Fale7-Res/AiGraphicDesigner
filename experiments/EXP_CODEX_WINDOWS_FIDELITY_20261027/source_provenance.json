@@ -1,0 +1,36 @@
+{
+  "source_files": {
+    "historical_optimizer": {
+      "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ADAPTIVE_VTRACER_20261027\\optimizer.py",
+      "sha256": "31c2a1887be99da7713e8c145d678b3cdaa688f9c35b1743a9fbd1bdcea96893"
+    },
+    "historical_search": {
+      "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VTRACER_FIDELITY_20261024\\src\\search.py",
+      "sha256": "0f1d1d33561e7f1fc6d885be329b97edc6c165a5b51e88f361417577e625b4ca"
+    },
+    "historical_evaluate": {
+      "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VTRACER_FIDELITY_20261024\\src\\evaluate.py",
+      "sha256": "b3d4a5e46205b0591f61d480e54c44dbe5b3357becc778374c25f08cf9fa9b39"
+    },
+    "derived_optimizer": {
+      "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\optimizer.py",
+      "sha256": "094956a42000f93b1954c4de4619c1d2717e34d9ec9d26844bdecfea2ea03baf"
+    },
+    "derived_search": {
+      "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\windows_search.py",
+      "sha256": "136e8697431d66dc762ec445753b163267bb82e92b004f2d6e6edb3c4d730c71"
+    }
+  },
+  "function_ast_equivalence_excluding_docstrings": {
+    "optimizer.canonical": true,
+    "optimizer.pilots": true,
+    "optimizer.neighborhood": true,
+    "optimizer.optimize": true,
+    "search.prepare_input": true,
+    "search.extra_metrics": true,
+    "search.fidelity_score": true
+  },
+  "derived_copy_rationale": "Isolate Windows worker/resource and renderer adaptation; historical POSIX resource import prevents native Windows import. No runtime source rewriting or fake resource module.",
+  "historical_evaluate": "Imported unchanged directly for load_rgb, compare, svg_structure.",
+  "intended_historical_write_scope": "none; historical changes checked separately against Git baseline"
+}

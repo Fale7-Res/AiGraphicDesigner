@@ -1,0 +1,15 @@
+
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\project_catalog\verify_catalog.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\project_catalog\verify_catalog.py", line 130, in main
+    errors.extend(vbs.verify_owner_approval_provenance())
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\memory_guard\verify_brain_sync.py", line 292, in verify_owner_approval_provenance
+    content = p.read_text(encoding="utf-8")
+  File "C:\Python314\Lib\pathlib\__init__.py", line 788, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
