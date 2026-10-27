@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.612010194913545,
+    "mse": 180.22397638300603,
+    "rmse": 13.424752376971652,
+    "psnr_db": 25.57267793324964,
+    "identical": false,
+    "ssim": 0.865453475463121,
+    "edge_precision_1_5px": 0.9619943109987358,
+    "edge_recall_1_5px": 0.9120847024461483,
+    "edge_f1_1_5px": 0.9363749218762317,
+    "source_edge_pixels": 13695,
+    "render_edge_pixels": 12656,
+    "delta_e76_mean": 4.108192688404426,
+    "delta_e76_p95": 16.253303945853183,
+    "highpass_rmse_sigma1": 10.023266599568442
+  },
+  "score": 0.7644856257117802,
+  "structure": {
+    "bytes": 2079706,
+    "elements": {
+      "svg": 1,
+      "path": 18240
+    },
+    "path_commands": {
+      "M": 18722,
+      "C": 68615,
+      "Z": 18722
+    },
+    "cubic_segments": 68615,
+    "explicit_path_coordinate_pairs": 224567,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.4104269999999133,
+    "trace_cpu_seconds": 0.41041620999999995,
+    "trace_process_peak_mib": 71.56640625,
+    "render_seconds": 0.7346158860000287,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 78.09765625,
+    "renderer_child_peak_mib": 223.05078125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.8726563630000328
+}

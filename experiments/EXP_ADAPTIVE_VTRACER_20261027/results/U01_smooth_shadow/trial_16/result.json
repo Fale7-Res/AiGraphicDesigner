@@ -1,0 +1,60 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "path_precision": 3,
+    "optimize": 1,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 0.9145304361979166,
+    "mse": 2.029086642795139,
+    "rmse": 1.4244601232730731,
+    "psnr_db": 45.057797688939836,
+    "identical": false,
+    "ssim": 0.9909969272490398,
+    "edge_precision_1_5px": null,
+    "edge_recall_1_5px": null,
+    "edge_f1_1_5px": null,
+    "source_edge_pixels": 0,
+    "render_edge_pixels": 66,
+    "delta_e76_mean": 0.7102000863129859,
+    "delta_e76_p95": 1.2967590148678836,
+    "highpass_rmse_sigma1": 0.555801614879471
+  },
+  "score": 0.9458819939955319,
+  "structure": {
+    "bytes": 35416,
+    "elements": {
+      "svg": 1,
+      "path": 210
+    },
+    "path_commands": {
+      "M": 213,
+      "L": 6422,
+      "Z": 213
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 6635,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.01821314699998311,
+    "trace_cpu_seconds": 0.018214798000000032,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.1511364320000439,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 66.12890625,
+    "renderer_child_peak_mib": 61.515625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6546020910000152
+}

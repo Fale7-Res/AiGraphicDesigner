@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.774555206298828,
+    "mse": 95.75463485717773,
+    "rmse": 9.785429722663064,
+    "psnr_db": 28.31920556355914,
+    "identical": false,
+    "ssim": 0.9320814496791566,
+    "edge_precision_1_5px": 0.9680951259712739,
+    "edge_recall_1_5px": 0.951491687542701,
+    "edge_f1_1_5px": 0.9597216011565033,
+    "source_edge_pixels": 26346,
+    "render_edge_pixels": 25482,
+    "delta_e76_mean": 2.46497099406586,
+    "delta_e76_p95": 8.678851612629362,
+    "highpass_rmse_sigma1": 6.960231141926503
+  },
+  "score": 0.8283304734504844,
+  "structure": {
+    "bytes": 3981038,
+    "elements": {
+      "svg": 1,
+      "path": 51883
+    },
+    "path_commands": {
+      "M": 53694,
+      "C": 167741,
+      "Z": 53694
+    },
+    "cubic_segments": 167741,
+    "explicit_path_coordinate_pairs": 556917,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 1.5296712869999283,
+    "trace_cpu_seconds": 1.519790795,
+    "trace_process_peak_mib": 111.359375,
+    "render_seconds": 1.8071024119999493,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 120.984375,
+    "renderer_child_peak_mib": 523.51953125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.511951983000017
+}

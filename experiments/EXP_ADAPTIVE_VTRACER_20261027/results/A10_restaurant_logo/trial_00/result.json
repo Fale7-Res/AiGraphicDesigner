@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.599285443620419,
+    "mse": 275.97719193778306,
+    "rmse": 16.612561269647227,
+    "psnr_db": 23.72207169472503,
+    "identical": false,
+    "ssim": 0.92756057457601,
+    "edge_precision_1_5px": 0.9836941242620185,
+    "edge_recall_1_5px": 0.9817447045707915,
+    "edge_f1_1_5px": 0.9827184476508469,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7114,
+    "delta_e76_mean": 2.9165736486001124,
+    "delta_e76_p95": 13.435189464139674,
+    "highpass_rmse_sigma1": 12.12933511329753
+  },
+  "score": 0.7990356076941922,
+  "structure": {
+    "bytes": 699444,
+    "elements": {
+      "svg": 1,
+      "path": 10067
+    },
+    "path_commands": {
+      "M": 10285,
+      "C": 26595,
+      "Z": 10285
+    },
+    "cubic_segments": 26595,
+    "explicit_path_coordinate_pairs": 90070,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.21518525499993757,
+    "trace_cpu_seconds": 0.2094101719999999,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.5040991700000177,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 77.1640625,
+    "renderer_child_peak_mib": 147.0390625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.3358890150000207
+}

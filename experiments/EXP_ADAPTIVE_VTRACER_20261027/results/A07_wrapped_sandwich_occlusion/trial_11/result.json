@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 69.26673440285205,
+    "mse": 6999.1915258467025,
+    "rmse": 83.6611709567031,
+    "psnr_db": 9.680324831595668,
+    "identical": false,
+    "ssim": 0.3759180367582433,
+    "edge_precision_1_5px": 0.9397312859884837,
+    "edge_recall_1_5px": 0.46506395073424917,
+    "edge_f1_1_5px": 0.6222047641760894,
+    "source_edge_pixels": 16888,
+    "render_edge_pixels": 7815,
+    "delta_e76_mean": 41.162744884455094,
+    "delta_e76_p95": 81.71854368964382,
+    "highpass_rmse_sigma1": 23.828403159418592
+  },
+  "score": 0.3342448624756501,
+  "structure": {
+    "bytes": 56339,
+    "elements": {
+      "svg": 1,
+      "path": 247
+    },
+    "path_commands": {
+      "M": 406,
+      "C": 1865,
+      "L": 526,
+      "Z": 406
+    },
+    "cubic_segments": 1865,
+    "explicit_path_coordinate_pairs": 6527,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.012957687999914924,
+    "trace_cpu_seconds": 0.012956616000000087,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.16017938100003448,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.8203125,
+    "renderer_child_peak_mib": 61.75390625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6778167070000336
+}

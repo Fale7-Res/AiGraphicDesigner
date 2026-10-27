@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 5.40468431404392,
+    "mse": 247.0534112849384,
+    "rmse": 15.717932792989616,
+    "psnr_db": 24.20289505913081,
+    "identical": false,
+    "ssim": 0.9326379959961217,
+    "edge_precision_1_5px": 0.9841024198086663,
+    "edge_recall_1_5px": 0.9841137123745819,
+    "edge_f1_1_5px": 0.9841080660592287,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 7108,
+    "delta_e76_mean": 2.8104748699223943,
+    "delta_e76_p95": 12.710448859165345,
+    "highpass_rmse_sigma1": 11.647935472467964
+  },
+  "score": 0.8049196450792897,
+  "structure": {
+    "bytes": 1034063,
+    "elements": {
+      "svg": 1,
+      "path": 10067
+    },
+    "path_commands": {
+      "M": 10285,
+      "C": 31684,
+      "Z": 10285
+    },
+    "cubic_segments": 31684,
+    "explicit_path_coordinate_pairs": 105337,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.23213480999993408,
+    "trace_cpu_seconds": 0.25410563499999994,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.49139828200009106,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 76.5625,
+    "renderer_child_peak_mib": 148.125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.3972174279999763
+}

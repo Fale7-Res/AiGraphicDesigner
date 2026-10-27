@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 93.72026909722223,
+    "mse": 13168.831624348959,
+    "rmse": 114.75552982034878,
+    "psnr_db": 6.9353311602056795,
+    "identical": false,
+    "ssim": 0.2517257611861447,
+    "edge_precision_1_5px": 0.986533397175006,
+    "edge_recall_1_5px": 0.9486143187066974,
+    "edge_f1_1_5px": 0.9672023471512399,
+    "source_edge_pixels": 19052,
+    "render_edge_pixels": 16708,
+    "delta_e76_mean": 70.76188847901533,
+    "delta_e76_p95": 116.27995893713437,
+    "highpass_rmse_sigma1": 79.86029970860758
+  },
+  "score": 0.3137257278326724,
+  "structure": {
+    "bytes": 275922,
+    "elements": {
+      "svg": 1,
+      "path": 2867
+    },
+    "path_commands": {
+      "M": 3292,
+      "C": 6326,
+      "Z": 3292,
+      "L": 8654
+    },
+    "cubic_segments": 6326,
+    "explicit_path_coordinate_pairs": 30924,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.04124593400001686,
+    "trace_cpu_seconds": 0.04123171200000009,
+    "trace_process_peak_mib": 70.75390625,
+    "render_seconds": 0.2949587900000097,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 70.75390625,
+    "renderer_child_peak_mib": 85.171875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8295951520000244
+}

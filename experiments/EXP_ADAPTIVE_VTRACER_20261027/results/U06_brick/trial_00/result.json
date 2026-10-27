@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 2.7614288330078125,
+    "mse": 33.99656677246094,
+    "rmse": 5.830657490580367,
+    "psnr_db": 32.81645299915672,
+    "identical": false,
+    "ssim": 0.9561493182672258,
+    "edge_precision_1_5px": 0.9608026821812444,
+    "edge_recall_1_5px": 0.9890481064483112,
+    "edge_f1_1_5px": 0.9747208135343717,
+    "source_edge_pixels": 19540,
+    "render_edge_pixels": 20282,
+    "delta_e76_mean": 1.0983548849723317,
+    "delta_e76_p95": 3.763620976899894,
+    "highpass_rmse_sigma1": 3.916681369417527
+  },
+  "score": 0.878540036189821,
+  "structure": {
+    "bytes": 1216347,
+    "elements": {
+      "svg": 1,
+      "path": 16416
+    },
+    "path_commands": {
+      "M": 16714,
+      "C": 49233,
+      "Z": 16714
+    },
+    "cubic_segments": 49233,
+    "explicit_path_coordinate_pairs": 164413,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.44262389000004987,
+    "trace_cpu_seconds": 0.44253601600000003,
+    "trace_process_peak_mib": 81.015625,
+    "render_seconds": 0.6266103039999962,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 113.0546875,
+    "renderer_child_peak_mib": 204.5234375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.8944337190000624
+}

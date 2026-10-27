@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 160
+  },
+  "metrics": {
+    "mae": 62.45378623799625,
+    "mse": 6434.393664994213,
+    "rmse": 80.21467237977235,
+    "psnr_db": 10.04572732759433,
+    "identical": false,
+    "ssim": 0.581642719650861,
+    "edge_precision_1_5px": 0.8283978739559605,
+    "edge_recall_1_5px": 0.6008199776369736,
+    "edge_f1_1_5px": 0.6964900299139215,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 3951,
+    "delta_e76_mean": 38.00476220713302,
+    "delta_e76_p95": 86.2250530837707,
+    "highpass_rmse_sigma1": 15.760102578210166
+  },
+  "score": 0.44886358654327824,
+  "structure": {
+    "bytes": 23762,
+    "elements": {
+      "svg": 1,
+      "path": 82
+    },
+    "path_commands": {
+      "M": 181,
+      "C": 706,
+      "Z": 181,
+      "L": 296
+    },
+    "cubic_segments": 706,
+    "explicit_path_coordinate_pairs": 2595,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.011124778000009883,
+    "trace_cpu_seconds": 0.011123916000000067,
+    "trace_process_peak_mib": 65.87890625,
+    "render_seconds": 0.19179390300001842,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.83984375,
+    "renderer_child_peak_mib": 60.01953125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.7915532369999596
+}

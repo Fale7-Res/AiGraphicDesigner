@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 32.254779046897276,
+    "mse": 2204.3956404843107,
+    "rmse": 46.95099190096319,
+    "psnr_db": 14.69790817394662,
+    "identical": false,
+    "ssim": 0.7614665742485661,
+    "edge_precision_1_5px": 0.9780239413971771,
+    "edge_recall_1_5px": 0.782051282051282,
+    "edge_f1_1_5px": 0.8691274862081576,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 5597,
+    "delta_e76_mean": 15.01792954918493,
+    "delta_e76_p95": 66.5334230489685,
+    "highpass_rmse_sigma1": 15.52170496776064
+  },
+  "score": 0.6040888609944829,
+  "structure": {
+    "bytes": 31350,
+    "elements": {
+      "svg": 1,
+      "path": 90
+    },
+    "path_commands": {
+      "M": 180,
+      "L": 286,
+      "Z": 180,
+      "C": 933
+    },
+    "cubic_segments": 933,
+    "explicit_path_coordinate_pairs": 3265,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.008530587999985073,
+    "trace_cpu_seconds": 0.008529897000000064,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.14966302899995299,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.25390625,
+    "renderer_child_peak_mib": 60.44921875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6505707989999792
+}

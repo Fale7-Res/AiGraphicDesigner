@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 6.349892684346466,
+    "mse": 157.95293390083307,
+    "rmse": 12.567932761629221,
+    "psnr_db": 26.145526637377998,
+    "identical": false,
+    "ssim": 0.9102742963139749,
+    "edge_precision_1_5px": 0.9715958639591379,
+    "edge_recall_1_5px": 0.9570384455404362,
+    "edge_f1_1_5px": 0.9642622147256534,
+    "source_edge_pixels": 16829,
+    "render_edge_pixels": 16054,
+    "delta_e76_mean": 3.934836109639461,
+    "delta_e76_p95": 14.334082471763823,
+    "highpass_rmse_sigma1": 9.370503789043966
+  },
+  "score": 0.7929833826494352,
+  "structure": {
+    "bytes": 2394233,
+    "elements": {
+      "svg": 1,
+      "path": 21902
+    },
+    "path_commands": {
+      "M": 22231,
+      "C": 77006,
+      "Z": 22231
+    },
+    "cubic_segments": 77006,
+    "explicit_path_coordinate_pairs": 253249,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.47570362900000873,
+    "trace_cpu_seconds": 0.4756779980000001,
+    "trace_process_peak_mib": 73.63671875,
+    "render_seconds": 0.9006639469999982,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 80.734375,
+    "renderer_child_peak_mib": 254.9296875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 2.1663508789999923
+}

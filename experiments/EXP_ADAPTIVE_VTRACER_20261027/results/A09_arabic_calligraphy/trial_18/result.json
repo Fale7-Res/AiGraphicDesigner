@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 160
+  },
+  "metrics": {
+    "mae": 33.14945338569032,
+    "mse": 2469.945663034862,
+    "rmse": 49.69854789664243,
+    "psnr_db": 14.203929616583226,
+    "identical": false,
+    "ssim": 0.1293233214190895,
+    "edge_precision_1_5px": 0.9018901890189019,
+    "edge_recall_1_5px": 0.6333538967715402,
+    "edge_f1_1_5px": 0.7441366111904532,
+    "source_edge_pixels": 4863,
+    "render_edge_pixels": 3333,
+    "delta_e76_mean": 16.514679398005562,
+    "delta_e76_p95": 72.66068645573665,
+    "highpass_rmse_sigma1": 15.047276822461289
+  },
+  "score": 0.32107117561480963,
+  "structure": {
+    "bytes": 20625,
+    "elements": {
+      "svg": 1,
+      "path": 36
+    },
+    "path_commands": {
+      "M": 291,
+      "C": 622,
+      "Z": 291,
+      "L": 424
+    },
+    "cubic_segments": 622,
+    "explicit_path_coordinate_pairs": 2581,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.009933527000043796,
+    "trace_cpu_seconds": 0.009933089000000006,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.16414664000001267,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.55078125,
+    "renderer_child_peak_mib": 59.66796875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6775162000000137
+}

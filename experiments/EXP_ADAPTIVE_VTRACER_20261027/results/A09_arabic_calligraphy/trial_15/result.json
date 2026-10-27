@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 96
+  },
+  "metrics": {
+    "mae": 32.93577051416773,
+    "mse": 2442.8859133897463,
+    "rmse": 49.42555931286713,
+    "psnr_db": 14.251771756555215,
+    "identical": false,
+    "ssim": 0.21146850109535756,
+    "edge_precision_1_5px": 0.9777618364418939,
+    "edge_recall_1_5px": 0.8517376105284804,
+    "edge_f1_1_5px": 0.9104091631359136,
+    "source_edge_pixels": 4863,
+    "render_edge_pixels": 4182,
+    "delta_e76_mean": 15.476675905399105,
+    "delta_e76_p95": 64.20193221775611,
+    "highpass_rmse_sigma1": 12.553436084869851
+  },
+  "score": 0.3969840416865097,
+  "structure": {
+    "bytes": 21642,
+    "elements": {
+      "svg": 1,
+      "path": 46
+    },
+    "path_commands": {
+      "M": 72,
+      "C": 683,
+      "Z": 72,
+      "L": 96
+    },
+    "cubic_segments": 683,
+    "explicit_path_coordinate_pairs": 2217,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.010087337999948431,
+    "trace_cpu_seconds": 0.010045134999999927,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.15495711300002313,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 70.8671875,
+    "renderer_child_peak_mib": 59.90234375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6545536200000015
+}

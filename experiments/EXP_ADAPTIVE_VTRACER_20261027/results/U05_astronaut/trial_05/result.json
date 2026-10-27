@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 3.6768875122070312,
+    "mse": 87.7180404663086,
+    "rmse": 9.365790968535897,
+    "psnr_db": 28.69991439460403,
+    "identical": false,
+    "ssim": 0.9356795092488267,
+    "edge_precision_1_5px": 0.9707238267859254,
+    "edge_recall_1_5px": 0.95251651104532,
+    "edge_f1_1_5px": 0.9615339845891093,
+    "source_edge_pixels": 26346,
+    "render_edge_pixels": 25379,
+    "delta_e76_mean": 2.4171775843397,
+    "delta_e76_p95": 8.474680871063901,
+    "highpass_rmse_sigma1": 6.759742648933685
+  },
+  "score": 0.8322827741262484,
+  "structure": {
+    "bytes": 6151143,
+    "elements": {
+      "svg": 1,
+      "path": 51883
+    },
+    "path_commands": {
+      "M": 53694,
+      "C": 199896,
+      "Z": 53694
+    },
+    "cubic_segments": 199896,
+    "explicit_path_coordinate_pairs": 653382,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 1.3517780360000415,
+    "trace_cpu_seconds": 1.3516652919999999,
+    "trace_process_peak_mib": 111.32421875,
+    "render_seconds": 1.889491694999947,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 124.4453125,
+    "renderer_child_peak_mib": 530.8984375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 4.454305212000008
+}

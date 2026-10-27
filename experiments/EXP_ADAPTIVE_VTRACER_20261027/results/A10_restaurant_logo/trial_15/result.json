@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 96
+  },
+  "metrics": {
+    "mae": 32.67313015391833,
+    "mse": 2289.054270196142,
+    "rmse": 47.84406201605527,
+    "psnr_db": 14.5342427157156,
+    "identical": false,
+    "ssim": 0.7727518788985964,
+    "edge_precision_1_5px": 0.9950825430277485,
+    "edge_recall_1_5px": 0.8058807134894092,
+    "edge_f1_1_5px": 0.8905432432940009,
+    "source_edge_pixels": 7176,
+    "render_edge_pixels": 5694,
+    "delta_e76_mean": 14.990374748803593,
+    "delta_e76_p95": 66.30813338942265,
+    "highpass_rmse_sigma1": 14.039182960327619
+  },
+  "score": 0.6161165485797544,
+  "structure": {
+    "bytes": 27500,
+    "elements": {
+      "svg": 1,
+      "path": 15
+    },
+    "path_commands": {
+      "M": 45,
+      "C": 914,
+      "Z": 45,
+      "L": 24
+    },
+    "cubic_segments": 914,
+    "explicit_path_coordinate_pairs": 2811,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.007457637000015893,
+    "trace_cpu_seconds": 0.007456605000000005,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.19919412900003408,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.08984375,
+    "renderer_child_peak_mib": 59.67578125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8105339759999879
+}

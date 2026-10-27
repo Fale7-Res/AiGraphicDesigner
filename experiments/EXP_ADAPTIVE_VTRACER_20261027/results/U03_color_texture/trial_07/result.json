@@ -1,0 +1,60 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "pixel",
+    "path_precision": 0,
+    "optimize": 1,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 62.489352756076386,
+    "mse": 5265.584567599826,
+    "rmse": 72.56434777216582,
+    "psnr_db": 10.916337687480699,
+    "identical": false,
+    "ssim": 0.06063805403502004,
+    "edge_precision_1_5px": 0.9876456053653371,
+    "edge_recall_1_5px": 0.3717719924417384,
+    "edge_f1_1_5px": 0.5402004139497791,
+    "source_edge_pixels": 19052,
+    "render_edge_pixels": 5666,
+    "delta_e76_mean": 60.473789820163894,
+    "delta_e76_p95": 105.43582882658752,
+    "highpass_rmse_sigma1": 63.67325481656773
+  },
+  "score": 0.16470107516510757,
+  "structure": {
+    "bytes": 162756,
+    "elements": {
+      "svg": 1,
+      "path": 1064
+    },
+    "path_commands": {
+      "M": 1064,
+      "L": 29166,
+      "Z": 1064
+    },
+    "cubic_segments": 0,
+    "explicit_path_coordinate_pairs": 30230,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.07426372600002651,
+    "trace_cpu_seconds": 0.0476461239999999,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.24093771499997274,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 66.12890625,
+    "renderer_child_peak_mib": 71.37890625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8386219590000792
+}

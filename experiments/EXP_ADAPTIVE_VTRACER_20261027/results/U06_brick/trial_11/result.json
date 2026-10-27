@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 95.94939804077148,
+    "mse": 9394.891399383545,
+    "rmse": 96.92724797178317,
+    "psnr_db": 8.401885966464866,
+    "identical": false,
+    "ssim": 0.16123082000191558,
+    "edge_precision_1_5px": 0.9927737027981527,
+    "edge_recall_1_5px": 0.9501535312180144,
+    "edge_f1_1_5px": 0.9709961576524995,
+    "source_edge_pixels": 19540,
+    "render_edge_pixels": 18405,
+    "delta_e76_mean": 39.600542552223075,
+    "delta_e76_p95": 45.2243172625287,
+    "highpass_rmse_sigma1": 22.526177866779868
+  },
+  "score": 0.31765128041347646,
+  "structure": {
+    "bytes": 90680,
+    "elements": {
+      "svg": 1,
+      "path": 82
+    },
+    "path_commands": {
+      "M": 87,
+      "C": 2965,
+      "Z": 87,
+      "L": 21
+    },
+    "cubic_segments": 2965,
+    "explicit_path_coordinate_pairs": 9003,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.02485333000004175,
+    "trace_cpu_seconds": 0.02485419000000011,
+    "trace_process_peak_mib": 70.75390625,
+    "render_seconds": 0.18325431899995692,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 104.01953125,
+    "renderer_child_peak_mib": 60.265625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.8749312260000579
+}

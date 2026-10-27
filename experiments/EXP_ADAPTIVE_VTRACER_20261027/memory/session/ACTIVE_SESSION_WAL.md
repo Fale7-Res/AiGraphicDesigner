@@ -1,0 +1,31 @@
+# Recovery checkpoint
+
+{
+  "time": "2026-10-27T03:11:12.074081+00:00",
+  "remote_head": "4ba5ed56df11001b0e3050383883e7107003751a",
+  "scope": "bounded18input adaptivefidelity research",
+  "state": "BENCHMARK_RUNNING",
+  "missing": "All prior uncommitted adaptive files pruned; reconstructed from conversation, fresh rerun not recoveredresults",
+  "architecture": "NOT_APPROVED",
+  "owners": {
+    "restore_execute": [
+      "optimizer.py",
+      "benchmark.py",
+      "test_optimizer.py",
+      "results",
+      "unseen"
+    ],
+    "restore_qa": [
+      "reports/QA_AUDIT.md",
+      "reports/PARAMETER_SURFACE.md",
+      "reproduction"
+    ],
+    "root": [
+      "review.py",
+      "README.md",
+      "reports/REPORT.md",
+      "memory",
+      "delivery"
+    ]
+  }
+}

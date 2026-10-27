@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 160
+  },
+  "metrics": {
+    "mae": 67.48972717966339,
+    "mse": 8468.067539319489,
+    "rmse": 92.02210353670192,
+    "psnr_db": 8.85296047675851,
+    "identical": false,
+    "ssim": 0.1815650140523191,
+    "edge_precision_1_5px": 0.9260622794907194,
+    "edge_recall_1_5px": 0.43946426203421296,
+    "edge_f1_1_5px": 0.5960649813509017,
+    "source_edge_pixels": 15082,
+    "render_edge_pixels": 6519,
+    "delta_e76_mean": 50.078162352930164,
+    "delta_e76_p95": 99.02068630258782,
+    "highpass_rmse_sigma1": 22.31864145520735
+  },
+  "score": 0.2490428606671185,
+  "structure": {
+    "bytes": 46423,
+    "elements": {
+      "svg": 1,
+      "path": 96
+    },
+    "path_commands": {
+      "M": 467,
+      "C": 1659,
+      "Z": 467,
+      "L": 627
+    },
+    "cubic_segments": 1659,
+    "explicit_path_coordinate_pairs": 6071,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.0141276959999459,
+    "trace_cpu_seconds": 0.0620245450000001,
+    "trace_process_peak_mib": 66.00390625,
+    "render_seconds": 0.16710237699999198,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.55859375,
+    "renderer_child_peak_mib": 60.7109375,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6618665940000028
+}

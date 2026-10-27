@@ -1,0 +1,251 @@
+{
+  "files": {
+    "run.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "Controlled same-source-candidate comparison of closed contours and medial-axis strokes over frozen SVG bases.",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ],
+      "symbols": {
+        "save_record": "Serialize evidence to JSON with NumPy values converted without NaN.",
+        "save_record.conv": "Convert NumPy arrays and scalar values for JSON.",
+        "feature_elements": "Serialize filled contour or grouped stroke alpha for one feature.",
+        "write_overlay": "Append individually addressable source-supported features to a frozen SVG.",
+        "feature_diagnostics": "Measure detected-support and low/high-frequency reconstruction errors.",
+        "make_sheets": "Write source-resolution and enlarged comparison sheets.",
+        "execute_details": "Detect common candidates, fit two representations under budgets, render and evaluate each condition."
+      }
+    },
+    "src/geometry.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Image-derived region geometry; experimental, nonsemantic, no templates.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/test_analysis.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Checks for post-hoc manual-reference evaluation, never reconstruction.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/strokes.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "# START CHANGE DETAIL-INTEGRATION | 2026-10-23T20:57:11Z | EDITED | Author: parent",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/features.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Source-supported persistent contrast components and bounded closed curves.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/analyze_results.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Post-hoc evaluation only; manual centers never enter reconstruction.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ],
+      "symbols": {
+        "analyze": "Aggregate four complete result sets and evaluate held-out historical seed centers.",
+        "report": "Format measured evidence and limitations as Markdown."
+      }
+    },
+    "src/test_strokes.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "# START CHANGE DETAIL-INTEGRATION | 2026-10-23T20:57:11Z | EDITED | Author: parent",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/evaluate.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Paired native-resolution evaluator; structural counts are not semantic scores.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "src/test_features.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "# START CHANGE DETAIL-INTEGRATION | 2026-10-23T20:57:11Z | EDITED | Author: parent",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "reports/test_opacity_qa.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Regression for shared-alpha fitting versus native SVG branch compositing.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "reports/qa_checks.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "\"\"\"Independent output audit; does not alter experimental outputs.\"\"\"",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "tools/governance/change_tracking.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "#!/usr/bin/env python3",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    },
+    "tools/memory_guard/sync_code_mirrors.py": {
+      "role": "Bounded isolated research or verification",
+      "summary": "#!/usr/bin/env python3",
+      "takes_from": [
+        {
+          "source": "source PNG, frozen SVG, configuration or saved evidence",
+          "payload": "geometry, RGB, metrics",
+          "impact": "Reproducible scoped research"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "results, reports, or scoped memory",
+          "payload": "SVG, native renders or verification evidence",
+          "impact": "No production change"
+        }
+      ]
+    }
+  }
+}

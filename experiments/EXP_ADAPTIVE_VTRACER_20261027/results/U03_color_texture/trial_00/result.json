@@ -1,0 +1,66 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "color-cluster",
+    "color_precision": 8,
+    "layer_difference": 0,
+    "hierarchical": "stacked",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": 1.5,
+    "path_precision": 0,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45
+  },
+  "metrics": {
+    "mae": 56.086588541666664,
+    "mse": 5497.783935546875,
+    "rmse": 74.14704266217821,
+    "psnr_db": 10.728926929202254,
+    "identical": false,
+    "ssim": 0.34990335601425254,
+    "edge_precision_1_5px": 0.9863812036071407,
+    "edge_recall_1_5px": 0.947197144656729,
+    "edge_f1_1_5px": 0.9663921407049709,
+    "source_edge_pixels": 19052,
+    "render_edge_pixels": 16301,
+    "delta_e76_mean": 56.36937379727843,
+    "delta_e76_p95": 124.88719265327344,
+    "highpass_rmse_sigma1": 61.51525938741239
+  },
+  "score": 0.36604530585955153,
+  "structure": {
+    "bytes": 994679,
+    "elements": {
+      "svg": 1,
+      "path": 12123
+    },
+    "path_commands": {
+      "M": 12123,
+      "C": 45432,
+      "Z": 12123
+    },
+    "cubic_segments": 45432,
+    "explicit_path_coordinate_pairs": 148419,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.2760562189999973,
+    "trace_cpu_seconds": 0.276034302,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.5437641839999969,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 68.41015625,
+    "renderer_child_peak_mib": 167.25390625,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 1.505878497000026
+}

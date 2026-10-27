@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 58.53884553571105,
+    "mse": 5444.125825796411,
+    "rmse": 73.78431964717443,
+    "psnr_db": 10.771522067139884,
+    "identical": false,
+    "ssim": 0.6535779987790927,
+    "edge_precision_1_5px": 0.904786150712831,
+    "edge_recall_1_5px": 0.6621319418561312,
+    "edge_f1_1_5px": 0.7646702323205886,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 3928,
+    "delta_e76_mean": 35.785815381863785,
+    "delta_e76_p95": 79.6909216362287,
+    "highpass_rmse_sigma1": 15.702934097310235
+  },
+  "score": 0.49450188255734734,
+  "structure": {
+    "bytes": 24443,
+    "elements": {
+      "svg": 1,
+      "path": 99
+    },
+    "path_commands": {
+      "M": 173,
+      "C": 700,
+      "Z": 173,
+      "L": 333
+    },
+    "cubic_segments": 700,
+    "explicit_path_coordinate_pairs": 2606,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.007524166999985482,
+    "trace_cpu_seconds": 0.007524094000000092,
+    "trace_process_peak_mib": 65.75390625,
+    "render_seconds": 0.1773575249999908,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.8515625,
+    "renderer_child_peak_mib": 60.17578125,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.6901114050000388
+}

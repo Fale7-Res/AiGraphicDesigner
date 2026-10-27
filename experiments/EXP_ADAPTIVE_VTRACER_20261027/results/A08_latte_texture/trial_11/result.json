@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "bw",
+    "layer_difference": 0,
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "binary_threshold": 128
+  },
+  "metrics": {
+    "mae": 64.64793890386343,
+    "mse": 6045.224916442048,
+    "rmse": 77.75104447171142,
+    "psnr_db": 10.31667897167807,
+    "identical": false,
+    "ssim": 0.24388385025111115,
+    "edge_precision_1_5px": 0.7785055798156235,
+    "edge_recall_1_5px": 0.33363663936912347,
+    "edge_f1_1_5px": 0.4670949108832426,
+    "source_edge_pixels": 9891,
+    "render_edge_pixels": 4122,
+    "delta_e76_mean": 32.919291685132244,
+    "delta_e76_p95": 69.79920953567529,
+    "highpass_rmse_sigma1": 16.688108754258277
+  },
+  "score": 0.26983136248577094,
+  "structure": {
+    "bytes": 23970,
+    "elements": {
+      "svg": 1,
+      "path": 54
+    },
+    "path_commands": {
+      "M": 137,
+      "C": 756,
+      "Z": 137,
+      "L": 258
+    },
+    "cubic_segments": 756,
+    "explicit_path_coordinate_pairs": 2663,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.009382606000031046,
+    "trace_cpu_seconds": 0.009381510999999954,
+    "trace_process_peak_mib": 66.12890625,
+    "render_seconds": 0.15379673499990076,
+    "renderer": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+    "worker_peak_mib": 71.41015625,
+    "renderer_child_peak_mib": 59.8046875,
+    "memory_note": "separate Linux process high-water marks, not simultaneous process-tree RSS"
+  },
+  "isolated_process_wall_seconds": 0.652868806000015
+}
