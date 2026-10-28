@@ -1,0 +1,148 @@
+{
+  "files": {
+    "audit_results.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Read saved evidence independently of fitting; export aggregate metrics and integrity.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "coverage_fitter.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-COVERAGE-FITTER | 2026-10-28T05:16:21Z | EDITED | Author: /root/appearance_fit",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "fixtures.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Freeze two small known-vector coverage controls; render only their source truth.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "presentation.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Owner-review visuals from completed coverage-aware results; no fitting or tracing.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "research.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Bounded fixed-geometry coverage experiment. Historical evidence is read-only.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_fitter.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-COVERAGE-FITTER-TEST | 2026-10-28T05:16:21Z | EDITED | Author: /root/appearance_fit",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_fixtures.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Passive checks for frozen known-vector controls; no tracing or fitting.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_research.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "\"\"\"Independent formula and scientific-contract tests; no dataset fitting.\"\"\"",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    }
+  }
+}

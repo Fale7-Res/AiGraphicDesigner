@@ -1,0 +1,961 @@
+{
+  "id": "F02_soft_alpha_overlap_highlight",
+  "kind": "new_oracle",
+  "conditions": {
+    "Aflat": {
+      "metrics": {
+        "white": {
+          "mae": 11.630647786458333,
+          "mse": 318.01111653645836,
+          "rmse": 17.832866189607838,
+          "psnr_db": 23.106380592292055,
+          "identical": false,
+          "ssim": 0.853875614482679,
+          "edge_precision_1_5px": 0.8158995815899581,
+          "edge_recall_1_5px": 0.42278203723986857,
+          "edge_f1_1_5px": 0.5569594027133921,
+          "source_edge_pixels": 913,
+          "render_edge_pixels": 478,
+          "delta_e76_mean": 6.856695582267051,
+          "delta_e76_p95": 19.10040562583404,
+          "highpass_rmse_sigma1": 2.5569939433303284,
+          "worst_32px_tile_rmse": 27.633700788545013
+        },
+        "black": {
+          "mae": 11.630647786458333,
+          "mse": 318.01111653645836,
+          "rmse": 17.832866189607838,
+          "psnr_db": 23.106380592292055,
+          "identical": false,
+          "ssim": 0.8030494701457841,
+          "edge_precision_1_5px": 0.8439226519337016,
+          "edge_recall_1_5px": 0.5842055185537584,
+          "edge_f1_1_5px": 0.6904482114149575,
+          "source_edge_pixels": 1051,
+          "render_edge_pixels": 724,
+          "delta_e76_mean": 7.858870842911429,
+          "delta_e76_p95": 21.95030169343303,
+          "highpass_rmse_sigma1": 2.5569939433303284,
+          "worst_32px_tile_rmse": 27.633700788545013
+        },
+        "bluegray": {
+          "mae": 11.638557942708333,
+          "mse": 318.46180013020836,
+          "rmse": 17.845498035364784,
+          "psnr_db": 23.100230152094603,
+          "identical": false,
+          "ssim": 0.7964055136695349,
+          "edge_precision_1_5px": 0.6647058823529411,
+          "edge_recall_1_5px": 0.25254813137032844,
+          "edge_f1_1_5px": 0.3660277872596939,
+          "source_edge_pixels": 883,
+          "render_edge_pixels": 340,
+          "delta_e76_mean": 7.150338403200969,
+          "delta_e76_p95": 20.749710815710582,
+          "highpass_rmse_sigma1": 2.5762927026949765,
+          "worst_32px_tile_rmse": 27.635726848366048
+        }
+      },
+      "alpha_mae": 0.0,
+      "alpha_max_error": 0.0,
+      "premultiplied_rgb_rmse": 17.838775654677068,
+      "structure": {
+        "bytes": 1603,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "linearGradient": 1,
+          "stop": 4,
+          "mask": 1,
+          "path": 6,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 7,
+          "H": 2,
+          "V": 1,
+          "Z": 7,
+          "C": 16,
+          "L": 3
+        },
+        "cubic_segments": 16,
+        "explicit_path_coordinate_pairs": 58,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "geometry": {
+        "rgb_paths": 5,
+        "mask_paths": 1,
+        "closed_subpaths": 6,
+        "cubic_segments": 16,
+        "rgb_paths_bounds_le_1px": 0,
+        "rgb_paths_bounds_le_2px": 0,
+        "median_rgb_path_bbox_max_dimension": 97.00135487014396,
+        "coordinate_integer_lattice_fraction": 0.9137931034482759,
+        "exact_segment_pairs_round_3dp": 0,
+        "segments_incidence_gt2": 0,
+        "unpaired_segments": 20,
+        "unsupported_transforms": [],
+        "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+      },
+      "geometry_signature": "d1387a38b52d5db700bc646c5246c48f1f6bd6ed7ce1d17980279011dd946aac",
+      "render": {
+        "render_seconds": 0.10485269996570423,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\Aflat\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\Aflat\\render.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.10485269996570423,
+          "sampled_tree_peak_mib": 7.7578125,
+          "observed_process_cpu_seconds": 0.03125,
+          "memory_samples": 2,
+          "observed_pids": [
+            19812,
+            36152
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "19812": 2.5234375,
+            "36152": 7.30078125
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "sha256": "9651949f6e60a3aa4d3e5195e8d09a01d5bdd243ebf00016516c43d34cf2f223",
+      "float_three_background_mse": 318.2219168578992,
+      "float_per_background_mse": {
+        "white": 318.22191685789926,
+        "black": 318.22191685789926,
+        "bluegray": 318.2219168578992
+      },
+      "heldout_float_three_background_mse": 318.522327765563,
+      "boundary_float_three_background_mse": 439.57809640157666,
+      "interior_float_three_background_mse": null,
+      "boundary_pixels": 14826,
+      "interior_pixels": 0,
+      "alpha_mse": 0.0,
+      "alpha_nonzero_difference_pixels": 0,
+      "fixed_baseline_alpha_max_change_bytes": 0,
+      "regions": [
+        {
+          "region": 0,
+          "heldout_effective_mixture_mse": 430.06102882769886,
+          "heldout_weight_energy": 386.5249938964844,
+          "support_pixels": 14760
+        },
+        {
+          "region": 1,
+          "heldout_effective_mixture_mse": 728.3231892206937,
+          "heldout_weight_energy": 305.1872253417969,
+          "support_pixels": 6645
+        },
+        {
+          "region": 2,
+          "heldout_effective_mixture_mse": 296.84022308576857,
+          "heldout_weight_energy": 82.38957214355469,
+          "support_pixels": 5964
+        },
+        {
+          "region": 3,
+          "heldout_effective_mixture_mse": 1987.3307216773705,
+          "heldout_weight_energy": 2.6675209999084473,
+          "support_pixels": 206
+        },
+        {
+          "region": 4,
+          "heldout_effective_mixture_mse": 9.278414542532827,
+          "heldout_weight_energy": 1.078476905822754,
+          "support_pixels": 366
+        }
+      ],
+      "boundary_definition": "Effective contribution mixed or total alpha<.998; includes translucent interiors. Not independent physical boundary truth. Region scores are weighted final mixed-pixel residuals, not uniquely attributable paint errors."
+    },
+    "Agrad": {
+      "metrics": {
+        "white": {
+          "mae": 4.076432291666666,
+          "mse": 47.95862630208333,
+          "rmse": 6.925216697120988,
+          "psnr_db": 31.322136259316977,
+          "identical": false,
+          "ssim": 0.965460978987514,
+          "edge_precision_1_5px": 0.9968102073365231,
+          "edge_recall_1_5px": 0.6998904709748083,
+          "edge_f1_1_5px": 0.8223701144265596,
+          "source_edge_pixels": 913,
+          "render_edge_pixels": 627,
+          "delta_e76_mean": 3.8959436428876955,
+          "delta_e76_p95": 10.854637423921055,
+          "highpass_rmse_sigma1": 1.8713250286985887,
+          "worst_32px_tile_rmse": 12.975851469332047
+        },
+        "black": {
+          "mae": 4.076432291666666,
+          "mse": 47.95862630208333,
+          "rmse": 6.925216697120988,
+          "psnr_db": 31.322136259316977,
+          "identical": false,
+          "ssim": 0.9549947126941744,
+          "edge_precision_1_5px": 0.948780487804878,
+          "edge_recall_1_5px": 0.7411988582302569,
+          "edge_f1_1_5px": 0.8322409571714392,
+          "source_edge_pixels": 1051,
+          "render_edge_pixels": 820,
+          "delta_e76_mean": 4.415663769954494,
+          "delta_e76_p95": 11.886765150702958,
+          "highpass_rmse_sigma1": 1.8713250286985887,
+          "worst_32px_tile_rmse": 12.975851469332047
+        },
+        "bluegray": {
+          "mae": 4.075146484375,
+          "mse": 47.999169921875,
+          "rmse": 6.928143324287901,
+          "psnr_db": 31.318466339395393,
+          "identical": false,
+          "ssim": 0.9585940263617735,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 0.7270668176670442,
+          "edge_f1_1_5px": 0.8419672131147542,
+          "source_edge_pixels": 883,
+          "render_edge_pixels": 636,
+          "delta_e76_mean": 3.960238661630595,
+          "delta_e76_p95": 11.156420282978841,
+          "highpass_rmse_sigma1": 1.8881905748291092,
+          "worst_32px_tile_rmse": 12.947045090000266
+        }
+      },
+      "alpha_mae": 0.0,
+      "alpha_max_error": 0.0,
+      "premultiplied_rgb_rmse": 6.92866524383711,
+      "structure": {
+        "bytes": 3321,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "linearGradient": 4,
+          "stop": 18,
+          "mask": 1,
+          "path": 6,
+          "radialGradient": 1,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 7,
+          "H": 2,
+          "V": 1,
+          "Z": 7,
+          "C": 16,
+          "L": 3
+        },
+        "cubic_segments": 16,
+        "explicit_path_coordinate_pairs": 58,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "geometry": {
+        "rgb_paths": 5,
+        "mask_paths": 1,
+        "closed_subpaths": 6,
+        "cubic_segments": 16,
+        "rgb_paths_bounds_le_1px": 0,
+        "rgb_paths_bounds_le_2px": 0,
+        "median_rgb_path_bbox_max_dimension": 97.00135487014396,
+        "coordinate_integer_lattice_fraction": 0.9137931034482759,
+        "exact_segment_pairs_round_3dp": 0,
+        "segments_incidence_gt2": 0,
+        "unpaired_segments": 20,
+        "unsupported_transforms": [],
+        "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+      },
+      "geometry_signature": "d1387a38b52d5db700bc646c5246c48f1f6bd6ed7ce1d17980279011dd946aac",
+      "render": {
+        "render_seconds": 0.11727069999324158,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\Agrad\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\Agrad\\render.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.11727069999324158,
+          "sampled_tree_peak_mib": 9.078125,
+          "observed_process_cpu_seconds": 0.015625,
+          "memory_samples": 2,
+          "observed_pids": [
+            11060,
+            27616
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "27616": 2.52734375,
+            "11060": 7.30859375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "sha256": "6fa867e411244b53698a9080fe803a2701291fc829b6a41797d7bf3a143f5cec",
+      "float_three_background_mse": 48.00640206115637,
+      "float_per_background_mse": {
+        "white": 48.00640206115636,
+        "black": 48.00640206115636,
+        "bluegray": 48.006402061156365
+      },
+      "heldout_float_three_background_mse": 47.97563511354808,
+      "boundary_float_three_background_mse": 66.31398315206276,
+      "interior_float_three_background_mse": null,
+      "boundary_pixels": 14826,
+      "interior_pixels": 0,
+      "alpha_mse": 0.0,
+      "alpha_nonzero_difference_pixels": 0,
+      "fixed_baseline_alpha_max_change_bytes": 0,
+      "regions": [
+        {
+          "region": 0,
+          "heldout_effective_mixture_mse": 11.262304967509133,
+          "heldout_weight_energy": 386.5249938964844,
+          "support_pixels": 14760
+        },
+        {
+          "region": 1,
+          "heldout_effective_mixture_mse": 90.2344245796521,
+          "heldout_weight_energy": 305.1872253417969,
+          "support_pixels": 6645
+        },
+        {
+          "region": 2,
+          "heldout_effective_mixture_mse": 135.76267893341262,
+          "heldout_weight_energy": 82.38957214355469,
+          "support_pixels": 5964
+        },
+        {
+          "region": 3,
+          "heldout_effective_mixture_mse": 1888.7488848435298,
+          "heldout_weight_energy": 2.6675209999084473,
+          "support_pixels": 206
+        },
+        {
+          "region": 4,
+          "heldout_effective_mixture_mse": 3.8096727418871126,
+          "heldout_weight_energy": 1.078476905822754,
+          "support_pixels": 366
+        }
+      ],
+      "boundary_definition": "Effective contribution mixed or total alpha<.998; includes translucent interiors. Not independent physical boundary truth. Region scores are weighted final mixed-pixel residuals, not uniquely attributable paint errors."
+    },
+    "B": {
+      "metrics": {
+        "white": {
+          "mae": 10.353287760416666,
+          "mse": 265.5328776041667,
+          "rmse": 16.29517958183237,
+          "psnr_db": 23.889620588852107,
+          "identical": false,
+          "ssim": 0.8686835897221129,
+          "edge_precision_1_5px": 0.7147302904564315,
+          "edge_recall_1_5px": 0.7393209200438116,
+          "edge_f1_1_5px": 0.7268176692919045,
+          "source_edge_pixels": 913,
+          "render_edge_pixels": 964,
+          "delta_e76_mean": 5.188778651771827,
+          "delta_e76_p95": 16.650307185933567,
+          "highpass_rmse_sigma1": 2.150863928775801,
+          "worst_32px_tile_rmse": 29.57870965921547
+        },
+        "black": {
+          "mae": 10.353287760416666,
+          "mse": 265.5328776041667,
+          "rmse": 16.29517958183237,
+          "psnr_db": 23.889620588852107,
+          "identical": false,
+          "ssim": 0.8250417105145257,
+          "edge_precision_1_5px": 0.8285714285714286,
+          "edge_recall_1_5px": 0.8087535680304472,
+          "edge_f1_1_5px": 0.818542562552923,
+          "source_edge_pixels": 1051,
+          "render_edge_pixels": 1015,
+          "delta_e76_mean": 5.884674265253357,
+          "delta_e76_p95": 18.511519415764987,
+          "highpass_rmse_sigma1": 2.150863928775801,
+          "worst_32px_tile_rmse": 29.57870965921547
+        },
+        "bluegray": {
+          "mae": 10.352750651041667,
+          "mse": 265.278662109375,
+          "rmse": 16.287377385858502,
+          "psnr_db": 23.893780422871647,
+          "identical": false,
+          "ssim": 0.8165543464040429,
+          "edge_precision_1_5px": 0.7271241830065359,
+          "edge_recall_1_5px": 0.4960362400906002,
+          "edge_f1_1_5px": 0.589750843808766,
+          "source_edge_pixels": 883,
+          "render_edge_pixels": 612,
+          "delta_e76_mean": 5.583717686244066,
+          "delta_e76_p95": 17.623744414542568,
+          "highpass_rmse_sigma1": 2.1679347872337758,
+          "worst_32px_tile_rmse": 29.50979158650848
+        }
+      },
+      "alpha_mae": 0.0,
+      "alpha_max_error": 0.0,
+      "premultiplied_rgb_rmse": 16.287847592206322,
+      "structure": {
+        "bytes": 1610,
+        "elements": {
+          "svg": 1,
+          "defs": 2,
+          "linearGradient": 1,
+          "stop": 4,
+          "mask": 1,
+          "path": 6,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 7,
+          "H": 2,
+          "V": 1,
+          "Z": 7,
+          "C": 16,
+          "L": 3
+        },
+        "cubic_segments": 16,
+        "explicit_path_coordinate_pairs": 58,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "geometry": {
+        "rgb_paths": 5,
+        "mask_paths": 1,
+        "closed_subpaths": 6,
+        "cubic_segments": 16,
+        "rgb_paths_bounds_le_1px": 0,
+        "rgb_paths_bounds_le_2px": 0,
+        "median_rgb_path_bbox_max_dimension": 97.00135487014396,
+        "coordinate_integer_lattice_fraction": 0.9137931034482759,
+        "exact_segment_pairs_round_3dp": 0,
+        "segments_incidence_gt2": 0,
+        "unpaired_segments": 20,
+        "unsupported_transforms": [],
+        "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+      },
+      "geometry_signature": "d1387a38b52d5db700bc646c5246c48f1f6bd6ed7ce1d17980279011dd946aac",
+      "render": {
+        "render_seconds": 0.1032818999956362,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\B\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\B\\render.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.1032818999956362,
+          "sampled_tree_peak_mib": 8.6640625,
+          "observed_process_cpu_seconds": 0.03125,
+          "memory_samples": 2,
+          "observed_pids": [
+            24980,
+            27384
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "24980": 2.5234375,
+            "27384": 6.16015625
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "sha256": "1c0bbf04a536881012afff138ffdcb87f85392d9c2a4932ebc4e92f563f6e1c4",
+      "float_three_background_mse": 265.2939791869413,
+      "float_per_background_mse": {
+        "white": 265.2939791869413,
+        "black": 265.29397918694127,
+        "bluegray": 265.29397918694127
+      },
+      "heldout_float_three_background_mse": 265.7789848968846,
+      "boundary_float_three_background_mse": 366.4657152130418,
+      "interior_float_three_background_mse": null,
+      "boundary_pixels": 14826,
+      "interior_pixels": 0,
+      "alpha_mse": 0.0,
+      "alpha_nonzero_difference_pixels": 0,
+      "fixed_baseline_alpha_max_change_bytes": 0,
+      "regions": [
+        {
+          "region": 0,
+          "heldout_effective_mixture_mse": 412.952847503549,
+          "heldout_weight_energy": 386.5249938964844,
+          "support_pixels": 14760
+        },
+        {
+          "region": 1,
+          "heldout_effective_mixture_mse": 684.1809462708643,
+          "heldout_weight_energy": 305.1872253417969,
+          "support_pixels": 6645
+        },
+        {
+          "region": 2,
+          "heldout_effective_mixture_mse": 141.37871383307095,
+          "heldout_weight_energy": 82.38957214355469,
+          "support_pixels": 5964
+        },
+        {
+          "region": 3,
+          "heldout_effective_mixture_mse": 84.203695286195,
+          "heldout_weight_energy": 2.6675209999084473,
+          "support_pixels": 206
+        },
+        {
+          "region": 4,
+          "heldout_effective_mixture_mse": 4.9262446359043555,
+          "heldout_weight_energy": 1.078476905822754,
+          "support_pixels": 366
+        }
+      ],
+      "boundary_definition": "Effective contribution mixed or total alpha<.998; includes translucent interiors. Not independent physical boundary truth. Region scores are weighted final mixed-pixel residuals, not uniquely attributable paint errors."
+    },
+    "C": {
+      "metrics": {
+        "white": {
+          "mae": 0.6377278645833333,
+          "mse": 1.2314453125,
+          "rmse": 1.109705056535294,
+          "psnr_db": 47.226652309346406,
+          "identical": false,
+          "ssim": 0.9965745634046069,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 0.9474260679079957,
+          "edge_f1_1_5px": 0.9730033745781776,
+          "source_edge_pixels": 913,
+          "render_edge_pixels": 854,
+          "delta_e76_mean": 0.5320465254348381,
+          "delta_e76_p95": 1.5031291570911616,
+          "highpass_rmse_sigma1": 0.38968148021676535,
+          "worst_32px_tile_rmse": 1.8415417566991703
+        },
+        "black": {
+          "mae": 0.6377278645833333,
+          "mse": 1.2314453125,
+          "rmse": 1.109705056535294,
+          "psnr_db": 47.226652309346406,
+          "identical": false,
+          "ssim": 0.9958118664427112,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 0.9980970504281637,
+          "edge_f1_1_5px": 0.9990476190476191,
+          "source_edge_pixels": 1051,
+          "render_edge_pixels": 1041,
+          "delta_e76_mean": 0.5813985939615476,
+          "delta_e76_p95": 1.6022833828694483,
+          "highpass_rmse_sigma1": 0.38968148021676535,
+          "worst_32px_tile_rmse": 1.8415417566991703
+        },
+        "bluegray": {
+          "mae": 0.6356282552083333,
+          "mse": 1.3152180989583333,
+          "rmse": 1.146829585840169,
+          "psnr_db": 46.94082584224514,
+          "identical": false,
+          "ssim": 0.994826718452129,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 0.9909399773499433,
+          "edge_f1_1_5px": 0.9954493742889647,
+          "source_edge_pixels": 883,
+          "render_edge_pixels": 862,
+          "delta_e76_mean": 0.5729932604306629,
+          "delta_e76_p95": 1.7459212265566935,
+          "highpass_rmse_sigma1": 0.44904851509957455,
+          "worst_32px_tile_rmse": 1.898807191370414
+        }
+      },
+      "alpha_mae": 0.0,
+      "alpha_max_error": 0.0,
+      "premultiplied_rgb_rmse": 1.1215474397188918,
+      "structure": {
+        "bytes": 3813,
+        "elements": {
+          "svg": 1,
+          "defs": 2,
+          "radialGradient": 4,
+          "stop": 23,
+          "linearGradient": 2,
+          "mask": 1,
+          "path": 6,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 7,
+          "H": 2,
+          "V": 1,
+          "Z": 7,
+          "C": 16,
+          "L": 3
+        },
+        "cubic_segments": 16,
+        "explicit_path_coordinate_pairs": 58,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "geometry": {
+        "rgb_paths": 5,
+        "mask_paths": 1,
+        "closed_subpaths": 6,
+        "cubic_segments": 16,
+        "rgb_paths_bounds_le_1px": 0,
+        "rgb_paths_bounds_le_2px": 0,
+        "median_rgb_path_bbox_max_dimension": 97.00135487014396,
+        "coordinate_integer_lattice_fraction": 0.9137931034482759,
+        "exact_segment_pairs_round_3dp": 0,
+        "segments_incidence_gt2": 0,
+        "unpaired_segments": 20,
+        "unsupported_transforms": [],
+        "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+      },
+      "geometry_signature": "d1387a38b52d5db700bc646c5246c48f1f6bd6ed7ce1d17980279011dd946aac",
+      "render": {
+        "render_seconds": 0.16081100003793836,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\C\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\C\\render.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.16081100003793836,
+          "sampled_tree_peak_mib": 11.109375,
+          "observed_process_cpu_seconds": 0.09375,
+          "memory_samples": 3,
+          "observed_pids": [
+            10264,
+            34340
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "10264": 5.08203125,
+            "34340": 6.96875
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "sha256": "8916de781c9866668e771f3deb96b409d06fb696b75f2da3328403913c10f048",
+      "float_three_background_mse": 1.2578686595400004,
+      "float_per_background_mse": {
+        "white": 1.2578686595400006,
+        "black": 1.2578686595400006,
+        "bluegray": 1.2578686595400008
+      },
+      "heldout_float_three_background_mse": 1.250602637807574,
+      "boundary_float_three_background_mse": 1.737565772789641,
+      "interior_float_three_background_mse": null,
+      "boundary_pixels": 14826,
+      "interior_pixels": 0,
+      "alpha_mse": 0.0,
+      "alpha_nonzero_difference_pixels": 0,
+      "fixed_baseline_alpha_max_change_bytes": 0,
+      "regions": [
+        {
+          "region": 0,
+          "heldout_effective_mixture_mse": 2.5800216361451653,
+          "heldout_weight_energy": 386.5249938964844,
+          "support_pixels": 14760
+        },
+        {
+          "region": 1,
+          "heldout_effective_mixture_mse": 2.7538966540605982,
+          "heldout_weight_energy": 305.1872253417969,
+          "support_pixels": 6645
+        },
+        {
+          "region": 2,
+          "heldout_effective_mixture_mse": 0.6328772174339758,
+          "heldout_weight_energy": 82.38957214355469,
+          "support_pixels": 5964
+        },
+        {
+          "region": 3,
+          "heldout_effective_mixture_mse": 0.8173128662353234,
+          "heldout_weight_energy": 2.6675209999084473,
+          "support_pixels": 206
+        },
+        {
+          "region": 4,
+          "heldout_effective_mixture_mse": 0.4685583806435428,
+          "heldout_weight_energy": 1.078476905822754,
+          "support_pixels": 366
+        }
+      ],
+      "boundary_definition": "Effective contribution mixed or total alpha<.998; includes translucent interiors. Not independent physical boundary truth. Region scores are weighted final mixed-pixel residuals, not uniquely attributable paint errors."
+    },
+    "truth": {
+      "metrics": {
+        "white": {
+          "mae": 0.0,
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": null,
+          "identical": true,
+          "ssim": 1.0,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 1.0,
+          "source_edge_pixels": 913,
+          "render_edge_pixels": 913,
+          "delta_e76_mean": 0.0,
+          "delta_e76_p95": 0.0,
+          "highpass_rmse_sigma1": 0.0,
+          "worst_32px_tile_rmse": 0.0
+        },
+        "black": {
+          "mae": 0.0,
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": null,
+          "identical": true,
+          "ssim": 1.0,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 1.0,
+          "source_edge_pixels": 1051,
+          "render_edge_pixels": 1051,
+          "delta_e76_mean": 0.0,
+          "delta_e76_p95": 0.0,
+          "highpass_rmse_sigma1": 0.0,
+          "worst_32px_tile_rmse": 0.0
+        },
+        "bluegray": {
+          "mae": 0.0,
+          "mse": 0.0,
+          "rmse": 0.0,
+          "psnr_db": null,
+          "identical": true,
+          "ssim": 1.0,
+          "edge_precision_1_5px": 1.0,
+          "edge_recall_1_5px": 1.0,
+          "edge_f1_1_5px": 1.0,
+          "source_edge_pixels": 883,
+          "render_edge_pixels": 883,
+          "delta_e76_mean": 0.0,
+          "delta_e76_p95": 0.0,
+          "highpass_rmse_sigma1": 0.0,
+          "worst_32px_tile_rmse": 0.0
+        }
+      },
+      "alpha_mae": 0.0,
+      "alpha_max_error": 0.0,
+      "premultiplied_rgb_rmse": 0.0,
+      "structure": {
+        "bytes": 2387,
+        "elements": {
+          "svg": 1,
+          "defs": 1,
+          "linearGradient": 3,
+          "stop": 17,
+          "mask": 1,
+          "path": 6,
+          "radialGradient": 2,
+          "g": 1
+        },
+        "path_commands": {
+          "M": 7,
+          "H": 2,
+          "V": 1,
+          "Z": 7,
+          "C": 16,
+          "L": 3
+        },
+        "cubic_segments": 16,
+        "explicit_path_coordinate_pairs": 58,
+        "raster_free": true,
+        "external_href_count": 0,
+        "script_count": 0,
+        "foreign_object_count": 0,
+        "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+      },
+      "geometry": {
+        "rgb_paths": 5,
+        "mask_paths": 1,
+        "closed_subpaths": 6,
+        "cubic_segments": 16,
+        "rgb_paths_bounds_le_1px": 0,
+        "rgb_paths_bounds_le_2px": 0,
+        "median_rgb_path_bbox_max_dimension": 97.00135487014396,
+        "coordinate_integer_lattice_fraction": 0.9137931034482759,
+        "exact_segment_pairs_round_3dp": 0,
+        "segments_incidence_gt2": 0,
+        "unpaired_segments": 20,
+        "unsupported_transforms": [],
+        "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+      },
+      "geometry_signature": "d1387a38b52d5db700bc646c5246c48f1f6bd6ed7ce1d17980279011dd946aac",
+      "render": {
+        "render_seconds": 0.14946540002711117,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\truth\\output.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\results\\F02_soft_alpha_overlap_highlight\\truth\\render.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.14946540002711117,
+          "sampled_tree_peak_mib": 10.1015625,
+          "observed_process_cpu_seconds": 0.0625,
+          "memory_samples": 2,
+          "observed_pids": [
+            20844,
+            28664
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "28664": 3.13671875,
+            "20844": 6.96484375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "sha256": "a084af5506f21515aecd81c8190462ad4ef73aca51667ba88bc7d5194f7caf6e",
+      "float_three_background_mse": 0.0,
+      "float_per_background_mse": {
+        "white": 0.0,
+        "black": 0.0,
+        "bluegray": 0.0
+      },
+      "heldout_float_three_background_mse": 0.0,
+      "boundary_float_three_background_mse": 0.0,
+      "interior_float_three_background_mse": null,
+      "boundary_pixels": 14826,
+      "interior_pixels": 0,
+      "alpha_mse": 0.0,
+      "alpha_nonzero_difference_pixels": 0,
+      "fixed_baseline_alpha_max_change_bytes": 0,
+      "regions": [
+        {
+          "region": 0,
+          "heldout_effective_mixture_mse": 0.0,
+          "heldout_weight_energy": 386.5249938964844,
+          "support_pixels": 14760
+        },
+        {
+          "region": 1,
+          "heldout_effective_mixture_mse": 0.0,
+          "heldout_weight_energy": 305.1872253417969,
+          "support_pixels": 6645
+        },
+        {
+          "region": 2,
+          "heldout_effective_mixture_mse": 0.0,
+          "heldout_weight_energy": 82.38957214355469,
+          "support_pixels": 5964
+        },
+        {
+          "region": 3,
+          "heldout_effective_mixture_mse": 0.0,
+          "heldout_weight_energy": 2.6675209999084473,
+          "support_pixels": 206
+        },
+        {
+          "region": 4,
+          "heldout_effective_mixture_mse": 0.0,
+          "heldout_weight_energy": 1.078476905822754,
+          "support_pixels": 366
+        }
+      ],
+      "boundary_definition": "Effective contribution mixed or total alpha<.998; includes translucent interiors. Not independent physical boundary truth. Region scores are weighted final mixed-pixel residuals, not uniquely attributable paint errors."
+    }
+  },
+  "fixed_scene_signature": "13ae6d988a0bfffc1e9515eb54610914404c74f5c7325b92d5ff937950c9fa25",
+  "map_metadata": {
+    "baseline_sha256": "9651949f6e60a3aa4d3e5195e8d09a01d5bdd243ebf00016516c43d34cf2f223",
+    "geometry_signature": "13ae6d988a0bfffc1e9515eb54610914404c74f5c7325b92d5ff937950c9fa25",
+    "maps_npz_sha256": "29e212b0551c930e92b85305f21c8bfef463571ed3fffbed5699efc240c52448",
+    "regions": 5,
+    "width": 160,
+    "height": 128,
+    "uncompressed_map_bytes": 409600,
+    "wall_seconds": 0.4448024000157602,
+    "probe_count": 8,
+    "closure_mae": 0.0010856373701244593,
+    "closure_max": 0.012595146894454956,
+    "black_vs_white_alpha_max_change_bytes": 0,
+    "random_forward_rmse_bytes": 0.41401317715644836,
+    "random_forward_max_error_bytes": 2.13397216796875,
+    "unobservable_regions": [],
+    "weak_regions_energy_lt_flat_ridge": [],
+    "nearly_correlated_region_pairs_gt_0_995": [],
+    "positive_gram_condition_ratio": 437.8504553160812,
+    "gram_rank_threshold_1e9": 5,
+    "limitations": [
+      "Renderer probe quantization makes weights approximate",
+      "Linear sRGB-byte premultiplied model may differ from actual SVG composition",
+      "Visible RGB paths only; no strokes/filter/raster inputs",
+      "Coefficients already contain alpha and overlap; never apply source alpha weighting again"
+    ]
+  },
+  "oracle_flat_color_errors": [
+    {
+      "condition": "Aflat",
+      "region": "thin_ribbon",
+      "flat_color_rmse_bytes": 103.52133435513022
+    },
+    {
+      "condition": "B",
+      "region": "thin_ribbon",
+      "flat_color_rmse_bytes": 8.643385173994812
+    }
+  ],
+  "wall_seconds": 7.124796999967657,
+  "architecture": "NOT_APPROVED"
+}

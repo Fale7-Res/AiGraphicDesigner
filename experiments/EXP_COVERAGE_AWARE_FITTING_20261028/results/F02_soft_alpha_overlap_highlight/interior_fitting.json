@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "wall_seconds": 0.744500299973879,
+  "deadline_seconds": 120,
+  "path_count": 5,
+  "split": "(x+3*y)%5: train 0,1,2; selection 3; untouched test 4",
+  "alpha_fitting": "Zero-alpha pixels excluded; all fit/selection/test residuals weighted by source alpha squared (premultiplied appearance objective); source alpha mask reconstructed separately",
+  "max_optimizer_evaluations_per_region": 100,
+  "limitations": [
+    "Interior-only fitting excludes antialiased boundaries",
+    "At most four equally spaced stops",
+    "Periodic pixel split tests interpolation, not spatial-block extrapolation",
+    "Radial focal point equals center and radius follows visible interior sample extent",
+    "Train least squares stop colors clipped to RGB gamut, not a constrained optimum",
+    "Tiny regions retain flat models",
+    "No geometry or alpha optimization"
+  ],
+  "regions": [
+    {
+      "path_index": 0,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 71,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 1027.8952547672252,
+      "selected_selection_mse": 0.672813800482594,
+      "flat_test_mse": 1012.3640845849264,
+      "selected_test_mse": 0.6572043101251602,
+      "interior_count": 3211
+    },
+    {
+      "path_index": 1,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 63,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 1089.1120708296758,
+      "selected_selection_mse": 3.445251129871938,
+      "flat_test_mse": 1101.2028695315803,
+      "selected_test_mse": 3.633689489915412,
+      "interior_count": 3655
+    },
+    {
+      "path_index": 2,
+      "model": "radial",
+      "stops": 3,
+      "optimizer_evaluations": 67,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 493.8627521436488,
+      "selected_selection_mse": 89.91159067821737,
+      "flat_test_mse": 511.8511547726945,
+      "selected_test_mse": 86.84852790242236,
+      "interior_count": 5000
+    },
+    {
+      "path_index": 3,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 4,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 67,
+      "train_count": 149,
+      "selection_count": 50,
+      "test_count": 47,
+      "flat_selection_mse": 104.56320715544398,
+      "selected_selection_mse": 40.94776367864167,
+      "flat_test_mse": 105.91290428705769,
+      "selected_test_mse": 36.34910263744222,
+      "interior_count": 246
+    }
+  ]
+}

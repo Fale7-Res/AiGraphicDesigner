@@ -1,0 +1,12 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-28T05:38:04Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-28T05:38:04Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-28T05:38:04Z"}
+END_DOC_PROVENANCE -->
+# Fixture and baseline-audit work log
+
+2026-10-28T05:17:20+00:00 — Parent delegated disjoint fixtures/audit scope for owner-approved coverage-aware fitting research. Owner original vision read completely; historical source and saved192 diagnostics read without modification or rerun. Architecture NOT_APPROVED. Audit records exact source SHA256/line references, ownership exact-ID/full-alpha/four-neighbor consensus, source alpha² weighting/zeroalpha exclusion, no-interior and selection fallbacks, and opacity/mask baseline restrictions.
+
+Two CC0 deterministic authored vector fixtures frozen before fitting: F01 thin/sharedcurve/junction/hole/highlight (7paintpaths) and F02 softalpha/overlap/hole/highlight (5paintpaths). Both160x128, <=4equallyspaced gradientstops, source PNGs actually rendered with resvg. Manifest includes original truth parameters, regionIDs, hashes, critical boxes and thin widths. initial.svg changes only visible path paints to dummyflat#808080 and preserves exact geometry,opacity,mask. ExistingK01/K02 references included byhash; no tracing or reference rerender. Baseline adapter must restore mask/opacity identically and remains source-over-unaware.
+
+2026-10-28T05:19:30+00:00 — Six dedicated fixture tests passed in0.067s; both actual source PNGs visually inspected. Old fitter line references cross-checked with AST/full source; corrected audit to exact _paths57–67,_fit_region130–220,_paint223–246,fit_svg249–338 and explicit rejection269–278. Saved192diagnostic335/900zero-interior count independently extracted without rerun. Fixture scope complete; parent and independent QA notified; no fitting or geometry changes performed here.
+
+2026-10-28T05:24:58+00:00 — Parent delegated disjoint presentation.py addition. Read complete research.py/result schema. Prepared9case all-condition visualdashboard generator, 3background comparison/error/metric tables, actualalpha, inheritedAflat links, allcoverage/fittingdiagnostics, worstC24px balancederror +thinfixture/center crop, directSVGviewport1x4x16x renderswith sourceNNnotGT labels. AST parsed/compiled only; presentation generation explicitly NOT executed pending parent results-ready confirmation.

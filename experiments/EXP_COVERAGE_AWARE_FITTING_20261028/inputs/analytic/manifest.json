@@ -1,0 +1,555 @@
+{
+  "status": "FROZEN_BEFORE_FITTING",
+  "cases": [
+    {
+      "id": "F01_thin_shared_junction_hole",
+      "dimensions": [
+        160,
+        128
+      ],
+      "paint_paths": 7,
+      "opaque": true,
+      "shared_boundary": "warm/cool: C116 32 44 96 80 120 and exact reversed C44 96 116 32 80 8",
+      "thin_regions": [
+        {
+          "id": "thin_diagonal",
+          "nominal_perpendicular_width_px": 0.848528137423857,
+          "center_line": [
+            [
+              30,
+              12
+            ],
+            [
+              130,
+              112
+            ]
+          ],
+          "critical_box": [
+            74,
+            56,
+            16,
+            16
+          ]
+        }
+      ],
+      "critical_features": {
+        "junction_box": [
+          30,
+          82,
+          24,
+          24
+        ],
+        "hole_box": [
+          108,
+          73,
+          30,
+          32
+        ],
+        "edge_highlight_box": [
+          130,
+          12,
+          24,
+          34
+        ]
+      },
+      "overlap_policy": "ring, triangle, ribbon and highlight intentionally source-over base partition; no geometry gap between base warm/cool",
+      "source_png": "inputs/analytic/F01_thin_shared_junction_hole/source.png",
+      "truth_svg": "inputs/analytic/F01_thin_shared_junction_hole/truth.svg",
+      "initial_svg": "inputs/analytic/F01_thin_shared_junction_hole/initial.svg",
+      "truth_regions": [
+        {
+          "id": "background",
+          "fill": "#111b31",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M0 0H160V128H0Z"
+        },
+        {
+          "id": "warm_region",
+          "fill": "url(#warm)",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M8 8H80C116 32 44 96 80 120H8Z"
+        },
+        {
+          "id": "cool_region",
+          "fill": "url(#cool)",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M80 8H152V120H80C44 96 116 32 80 8Z"
+        },
+        {
+          "id": "thin_diagonal",
+          "fill": "#00ff83",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M29.7 12.3L129.7 112.3L130.3 111.7L30.3 11.7Z"
+        },
+        {
+          "id": "hole_ring",
+          "fill": "#fee625",
+          "opacity": 1.0,
+          "fill_rule": "evenodd",
+          "d": "M118 67C135 67 141 78 141 91C141 107 128 114 117 108C103 101 101 79 118 67Z M119 79C110 84 113 98 120 99C129 100 133 88 128 82C125 79 122 78 119 79Z"
+        },
+        {
+          "id": "sharp_junction",
+          "fill": "#aa21ff",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M16 93L52 72L47 112L36 98Z"
+        },
+        {
+          "id": "edge_highlight",
+          "fill": "url(#highlight)",
+          "opacity": 1.0,
+          "fill_rule": "nonzero",
+          "d": "M137 14C150 12 152 27 150 43C142 44 133 39 133 28C133 21 135 16 137 14Z"
+        }
+      ],
+      "truth_gradients": [
+        {
+          "kind": "linearGradient",
+          "attributes": {
+            "id": "warm",
+            "gradientUnits": "userSpaceOnUse",
+            "x1": "8",
+            "y1": "0",
+            "x2": "80",
+            "y2": "0"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#3d0714"
+            },
+            {
+              "offset": "0.333333333333",
+              "stop-color": "#a32918"
+            },
+            {
+              "offset": "0.666666666667",
+              "stop-color": "#f4a021"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#fff0a0"
+            }
+          ]
+        },
+        {
+          "kind": "linearGradient",
+          "attributes": {
+            "id": "cool",
+            "gradientUnits": "userSpaceOnUse",
+            "x1": "80",
+            "y1": "8",
+            "x2": "152",
+            "y2": "120"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#073f77"
+            },
+            {
+              "offset": "0.5",
+              "stop-color": "#257bc0"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#b7f1ef"
+            }
+          ]
+        },
+        {
+          "kind": "radialGradient",
+          "attributes": {
+            "id": "highlight",
+            "gradientUnits": "userSpaceOnUse",
+            "cx": "143",
+            "cy": "28",
+            "r": "15"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#ffffff"
+            },
+            {
+              "offset": "0.5",
+              "stop-color": "#f5ec80"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#ba6e14"
+            }
+          ]
+        }
+      ],
+      "render": {
+        "render_seconds": 0.03945820004446432,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\inputs\\analytic\\F01_thin_shared_junction_hole\\truth.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\inputs\\analytic\\F01_thin_shared_junction_hole\\source.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.03945820004446432,
+          "sampled_tree_peak_mib": 2.51953125,
+          "observed_process_cpu_seconds": 0,
+          "memory_samples": 2,
+          "observed_pids": [
+            26096
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "26096": 2.51953125
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "license": "CC0-1.0",
+      "author": "AiGraphicDesigner research / package_generalization",
+      "provenance": "Deterministic authored analytic vector control; no remote/generated image source; not real-image generalization evidence",
+      "files": {
+        "initial.svg": {
+          "sha256": "1635c5bea473a038f0a43602b4581f377f345cb506130ea72f629a959fe4ba8c",
+          "bytes": 1619
+        },
+        "source.png": {
+          "sha256": "d1db8cd1bcb31744e5e0981aa247be159a7bad203eea0d17e63157c63fb57134",
+          "bytes": 7704
+        },
+        "source.renderer.log": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "truth.svg": {
+          "sha256": "4cf5d2d1d29092f9cd7c18381b88d49afa0da7dfc8ba01b8a4874a41dbe17f8f",
+          "bytes": 1576
+        }
+      }
+    },
+    {
+      "id": "F02_soft_alpha_overlap_highlight",
+      "dimensions": [
+        160,
+        128
+      ],
+      "paint_paths": 5,
+      "opaque": false,
+      "alpha": "one common vector linear-gradient alpha mask; 4 equal stops, no raster alpha runs",
+      "thin_regions": [
+        {
+          "id": "thin_ribbon",
+          "nominal_perpendicular_width_px": 0.670820393249937,
+          "center_line": [
+            [
+              24.15,
+              93.5
+            ],
+            [
+              133.15,
+              37.5
+            ]
+          ],
+          "critical_box": [
+            70,
+            60,
+            20,
+            20
+          ]
+        }
+      ],
+      "critical_features": {
+        "overlap_box": [
+          72,
+          36,
+          40,
+          48
+        ],
+        "hole_box": [
+          90,
+          54,
+          28,
+          30
+        ],
+        "edge_highlight_box": [
+          128,
+          13,
+          26,
+          30
+        ],
+        "soft_alpha_box": [
+          112,
+          8,
+          40,
+          112
+        ]
+      },
+      "overlap_policy": "fixed path opacities plus common mask; source-over mixtures must be modeled; restoring opacity after a hard-ownership fit does not solve inverse compositing",
+      "source_png": "inputs/analytic/F02_soft_alpha_overlap_highlight/source.png",
+      "truth_svg": "inputs/analytic/F02_soft_alpha_overlap_highlight/truth.svg",
+      "initial_svg": "inputs/analytic/F02_soft_alpha_overlap_highlight/initial.svg",
+      "truth_regions": [
+        {
+          "id": "base_shape",
+          "fill": "url(#base)",
+          "opacity": 0.91,
+          "fill_rule": "nonzero",
+          "d": "M22 10C67 1 124 8 146 26C161 49 153 104 128 118C89 126 30 119 13 97C4 66 6 24 22 10Z"
+        },
+        {
+          "id": "cyan_overlap",
+          "fill": "url(#cyan)",
+          "opacity": 0.72,
+          "fill_rule": "nonzero",
+          "d": "M20 30C59 9 94 21 112 61C118 90 79 109 42 104C17 92 10 55 20 30Z"
+        },
+        {
+          "id": "rose_overlap_hole",
+          "fill": "url(#rose)",
+          "opacity": 0.64,
+          "fill_rule": "evenodd",
+          "d": "M81 21C126 7 153 33 148 73C138 111 99 116 74 90C58 68 58 37 81 21Z M101 57C94 57 91 74 99 79C108 84 115 66 110 61C108 58 104 57 101 57Z"
+        },
+        {
+          "id": "thin_ribbon",
+          "fill": "#ffd926",
+          "opacity": 0.86,
+          "fill_rule": "nonzero",
+          "d": "M24 93.2L133 37.2L133.3 37.8L24.3 93.8Z"
+        },
+        {
+          "id": "edge_gleam",
+          "fill": "url(#gleam)",
+          "opacity": 0.83,
+          "fill_rule": "nonzero",
+          "d": "M135 16C147 16 151 28 148 40C142 43 132 36 131 28C131 23 132 18 135 16Z"
+        }
+      ],
+      "truth_gradients": [
+        {
+          "kind": "linearGradient",
+          "attributes": {
+            "id": "alpha",
+            "gradientUnits": "userSpaceOnUse",
+            "x1": "8",
+            "y1": "0",
+            "x2": "152",
+            "y2": "0"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "white",
+              "stop-opacity": "1"
+            },
+            {
+              "offset": "0.333333333333",
+              "stop-color": "white",
+              "stop-opacity": "0.82"
+            },
+            {
+              "offset": "0.666666666667",
+              "stop-color": "white",
+              "stop-opacity": "0.37"
+            },
+            {
+              "offset": "1",
+              "stop-color": "white",
+              "stop-opacity": "0.08"
+            }
+          ]
+        },
+        {
+          "kind": "linearGradient",
+          "attributes": {
+            "id": "base",
+            "gradientUnits": "userSpaceOnUse",
+            "x1": "8",
+            "y1": "8",
+            "x2": "152",
+            "y2": "120"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#171c65"
+            },
+            {
+              "offset": "0.5",
+              "stop-color": "#5059bc"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#ded6ef"
+            }
+          ]
+        },
+        {
+          "kind": "linearGradient",
+          "attributes": {
+            "id": "cyan",
+            "gradientUnits": "userSpaceOnUse",
+            "x1": "19",
+            "y1": "0",
+            "x2": "112",
+            "y2": "0"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#00405a"
+            },
+            {
+              "offset": "0.333333333333",
+              "stop-color": "#04aac2"
+            },
+            {
+              "offset": "0.666666666667",
+              "stop-color": "#a7fff0"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#f5ffca"
+            }
+          ]
+        },
+        {
+          "kind": "radialGradient",
+          "attributes": {
+            "id": "rose",
+            "gradientUnits": "userSpaceOnUse",
+            "cx": "105",
+            "cy": "54",
+            "r": "53"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#fff0a0"
+            },
+            {
+              "offset": "0.5",
+              "stop-color": "#ef3d79"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#5e183e"
+            }
+          ]
+        },
+        {
+          "kind": "radialGradient",
+          "attributes": {
+            "id": "gleam",
+            "gradientUnits": "userSpaceOnUse",
+            "cx": "139",
+            "cy": "28",
+            "r": "14"
+          },
+          "stops": [
+            {
+              "offset": "0",
+              "stop-color": "#ffffff"
+            },
+            {
+              "offset": "0.5",
+              "stop-color": "#eaf7e8"
+            },
+            {
+              "offset": "1",
+              "stop-color": "#91c1da"
+            }
+          ]
+        }
+      ],
+      "render": {
+        "render_seconds": 0.041720999986864626,
+        "renderer_kind": "resvg",
+        "renderer": "0.49.0",
+        "renderer_command": [
+          "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+          "--width",
+          "160",
+          "--height",
+          "128",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\inputs\\analytic\\F02_soft_alpha_overlap_highlight\\truth.svg",
+          "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COVERAGE_AWARE_FITTING_20261028\\inputs\\analytic\\F02_soft_alpha_overlap_highlight\\source.png"
+        ],
+        "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+        "renderer_resources": {
+          "returncode": 0,
+          "termination_reason": null,
+          "wall_seconds": 0.041720999986864626,
+          "sampled_tree_peak_mib": 8.50390625,
+          "observed_process_cpu_seconds": 0.03125,
+          "memory_samples": 2,
+          "observed_pids": [
+            17160,
+            33300
+          ],
+          "windows_peak_wset_mib_by_pid": {
+            "33300": 2.5234375,
+            "17160": 7.30859375
+          },
+          "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+        },
+        "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+      },
+      "license": "CC0-1.0",
+      "author": "AiGraphicDesigner research / package_generalization",
+      "provenance": "Deterministic authored analytic vector control; no remote/generated image source; not real-image generalization evidence",
+      "files": {
+        "initial.svg": {
+          "sha256": "30887e7ff0751bffefb07edf208653fb97305f2d06c5f484b1fe99438b0e936d",
+          "bytes": 2437
+        },
+        "source.png": {
+          "sha256": "f7864f2984628d479e930201ee36178b0825c9b04df6437536eb383510747658",
+          "bytes": 20983
+        },
+        "source.renderer.log": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "truth.svg": {
+          "sha256": "a084af5506f21515aecd81c8190462ad4ef73aca51667ba88bc7d5194f7caf6e",
+          "bytes": 2387
+        }
+      }
+    }
+  ],
+  "existing_control_references": [
+    {
+      "id": "K01_linear_corner_hole",
+      "truth_svg": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\inputs\\K01_linear_corner_hole.svg",
+      "source_png": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\inputs\\K01_linear_corner_hole.png",
+      "truth_sha256": "5841f95586967c9298b7523dd38bf9c898030f56e37d0836fe07d1ea35decdbc",
+      "source_sha256": "5f40d1baf0016046ca4cb8585790bd96ab3954744bcd50f83f0a3afe00983812",
+      "policy": "Existing analytic reference only; no new tracing/rendering performed"
+    },
+    {
+      "id": "K02_radial_shared_curves",
+      "truth_svg": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\inputs\\K02_radial_shared_curves.svg",
+      "source_png": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_GEOMETRY_APPEARANCE_ABLATION_01\\inputs\\K02_radial_shared_curves.png",
+      "truth_sha256": "dff20b5ad500a471d94bc4f245aafbea47411570eef9a0d3d7a705f3b93303ba",
+      "source_sha256": "ed4ffab457c7ee62454c52b2595f01695d0f26581f6bffe933ef3f1b9201fc5a",
+      "policy": "Existing analytic reference only; no new tracing/rendering performed"
+    }
+  ],
+  "architecture": "NOT_APPROVED",
+  "representation": "2 new compact known-vector controls, same true fixed geometry for all conditions; no hidden pixels",
+  "baseline_adapter_requirement": "Old fitter rejects masks, opacity and gradient dummy fallbacks. Remove mask/opacity only from its RGB fitting input; preserve/restore exact original masks and opacity on ALL final conditions. This adapter is not overlap-aware fitting."
+}

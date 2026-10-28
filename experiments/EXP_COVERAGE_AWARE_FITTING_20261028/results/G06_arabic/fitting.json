@@ -1,0 +1,2454 @@
+{
+  "map_metadata": {
+    "baseline_sha256": "6a5ac8d577801462e88a8a0506dde2578d1132277f34bc7f4c6d8e0eadef9ae4",
+    "geometry_signature": "bdb876100ddd5cf893d24a942f7034585fa9dd9b2acc843e9c32afe1c4c93607",
+    "maps_npz_sha256": "2f943cc5ee93ab6574decd4630079f297b353b3d439cdbaf2d3189c39b48cd33",
+    "regions": 176,
+    "width": 210,
+    "height": 320,
+    "uncompressed_map_bytes": 47308800,
+    "wall_seconds": 25.924950000015087,
+    "probe_count": 179,
+    "closure_mae": 4.373321758066595e-07,
+    "closure_max": 0.0066435933113098145,
+    "black_vs_white_alpha_max_change_bytes": 0,
+    "random_forward_rmse_bytes": 0.1737166941165924,
+    "random_forward_max_error_bytes": 1.1764707565307617,
+    "unobservable_regions": [
+      10,
+      18,
+      23,
+      25,
+      76,
+      77,
+      107,
+      108,
+      117,
+      120,
+      126,
+      140,
+      141,
+      143,
+      152,
+      161,
+      162,
+      164
+    ],
+    "weak_regions_energy_lt_flat_ridge": [
+      8,
+      10,
+      11,
+      15,
+      18,
+      21,
+      23,
+      25,
+      30,
+      31,
+      38,
+      66,
+      67,
+      72,
+      76,
+      77,
+      81,
+      85,
+      91,
+      96,
+      101,
+      102,
+      104,
+      107,
+      108,
+      109,
+      111,
+      117,
+      118,
+      120,
+      123,
+      126,
+      133,
+      140,
+      141,
+      143,
+      150,
+      152,
+      154,
+      160,
+      161,
+      162,
+      163,
+      164,
+      167,
+      169
+    ],
+    "nearly_correlated_region_pairs_gt_0_995": [],
+    "positive_gram_condition_ratio": 944274207.0395416,
+    "gram_rank_threshold_1e9": 158,
+    "limitations": [
+      "Renderer probe quantization makes weights approximate",
+      "Linear sRGB-byte premultiplied model may differ from actual SVG composition",
+      "Visible RGB paths only; no strokes/filter/raster inputs",
+      "Coefficients already contain alpha and overlap; never apply source alpha weighting again"
+    ]
+  },
+  "wall_seconds": 2.442665299982764,
+  "deadline_seconds": 300,
+  "deadline_reached": false,
+  "split": "(x+3y)%5 train0,1,2; selection3; untouched test4; interpolation not spatial extrapolation",
+  "objective": "Equal-mean squared error over white/black/bluegray backgrounds: effective target Ps+(Atotal-As)*mean(backgrounds). Wi already includes SVG opacity/alpha, no second alpha weighting",
+  "flat_regularization": {
+    "lambda": 0.0001,
+    "policy": "Tiny train-only ridge toward inherited flat colors; unobservable regions retain seed; validation uses unregularized data loss"
+  },
+  "gradient_initialization": "coverage_flat_seed",
+  "initialization_note": "Selection chooses inherited D or new flat B; this is warm-started same-capacity fitting, not isolation from initialization",
+  "flat_history": [
+    {
+      "sweep": -1,
+      "train_mse": 0.21653783161625598,
+      "selection_mse": 0.23914628791960055
+    },
+    {
+      "sweep": 0,
+      "train_mse": 0.20829268424747663,
+      "selection_mse": 0.22672551242710273
+    },
+    {
+      "sweep": 1,
+      "train_mse": 0.20829262442325544,
+      "selection_mse": 0.22672163399862483
+    },
+    {
+      "sweep": 2,
+      "train_mse": 0.2082926244232544,
+      "selection_mse": 0.2267216339290134
+    }
+  ],
+  "gradient_history": [
+    {
+      "pass": 0,
+      "train_mse": 0.20829262175598984,
+      "selection_mse": 0.2267206901742213
+    },
+    {
+      "pass": 1,
+      "train_mse": 0.20829262175598984,
+      "selection_mse": 0.2267206901742213
+    }
+  ],
+  "regions": [
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 63,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 1.3002158137354607,
+        "selected_selection_mse": 1.3002158137354607,
+        "flat_test_mse": 1.5359438302105435,
+        "selected_test_mse": 1.5359438302105435
+      },
+      "pass": 0,
+      "region": 0,
+      "support": 18348,
+      "selection_global_mse": 0.2267216339290134,
+      "effective_weight_sum": 14972.9658203125,
+      "effective_weight_energy": 14521.720703125,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 0,
+      "region": 1,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 2,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 3,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 4,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 5,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 6,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 7,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 8,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 9,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 10,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 11,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 12,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 13,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 14,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 15,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 16,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 17,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 18,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 19,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 20,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 21,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 22,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 23,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 24,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 25,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 26,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 27,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 28,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 29,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 30,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 31,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 32,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 33,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 34,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 35,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 36,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 37,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 38,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 39,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 40,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 41,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 42,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 43,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 44,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 45,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 46,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 47,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 48,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 49,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 50,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 51,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 52,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 53,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 54,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 55,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 56,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 57,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 58,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 59,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 60,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 61,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 62,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 63,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 64,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 65,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 66,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 67,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 68,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 69,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 70,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 71,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 72,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 73,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 74,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 75,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 76,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 77,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 78,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 79,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 80,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 81,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 82,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 83,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 84,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 85,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 86,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 87,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 88,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 89,
+      "reason": "unobservable_or_split_empty",
+      "support": 2
+    },
+    {
+      "pass": 0,
+      "region": 90,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 91,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 92,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 93,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 94,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 95,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 96,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 97,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 98,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 99,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 100,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 101,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 102,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 103,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 104,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 105,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 106,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 107,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 108,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 109,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 110,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 111,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 112,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 113,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 114,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 115,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 116,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 117,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 118,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 119,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 120,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 121,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 122,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 123,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 124,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 125,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 126,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 127,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 128,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 129,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 130,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 131,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 132,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 133,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 134,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 135,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 136,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 137,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 138,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 139,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 140,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 141,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 142,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 143,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 4,
+        "selection_count": 1,
+        "test_count": 1,
+        "flat_selection_mse": 61.86208071693316,
+        "selected_selection_mse": 61.86208071693316,
+        "flat_test_mse": 555.9915037805373,
+        "selected_test_mse": 555.9915037805373
+      },
+      "pass": 0,
+      "region": 144,
+      "support": 6,
+      "selection_global_mse": 0.22672136429483222,
+      "effective_weight_sum": 1.8410149812698364,
+      "effective_weight_energy": 0.7707381248474121,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 0,
+      "region": 145,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 146,
+      "reason": "unobservable_or_split_empty",
+      "support": 3
+    },
+    {
+      "pass": 0,
+      "region": 147,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 148,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 149,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 150,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 151,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 152,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 1,
+        "flat_selection_mse": 376.2378506104175,
+        "selected_selection_mse": 376.2378506104175,
+        "flat_test_mse": 392.822013949954,
+        "selected_test_mse": 392.822013949954
+      },
+      "pass": 0,
+      "region": 153,
+      "support": 3,
+      "selection_global_mse": 0.22672069017422133,
+      "effective_weight_sum": 0.1409919261932373,
+      "effective_weight_energy": 0.006841553375124931,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 0,
+      "region": 154,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 155,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 0,
+        "flat_selection_mse": 90.66667488030873,
+        "selected_selection_mse": 90.66667488030873,
+        "flat_test_mse": null,
+        "selected_test_mse": null
+      },
+      "pass": 0,
+      "region": 156,
+      "support": 2,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 0.9490196108818054,
+      "effective_weight_energy": 0.4510880410671234,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 0,
+      "region": 157,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 0,
+        "flat_selection_mse": 2.077518297004611e-12,
+        "selected_selection_mse": 2.077518297004611e-12,
+        "flat_test_mse": null,
+        "selected_test_mse": null
+      },
+      "pass": 0,
+      "region": 158,
+      "support": 2,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 0.7960784435272217,
+      "effective_weight_energy": 0.3401307463645935,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 0,
+      "region": 159,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 160,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 161,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 162,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 163,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 164,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 0,
+      "region": 165,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 166,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 167,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 168,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 169,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 170,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 171,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 172,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 173,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 174,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 0,
+      "region": 175,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 63,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 1.3002158137354607,
+        "selected_selection_mse": 1.3002158137354607,
+        "flat_test_mse": 1.5359438302105435,
+        "selected_test_mse": 1.5359438302105435
+      },
+      "pass": 1,
+      "region": 0,
+      "support": 18348,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 14972.9658203125,
+      "effective_weight_energy": 14521.720703125,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 1,
+      "region": 1,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 2,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 3,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 4,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 5,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 6,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 7,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 8,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 9,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 10,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 11,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 12,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 13,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 14,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 15,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 16,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 17,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 18,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 19,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 20,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 21,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 22,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 23,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 24,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 25,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 26,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 27,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 28,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 29,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 30,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 31,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 32,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 33,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 34,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 35,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 36,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 37,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 38,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 39,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 40,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 41,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 42,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 43,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 44,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 45,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 46,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 47,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 48,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 49,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 50,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 51,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 52,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 53,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 54,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 55,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 56,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 57,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 58,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 59,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 60,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 61,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 62,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 63,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 64,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 65,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 66,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 67,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 68,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 69,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 70,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 71,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 72,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 73,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 74,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 75,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 76,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 77,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 78,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 79,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 80,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 81,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 82,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 83,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 84,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 85,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 86,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 87,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 88,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 89,
+      "reason": "unobservable_or_split_empty",
+      "support": 2
+    },
+    {
+      "pass": 1,
+      "region": 90,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 91,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 92,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 93,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 94,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 95,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 96,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 97,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 98,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 99,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 100,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 101,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 102,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 103,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 104,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 105,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 106,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 107,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 108,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 109,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 110,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 111,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 112,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 113,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 114,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 115,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 116,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 117,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 118,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 119,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 120,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 121,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 122,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 123,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 124,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 125,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 126,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 127,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 128,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 129,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 130,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 131,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 132,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 133,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 134,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 135,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 136,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 137,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 138,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 139,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 140,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 141,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 142,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 143,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 4,
+        "selection_count": 1,
+        "test_count": 1,
+        "flat_selection_mse": 61.86208071693316,
+        "selected_selection_mse": 61.86208071693316,
+        "flat_test_mse": 555.9915037805373,
+        "selected_test_mse": 555.9915037805373
+      },
+      "pass": 1,
+      "region": 144,
+      "support": 6,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 1.8410149812698364,
+      "effective_weight_energy": 0.7707381248474121,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 1,
+      "region": 145,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 146,
+      "reason": "unobservable_or_split_empty",
+      "support": 3
+    },
+    {
+      "pass": 1,
+      "region": 147,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 148,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 149,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 150,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 151,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 152,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 1,
+        "flat_selection_mse": 376.23785061041735,
+        "selected_selection_mse": 376.23785061041735,
+        "flat_test_mse": 392.822013949954,
+        "selected_test_mse": 392.822013949954
+      },
+      "pass": 1,
+      "region": 153,
+      "support": 3,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 0.1409919261932373,
+      "effective_weight_energy": 0.006841553375124931,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 1,
+      "region": 154,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 155,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 0,
+        "flat_selection_mse": 90.66667488030873,
+        "selected_selection_mse": 90.66667488030873,
+        "flat_test_mse": null,
+        "selected_test_mse": null
+      },
+      "pass": 1,
+      "region": 156,
+      "support": 2,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 0.9490196108818054,
+      "effective_weight_energy": 0.4510880410671234,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 1,
+      "region": 157,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 1,
+        "selection_count": 1,
+        "test_count": 0,
+        "flat_selection_mse": 2.077518297004611e-12,
+        "selected_selection_mse": 2.077518297004611e-12,
+        "flat_test_mse": null,
+        "selected_test_mse": null
+      },
+      "pass": 1,
+      "region": 158,
+      "support": 2,
+      "selection_global_mse": 0.2267206901742213,
+      "effective_weight_sum": 0.7960784435272217,
+      "effective_weight_energy": 0.3401307463645935,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "pass": 1,
+      "region": 159,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 160,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 161,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 162,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 163,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 164,
+      "reason": "unobservable_or_split_empty",
+      "support": 0
+    },
+    {
+      "pass": 1,
+      "region": 165,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 166,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 167,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 168,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 169,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 170,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 171,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 172,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 173,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 174,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    },
+    {
+      "pass": 1,
+      "region": 175,
+      "reason": "unobservable_or_split_empty",
+      "support": 1
+    }
+  ],
+  "forward_model_validation": {
+    "flat": {
+      "premult_surrogate_vs_actual_rmse_bytes": 0.08275865031554534,
+      "premult_surrogate_vs_actual_max_error_bytes": 1.3782317815883829,
+      "actual_three_background_float_mse": 0.2665706375013704,
+      "actual_per_background_float_mse": {
+        "white": 0.30504084992012664,
+        "black": 0.2594951951012311,
+        "bluegray": 0.23517586748275351
+      },
+      "note": "Float byte compositing diagnostic; final parent evaluator renders/quantizes backgrounds independently"
+    },
+    "gradient": {
+      "premult_surrogate_vs_actual_rmse_bytes": 0.08276102807736202,
+      "premult_surrogate_vs_actual_max_error_bytes": 1.3782317815883829,
+      "actual_three_background_float_mse": 0.2665706375013704,
+      "actual_per_background_float_mse": {
+        "white": 0.30504084992012664,
+        "black": 0.2594951951012311,
+        "bluegray": 0.23517586748275351
+      },
+      "note": "Float byte compositing diagnostic; final parent evaluator renders/quantizes backgrounds independently"
+    }
+  },
+  "flat_surrogate": {
+    "train_mse": 0.2082926244232544,
+    "selection_mse": 0.2267216339290134,
+    "untouched_test_mse": 0.27793587460785363
+  },
+  "gradient_surrogate": {
+    "train_mse": 0.20829262175598984,
+    "selection_mse": 0.2267206901742213,
+    "untouched_test_mse": 0.27793423007118
+  },
+  "limits": [
+    "Linear measured sRGB surrogate is approximate; actual exported SVG rendering is decisive",
+    "Inherited interior fitter applied to Wi-weighted partial residual; <=100 objective calls per region per pass",
+    "Same flat/linear/radial family with <=4 equally spaced stops; no geometry/alpha/stop-position changes",
+    "Selection loss chooses checkpoints/models; untouched test split never used for decisions"
+  ]
+}

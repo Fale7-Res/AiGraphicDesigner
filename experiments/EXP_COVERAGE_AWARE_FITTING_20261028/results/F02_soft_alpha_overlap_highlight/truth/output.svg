@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="128" viewBox="0 0 160 128"><defs>
+<linearGradient id="alpha" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="152" y2="0"><stop offset="0" stop-color="white" stop-opacity="1"/><stop offset="0.333333333333" stop-color="white" stop-opacity="0.82"/><stop offset="0.666666666667" stop-color="white" stop-opacity="0.37"/><stop offset="1" stop-color="white" stop-opacity="0.08"/></linearGradient>
+<mask id="soft_mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="160" height="128" style="mask-type:alpha"><path fill="url(#alpha)" d="M0 0H160V128H0Z"/></mask>
+<linearGradient id="base" gradientUnits="userSpaceOnUse" x1="8" y1="8" x2="152" y2="120"><stop offset="0" stop-color="#171c65"/><stop offset="0.5" stop-color="#5059bc"/><stop offset="1" stop-color="#ded6ef"/></linearGradient>
+<linearGradient id="cyan" gradientUnits="userSpaceOnUse" x1="19" y1="0" x2="112" y2="0"><stop offset="0" stop-color="#00405a"/><stop offset="0.333333333333" stop-color="#04aac2"/><stop offset="0.666666666667" stop-color="#a7fff0"/><stop offset="1" stop-color="#f5ffca"/></linearGradient>
+<radialGradient id="rose" gradientUnits="userSpaceOnUse" cx="105" cy="54" r="53"><stop offset="0" stop-color="#fff0a0"/><stop offset="0.5" stop-color="#ef3d79"/><stop offset="1" stop-color="#5e183e"/></radialGradient>
+<radialGradient id="gleam" gradientUnits="userSpaceOnUse" cx="139" cy="28" r="14"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#eaf7e8"/><stop offset="1" stop-color="#91c1da"/></radialGradient></defs>
+<g mask="url(#soft_mask)">
+<path id="base_shape" fill="url(#base)" opacity="0.91" d="M22 10C67 1 124 8 146 26C161 49 153 104 128 118C89 126 30 119 13 97C4 66 6 24 22 10Z"/>
+<path id="cyan_overlap" fill="url(#cyan)" opacity="0.72" d="M20 30C59 9 94 21 112 61C118 90 79 109 42 104C17 92 10 55 20 30Z"/>
+<path id="rose_overlap_hole" fill="url(#rose)" opacity="0.64" fill-rule="evenodd" d="M81 21C126 7 153 33 148 73C138 111 99 116 74 90C58 68 58 37 81 21Z M101 57C94 57 91 74 99 79C108 84 115 66 110 61C108 58 104 57 101 57Z"/>
+<path id="thin_ribbon" fill="#ffd926" opacity="0.86" d="M24 93.2L133 37.2L133.3 37.8L24.3 93.8Z"/>
+<path id="edge_gleam" fill="url(#gleam)" opacity="0.83" d="M135 16C147 16 151 28 148 40C142 43 132 36 131 28C131 23 132 18 135 16Z"/>
+</g></svg>

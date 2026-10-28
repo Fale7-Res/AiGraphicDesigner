@@ -1,0 +1,248 @@
+{
+  "map_metadata": {
+    "baseline_sha256": "8660eddd481746f46eed50179864f9250b950f6c4a1976a02c1119ada5a92c58",
+    "geometry_signature": "0a941bf2abd562e93d7b309913bc8768204871a8aa7dd989ba15624023acb580",
+    "maps_npz_sha256": "a52c19690f77333104caf4daa109e6dfe96435c3c6b5dcca75dcbb2a6e30bc3b",
+    "regions": 3,
+    "width": 192,
+    "height": 160,
+    "uncompressed_map_bytes": 368640,
+    "wall_seconds": 0.363713699975051,
+    "probe_count": 6,
+    "closure_mae": 5.99988652538741e-06,
+    "closure_max": 0.003921627998352051,
+    "black_vs_white_alpha_max_change_bytes": 0,
+    "random_forward_rmse_bytes": 0.05285826325416565,
+    "random_forward_max_error_bytes": 1.0117645263671875,
+    "unobservable_regions": [],
+    "weak_regions_energy_lt_flat_ridge": [],
+    "nearly_correlated_region_pairs_gt_0_995": [],
+    "positive_gram_condition_ratio": 4.985516006801605,
+    "gram_rank_threshold_1e9": 3,
+    "limitations": [
+      "Renderer probe quantization makes weights approximate",
+      "Linear sRGB-byte premultiplied model may differ from actual SVG composition",
+      "Visible RGB paths only; no strokes/filter/raster inputs",
+      "Coefficients already contain alpha and overlap; never apply source alpha weighting again"
+    ]
+  },
+  "wall_seconds": 1.6997762999963015,
+  "deadline_seconds": 300,
+  "deadline_reached": false,
+  "split": "(x+3y)%5 train0,1,2; selection3; untouched test4; interpolation not spatial extrapolation",
+  "objective": "Equal-mean squared error over white/black/bluegray backgrounds: effective target Ps+(Atotal-As)*mean(backgrounds). Wi already includes SVG opacity/alpha, no second alpha weighting",
+  "flat_regularization": {
+    "lambda": 0.0001,
+    "policy": "Tiny train-only ridge toward inherited flat colors; unobservable regions retain seed; validation uses unregularized data loss"
+  },
+  "gradient_initialization": "inherited_gradient_seed",
+  "initialization_note": "Selection chooses inherited D or new flat B; this is warm-started same-capacity fitting, not isolation from initialization",
+  "flat_history": [
+    {
+      "sweep": -1,
+      "train_mse": 704.5581330771433,
+      "selection_mse": 707.0807048280009
+    },
+    {
+      "sweep": 0,
+      "train_mse": 703.83868682854,
+      "selection_mse": 706.2765687791705
+    },
+    {
+      "sweep": 1,
+      "train_mse": 703.8386671830442,
+      "selection_mse": 706.2763601338464
+    },
+    {
+      "sweep": 2,
+      "train_mse": 703.8386671830441,
+      "selection_mse": 706.2763601443428
+    }
+  ],
+  "gradient_history": [
+    {
+      "pass": 0,
+      "train_mse": 9.009657094098245,
+      "selection_mse": 9.048453501608185
+    },
+    {
+      "pass": 1,
+      "train_mse": 9.009657094098245,
+      "selection_mse": 9.048453501608185
+    }
+  ],
+  "regions": [
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 67,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 0.2703939902498724,
+        "selected_selection_mse": 0.2703939902498724,
+        "flat_test_mse": 0.13177201596099955,
+        "selected_test_mse": 0.13177201596099955
+      },
+      "pass": 0,
+      "region": 0,
+      "support": 14468,
+      "selection_global_mse": 9.048454937516265,
+      "effective_weight_sum": 14173.2314453125,
+      "effective_weight_energy": 14087.427734375,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "radial",
+        "stops": 4,
+        "optimizer_evaluations": 67,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 1627.8791070811417,
+        "selected_selection_mse": 19.8493015590447,
+        "flat_test_mse": 1507.6339975614123,
+        "selected_test_mse": 22.482478716741536
+      },
+      "pass": 0,
+      "region": 1,
+      "support": 13925,
+      "selection_global_mse": 9.048454937516265,
+      "effective_weight_sum": 13689.494140625,
+      "effective_weight_energy": 13617.599609375,
+      "accepted_model": "radial",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 0.10394123127187237,
+        "selected_selection_mse": 0.10394123127187237,
+        "flat_test_mse": 0.1350654013974738,
+        "selected_test_mse": 0.1350654013974738
+      },
+      "pass": 0,
+      "region": 2,
+      "support": 2949,
+      "selection_global_mse": 9.048453501608183,
+      "effective_weight_sum": 2857.458984375,
+      "effective_weight_energy": 2827.43994140625,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 67,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 0.2703650411150371,
+        "selected_selection_mse": 0.2703650411150371,
+        "flat_test_mse": 0.13175510450437108,
+        "selected_test_mse": 0.13175510450437108
+      },
+      "pass": 1,
+      "region": 0,
+      "support": 14468,
+      "selection_global_mse": 9.048453501608185,
+      "effective_weight_sum": 14173.2314453125,
+      "effective_weight_energy": 14087.427734375,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "radial",
+        "stops": 4,
+        "optimizer_evaluations": 67,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 1627.880021313189,
+        "selected_selection_mse": 19.84927248969688,
+        "flat_test_mse": 1507.634660397609,
+        "selected_test_mse": 22.482437794037278
+      },
+      "pass": 1,
+      "region": 1,
+      "support": 13925,
+      "selection_global_mse": 9.048453501608185,
+      "effective_weight_sum": 13689.494140625,
+      "effective_weight_energy": 13617.599609375,
+      "accepted_model": "radial",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    },
+    {
+      "proposal_fit_diagnostics": {
+        "model": "flat",
+        "stops": 1,
+        "optimizer_evaluations": 0,
+        "train_count": 512,
+        "selection_count": 256,
+        "test_count": 256,
+        "flat_selection_mse": 0.1039412312718723,
+        "selected_selection_mse": 0.1039412312718723,
+        "flat_test_mse": 0.1350654013974739,
+        "selected_test_mse": 0.1350654013974739
+      },
+      "pass": 1,
+      "region": 2,
+      "support": 2949,
+      "selection_global_mse": 9.048453501608185,
+      "effective_weight_sum": 2857.458984375,
+      "effective_weight_energy": 2827.43994140625,
+      "accepted_model": "flat",
+      "note": "Proposal test metrics do not necessarily describe accepted/global-final model; final heldout metrics reported only at global checkpoint"
+    }
+  ],
+  "forward_model_validation": {
+    "flat": {
+      "premult_surrogate_vs_actual_rmse_bytes": 0.28199465335991447,
+      "premult_surrogate_vs_actual_max_error_bytes": 0.9988304173143305,
+      "actual_three_background_float_mse": 704.4288736979166,
+      "actual_per_background_float_mse": {
+        "white": 704.4288736979166,
+        "black": 704.4288736979166,
+        "bluegray": 704.4288736979166
+      },
+      "note": "Float byte compositing diagnostic; final parent evaluator renders/quantizes backgrounds independently"
+    },
+    "gradient": {
+      "premult_surrogate_vs_actual_rmse_bytes": 0.2643287603786417,
+      "premult_surrogate_vs_actual_max_error_bytes": 2.1801870503903586,
+      "actual_three_background_float_mse": 9.09521484375,
+      "actual_per_background_float_mse": {
+        "white": 9.09521484375,
+        "black": 9.09521484375,
+        "bluegray": 9.09521484375
+      },
+      "note": "Float byte compositing diagnostic; final parent evaluator renders/quantizes backgrounds independently"
+    }
+  },
+  "flat_surrogate": {
+    "train_mse": 703.8386671830442,
+    "selection_mse": 706.2763601338464,
+    "untouched_test_mse": 703.8245296840945
+  },
+  "gradient_surrogate": {
+    "train_mse": 9.009657094098245,
+    "selection_mse": 9.048453501608185,
+    "untouched_test_mse": 8.996234199234879
+  },
+  "limits": [
+    "Linear measured sRGB surrogate is approximate; actual exported SVG rendering is decisive",
+    "Inherited interior fitter applied to Wi-weighted partial residual; <=100 objective calls per region per pass",
+    "Same flat/linear/radial family with <=4 equally spaced stops; no geometry/alpha/stop-position changes",
+    "Selection loss chooses checkpoints/models; untouched test split never used for decisions"
+  ]
+}
