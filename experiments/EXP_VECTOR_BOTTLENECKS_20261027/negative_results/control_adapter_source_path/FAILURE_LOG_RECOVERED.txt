@@ -1,0 +1,4 @@
+Recovered from the original tool execution output; this is not the original log file (the active per-case log was replaced by a successful retry).
+Failure: FileNotFoundError in inherited.known_control_geometry because results/granularity/K01_linear_corner_hole/128/source.png was missing.
+Cause: adapter expected level-local source, but runner initially stored only case-local source. Fix: copy the unchanged source into each control level before geometry checks.
+Occurred after saved128 reuse/diagnostics, before new192/256 control traces. Partial artifacts preserved here. No inherited search was repeated.

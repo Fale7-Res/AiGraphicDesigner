@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 192
+  },
+  "metrics": {
+    "mae": 5.774522569444445,
+    "mse": 290.26650173611114,
+    "rmse": 17.03720932946799,
+    "psnr_db": 23.5028344198626,
+    "identical": false,
+    "ssim": 0.8653848586365357,
+    "edge_precision_1_5px": 0.9357091259330604,
+    "edge_recall_1_5px": 0.7864783047426842,
+    "edge_f1_1_5px": 0.8546281478867105,
+    "source_edge_pixels": 4955,
+    "render_edge_pixels": 4153,
+    "delta_e76_mean": 3.713199212343712,
+    "delta_e76_p95": 17.961281365620156,
+    "highpass_rmse_sigma1": 12.10916211005595
+  },
+  "score": 0.7404985028222095,
+  "structure": {
+    "bytes": 54359,
+    "elements": {
+      "svg": 1,
+      "path": 185
+    },
+    "path_commands": {
+      "M": 219,
+      "C": 1882,
+      "L": 336,
+      "Z": 219
+    },
+    "cubic_segments": 1882,
+    "explicit_path_coordinate_pairs": 6201,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.06995049997931346,
+    "trace_cpu_seconds": 0.078125,
+    "render_seconds": 0.09167759999400005,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "240",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\G08_dice_alpha\\192\\trace\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\G08_dice_alpha\\192\\trace\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.09167759999400005,
+      "sampled_tree_peak_mib": 8.8046875,
+      "observed_process_cpu_seconds": 0.015625,
+      "memory_samples": 2,
+      "observed_pids": [
+        24836,
+        32004
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "32004": 2.51953125,
+        "24836": 7.29296875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 3.5530805999878794,
+      "sampled_tree_peak_mib": 91.6953125,
+      "observed_process_cpu_seconds": 3.21875,
+      "memory_samples": 85,
+      "observed_pids": [
+        24824,
+        24836,
+        25548,
+        30560,
+        32004,
+        33164,
+        35884
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "35884": 3.91015625,
+        "24824": 7.44921875,
+        "30560": 82.89453125,
+        "32004": 4.84375,
+        "24836": 6.953125,
+        "33164": 2.51953125,
+        "25548": 6.578125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 3.5575145999900997
+}

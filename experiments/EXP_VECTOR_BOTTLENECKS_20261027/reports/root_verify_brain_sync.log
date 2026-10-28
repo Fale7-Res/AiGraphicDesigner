@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\memory_guard\verify_brain_sync.py", line 527, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\memory_guard\verify_brain_sync.py", line 482, in main
+    approval_errors = verify_owner_approval_provenance()
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\tools\memory_guard\verify_brain_sync.py", line 292, in verify_owner_approval_provenance
+    content = p.read_text(encoding="utf-8")
+  File "C:\Python314\Lib\pathlib\__init__.py", line 788, in read_text
+    return f.read()
+           ~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x97 in position 66: invalid start byte

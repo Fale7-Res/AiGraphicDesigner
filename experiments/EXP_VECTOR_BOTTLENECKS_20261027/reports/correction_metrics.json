@@ -1,0 +1,219 @@
+[
+  {
+    "case": "A01_shield",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.01763930950346282,
+        "mse": -20.8005681261632,
+        "worst_32px_tile_rmse": -1.0999011465001587
+      },
+      "black": {
+        "ssim": 0.019497192311667466,
+        "mse": -29.60022565419763,
+        "worst_32px_tile_rmse": -0.5749528879807713
+      },
+      "bluegray": {
+        "ssim": 0.019059991859017522,
+        "mse": -13.372993328326856,
+        "worst_32px_tile_rmse": -0.40200023377335015
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 2.6712704476442353,
+      "new_alpha_mae": 1.6625744169088277,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 5367,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.8500585903459573,
+    "corrected_psnr_db": 25.336402222138133
+  },
+  {
+    "case": "G01_coffee",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.036931661618089695,
+        "mse": -48.94403364632237,
+        "worst_32px_tile_rmse": -1.2587587154512043
+      },
+      "black": {
+        "ssim": 0.02997808671425417,
+        "mse": -37.17305359937404,
+        "worst_32px_tile_rmse": -0.22515783025399827
+      },
+      "bluegray": {
+        "ssim": 0.02533993208712504,
+        "mse": -21.33157766040688,
+        "worst_32px_tile_rmse": -0.15573167403579902
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 4.098415492957747,
+      "new_alpha_mae": 2.574618544600939,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 6274,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.634843322469739,
+    "corrected_psnr_db": 24.183799555727944
+  },
+  {
+    "case": "G05_chelsea_nativecrop",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.04581435142169121,
+        "mse": -56.36644999186197,
+        "worst_32px_tile_rmse": -1.6655191700995253
+      },
+      "black": {
+        "ssim": 0.03324520758615135,
+        "mse": -33.815465291341155,
+        "worst_32px_tile_rmse": -1.1471024242134291
+      },
+      "bluegray": {
+        "ssim": 0.018218631806335428,
+        "mse": -15.84484354654947,
+        "worst_32px_tile_rmse": -0.7417232111320544
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 4.678192138671875,
+      "new_alpha_mae": 2.905303955078125,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 6746,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.5480779143237087,
+    "corrected_psnr_db": 24.661482355152707
+  },
+  {
+    "case": "G06_arabic",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 3.20636083216419e-05,
+        "mse": 0.449796626984127,
+        "worst_32px_tile_rmse": 0.4889621183672306
+      },
+      "black": {
+        "ssim": -0.005835667418776613,
+        "mse": 0.5376537698412698,
+        "worst_32px_tile_rmse": 1.1873837525132798
+      },
+      "bluegray": {
+        "ssim": -0.0007820596178234052,
+        "mse": 0.5454563492063491,
+        "worst_32px_tile_rmse": 1.3528025097805572
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 0.0049255952380952385,
+      "new_alpha_mae": 0.002336309523809524,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 14,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.999696012544914,
+    "corrected_psnr_db": 49.005372648241774
+  },
+  {
+    "case": "G08_dice_alpha",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.011344396773599108,
+        "mse": -13.074487847222223,
+        "worst_32px_tile_rmse": -1.7160623508692545
+      },
+      "black": {
+        "ssim": 0.012127852645905879,
+        "mse": -17.676506076388883,
+        "worst_32px_tile_rmse": -2.5034128031041547
+      },
+      "bluegray": {
+        "ssim": 0.00749661561634174,
+        "mse": -7.848294270833335,
+        "worst_32px_tile_rmse": -0.9475524284499102
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 1.5786458333333333,
+      "new_alpha_mae": 0.9939973958333334,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 3227,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.9322246791951497,
+    "corrected_psnr_db": 30.483606884176243
+  },
+  {
+    "case": "K01_linear_corner_hole",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.003673440784798143,
+        "mse": -3.1716145833333336,
+        "worst_32px_tile_rmse": -0.336218045870166
+      },
+      "black": {
+        "ssim": 0.018686269726135074,
+        "mse": -12.67892795138889,
+        "worst_32px_tile_rmse": -0.3148980934238228
+      },
+      "bluegray": {
+        "ssim": 0.011158679094582902,
+        "mse": -3.1594943576388914,
+        "worst_32px_tile_rmse": 0.6192636891936409
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 0.8971354166666666,
+      "new_alpha_mae": 0.5372395833333333,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 597,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.9814329515894086,
+    "corrected_psnr_db": 35.0665323892373
+  },
+  {
+    "case": "K02_radial_shared_curves",
+    "baseline_detail": 192,
+    "delta": {
+      "white": {
+        "ssim": 0.05498669429744618,
+        "mse": -50.62249348958333,
+        "worst_32px_tile_rmse": -5.640961651279275
+      },
+      "black": {
+        "ssim": 0.048465917995139995,
+        "mse": -38.621972656249994,
+        "worst_32px_tile_rmse": -5.592368469166935
+      },
+      "bluegray": {
+        "ssim": 0.04587470136788674,
+        "mse": -23.530045572916666,
+        "worst_32px_tile_rmse": -4.278403138027032
+      }
+    },
+    "alpha_support": {
+      "baseline_alpha_mae": 4.41318359375,
+      "new_alpha_mae": 2.76669921875,
+      "new_support_pixels_source_alpha_zero": 0,
+      "baseline_support_pixels_source_alpha_zero": 0,
+      "alpha_increase_pixels": 2950,
+      "alpha_decrease_pixels": 0
+    },
+    "corrected_ssim": 0.8664773343200937,
+    "corrected_psnr_db": 31.24203541719106
+  }
+]

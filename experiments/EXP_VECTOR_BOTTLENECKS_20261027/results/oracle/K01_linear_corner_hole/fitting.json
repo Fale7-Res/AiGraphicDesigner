@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "wall_seconds": 0.20948620000854135,
+  "deadline_seconds": 120,
+  "path_count": 3,
+  "split": "(x+3*y)%5: train 0,1,2; selection 3; untouched test 4",
+  "alpha_fitting": "Zero-alpha pixels excluded; all fit/selection/test residuals weighted by source alpha squared (premultiplied appearance objective); source alpha mask reconstructed separately",
+  "max_optimizer_evaluations_per_region": 100,
+  "limitations": [
+    "Interior-only fitting excludes antialiased boundaries",
+    "At most four equally spaced stops",
+    "Periodic pixel split tests interpolation, not spatial-block extrapolation",
+    "Radial focal point equals center and radius follows visible interior sample extent",
+    "Train least squares stop colors clipped to RGB gamut, not a constrained optimum",
+    "Tiny regions retain flat models",
+    "No geometry or alpha optimization"
+  ],
+  "regions": [
+    {
+      "path_index": 0,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 0.0,
+      "selected_selection_mse": 0.0,
+      "flat_test_mse": 0.0,
+      "selected_test_mse": 0.0,
+      "interior_count": 11919
+    },
+    {
+      "path_index": 1,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 61,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 2302.7429784138994,
+      "selected_selection_mse": 2.970321954866005,
+      "flat_test_mse": 2401.8090489705405,
+      "selected_test_mse": 3.058909656874908,
+      "interior_count": 13489
+    },
+    {
+      "path_index": 2,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 0.0,
+      "selected_selection_mse": 0.0,
+      "flat_test_mse": 0.0,
+      "selected_test_mse": 0.0,
+      "interior_count": 2196
+    }
+  ]
+}

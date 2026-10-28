@@ -1,0 +1,129 @@
+{
+  "metrics": {
+    "white": {
+      "mae": 4.133637152777778,
+      "mse": 134.68059895833332,
+      "rmse": 11.605197066759931,
+      "psnr_db": 26.837753217313022,
+      "identical": false,
+      "ssim": 0.7639127140298013,
+      "edge_precision_1_5px": 0.42814594192107225,
+      "edge_recall_1_5px": 0.9554794520547946,
+      "edge_f1_1_5px": 0.5913228418144589,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 1343,
+      "delta_e76_mean": 2.422586316223531,
+      "delta_e76_p95": 16.26485378410649,
+      "highpass_rmse_sigma1": 8.197592604947387,
+      "worst_32px_tile_rmse": 20.071900380776935
+    },
+    "black": {
+      "mae": 4.483203125,
+      "mse": 150.75188802083332,
+      "rmse": 12.278106043719989,
+      "psnr_db": 26.34817600905506,
+      "identical": false,
+      "ssim": 0.7524283328405064,
+      "edge_precision_1_5px": 0.22444444444444445,
+      "edge_recall_1_5px": 0.988013698630137,
+      "edge_f1_1_5px": 0.3657927277063967,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 2700,
+      "delta_e76_mean": 2.6331650797681183,
+      "delta_e76_p95": 17.525609169727076,
+      "highpass_rmse_sigma1": 8.519738888555446,
+      "worst_32px_tile_rmse": 26.034851191479856
+    },
+    "bluegray": {
+      "mae": 3.4608506944444444,
+      "mse": 88.36184895833334,
+      "rmse": 9.40009834833303,
+      "psnr_db": 28.668155660270447,
+      "identical": false,
+      "ssim": 0.7896752563524476,
+      "edge_precision_1_5px": 0.6719636776390465,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.8038017651052274,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 881,
+      "delta_e76_mean": 2.8854649827029637,
+      "delta_e76_p95": 20.087711963230113,
+      "highpass_rmse_sigma1": 6.518637019793248,
+      "worst_32px_tile_rmse": 18.43560195032517
+    }
+  },
+  "alpha_mae": 7.983072916666667,
+  "alpha_max_error": 75.0,
+  "premultiplied_rgb_rmse": 12.277516051780255,
+  "structure": {
+    "bytes": 115636,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "path": 773
+    },
+    "path_commands": {
+      "M": 775,
+      "L": 2844,
+      "C": 2088,
+      "Z": 775
+    },
+    "cubic_segments": 2088,
+    "explicit_path_coordinate_pairs": 9883,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "geometry": {
+    "rgb_paths": 773,
+    "mask_paths": 0,
+    "closed_subpaths": 775,
+    "cubic_segments": 2088,
+    "rgb_paths_bounds_le_1px": 451,
+    "rgb_paths_bounds_le_2px": 467,
+    "median_rgb_path_bbox_max_dimension": 1.0,
+    "coordinate_integer_lattice_fraction": 0.5752301932611555,
+    "exact_segment_pairs_round_3dp": 2052,
+    "segments_incidence_gt2": 1,
+    "unpaired_segments": 824,
+    "unsupported_transforms": [],
+    "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+  },
+  "geometry_signature": "cdb9f94a7043b24185182aad834d1eaf6261f7b90afc835e44922c9a4258638a",
+  "render": {
+    "render_seconds": 0.0705665000132285,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K02_radial_shared_curves\\256\\C\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K02_radial_shared_curves\\256\\C\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.0705665000132285,
+      "sampled_tree_peak_mib": 9.38671875,
+      "observed_process_cpu_seconds": 0.015625,
+      "memory_samples": 2,
+      "observed_pids": [
+        28260,
+        31512
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "28260": 2.51953125,
+        "31512": 7.3046875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "sha256": "5fb3252fa41ff939f5359834a6817d5b2f66fab9e5eafde4a7f9533c2ef580a8"
+}

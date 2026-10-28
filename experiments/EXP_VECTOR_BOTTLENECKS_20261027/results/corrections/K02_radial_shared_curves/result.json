@@ -1,0 +1,221 @@
+{
+  "metrics": {
+    "white": {
+      "mae": 2.3627495659722224,
+      "mse": 48.85137803819445,
+      "rmse": 6.989376083613934,
+      "psnr_db": 31.24203541719106,
+      "identical": false,
+      "ssim": 0.8664773343200937,
+      "edge_precision_1_5px": 0.6751207729468599,
+      "edge_recall_1_5px": 0.9452054794520548,
+      "edge_f1_1_5px": 0.7876535394480239,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 828,
+      "delta_e76_mean": 1.4087259216534773,
+      "delta_e76_p95": 9.739984973752728,
+      "highpass_rmse_sigma1": 4.750229300166437,
+      "worst_32px_tile_rmse": 12.488797063101527
+    },
+    "black": {
+      "mae": 1.9497178819444445,
+      "mse": 32.83678385416667,
+      "rmse": 5.730338895228333,
+      "psnr_db": 32.967197466101425,
+      "identical": false,
+      "ssim": 0.89051103465265,
+      "edge_precision_1_5px": 0.6202804746494067,
+      "edge_recall_1_5px": 0.9657534246575342,
+      "edge_f1_1_5px": 0.7553911589186469,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 927,
+      "delta_e76_mean": 1.352214520260222,
+      "delta_e76_p95": 9.369171544079737,
+      "highpass_rmse_sigma1": 4.005005814321175,
+      "worst_32px_tile_rmse": 10.555285998020139
+    },
+    "bluegray": {
+      "mae": 1.8264756944444445,
+      "mse": 26.280143229166665,
+      "rmse": 5.126416216926467,
+      "psnr_db": 33.93452633029359,
+      "identical": false,
+      "ssim": 0.9017343947130838,
+      "edge_precision_1_5px": 0.7832647462277091,
+      "edge_recall_1_5px": 0.9503424657534246,
+      "edge_f1_1_5px": 0.8587524845574677,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 729,
+      "delta_e76_mean": 1.4692411486952934,
+      "delta_e76_p95": 10.872716006071089,
+      "highpass_rmse_sigma1": 3.475813073468229,
+      "worst_32px_tile_rmse": 9.107860615973435
+    }
+  },
+  "alpha_mae": 2.76669921875,
+  "alpha_max_error": 40.0,
+  "premultiplied_rgb_rmse": 5.730482625347351,
+  "structure": {
+    "bytes": 74001,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "radialGradient": 4,
+      "stop": 69,
+      "linearGradient": 16,
+      "path": 142
+    },
+    "path_commands": {
+      "M": 144,
+      "L": 434,
+      "C": 1310,
+      "Z": 144
+    },
+    "cubic_segments": 1310,
+    "explicit_path_coordinate_pairs": 4508,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "geometry": {
+    "rgb_paths": 142,
+    "mask_paths": 0,
+    "closed_subpaths": 144,
+    "cubic_segments": 1310,
+    "rgb_paths_bounds_le_1px": 39,
+    "rgb_paths_bounds_le_2px": 45,
+    "median_rgb_path_bbox_max_dimension": 17.0,
+    "coordinate_integer_lattice_fraction": 0.3842058562555457,
+    "exact_segment_pairs_round_3dp": 810,
+    "segments_incidence_gt2": 0,
+    "unpaired_segments": 124,
+    "unsupported_transforms": [],
+    "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+  },
+  "geometry_signature": "e034d35de99a36576d80640967acc09677a0e80def161f5324dd2760d8709b89",
+  "render": {
+    "render_seconds": 0.07971660001203418,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\corrections\\K02_radial_shared_curves\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\corrections\\K02_radial_shared_curves\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.07971660001203418,
+      "sampled_tree_peak_mib": 12.1328125,
+      "observed_process_cpu_seconds": 0.015625,
+      "memory_samples": 3,
+      "observed_pids": [
+        20132,
+        34084
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "34084": 5.61328125,
+        "20132": 6.96484375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "sha256": "900cebb5368054e229e035bea1bcd63db333417c5f8d160fa6ed2b6ee5ae322e",
+  "baseline_detail": 192,
+  "baseline_svg_sha256": "613554657e3e2df4e854c6970a983975a7cdbe7c43881d546466204e82a3e747",
+  "baseline_metrics": {
+    "white": {
+      "mae": 3.1387152777777776,
+      "mse": 99.47387152777777,
+      "rmse": 9.973658883668408,
+      "psnr_db": 28.15371339835501,
+      "identical": false,
+      "ssim": 0.8114906400226475,
+      "edge_precision_1_5px": 0.3613861386138614,
+      "edge_recall_1_5px": 0.9623287671232876,
+      "edge_f1_1_5px": 0.5254489100642946,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 1616,
+      "delta_e76_mean": 1.8129656463912966,
+      "delta_e76_p95": 14.642561794034465,
+      "highpass_rmse_sigma1": 7.028170575641172,
+      "worst_32px_tile_rmse": 18.129758714380802
+    },
+    "black": {
+      "mae": 2.6271592881944446,
+      "mse": 71.45875651041666,
+      "rmse": 8.453328132186558,
+      "psnr_db": 29.59024906311356,
+      "identical": false,
+      "ssim": 0.84204511665751,
+      "edge_precision_1_5px": 0.28835582208895555,
+      "edge_recall_1_5px": 0.9674657534246576,
+      "edge_f1_1_5px": 0.4442898387974922,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 2001,
+      "delta_e76_mean": 1.7454879665527507,
+      "delta_e76_p95": 13.813003726867755,
+      "highpass_rmse_sigma1": 6.061462233174787,
+      "worst_32px_tile_rmse": 16.147654467187074
+    },
+    "bluegray": {
+      "mae": 2.321169704861111,
+      "mse": 49.81018880208333,
+      "rmse": 7.057633371186359,
+      "psnr_db": 31.157621729691435,
+      "identical": false,
+      "ssim": 0.8558596933451971,
+      "edge_precision_1_5px": 0.7063106796116505,
+      "edge_recall_1_5px": 0.964041095890411,
+      "edge_f1_1_5px": 0.8152923612839016,
+      "source_edge_pixels": 584,
+      "render_edge_pixels": 824,
+      "delta_e76_mean": 1.9425689118926353,
+      "delta_e76_p95": 16.60603120051968,
+      "highpass_rmse_sigma1": 4.987044958298669,
+      "worst_32px_tile_rmse": 13.386263754000467
+    }
+  },
+  "correction": {
+    "changed_rgb_paths": 142,
+    "width_source_px": 0.25,
+    "exterior_max_nominal_offset_px": 0.125,
+    "method": "matching-fill narrow stroke, round joins, stroke-before-fill; overlap correction only, not topology repair"
+  },
+  "delta": {
+    "white": {
+      "ssim": 0.05498669429744618,
+      "mse": -50.62249348958333,
+      "worst_32px_tile_rmse": -5.640961651279275
+    },
+    "black": {
+      "ssim": 0.048465917995139995,
+      "mse": -38.621972656249994,
+      "worst_32px_tile_rmse": -5.592368469166935
+    },
+    "bluegray": {
+      "ssim": 0.04587470136788674,
+      "mse": -23.530045572916666,
+      "worst_32px_tile_rmse": -4.278403138027032
+    }
+  },
+  "alpha_support": {
+    "baseline_alpha_mae": 4.41318359375,
+    "new_alpha_mae": 2.76669921875,
+    "new_support_pixels_source_alpha_zero": 0,
+    "baseline_support_pixels_source_alpha_zero": 0,
+    "alpha_increase_pixels": 2950,
+    "alpha_decrease_pixels": 0
+  },
+  "wall_seconds": 0.4906639999826439,
+  "interpretation": "Same path d/order/fills/masks, explicitly overlapping narrowstrokes. Coverage can improve while contours/colors worsen. Not topology repair or accepted default.",
+  "architecture": "NOT_APPROVED"
+}

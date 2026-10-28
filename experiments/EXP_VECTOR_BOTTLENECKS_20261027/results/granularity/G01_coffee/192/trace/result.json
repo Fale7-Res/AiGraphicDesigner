@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 192
+  },
+  "metrics": {
+    "mae": 12.109551056338027,
+    "mse": 368.2788781298905,
+    "rmse": 19.1905934803979,
+    "psnr_db": 22.469035493566942,
+    "identical": false,
+    "ssim": 0.5454231945608213,
+    "edge_precision_1_5px": 0.7581349485843076,
+    "edge_recall_1_5px": 0.6278597993914121,
+    "edge_f1_1_5px": 0.686874834735089,
+    "source_edge_pixels": 8873,
+    "render_edge_pixels": 7099,
+    "delta_e76_mean": 7.651381089032263,
+    "delta_e76_p95": 21.989444737372015,
+    "highpass_rmse_sigma1": 11.692274674124224
+  },
+  "score": 0.5467316633715488,
+  "structure": {
+    "bytes": 90587,
+    "elements": {
+      "svg": 1,
+      "path": 167
+    },
+    "path_commands": {
+      "M": 171,
+      "C": 3458,
+      "Z": 171,
+      "L": 185
+    },
+    "cubic_segments": 3458,
+    "explicit_path_coordinate_pairs": 10730,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.13884549995418638,
+    "trace_cpu_seconds": 0.140625,
+    "render_seconds": 0.12955160002456978,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "320",
+      "--height",
+      "213",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\G01_coffee\\192\\trace\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\G01_coffee\\192\\trace\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.12955160002456978,
+      "sampled_tree_peak_mib": 12.6640625,
+      "observed_process_cpu_seconds": 0.125,
+      "memory_samples": 3,
+      "observed_pids": [
+        14756,
+        35908
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "14756": 5.69921875,
+        "35908": 6.96484375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.371680999989621,
+      "sampled_tree_peak_mib": 88.953125,
+      "observed_process_cpu_seconds": 3.96875,
+      "memory_samples": 89,
+      "observed_pids": [
+        4896,
+        14756,
+        17200,
+        29496,
+        34684,
+        35796,
+        35908
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "35796": 3.91015625,
+        "29496": 7.1328125,
+        "34684": 81.10546875,
+        "14756": 2.51953125,
+        "35908": 6.77734375,
+        "4896": 2.51953125,
+        "17200": 6.453125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.374629500031006
+}

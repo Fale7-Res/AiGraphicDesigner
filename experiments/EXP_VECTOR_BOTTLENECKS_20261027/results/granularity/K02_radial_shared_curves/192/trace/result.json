@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 192
+  },
+  "metrics": {
+    "mae": 5.746006944444445,
+    "mse": 181.27764756944444,
+    "rmse": 13.463938783634024,
+    "psnr_db": 25.547361041288077,
+    "identical": false,
+    "ssim": 0.7726741568909808,
+    "edge_precision_1_5px": 0.315955766192733,
+    "edge_recall_1_5px": 0.9726027397260274,
+    "edge_f1_1_5px": 0.47696622608870903,
+    "source_edge_pixels": 584,
+    "render_edge_pixels": 1899,
+    "delta_e76_mean": 3.565848342853555,
+    "delta_e76_p95": 17.936632861071978,
+    "highpass_rmse_sigma1": 7.130142426262024
+  },
+  "score": 0.6497824948221982,
+  "structure": {
+    "bytes": 42779,
+    "elements": {
+      "svg": 1,
+      "path": 142
+    },
+    "path_commands": {
+      "M": 144,
+      "L": 434,
+      "C": 1310,
+      "Z": 144
+    },
+    "cubic_segments": 1310,
+    "explicit_path_coordinate_pairs": 4508,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.07412840001052245,
+    "trace_cpu_seconds": 0.046875,
+    "render_seconds": 0.11043370002880692,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K02_radial_shared_curves\\192\\trace\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K02_radial_shared_curves\\192\\trace\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.11043370002880692,
+      "sampled_tree_peak_mib": 12.171875,
+      "observed_process_cpu_seconds": 0.046875,
+      "memory_samples": 3,
+      "observed_pids": [
+        30724,
+        31488
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "30724": 5.20703125,
+        "31488": 6.96484375
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 4.087752899969928,
+      "sampled_tree_peak_mib": 89.80078125,
+      "observed_process_cpu_seconds": 3.59375,
+      "memory_samples": 106,
+      "observed_pids": [
+        2632,
+        14584,
+        16900,
+        30724,
+        30984,
+        31488,
+        35972,
+        37868
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "14584": 3.91015625,
+        "35972": 7.12109375,
+        "37868": 73.6953125,
+        "2632": 4.3046875,
+        "30724": 3.3828125,
+        "31488": 7.3046875,
+        "30984": 2.51953125,
+        "16900": 6.75390625
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 4.091387899999972
+}

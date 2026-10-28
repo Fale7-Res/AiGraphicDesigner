@@ -1,0 +1,1315 @@
+{
+  "schema": 1,
+  "wall_seconds": 1.1302965999930166,
+  "deadline_seconds": 180,
+  "path_count": 142,
+  "split": "(x+3*y)%5: train 0,1,2; selection 3; untouched test 4",
+  "alpha_fitting": "Zero-alpha pixels excluded; all fit/selection/test residuals weighted by source alpha squared (premultiplied appearance objective); source alpha mask reconstructed separately",
+  "max_optimizer_evaluations_per_region": 100,
+  "limitations": [
+    "Interior-only fitting excludes antialiased boundaries",
+    "At most four equally spaced stops",
+    "Periodic pixel split tests interpolation, not spatial-block extrapolation",
+    "Radial focal point equals center and radius follows visible interior sample extent",
+    "Train least squares stop colors clipped to RGB gamut, not a constrained optimum",
+    "Tiny regions retain flat models",
+    "No geometry or alpha optimization"
+  ],
+  "regions": [
+    {
+      "path_index": 0,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 0.0,
+      "selected_selection_mse": 0.0,
+      "flat_test_mse": 0.0,
+      "selected_test_mse": 0.0,
+      "interior_count": 12897
+    },
+    {
+      "path_index": 1,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 2,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 3,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 6,
+      "selection_count": 1,
+      "test_count": 4,
+      "flat_selection_mse": 4.4166666666666465,
+      "selected_selection_mse": 4.4166666666666465,
+      "flat_test_mse": 5.333333333333342,
+      "selected_test_mse": 5.333333333333342,
+      "interior_count": 11
+    },
+    {
+      "path_index": 4,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 5,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 6,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 7,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 8,
+      "model": "radial",
+      "stops": 4,
+      "optimizer_evaluations": 69,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 468.84072621663415,
+      "selected_selection_mse": 1.6902962923327154,
+      "flat_test_mse": 441.5533116658529,
+      "selected_test_mse": 1.5907265793879164,
+      "interior_count": 3816
+    },
+    {
+      "path_index": 9,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 10,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 11,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 12,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 13,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 14,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 15,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 16,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 17,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 18,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 63,
+      "train_count": 27,
+      "selection_count": 9,
+      "test_count": 9,
+      "flat_selection_mse": 2.3237311385459547,
+      "selected_selection_mse": 0.9155724418827336,
+      "flat_test_mse": 0.9821673525377221,
+      "selected_test_mse": 0.45844429123364616,
+      "interior_count": 45
+    },
+    {
+      "path_index": 19,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 5,
+      "selection_count": 1,
+      "test_count": 2,
+      "flat_selection_mse": 0.8266666666666574,
+      "selected_selection_mse": 0.8266666666666574,
+      "flat_test_mse": 5.293333333333331,
+      "selected_test_mse": 5.293333333333331,
+      "interior_count": 8
+    },
+    {
+      "path_index": 20,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 21,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 22,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 23,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 24,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 67,
+      "train_count": 90,
+      "selection_count": 29,
+      "test_count": 30,
+      "flat_selection_mse": 21.679855257556408,
+      "selected_selection_mse": 3.1082984853927593,
+      "flat_test_mse": 20.84543209876544,
+      "selected_test_mse": 4.266030275239497,
+      "interior_count": 149
+    },
+    {
+      "path_index": 25,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 26,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 27,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 2
+    },
+    {
+      "path_index": 28,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 17,
+      "selection_count": 5,
+      "test_count": 7,
+      "flat_selection_mse": 8.210380622837366,
+      "selected_selection_mse": 8.210380622837366,
+      "flat_test_mse": 4.945954852529245,
+      "selected_test_mse": 4.945954852529245,
+      "interior_count": 29
+    },
+    {
+      "path_index": 29,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 30,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 31,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 32,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 33,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 2,
+      "selection_count": 1,
+      "test_count": 1,
+      "flat_selection_mse": 0.6666666666666666,
+      "selected_selection_mse": 0.6666666666666666,
+      "flat_test_mse": 0.0,
+      "selected_test_mse": 0.0,
+      "interior_count": 4
+    },
+    {
+      "path_index": 34,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 35,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 36,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 37,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 5
+    },
+    {
+      "path_index": 38,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 2
+    },
+    {
+      "path_index": 39,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 40,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 41,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 42,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 5,
+      "selection_count": 3,
+      "test_count": 2,
+      "flat_selection_mse": 0.1777777777777765,
+      "selected_selection_mse": 0.1777777777777765,
+      "flat_test_mse": 0.6000000000000048,
+      "selected_test_mse": 0.6000000000000048,
+      "interior_count": 10
+    },
+    {
+      "path_index": 43,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 63,
+      "train_count": 23,
+      "selection_count": 6,
+      "test_count": 9,
+      "flat_selection_mse": 0.6595253098088616,
+      "selected_selection_mse": 0.15670663829550047,
+      "flat_test_mse": 1.145837709164743,
+      "selected_test_mse": 0.6246145656663686,
+      "interior_count": 38
+    },
+    {
+      "path_index": 44,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 45,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 63,
+      "train_count": 65,
+      "selection_count": 21,
+      "test_count": 24,
+      "flat_selection_mse": 5.36932093547478,
+      "selected_selection_mse": 2.3388934239071233,
+      "flat_test_mse": 6.819809335963179,
+      "selected_test_mse": 2.4520976668969974,
+      "interior_count": 110
+    },
+    {
+      "path_index": 46,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 47,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 48,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 49,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 50,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 51,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 52,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 53,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 54,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 67,
+      "train_count": 49,
+      "selection_count": 16,
+      "test_count": 15,
+      "flat_selection_mse": 7.090899625156185,
+      "selected_selection_mse": 0.3837228530293091,
+      "flat_test_mse": 8.52117173399973,
+      "selected_test_mse": 0.42497327650669303,
+      "interior_count": 80
+    },
+    {
+      "path_index": 55,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 2
+    },
+    {
+      "path_index": 56,
+      "model": "radial",
+      "stops": 4,
+      "optimizer_evaluations": 67,
+      "train_count": 47,
+      "selection_count": 16,
+      "test_count": 19,
+      "flat_selection_mse": 7.663422363060204,
+      "selected_selection_mse": 1.6100256183355208,
+      "flat_test_mse": 6.398211463470812,
+      "selected_test_mse": 1.6315723614345057,
+      "interior_count": 82
+    },
+    {
+      "path_index": 57,
+      "model": "radial",
+      "stops": 4,
+      "optimizer_evaluations": 69,
+      "train_count": 30,
+      "selection_count": 9,
+      "test_count": 9,
+      "flat_selection_mse": 5.068765432098763,
+      "selected_selection_mse": 2.712883323429098,
+      "flat_test_mse": 3.1280246913580245,
+      "selected_test_mse": 1.784978701038379,
+      "interior_count": 48
+    },
+    {
+      "path_index": 58,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 59,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 15,
+      "selection_count": 4,
+      "test_count": 6,
+      "flat_selection_mse": 1.155925925925932,
+      "selected_selection_mse": 1.155925925925932,
+      "flat_test_mse": 2.783703703703704,
+      "selected_test_mse": 2.783703703703704,
+      "interior_count": 25
+    },
+    {
+      "path_index": 60,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 69,
+      "train_count": 24,
+      "selection_count": 10,
+      "test_count": 8,
+      "flat_selection_mse": 5.456597222222223,
+      "selected_selection_mse": 0.7184101865491727,
+      "flat_test_mse": 2.5920138888888906,
+      "selected_test_mse": 0.38537808237568105,
+      "interior_count": 42
+    },
+    {
+      "path_index": 61,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 62,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 67,
+      "train_count": 30,
+      "selection_count": 12,
+      "test_count": 8,
+      "flat_selection_mse": 7.936296296296299,
+      "selected_selection_mse": 0.6319520301083025,
+      "flat_test_mse": 3.90851851851852,
+      "selected_test_mse": 0.5088548597241283,
+      "interior_count": 50
+    },
+    {
+      "path_index": 63,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 6,
+      "selection_count": 1,
+      "test_count": 4,
+      "flat_selection_mse": 0.009259259259259786,
+      "selected_selection_mse": 0.009259259259259786,
+      "flat_test_mse": 0.23148148148148123,
+      "selected_test_mse": 0.23148148148148123,
+      "interior_count": 11
+    },
+    {
+      "path_index": 64,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 65,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 66,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 67,
+      "model": "linear",
+      "stops": 2,
+      "optimizer_evaluations": 69,
+      "train_count": 16,
+      "selection_count": 9,
+      "test_count": 2,
+      "flat_selection_mse": 0.6527777777777777,
+      "selected_selection_mse": 0.45409555579455557,
+      "flat_test_mse": 0.20833333333333334,
+      "selected_test_mse": 0.048656634455993344,
+      "interior_count": 27
+    },
+    {
+      "path_index": 68,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 63,
+      "train_count": 29,
+      "selection_count": 8,
+      "test_count": 11,
+      "flat_selection_mse": 6.704122076892589,
+      "selected_selection_mse": 0.7676426983766322,
+      "flat_test_mse": 4.602241199149642,
+      "selected_test_mse": 3.057385426801768,
+      "interior_count": 48
+    },
+    {
+      "path_index": 69,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 70,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 71,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 72,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 73,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 74,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 75,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 76,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 77,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 2,
+      "selection_count": 2,
+      "test_count": 0,
+      "flat_selection_mse": 0.25,
+      "selected_selection_mse": 0.25,
+      "flat_test_mse": null,
+      "selected_test_mse": null,
+      "interior_count": 4
+    },
+    {
+      "path_index": 78,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 79,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 80,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 67,
+      "train_count": 406,
+      "selection_count": 128,
+      "test_count": 133,
+      "flat_selection_mse": 247.63505646015835,
+      "selected_selection_mse": 4.834692376125912,
+      "flat_test_mse": 267.55372783070294,
+      "selected_test_mse": 6.622776409212828,
+      "interior_count": 667
+    },
+    {
+      "path_index": 81,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 11,
+      "selection_count": 2,
+      "test_count": 4,
+      "flat_selection_mse": 0.049586776859504376,
+      "selected_selection_mse": 0.049586776859504376,
+      "flat_test_mse": 0.1253443526170799,
+      "selected_test_mse": 0.1253443526170799,
+      "interior_count": 17
+    },
+    {
+      "path_index": 82,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 83,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 84,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 85,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 86,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 87,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 6,
+      "selection_count": 4,
+      "test_count": 2,
+      "flat_selection_mse": 0.8981481481481481,
+      "selected_selection_mse": 0.8981481481481481,
+      "flat_test_mse": 0.17592592592592585,
+      "selected_test_mse": 0.17592592592592585,
+      "interior_count": 12
+    },
+    {
+      "path_index": 88,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 89,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 26,
+      "selection_count": 7,
+      "test_count": 9,
+      "flat_selection_mse": 0.0004930966469426606,
+      "selected_selection_mse": 0.0004930966469426606,
+      "flat_test_mse": 0.0004930966469426606,
+      "selected_test_mse": 0.0004930966469426606,
+      "interior_count": 42
+    },
+    {
+      "path_index": 90,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 9,
+      "selection_count": 4,
+      "test_count": 3,
+      "flat_selection_mse": 11.525720164609055,
+      "selected_selection_mse": 11.525720164609055,
+      "flat_test_mse": 97.32510288065845,
+      "selected_test_mse": 97.32510288065845,
+      "interior_count": 16
+    },
+    {
+      "path_index": 91,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 92,
+      "model": "linear",
+      "stops": 2,
+      "optimizer_evaluations": 65,
+      "train_count": 38,
+      "selection_count": 12,
+      "test_count": 13,
+      "flat_selection_mse": 6.689750692520774,
+      "selected_selection_mse": 0.1979819314507584,
+      "flat_test_mse": 6.881383620995801,
+      "selected_test_mse": 0.25609854506753243,
+      "interior_count": 63
+    },
+    {
+      "path_index": 93,
+      "model": "linear",
+      "stops": 2,
+      "optimizer_evaluations": 63,
+      "train_count": 17,
+      "selection_count": 7,
+      "test_count": 3,
+      "flat_selection_mse": 1.4300543746910541,
+      "selected_selection_mse": 0.8893509298892701,
+      "flat_test_mse": 0.3721645520953479,
+      "selected_test_mse": 0.30994953721009594,
+      "interior_count": 27
+    },
+    {
+      "path_index": 94,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 95,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 96,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 97,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 19,
+      "selection_count": 5,
+      "test_count": 6,
+      "flat_selection_mse": 41.459649122807036,
+      "selected_selection_mse": 41.459649122807036,
+      "flat_test_mse": 46.66374269005846,
+      "selected_test_mse": 46.66374269005846,
+      "interior_count": 30
+    },
+    {
+      "path_index": 98,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 65,
+      "train_count": 23,
+      "selection_count": 8,
+      "test_count": 8,
+      "flat_selection_mse": 102.0378859483302,
+      "selected_selection_mse": 0.22742162734981486,
+      "flat_test_mse": 57.18462507876498,
+      "selected_test_mse": 0.210364313055038,
+      "interior_count": 39
+    },
+    {
+      "path_index": 99,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 512,
+      "selection_count": 256,
+      "test_count": 256,
+      "flat_selection_mse": 0.0,
+      "selected_selection_mse": 0.0,
+      "flat_test_mse": 0.0,
+      "selected_test_mse": 0.0,
+      "interior_count": 2610
+    },
+    {
+      "path_index": 100,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 101,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 2,
+      "selection_count": 1,
+      "test_count": 1,
+      "flat_selection_mse": 0.6666666666666666,
+      "selected_selection_mse": 0.6666666666666666,
+      "flat_test_mse": 0.6666666666666666,
+      "selected_test_mse": 0.6666666666666666,
+      "interior_count": 4
+    },
+    {
+      "path_index": 102,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 103,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 104,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 105,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 106,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 1,
+      "selection_count": 1,
+      "test_count": 0,
+      "flat_selection_mse": 1.6666666666666667,
+      "selected_selection_mse": 1.6666666666666667,
+      "flat_test_mse": null,
+      "selected_test_mse": null,
+      "interior_count": 2
+    },
+    {
+      "path_index": 107,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 108,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 3
+    },
+    {
+      "path_index": 109,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 110,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 111,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 112,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 113,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 3
+    },
+    {
+      "path_index": 114,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 115,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 17,
+      "selection_count": 5,
+      "test_count": 6,
+      "flat_selection_mse": 0.32618223760092335,
+      "selected_selection_mse": 0.32618223760092335,
+      "flat_test_mse": 0.7039600153786955,
+      "selected_test_mse": 0.7039600153786955,
+      "interior_count": 28
+    },
+    {
+      "path_index": 116,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 117,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 118,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 119,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 120,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 1
+    },
+    {
+      "path_index": 121,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 122,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 65,
+      "train_count": 61,
+      "selection_count": 18,
+      "test_count": 16,
+      "flat_selection_mse": 0.9658295758806362,
+      "selected_selection_mse": 0.8211005450237034,
+      "flat_test_mse": 1.175339290513305,
+      "selected_test_mse": 1.1061240963597,
+      "interior_count": 95
+    },
+    {
+      "path_index": 123,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 6,
+      "selection_count": 3,
+      "test_count": 1,
+      "flat_selection_mse": 0.23148148148148162,
+      "selected_selection_mse": 0.23148148148148162,
+      "flat_test_mse": 0.675925925925926,
+      "selected_test_mse": 0.675925925925926,
+      "interior_count": 10
+    },
+    {
+      "path_index": 124,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 11,
+      "selection_count": 3,
+      "test_count": 3,
+      "flat_selection_mse": 0.9687786960514235,
+      "selected_selection_mse": 0.9687786960514235,
+      "flat_test_mse": 0.6152433425160695,
+      "selected_test_mse": 0.6152433425160695,
+      "interior_count": 17
+    },
+    {
+      "path_index": 125,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 9
+    },
+    {
+      "path_index": 126,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 127,
+      "model": "flat",
+      "stops": 1,
+      "reason": "insufficient_selection_samples",
+      "interior_count": 2
+    },
+    {
+      "path_index": 128,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 129,
+      "model": "radial",
+      "stops": 3,
+      "optimizer_evaluations": 63,
+      "train_count": 17,
+      "selection_count": 7,
+      "test_count": 5,
+      "flat_selection_mse": 0.9830285055198585,
+      "selected_selection_mse": 0.5004287733593188,
+      "flat_test_mse": 1.1510957324106124,
+      "selected_test_mse": 0.6556554096596152,
+      "interior_count": 29
+    },
+    {
+      "path_index": 130,
+      "model": "linear",
+      "stops": 4,
+      "optimizer_evaluations": 65,
+      "train_count": 19,
+      "selection_count": 6,
+      "test_count": 7,
+      "flat_selection_mse": 2.135580178516468,
+      "selected_selection_mse": 0.4606397367058818,
+      "flat_test_mse": 0.7901332278063589,
+      "selected_test_mse": 0.3714314258986747,
+      "interior_count": 32
+    },
+    {
+      "path_index": 131,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 3,
+      "selection_count": 1,
+      "test_count": 1,
+      "flat_selection_mse": 0.8888888888888992,
+      "selected_selection_mse": 0.8888888888888992,
+      "flat_test_mse": 0.22222222222222657,
+      "selected_test_mse": 0.22222222222222657,
+      "interior_count": 5
+    },
+    {
+      "path_index": 132,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 6,
+      "selection_count": 3,
+      "test_count": 4,
+      "flat_selection_mse": 0.1666666666666677,
+      "selected_selection_mse": 0.1666666666666677,
+      "flat_test_mse": 0.5925925925925963,
+      "selected_test_mse": 0.5925925925925963,
+      "interior_count": 13
+    },
+    {
+      "path_index": 133,
+      "model": "linear",
+      "stops": 3,
+      "optimizer_evaluations": 67,
+      "train_count": 18,
+      "selection_count": 7,
+      "test_count": 6,
+      "flat_selection_mse": 0.7258965314520877,
+      "selected_selection_mse": 0.5290279121542188,
+      "flat_test_mse": 0.6800411522633776,
+      "selected_test_mse": 0.43881060377502523,
+      "interior_count": 31
+    },
+    {
+      "path_index": 134,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 135,
+      "model": "flat",
+      "stops": 1,
+      "optimizer_evaluations": 0,
+      "train_count": 1,
+      "selection_count": 1,
+      "test_count": 2,
+      "flat_selection_mse": 0.0,
+      "selected_selection_mse": 0.0,
+      "flat_test_mse": 0.16666666666666666,
+      "selected_test_mse": 0.16666666666666666,
+      "interior_count": 4
+    },
+    {
+      "path_index": 136,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 137,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 138,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 139,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 140,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    },
+    {
+      "path_index": 141,
+      "model": "flat",
+      "stops": 1,
+      "reason": "no_interior_samples",
+      "interior_count": 0
+    }
+  ]
+}

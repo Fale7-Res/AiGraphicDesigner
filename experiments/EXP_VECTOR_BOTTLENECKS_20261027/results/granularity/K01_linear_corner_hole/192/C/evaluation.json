@@ -1,0 +1,129 @@
+{
+  "metrics": {
+    "white": {
+      "mae": 1.0255967881944446,
+      "mse": 23.973621961805556,
+      "rmse": 4.896286548171538,
+      "psnr_db": 34.333467081778245,
+      "identical": false,
+      "ssim": 0.971543612555792,
+      "edge_precision_1_5px": 0.9862155388471178,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.9930599369085173,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 798,
+      "delta_e76_mean": 0.6036516433197369,
+      "delta_e76_p95": 1.2841347386141848,
+      "highpass_rmse_sigma1": 3.582318982573764,
+      "worst_32px_tile_rmse": 8.36753398558978
+    },
+    "black": {
+      "mae": 1.31923828125,
+      "mse": 38.82245008680555,
+      "rmse": 6.230766412473312,
+      "psnr_db": 32.2399742060375,
+      "identical": false,
+      "ssim": 0.934058563402151,
+      "edge_precision_1_5px": 0.7254361799816346,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.8408728046833421,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 1089,
+      "delta_e76_mean": 0.6992298842976894,
+      "delta_e76_p95": 1.3080974391108782,
+      "highpass_rmse_sigma1": 4.579865430918022,
+      "worst_32px_tile_rmse": 11.586293087092178
+    },
+    "bluegray": {
+      "mae": 1.1008029513888888,
+      "mse": 24.340625,
+      "rmse": 4.933621894713863,
+      "psnr_db": 34.267486353482965,
+      "identical": false,
+      "ssim": 0.9549600231622574,
+      "edge_precision_1_5px": 0.8928974069898534,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.9434187016081,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 887,
+      "delta_e76_mean": 0.6251416055390351,
+      "delta_e76_p95": 1.2842956923070397,
+      "highpass_rmse_sigma1": 3.6247735229270233,
+      "worst_32px_tile_rmse": 9.480671812737393
+    }
+  },
+  "alpha_mae": 0.8971354166666666,
+  "alpha_max_error": 74.0,
+  "premultiplied_rgb_rmse": 6.230054691069283,
+  "structure": {
+    "bytes": 18954,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "path": 125
+    },
+    "path_commands": {
+      "M": 126,
+      "C": 328,
+      "L": 494,
+      "Z": 126
+    },
+    "cubic_segments": 328,
+    "explicit_path_coordinate_pairs": 1604,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "geometry": {
+    "rgb_paths": 125,
+    "mask_paths": 0,
+    "closed_subpaths": 126,
+    "cubic_segments": 328,
+    "rgb_paths_bounds_le_1px": 11,
+    "rgb_paths_bounds_le_2px": 14,
+    "median_rgb_path_bbox_max_dimension": 24.0,
+    "coordinate_integer_lattice_fraction": 0.5773067331670823,
+    "exact_segment_pairs_round_3dp": 321,
+    "segments_incidence_gt2": 0,
+    "unpaired_segments": 180,
+    "unsupported_transforms": [],
+    "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+  },
+  "geometry_signature": "a657dae1e94489fe5339bb345deff1f4917a82c75a383b69df03917b0183c8fb",
+  "render": {
+    "render_seconds": 0.1866248999722302,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K01_linear_corner_hole\\192\\C\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\K01_linear_corner_hole\\192\\C\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.1866248999722302,
+      "sampled_tree_peak_mib": 9.8671875,
+      "observed_process_cpu_seconds": 0.046875,
+      "memory_samples": 3,
+      "observed_pids": [
+        29796,
+        30712
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "30712": 2.91015625,
+        "29796": 6.95703125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "sha256": "5a3e4b9b2ee7eefa73aa73c308c5e734db37b02d15a21e332a9e00b99b8f23f9"
+}

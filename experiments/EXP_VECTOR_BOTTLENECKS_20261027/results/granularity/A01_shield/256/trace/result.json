@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "vtracer_version": "1.0.0a4",
+  "config": {
+    "clustering": "watershed",
+    "hierarchical": "cutout",
+    "filter_speckle": 0,
+    "mode": "spline",
+    "simplify": null,
+    "path_precision": 3,
+    "optimize": 1,
+    "corner_threshold": 60,
+    "length_threshold": 4.0,
+    "max_iterations": 10,
+    "splice_threshold": 45,
+    "watershed_detail": 256
+  },
+  "metrics": {
+    "mae": 14.923324735255385,
+    "mse": 445.1295770253553,
+    "rmse": 21.09809415623495,
+    "psnr_db": 21.645939085486763,
+    "identical": false,
+    "ssim": 0.7774158680459243,
+    "edge_precision_1_5px": 0.49863842662632374,
+    "edge_recall_1_5px": 0.9230339172568021,
+    "edge_f1_1_5px": 0.6474912200465532,
+    "source_edge_pixels": 5366,
+    "render_edge_pixels": 9915,
+    "delta_e76_mean": 6.565289934552384,
+    "delta_e76_p95": 19.595294030995024,
+    "highpass_rmse_sigma1": 8.996164224407933
+  },
+  "score": 0.6451476427788035,
+  "structure": {
+    "bytes": 156763,
+    "elements": {
+      "svg": 1,
+      "path": 1034
+    },
+    "path_commands": {
+      "M": 1034,
+      "L": 3741,
+      "C": 4474,
+      "Z": 1034
+    },
+    "cubic_segments": 4474,
+    "explicit_path_coordinate_pairs": 18197,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "performance": {
+    "trace_wall_seconds": 0.3209188000182621,
+    "trace_cpu_seconds": 0.1875,
+    "render_seconds": 0.14137919998029247,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "369",
+      "--height",
+      "249",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\A01_shield\\256\\trace\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\granularity\\A01_shield\\256\\trace\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.14137919998029247,
+      "sampled_tree_peak_mib": 12.75390625,
+      "observed_process_cpu_seconds": 0.09375,
+      "memory_samples": 3,
+      "observed_pids": [
+        11972,
+        20596
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "11972": 5.79296875,
+        "20596": 7.30078125
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent",
+    "worker_tree_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 5.134937700000592,
+      "sampled_tree_peak_mib": 93.73828125,
+      "observed_process_cpu_seconds": 4.28125,
+      "memory_samples": 101,
+      "observed_pids": [
+        3112,
+        9460,
+        11972,
+        18632,
+        20596,
+        27372,
+        28356
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "28356": 3.91015625,
+        "9460": 7.12890625,
+        "3112": 86.2265625,
+        "11972": 5.79296875,
+        "20596": 6.9609375,
+        "27372": 2.61328125,
+        "18632": 6.96875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    }
+  },
+  "isolated_process_wall_seconds": 5.138733400031924
+}

@@ -1,0 +1,220 @@
+{
+  "metrics": {
+    "white": {
+      "mae": 0.8097113715277777,
+      "mse": 20.25009765625,
+      "rmse": 4.500010850681362,
+      "psnr_db": 35.0665323892373,
+      "identical": false,
+      "ssim": 0.9814329515894086,
+      "edge_precision_1_5px": 0.9987212276214834,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.999360204734485,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 782,
+      "delta_e76_mean": 0.5485640559287634,
+      "delta_e76_p95": 1.2828693946948022,
+      "highpass_rmse_sigma1": 3.177967259274035,
+      "worst_32px_tile_rmse": 7.96705455819987
+    },
+    "black": {
+      "mae": 0.9749891493055556,
+      "mse": 25.448014322916666,
+      "rmse": 5.04460249404417,
+      "psnr_db": 34.07426460334388,
+      "identical": false,
+      "ssim": 0.9590333671993916,
+      "edge_precision_1_5px": 0.9137931034482759,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.9549549549549551,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 870,
+      "delta_e76_mean": 0.6010632628360797,
+      "delta_e76_p95": 1.282940709575413,
+      "highpass_rmse_sigma1": 3.584899478236641,
+      "worst_32px_tile_rmse": 11.166588930077678
+    },
+    "bluegray": {
+      "mae": 0.8632161458333333,
+      "mse": 20.517881944444444,
+      "rmse": 4.529666869036226,
+      "psnr_db": 35.00947834219406,
+      "identical": false,
+      "ssim": 0.9726501714194461,
+      "edge_precision_1_5px": 0.9637681159420289,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.981549815498155,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 828,
+      "delta_e76_mean": 0.5660210944331605,
+      "delta_e76_p95": 1.2828693946948022,
+      "highpass_rmse_sigma1": 3.1995159531426656,
+      "worst_32px_tile_rmse": 10.115253796865405
+    }
+  },
+  "alpha_mae": 0.5372395833333333,
+  "alpha_max_error": 39.0,
+  "premultiplied_rgb_rmse": 5.045198448406039,
+  "structure": {
+    "bytes": 47109,
+    "elements": {
+      "svg": 1,
+      "defs": 1,
+      "linearGradient": 39,
+      "stop": 80,
+      "path": 125
+    },
+    "path_commands": {
+      "M": 126,
+      "C": 328,
+      "L": 494,
+      "Z": 126
+    },
+    "cubic_segments": 328,
+    "explicit_path_coordinate_pairs": 1604,
+    "raster_free": true,
+    "external_href_count": 0,
+    "script_count": 0,
+    "foreign_object_count": 0,
+    "note": "Definitions and uses counted separately; coordinate pairs omit arc and H/V implicit coordinates. No semantic editability claim."
+  },
+  "geometry": {
+    "rgb_paths": 125,
+    "mask_paths": 0,
+    "closed_subpaths": 126,
+    "cubic_segments": 328,
+    "rgb_paths_bounds_le_1px": 11,
+    "rgb_paths_bounds_le_2px": 14,
+    "median_rgb_path_bbox_max_dimension": 24.0,
+    "coordinate_integer_lattice_fraction": 0.5773067331670823,
+    "exact_segment_pairs_round_3dp": 321,
+    "segments_incidence_gt2": 0,
+    "unpaired_segments": 180,
+    "unsupported_transforms": [],
+    "limits": "Bounds exact for Bezier path local coordinates; tiny-path counts are not area weighted. Segment pairing is structural evidence, not a proof of nonintersection, watertight rasterization, topology correctness, or semantic coherence."
+  },
+  "geometry_signature": "6b7ffb1de6aff1ed9eaf0e812423638030f75ab4a9ec79f6ca07ebf56df368dc",
+  "render": {
+    "render_seconds": 0.10189499997068197,
+    "renderer_kind": "resvg",
+    "renderer": "0.49.0",
+    "renderer_command": [
+      "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+      "--width",
+      "192",
+      "--height",
+      "160",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\corrections\\K01_linear_corner_hole\\output.svg",
+      "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_VECTOR_BOTTLENECKS_20261027\\results\\corrections\\K01_linear_corner_hole\\render.png"
+    ],
+    "renderer_executable": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\resvg\\resvg.exe",
+    "renderer_resources": {
+      "returncode": 0,
+      "termination_reason": null,
+      "wall_seconds": 0.10189499997068197,
+      "sampled_tree_peak_mib": 12.10546875,
+      "observed_process_cpu_seconds": 0.0625,
+      "memory_samples": 3,
+      "observed_pids": [
+        9984,
+        19700
+      ],
+      "windows_peak_wset_mib_by_pid": {
+        "19700": 5.41796875,
+        "9984": 7.3046875
+      },
+      "memory_note": "10ms polling delay plus sampling overhead; simultaneous process-tree RSS including renderer may miss short peaks; separate Windows per-process peak_wset; 4096 MiB soft sampled limit"
+    },
+    "renderer_comparability": "different renderer: historical Inkscape scores not directly equivalent"
+  },
+  "sha256": "9b1b6d74bf234911ee61c81ad87545603dd3ea7d7de69610f3277f28421cb583",
+  "baseline_detail": 192,
+  "baseline_svg_sha256": "967f18c11666fb00ced09bad2cababdc6af47d9e558fac4a5fbe285d41713e55",
+  "baseline_metrics": {
+    "white": {
+      "mae": 0.7851019965277778,
+      "mse": 23.421712239583332,
+      "rmse": 4.839598355192643,
+      "psnr_db": 34.4346171995987,
+      "identical": false,
+      "ssim": 0.9777595108046104,
+      "edge_precision_1_5px": 0.987546699875467,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.993734335839599,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 803,
+      "delta_e76_mean": 0.4888506787722233,
+      "delta_e76_p95": 1.0998157378470772,
+      "highpass_rmse_sigma1": 3.560201307034391,
+      "worst_32px_tile_rmse": 8.303272604070036
+    },
+    "black": {
+      "mae": 1.076052517361111,
+      "mse": 38.126942274305556,
+      "rmse": 6.174701796387057,
+      "psnr_db": 32.31848383987757,
+      "identical": false,
+      "ssim": 0.9403470974732565,
+      "edge_precision_1_5px": 0.7276084949215144,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.8423303046499198,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 1083,
+      "delta_e76_mean": 0.5835714495927579,
+      "delta_e76_p95": 1.0998157378470772,
+      "highpass_rmse_sigma1": 4.552443154753481,
+      "worst_32px_tile_rmse": 11.4814870235015
+    },
+    "bluegray": {
+      "mae": 0.8575846354166666,
+      "mse": 23.677376302083335,
+      "rmse": 4.865940433470526,
+      "psnr_db": 34.3874678446639,
+      "identical": false,
+      "ssim": 0.9614914923248632,
+      "edge_precision_1_5px": 0.8618421052631579,
+      "edge_recall_1_5px": 1.0,
+      "edge_f1_1_5px": 0.9257950530035335,
+      "source_edge_pixels": 789,
+      "render_edge_pixels": 912,
+      "delta_e76_mean": 0.5091645849698596,
+      "delta_e76_p95": 1.0998157378470772,
+      "highpass_rmse_sigma1": 3.593650524299962,
+      "worst_32px_tile_rmse": 9.495990107671764
+    }
+  },
+  "correction": {
+    "changed_rgb_paths": 125,
+    "width_source_px": 0.25,
+    "exterior_max_nominal_offset_px": 0.125,
+    "method": "matching-fill narrow stroke, round joins, stroke-before-fill; overlap correction only, not topology repair"
+  },
+  "delta": {
+    "white": {
+      "ssim": 0.003673440784798143,
+      "mse": -3.1716145833333336,
+      "worst_32px_tile_rmse": -0.336218045870166
+    },
+    "black": {
+      "ssim": 0.018686269726135074,
+      "mse": -12.67892795138889,
+      "worst_32px_tile_rmse": -0.3148980934238228
+    },
+    "bluegray": {
+      "ssim": 0.011158679094582902,
+      "mse": -3.1594943576388914,
+      "worst_32px_tile_rmse": 0.6192636891936409
+    }
+  },
+  "alpha_support": {
+    "baseline_alpha_mae": 0.8971354166666666,
+    "new_alpha_mae": 0.5372395833333333,
+    "new_support_pixels_source_alpha_zero": 0,
+    "baseline_support_pixels_source_alpha_zero": 0,
+    "alpha_increase_pixels": 597,
+    "alpha_decrease_pixels": 0
+  },
+  "wall_seconds": 0.5580590000026859,
+  "interpretation": "Same path d/order/fills/masks, explicitly overlapping narrowstrokes. Coverage can improve while contours/colors worsen. Not topology repair or accepted default.",
+  "architecture": "NOT_APPROVED"
+}

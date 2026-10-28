@@ -1,0 +1,18 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-28T03:30:09Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-28T03:30:09Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-28T03:30:09Z"}
+END_DOC_PROVENANCE -->
+# Coverage work package log
+
+2026-10-27T20:37:40+00:00 — Owner-approved bottleneck research, scoped coverage task delegated by parent. Owner vision and AGENTS read; historical results preserved. Architecture NOT_APPROVED. Implementation is coverage.py/test_coverage.py; no search/new dependencies. Controls and real results stored only results/coverage.
+
+Exact diagonal and reversed-cubic partitions share known boundaries and square outer union. Source-over white region rasterization creates native alpha deficits despite exact geometry: diagonal112 samples /26.352941 source-pixel-equivalent deficit; curved119 /20.082353. Their single nonzero compound fills match the analytic known opaque union exactly. This proves a rasterization/compositing contribution, not absence of geometric defects in real outputs. Genuine1px gap negative remains deficient under compound or .25 stroke.
+
+Matching-paint .25px stroke is a reversible overlapping-coverage diagnostic, not topology repair. Public correct_coverage preserves d/path order and mask subtree; uses same fill/gradient URL as stroke, round joins and stroke-before-fill. It expands exterior nominally .125sourcepixels. Diagonal deficit falls26.352941→15.921569 while excess exterior coverage increases60.552941pixel-equivalents. Single exterior curved silhouette expands27.290196pixel-equivalents and gains21 threshold128 native support samples. Thus global stroke can damage contours and does not eliminate all native AA seams.
+
+Real D128 cases shield35,coffee26,cat22,Arabic28,dice29 RGB regions. All native/4x white-separate/compound/crisp diagnostics and per-region4x occupancy completed. Compound is explicitly not Boolean union; winding/overlap/evenodd risks remain. Per-region masks are threshold128 AA samples, not analytic point-in-curve topology. Do not interpret boundary ties as proven overlaps. Region-ID PNGs, native and4x stroke output, alpha/error maps and actual render telemetry saved. Native output full-image evaluation reuses inherited evaluate_condition/prepared sRGB references. Alpha mask bytes are preserved, but rendered alpha can change from RGB coverage.
+
+Stroke whiteSSIM deltas: shield+0.004675894,coffee+0.015606453,cat+0.011868555,Arabic−0.000089050,dice+0.002836616. Arabic MSE worsens+0.411622 and worsttileRMSE+0.600158; preserve negative. Other improvements remain modest relative to high-fidelity A baseline and do not establish final vector success.
+
+Five dedicated tests passed in0.032s: analytic source-overvsunion, realgapnegative, exteriorstrokeexpansion, unmodifiedmask/path/gradientURL, out-of-scopewidth refusal. Curved4x region-ID visual inspected. Independent QA is separate. No successful independent secondrenderer test; parent requested no extended browser setup, so no interoperability claim. All per-render worker-tree timing/memory telemetry retained. Parent will sync overall scoped provenance/mirrors and independently review.
+
+2026-10-27T20:40:35+00:00 — Final code includes nonempty-target refusal, requiring fresh AGD_COVERAGE_ROOT for controls/real regeneration. Integrated real4x/region-ID/comparison generation into coverage.py, so auxiliary packaging script is not needed for reproduction. Six dedicated tests passed in0.038s after final implementation; dashboard index checked 171 links, none missing. Coverage file inventory contains 816 outputs. Parent D192 correction experiments are explicitly separate from this D128 diagnostic.
