@@ -1,0 +1,1613 @@
+{
+  "schema": 1,
+  "status": "FROZEN_REVIEWED_DESCRIPTIVE_REFERENCE_SET",
+  "id": "A01_shield",
+  "dimensions": [
+    369,
+    249
+  ],
+  "source": {
+    "path": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_CODEX_WINDOWS_FIDELITY_20261027\\results\\A01_shield\\normalized.png",
+    "repository_relative": "experiments/EXP_CODEX_WINDOWS_FIDELITY_20261027/results/A01_shield/normalized.png",
+    "sha256": "900b7ee76d9428ab30b654e584a6dd72ea924c55cc116420edfa387527a134f1",
+    "rights": "Owner-supplied repository benchmark; no new external source copied."
+  },
+  "annotation_provenance": {
+    "author": "AI research agent package_generalization",
+    "created_utc": "2026-10-28T14:18:57+00:00",
+    "method": "Independent manual visual tracing of original raster and nearest-neighbor inspection crops; no candidate/label/graph used",
+    "human_ground_truth": false,
+    "exact_ground_truth": false,
+    "use": "EVALUATOR_ONLY; forbidden reconstruction input, segmentation template, tuning reference or candidate selection template"
+  },
+  "completeness_scope": "All independently declared major visible structural/material contours and all5crown peaks, flanks, valleys, lobes and2band edges. Not every raster texture/shadow/highlight boundary; no hidden/amodal geometry.",
+  "uncertainty_policy": "uncertainty_px is an approximate visual annotation band, not calibrated probability. Numerical1px matching cannot certify precision beyond annotation uncertainty. Report strict metrics plus uncertainty-band evidence separately; never lower fixed candidate-quality thresholds silently.",
+  "duplicate_policy": "Critical subcomponents intentionally reuse portions of full outline; deduplicate coordinates/boundary length for global averages, retain all named component checks. Appearance-only curves excluded from required boundary precision/recall.",
+  "components": [
+    {
+      "id": "shield_outer_silhouette",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            185,
+            8
+          ],
+          [
+            195,
+            15
+          ],
+          [
+            209,
+            22
+          ],
+          [
+            225,
+            29
+          ],
+          [
+            243,
+            34
+          ],
+          [
+            262,
+            38
+          ],
+          [
+            281,
+            39
+          ],
+          [
+            295,
+            39
+          ],
+          [
+            295,
+            62
+          ],
+          [
+            294,
+            85
+          ],
+          [
+            291,
+            110
+          ],
+          [
+            286,
+            135
+          ],
+          [
+            278,
+            158
+          ],
+          [
+            267,
+            178
+          ],
+          [
+            253,
+            198
+          ],
+          [
+            235,
+            217
+          ],
+          [
+            214,
+            234
+          ],
+          [
+            185,
+            248
+          ],
+          [
+            159,
+            234
+          ],
+          [
+            138,
+            218
+          ],
+          [
+            119,
+            199
+          ],
+          [
+            104,
+            178
+          ],
+          [
+            91,
+            154
+          ],
+          [
+            83,
+            128
+          ],
+          [
+            78,
+            102
+          ],
+          [
+            76,
+            77
+          ],
+          [
+            75,
+            54
+          ],
+          [
+            75,
+            39
+          ],
+          [
+            96,
+            39
+          ],
+          [
+            117,
+            37
+          ],
+          [
+            138,
+            33
+          ],
+          [
+            158,
+            25
+          ],
+          [
+            174,
+            17
+          ],
+          [
+            185,
+            8
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.8,
+      "confidence": "medium-high",
+      "notes": "Full visible external boundary; bottom touches image limit, lower termination uncertain up to2px. No continuation beyond frame asserted.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "metallic_outer_bevel_ridge",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            185,
+            13
+          ],
+          [
+            201,
+            23
+          ],
+          [
+            220,
+            31
+          ],
+          [
+            240,
+            38
+          ],
+          [
+            263,
+            42
+          ],
+          [
+            288,
+            43
+          ],
+          [
+            291,
+            42
+          ],
+          [
+            291,
+            66
+          ],
+          [
+            289,
+            94
+          ],
+          [
+            284,
+            121
+          ],
+          [
+            277,
+            147
+          ],
+          [
+            267,
+            170
+          ],
+          [
+            253,
+            191
+          ],
+          [
+            235,
+            211
+          ],
+          [
+            213,
+            229
+          ],
+          [
+            185,
+            244
+          ],
+          [
+            161,
+            230
+          ],
+          [
+            140,
+            214
+          ],
+          [
+            121,
+            194
+          ],
+          [
+            107,
+            173
+          ],
+          [
+            96,
+            148
+          ],
+          [
+            88,
+            122
+          ],
+          [
+            83,
+            96
+          ],
+          [
+            81,
+            70
+          ],
+          [
+            80,
+            44
+          ],
+          [
+            102,
+            44
+          ],
+          [
+            126,
+            40
+          ],
+          [
+            149,
+            33
+          ],
+          [
+            170,
+            24
+          ],
+          [
+            185,
+            13
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.8,
+      "confidence": "medium",
+      "notes": "Geometric/material bevel ridge inside outer gold rim; not every specular intensity contour.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "metallic_inner_bevel_ridge",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            185,
+            25
+          ],
+          [
+            202,
+            35
+          ],
+          [
+            220,
+            43
+          ],
+          [
+            242,
+            49
+          ],
+          [
+            261,
+            52
+          ],
+          [
+            284,
+            51
+          ],
+          [
+            284,
+            76
+          ],
+          [
+            282,
+            101
+          ],
+          [
+            277,
+            126
+          ],
+          [
+            269,
+            151
+          ],
+          [
+            258,
+            173
+          ],
+          [
+            244,
+            193
+          ],
+          [
+            226,
+            211
+          ],
+          [
+            206,
+            226
+          ],
+          [
+            185,
+            238
+          ],
+          [
+            163,
+            225
+          ],
+          [
+            143,
+            210
+          ],
+          [
+            125,
+            191
+          ],
+          [
+            111,
+            170
+          ],
+          [
+            101,
+            147
+          ],
+          [
+            94,
+            122
+          ],
+          [
+            89,
+            97
+          ],
+          [
+            87,
+            73
+          ],
+          [
+            86,
+            51
+          ],
+          [
+            108,
+            50
+          ],
+          [
+            130,
+            46
+          ],
+          [
+            152,
+            39
+          ],
+          [
+            172,
+            31
+          ],
+          [
+            185,
+            25
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.5,
+      "confidence": "medium",
+      "notes": "Visible inner bevel turn before narrow dark red/gold transition; distinguished from outer ridge.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "red_gold_material_interface",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            185,
+            30
+          ],
+          [
+            200,
+            39
+          ],
+          [
+            220,
+            47
+          ],
+          [
+            241,
+            53
+          ],
+          [
+            261,
+            56
+          ],
+          [
+            280,
+            55
+          ],
+          [
+            280,
+            79
+          ],
+          [
+            278,
+            103
+          ],
+          [
+            273,
+            127
+          ],
+          [
+            265,
+            151
+          ],
+          [
+            254,
+            172
+          ],
+          [
+            240,
+            191
+          ],
+          [
+            223,
+            207
+          ],
+          [
+            204,
+            222
+          ],
+          [
+            185,
+            233
+          ],
+          [
+            165,
+            221
+          ],
+          [
+            146,
+            206
+          ],
+          [
+            129,
+            188
+          ],
+          [
+            116,
+            169
+          ],
+          [
+            106,
+            146
+          ],
+          [
+            99,
+            122
+          ],
+          [
+            94,
+            99
+          ],
+          [
+            91,
+            75
+          ],
+          [
+            90,
+            55
+          ],
+          [
+            110,
+            54
+          ],
+          [
+            132,
+            50
+          ],
+          [
+            153,
+            43
+          ],
+          [
+            172,
+            35
+          ],
+          [
+            185,
+            30
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.2,
+      "confidence": "medium-high",
+      "notes": "Closed boundary of red inset against metallic frame; source antialiasing/black recess creates a1\u20132px band.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_complete_visible_outline",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            142,
+            151
+          ],
+          [
+            140,
+            137
+          ],
+          [
+            136,
+            121
+          ],
+          [
+            131,
+            109
+          ],
+          [
+            124,
+            101
+          ],
+          [
+            130,
+            104
+          ],
+          [
+            137,
+            108
+          ],
+          [
+            133,
+            111
+          ],
+          [
+            134,
+            115
+          ],
+          [
+            140,
+            120
+          ],
+          [
+            147,
+            123
+          ],
+          [
+            152,
+            123
+          ],
+          [
+            157,
+            119
+          ],
+          [
+            158,
+            113
+          ],
+          [
+            154,
+            110
+          ],
+          [
+            151,
+            107
+          ],
+          [
+            152,
+            103
+          ],
+          [
+            153,
+            98
+          ],
+          [
+            159,
+            102
+          ],
+          [
+            163,
+            106
+          ],
+          [
+            161,
+            110
+          ],
+          [
+            159,
+            112
+          ],
+          [
+            163,
+            116
+          ],
+          [
+            170,
+            118
+          ],
+          [
+            176,
+            115
+          ],
+          [
+            180,
+            109
+          ],
+          [
+            181,
+            103
+          ],
+          [
+            176,
+            104
+          ],
+          [
+            171,
+            101
+          ],
+          [
+            169,
+            98
+          ],
+          [
+            170,
+            94
+          ],
+          [
+            174,
+            91
+          ],
+          [
+            177,
+            92
+          ],
+          [
+            179,
+            96
+          ],
+          [
+            178,
+            88
+          ],
+          [
+            181,
+            79
+          ],
+          [
+            185,
+            70
+          ],
+          [
+            189,
+            80
+          ],
+          [
+            194,
+            88
+          ],
+          [
+            191,
+            96
+          ],
+          [
+            195,
+            92
+          ],
+          [
+            199,
+            93
+          ],
+          [
+            202,
+            96
+          ],
+          [
+            202,
+            100
+          ],
+          [
+            199,
+            103
+          ],
+          [
+            194,
+            103
+          ],
+          [
+            191,
+            101
+          ],
+          [
+            195,
+            110
+          ],
+          [
+            200,
+            116
+          ],
+          [
+            207,
+            119
+          ],
+          [
+            213,
+            116
+          ],
+          [
+            216,
+            111
+          ],
+          [
+            215,
+            108
+          ],
+          [
+            211,
+            106
+          ],
+          [
+            211,
+            102
+          ],
+          [
+            216,
+            98
+          ],
+          [
+            219,
+            104
+          ],
+          [
+            220,
+            107
+          ],
+          [
+            217,
+            110
+          ],
+          [
+            219,
+            117
+          ],
+          [
+            224,
+            122
+          ],
+          [
+            231,
+            124
+          ],
+          [
+            237,
+            122
+          ],
+          [
+            242,
+            117
+          ],
+          [
+            243,
+            112
+          ],
+          [
+            240,
+            109
+          ],
+          [
+            240,
+            106
+          ],
+          [
+            246,
+            101
+          ],
+          [
+            242,
+            115
+          ],
+          [
+            238,
+            130
+          ],
+          [
+            234,
+            144
+          ],
+          [
+            231,
+            151
+          ],
+          [
+            230,
+            158
+          ],
+          [
+            216,
+            155
+          ],
+          [
+            200,
+            154
+          ],
+          [
+            184,
+            153
+          ],
+          [
+            168,
+            154
+          ],
+          [
+            154,
+            156
+          ],
+          [
+            143,
+            159
+          ],
+          [
+            142,
+            151
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.7,
+      "confidence": "medium",
+      "notes": "Entire five-tip crown including both flanks, four valleys and lower-band exterior. Approximate visual trace, not a construction template.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_left_tip_and_flank",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            142,
+            151
+          ],
+          [
+            140,
+            137
+          ],
+          [
+            136,
+            121
+          ],
+          [
+            131,
+            109
+          ],
+          [
+            124,
+            101
+          ],
+          [
+            130,
+            104
+          ],
+          [
+            137,
+            108
+          ],
+          [
+            133,
+            111
+          ],
+          [
+            134,
+            115
+          ],
+          [
+            140,
+            120
+          ],
+          [
+            147,
+            123
+          ],
+          [
+            152,
+            123
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.5,
+      "confidence": "medium",
+      "notes": "Critical subcomponent of full outline; same boundary intentionally repeated for component-presence audit.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_left_inner_tip",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            152,
+            123
+          ],
+          [
+            157,
+            119
+          ],
+          [
+            158,
+            113
+          ],
+          [
+            154,
+            110
+          ],
+          [
+            151,
+            107
+          ],
+          [
+            152,
+            103
+          ],
+          [
+            153,
+            98
+          ],
+          [
+            159,
+            102
+          ],
+          [
+            163,
+            106
+          ],
+          [
+            161,
+            110
+          ],
+          [
+            159,
+            112
+          ],
+          [
+            163,
+            116
+          ],
+          [
+            170,
+            118
+          ],
+          [
+            176,
+            115
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.5,
+      "confidence": "medium",
+      "notes": "Second left peak and both local sides/valley; critical even when aggregate crown coverage is high.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_center_tip_and_lobes",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            176,
+            115
+          ],
+          [
+            180,
+            109
+          ],
+          [
+            181,
+            103
+          ],
+          [
+            176,
+            104
+          ],
+          [
+            171,
+            101
+          ],
+          [
+            169,
+            98
+          ],
+          [
+            170,
+            94
+          ],
+          [
+            174,
+            91
+          ],
+          [
+            177,
+            92
+          ],
+          [
+            179,
+            96
+          ],
+          [
+            178,
+            88
+          ],
+          [
+            181,
+            79
+          ],
+          [
+            185,
+            70
+          ],
+          [
+            189,
+            80
+          ],
+          [
+            194,
+            88
+          ],
+          [
+            191,
+            96
+          ],
+          [
+            195,
+            92
+          ],
+          [
+            199,
+            93
+          ],
+          [
+            202,
+            96
+          ],
+          [
+            202,
+            100
+          ],
+          [
+            199,
+            103
+          ],
+          [
+            194,
+            103
+          ],
+          [
+            191,
+            101
+          ],
+          [
+            195,
+            110
+          ],
+          [
+            200,
+            116
+          ],
+          [
+            207,
+            119
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.7,
+      "confidence": "medium",
+      "notes": "Central spike, both fleur-de-lis lobes and transition into adjoining valleys. Lobe shadow boundary uncertain; not inferred from any candidate.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_right_inner_tip",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            207,
+            119
+          ],
+          [
+            213,
+            116
+          ],
+          [
+            216,
+            111
+          ],
+          [
+            215,
+            108
+          ],
+          [
+            211,
+            106
+          ],
+          [
+            211,
+            102
+          ],
+          [
+            216,
+            98
+          ],
+          [
+            219,
+            104
+          ],
+          [
+            220,
+            107
+          ],
+          [
+            217,
+            110
+          ],
+          [
+            219,
+            117
+          ],
+          [
+            224,
+            122
+          ],
+          [
+            231,
+            124
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.5,
+      "confidence": "medium",
+      "notes": "Fourth peak, neck and both neighboring concavities.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "crown_right_tip_and_flank",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            231,
+            124
+          ],
+          [
+            237,
+            122
+          ],
+          [
+            242,
+            117
+          ],
+          [
+            243,
+            112
+          ],
+          [
+            240,
+            109
+          ],
+          [
+            240,
+            106
+          ],
+          [
+            246,
+            101
+          ],
+          [
+            242,
+            115
+          ],
+          [
+            238,
+            130
+          ],
+          [
+            234,
+            144
+          ],
+          [
+            231,
+            151
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.7,
+      "confidence": "medium",
+      "notes": "Fifth peak and long right sloping outer side.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "central_ornament_internal_fold",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            185,
+            72
+          ],
+          [
+            185,
+            82
+          ],
+          [
+            186,
+            91
+          ],
+          [
+            187,
+            100
+          ],
+          [
+            188,
+            108
+          ]
+        ]
+      ],
+      "uncertainty_px": 2.0,
+      "confidence": "medium-low",
+      "notes": "Central ornament interior light/dark fold; visible appearance edge, less certain than silhouette; no outline/hole implication. Pre-freeze independent QA clarification: retain as a mandatory visible-feature REVIEW item, but do not require a physical closed boundary or apply a structural/topology veto. Its interpretation remains UNKNOWN.",
+      "gate_role": "MANDATORY_VISIBLE_FEATURE_REVIEW_UNKNOWN_NOT_TOPOLOGY_VETO",
+      "structural_boundary_required": false,
+      "closed_region_required": false,
+      "feature_presence_status": "UNKNOWN_PENDING_VISUAL_REVIEW",
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "lower_band_upper_edge",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            142,
+            150
+          ],
+          [
+            153,
+            147
+          ],
+          [
+            166,
+            145
+          ],
+          [
+            181,
+            144
+          ],
+          [
+            196,
+            144
+          ],
+          [
+            211,
+            146
+          ],
+          [
+            223,
+            148
+          ],
+          [
+            232,
+            151
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.2,
+      "confidence": "medium-high",
+      "notes": "Top edge of lower gold band/dark separating recess; includes both end junctions.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "lower_band_lower_edge",
+      "critical": true,
+      "polylines": [
+        [
+          [
+            143,
+            158
+          ],
+          [
+            156,
+            155
+          ],
+          [
+            171,
+            153
+          ],
+          [
+            186,
+            152
+          ],
+          [
+            201,
+            153
+          ],
+          [
+            216,
+            155
+          ],
+          [
+            230,
+            158
+          ]
+        ]
+      ],
+      "uncertainty_px": 1.5,
+      "confidence": "medium",
+      "notes": "Lower exterior gold/red edge; minor shadow feathering excluded.",
+      "gate_role": "APPROXIMATE_STRUCTURAL_CONTOUR_REVIEW",
+      "structural_boundary_required": true,
+      "numeric_strict_1px_status": "NOT_ESTABLISHED"
+    }
+  ],
+  "appearance_only": [
+    {
+      "id": "specular_upper_right_red",
+      "critical": false,
+      "polylines": [
+        [
+          [
+            194,
+            44
+          ],
+          [
+            210,
+            48
+          ],
+          [
+            226,
+            50
+          ],
+          [
+            243,
+            51
+          ]
+        ]
+      ],
+      "uncertainty_px": 4.0,
+      "confidence": "low",
+      "notes": "Diffuse light/reflection evidence only; NOT required structural geometry."
+    },
+    {
+      "id": "crown_inner_horizontal_highlight",
+      "critical": false,
+      "polylines": [
+        [
+          [
+            144,
+            145
+          ],
+          [
+            158,
+            141
+          ],
+          [
+            176,
+            140
+          ],
+          [
+            193,
+            140
+          ],
+          [
+            211,
+            143
+          ],
+          [
+            230,
+            147
+          ]
+        ]
+      ],
+      "uncertainty_px": 2.0,
+      "confidence": "medium",
+      "notes": "Metallic highlight above recess; not counted as a mandatory extra region."
+    },
+    {
+      "id": "red_center_shading_axis",
+      "critical": false,
+      "polylines": [
+        [
+          [
+            185,
+            33
+          ],
+          [
+            186,
+            63
+          ],
+          [
+            185,
+            101
+          ],
+          [
+            185,
+            139
+          ],
+          [
+            185,
+            181
+          ],
+          [
+            185,
+            230
+          ]
+        ]
+      ],
+      "uncertainty_px": 3.5,
+      "confidence": "low",
+      "notes": "Broad illumination/style transition; geometry is ambiguous and this is excluded from structural completeness veto."
+    }
+  ],
+  "junctions": [
+    {
+      "id": "shield_top_apex",
+      "xy": [
+        185,
+        8
+      ],
+      "uncertainty_px": 1.5
+    },
+    {
+      "id": "red_inset_top_apex",
+      "xy": [
+        185,
+        30
+      ],
+      "uncertainty_px": 1.5
+    },
+    {
+      "id": "left_band_flank_join",
+      "xy": [
+        142,
+        150
+      ],
+      "uncertainty_px": 1.5
+    },
+    {
+      "id": "right_band_flank_join",
+      "xy": [
+        232,
+        151
+      ],
+      "uncertainty_px": 1.5
+    },
+    {
+      "id": "central_left_lobe_neck",
+      "xy": [
+        181,
+        103
+      ],
+      "uncertainty_px": 2.0
+    },
+    {
+      "id": "central_right_lobe_neck",
+      "xy": [
+        191,
+        101
+      ],
+      "uncertainty_px": 2.0
+    }
+  ],
+  "negative_space_checks": [
+    {
+      "id": "left_outer_valley",
+      "roi": [
+        135,
+        111,
+        156,
+        128
+      ],
+      "description": "Red open concavity between tips1/2 must not be bridged."
+    },
+    {
+      "id": "left_inner_valley",
+      "roi": [
+        160,
+        108,
+        179,
+        123
+      ],
+      "description": "Red open concavity between tips2/3."
+    },
+    {
+      "id": "right_inner_valley",
+      "roi": [
+        194,
+        108,
+        216,
+        124
+      ],
+      "description": "Red open concavity between tips3/4."
+    },
+    {
+      "id": "right_outer_valley",
+      "roi": [
+        220,
+        114,
+        242,
+        129
+      ],
+      "description": "Red open concavity between tips4/5."
+    }
+  ],
+  "uncertainty_limits": [
+    "No qualified human independently traced this reference yet.",
+    "Top bevel lines and lower tip are visually ambiguous bands.",
+    "Central fold is appearance evidence; its geometric interpretation is uncertain.",
+    "Completeness cannot be interpreted as universal physical-boundary truth."
+  ],
+  "strict_1px_certification": "NOT_ESTABLISHED",
+  "prefreeze_qa_clarification": {
+    "at_utc": "2026-10-28T14:21:41+00:00",
+    "reviewer": "ablation_qa",
+    "finding": "Declared major crown contours complete at approximate level; central fold role clarified; strict1px certification not established. No candidate observed."
+  },
+  "frozen_utc": "2026-10-28T14:24:39+00:00",
+  "independent_qa": {
+    "reviewer": "ablation_qa",
+    "acceptance": "Descriptive-reference coverage accepted after central-fold and ROI-exemption clarification; no exact/human ground-truth or architecture certification",
+    "strict_shield_1px_acceptance": "NOT_ESTABLISHED"
+  }
+}

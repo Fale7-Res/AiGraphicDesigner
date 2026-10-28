@@ -1,0 +1,68 @@
+{
+  "experiment": "EXP_COMPLETE_GEOMETRY_ISOLATION_01",
+  "status": "FROZEN_BEFORE_BENCHMARK_CANDIDATES",
+  "created_utc": "2026-10-28T14:13:03.173281+00:00",
+  "architecture": "NOT_APPROVED",
+  "baseline_local_commit": "bd61aaebf72e0a2a83106139ec69d304713221a8",
+  "baseline_remote_commit": "ed6072b15d3f9fca4774856ffcf31909d1785fd7",
+  "owner_authorization": "GO bounded segmentation x initialization isolation; NO GO production engine replacement/appearance/Magic Layers",
+  "cases": [
+    "A01_shield",
+    "G07_tux",
+    "G06_arabic",
+    "G05_chelsea_nativecrop",
+    "fine_features",
+    "K01_linear_corner_hole"
+  ],
+  "segmentation": [
+    "Arena saved labels where available (shield/fine); external Arena segmenter frozen Felzenszwalb400 sigma0.8 minarea12 contrast9 for other cases",
+    "VTracer1.0.0-alpha.4 watershed detail192 fixed"
+  ],
+  "initialization": [
+    "External Arena initialize tolerance0.8 smooth1 iterations3, no refinement",
+    "VTracer shared-boundary SplineSegmentFitter defaults, no simplify/CurvePass"
+  ],
+  "preprocessing": "Freeze original RGBA and a common white-composited opaque sRGB working PNG. No resizing. Saved opaque shield/fine labels reused only if working pixels match their original. All combinations use identical row-major labels and pixel coordinates for a given segmentation. Continuous alpha is not reconstructed.",
+  "policy": {
+    "critical_component_presence": "All independently declared significant components required; missing component veto",
+    "critical_contour_precision_recall_at_1px": 0.95,
+    "known_mean_symmetric_distance_max_px": 0.45,
+    "known_p95_max_px": 1.25,
+    "known_foreground_iou_min": 0.97,
+    "thin_area_recall_min": 0.95,
+    "thin_component_hole_counts": "exact known counts",
+    "extra_boundary_tolerance_px": 0.5,
+    "geometry_degeneracy_area_epsilon": 1e-06,
+    "junction_gap_max_px": 0.001,
+    "topology": "closed nondegenerate faces, shared reversal, containment, no unintended crossing/gap/overlap; unresolved conservative adaptive flattening rejected",
+    "flattening_bound_px": 0.01,
+    "anti_mosaic": {
+      "extra_pixel_cells": "forbidden",
+      "lattice_fallback": "forbidden",
+      "visible_area_fraction_in_grid_cells_reject": 0.1,
+      "tiny_face_bbox_max_px": 2,
+      "integer_lattice_boundary_fraction_min": 0.8,
+      "repeat_diagnostic_scales_px": [
+        1,
+        2,
+        4
+      ],
+      "fine_detail_exemptions": "must be predeclared evaluator ROIs; none implicit"
+    },
+    "truth_selection": "No candidate is selected or deployed using evaluator truth. All conditions remain visible."
+  },
+  "budgets": {
+    "adapter_feasibility_hours": 8,
+    "worker_wall_seconds": 600,
+    "sampled_memory_mib": 4096,
+    "total_execution_cpu_seconds": 7200,
+    "combinations_max_per_case": 4,
+    "refinement": "none; initialization only"
+  },
+  "rights": "Arena implementation stays external owner-supplied research comparator, never copied into product or vendored in this repository. Unknown-rights source assets/derived external evidence kept locally with explicit hash manifests until cleared. New code authored here; approved open-source VTracer license retained.",
+  "publication": "Meaningful validated checkpoints locally committed with AGD-CODEX-RESEARCH prefix. Push currently blocked by inaccessible wincredman store; verified OpenSSL TLS read works. No repeated blocked push; owner-run commands supplied at each checkpoint.",
+  "segmentation_interface": "VTracer raw watershed partition detail192, compositor similarity merging disabled for BOTH initializers. Native historical D192 remains unmatched context only. Labels0exterior;inside>=1; no relabel by initializer.",
+  "reference_set_sha256": "e70a475ab8fcaea275084f77f807428c2183485b3687d32e4b66fd295ac6d0cc",
+  "frozen_utc": "2026-10-28T14:26:06.088370+00:00",
+  "reference_limit": "All shield annotations have uncertainty>1px. Strict1px gate NOT_ESTABLISHED; mandatory visible fold review UNKNOWN, not forced physical/topological boundary. Independent AI reviewer, not human ground truth."
+}
