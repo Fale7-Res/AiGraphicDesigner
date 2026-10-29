@@ -1,0 +1,232 @@
+{
+  "config": {
+    "version": "endpoint_color_geodesic_v1",
+    "skeleton_connectivity": 8,
+    "endpoint_degree": 1,
+    "endpoint_tangent_steps": 3,
+    "max_endpoint_radius_px": 2.0,
+    "max_pair_distance_px": 12.0,
+    "max_path_steps": 12,
+    "max_new_connector_pixels": 12,
+    "max_bridges": 32,
+    "max_label_lab_distance": 12.0,
+    "min_facing_cosine": 0.75,
+    "max_endpoint_width_ratio": 2.5,
+    "radius_floor_px": 0.5,
+    "corridor_radius_px": 1.5,
+    "min_fg_bg_lab_contrast": 15.0,
+    "min_mixture_fraction": 0.15,
+    "max_mixture_residual_lab": 8.0,
+    "min_mean_mixture_fraction": 0.35,
+    "background_flank_min_px": 1.5,
+    "background_flank_max_px": 3.5,
+    "background_min_samples": 3,
+    "common_gap_label_required": true,
+    "original_adjacent_pair_forbidden": true,
+    "max_endpoint_pairs": 512
+  },
+  "algorithm": "source-supported endpoint color geodesic bridge",
+  "endpoints": 394,
+  "endpoint_pairs_tested": 512,
+  "source_supported_proposals": 3,
+  "accepted_bridges": 3,
+  "connector_pixels": 4,
+  "input_regions": 392,
+  "output_regions": 389,
+  "rejections": {
+    "already_four_adjacent": 196,
+    "same_label": 94,
+    "incompatible_color": 88,
+    "tangent": 107,
+    "low_contrast": 14,
+    "unsupported_endpoint": 14,
+    "no_source_supported_path": 7,
+    "no_common_gap_label": 1
+  },
+  "bridges": [
+    {
+      "path": [
+        [
+          145,
+          101
+        ],
+        [
+          146,
+          101
+        ],
+        [
+          146,
+          102
+        ]
+      ],
+      "connector": [
+        [
+          146,
+          101
+        ]
+      ],
+      "cost": 3.589186379938727,
+      "mean_mixture_fraction": 0.7737648103833775,
+      "min_mixture_fraction": 0.7737648103833775,
+      "max_mixture_residual_lab": 6.276930588866478,
+      "gap_label": 178,
+      "foreground_lab": [
+        95.52653703561349,
+        -2.3049737711487346,
+        17.451324499820085
+      ],
+      "background_lab": [
+        39.34512373025879,
+        23.03365095928035,
+        44.42071853201944
+      ],
+      "endpoint_a": [
+        101,
+        145
+      ],
+      "endpoint_b": [
+        102,
+        146
+      ],
+      "labels": [
+        188,
+        194
+      ],
+      "merged_to": 188,
+      "merged_from": 194
+    },
+    {
+      "path": [
+        [
+          162,
+          276
+        ],
+        [
+          163,
+          276
+        ],
+        [
+          163,
+          275
+        ],
+        [
+          164,
+          275
+        ]
+      ],
+      "connector": [
+        [
+          163,
+          275
+        ]
+      ],
+      "cost": 3.752152220102808,
+      "mean_mixture_fraction": 0.9976362049502773,
+      "min_mixture_fraction": 0.9976362049502773,
+      "max_mixture_residual_lab": 2.2868038481713824,
+      "gap_label": 177,
+      "foreground_lab": [
+        88.86862606963533,
+        1.0094232873373021,
+        3.837472641948094
+      ],
+      "background_lab": [
+        61.155231293908344,
+        16.18752245381938,
+        45.152372076931215
+      ],
+      "endpoint_a": [
+        276,
+        162
+      ],
+      "endpoint_b": [
+        275,
+        164
+      ],
+      "labels": [
+        166,
+        235
+      ],
+      "merged_to": 166,
+      "merged_from": 235
+    },
+    {
+      "path": [
+        [
+          140,
+          273
+        ],
+        [
+          140,
+          272
+        ],
+        [
+          141,
+          272
+        ],
+        [
+          142,
+          272
+        ]
+      ],
+      "connector": [
+        [
+          140,
+          272
+        ],
+        [
+          141,
+          272
+        ]
+      ],
+      "cost": 6.900898509133021,
+      "mean_mixture_fraction": 0.42618046270308696,
+      "min_mixture_fraction": 0.23976118467894073,
+      "max_mixture_residual_lab": 5.364590135427386,
+      "gap_label": 62,
+      "foreground_lab": [
+        60.5226394604456,
+        14.943592931449743,
+        51.68480336464604
+      ],
+      "background_lab": [
+        93.47291534866005,
+        -4.42876365885464,
+        31.65126745022888
+      ],
+      "endpoint_a": [
+        273,
+        140
+      ],
+      "endpoint_b": [
+        272,
+        142
+      ],
+      "labels": [
+        184,
+        191
+      ],
+      "merged_to": 184,
+      "merged_from": 191
+    }
+  ],
+  "endpoint_pairs_available": 1468,
+  "endpoint_pairs_truncated": 956,
+  "status": "LOCAL_SOURCE_SUPPORTED_EDITS",
+  "wall_seconds": 5.120563799981028,
+  "limitations": [
+    "Convex Lab two-color mixture (projection clipped0..1) is heuristic evidence, not physical boundary truth.",
+    "Only joins existing nonadjacent compatible regions; cannot discover a wholly absent region/band.",
+    "One-pixel connector ownership can introduce width error; unchanged inherited initializer may still collapse geometry.",
+    "Merging region identities can falsely join distinct same-colored structures; source/tangent/width gates are controls, not proof.",
+    "No claim of correct semantics, topology, fidelity, or generalization."
+  ],
+  "reference_or_case_name_used": false,
+  "initializer_changed": false,
+  "new_region_ids_added": false,
+  "case": "A01_shield",
+  "condition": "A",
+  "process_cpu_seconds": 5.0,
+  "candidate_sha256": "f03bf41daf8bb4301de0247d84f511ca1785db1c883a9e7185195ee557218a85",
+  "labels_sha256": "fcc97ee88d178a0ba04b8b448bf8069de66ef41c6304b6d3304e1484d87541d5"
+}

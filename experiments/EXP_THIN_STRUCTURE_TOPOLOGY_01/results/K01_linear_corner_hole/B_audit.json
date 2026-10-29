@@ -1,0 +1,71 @@
+{
+  "config": {
+    "model": "single_cubic_A_B_B_C",
+    "area_epsilon": 1e-06,
+    "min_repaired_area_ratio": 0.1,
+    "endpoint_gap_max": 0.001,
+    "flatten_bound": 0.01,
+    "near_pair_distance": 0.02,
+    "collinear_chord_tolerance": 1e-08,
+    "max_eligible_chains": 256,
+    "max_passes": 2,
+    "max_chain_proposals": 512,
+    "max_wall_seconds": 540
+  },
+  "wall_seconds": 1.3737501000287011,
+  "target_rings_before": 3,
+  "eligible_chains": [
+    58,
+    59,
+    60,
+    61,
+    62,
+    66
+  ],
+  "excluded": [],
+  "over_budget_chains": [],
+  "chain_proposals": 6,
+  "accepted_chains": [
+    58,
+    59,
+    60,
+    61,
+    62,
+    66
+  ],
+  "events": [
+    {
+      "pass": 0,
+      "chains": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        66
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 5,
+      "baseline_bad_pairs": 3,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    }
+  ],
+  "unrepaired_collapses": [],
+  "invalid_raw_rings_remaining": [],
+  "status": "BOUNDED_LOCAL_CORRECTION_ONLY_GLOBAL_GATE_NOT_CERTIFIED",
+  "limitations": [
+    "Two-unit-edge L collapses only",
+    "One cubic rounds unit-L bend by about.177px; no exact sharp-corner claim",
+    "Existing unresolved invalid raw/fitted geometry retained, not silently repaired",
+    "Adaptive.01px flattening and Shapely predicates are numerical, not certified continuous topology",
+    "Area restoration is not fidelity or anti-mosaic acceptance; original unit-scale faces remain and rounded cells are not coherent artwork",
+    "No new paths/cells/topology, raw-grid fallback, appearance, source pixels or truth"
+  ],
+  "case": "K01_linear_corner_hole",
+  "condition": "B",
+  "process_cpu_seconds": 1.328125,
+  "candidate_sha256": "0a52d0715738a8ce9b43185d709460bb3eb7bdfb9d7ffdfffdc84841e8be9f1f",
+  "labels_sha256": "de2d51adce7ae15ee95bebb6ecb50868707c5468d7588c552d2231a38930bd7f"
+}

@@ -1,0 +1,84 @@
+test_empty_reference_never_passes (test_study.MeasurementSafeguards.test_empty_reference_never_passes) ... ok
+test_false_join_of_two_disjoint_structures (test_study.MeasurementSafeguards.test_false_join_of_two_disjoint_structures) ... ok
+test_false_split_of_one_structure (test_study.MeasurementSafeguards.test_false_split_of_one_structure) ... ok
+test_adjacent_tonal_regions_not_globally_merged (test_track_a.TrackATests.test_adjacent_tonal_regions_not_globally_merged) ... ERROR
+test_blank_gap_rejected_no_global_fallback (test_track_a.TrackATests.test_blank_gap_rejected_no_global_fallback) ... ERROR
+test_determinism_and_input_immutability (test_track_a.TrackATests.test_determinism_and_input_immutability) ... ERROR
+test_pair_budget_and_convex_mixture (test_track_a.TrackATests.test_pair_budget_and_convex_mixture) ... ERROR
+test_parallel_offset_features_not_joined (test_track_a.TrackATests.test_parallel_offset_features_not_joined) ... ERROR
+test_supported_missing_label_connector (test_track_a.TrackATests.test_supported_missing_label_connector) ... ERROR
+test_new_collision_is_rejected_and_original_retained (test_track_b.GuardTests.test_new_collision_is_rejected_and_original_retained) ... ok
+test_nonunit_shape_is_not_repaired_by_grid_outline (test_track_b.GuardTests.test_nonunit_shape_is_not_repaired_by_grid_outline) ... ok
+test_shared_t_junction_endpoints_and_reversed_references_unchanged (test_track_b.GuardTests.test_shared_t_junction_endpoints_and_reversed_references_unchanged) ... ok
+test_short_l_area_and_hole_preserved_without_grid_fallback (test_track_b.GuardTests.test_short_l_area_and_hole_preserved_without_grid_fallback) ... ok
+
+======================================================================
+ERROR: test_adjacent_tonal_regions_not_globally_merged (test_track_a.TrackATests.test_adjacent_tonal_regions_not_globally_merged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 34, in test_adjacent_tonal_regions_not_globally_merged
+    out,audit,_=discover(rgb,labels);self.assertEqual(audit['accepted_bridges'],0);np.testing.assert_array_equal(out,labels)
+                ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+======================================================================
+ERROR: test_blank_gap_rejected_no_global_fallback (test_track_a.TrackATests.test_blank_gap_rejected_no_global_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 20, in test_blank_gap_rejected_no_global_fallback
+    rgb,labels=line_control(False);out,audit,_=discover(rgb,labels)
+                                               ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+======================================================================
+ERROR: test_determinism_and_input_immutability (test_track_a.TrackATests.test_determinism_and_input_immutability)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 24, in test_determinism_and_input_immutability
+    rgb,labels=line_control();original=labels.copy();r1,a1,e1=discover(rgb,labels);r2,a2,e2=discover(rgb,labels)
+                                                              ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+======================================================================
+ERROR: test_pair_budget_and_convex_mixture (test_track_a.TrackATests.test_pair_budget_and_convex_mixture)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 36, in test_pair_budget_and_convex_mixture
+    rgb,labels=line_control();out,audit,_=discover(rgb,labels,{'max_endpoint_pairs':0})
+                                          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+======================================================================
+ERROR: test_parallel_offset_features_not_joined (test_track_a.TrackATests.test_parallel_offset_features_not_joined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 30, in test_parallel_offset_features_not_joined
+    out,audit,_=discover(rgb,labels);self.assertEqual(audit['accepted_bridges'],0);np.testing.assert_array_equal(out,labels)
+                ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+======================================================================
+ERROR: test_supported_missing_label_connector (test_track_a.TrackATests.test_supported_missing_label_connector)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\test_track_a.py", line 15, in test_supported_missing_label_connector
+    rgb,labels=line_control();out,audit,evidence=discover(rgb,labels)
+                                                 ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_THIN_STRUCTURE_TOPOLOGY_01\track_a.py", line 127, in discover
+    count=np.bincount(inverse);means=np.column_stack([np.bincount(inverse,weights=lab[:,:,i].ravel())/count for i in range(3)])
+ValueError: object too deep for desired array
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.056s
+
+FAILED (errors=6)

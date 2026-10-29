@@ -1,0 +1,10 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T11:43:19Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T11:43:19Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T11:43:19Z"}
+END_DOC_PROVENANCE -->
+# Track B isolated WAL
+
+- 2026-10-29T08:17:17Z | Read previous complete-geometry report, final independent QA, normalized graph utilities, common-face normalization and analytic signed-area source. Previous matrix supports both upstream partition failure and downstream short-L collapse; global mature-fitter replacement rejected. Parent approved only a bounded new Track B intervention, no production architecture changes.
+- 2026-10-29T08:20:20Z | Proposed uniform raw three-vertex unit-L eligibility and a single cubic[A,B,B,C], retaining endpoints/shared chains/faces. Parent approved parameters and bounded rollback before benchmark. initialize_safe accepts geometry only; no evaluator truth, pixels or appearance. All config values were sent for protocol freeze.
+- Repository apply_patch was denied. One supported permission request was already pending when parent requested avoiding further permission prompts; implementation proceeded under work/thin_track_b immediately instead. No repeated permission request was issued. Parent integration is required.
+- Authored source reuses inherited pure geometry helpers and analytic area calculation without executing historical script loops. Implements coupled component proposals, analytic area/winding, numerical ring/hole checks, no-new-intersection/touch identities and frame/near-pair rejection, exact rollback and explicit unresolved failure reporting. No raw-grid, box, cell or region fallback exists. Existing unit-scale faces remain; rounding is not evidence of coherent vector reconstruction.
+- Four abstract geometry tests passed in0.939seconds: paired-L area/hole recovery; shared-junction endpoint/reference preservation; new collision rollback; nonunit unrepaired negative. No candidate benchmark has run by this agent. Source/tests/design/WAL staged for parent integration and independent QA.
