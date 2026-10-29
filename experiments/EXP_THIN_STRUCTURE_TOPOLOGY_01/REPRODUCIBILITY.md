@@ -1,11 +1,11 @@
 <!-- DOC_PROVENANCE
-{"created_at_utc": "2026-10-29T11:43:19Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T11:43:19Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T11:43:19Z"}
+{"created_at_utc": "2026-10-29T11:43:19Z", "last_action": "EDITED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T11:45:56Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T11:43:19Z"}
 END_DOC_PROVENANCE -->
 # Reproducibility
 
 Windows run used Python3.14.2, NumPy2.4.4, SciPy1.18.1, scikit-image0.26, OpenCV4.13.0.92, Pillow12.1.1, psutil7.2.2, Shapely2.2.0 and resvg0.49.0. No hosted AI or neural model. Inherited Arena source is an external dependency from the owner-provided ZIP, with hashes pinned by the preceding isolation package; rights are unresolved, so not copied into product code.
 
-From the actual repo, set AGD_ISOLATION_WORK to the task work directory containing geometry-deps and resvg. Use the same pinned previous experiment and external ZIP extraction as described in EXP_COMPLETE_GEOMETRY_ISOLATION_01/REPRODUCIBILITY.md. The working Python environment is outside Git.
+From the actual repo, set AGD_ISOLATION_WORK to the task work directory containing geometry-deps and resvg. Use the same pinned previous experiment and external ZIP extraction as described in EXP_COMPLETE_GEOMETRY_ISOLATION_01/REPRODUCE.md. The working Python environment is outside Git.
 
 ```powershell
 $Repo = 'C:\Users\Mohamed\Desktop\AiGraphicDesigner'

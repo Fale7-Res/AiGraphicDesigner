@@ -18,6 +18,24 @@
         }
       ]
     },
+    "crown_review.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-THIN-CROWN-REVIEW | 2026-10-29T11:45:56Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
     "dashboard.py": {
       "role": "Isolated Windows fidelity validation experiment",
       "summary": "# START CHANGE AGD-THIN-DASHBOARD | 2026-10-29T08:39:37Z | CREATED | Author: root",
