@@ -1,0 +1,112 @@
+{
+  "experiment": "EXP_THIN_STRUCTURE_TOPOLOGY_01",
+  "status": "FROZEN_BEFORE_CANDIDATES",
+  "baseline_commit": "1a401a1b2c9e95233625143f790ade6816b8427c",
+  "architecture": "NOT_APPROVED",
+  "geometry_milestone": "NOT_ACCEPTED",
+  "hypotheses": {
+    "A": "Localized source-supported thin connectivity/boundary discovery repairs missing raw support without global granularity increase or pixel-cell export.",
+    "B": "Constrained single-cubic rounding of chord-collapsed unitL chains can preserve raw-valid ring area without new topology damage; this alone does not establish structural meaning or professional geometry."
+  },
+  "cases": [
+    "fine_features",
+    "G06_arabic",
+    "A01_shield",
+    "K01_linear_corner_hole"
+  ],
+  "matrix": {
+    "baseline": "Reuse exact saved S_A+F_A common-face graphs and labels. No baseline segmentation/fit rerun. Saved geometry newly measured for added diagnostics only.",
+    "A_only": "New discovered labels, unmodified external inherited F_A initialization.",
+    "B_only": "Original S_A labels and face references, topology-safe guard starting saved F_A.",
+    "A_plus_B": "Atmost2cases, predefined fine_features and A01_shield, only after separateA/B evidence. No parameter retuning."
+  },
+  "track_b": {
+    "model": "single_cubic_A_B_B_C",
+    "area_epsilon": 1e-06,
+    "min_repaired_area_ratio": 0.1,
+    "endpoint_gap_max": 0.001,
+    "flatten_bound": 0.01,
+    "near_pair_distance": 0.02,
+    "collinear_chord_tolerance": 1e-08,
+    "max_eligible_chains": 256,
+    "max_passes": 2,
+    "max_chain_proposals": 512,
+    "max_wall_seconds": 540,
+    "eligibility": "Exactly3rawvertices/2orthogonalunitcracks; chordcollapsedoldcontrols<=1e-8; incident rawvalid nonzero ring withzero fittedarea. SharedIDs/endpoints/faces preserved. Reject newbadpair identities, area/winding/containment/frame defects. No rawlattice fallback."
+  },
+  "combined_gate": {
+    "fine_features": "A_fine must acceptsourceedits and improve rawknownIoU or reduce rawcomponent-count error, withno rawIoUregression>0.005; B_fine reduces>=1collapse andno newbadpair/validringregression.",
+    "A01_shield": "A_Shield accepts sourceedits and improves rawcriticalcontour evidence atfrozenannotation uncertaintyband; B_Shield reduces>=1collapse withno guardregression.",
+    "scope": "Atmostthese2cases; supportrequiredpersametarget, noArabicproxytriggerforothercases. Mechanism-gatedexploratoryresearch, not independentholdout or deployedwinnerselection. No tuning."
+  },
+  "evaluation": {
+    "inherit_policy_from": "../EXP_COMPLETE_GEOMETRY_ISOLATION_01/protocol.json",
+    "all_original_thresholds_unchanged": true,
+    "critical_component_veto": true,
+    "known_iou_min": 0.97,
+    "thin_area_recall_min": 0.95,
+    "known_component_and_hole_counts": "exact atfixed8x4connectivity; samplinglimitsdisclosed",
+    "known_boundary_mean_max_px": 0.45,
+    "known_boundary_p95_max_px": 1.25,
+    "shield_strict_1px": "NOT_ESTABLISHED; inherited1.2\u20132pxAItracesunchanged,nohumanreferenceavailable",
+    "new_separation_metric": "Connectedtruthcomponent-overlap>=5percentofthattruthcomponentsarea; falsejoin/split excess. EmptytruthNOT_EVALUABLE.",
+    "new_width_metric": "2*distance-transformwidth atfrozenttruthmedialsamples; predictedwidth0ifmissing; emptyreferenceNone/NOT_EVALUABLE.",
+    "arabic": "Sourcebinarythresholdproxy topology, notindependenthighresolutionglyphGT",
+    "anti_mosaic": "Original10percentvisibleareaalarm plus1/2/4pxsize,lattice,length,complexity. No blanketfineROIexemption; no addedcells/source-gridfallback; existingtinycellsnotassumedmeaningful",
+    "topology": "Sharedrefs,gaps,area,winding,conservative0.01flattenedself/cross/near/containment,actualSVGcoverage. Numericalchecksnotanalyticcertificates."
+  },
+  "budgets": {
+    "cases": 4,
+    "new_primary_candidates": 8,
+    "combined_max": 2,
+    "worker_wall_seconds": 600,
+    "worker_sampled_memory_mib": 4096,
+    "experiment_cpu_budget_seconds": 7200,
+    "active_engineering_limit_hours": 8,
+    "per_case_discovery_edit_max": 32,
+    "per_case_discovery_connection_length_max_px": 12,
+    "parameter_search": "none",
+    "neural_paid_hosted_APIs": "forbidden"
+  },
+  "integrity": {
+    "reference_files": "references/INHERITED_REFERENCE_PINS.json",
+    "source_and_baseline": "BASELINE_PINS.json",
+    "construction_forbidden_inputs": "Evaluatorreferences/knowntruthSVG/masks/criticalROIs. Constructor signaturesonlyrgb,labels,graph,uniformconfig.",
+    "rights": "Arenaimplementationexternal; finefixture/evidencelocalonlywithhashmanifest. No historic edits.",
+    "publication": "Validatedcoherentcheckpointsmain; retryauthenticationonlyonceinthisnewowner-publishedsession. Ifblockedprovidedexactownercommandscontinue."
+  },
+  "created_utc": "2026-10-29T08:21:39.297163+00:00",
+  "track_a": {
+    "version": "endpoint_color_geodesic_v1",
+    "skeleton_connectivity": 8,
+    "endpoint_degree": 1,
+    "endpoint_tangent_steps": 3,
+    "max_endpoint_radius_px": 2.0,
+    "max_pair_distance_px": 12.0,
+    "max_path_steps": 12,
+    "max_new_connector_pixels": 12,
+    "max_bridges": 32,
+    "max_label_lab_distance": 12.0,
+    "min_facing_cosine": 0.75,
+    "max_endpoint_width_ratio": 2.5,
+    "radius_floor": 0.5,
+    "corridor_radius_px": 1.5,
+    "min_fg_bg_lab_contrast": 15.0,
+    "min_mixture_fraction": 0.15,
+    "max_mixture_residual_lab": 8.0,
+    "min_mean_mixture_fraction": 0.35,
+    "path_cost": "1+2*(1-t)+residual/8",
+    "common_gap_label_required": true,
+    "original_adjacent_pair_forbidden": true,
+    "proposal_order": "pathcost,newpixelcount,minlabel,maxlabel,starty,startx,endy,endx",
+    "max_pair_proposals": 512,
+    "pair_cap_order": "distance,labels,endpointcoordinates beforeDijkstra; truncation disclosed",
+    "foreground_prototype": "Mean of two endpoint-region meanLab vectors",
+    "background_prototype": "Mediancommon-gap sourceLab in1.5\u20133.5pxflank band, segmentbboxmargin4, >=3samples orreject",
+    "tangent": "Inwardtangentfromup-to3skeletonsteps, excludezero; outwardvectorsmustfacetheotherendpoint",
+    "conflicts": "Greedyrecheck;connectorinterioronlycommongap; mergeendpointlabelsto lowerID, gapelsewhereunchanged",
+    "fallback": "none; unchangedlabelsifnoconfidentproposal; no newlabels/cells/rectangles",
+    "source_model_limit": "Lab-line mixture isheuristic, not physicalcompositing/semantictruth."
+  },
+  "frozen_utc": "2026-10-29T08:33:28.092029+00:00"
+}
