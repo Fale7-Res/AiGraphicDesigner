@@ -1,3 +1,6 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T06:50:14Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T06:50:14Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T06:50:14Z"}
+END_DOC_PROVENANCE -->
 # Independent reference review — pre-candidate draft
 
 Reviewed protocol, shield JSON/SVG overlay evidence, known-control manifest, real-case ROIs and REFERENCE_AUDIT.md before any benchmark candidate observations. Inspected original shield independently, then both full and crown 4× reference overlays. No engine fitting, segmentation or candidate experiment was run by QA.

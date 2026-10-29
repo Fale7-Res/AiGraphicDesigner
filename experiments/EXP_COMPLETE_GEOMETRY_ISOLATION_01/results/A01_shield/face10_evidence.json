@@ -1,0 +1,168 @@
+{
+  "face": 10,
+  "chain_ids": [
+    10,
+    13
+  ],
+  "raw_chains": [
+    {
+      "id": 10,
+      "adjacent_face_labels": [
+        9,
+        10
+      ],
+      "pixel_crack_vertices": [
+        [
+          184,
+          12
+        ],
+        [
+          183,
+          12
+        ],
+        [
+          183,
+          13
+        ]
+      ],
+      "closed": false,
+      "segments": [
+        {
+          "type": "C",
+          "p0": [
+            184.0,
+            12.0
+          ],
+          "p3": [
+            183.0,
+            13.0
+          ],
+          "p1": [
+            183.52859547920897,
+            12.471404520791014
+          ],
+          "p2": [
+            183.47140452079105,
+            12.528595479208951
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "adjacent_face_labels": [
+        10,
+        11
+      ],
+      "pixel_crack_vertices": [
+        [
+          183,
+          13
+        ],
+        [
+          184,
+          13
+        ],
+        [
+          184,
+          12
+        ]
+      ],
+      "closed": false,
+      "segments": [
+        {
+          "type": "C",
+          "p0": [
+            183.0,
+            13.0
+          ],
+          "p3": [
+            184.0,
+            12.0
+          ],
+          "p1": [
+            183.47140452079103,
+            12.528595479208969
+          ],
+          "p2": [
+            183.52859547920897,
+            12.471404520791031
+          ]
+        }
+      ]
+    }
+  ],
+  "VTracer_common_chains": [
+    {
+      "id": 10,
+      "adjacent_face_labels": [
+        9,
+        10
+      ],
+      "pixel_crack_vertices": [
+        [
+          184,
+          12
+        ],
+        [
+          183,
+          12
+        ],
+        [
+          183,
+          13
+        ]
+      ],
+      "closed": false,
+      "segments": [
+        {
+          "p0": [
+            184.0,
+            12.0
+          ],
+          "p3": [
+            183.0,
+            13.0
+          ],
+          "type": "L"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "adjacent_face_labels": [
+        10,
+        11
+      ],
+      "pixel_crack_vertices": [
+        [
+          183,
+          13
+        ],
+        [
+          184,
+          13
+        ],
+        [
+          184,
+          12
+        ]
+      ],
+      "closed": false,
+      "segments": [
+        {
+          "p0": [
+            183.0,
+            13.0
+          ],
+          "p3": [
+            184.0,
+            12.0
+          ],
+          "type": "L"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Existing1px raw enclosed cell. Both tested initializers collapse it. This is fitting-introduced loss, not proof the cell is desirable final artwork; no cell inserted as corrective geometry."
+}

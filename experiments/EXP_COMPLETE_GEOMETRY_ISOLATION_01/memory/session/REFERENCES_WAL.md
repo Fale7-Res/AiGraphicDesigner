@@ -1,3 +1,6 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T06:50:14Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T06:50:14Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T06:50:14Z"}
+END_DOC_PROVENANCE -->
 # Evaluator reference work log
 
 2026-10-28T14:18:57+00:00 — Owner GO bounded segmentation x initialization isolation. Protocol read. Viewed original shield369x249 and nearest-neighbor coordinate crops, and original Tux/Arabic/Cat images. Authored independent approximate major shield contours with uncertainty/confidence and critical component declarations; separate uncertain appearance traces. No candidate/label/graph used to annotate. Generated evaluatorSVG line render/overlay and crowncrop only. Known fine/K01 originals registered bySHA; renders/masks kept local outside repo, externalrights unresolved. Real-case feature-reviewROIs frozen asdraft, not exactGT. No reconstruction candidate generation. Status DRAFT_PENDING_INDEPENDENT_QA; parent/QA must approve coverage beforefreeze. Architecture NOT_APPROVED.

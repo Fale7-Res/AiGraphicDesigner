@@ -1,0 +1,4 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T06:50:14Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T06:50:14Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T06:50:14Z"}
+END_DOC_PROVENANCE -->
+Measurement audit only: these preliminary diagnostics omitted implicit SVG Z closures from native standalone rings, while region SVG exports already closed faces. Corrected final evaluator includes actual SVG closepath, never pins open chains or changes fitter output. These preliminary numbers are preserved and superseded by final common-face summary. No benchmark was retuned or re-fitted. 2026-10-29T06:34:37.851963+00:00

@@ -1,3 +1,6 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T06:50:14Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T06:50:14Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T06:50:14Z"}
+END_DOC_PROVENANCE -->
 # Reference audit — evaluator only, pending independent QA
 
 Prepared 2026-10-28T14:18:57+00:00. No candidate generation, engine reconstruction, tracing/search or appearance fitting was run. Global architecture NOT_APPROVED.

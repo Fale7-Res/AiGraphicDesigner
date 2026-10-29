@@ -1,3 +1,7 @@
 # Complete geometry isolation WAL
 
 2026-10-28T14:13:03.173281+00:00 Owner GO received. Prior coverage1359files inventory verified;10tests PASS; local commit bd61aaebf72e0a2a83106139ec69d304713221a8. Normal Git metadata operations now succeed. Schannel HTTPS failed; process-local OpenSSL with certificate verification reads remote ed6072b. Push fails inaccessible wincredman; no credentials bypassed. Exact owner commands supplied immediately. New experiment policy frozen before new candidates; references still pending. No production architecture or appearance authorization.
+
+2026-10-29T06:48:34Z Matrix24conditions completed. Rawunitcrack/adjacency equality12pairs; injective24bit label renders24exact. Common-face mapping preserves nativecontrolpoints/reversal only; nativefacedecomposition confound recorded. SourceQA caught paletteperiod200 andmissingimplicitZ; diagnostics corrected, preliminarymeasurements preserved, nofitrerun. Bothrootcauses supported: exactpolynomialcollapses24confirmed; fineArena raw13vs4truthcomponents. Report noacceptedcandidate, uncertainShieldGT. Mainpublication blockedcredentialstore; no repeatedpush. New codeisolated; allhistory preserved.
+
+2026-10-29T07:04:03.356749+00:00 IndependentdeliveryclosurePASS:13Pythonmirrors48ASTdeclarations,Rust213lines,16sourcepins,8frozenrefs matchworkingANDindexbytes. FinalgeometryNOT_ACCEPTED. Closedwithinapprovedscope; no newarchitecture. Finalcommit receipt inowneroutputs.

@@ -1,0 +1,37 @@
+{
+  "case": "K01_linear_corner_hole",
+  "condition": "S_V_F_A",
+  "coverage": {
+    "status": "NOT_ESTABLISHED_INVALID_RINGS",
+    "invalid_face_labels": [
+      94,
+      122,
+      139,
+      140,
+      145,
+      159
+    ],
+    "note": "No make_valid or hidden polygon repair is applied"
+  },
+  "visible_microgeometry": {
+    "scale": 4,
+    "fully_opaque_exact_color_assigned_fraction": 0.9879292805989583,
+    "unclassified_AA_alpha_fraction": 0.012070719401041667,
+    "scales_px": {
+      "1": {
+        "visible_area_lower_fraction": 0.0,
+        "conservative_upper_fraction": 0.012070719401041667
+      },
+      "2": {
+        "visible_area_lower_fraction": 6.510416666666667e-05,
+        "conservative_upper_fraction": 0.012135823567708334
+      },
+      "4": {
+        "visible_area_lower_fraction": 0.00087890625,
+        "conservative_upper_fraction": 0.012949625651041666
+      }
+    },
+    "alarm_2px_lower_bound_ge10percent": false,
+    "note": "Actual SVG4xvisible-area diagnostic. AA mixtures unclassified; extremely rare blended colors coinciding with palette not analytically excluded. No blanket fineROI exemptions, no proof of professional geometry."
+  }
+}

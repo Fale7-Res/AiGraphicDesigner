@@ -1,3 +1,6 @@
+<!-- DOC_PROVENANCE
+{"created_at_utc": "2026-10-29T06:50:14Z", "last_action": "CREATED", "last_change_id": "AGD-CODEX-WIN-PORT", "last_edited_at_utc": "2026-10-29T06:50:14Z", "last_editor": "root", "tracking_started_at_utc": "2026-10-29T06:50:14Z"}
+END_DOC_PROVENANCE -->
 # Complete geometry isolation 01
 
 Research only. Architecture **NOT_APPROVED**. The owner approved segmentation × initialization isolation, not a new production geometry engine or appearance cycle.

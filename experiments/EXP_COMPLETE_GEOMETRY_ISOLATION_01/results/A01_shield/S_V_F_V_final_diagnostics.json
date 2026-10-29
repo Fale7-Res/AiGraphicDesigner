@@ -1,0 +1,32 @@
+{
+  "case": "A01_shield",
+  "condition": "S_V_F_V",
+  "coverage": {
+    "status": "NUMERICAL_FLATTENED_DIAGNOSTIC",
+    "uncovered_domain_area_px2": 2.1953133950728954,
+    "outside_domain_area_px2": 23.45155044214083,
+    "overlap_area_multiplicity_px2": -1.4551915228366852e-11,
+    "note": "<=.01px curve flattening, double predicates. Not exact analytic certification; alpha compositing separate."
+  },
+  "visible_microgeometry": {
+    "scale": 4,
+    "fully_opaque_exact_color_assigned_fraction": 0.9838167031268706,
+    "unclassified_AA_alpha_fraction": 0.016183296873129374,
+    "scales_px": {
+      "1": {
+        "visible_area_lower_fraction": 0.0,
+        "conservative_upper_fraction": 0.016183296873129374
+      },
+      "2": {
+        "visible_area_lower_fraction": 0.0,
+        "conservative_upper_fraction": 0.016183296873129374
+      },
+      "4": {
+        "visible_area_lower_fraction": 0.0,
+        "conservative_upper_fraction": 0.016183296873129374
+      }
+    },
+    "alarm_2px_lower_bound_ge10percent": false,
+    "note": "Actual SVG4xvisible-area diagnostic. AA mixtures unclassified; extremely rare blended colors coinciding with palette not analytically excluded. No blanket fineROI exemptions, no proof of professional geometry."
+  }
+}
