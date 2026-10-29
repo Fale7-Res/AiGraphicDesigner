@@ -1,0 +1,46 @@
+{
+  "clutter_warning": false,
+  "config": {
+    "constructor_uses_labels_or_references": false,
+    "dense_edge_fraction_warning": 0.15,
+    "edge_sigmas": [
+      0.6,
+      1.2
+    ],
+    "high_threshold": 0.1,
+    "low_threshold": 0.04,
+    "mode": "reflect",
+    "output_is_reconstructed_geometry": false,
+    "persistence_distance_px": 1.0,
+    "ridge_sigmas": [
+      0.7,
+      1.2,
+      2.0
+    ],
+    "use_quantiles": false,
+    "version": "source_evidence_only_v1"
+  },
+  "limitations": [
+    "Evidence maps are not recovered curves, regions or physical boundaries.",
+    "Canny output is pixel-indexed; subpixel localization is not implemented.",
+    "Sato intensity ridges may be shading and do not establish width or topology.",
+    "Chromatic ridges without luminance contrast can be missed by Sato.",
+    "No threshold tuning or postprocessing to improve benchmark scores."
+  ],
+  "numpy_version": "2.4.4",
+  "persistent_edge_fraction": 0.03891369047619048,
+  "persistent_edge_pixels": 2615,
+  "rgb_array_sha256": "65c73ad566741a0eebe39683b826a35e000e130af735d06dd27954a1ec78efdb",
+  "ridge_maxima": {
+    "dark": 0.46267083287239075,
+    "light": 0.4522134065628052
+  },
+  "shape": [
+    320,
+    210,
+    3
+  ],
+  "skimage_version": "0.26.0",
+  "source_file_sha256": "f32f3b77918d691f977f782055dfb371a551027224c657bf0bfd6fe109e9d32d",
+  "wall_seconds": 0.3041959999827668
+}

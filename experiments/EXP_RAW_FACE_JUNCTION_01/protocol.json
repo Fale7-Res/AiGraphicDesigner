@@ -1,0 +1,99 @@
+{
+  "experiment": "EXP_RAW_FACE_JUNCTION_01",
+  "status": "FROZEN_BEFORE_CANDIDATES",
+  "architecture": "NOT_APPROVED",
+  "geometry": "NOT_ACCEPTED",
+  "starting_commit": "29c7ea331f82c5274392421b2bec8a5213d2e08c",
+  "created_utc": "2026-10-29T12:18:06.925220+00:00",
+  "hypothesis": "Raw-invalid walks at repeated chain endpoints can be decomposed into simple closed cycles without altering labels/curves. This representation change may permit unchanged local B guards; visible completeness may remain unchanged.",
+  "cases": [
+    "fine_features",
+    "G06_arabic",
+    "A01_shield",
+    "K01_linear_corner_hole"
+  ],
+  "conditions": {
+    "O": "Saved baseline graph, reused not refit",
+    "R": "Decompose face walks at repeated exact chain endpoints, preserve every directed per-label chain occurrence",
+    "B": "Saved prior guarded graph reused, not rerun",
+    "RB": "Identical unchanged prior guard applied to R only after invariance gates"
+  },
+  "representation": {
+    "method": "Recursive exact repeated-endpoint closed-walk decomposition",
+    "geometry_changes": "none; same chain IDs, all segments/raw vertices/incidence/regionIDs/labels",
+    "chain_splitting": "forbidden; internal-only repeat blocks affected walk",
+    "zero_area_cycle": "preserve and flag, never prune",
+    "max_splits_per_case": 8192,
+    "closure_tolerance_px": 1e-09,
+    "new_objects": "Only loop lists, no new path/chain/label/region/stroke",
+    "rollback": "If an endpoint walk is open or decomposition loses directed occurrence, reject and retain original walk; RB only if whole-case controls pass"
+  },
+  "matched_controls": {
+    "directed_occurrences": "Exact multiset per-label(chainID,forward) before/after",
+    "chains": "JSON equality and unchanged labels bytes",
+    "raw_render_equivalence": "Whole region-ID SVG exact RGBA pixel equality O vs R at native and8x; all label identities included, not foreground only",
+    "raw_signed_area": "Each original raw walk sum of split signed areas must agree <=1e-9",
+    "fitted_render_equivalence": "O vs R8x must match; mismatch is a failure of pure representation premise, block RB",
+    "B_guard": "Import unchanged EXP_THIN_STRUCTURE_TOPOLOGY_01/track_b.py, exact frozen configuration; grouping/target denominators may change and must be disclosed"
+  },
+  "evaluation": {
+    "inherit": "Prior frozen known-control and critical-component policies unchanged",
+    "known_iou_min": 0.97,
+    "thin_area_recall_min": 0.95,
+    "known_boundary_mean_max_px": 0.45,
+    "known_boundary_p95_max_px": 1.25,
+    "shield_uncertainty": "1.2\u20132px approximate AI guides unchanged, strict1pxNOT_ESTABLISHED",
+    "arabic": "Source-threshold proxy only, not glyphGT",
+    "ring_denominators": "Report original mapping and all new cycles; count reductions alone cannot establish repair",
+    "validity": "Raw/fitted rings, pinches/junction order, chain-pair defects, shared references, signed area, holes and containment, numerical coverage, actual SVG8xownership differences",
+    "structure": "Known IoU/components/holes, named Shield interior guide coverage, actual native/4x/16xdrawings; fixed-label missing details cannot be invented",
+    "anti_mosaic": "No new chain geometry/cells, old1/2/4pxdistributions+visible2pxalarm10percent retained; existing tiny regions not automatically meaningful"
+  },
+  "discovery_probe": {
+    "scope": "Independent evidence-only assessment, no label/graph mutation, no final geometric acceptance",
+    "input": "Native source RGB only; no labels/refs/ROIs supplied constructor",
+    "method": "CannyLab channel union at sigma.6,1.2; SatoL both polarities at sigmas.7,1.2,2",
+    "Lab_normalization": [
+      "L/100",
+      "a/128",
+      "b/128"
+    ],
+    "canny": {
+      "low_threshold": 0.04,
+      "high_threshold": 0.1,
+      "use_quantiles": false,
+      "mode": "reflect"
+    },
+    "persistent_edges": "Within1px of other-scale edge union",
+    "sato": "Keep response float maps, no segmentation threshold",
+    "evaluation_only": "Persistent source edges>2pxfrom inherited raw cracks; no new truth claims",
+    "density_alarm_fraction": 0.15,
+    "search": "none; no parameter tuning; stop branch on resource limit or unauditable dense evidence",
+    "outputs": "NPZmaps, source overlays and assessment; no new reconstruction engine"
+  },
+  "budgets": {
+    "cases": 4,
+    "representation_candidates": 4,
+    "new_B_runs_max": 4,
+    "worker_wall_seconds": 600,
+    "worker_memory_mib": 4096,
+    "discovery_case_seconds": 90,
+    "discovery_case_memory_mib": 1024,
+    "total_cpu_seconds": 7200,
+    "active_engineering_hours": 6,
+    "parameter_search": "none"
+  },
+  "failure_and_stop": [
+    "Raw/fitted rendering equivalence fails: preserve negative, no RB oncase",
+    "No safeBunblocking: reportrepresentation-onlynegative, do not weaken guards",
+    "No visible completeness gain: no geometryacceptance, recommend discoveryratherthan indefinite repair",
+    "No new production architecture/appearance or MagicLayers"
+  ],
+  "integrity": {
+    "baseline": "BASELINE_PINS.json",
+    "references": "references/INHERITED_REFERENCE_PINS.json",
+    "construction_forbidden": "Evaluatortruth/criticalROIs/case-specificgeometry",
+    "rights": "Finefixture/derivativeslocalonly; Arenaexternalread-only",
+    "publication": "Meaningfulcheckpointsmain; once-per-cycleauthdiagnosticthenexactownerpublisherifblocked"
+  }
+}
