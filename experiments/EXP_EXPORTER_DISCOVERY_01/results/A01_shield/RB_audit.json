@@ -1,0 +1,1472 @@
+{
+  "config": {
+    "model": "single_cubic_A_B_B_C",
+    "area_epsilon": 1e-06,
+    "min_repaired_area_ratio": 0.1,
+    "endpoint_gap_max": 0.001,
+    "flatten_bound": 0.01,
+    "near_pair_distance": 0.02,
+    "collinear_chord_tolerance": 1e-08,
+    "max_eligible_chains": 256,
+    "max_passes": 2,
+    "max_chain_proposals": 512,
+    "max_wall_seconds": 540
+  },
+  "wall_seconds": 18.690972700016573,
+  "target_rings_before": 133,
+  "eligible_chains": [
+    10,
+    12,
+    13,
+    15,
+    43,
+    48,
+    65,
+    66,
+    122,
+    124,
+    125,
+    127,
+    136,
+    138,
+    140,
+    141,
+    150,
+    151,
+    159,
+    161,
+    162,
+    163,
+    164,
+    165,
+    167,
+    168,
+    170,
+    174,
+    188,
+    191,
+    223,
+    227,
+    237,
+    239,
+    243,
+    249,
+    262,
+    267,
+    295,
+    301,
+    302,
+    305,
+    316,
+    322,
+    325,
+    329,
+    335,
+    336,
+    344,
+    345,
+    347,
+    348,
+    350,
+    351,
+    352,
+    354,
+    358,
+    359,
+    360,
+    361,
+    364,
+    366,
+    368,
+    370,
+    371,
+    372,
+    373,
+    376,
+    377,
+    378,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    434,
+    435,
+    436,
+    440,
+    441,
+    445,
+    446,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    461,
+    462,
+    463,
+    464,
+    466,
+    467,
+    468,
+    470,
+    474,
+    475,
+    476,
+    477,
+    479,
+    480,
+    482,
+    483,
+    484,
+    485,
+    489,
+    491,
+    492,
+    495,
+    503,
+    509,
+    528,
+    530,
+    531,
+    532,
+    535,
+    536,
+    544,
+    546,
+    551,
+    552,
+    567,
+    568
+  ],
+  "excluded": [],
+  "over_budget_chains": [],
+  "chain_proposals": 298,
+  "accepted_chains": [
+    10,
+    12,
+    13,
+    15,
+    43,
+    48,
+    65,
+    66,
+    122,
+    124,
+    125,
+    127,
+    223,
+    227,
+    262,
+    267,
+    325,
+    329,
+    378,
+    382,
+    383,
+    386,
+    387,
+    390,
+    391,
+    394,
+    395,
+    400,
+    401,
+    404,
+    405,
+    408,
+    409,
+    413,
+    414,
+    417,
+    418,
+    421,
+    422,
+    425,
+    426,
+    429,
+    430,
+    434,
+    528,
+    530,
+    531,
+    532,
+    546,
+    552
+  ],
+  "events": [
+    {
+      "pass": 0,
+      "chains": [
+        10,
+        12,
+        13,
+        15,
+        325,
+        329,
+        528,
+        530,
+        531,
+        532,
+        546,
+        552
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 10,
+      "baseline_bad_pairs": 6,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        43,
+        48,
+        65,
+        66
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 5,
+      "baseline_bad_pairs": 2,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        122,
+        125
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 2,
+      "baseline_bad_pairs": 1,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        124,
+        127
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 2,
+      "baseline_bad_pairs": 1,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        136,
+        138,
+        140,
+        141,
+        159,
+        161,
+        162,
+        164,
+        165,
+        170,
+        188,
+        191
+      ],
+      "accepted": false,
+      "rejections": [
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "109",
+            0
+          ]
+        },
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "112",
+            0
+          ]
+        }
+      ],
+      "affected_rings": 8,
+      "baseline_bad_pairs": 6,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        150,
+        151,
+        163,
+        167,
+        168,
+        174,
+        237,
+        239,
+        243,
+        249,
+        295,
+        301,
+        302,
+        305,
+        316,
+        322,
+        335,
+        336,
+        344,
+        345,
+        347,
+        348,
+        350,
+        351,
+        352,
+        354,
+        358,
+        359,
+        360,
+        361,
+        364,
+        366,
+        368,
+        370,
+        371,
+        372,
+        373,
+        376,
+        377,
+        380,
+        381,
+        384,
+        385,
+        388,
+        389,
+        392,
+        393,
+        396,
+        397,
+        402,
+        403,
+        406,
+        407,
+        410,
+        411,
+        415,
+        416,
+        419,
+        420,
+        423,
+        424,
+        427,
+        428,
+        431,
+        432,
+        435,
+        436,
+        440,
+        441,
+        445,
+        446,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        461,
+        462,
+        463,
+        464,
+        466,
+        467,
+        468,
+        470,
+        474,
+        475,
+        476,
+        477,
+        479,
+        480,
+        482,
+        483,
+        484,
+        485,
+        489,
+        491,
+        492,
+        495,
+        503,
+        509,
+        535,
+        536,
+        544,
+        551,
+        567,
+        568
+      ],
+      "accepted": false,
+      "rejections": [
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "11",
+            7
+          ]
+        },
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "247",
+            0
+          ]
+        }
+      ],
+      "affected_rings": 70,
+      "baseline_bad_pairs": 56,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        223,
+        227,
+        262,
+        267
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 5,
+      "baseline_bad_pairs": 2,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 0,
+      "chains": [
+        378,
+        382,
+        383,
+        386,
+        387,
+        390,
+        391,
+        394,
+        395,
+        400,
+        401,
+        404,
+        405,
+        408,
+        409,
+        413,
+        414,
+        417,
+        418,
+        421,
+        422,
+        425,
+        426,
+        429,
+        430,
+        434
+      ],
+      "accepted": true,
+      "rejections": [],
+      "affected_rings": 15,
+      "baseline_bad_pairs": 13,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 1,
+      "chains": [
+        136,
+        138,
+        140,
+        141,
+        159,
+        161,
+        162,
+        164,
+        165,
+        170,
+        188,
+        191
+      ],
+      "accepted": false,
+      "rejections": [
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "109",
+            0
+          ]
+        },
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "112",
+            0
+          ]
+        }
+      ],
+      "affected_rings": 8,
+      "baseline_bad_pairs": 6,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    },
+    {
+      "pass": 1,
+      "chains": [
+        150,
+        151,
+        163,
+        167,
+        168,
+        174,
+        237,
+        239,
+        243,
+        249,
+        295,
+        301,
+        302,
+        305,
+        316,
+        322,
+        335,
+        336,
+        344,
+        345,
+        347,
+        348,
+        350,
+        351,
+        352,
+        354,
+        358,
+        359,
+        360,
+        361,
+        364,
+        366,
+        368,
+        370,
+        371,
+        372,
+        373,
+        376,
+        377,
+        380,
+        381,
+        384,
+        385,
+        388,
+        389,
+        392,
+        393,
+        396,
+        397,
+        402,
+        403,
+        406,
+        407,
+        410,
+        411,
+        415,
+        416,
+        419,
+        420,
+        423,
+        424,
+        427,
+        428,
+        431,
+        432,
+        435,
+        436,
+        440,
+        441,
+        445,
+        446,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        461,
+        462,
+        463,
+        464,
+        466,
+        467,
+        468,
+        470,
+        474,
+        475,
+        476,
+        477,
+        479,
+        480,
+        482,
+        483,
+        484,
+        485,
+        489,
+        491,
+        492,
+        495,
+        503,
+        509,
+        535,
+        536,
+        544,
+        551,
+        567,
+        568
+      ],
+      "accepted": false,
+      "rejections": [
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "11",
+            7
+          ]
+        },
+        {
+          "code": "invalid_or_zero_affected_ring",
+          "ring": [
+            "247",
+            0
+          ]
+        }
+      ],
+      "affected_rings": 70,
+      "baseline_bad_pairs": 56,
+      "candidate_bad_pairs": 0,
+      "unresolved_near_pairs": 0
+    }
+  ],
+  "unrepaired_collapses": [
+    {
+      "face": 21,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 25,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.1226575225009583e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 26,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 3.694822225952521e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 27,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 1.4352963262354024e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 29,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.9895196601282805e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 32,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 3.836930773104541e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 34,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -7.673861546209082e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 57,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 65,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 81,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -7.531752999057062e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 114,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 124,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 126,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.6716406864579767e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 132,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 134,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -3.836930773104541e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 140,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 142,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 144,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 145,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 148,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 153,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.8990143619012088e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 158,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.7053025658242404e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 160,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 176,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 180,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 191,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 4.092726157978177e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 193,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -4.092726157978177e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 197,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 199,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 1.1539214028744027e-11,
+      "raw_valid": true
+    },
+    {
+      "face": 200,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -2.0747847884194925e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 203,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 207,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 1.4779288903810084e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 210,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 2.0463630789890885e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 215,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -2.6147972675971687e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 218,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 1.3784529073745944e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 221,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -6.821210263296962e-13,
+      "raw_valid": true
+    },
+    {
+      "face": 223,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.3997691894473974e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 225,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 7.503331289626658e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 226,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 229,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 230,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 6.480149750132114e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 233,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -3.5456082514429e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 234,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 2.7569058147491887e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 237,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 2.6716406864579767e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 243,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": 1.5916157281026244e-11,
+      "raw_valid": true
+    },
+    {
+      "face": 245,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 9.748646334628575e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 251,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 3.637978807091713e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 254,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.6768808563938364e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 255,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 261,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 262,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 263,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 265,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 266,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 270,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 271,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 273,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 3.524291969370097e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 274,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 275,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 276,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 278,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -6.650680006714538e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 279,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 282,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 284,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 286,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 288,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 290,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 293,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 295,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 297,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 299,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 301,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 303,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 305,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 307,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 309,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 313,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 317,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 318,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 319,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 320,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 321,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -1.4210854715202004e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 322,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 323,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -8.526512829121202e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 324,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -7.815970093361102e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 325,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 326,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.1368683772161603e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 327,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 328,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.1316282072803006e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 331,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.1316282072803006e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 332,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 333,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -7.815970093361102e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 334,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -7.815970093361102e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 335,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -7.815970093361102e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 336,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 345,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 353,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 0.0,
+      "raw_valid": true
+    },
+    {
+      "face": 361,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.1316282072803006e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 362,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -8.810729923425242e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 363,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 2.8421709430404007e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 364,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -2.8421709430404007e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 367,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 5.684341886080802e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 377,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -5.144329406903125e-12,
+      "raw_valid": true
+    },
+    {
+      "face": 379,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": -3.552713678800501e-14,
+      "raw_valid": true
+    },
+    {
+      "face": 382,
+      "ring": 0,
+      "raw_area": 2.0,
+      "fitted_area": -1.0771827874123119e-11,
+      "raw_valid": true
+    },
+    {
+      "face": 383,
+      "ring": 0,
+      "raw_area": 1.0,
+      "fitted_area": 6.707523425575346e-12,
+      "raw_valid": true
+    }
+  ],
+  "invalid_raw_rings_remaining": [],
+  "status": "BOUNDED_LOCAL_CORRECTION_ONLY_GLOBAL_GATE_NOT_CERTIFIED",
+  "limitations": [
+    "Two-unit-edge L collapses only",
+    "One cubic rounds unit-L bend by about.177px; no exact sharp-corner claim",
+    "Existing unresolved invalid raw/fitted geometry retained, not silently repaired",
+    "Adaptive.01px flattening and Shapely predicates are numerical, not certified continuous topology",
+    "Area restoration is not fidelity or anti-mosaic acceptance; original unit-scale faces remain and rounded cells are not coherent artwork",
+    "No new paths/cells/topology, raw-grid fallback, appearance, source pixels or truth"
+  ]
+}

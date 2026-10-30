@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_EXPORTER_DISCOVERY_01\measure.py", line 83, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_EXPORTER_DISCOVERY_01\measure.py", line 77, in run
+    m=evaluate_study.evaluate_candidate(case,n);old=json.loads(Path(items.get(n+'_metrics.json',items['B_metrics.json'])['path']).read_text()) if n!='RB' else None
+                                                               ^^^^
+NameError: name 'Path' is not defined

@@ -1,0 +1,133 @@
+{
+  "scope": "Source inspection, not exhaustive dynamic dependency proof",
+  "svg_graph_mentions": [
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/analyze_matrix.py",
+      "line": 54,
+      "text": "rawsvg=out/(seg+'_'+init+'_raw_regions.svg');rawsvg.write_text(svg_graph(g,raw=True,regions=True),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/analyze_matrix.py",
+      "line": 71,
+      "text": "svg=out/(name+'_'+suffix+'.svg');svg.write_text(svg_graph(g,raw=raw,regions=regions),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/audit_raw_labels.py",
+      "line": 18,
+      "text": "p=out/(seg+'_'+f+'_raw_unique_ids.svg');p.write_text(svg_graph(g,raw=True,regions=True),encoding='utf-8');render(p,p.with_suffix('.png'))"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/final_diagnostics.py",
+      "line": 32,
+      "text": "svg=out/(name+'_visible_ids.svg');svg.write_text(svg_graph(g,regions=True),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/final_diagnostics.py",
+      "line": 59,
+      "text": "tree=ET.fromstring(svg_graph(obj,raw=raw));tree.set('viewBox',f'{lo[0]} {lo[1]} {hi[0]-lo[0]} {hi[1]-lo[1]}');tree.set('width','512');tree.set('height','512')"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/geometry_eval.py",
+      "line": 72,
+      "text": "def svg_graph(graph,raw=False,regions=False,foreground=None):"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/make_overlays.py",
+      "line": 18,
+      "text": "raw=ET.fromstring(svg_graph(g,raw=True));fit=ET.fromstring(svg_graph(g))"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/package_evidence.py",
+      "line": 52,
+      "text": "g=json.loads((out/(name+'.json')).read_text());p=out/(name+'_curves.svg');p.write_text(svg_graph(g),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/test_isolation.py",
+      "line": 31,
+      "text": "xml=ET.fromstring(svg_graph(graph,regions=True,foreground={1}))"
+    },
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/validate_geometry.py",
+      "line": 31,
+      "text": "svg=out/(name+'_foreground.svg');svg.write_text(svg_graph(g,regions=True,foreground=set(foreground)),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_RAW_FACE_JUNCTION_01/run_case.py",
+      "line": 33,
+      "text": "stem=name+('_raw_regions' if raw else '_fitted_regions');svg=out/(stem+'.svg');svg.write_text(svg_graph(g,raw=raw,regions=True),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_THIN_STRUCTURE_TOPOLOGY_01/additional_diagnostics.py",
+      "line": 25,
+      "text": "tree=ET.fromstring(svg_graph(only,raw=raw));tree.set('viewBox',view);tree.set('width','640');tree.set('height','400')"
+    },
+    {
+      "file": "experiments/EXP_THIN_STRUCTURE_TOPOLOGY_01/dashboard.py",
+      "line": 59,
+      "text": "g=json.loads((out/(name+'.json')).read_text(encoding='utf-8'));raw=ET.fromstring(svg_graph(g,raw=True));fit=ET.fromstring(svg_graph(g))"
+    },
+    {
+      "file": "experiments/EXP_THIN_STRUCTURE_TOPOLOGY_01/evaluate_study.py",
+      "line": 50,
+      "text": "pth=out/(name+'_arabic_foreground.svg');pth.write_text(svg_graph(g,regions=True,foreground=set(fg)),encoding='utf-8')"
+    },
+    {
+      "file": "experiments/EXP_THIN_STRUCTURE_TOPOLOGY_01/evaluate_study.py",
+      "line": 60,
+      "text": "svg=out/(name+'_'+kind+'.svg');svg.write_text(svg_graph(g,raw=raw,regions=regions),encoding='utf-8');timing[kind]=render(svg,svg.with_suffix('.png'))"
+    }
+  ],
+  "svg_graph_definitions": [
+    {
+      "file": "experiments/EXP_COMPLETE_GEOMETRY_ISOLATION_01/geometry_eval.py",
+      "line": 72
+    }
+  ],
+  "other_exporter_definitions": [
+    {
+      "file": "versions/version-01/experiments/geometry_correct_planar/planar_tracer.py",
+      "line": 37,
+      "text": "def to_svg_subpath(self) -> str:"
+    },
+    {
+      "file": "versions/version-01/experiments/geometry_correct_planar/planar_tracer.py",
+      "line": 58,
+      "text": "def to_svg_element(self, use_bezier: bool = False) -> str:"
+    },
+    {
+      "file": "versions/version-01/src/geometry/bezier.py",
+      "line": 45,
+      "text": "def to_svg_path_data(self) -> str:"
+    },
+    {
+      "file": "versions/version-01/src/pipeline.py",
+      "line": 33,
+      "text": "def to_svg_element(self) -> str:"
+    },
+    {
+      "file": "versions/version-02/src/geometry/bezier.py",
+      "line": 43,
+      "text": "def to_svg_cubic_command(self) -> str:"
+    },
+    {
+      "file": "versions/version-02/src/pipeline.py",
+      "line": 45,
+      "text": "def to_svg_group(self) -> str:"
+    },
+    {
+      "file": "versions/version-03/src/geometry/bezier.py",
+      "line": 31,
+      "text": "def to_svg_cubic_path(self) -> str:"
+    },
+    {
+      "file": "versions/version-04-image-guided-repair/versions/version-01/src/geometry/bezier.py",
+      "line": 45,
+      "text": "def to_svg_path_data(self) -> str:"
+    },
+    {
+      "file": "versions/version-04-image-guided-repair/versions/version-01/src/pipeline.py",
+      "line": 33,
+      "text": "def to_svg_element(self) -> str:"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "files": {
+    "audit_exporter_calls.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORTER-AUDIT | 2026-10-29T21:55:44Z | CREATED | Author: exporter_correctness",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "discovery_strokes.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-SOURCE-STROKES | 2026-10-29T21:58:16Z | CREATED | Author: discovery_strokes",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "measure.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORT-MEASURE | 2026-10-29T22:12:25Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "phase_b.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORT-PHASE-B | 2026-10-29T22:12:25Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "review.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORT-REVIEW | 2026-10-29T22:12:25Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "svg_exporter.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORTER-CORRECTNESS | 2026-10-29T21:55:44Z | CREATED | Author: exporter_correctness",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_discovery_strokes.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-SOURCE-STROKES-TEST | 2026-10-29T21:58:16Z | CREATED | Author: discovery_strokes",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_svg_exporter.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-EXPORTER-TESTS | 2026-10-29T21:55:44Z | CREATED | Author: exporter_correctness",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    }
+  }
+}

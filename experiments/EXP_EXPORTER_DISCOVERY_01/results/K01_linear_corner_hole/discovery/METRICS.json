@@ -1,0 +1,77 @@
+{
+  "case": "K01_linear_corner_hole",
+  "accepted_proposals": 0,
+  "rejected_proposals": 9,
+  "rejections": {
+    "short_chain": 9
+  },
+  "source_support_pixels": 39,
+  "skeleton_pixels": 34,
+  "source_junction_count": 0,
+  "cubics": 0,
+  "proposals": [],
+  "centerline_self_intersections": [],
+  "centerline_cross_or_overlap_pairs": [],
+  "unresolved_near_or_touch_pairs": [],
+  "crossings_with_inherited_boundaries": 0,
+  "integration": "UNINTEGRATED_STROKE_PROPOSALS; crossings may be intentional or incompatible; no regionownership/junction certification",
+  "geometry_gate": "NOT_ACCEPTED",
+  "svg_bytes": 176,
+  "rendered_8x_covered_area_px2": 0.0,
+  "anti_mosaic": "Continuouscubicstrokes,minlength6,width<=6; no newlabelcells,rectanglesorunderlay. Half-lattice starts/source skeleton are not subpixel localization.",
+  "reference": "INDEPENDENT_KNOWN_VECTOR_8X_SAMPLED_MASK",
+  "proposal_only": {
+    "iou": 0.0,
+    "recall": 0.0,
+    "precision": 0.0,
+    "truth_topology": {
+      "components_4_connected": 1,
+      "holes_4_connected": 1
+    },
+    "pred_topology": {
+      "components_4_connected": 0,
+      "holes_4_connected": 0
+    },
+    "separation": {
+      "false_split_excess": 0,
+      "false_join_excess": 0,
+      "truth_components": 1,
+      "pred_components": 0,
+      "rule": "Atleast5percentoftruthcomponentoverlap; diagnostic not exact ownership."
+    },
+    "reference_width_mae_px": 45.45474271226856,
+    "boundary": {
+      "status": "EMPTY_MASK_NOT_EVALUABLE"
+    }
+  },
+  "hypothetical_union": {
+    "iou": 0.950661647273557,
+    "recall": 0.9986980868958906,
+    "precision": 0.9518412568206716,
+    "truth_topology": {
+      "components_4_connected": 1,
+      "holes_4_connected": 1
+    },
+    "pred_topology": {
+      "components_4_connected": 1,
+      "holes_4_connected": 1
+    },
+    "separation": {
+      "false_split_excess": 0,
+      "false_join_excess": 0,
+      "truth_components": 1,
+      "pred_components": 1,
+      "rule": "Atleast5percentoftruthcomponentoverlap; diagnostic not exact ownership."
+    },
+    "reference_width_mae_px": 2.239381986387235,
+    "boundary": {
+      "symmetric_mean_px": 1.2681806114287173,
+      "symmetric_p95_px": 2.0348525745124633,
+      "directed_a_to_b_mean_px": 1.2739223425939132,
+      "a_recall_at_0_5px": 0.14627970393455395,
+      "a_recall_at_1px": 0.2789248149590962,
+      "b_precision_at_1px": 0.2890054317287882
+    }
+  },
+  "hypothetical_union_limit": "ActualSVGpaintunion, not safelyintegratedsharedregiongraph; maycoverholes/overlapwrongobjects."
+}

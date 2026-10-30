@@ -1,0 +1,100 @@
+{
+  "experiment": "EXP_EXPORTER_DISCOVERY_01",
+  "status": "FROZEN_BEFORE_BENCHMARKS",
+  "starting_commit": "52187f898be2524591f147840234bb57e64e476e",
+  "created_utc": "2026-10-29T21:59:43.217168+00:00",
+  "architecture": "NOT_APPROVED",
+  "geometry": "NOT_ACCEPTED",
+  "phase_a": {
+    "hypothesis": "Logical closed-chain closure must be expanded as oriented explicit geometry before face concatenation; Z only closes actual contour subpaths. Correct command semantics restore O/R fill equivalence without moving geometry.",
+    "implementation": "New isolated strict svg_exporter.py; historicalexportersunchanged",
+    "precision_controls": "Default17significantdigits; corrected8legacyroundingcontrol separatesclosurefromprecisioneffect",
+    "tests": "IndependentabsoluteM/L/C/Zparser, canonicalactualresvgfixtures:open/closed/compound/holes/nested/shared/repeatedjunction/embeddedclosed/mixed/reversedcubics/corners; rejectunsupported/nonfinite/disconnected/openfaceinput",
+    "scope_audit": "Actualresearchcallersearch; do not infernativeVTracer/productiondefect"
+  },
+  "phase_b": {
+    "cases": [
+      "fine_features",
+      "G06_arabic",
+      "A01_shield",
+      "K01_linear_corner_hole"
+    ],
+    "saved_controls": [
+      "O",
+      "R",
+      "B",
+      "A"
+    ],
+    "new_guard": "RB onlyonfine/Arabic/Shield afterexactcorrectedO/Rrawnative+8xandfitted8xRGBAequality andfrozenlabel/chain/parityinvariants; unchangedTrackBsource/config",
+    "K01": "ReusepreviousRBwithoutrefitting; exactsourcehashandrendercontrol",
+    "no_resegmentation": true,
+    "affected_metrics": "RecomputeactualrenderforegroundIoU/components/holes/width/errorandvisiblemicrogeometry; preserveoldvaluesexplicitlyaffected. Geometryarea,controlpoints,incidence,rawboundariesandchain-basedguidecoverageunchanged exceptnewRB",
+    "stop": "Ifstrictserializationorsamegeometryequivalencefails, skipaffectedRB; do notrelaxguards."
+  },
+  "phase_c": {
+    "hypothesis": "Paired-flank source ridge evidence can propose continuous thin strokes absent/fragmented in segmentation, without existing endpoints. Constantwidthunintegratedproposals do not establishcompletegeometry.",
+    "constructor_inputs": "nativeuint8RGBonly; nocase/labels/evaluatorROIs/truth",
+    "method": "GaussianLab pairedflankridgeNMS\u2192source skeleton graph\u2192maximalchains\u2192RDP/cornerawarecubicHermite\u2192widthprofiles/sourcegates",
+    "config": {
+      "gaussian_sigma": 0.6,
+      "normal_angles_count": 8,
+      "flank_radii_px": [
+        1.5,
+        2.5,
+        4.0
+      ],
+      "min_center_to_each_flank_lab": 15.0,
+      "max_flank_lab_difference": 12.0,
+      "min_contrast_vector_cosine": 0.9,
+      "NMS_normal_step_px": 1.0,
+      "skeleton_connectivity": "8neighbor, suppressdiagonalifeitherorthogonalintermediateexists",
+      "min_chain_length_px": 6.0,
+      "profile_spacing_px": 0.25,
+      "profile_half_extent_px": 4.5,
+      "width": "firstbilateralhalfcontrastcrossings, linearinterpolation, medianknownsamplewidth",
+      "max_width_px": 6.0,
+      "render_min_width_px": 0.5,
+      "RDP_epsilon_px": 0.35,
+      "sharp_corner_angle_deg": 60.0,
+      "max_sampled_fit_deviation_px": 0.6,
+      "curve_samples_per_segment": 32,
+      "polyline_sample_spacing_px": 0.25,
+      "max_cubics_per_chain": 64,
+      "max_proposals": 128,
+      "ranking": "supporttimeschainlength",
+      "max_source_pixels": 1000000
+    },
+    "no_fallback": "Rejectunsupportedchains,no sourcegridpath/rectanglesorGTtemplating",
+    "comparisons": "CorrectedO/baseline, savedfailedA, rawsegmentevidence; proposal-onlyandhypotheticalSVGforegrounduniondiagnosticseparatefromsharedgraphintegration",
+    "evaluation": "KnownmaskIoU/components/holes/falsejoins/splits,width/thinrecall; sourceproxyArabicnotglyphGT; Shieldnameduncertainguidecoverage; intersectionsbetweenproposalsandbaseline; rejectedchains/sourceconfidence/novelty/tinygeometry/complexity; actualSVG1/4/16x",
+    "acceptance": "Sourcecandidateacceptance!=structuralacceptance. No completepass ifcriticalcomponentsfail. Unintegratedproposalscannotclaimsafeownership/topology. No parametersearch."
+  },
+  "common_evaluation": {
+    "known_iou_min": 0.97,
+    "thin_recall_min": 0.95,
+    "boundary_mean_max_px": 0.45,
+    "boundary_p95_max_px": 1.25,
+    "components_and_holes": "Inheritedfixed8x4connectivityknownGTdefinitions",
+    "critical_interior_veto": true,
+    "Shield": "Existing1.2\u20132pxAIguideuncertaintyunchanged; strict1pxNOT_ESTABLISHED",
+    "Arabic": "Source-thresholdproxy, notfontGT",
+    "anti_mosaic": "No addedpixelcells/underlay; boundcurvecomplexity, width/length/tiny/lattice; existingmicrogeometrynotprofessionalgeometryproof"
+  },
+  "budgets": {
+    "cases": 4,
+    "new_RB_runs_max": 3,
+    "discovery_settings": 1,
+    "discovery_runs": 4,
+    "phase_b_worker_seconds": 600,
+    "phase_b_worker_memory_mib": 4096,
+    "phase_c_worker_seconds": 60,
+    "phase_c_worker_memory_mib": 512,
+    "total_cpu_seconds": 7200,
+    "active_engineering_hours": 8,
+    "parameter_search": "none",
+    "paid_or_hosted_AI": "forbidden"
+  },
+  "preservation": "Newscopeonly; externalfinefixture/derivativeslocalonlypendingrights; historicalfilesneveroverwritten",
+  "publication": "Scopedvalidatedcheckpointsmain, onceblockdiagnosticthenexactownerpublisherscript; neverforcepush",
+  "next_milestone_owner_steering": "Finalrecommendationcomparesclassical/pretrainedML/hybrid; no currentmodelweightdownload/training/integration."
+}
