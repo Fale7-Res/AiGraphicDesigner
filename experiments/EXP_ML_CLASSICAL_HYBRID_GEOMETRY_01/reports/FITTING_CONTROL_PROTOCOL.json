@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-10-30T07:55:54Z",
+  "scope": "Frozen Fine Features curve_deviation rejects only; discovery is not rerun",
+  "hypothesis": "Chord-scaled unit tangents and bounded subdivision avoid unequal-chord Hermite overshoot without relaxing the 0.6 px gate",
+  "baseline": "Unchanged discovery_strokes._fit captured return locals",
+  "source": "work/exporter_discovery/external_results/fine_features/discovery/proposals.json",
+  "expected_input_sha256": "66734234c37b3c07575d659026664c77f7087d7f1b70b244b596b892f20d6450",
+  "maximum_deviation_px": 0.6,
+  "rdp_epsilon_px": 0.35,
+  "corner_angle_degrees": 60,
+  "maximum_cubics": 64,
+  "maximum_subdivision_rounds": 8,
+  "maximum_seconds_per_trace": 30,
+  "evaluation": "Two directed point-to-segment distances with 0.002 px control-hull flattening and <=0.01 px line sampling; not exact continuous certification",
+  "prohibitions": ["Evaluator references in construction", "Threshold relaxation", "Pixel-grid path fallback", "Discovery or topology success inferred from fitting success"],
+  "external_evidence": "Fine Features is Arena-derived; keep rendered/source-derived outputs local pending rights clarification"
+}

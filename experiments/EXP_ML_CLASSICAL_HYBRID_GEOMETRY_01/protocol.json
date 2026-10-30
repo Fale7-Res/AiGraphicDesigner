@@ -1,0 +1,205 @@
+{
+  "id": "EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01",
+  "frozen_utc": "2026-10-30T07:58:12.837340+00:00",
+  "baseline": "fe6d925c51a500031577fc13dea21d3fa943c9b7",
+  "geometry": "NOT_ACCEPTED",
+  "architecture": "NOT_APPROVED",
+  "hypotheses": [
+    "Learned edge context discovers missing internal boundaries better than frozen classical evidence",
+    "Fixed hybrid gating suppresses unsupported learned edges without destroying fine geometry",
+    "Chord-normalized bounded fitting repairs downstream overshoot independently of discovery"
+  ],
+  "cases": [
+    "A01_shield",
+    "G06_arabic",
+    "K01_linear_corner_hole",
+    "fine_features"
+  ],
+  "classical": "Saved paired-flank baseline unchanged; saved multiscale Lab Canny baseline reused if available. Common edge linking arm uses frozen classical Canny implementation/config, no tuning.",
+  "ML": {
+    "model": "OpenCV DexiNed edge_detection_dexined_2024sep.onnx",
+    "revision": "01a752eb4006688376e576dc24941c54608f6dd0",
+    "sha256": "a50d01dc8481549c7dedb9eb3e0123b810a016520df75e4669a504609982cdd0",
+    "bytes": 47235563,
+    "license": "model directory MIT; original downstream use licensing evidence preserved",
+    "runtime": "Existing isolated agd-native environment read-only; separate weight cache; no system package changes",
+    "preprocessing": "Upstream 512x512 BGR float32, mean 103.5/116.2/123.6, scale1, no aspect preservation (disclosed), sigmoid fused last output resized native; save raw logits and sigmoid; no per-image minmax confidence"
+  },
+  "arm_postprocessing": {
+    "classical": "Frozen Lab Canny sigma0.6/1.2 low0.04 high0.10 with cross-scale1px persistence",
+    "ML": "Sigmoid fused>=0.3 weak,>=0.5 strong, hysteresis followed skeleton; no learned fine tuning",
+    "Hybrid": "ML weak at >=0.3 within1.5px classical evidence, plus ML strong>=0.7 anywhere; same hysteresis strong>=0.5, same skeleton/trace; no new case-specific rules",
+    "common": "maximal chains; >=6px; at most128 length-ranked; source-only trace linking from historical module; old and bounded repaired fitter separated; <=64 cubics/trace, fixed0.6px deviation; diagnostic strokes width0.7; no ownership/region integration claimed"
+  },
+  "resources": {
+    "inference": "sequential CPU only, cv2 threads2, OpenBLAS1",
+    "model_load_and_inference_seconds": 180,
+    "worker_RSS_limit_mib": 1536,
+    "minimum_available_ram_mib": 700,
+    "one_model_inference_per_case": true,
+    "candidate_workers_seconds": 120,
+    "candidate_workers_RSS_mib": 768,
+    "total_active_budget_hours": 6,
+    "SAM": "Resource feasibility first. Only3GiB free before model loading; SAM 1024px encoder and torch runtime additional footprint risk. No CUDA/WSL/system upgrades. Skip if cannot leave700MiB free under1536MiB process cap."
+  },
+  "evaluation": {
+    "before_fit": [
+      "native support density",
+      "connected components/junctions/endpoints",
+      "known-source mask boundary precision/recall at1.25px (not stroke centerline truth)",
+      "known thin skeleton proximity at1.25px separately",
+      "13 Shield guide recalls with existing1.2-2px uncertainty",
+      "source-threshold Arabic proxy not glyph truth",
+      "falsepositive proxy off-sourceCanny distance>2px not verified lighting truth"
+    ],
+    "after_fit": [
+      "same guide/known support after fit",
+      "bidirectional deviation fixed0.6",
+      "curve rejects and overshoot",
+      "self/mutual intersections",
+      "openstroke topology not closedregion acceptance",
+      "tinybbox, sampled lattice alignment, raster image absence",
+      "actual resvg native/full4x and16xROI"
+    ],
+    "acceptance": "No overall geometry pass without all significant interior components, topology and owner review. Promise is comparison not metric gain. ML promising only if internal recall improves without precision/connectivity regressions; aggregate metrics cannot override crown/band/ornament vetoes. No exact causal percentages or result-driven retuning."
+  },
+  "holdout": "Add at most two licensed previously-unused scikit-image sample images after protocol freeze using identical policy; no tuning/reference independent structure absent reported.",
+  "pins": {
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\working.png": {
+      "sha256": "900b7ee76d9428ab30b654e584a6dd72ea924c55cc116420edfa387527a134f1",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\O_curves.svg": {
+      "sha256": "dc2f6c886afe37a97f9bcf6cda022b5770b0fc3d0185b30964c0a4b14499ab8f",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\labels.png": {
+      "sha256": "f8e06d3c6589f6cee892b052fca25a83d5c22cd44ae3d06c029b75139e7dc2d7",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\pixel_reference.svg": {
+      "sha256": "aacba9193a29b8140026b50e0d1499b9ee0d34b3be812eb4906460a7d3a4fdfd",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\pixel_reference.png": {
+      "sha256": "13cf4089e037af789dc1ba27c2b9ff97f1a53f47a879fd76118da82add8a87b8",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\discovery\\proposals.json": {
+      "sha256": "5bd9e162ccdd76fff504e2b9f9334af4070434cf1aa0e3d8ff27e2c900a01348",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\discovery\\evidence.npz": {
+      "sha256": "947ad95c962fccd8db35c0c250578fd50bd8afc88ff55c0eeaf780ee9fee0a6d",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\A01_shield\\O.json": {
+      "sha256": "6aebf92b38303eb46dddacc9556c070d8a6b92f8464a0ceee9becdce240f68a4",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\working.png": {
+      "sha256": "f32f3b77918d691f977f782055dfb371a551027224c657bf0bfd6fe109e9d32d",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\O_curves.svg": {
+      "sha256": "44d5a0ee0d00bc2af67203011ced123af40cfec8ec6d810679462aa5184ac6f0",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\labels.png": {
+      "sha256": "c602aa15cf3acd319d34778cac9ceb935dee6e71529b85e77b6f6c762be9f69f",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\pixel_reference.svg": {
+      "sha256": "56835b471bcd077031937010007cbe89fbf727eb857262723cfbc0e06cbe0c46",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\pixel_reference.png": {
+      "sha256": "6d56ed8c39f889e3d0e0c3afcd0402584ae387ee027d36f1255d85d63374f775",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\discovery\\proposals.json": {
+      "sha256": "5af07074005233e0154bbaba1cd340a8354976e6bc73d3c46c44d351f0a10240",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\discovery\\evidence.npz": {
+      "sha256": "5378b3c4fbf359fc19b8e14bef1dee5b882f6b47bf75c437287ec12478c98991",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\G06_arabic\\O.json": {
+      "sha256": "6007c8ea055805e1309d3379d3306c6d8dbdee4eeb22d02f0804b1b6575f7226",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\working.png": {
+      "sha256": "a02ae223a4bce0cd2c6644557ad85c66f041cda7872786735ff23534c8681e20",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\O_curves.svg": {
+      "sha256": "fcc3192e377fecc05655f2eeddccc1438233ec9cd2bfaa5fed2d4a39028f2b75",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\labels.png": {
+      "sha256": "5c2f12bfb80d79ba01bb464d5a1e9012314694882e7f1666bce591132e1ca491",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\pixel_reference.svg": {
+      "sha256": "a6dfec9511e53fcc7c7bd2316e78ccba3043d03bcce92f080e62a357ccd24d6b",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\pixel_reference.png": {
+      "sha256": "8513392edab61bda277017796044584e2440e0bd9e995b0c9ec31e58007da514",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\discovery\\proposals.json": {
+      "sha256": "5a8c8eadcbf3ec3b0fb418d97f883b2ee39414752be4896919be30bd34e52962",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\discovery\\evidence.npz": {
+      "sha256": "f2b4cf700ae6a66a111f0b43550f1330f7d2944626573b732204980be6390783",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\results\\K01_linear_corner_hole\\O.json": {
+      "sha256": "126a87bee782200322e8005b07c47d328f45687cb87e4d03c5d7b5f357818be5",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\working.png": {
+      "sha256": "42b7ccef92cfc14754ccfad56735f29c533e94fed1ee8e8707c4ddd8e5a910e4",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\O_curves.svg": {
+      "sha256": "851415e7fac44502022ff22a16aa6d6ca010c11ac90bb3ec1b1df3ea37e20210",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\labels.png": {
+      "sha256": "fa9166706564c764ea1e9ec352534560da1c150e88d471da5f8a7ce6e9361e4d",
+      "role": "frozen input/reference; never constructor truth"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\discovery\\proposals.json": {
+      "sha256": "66734234c37b3c07575d659026664c77f7087d7f1b70b244b596b892f20d6450",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\discovery\\evidence.npz": {
+      "sha256": "2c69eebf183d29e1ab5589f3d160a44864e02b86cfce3fd398a522e9aa3581da",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\exporter_discovery\\external_results\\fine_features\\O.json": {
+      "sha256": "f0583a70fc4b066b007209276e2dd2d2120fa4194ef68682fd4f3cef9106d789",
+      "role": "frozen classical"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\svg_exporter.py": {
+      "sha256": "934c0a68f613e46b63127e48f700b1f51e399f1549a69e14781523a19878a8ea",
+      "role": "serializer/constructor or evaluator-only reference; not inference input"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\discovery_strokes.py": {
+      "sha256": "1d49331d6750a6dfddb650e6e4ad72130317df1768ee79b33ac1344869060dd6",
+      "role": "serializer/constructor or evaluator-only reference; not inference input"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COMPLETE_GEOMETRY_ISOLATION_01\\references\\shield_complete_boundary_reference.json": {
+      "sha256": "d35f79ec802ce775e0228e588718bd82a3c0e90689745b78d5fe28802529d4c7",
+      "role": "serializer/constructor or evaluator-only reference; not inference input"
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COMPLETE_GEOMETRY_ISOLATION_01\\references\\known_control_reference_manifest.json": {
+      "sha256": "8cb95cf862c3f0a2657857a512bc39817004836fa885e503f46666b1fde243b4",
+      "role": "serializer/constructor or evaluator-only reference; not inference input"
+    }
+  }
+}

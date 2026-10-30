@@ -1,0 +1,75 @@
+{
+  "case": "H02_astronaut",
+  "arm": "Hybrid",
+  "discovery": {
+    "support_pixels": 59948,
+    "density": 0.2286834716796875,
+    "skeleton_pixels": 9765,
+    "components8": 13,
+    "junction_pixels": 597,
+    "endpoint_pixels": 150,
+    "raw_traces": 974,
+    "eligible_traces": 482
+  },
+  "construction": {
+    "old_accepted": 74,
+    "stable_accepted": 125,
+    "cubics": 1863,
+    "rejections": {
+      "cubic_budget": 1,
+      "deviation_budget": 2,
+      "proposal_budget": 354,
+      "short_chain": 492
+    }
+  },
+  "known_reference": null,
+  "prefit_selected_points": 5450,
+  "unintegrated": true,
+  "geometry": "NOT_ACCEPTED",
+  "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+  "actual_stroke_width_px": 0.35,
+  "topology": {
+    "self_intersecting_traces": [],
+    "mutual_crossing_or_overlap_pairs": [],
+    "endpoint_and_junction_relationships": "not integrated/shared or certified"
+  },
+  "render_seconds": {
+    "1x": 0.02734309999505058,
+    "4x": 0.14698620000854135,
+    "detail_1x": 0.015612799965310842,
+    "detail_4x": 0.021081099985167384,
+    "detail_16x": 0.0641065999516286
+  },
+  "render_dimensions": [
+    512,
+    512
+  ],
+  "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+  "classical_source_edge_agreement_proxy": {
+    "raw_all": {
+      "recall": 0.36199896205391213,
+      "precision": 0.9448028673835125,
+      "mean_target_distance_px": 7.584348534357928,
+      "p95_target_distance_px": 26.476404589747453
+    },
+    "fitted": {
+      "recall": 0.20340690539426687,
+      "precision": 0.9519531620365981,
+      "mean_target_distance_px": 10.335689304102,
+      "p95_target_distance_px": 29.832867780352597
+    }
+  },
+  "vector": {
+    "paths": 125,
+    "cubics": 1863,
+    "svg_bytes": 168765,
+    "tiny_bbox_le2px": 0,
+    "stroke_area_proxy_tiny_fraction": 0.0,
+    "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+    "half_grid_alignment_sample_fraction": 0.0846212193040675,
+    "axis_aligned_sample_length_fraction": 0.043153478812266916,
+    "closed_strokes": 0,
+    "filled_regions": 0,
+    "no_raster": true
+  }
+}

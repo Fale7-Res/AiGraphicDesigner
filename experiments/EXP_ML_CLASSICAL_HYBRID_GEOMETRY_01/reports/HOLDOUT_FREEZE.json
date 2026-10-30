@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-30T08:04:37.864965+00:00",
+  "cases": [
+    {
+      "case": "H01_horse",
+      "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.horse",
+      "license": "CC0 Andreas Preuss (marauder), Openclipart",
+      "sha256": "537095f128f0781a747b8e866248defc611286a4e51418fed0ac624438183c85",
+      "dimensions": [
+        328,
+        400,
+        3
+      ],
+      "evaluator": "No independent vector boundary truth. Horse source mask proxy can evaluate raster contour only. No photograph exact geometry truth.",
+      "policy": "Same unchanged256model, common fixed postprocessing, budget/fitter; no threshold tuning or candidate selection from evaluation."
+    },
+    {
+      "case": "H02_astronaut",
+      "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut",
+      "license": "NASA public domain, Eileen Collins photo",
+      "sha256": "a09bd3f6dedcdd7c81202e69f9e8fc0e90f3d2ee2837ada229631f2bf09ec500",
+      "dimensions": [
+        512,
+        512,
+        3
+      ],
+      "evaluator": "No independent vector boundary truth. Horse source mask proxy can evaluate raster contour only. No photograph exact geometry truth.",
+      "policy": "Same unchanged256model, common fixed postprocessing, budget/fitter; no threshold tuning or candidate selection from evaluation."
+    }
+  ],
+  "previous_experiment_check": "No horse/astronaut cases in generalization/appearance manifest. Public models may have seen these popular images during training; ML training-unseen not established."
+}

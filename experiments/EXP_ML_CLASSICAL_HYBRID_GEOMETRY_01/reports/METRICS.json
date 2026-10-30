@@ -1,0 +1,2895 @@
+[
+  {
+    "case": "A01_shield",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 12634,
+      "density": 0.1375039453205777,
+      "skeleton_pixels": 7583,
+      "components8": 44,
+      "junction_pixels": 1473,
+      "endpoint_pixels": 186,
+      "raw_traces": 2330,
+      "eligible_traces": 240
+    },
+    "construction": {
+      "old_accepted": 99,
+      "stable_accepted": 127,
+      "cubics": 1068,
+      "rejections": {
+        "cubic_budget": 1,
+        "proposal_budget": 112,
+        "short_chain": 2090
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 3937,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.02658300002804026,
+      "4x": 0.08361329999752343,
+      "detail_1x": 0.025654400000348687,
+      "detail_4x": 0.03382909996435046,
+      "detail_16x": 0.16295319999335334
+    },
+    "render_dimensions": [
+      369,
+      249
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.5555848608730054,
+        "precision": 1.0,
+        "mean_target_distance_px": 2.92367668759959,
+        "p95_target_distance_px": 10.866438701447345
+      }
+    },
+    "critical_guides": [
+      {
+        "id": "shield_outer_silhouette",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.999327731092437,
+          "precision": 0.10721350389028089,
+          "mean_target_distance_px": 0.6930707290663317,
+          "p95_target_distance_px": 1.4163943093313234
+        },
+        "selected": {
+          "recall": 0.788235294117647,
+          "precision": 0.1506223012446025,
+          "mean_target_distance_px": 2.450847994367155,
+          "p95_target_distance_px": 13.33934912242534
+        },
+        "fitted": {
+          "recall": 0.5028571428571429,
+          "precision": 0.11888561276177516,
+          "mean_target_distance_px": 3.128111942375414,
+          "p95_target_distance_px": 13.268997023880498
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_outer_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.41166139796276785,
+          "precision": 0.0356059607015693,
+          "mean_target_distance_px": 2.0481305634592184,
+          "p95_target_distance_px": 4.72437059160452
+        },
+        "selected": {
+          "recall": 0.303477344573235,
+          "precision": 0.04749809499618999,
+          "mean_target_distance_px": 3.717728191026159,
+          "p95_target_distance_px": 11.45675250280101
+        },
+        "fitted": {
+          "recall": 0.32946961714085,
+          "precision": 0.0568912073788463,
+          "mean_target_distance_px": 3.6554949839513324,
+          "p95_target_distance_px": 11.500293177389368
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_inner_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.796142208774584,
+          "precision": 0.07569563497296584,
+          "mean_target_distance_px": 0.9848350728741125,
+          "p95_target_distance_px": 2.5407911113677533
+        },
+        "selected": {
+          "recall": 0.37632375189107414,
+          "precision": 0.06121412242824486,
+          "mean_target_distance_px": 4.0125476507711015,
+          "p95_target_distance_px": 9.108129482045403
+        },
+        "fitted": {
+          "recall": 0.37632375189107414,
+          "precision": 0.06233461858320103,
+          "mean_target_distance_px": 3.972495233205251,
+          "p95_target_distance_px": 9.108129482045403
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_gold_material_interface",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.6438193343898574,
+          "precision": 0.0626401160490571,
+          "mean_target_distance_px": 0.9777399525678951,
+          "p95_target_distance_px": 1.8300393577634277
+        },
+        "selected": {
+          "recall": 0.12559429477020603,
+          "precision": 0.0190500381000762,
+          "mean_target_distance_px": 3.424673324477581,
+          "p95_target_distance_px": 11.32633067575906
+        },
+        "fitted": {
+          "recall": 0.1596671949286846,
+          "precision": 0.023021093218416874,
+          "mean_target_distance_px": 3.387998922879302,
+          "p95_target_distance_px": 10.934039362171108
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_complete_visible_outline",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.8501270110076207,
+          "precision": 0.07516813925886852,
+          "mean_target_distance_px": 0.9718336982490062,
+          "p95_target_distance_px": 2.4533976543569445
+        },
+        "selected": {
+          "recall": 0.3018628281117697,
+          "precision": 0.036830073660147324,
+          "mean_target_distance_px": 4.522840462354126,
+          "p95_target_distance_px": 13.631393674604283
+        },
+        "fitted": {
+          "recall": 0.3022861981371719,
+          "precision": 0.042224238300446054,
+          "mean_target_distance_px": 4.481152293778268,
+          "p95_target_distance_px": 13.631393674604283
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.706766917293233,
+          "precision": 0.012264275352762758,
+          "mean_target_distance_px": 1.0675223046992515,
+          "p95_target_distance_px": 2.5162444334027376
+        },
+        "selected": {
+          "recall": 0.06516290726817042,
+          "precision": 0.001778003556007112,
+          "mean_target_distance_px": 6.926369455101958,
+          "p95_target_distance_px": 18.244162906014342
+        },
+        "fitted": {
+          "recall": 0.06766917293233082,
+          "precision": 0.0026083012020866408,
+          "mean_target_distance_px": 6.901613143360444,
+          "p95_target_distance_px": 18.244162906014342
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.7024221453287197,
+          "precision": 0.00712119214031386,
+          "mean_target_distance_px": 1.1953862326108604,
+          "p95_target_distance_px": 3.3344730468073225
+        },
+        "selected": {
+          "recall": 0.24567474048442905,
+          "precision": 0.003302006604013208,
+          "mean_target_distance_px": 3.7998113466472656,
+          "p95_target_distance_px": 7.2584387034613815
+        },
+        "fitted": {
+          "recall": 0.2491349480968858,
+          "precision": 0.004762984803810388,
+          "mean_target_distance_px": 3.754140061870453,
+          "p95_target_distance_px": 7.254089900727937
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_center_tip_and_lobes",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.8622848200312989,
+          "precision": 0.021231702492417247,
+          "mean_target_distance_px": 1.0181841910737655,
+          "p95_target_distance_px": 2.529173246923093
+        },
+        "selected": {
+          "recall": 0.3411580594679186,
+          "precision": 0.011176022352044705,
+          "mean_target_distance_px": 3.704299409788758,
+          "p95_target_distance_px": 7.905694150420948
+        },
+        "fitted": {
+          "recall": 0.3317683881064163,
+          "precision": 0.014553564678309518,
+          "mean_target_distance_px": 3.639626186893393,
+          "p95_target_distance_px": 7.851033584457893
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.7933579335793358,
+          "precision": 0.007516813925886852,
+          "mean_target_distance_px": 1.042007968643025,
+          "p95_target_distance_px": 2.147193905980258
+        },
+        "selected": {
+          "recall": 0.28413284132841327,
+          "precision": 0.004064008128016256,
+          "mean_target_distance_px": 2.978704588943725,
+          "p95_target_distance_px": 9.369267069459811
+        },
+        "fitted": {
+          "recall": 0.3284132841328413,
+          "precision": 0.006010433204808346,
+          "mean_target_distance_px": 2.9340623041272655,
+          "p95_target_distance_px": 9.369267069459811
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.8171428571428572,
+          "precision": 0.009626796782276145,
+          "mean_target_distance_px": 1.019700010891829,
+          "p95_target_distance_px": 2.3862827449519894
+        },
+        "selected": {
+          "recall": 0.1457142857142857,
+          "precision": 0.00254000508001016,
+          "mean_target_distance_px": 8.15333544679319,
+          "p95_target_distance_px": 15.583156784095252
+        },
+        "fitted": {
+          "recall": 0.1457142857142857,
+          "precision": 0.002570499735389733,
+          "mean_target_distance_px": 8.129412315151045,
+          "p95_target_distance_px": 15.583156784095252
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "central_ornament_internal_fold",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.9662162162162162,
+          "precision": 0.005538704998021891,
+          "mean_target_distance_px": 0.7562477230613219,
+          "p95_target_distance_px": 1.8380241382941869
+        },
+        "selected": {
+          "recall": 0.7702702702702703,
+          "precision": 0.00762001524003048,
+          "mean_target_distance_px": 1.7288419609244003,
+          "p95_target_distance_px": 6.935675880975307
+        },
+        "fitted": {
+          "recall": 0.7702702702702703,
+          "precision": 0.009601572541014592,
+          "mean_target_distance_px": 1.6953625868735025,
+          "p95_target_distance_px": 6.935675880975307
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_upper_edge",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.7859078590785907,
+          "precision": 0.01054991428194646,
+          "mean_target_distance_px": 0.8226353772636704,
+          "p95_target_distance_px": 1.5569595510803338
+        },
+        "selected": {
+          "recall": 0.20596205962059622,
+          "precision": 0.004318008636017272,
+          "mean_target_distance_px": 3.1449025567131836,
+          "p95_target_distance_px": 7.159716915070594
+        },
+        "fitted": {
+          "recall": 0.23035230352303523,
+          "precision": 0.003780146669690784,
+          "mean_target_distance_px": 3.132577574417761,
+          "p95_target_distance_px": 7.138875803127236
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_lower_edge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.9131652661064426,
+          "precision": 0.012791771066860082,
+          "mean_target_distance_px": 0.8487568733270735,
+          "p95_target_distance_px": 1.6099103651645408
+        },
+        "selected": {
+          "recall": 0.5966386554621849,
+          "precision": 0.0127000254000508,
+          "mean_target_distance_px": 2.038896969121067,
+          "p95_target_distance_px": 6.804825228966698
+        },
+        "fitted": {
+          "recall": 0.6134453781512605,
+          "precision": 0.00979057987449913,
+          "mean_target_distance_px": 2.0218895119824767,
+          "p95_target_distance_px": 6.804825228966698
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "specular_upper_right_red",
+        "required": false,
+        "uncertainty_px": 4.0,
+        "raw": {
+          "recall": 1.0,
+          "precision": 0.014506132137676382,
+          "mean_target_distance_px": 1.1189858296283508,
+          "p95_target_distance_px": 2.560650887181594
+        },
+        "selected": {
+          "recall": 0.8159203980099502,
+          "precision": 0.01651003302006604,
+          "mean_target_distance_px": 1.8447232034408994,
+          "p95_target_distance_px": 5.2747584705915145
+        },
+        "fitted": {
+          "recall": 0.8258706467661692,
+          "precision": 0.022378468284569443,
+          "mean_target_distance_px": 1.7569395659025093,
+          "p95_target_distance_px": 5.202477847618912
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_inner_horizontal_highlight",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.8664772727272727,
+          "precision": 0.01411051035210339,
+          "mean_target_distance_px": 1.176067653349942,
+          "p95_target_distance_px": 2.6262555910500973
+        },
+        "selected": {
+          "recall": 0.4375,
+          "precision": 0.009398018796037593,
+          "mean_target_distance_px": 2.7842207810841875,
+          "p95_target_distance_px": 6.807530896688113
+        },
+        "fitted": {
+          "recall": 0.4403409090909091,
+          "precision": 0.008732138806985711,
+          "mean_target_distance_px": 2.673963775556547,
+          "p95_target_distance_px": 6.650132759463748
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_center_shading_axis",
+        "required": false,
+        "uncertainty_px": 3.5,
+        "raw": {
+          "recall": 1.0,
+          "precision": 0.036660952129763946,
+          "mean_target_distance_px": 0.7788268462116331,
+          "p95_target_distance_px": 1.8027756377319946
+        },
+        "selected": {
+          "recall": 0.8293299620733249,
+          "precision": 0.04749809499618999,
+          "mean_target_distance_px": 1.9255274705449135,
+          "p95_target_distance_px": 8.45167927742595
+        },
+        "fitted": {
+          "recall": 0.8305941845764855,
+          "precision": 0.0448325395025327,
+          "mean_target_distance_px": 1.874828186319592,
+          "p95_target_distance_px": 8.397462198469476
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      }
+    ],
+    "vector": {
+      "paths": 127,
+      "cubics": 1068,
+      "svg_bytes": 100085,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.14863536705224162,
+      "axis_aligned_sample_length_fraction": 0.27947730604385446,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "A01_shield",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 11054,
+      "density": 0.12030778942327576,
+      "skeleton_pixels": 2653,
+      "components8": 9,
+      "junction_pixels": 19,
+      "endpoint_pixels": 27,
+      "raw_traces": 42,
+      "eligible_traces": 35
+    },
+    "construction": {
+      "old_accepted": 22,
+      "stable_accepted": 30,
+      "cubics": 317,
+      "rejections": {
+        "cubic_budget": 3,
+        "deviation_budget": 2,
+        "short_chain": 7
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 2661,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.02599469997221604,
+      "4x": 0.08220639999490231,
+      "detail_1x": 0.022371099970769137,
+      "detail_4x": 0.03816060000099242,
+      "detail_16x": 0.23794520000228658
+    },
+    "render_dimensions": [
+      369,
+      249
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.49782408017934854,
+        "precision": 0.9762532981530343,
+        "mean_target_distance_px": 4.388764057762688,
+        "p95_target_distance_px": 18.673495046816264
+      },
+      "fitted": {
+        "recall": 0.20585520242648028,
+        "precision": 0.99053300479834,
+        "mean_target_distance_px": 21.67838314878161,
+        "p95_target_distance_px": 80.91560977094039
+      }
+    },
+    "critical_guides": [
+      {
+        "id": "shield_outer_silhouette",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.9838655462184874,
+          "precision": 0.24575951752732755,
+          "mean_target_distance_px": 0.680678922685447,
+          "p95_target_distance_px": 1.4617001328684571
+        },
+        "selected": {
+          "recall": 0.9838655462184874,
+          "precision": 0.2450206689214581,
+          "mean_target_distance_px": 0.680678922685447,
+          "p95_target_distance_px": 1.4617001328684571
+        },
+        "fitted": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 26.94841387205636,
+          "p95_target_distance_px": 52.15645390452306
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_outer_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 4.690330815080052,
+          "p95_target_distance_px": 6.303647667126741
+        },
+        "selected": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 4.690330815080052,
+          "p95_target_distance_px": 6.303647667126741
+        },
+        "fitted": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 24.307004149779825,
+          "p95_target_distance_px": 48.95280964109377
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_inner_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.2916036308623298,
+          "precision": 0.06633999246136449,
+          "mean_target_distance_px": 2.645342756229751,
+          "p95_target_distance_px": 4.929330616073243
+        },
+        "selected": {
+          "recall": 0.2900907715582451,
+          "precision": 0.06576475009394964,
+          "mean_target_distance_px": 2.675499089401561,
+          "p95_target_distance_px": 5.129881400127355
+        },
+        "fitted": {
+          "recall": 0.14561270801815432,
+          "precision": 0.09622617040591364,
+          "mean_target_distance_px": 21.13833394425299,
+          "p95_target_distance_px": 50.00408533051367
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_gold_material_interface",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.3181458003169572,
+          "precision": 0.06407840180927252,
+          "mean_target_distance_px": 2.424870106655085,
+          "p95_target_distance_px": 4.794786624746947
+        },
+        "selected": {
+          "recall": 0.3181458003169572,
+          "precision": 0.06388575723412251,
+          "mean_target_distance_px": 2.424870106655085,
+          "p95_target_distance_px": 4.794786624746947
+        },
+        "fitted": {
+          "recall": 0.14025356576862125,
+          "precision": 0.0758656464790559,
+          "mean_target_distance_px": 20.315857991398595,
+          "p95_target_distance_px": 52.1047957878506
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_complete_visible_outline",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.5283657917019475,
+          "precision": 0.09837919336600075,
+          "mean_target_distance_px": 1.9325012483337909,
+          "p95_target_distance_px": 4.301162633521313
+        },
+        "selected": {
+          "recall": 0.4995766299745978,
+          "precision": 0.0977076287110109,
+          "mean_target_distance_px": 1.9941599275309894,
+          "p95_target_distance_px": 4.301162633521313
+        },
+        "fitted": {
+          "recall": 0.48856900931414055,
+          "precision": 0.28530670470756064,
+          "mean_target_distance_px": 1.9101799312163816,
+          "p95_target_distance_px": 4.232774664983494
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.44360902255639095,
+          "precision": 0.013569543912551827,
+          "mean_target_distance_px": 1.7708520721721317,
+          "p95_target_distance_px": 3.4921736048766263
+        },
+        "selected": {
+          "recall": 0.3283208020050125,
+          "precision": 0.012025554302893648,
+          "mean_target_distance_px": 1.9817642403194728,
+          "p95_target_distance_px": 3.4983127784171653
+        },
+        "fitted": {
+          "recall": 0.37343358395989973,
+          "precision": 0.03527428349111659,
+          "mean_target_distance_px": 1.9256723050177114,
+          "p95_target_distance_px": 3.5781158701945643
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.47750865051903113,
+          "precision": 0.010554089709762533,
+          "mean_target_distance_px": 2.096410513881722,
+          "p95_target_distance_px": 4.936787653398002
+        },
+        "selected": {
+          "recall": 0.47750865051903113,
+          "precision": 0.010898158586997369,
+          "mean_target_distance_px": 2.102671149895778,
+          "p95_target_distance_px": 4.936787653398002
+        },
+        "fitted": {
+          "recall": 0.4913494809688581,
+          "precision": 0.03838672026974452,
+          "mean_target_distance_px": 1.987136632219411,
+          "p95_target_distance_px": 4.597236116519716
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_center_tip_and_lobes",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.6025039123630673,
+          "precision": 0.030531473803241612,
+          "mean_target_distance_px": 1.7445236803279196,
+          "p95_target_distance_px": 4.289560707658218
+        },
+        "selected": {
+          "recall": 0.564945226917058,
+          "precision": 0.03006388575723412,
+          "mean_target_distance_px": 1.837911037706529,
+          "p95_target_distance_px": 4.301162633521313
+        },
+        "fitted": {
+          "recall": 0.568075117370892,
+          "precision": 0.0977823887952276,
+          "mean_target_distance_px": 1.7391702491575924,
+          "p95_target_distance_px": 4.21946586628335
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.3505535055350554,
+          "precision": 0.007538635506973238,
+          "mean_target_distance_px": 2.3445690947088647,
+          "p95_target_distance_px": 4.7613107727028785
+        },
+        "selected": {
+          "recall": 0.3505535055350554,
+          "precision": 0.008267568583239383,
+          "mean_target_distance_px": 2.3445690947088647,
+          "p95_target_distance_px": 4.7613107727028785
+        },
+        "fitted": {
+          "recall": 0.3173431734317343,
+          "precision": 0.018285566074439114,
+          "mean_target_distance_px": 2.333477776320795,
+          "p95_target_distance_px": 4.7317605185414084
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.24285714285714285,
+          "precision": 0.006407840180927252,
+          "mean_target_distance_px": 2.651431434706168,
+          "p95_target_distance_px": 4.321531330532961
+        },
+        "selected": {
+          "recall": 0.24285714285714285,
+          "precision": 0.006388575723412251,
+          "mean_target_distance_px": 2.651431434706168,
+          "p95_target_distance_px": 4.321531330532961
+        },
+        "fitted": {
+          "recall": 0.25142857142857145,
+          "precision": 0.020619893658410063,
+          "mean_target_distance_px": 2.5244977456661606,
+          "p95_target_distance_px": 4.284143741396556
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "central_ornament_internal_fold",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.13513513513513514,
+          "precision": 0.003015454202789295,
+          "mean_target_distance_px": 4.062240331902722,
+          "p95_target_distance_px": 6.33643489881878
+        },
+        "selected": {
+          "recall": 0.11486486486486487,
+          "precision": 0.0018789928598271326,
+          "mean_target_distance_px": 4.1785078471372366,
+          "p95_target_distance_px": 6.33643489881878
+        },
+        "fitted": {
+          "recall": 0.10810810810810811,
+          "precision": 0.005187394631046557,
+          "mean_target_distance_px": 4.167157699224595,
+          "p95_target_distance_px": 6.351083614036048
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_upper_edge",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.5772357723577236,
+          "precision": 0.019223520542781758,
+          "mean_target_distance_px": 1.029107126159349,
+          "p95_target_distance_px": 2.103449225998502
+        },
+        "selected": {
+          "recall": 0.5772357723577236,
+          "precision": 0.02066892145809846,
+          "mean_target_distance_px": 1.029107126159349,
+          "p95_target_distance_px": 2.103449225998502
+        },
+        "fitted": {
+          "recall": 0.6233062330623306,
+          "precision": 0.054727013357541175,
+          "mean_target_distance_px": 1.0043542557311138,
+          "p95_target_distance_px": 2.243168666197053
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_lower_edge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.3081232492997199,
+          "precision": 0.00980022615906521,
+          "mean_target_distance_px": 1.8923214168061953,
+          "p95_target_distance_px": 3.1774988100922794
+        },
+        "selected": {
+          "recall": 0.3081232492997199,
+          "precision": 0.00977076287110109,
+          "mean_target_distance_px": 1.8923214168061953,
+          "p95_target_distance_px": 3.1774988100922794
+        },
+        "fitted": {
+          "recall": 0.38095238095238093,
+          "precision": 0.031902476980936324,
+          "mean_target_distance_px": 1.812989069007722,
+          "p95_target_distance_px": 3.160166882328982
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "specular_upper_right_red",
+        "required": false,
+        "uncertainty_px": 4.0,
+        "raw": {
+          "recall": 0.5174129353233831,
+          "precision": 0.011684885035808518,
+          "mean_target_distance_px": 5.296991583867885,
+          "p95_target_distance_px": 11.30910146480393
+        },
+        "selected": {
+          "recall": 0.5174129353233831,
+          "precision": 0.012401352874859075,
+          "mean_target_distance_px": 5.296991583867885,
+          "p95_target_distance_px": 11.30910146480393
+        },
+        "fitted": {
+          "recall": 0.5174129353233831,
+          "precision": 0.036182077551549736,
+          "mean_target_distance_px": 7.7279592212414006,
+          "p95_target_distance_px": 23.093066390914164
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_inner_horizontal_highlight",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.036931818181818184,
+          "precision": 0.0015077271013946476,
+          "mean_target_distance_px": 4.40869973261959,
+          "p95_target_distance_px": 6.284545264153382
+        },
+        "selected": {
+          "recall": 0.036931818181818184,
+          "precision": 0.001503194287861706,
+          "mean_target_distance_px": 4.40869973261959,
+          "p95_target_distance_px": 6.284545264153382
+        },
+        "fitted": {
+          "recall": 0.036931818181818184,
+          "precision": 0.005057709765270393,
+          "mean_target_distance_px": 4.325632177426848,
+          "p95_target_distance_px": 6.279918962326127
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_center_shading_axis",
+        "required": false,
+        "uncertainty_px": 3.5,
+        "raw": {
+          "recall": 0.45132743362831856,
+          "precision": 0.0365623822088202,
+          "mean_target_distance_px": 5.932343827645411,
+          "p95_target_distance_px": 16.665971931874722
+        },
+        "selected": {
+          "recall": 0.42604298356510745,
+          "precision": 0.036076662908680945,
+          "mean_target_distance_px": 6.500581923538275,
+          "p95_target_distance_px": 17.96950810497598
+        },
+        "fitted": {
+          "recall": 0.42857142857142855,
+          "precision": 0.06250810530411101,
+          "mean_target_distance_px": 8.064286518010304,
+          "p95_target_distance_px": 31.653935404548662
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      }
+    ],
+    "vector": {
+      "paths": 30,
+      "cubics": 317,
+      "svg_bytes": 28980,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.11801322785630917,
+      "axis_aligned_sample_length_fraction": 0.181787536686096,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "A01_shield",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 10505,
+      "density": 0.11433266943111198,
+      "skeleton_pixels": 2595,
+      "components8": 10,
+      "junction_pixels": 20,
+      "endpoint_pixels": 28,
+      "raw_traces": 44,
+      "eligible_traces": 36
+    },
+    "construction": {
+      "old_accepted": 22,
+      "stable_accepted": 32,
+      "cubics": 387,
+      "rejections": {
+        "cubic_budget": 2,
+        "deviation_budget": 1,
+        "no_subdivision_support": 1,
+        "short_chain": 8
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 2598,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.0356173999607563,
+      "4x": 0.10621410002931952,
+      "detail_1x": 0.03081309999106452,
+      "detail_4x": 0.0468939000274986,
+      "detail_16x": 0.21720780001487583
+    },
+    "render_dimensions": [
+      369,
+      249
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.5021759198206515,
+        "precision": 0.9996146435452794,
+        "mean_target_distance_px": 4.373107351487891,
+        "p95_target_distance_px": 18.584876605422966
+      },
+      "fitted": {
+        "recall": 0.2580772781221153,
+        "precision": 0.9953056332401119,
+        "mean_target_distance_px": 15.763072199171893,
+        "p95_target_distance_px": 48.92308374253871
+      }
+    },
+    "critical_guides": [
+      {
+        "id": "shield_outer_silhouette",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.9885714285714285,
+          "precision": 0.2524084778420039,
+          "mean_target_distance_px": 0.6637105989386258,
+          "p95_target_distance_px": 1.4315767976372609
+        },
+        "selected": {
+          "recall": 0.9885714285714285,
+          "precision": 0.25211701308698997,
+          "mean_target_distance_px": 0.6637105989386258,
+          "p95_target_distance_px": 1.4315767976372609
+        },
+        "fitted": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 25.227325165876252,
+          "p95_target_distance_px": 51.33888295306142
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_outer_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.8,
+        "raw": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 4.645564833010393,
+          "p95_target_distance_px": 6.2561297222938865
+        },
+        "selected": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 4.645564833010393,
+          "p95_target_distance_px": 6.2561297222938865
+        },
+        "fitted": {
+          "recall": 0.0,
+          "precision": 0.0,
+          "mean_target_distance_px": 23.377029426858154,
+          "p95_target_distance_px": 48.247975361281796
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "metallic_inner_bevel_ridge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.2934947049924357,
+          "precision": 0.06782273603082851,
+          "mean_target_distance_px": 2.6301109050028266,
+          "p95_target_distance_px": 4.929330616073243
+        },
+        "selected": {
+          "recall": 0.2900907715582451,
+          "precision": 0.06735950731331794,
+          "mean_target_distance_px": 2.664949322830759,
+          "p95_target_distance_px": 5.129881400127355
+        },
+        "fitted": {
+          "recall": 0.14561270801815432,
+          "precision": 0.07411106671993607,
+          "mean_target_distance_px": 20.88897694975671,
+          "p95_target_distance_px": 50.00408533051367
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_gold_material_interface",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.3181458003169572,
+          "precision": 0.06551059730250482,
+          "mean_target_distance_px": 2.4167199961619947,
+          "p95_target_distance_px": 4.794786624746947
+        },
+        "selected": {
+          "recall": 0.3181458003169572,
+          "precision": 0.06543494996150885,
+          "mean_target_distance_px": 2.4167199961619947,
+          "p95_target_distance_px": 4.794786624746947
+        },
+        "fitted": {
+          "recall": 0.14025356576862125,
+          "precision": 0.05842988413903316,
+          "mean_target_distance_px": 20.320219834154972,
+          "p95_target_distance_px": 52.1047957878506
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_complete_visible_outline",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.5393734123624048,
+          "precision": 0.10443159922928709,
+          "mean_target_distance_px": 1.8534645240734184,
+          "p95_target_distance_px": 4.109687481726098
+        },
+        "selected": {
+          "recall": 0.5097375105842507,
+          "precision": 0.10238645111624327,
+          "mean_target_distance_px": 1.9171092982381583,
+          "p95_target_distance_px": 4.13301726435109
+        },
+        "fitted": {
+          "recall": 0.4729043183742591,
+          "precision": 0.21024770275669197,
+          "mean_target_distance_px": 2.162562625255381,
+          "p95_target_distance_px": 4.624837031709735
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.44360902255639095,
+          "precision": 0.013872832369942197,
+          "mean_target_distance_px": 1.7708520721721317,
+          "p95_target_distance_px": 3.4921736048766263
+        },
+        "selected": {
+          "recall": 0.3283208020050125,
+          "precision": 0.012317167051578136,
+          "mean_target_distance_px": 1.9817642403194728,
+          "p95_target_distance_px": 3.4983127784171653
+        },
+        "fitted": {
+          "recall": 0.37343358395989973,
+          "precision": 0.027167399121054734,
+          "mean_target_distance_px": 1.9256723050177114,
+          "p95_target_distance_px": 3.5781158701945643
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_left_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.47750865051903113,
+          "precision": 0.010789980732177264,
+          "mean_target_distance_px": 2.0994866180958818,
+          "p95_target_distance_px": 4.936787653398002
+        },
+        "selected": {
+          "recall": 0.47750865051903113,
+          "precision": 0.011162432640492687,
+          "mean_target_distance_px": 2.1057472541099376,
+          "p95_target_distance_px": 4.936787653398002
+        },
+        "fitted": {
+          "recall": 0.4809688581314879,
+          "precision": 0.028565721134638435,
+          "mean_target_distance_px": 2.0011734050546885,
+          "p95_target_distance_px": 4.597236116519716
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_center_tip_and_lobes",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.6025039123630673,
+          "precision": 0.03159922928709056,
+          "mean_target_distance_px": 1.7215377924413031,
+          "p95_target_distance_px": 4.289560707658218
+        },
+        "selected": {
+          "recall": 0.564945226917058,
+          "precision": 0.030792917628945343,
+          "mean_target_distance_px": 1.8149251498199128,
+          "p95_target_distance_px": 4.301162633521313
+        },
+        "fitted": {
+          "recall": 0.5633802816901409,
+          "precision": 0.07151418298042349,
+          "mean_target_distance_px": 1.7358595227753255,
+          "p95_target_distance_px": 4.21946586628335
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_inner_tip",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.44280442804428044,
+          "precision": 0.010404624277456647,
+          "mean_target_distance_px": 1.7081943159335604,
+          "p95_target_distance_px": 3.043950613040162
+        },
+        "selected": {
+          "recall": 0.4280442804428044,
+          "precision": 0.010007698229407237,
+          "mean_target_distance_px": 1.7255048558351576,
+          "p95_target_distance_px": 3.043950613040162
+        },
+        "fitted": {
+          "recall": 0.21033210332103322,
+          "precision": 0.009788254095085897,
+          "mean_target_distance_px": 4.528021588571154,
+          "p95_target_distance_px": 12.210732804882984
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_right_tip_and_flank",
+        "required": true,
+        "uncertainty_px": 1.7,
+        "raw": {
+          "recall": 0.24285714285714285,
+          "precision": 0.006551059730250481,
+          "mean_target_distance_px": 2.651431434706168,
+          "p95_target_distance_px": 4.321531330532961
+        },
+        "selected": {
+          "recall": 0.24285714285714285,
+          "precision": 0.006543494996150885,
+          "mean_target_distance_px": 2.651431434706168,
+          "p95_target_distance_px": 4.321531330532961
+        },
+        "fitted": {
+          "recall": 0.25142857142857145,
+          "precision": 0.01588094286855773,
+          "mean_target_distance_px": 2.5244977456661606,
+          "p95_target_distance_px": 4.284143741396556
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "central_ornament_internal_fold",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.13513513513513514,
+          "precision": 0.0030828516377649326,
+          "mean_target_distance_px": 4.134022351985394,
+          "p95_target_distance_px": 6.33643489881878
+        },
+        "selected": {
+          "recall": 0.11486486486486487,
+          "precision": 0.001924557351809084,
+          "mean_target_distance_px": 4.250289867219907,
+          "p95_target_distance_px": 6.33643489881878
+        },
+        "fitted": {
+          "recall": 0.10810810810810811,
+          "precision": 0.003695565321614063,
+          "mean_target_distance_px": 4.245655801916175,
+          "p95_target_distance_px": 6.36115709074905
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_upper_edge",
+        "required": true,
+        "uncertainty_px": 1.2,
+        "raw": {
+          "recall": 0.5772357723577236,
+          "precision": 0.019653179190751446,
+          "mean_target_distance_px": 1.029107126159349,
+          "p95_target_distance_px": 2.103449225998502
+        },
+        "selected": {
+          "recall": 0.5772357723577236,
+          "precision": 0.021170130869899922,
+          "mean_target_distance_px": 1.029107126159349,
+          "p95_target_distance_px": 2.103449225998502
+        },
+        "fitted": {
+          "recall": 0.6233062330623306,
+          "precision": 0.0421494206951658,
+          "mean_target_distance_px": 1.0043542557311138,
+          "p95_target_distance_px": 2.243168666197053
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "lower_band_lower_edge",
+        "required": true,
+        "uncertainty_px": 1.5,
+        "raw": {
+          "recall": 0.3081232492997199,
+          "precision": 0.01001926782273603,
+          "mean_target_distance_px": 1.8923214168061953,
+          "p95_target_distance_px": 3.1774988100922794
+        },
+        "selected": {
+          "recall": 0.3081232492997199,
+          "precision": 0.010007698229407237,
+          "mean_target_distance_px": 1.8923214168061953,
+          "p95_target_distance_px": 3.1774988100922794
+        },
+        "fitted": {
+          "recall": 0.38095238095238093,
+          "precision": 0.02457051538154215,
+          "mean_target_distance_px": 1.812989069007722,
+          "p95_target_distance_px": 3.160166882328982
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "specular_upper_right_red",
+        "required": false,
+        "uncertainty_px": 4.0,
+        "raw": {
+          "recall": 0.5174129353233831,
+          "precision": 0.011946050096339113,
+          "mean_target_distance_px": 5.296991583867885,
+          "p95_target_distance_px": 11.30910146480393
+        },
+        "selected": {
+          "recall": 0.5174129353233831,
+          "precision": 0.012702078521939953,
+          "mean_target_distance_px": 5.296991583867885,
+          "p95_target_distance_px": 11.30910146480393
+        },
+        "fitted": {
+          "recall": 0.5174129353233831,
+          "precision": 0.027866560127846583,
+          "mean_target_distance_px": 7.7279592212414006,
+          "p95_target_distance_px": 23.093066390914164
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "crown_inner_horizontal_highlight",
+        "required": false,
+        "uncertainty_px": 2.0,
+        "raw": {
+          "recall": 0.036931818181818184,
+          "precision": 0.0015414258188824663,
+          "mean_target_distance_px": 4.40869973261959,
+          "p95_target_distance_px": 6.284545264153382
+        },
+        "selected": {
+          "recall": 0.036931818181818184,
+          "precision": 0.001539645881447267,
+          "mean_target_distance_px": 4.40869973261959,
+          "p95_target_distance_px": 6.284545264153382
+        },
+        "fitted": {
+          "recall": 0.036931818181818184,
+          "precision": 0.0038953256092688774,
+          "mean_target_distance_px": 4.325632177426848,
+          "p95_target_distance_px": 6.279918962326127
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      },
+      {
+        "id": "red_center_shading_axis",
+        "required": false,
+        "uncertainty_px": 3.5,
+        "raw": {
+          "recall": 0.4538558786346397,
+          "precision": 0.037379576107899805,
+          "mean_target_distance_px": 5.744627786136169,
+          "p95_target_distance_px": 16.665971931874722
+        },
+        "selected": {
+          "recall": 0.42857142857142855,
+          "precision": 0.03695150115473441,
+          "mean_target_distance_px": 6.317227248533327,
+          "p95_target_distance_px": 17.96950810497598
+        },
+        "fitted": {
+          "recall": 0.4310998735777497,
+          "precision": 0.06242508989212944,
+          "mean_target_distance_px": 7.876112562509769,
+          "p95_target_distance_px": 31.653935404548662
+        },
+        "limit": "Approximate agent guide; no independently human-certified1px truth or semantic contour correspondence."
+      }
+    ],
+    "vector": {
+      "paths": 32,
+      "cubics": 387,
+      "svg_bytes": 34866,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.13673591689972034,
+      "axis_aligned_sample_length_fraction": 0.24847781646482855,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "G06_arabic",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 2615,
+      "density": 0.03891369047619048,
+      "skeleton_pixels": 2095,
+      "components8": 8,
+      "junction_pixels": 0,
+      "endpoint_pixels": 2,
+      "raw_traces": 8,
+      "eligible_traces": 8
+    },
+    "construction": {
+      "old_accepted": 1,
+      "stable_accepted": 1,
+      "cubics": 33,
+      "rejections": {
+        "cubic_budget": 5,
+        "deviation_budget": 2
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 2102,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.03254480002215132,
+      "4x": 0.06622460001381114,
+      "detail_1x": 0.02278409997234121,
+      "detail_4x": 0.032422700023744255,
+      "detail_16x": 0.07748239999637008
+    },
+    "render_dimensions": [
+      210,
+      320
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9729977116704805,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.2367439420776514,
+        "p95_target_distance_px": 1.0
+      },
+      "raw_selected": {
+        "recall": 0.9729977116704805,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.2367439420776514,
+        "p95_target_distance_px": 1.0
+      },
+      "fitted": {
+        "recall": 0.042105263157894736,
+        "precision": 1.0,
+        "mean_target_distance_px": 92.11348013600323,
+        "p95_target_distance_px": 162.935593429959
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.075516693163752,
+        "precision": 0.045346062052505964,
+        "mean_target_distance_px": 5.431691937316174,
+        "p95_target_distance_px": 10.0
+      },
+      "fitted": {
+        "recall": 0.006359300476947536,
+        "precision": 0.09873417721518987,
+        "mean_target_distance_px": 89.3158057734908,
+        "p95_target_distance_px": 159.97577785676137
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.043914081145584725,
+        "precision": 1.0,
+        "mean_target_distance_px": 92.06534930614146,
+        "p95_target_distance_px": 162.943586982145
+      }
+    },
+    "vector": {
+      "paths": 1,
+      "cubics": 33,
+      "svg_bytes": 3047,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.07088607594936709,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "G06_arabic",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 7072,
+      "density": 0.10523809523809524,
+      "skeleton_pixels": 2014,
+      "components8": 2,
+      "junction_pixels": 23,
+      "endpoint_pixels": 5,
+      "raw_traces": 38,
+      "eligible_traces": 29
+    },
+    "construction": {
+      "old_accepted": 18,
+      "stable_accepted": 23,
+      "cubics": 441,
+      "rejections": {
+        "cubic_budget": 4,
+        "deviation_budget": 2,
+        "short_chain": 9
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 2029,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.03412759996717796,
+      "4x": 0.07776669994927943,
+      "detail_1x": 0.024875200004316866,
+      "detail_4x": 0.03232460003346205,
+      "detail_16x": 0.1083890000008978
+    },
+    "render_dimensions": [
+      210,
+      320
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9212814645308924,
+        "precision": 0.9890764647467726,
+        "mean_target_distance_px": 0.48284630671768974,
+        "p95_target_distance_px": 1.8828427124744591
+      },
+      "raw_selected": {
+        "recall": 0.917162471395881,
+        "precision": 0.9886643666830951,
+        "mean_target_distance_px": 0.4994359230483201,
+        "p95_target_distance_px": 2.0
+      },
+      "fitted": {
+        "recall": 0.522654462242563,
+        "precision": 0.9562928379854971,
+        "mean_target_distance_px": 11.043952296923596,
+        "p95_target_distance_px": 58.27261139684295
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.08108108108108109,
+        "precision": 0.05312810327706058,
+        "mean_target_distance_px": 5.627384826055313,
+        "p95_target_distance_px": 10.46878240448414
+      },
+      "fitted": {
+        "recall": 0.057233704292527825,
+        "precision": 0.05989867885169365,
+        "mean_target_distance_px": 13.096716320050938,
+        "p95_target_distance_px": 56.8688968299197
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9809069212410502,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.49982760068354576,
+        "p95_target_distance_px": 2.0
+      },
+      "fitted": {
+        "recall": 0.5775656324582339,
+        "precision": 0.999205324327009,
+        "mean_target_distance_px": 11.12196861082074,
+        "p95_target_distance_px": 58.96492024602953
+      }
+    },
+    "vector": {
+      "paths": 23,
+      "cubics": 441,
+      "svg_bytes": 39471,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.0905930267209695,
+      "axis_aligned_sample_length_fraction": 0.06826509560114369,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "G06_arabic",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 6759,
+      "density": 0.10058035714285714,
+      "skeleton_pixels": 2029,
+      "components8": 3,
+      "junction_pixels": 29,
+      "endpoint_pixels": 3,
+      "raw_traces": 47,
+      "eligible_traces": 25
+    },
+    "construction": {
+      "old_accepted": 15,
+      "stable_accepted": 20,
+      "cubics": 363,
+      "rejections": {
+        "cubic_budget": 3,
+        "deviation_budget": 2,
+        "short_chain": 22
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 2003,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.021519200003240258,
+      "4x": 0.055969599983654916,
+      "detail_1x": 0.019212599960155785,
+      "detail_4x": 0.03463950002333149,
+      "detail_16x": 0.11619650002103299
+    },
+    "render_dimensions": [
+      210,
+      320
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.928604118993135,
+        "precision": 0.9911286347954658,
+        "mean_target_distance_px": 0.4214253746910573,
+        "p95_target_distance_px": 1.4142135623730951
+      },
+      "raw_selected": {
+        "recall": 0.9176201372997712,
+        "precision": 0.9975037443834248,
+        "mean_target_distance_px": 0.4498805569842428,
+        "p95_target_distance_px": 2.0
+      },
+      "fitted": {
+        "recall": 0.4471395881006865,
+        "precision": 0.9711797890605838,
+        "mean_target_distance_px": 21.947960957596024,
+        "p95_target_distance_px": 80.99795660122551
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.07790143084260731,
+        "precision": 0.051749630359783146,
+        "mean_target_distance_px": 5.667155205452342,
+        "p95_target_distance_px": 10.63014581273465
+      },
+      "fitted": {
+        "recall": 0.031001589825119236,
+        "precision": 0.03948982094677459,
+        "mean_target_distance_px": 25.956944043408495,
+        "p95_target_distance_px": 78.29572693013374
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9837708830548926,
+        "precision": 0.9990142927550517,
+        "mean_target_distance_px": 0.4300736322581419,
+        "p95_target_distance_px": 1.4142135623730951
+      },
+      "fitted": {
+        "recall": 0.49021479713603816,
+        "precision": 0.9995094432180525,
+        "mean_target_distance_px": 21.78564198131405,
+        "p95_target_distance_px": 80.80236623099039
+      }
+    },
+    "vector": {
+      "paths": 20,
+      "cubics": 363,
+      "svg_bytes": 32415,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.0990924699533971,
+      "axis_aligned_sample_length_fraction": 0.09815924628844591,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "K01_linear_corner_hole",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 1287,
+      "density": 0.04189453125,
+      "skeleton_pixels": 830,
+      "components8": 3,
+      "junction_pixels": 0,
+      "endpoint_pixels": 0,
+      "raw_traces": 3,
+      "eligible_traces": 3
+    },
+    "construction": {
+      "old_accepted": 0,
+      "stable_accepted": 0,
+      "cubics": 0,
+      "rejections": {
+        "cubic_budget": 2,
+        "deviation_budget": 1
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 833,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.01797039998928085,
+      "4x": 0.02942919998895377,
+      "detail_1x": 0.01667119999183342,
+      "detail_4x": 0.019651500042527914,
+      "detail_16x": 0.06190259999129921
+    },
+    "render_dimensions": [
+      192,
+      160
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9970783015192832,
+        "precision": 0.7662650602409639,
+        "mean_target_distance_px": 0.4653658119563784,
+        "p95_target_distance_px": 0.8705242673240075
+      },
+      "raw_selected": {
+        "recall": 0.9970783015192832,
+        "precision": 0.765906362545018,
+        "mean_target_distance_px": 0.4653658119563784,
+        "p95_target_distance_px": 0.8705242673240075
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.019762845849802372,
+        "precision": 0.010843373493975903,
+        "mean_target_distance_px": 16.41762014064412,
+        "p95_target_distance_px": 23.055867613868124
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "vector": {
+      "paths": 0,
+      "cubics": 0,
+      "svg_bytes": 93,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": null,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "K01_linear_corner_hole",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 1736,
+      "density": 0.05651041666666667,
+      "skeleton_pixels": 834,
+      "components8": 3,
+      "junction_pixels": 0,
+      "endpoint_pixels": 0,
+      "raw_traces": 3,
+      "eligible_traces": 3
+    },
+    "construction": {
+      "old_accepted": 0,
+      "stable_accepted": 0,
+      "cubics": 0,
+      "rejections": {
+        "cubic_budget": 2,
+        "deviation_budget": 1
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 837,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.018110700009856373,
+      "4x": 0.030992800020612776,
+      "detail_1x": 0.01714059995720163,
+      "detail_4x": 0.022579899989068508,
+      "detail_16x": 0.06507989997044206
+    },
+    "render_dimensions": [
+      192,
+      160
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9885079859758473,
+        "precision": 0.7601918465227818,
+        "mean_target_distance_px": 0.5540702442967412,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "raw_selected": {
+        "recall": 0.9885079859758473,
+        "precision": 0.7598566308243727,
+        "mean_target_distance_px": 0.5540702442967412,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.017247574559827523,
+        "precision": 0.008393285371702638,
+        "mean_target_distance_px": 16.41864116207808,
+        "p95_target_distance_px": 23.081073100674207
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.3325301204819277,
+        "p95_target_distance_px": 1.0
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "vector": {
+      "paths": 0,
+      "cubics": 0,
+      "svg_bytes": 93,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": null,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "K01_linear_corner_hole",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 1736,
+      "density": 0.05651041666666667,
+      "skeleton_pixels": 834,
+      "components8": 3,
+      "junction_pixels": 0,
+      "endpoint_pixels": 0,
+      "raw_traces": 3,
+      "eligible_traces": 3
+    },
+    "construction": {
+      "old_accepted": 0,
+      "stable_accepted": 0,
+      "cubics": 0,
+      "rejections": {
+        "cubic_budget": 2,
+        "deviation_budget": 1
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 837,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.01881500001763925,
+      "4x": 0.03875040001003072,
+      "detail_1x": 0.027093699958641082,
+      "detail_4x": 0.027199600008316338,
+      "detail_16x": 0.0686788999591954
+    },
+    "render_dimensions": [
+      192,
+      160
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9885079859758473,
+        "precision": 0.7601918465227818,
+        "mean_target_distance_px": 0.5540702442967412,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "raw_selected": {
+        "recall": 0.9885079859758473,
+        "precision": 0.7598566308243727,
+        "mean_target_distance_px": 0.5540702442967412,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.017247574559827523,
+        "precision": 0.008393285371702638,
+        "mean_target_distance_px": 16.41864116207808,
+        "p95_target_distance_px": 23.081073100674207
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.3325301204819277,
+        "p95_target_distance_px": 1.0
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    },
+    "vector": {
+      "paths": 0,
+      "cubics": 0,
+      "svg_bytes": 93,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": null,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "fine_features",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 637,
+      "density": 0.051839192708333336,
+      "skeleton_pixels": 420,
+      "components8": 4,
+      "junction_pixels": 48,
+      "endpoint_pixels": 0,
+      "raw_traces": 75,
+      "eligible_traces": 18
+    },
+    "construction": {
+      "old_accepted": 13,
+      "stable_accepted": 15,
+      "cubics": 51,
+      "rejections": {
+        "cubic_budget": 1,
+        "no_subdivision_support": 2,
+        "short_chain": 57
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 354,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.0168235000455752,
+      "4x": 0.019271900004241616,
+      "detail_1x": 0.01460850000148639,
+      "detail_4x": 0.016525399987585843,
+      "detail_16x": 0.03693810000550002
+    },
+    "render_dimensions": [
+      128,
+      96
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9774639423076923,
+        "precision": 0.9809523809523809,
+        "mean_target_distance_px": 0.5080989177972008,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "raw_selected": {
+        "recall": 0.8440504807692307,
+        "precision": 0.9774011299435028,
+        "mean_target_distance_px": 0.9656608675605732,
+        "p95_target_distance_px": 4.141027978162687
+      },
+      "fitted": {
+        "recall": 0.28756009615384615,
+        "precision": 0.874409820585458,
+        "mean_target_distance_px": 15.175286439896187,
+        "p95_target_distance_px": 47.059504472478174
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.5278833967046895,
+        "precision": 0.38333333333333336,
+        "mean_target_distance_px": 1.1651671557252696,
+        "p95_target_distance_px": 1.6129359875704925
+      },
+      "fitted": {
+        "recall": 0.22053231939163498,
+        "precision": 0.4173748819641171,
+        "mean_target_distance_px": 15.290653015524986,
+        "p95_target_distance_px": 48.615783163090185
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.3761904761904762,
+        "precision": 1.0,
+        "mean_target_distance_px": 14.495147279943255,
+        "p95_target_distance_px": 46.287957485150706
+      }
+    },
+    "vector": {
+      "paths": 15,
+      "cubics": 51,
+      "svg_bytes": 5314,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.10009442870632672,
+      "axis_aligned_sample_length_fraction": 0.1168079420116939,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "fine_features",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 747,
+      "density": 0.060791015625,
+      "skeleton_pixels": 304,
+      "components8": 4,
+      "junction_pixels": 0,
+      "endpoint_pixels": 4,
+      "raw_traces": 4,
+      "eligible_traces": 3
+    },
+    "construction": {
+      "old_accepted": 0,
+      "stable_accepted": 1,
+      "cubics": 39,
+      "rejections": {
+        "cubic_budget": 1,
+        "no_subdivision_support": 1,
+        "short_chain": 1
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 304,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.01784770004451275,
+      "4x": 0.0229412000044249,
+      "detail_1x": 0.019328499969560653,
+      "detail_4x": 0.02042680000886321,
+      "detail_16x": 0.04429520003031939
+    },
+    "render_dimensions": [
+      128,
+      96
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.98828125,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.6068351006421224,
+        "p95_target_distance_px": 1.0643366478704002
+      },
+      "raw_selected": {
+        "recall": 0.9768629807692307,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.8861412458642245,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "fitted": {
+        "recall": 0.4612379807692308,
+        "precision": 1.0,
+        "mean_target_distance_px": 15.045260430453993,
+        "p95_target_distance_px": 48.307288900558824
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.6140684410646388,
+        "precision": 0.41776315789473684,
+        "mean_target_distance_px": 0.9117817679992786,
+        "p95_target_distance_px": 1.7914487398057295
+      },
+      "fitted": {
+        "recall": 0.4835234474017744,
+        "precision": 1.0,
+        "mean_target_distance_px": 14.804778296619343,
+        "p95_target_distance_px": 49.91972739192955
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9928571428571429,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.6882054739264849,
+        "p95_target_distance_px": 1.4142135623730951
+      },
+      "fitted": {
+        "recall": 0.46190476190476193,
+        "precision": 1.0,
+        "mean_target_distance_px": 14.757485522626316,
+        "p95_target_distance_px": 47.63816650506466
+      }
+    },
+    "vector": {
+      "paths": 1,
+      "cubics": 39,
+      "svg_bytes": 3367,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.07701149425287357,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "fine_features",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 747,
+      "density": 0.060791015625,
+      "skeleton_pixels": 304,
+      "components8": 4,
+      "junction_pixels": 0,
+      "endpoint_pixels": 4,
+      "raw_traces": 4,
+      "eligible_traces": 3
+    },
+    "construction": {
+      "old_accepted": 0,
+      "stable_accepted": 1,
+      "cubics": 39,
+      "rejections": {
+        "cubic_budget": 1,
+        "no_subdivision_support": 1,
+        "short_chain": 1
+      }
+    },
+    "known_reference": "independent source-vector8x sampled reference, not constructor input",
+    "prefit_selected_points": 304,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.01991430000634864,
+      "4x": 0.025650500028859824,
+      "detail_1x": 0.020631899998988956,
+      "detail_4x": 0.020180399995297194,
+      "detail_16x": 0.04587319999700412
+    },
+    "render_dimensions": [
+      128,
+      96
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.98828125,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.6068351006421224,
+        "p95_target_distance_px": 1.0643366478704002
+      },
+      "raw_selected": {
+        "recall": 0.9768629807692307,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.8861412458642245,
+        "p95_target_distance_px": 1.0789172813520043
+      },
+      "fitted": {
+        "recall": 0.4612379807692308,
+        "precision": 1.0,
+        "mean_target_distance_px": 15.045260430453993,
+        "p95_target_distance_px": 48.307288900558824
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.6140684410646388,
+        "precision": 0.41776315789473684,
+        "mean_target_distance_px": 0.9117817679992786,
+        "p95_target_distance_px": 1.7914487398057295
+      },
+      "fitted": {
+        "recall": 0.4835234474017744,
+        "precision": 1.0,
+        "mean_target_distance_px": 14.804778296619343,
+        "p95_target_distance_px": 49.91972739192955
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9928571428571429,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.6882054739264849,
+        "p95_target_distance_px": 1.4142135623730951
+      },
+      "fitted": {
+        "recall": 0.46190476190476193,
+        "precision": 1.0,
+        "mean_target_distance_px": 14.757485522626316,
+        "p95_target_distance_px": 47.63816650506466
+      }
+    },
+    "vector": {
+      "paths": 1,
+      "cubics": 39,
+      "svg_bytes": 3367,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.07701149425287357,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H01_horse",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 2854,
+      "density": 0.021753048780487803,
+      "skeleton_pixels": 2035,
+      "components8": 2,
+      "junction_pixels": 0,
+      "endpoint_pixels": 4,
+      "raw_traces": 2,
+      "eligible_traces": 2
+    },
+    "construction": {
+      "old_accepted": 1,
+      "stable_accepted": 1,
+      "cubics": 6,
+      "rejections": {
+        "cubic_budget": 1
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 2035,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.021935600030701607,
+      "4x": 0.06681279995245859,
+      "detail_1x": 0.019449599960353225,
+      "detail_4x": 0.028474499995354563,
+      "detail_16x": 0.10855100001208484
+    },
+    "render_dimensions": [
+      400,
+      328
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9927466150870407,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.5048213552942347,
+        "p95_target_distance_px": 1.0
+      },
+      "raw_selected": {
+        "recall": 0.9927466150870407,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.5048213552942347,
+        "p95_target_distance_px": 1.0
+      },
+      "fitted": {
+        "recall": 0.007736943907156673,
+        "precision": 1.0,
+        "mean_target_distance_px": 168.144013405473,
+        "p95_target_distance_px": 382.8406053628443
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.022556390977443608,
+        "precision": 0.016216216216216217,
+        "mean_target_distance_px": 18.060513888989114,
+        "p95_target_distance_px": 45.39823785126467
+      },
+      "fitted": {
+        "recall": 0.007518796992481203,
+        "precision": 0.49137931034482757,
+        "mean_target_distance_px": 166.76631379453883,
+        "p95_target_distance_px": 369.39951882685114
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.0063882063882063885,
+        "precision": 1.0,
+        "mean_target_distance_px": 168.55409374777483,
+        "p95_target_distance_px": 383.09271167337863
+      }
+    },
+    "vector": {
+      "paths": 1,
+      "cubics": 6,
+      "svg_bytes": 680,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.07758620689655173,
+      "axis_aligned_sample_length_fraction": 0.0,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H01_horse",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 8793,
+      "density": 0.06701981707317073,
+      "skeleton_pixels": 1918,
+      "components8": 1,
+      "junction_pixels": 9,
+      "endpoint_pixels": 5,
+      "raw_traces": 16,
+      "eligible_traces": 12
+    },
+    "construction": {
+      "old_accepted": 4,
+      "stable_accepted": 8,
+      "cubics": 92,
+      "rejections": {
+        "cubic_budget": 4,
+        "short_chain": 4
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 1921,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.026383600023109466,
+      "4x": 0.12361119996057823,
+      "detail_1x": 0.026469799980986863,
+      "detail_4x": 0.03236979997018352,
+      "detail_16x": 0.09925570001360029
+    },
+    "render_dimensions": [
+      400,
+      328
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.7741779497098646,
+        "precision": 0.8310740354535975,
+        "mean_target_distance_px": 1.0581786091627954,
+        "p95_target_distance_px": 2.23606797749979
+      },
+      "raw_selected": {
+        "recall": 0.7707930367504836,
+        "precision": 0.8271733472149921,
+        "mean_target_distance_px": 1.0848858488556994,
+        "p95_target_distance_px": 2.8284271247461903
+      },
+      "fitted": {
+        "recall": 0.09477756286266925,
+        "precision": 0.6544715447154471,
+        "mean_target_distance_px": 70.21819434345358,
+        "p95_target_distance_px": 231.82098917614195
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.01921470342522974,
+        "precision": 0.01251303441084463,
+        "mean_target_distance_px": 18.44949855610267,
+        "p95_target_distance_px": 45.70557952810576
+      },
+      "fitted": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": 72.16056064705994,
+        "p95_target_distance_px": 216.78790772814662
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9533169533169533,
+        "precision": 0.9932221063607924,
+        "mean_target_distance_px": 0.6787257592056822,
+        "p95_target_distance_px": 2.0
+      },
+      "fitted": {
+        "recall": 0.14496314496314497,
+        "precision": 0.9507678410117435,
+        "mean_target_distance_px": 70.36685176050766,
+        "p95_target_distance_px": 231.42196628606123
+      }
+    },
+    "vector": {
+      "paths": 8,
+      "cubics": 92,
+      "svg_bytes": 8158,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.10749774164408311,
+      "axis_aligned_sample_length_fraction": 0.15072108564447217,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H01_horse",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 7428,
+      "density": 0.05661585365853659,
+      "skeleton_pixels": 1951,
+      "components8": 1,
+      "junction_pixels": 12,
+      "endpoint_pixels": 6,
+      "raw_traces": 21,
+      "eligible_traces": 13
+    },
+    "construction": {
+      "old_accepted": 7,
+      "stable_accepted": 10,
+      "cubics": 117,
+      "rejections": {
+        "cubic_budget": 3,
+        "short_chain": 8
+      }
+    },
+    "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+    "prefit_selected_points": 1953,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.030106600024737418,
+      "4x": 0.11010009999154136,
+      "detail_1x": 0.02134530001785606,
+      "detail_4x": 0.02290440001524985,
+      "detail_16x": 0.06455970002571121
+    },
+    "render_dimensions": [
+      400,
+      328
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "boundary_1_25px": {
+      "raw_all": {
+        "recall": 0.9090909090909091,
+        "precision": 0.9595079446437724,
+        "mean_target_distance_px": 0.8134549077755486,
+        "p95_target_distance_px": 2.0
+      },
+      "raw_selected": {
+        "recall": 0.905705996131528,
+        "precision": 0.9564772145417306,
+        "mean_target_distance_px": 0.8311761066741339,
+        "p95_target_distance_px": 2.0
+      },
+      "fitted": {
+        "recall": 0.14119922630560927,
+        "precision": 0.792169776802049,
+        "mean_target_distance_px": 42.6643809866029,
+        "p95_target_distance_px": 114.36735021056933
+      }
+    },
+    "thin_skeleton_proximity_NOT_stroke_recovery": {
+      "raw_all": {
+        "recall": 0.028404344193817876,
+        "precision": 0.01742696053305997,
+        "mean_target_distance_px": 18.255937075506747,
+        "p95_target_distance_px": 45.6617949792638
+      },
+      "fitted": {
+        "recall": 0.014202172096908938,
+        "precision": 0.05342114892060007,
+        "mean_target_distance_px": 44.33121183599204,
+        "p95_target_distance_px": 122.01802612825206
+      }
+    },
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.9754299754299754,
+        "precision": 0.9969246540235777,
+        "mean_target_distance_px": 0.3737324428000137,
+        "p95_target_distance_px": 1.4142135623730951
+      },
+      "fitted": {
+        "recall": 0.18476658476658478,
+        "precision": 0.9835345773874863,
+        "mean_target_distance_px": 43.112066857472904,
+        "p95_target_distance_px": 114.6172021139543
+      }
+    },
+    "vector": {
+      "paths": 10,
+      "cubics": 117,
+      "svg_bytes": 10638,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.10757409440175632,
+      "axis_aligned_sample_length_fraction": 0.1450806099722404,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H02_astronaut",
+    "arm": "Classical",
+    "discovery": {
+      "support_pixels": 63063,
+      "density": 0.24056625366210938,
+      "skeleton_pixels": 32757,
+      "components8": 152,
+      "junction_pixels": 5779,
+      "endpoint_pixels": 891,
+      "raw_traces": 9195,
+      "eligible_traces": 1351
+    },
+    "construction": {
+      "old_accepted": 87,
+      "stable_accepted": 127,
+      "cubics": 2131,
+      "rejections": {
+        "deviation_budget": 1,
+        "proposal_budget": 1223,
+        "short_chain": 7844
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 6138,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.034405099984724075,
+      "4x": 0.18931980000343174,
+      "detail_1x": 0.01995129999704659,
+      "detail_4x": 0.024483199988026172,
+      "detail_16x": 0.08000810001976788
+    },
+    "render_dimensions": [
+      512,
+      512
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "mean_target_distance_px": 0.0,
+        "p95_target_distance_px": 0.0
+      },
+      "fitted": {
+        "recall": 0.20285740452422382,
+        "precision": 1.0,
+        "mean_target_distance_px": 13.222473649644588,
+        "p95_target_distance_px": 39.4310249805221
+      }
+    },
+    "vector": {
+      "paths": 127,
+      "cubics": 2131,
+      "svg_bytes": 191308,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.09169350428389135,
+      "axis_aligned_sample_length_fraction": 0.07729841778214522,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H02_astronaut",
+    "arm": "ML",
+    "discovery": {
+      "support_pixels": 70272,
+      "density": 0.26806640625,
+      "skeleton_pixels": 7630,
+      "components8": 11,
+      "junction_pixels": 169,
+      "endpoint_pixels": 61,
+      "raw_traces": 285,
+      "eligible_traces": 243
+    },
+    "construction": {
+      "old_accepted": 66,
+      "stable_accepted": 124,
+      "cubics": 1989,
+      "rejections": {
+        "cubic_budget": 2,
+        "deviation_budget": 2,
+        "proposal_budget": 115,
+        "short_chain": 42
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 6206,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.028135400032624602,
+      "4x": 0.14075469999806955,
+      "detail_1x": 0.01574179995805025,
+      "detail_4x": 0.021180299983825535,
+      "detail_16x": 0.07420800003455952
+    },
+    "render_dimensions": [
+      512,
+      512
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.2731935158897335,
+        "precision": 0.8975098296199213,
+        "mean_target_distance_px": 8.400282384215206,
+        "p95_target_distance_px": 27.202941017470888
+      },
+      "fitted": {
+        "recall": 0.1938211679946271,
+        "precision": 0.8679121885287,
+        "mean_target_distance_px": 11.061368410670243,
+        "p95_target_distance_px": 35.72677546772863
+      }
+    },
+    "vector": {
+      "paths": 124,
+      "cubics": 1989,
+      "svg_bytes": 179071,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.08870528220444289,
+      "axis_aligned_sample_length_fraction": 0.05978712180426221,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  },
+  {
+    "case": "H02_astronaut",
+    "arm": "Hybrid",
+    "discovery": {
+      "support_pixels": 59948,
+      "density": 0.2286834716796875,
+      "skeleton_pixels": 9765,
+      "components8": 13,
+      "junction_pixels": 597,
+      "endpoint_pixels": 150,
+      "raw_traces": 974,
+      "eligible_traces": 482
+    },
+    "construction": {
+      "old_accepted": 74,
+      "stable_accepted": 125,
+      "cubics": 1863,
+      "rejections": {
+        "cubic_budget": 1,
+        "deviation_budget": 2,
+        "proposal_budget": 354,
+        "short_chain": 492
+      }
+    },
+    "known_reference": null,
+    "prefit_selected_points": 5450,
+    "unintegrated": true,
+    "geometry": "NOT_ACCEPTED",
+    "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+    "actual_stroke_width_px": 0.35,
+    "topology": {
+      "self_intersecting_traces": [],
+      "mutual_crossing_or_overlap_pairs": [],
+      "endpoint_and_junction_relationships": "not integrated/shared or certified"
+    },
+    "render_seconds": {
+      "1x": 0.02734309999505058,
+      "4x": 0.14698620000854135,
+      "detail_1x": 0.015612799965310842,
+      "detail_4x": 0.021081099985167384,
+      "detail_16x": 0.0641065999516286
+    },
+    "render_dimensions": [
+      512,
+      512
+    ],
+    "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+    "classical_source_edge_agreement_proxy": {
+      "raw_all": {
+        "recall": 0.36199896205391213,
+        "precision": 0.9448028673835125,
+        "mean_target_distance_px": 7.584348534357928,
+        "p95_target_distance_px": 26.476404589747453
+      },
+      "fitted": {
+        "recall": 0.20340690539426687,
+        "precision": 0.9519531620365981,
+        "mean_target_distance_px": 10.335689304102,
+        "p95_target_distance_px": 29.832867780352597
+      }
+    },
+    "vector": {
+      "paths": 125,
+      "cubics": 1863,
+      "svg_bytes": 168765,
+      "tiny_bbox_le2px": 0,
+      "stroke_area_proxy_tiny_fraction": 0.0,
+      "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+      "half_grid_alignment_sample_fraction": 0.0846212193040675,
+      "axis_aligned_sample_length_fraction": 0.043153478812266916,
+      "closed_strokes": 0,
+      "filled_regions": 0,
+      "no_raster": true
+    }
+  }
+]

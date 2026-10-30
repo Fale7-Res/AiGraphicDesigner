@@ -1,0 +1,97 @@
+{
+  "links": [
+    {
+      "page": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\review.html",
+      "references": 243,
+      "missing": []
+    },
+    {
+      "page": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\outputs\\ml_geometry_review\\review.html",
+      "references": 300,
+      "missing": []
+    }
+  ],
+  "source_AST": [
+    {
+      "name": "infer_dexined.py",
+      "AST_identical": true
+    },
+    {
+      "name": "construct_geometry.py",
+      "AST_identical": true
+    },
+    {
+      "name": "evaluate_results.py",
+      "AST_identical": true
+    },
+    {
+      "name": "build_review.py",
+      "AST_identical": true
+    },
+    {
+      "name": "run_inference.py",
+      "AST_identical": true
+    },
+    {
+      "name": "run_construction.py",
+      "AST_identical": true
+    },
+    {
+      "name": "acquire_model.py",
+      "AST_identical": true
+    }
+  ],
+  "holdouts": [
+    {
+      "case": "H01_horse",
+      "source_hash": true,
+      "arms": [
+        {
+          "arm": "Classical",
+          "paths": 1,
+          "cubics": 6,
+          "pair_crossings": 0
+        },
+        {
+          "arm": "ML",
+          "paths": 8,
+          "cubics": 92,
+          "pair_crossings": 0
+        },
+        {
+          "arm": "Hybrid",
+          "paths": 10,
+          "cubics": 117,
+          "pair_crossings": 0
+        }
+      ]
+    },
+    {
+      "case": "H02_astronaut",
+      "source_hash": true,
+      "arms": [
+        {
+          "arm": "Classical",
+          "paths": 127,
+          "cubics": 2131,
+          "pair_crossings": 0
+        },
+        {
+          "arm": "ML",
+          "paths": 124,
+          "cubics": 1989,
+          "pair_crossings": 0
+        },
+        {
+          "arm": "Hybrid",
+          "paths": 125,
+          "cubics": 1863,
+          "pair_crossings": 0
+        }
+      ]
+    }
+  ],
+  "images": 171,
+  "errors": [],
+  "unknown_rights_or_weights_paths": []
+}

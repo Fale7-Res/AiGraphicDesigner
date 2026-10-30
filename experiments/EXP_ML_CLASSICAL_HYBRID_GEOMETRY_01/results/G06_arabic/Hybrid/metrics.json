@@ -1,0 +1,108 @@
+{
+  "case": "G06_arabic",
+  "arm": "Hybrid",
+  "discovery": {
+    "support_pixels": 6759,
+    "density": 0.10058035714285714,
+    "skeleton_pixels": 2029,
+    "components8": 3,
+    "junction_pixels": 29,
+    "endpoint_pixels": 3,
+    "raw_traces": 47,
+    "eligible_traces": 25
+  },
+  "construction": {
+    "old_accepted": 15,
+    "stable_accepted": 20,
+    "cubics": 363,
+    "rejections": {
+      "cubic_budget": 3,
+      "deviation_budget": 2,
+      "short_chain": 22
+    }
+  },
+  "known_reference": "source-threshold proxy, not independent glyph/vector truth",
+  "prefit_selected_points": 2003,
+  "unintegrated": true,
+  "geometry": "NOT_ACCEPTED",
+  "region_holes_and_connectivity": "NOT_ESTABLISHED: open edge strokes have no region ownership; skeleton topology is not glyph or object topology",
+  "actual_stroke_width_px": 0.35,
+  "topology": {
+    "self_intersecting_traces": [],
+    "mutual_crossing_or_overlap_pairs": [],
+    "endpoint_and_junction_relationships": "not integrated/shared or certified"
+  },
+  "render_seconds": {
+    "1x": 0.021519200003240258,
+    "4x": 0.055969599983654916,
+    "detail_1x": 0.019212599960155785,
+    "detail_4x": 0.03463950002333149,
+    "detail_16x": 0.11619650002103299
+  },
+  "render_dimensions": [
+    210,
+    320
+  ],
+  "fitting_limitations": "Numerical segment-distance envelopes; not exact topology or continuous certificates.",
+  "boundary_1_25px": {
+    "raw_all": {
+      "recall": 0.928604118993135,
+      "precision": 0.9911286347954658,
+      "mean_target_distance_px": 0.4214253746910573,
+      "p95_target_distance_px": 1.4142135623730951
+    },
+    "raw_selected": {
+      "recall": 0.9176201372997712,
+      "precision": 0.9975037443834248,
+      "mean_target_distance_px": 0.4498805569842428,
+      "p95_target_distance_px": 2.0
+    },
+    "fitted": {
+      "recall": 0.4471395881006865,
+      "precision": 0.9711797890605838,
+      "mean_target_distance_px": 21.947960957596024,
+      "p95_target_distance_px": 80.99795660122551
+    }
+  },
+  "thin_skeleton_proximity_NOT_stroke_recovery": {
+    "raw_all": {
+      "recall": 0.07790143084260731,
+      "precision": 0.051749630359783146,
+      "mean_target_distance_px": 5.667155205452342,
+      "p95_target_distance_px": 10.63014581273465
+    },
+    "fitted": {
+      "recall": 0.031001589825119236,
+      "precision": 0.03948982094677459,
+      "mean_target_distance_px": 25.956944043408495,
+      "p95_target_distance_px": 78.29572693013374
+    }
+  },
+  "classical_source_edge_agreement_proxy": {
+    "raw_all": {
+      "recall": 0.9837708830548926,
+      "precision": 0.9990142927550517,
+      "mean_target_distance_px": 0.4300736322581419,
+      "p95_target_distance_px": 1.4142135623730951
+    },
+    "fitted": {
+      "recall": 0.49021479713603816,
+      "precision": 0.9995094432180525,
+      "mean_target_distance_px": 21.78564198131405,
+      "p95_target_distance_px": 80.80236623099039
+    }
+  },
+  "vector": {
+    "paths": 20,
+    "cubics": 363,
+    "svg_bytes": 32415,
+    "tiny_bbox_le2px": 0,
+    "stroke_area_proxy_tiny_fraction": 0.0,
+    "microgeometry_limit": "length*width proxy not visible area ownership; overlaps unaccounted",
+    "half_grid_alignment_sample_fraction": 0.0990924699533971,
+    "axis_aligned_sample_length_fraction": 0.09815924628844591,
+    "closed_strokes": 0,
+    "filled_regions": 0,
+    "no_raster": true
+  }
+}
