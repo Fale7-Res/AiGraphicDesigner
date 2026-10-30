@@ -1,0 +1,86 @@
+{
+  "case": "K01_linear_corner_hole",
+  "arm": "Hybrid",
+  "condition": "CAP512_DIAGNOSTIC",
+  "only_change": "oldstablefitmaximum_segments64to512;no partition/periodic/changed .6gate",
+  "records": [
+    {
+      "trace_id": 0,
+      "old_reason": "cubic_budget",
+      "new_status": "deviation_budget",
+      "meta": {
+        "raw_to_curve_max_px": 0.9069123669983662,
+        "curve_to_raw_max_px": 0.9069345089907301,
+        "numerical_upper_envelope_px": 0.9139345089907301,
+        "curve_to_raw_worst_xy": [
+          82.43040049024164,
+          143.40693450899073
+        ],
+        "raw_to_curve_worst_xy": [
+          82.42,
+          142.5
+        ],
+        "flatten_tolerance_px": 0.002,
+        "sampling_step_px": 0.01,
+        "curve_is_simple_numerical": true,
+        "continuous_exact_certification": false,
+        "reason": "deviation_budget",
+        "segments": 125
+      },
+      "length_px": 541.8650070512055
+    },
+    {
+      "trace_id": 2,
+      "old_reason": "cubic_budget",
+      "new_status": "deviation_budget",
+      "meta": {
+        "raw_to_curve_max_px": 1.413861321962048,
+        "curve_to_raw_max_px": 0.5090669915742336,
+        "numerical_upper_envelope_px": 1.4208613219620478,
+        "curve_to_raw_worst_xy": [
+          159.00920025065207,
+          101.71072919298868
+        ],
+        "raw_to_curve_worst_xy": [
+          167.5,
+          62.5
+        ],
+        "flatten_tolerance_px": 0.002,
+        "sampling_step_px": 0.01,
+        "curve_is_simple_numerical": true,
+        "continuous_exact_certification": false,
+        "reason": "deviation_budget",
+        "segments": 69
+      },
+      "length_px": 208.32590180780454
+    },
+    {
+      "trace_id": 1,
+      "old_reason": "deviation_budget",
+      "new_status": "deviation_budget",
+      "meta": {
+        "raw_to_curve_max_px": 0.7071067811865476,
+        "curve_to_raw_max_px": 0.39656925393130393,
+        "numerical_upper_envelope_px": 0.7141067811865476,
+        "curve_to_raw_worst_xy": [
+          92.8965692539313,
+          83.17263252912946
+        ],
+        "raw_to_curve_worst_xy": [
+          64.0,
+          53.0
+        ],
+        "flatten_tolerance_px": 0.002,
+        "sampling_step_px": 0.01,
+        "curve_is_simple_numerical": true,
+        "continuous_exact_certification": false,
+        "reason": "deviation_budget",
+        "segments": 63
+      },
+      "length_px": 156.71067811865476
+    }
+  ],
+  "accepted": [],
+  "wall_seconds": 38.42588120000437,
+  "not_main_condition": true
+}

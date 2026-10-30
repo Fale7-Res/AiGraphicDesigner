@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-30T08:37:34Z",
+  "author": "contour_partition",
+  "maximum_deviation_px": 0.6,
+  "rdp_epsilon_px": 0.35,
+  "corner_evidence": "RDP .35 support turns; raw stair-step turns are not independent partition anchors",
+  "corner_turn_degrees": 60,
+  "accumulated_turn_degrees": 35,
+  "partition_maximum_arc_px": 32,
+  "maximum_cubics_per_partition": 64,
+  "maximum_cubics_per_original_trace": 512,
+  "maximum_subdivision_rounds_per_partition": 8,
+  "minimum_trace_length_px": 6,
+  "maximum_active_seconds_per_arm": 120,
+  "P": "Exact source-index partitions, unchanged stable fitter with open endpoint treatment",
+  "Q": "Same partitions and fitter; genuinely closed source traces have source-derived periodic tangent handles at smooth partition joins including closure, with unchanged gates",
+  "guarantee_limit": "Numerical envelope and sampled flatten predicates, not exact continuous certification. No regions or ownership inferred."
+}

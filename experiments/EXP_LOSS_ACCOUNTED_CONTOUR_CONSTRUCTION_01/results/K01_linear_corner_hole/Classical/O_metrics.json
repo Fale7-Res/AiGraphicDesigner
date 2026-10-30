@@ -1,0 +1,95 @@
+{
+  "case": "K01_linear_corner_hole",
+  "arm": "Classical",
+  "condition": "O",
+  "loss": {
+    "raw_trace_count": 3,
+    "raw_length_px": 901.2447327281723,
+    "selected_length_px": 901.2447327281724,
+    "accepted_length_px": 0,
+    "lost_length_px": 901.2447327281723,
+    "output_paths": 0,
+    "cubics": 0,
+    "loss_by_reason": {
+      "cubic_budget": 2,
+      "deviation_budget": 1
+    }
+  },
+  "retained_selected_length_fraction": 0.0,
+  "retained_total_length_fraction": 0.0,
+  "reference": "independent8xsource-vector sampled mask",
+  "geometry": "NOT_ACCEPTED",
+  "source_predictions_changed": false,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "render_seconds": {
+    "1x": 0.02429109998047352,
+    "4x": 0.03776460001245141,
+    "detail1x": 0.02341209998121485,
+    "detail4x": 0.025922500004526228,
+    "detail16x": 0.07007459999294952
+  },
+  "boundary_1_25px": {
+    "raw_all": {
+      "recall": 0.9970783015192832,
+      "precision": 0.7662650602409639,
+      "mean_target_distance_px": 0.4653658119563784,
+      "p95_target_distance_px": 0.8705242673240075
+    },
+    "selected": {
+      "recall": 0.9970783015192832,
+      "precision": 0.765906362545018,
+      "mean_target_distance_px": 0.4653658119563784,
+      "p95_target_distance_px": 0.8705242673240075
+    },
+    "fitted": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "mean_target_distance_px": null,
+      "p95_target_distance_px": null
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "reference_hole_index": 0,
+      "fitted_all": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      },
+      "closed_paths_only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    }
+  ],
+  "vector": {
+    "paths": 0,
+    "cubics": 0,
+    "tiny_bbox_le2px": 0,
+    "tiny_stroke_area_proxy_fraction": 0.0,
+    "microgeometry": "Lengthtimesconstantwidthproxy,notactualvisiblefacearea",
+    "half_grid_fraction": null,
+    "axis_sample_length_fraction": 0.0,
+    "svg_bytes": 93,
+    "filled_regions": 0,
+    "tiny_cubic_span_le2px": 0,
+    "tiny_cubic_length_weighted_fraction": 0.0,
+    "median_cubic_length_px": null,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  }
+}

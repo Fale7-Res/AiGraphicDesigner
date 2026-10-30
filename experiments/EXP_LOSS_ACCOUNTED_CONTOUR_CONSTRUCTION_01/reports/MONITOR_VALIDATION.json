@@ -1,0 +1,40 @@
+{
+  "normal": {
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "wall_seconds": 2.2917629000148736,
+    "sampled_tree_RSS_peak_mib": 96.26953125,
+    "sampled_root_RSS_peak_mib": 3.90625,
+    "observed_pid_peak_bytes": {
+      "20876": 4096000,
+      "36244": 13811712,
+      "34880": 4100096,
+      "1680": 78938112
+    },
+    "sample_count": 59,
+    "sample_interval_seconds": 0.02,
+    "sampled_tree_cpu_seconds_highwater": 0.21875,
+    "memory_limit_mib": 256,
+    "limitations": "SummedworkingRSSmaydoublecountsharedpages; samplingcanmisspeaks; notexactmaximum. AllchildPIDsownedbythisworker."
+  },
+  "controlled_limit_stop": {
+    "status": "STOPPED_MEMORY",
+    "exit_code": 15,
+    "wall_seconds": 0.22291750001022592,
+    "sampled_tree_RSS_peak_mib": 96.30078125,
+    "sampled_root_RSS_peak_mib": 3.91015625,
+    "observed_pid_peak_bytes": {
+      "28720": 4100096,
+      "37020": 13914112,
+      "28164": 4100096,
+      "26832": 78864384
+    },
+    "sample_count": 6,
+    "sample_interval_seconds": 0.02,
+    "sampled_tree_cpu_seconds_highwater": 0.15625,
+    "memory_limit_mib": 48,
+    "limitations": "SummedworkingRSSmaydoublecountsharedpages; samplingcanmisspeaks; notexactmaximum. AllchildPIDsownedbythisworker."
+  },
+  "passed": true,
+  "fixture": "ownedchild64MiBtouchallocation; rootwaits. ValidatechildinclusionandstopBEFOREbenchmarkRAMclaims."
+}

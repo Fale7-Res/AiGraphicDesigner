@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-30T09:00:56.265158+00:00",
+  "purpose": "Separatebudgetcapacityfrompartitioneffects usingonlythecriticalK01control. MainO/P/Qfrozenoutputsunchanged.",
+  "source_code_sha256": "4dcc7dd36a942ff3fd3ddf70d77261d086a0e39a047a541fa3a68f5acac9d03d",
+  "conditions": "oldstablefit512vs64cap, unchanged.6deviation/.35RDP/8rounds;no partition/periodic",
+  "cases": [
+    "K01_linear_corner_hole"
+  ],
+  "arms": [
+    "Classical",
+    "ML",
+    "Hybrid"
+  ],
+  "maximum_seconds_per_arm": 120,
+  "memory_mib": 768,
+  "no_new_gate_or_parameter_tuning": true
+}

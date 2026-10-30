@@ -1,0 +1,129 @@
+{
+  "case": "H01_horse",
+  "arm": "Hybrid",
+  "condition": "O",
+  "loss": {
+    "raw_trace_count": 21,
+    "raw_length_px": 2185.5453813665604,
+    "selected_length_px": 2170.302740679441,
+    "accepted_length_px": 383.55129855222066,
+    "lost_length_px": 1801.9940828143397,
+    "output_paths": 10,
+    "cubics": 117,
+    "loss_by_reason": {
+      "cubic_budget": 3,
+      "accepted": 10,
+      "short_chain": 8
+    }
+  },
+  "retained_selected_length_fraction": 0.17672709496378605,
+  "retained_total_length_fraction": 0.1754945478699677,
+  "reference": "source-thresholdproxy;notindependentglyph/vectortruth",
+  "geometry": "NOT_ACCEPTED",
+  "source_predictions_changed": false,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        9
+      ]
+    ],
+    "closed_loops": [],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 12,
+    "complete_incidence_junctions_retained": 2,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "render_seconds": {
+    "1x": 0.024072600004728884,
+    "4x": 0.09167990001151338,
+    "detail1x": 0.019015300029423088,
+    "detail4x": 0.024909399973694235,
+    "detail16x": 0.07216919999336824
+  },
+  "boundary_1_25px": {
+    "raw_all": {
+      "recall": 0.9090909090909091,
+      "precision": 0.9595079446437724,
+      "mean_target_distance_px": 0.8134549077755486,
+      "p95_target_distance_px": 2.0
+    },
+    "selected": {
+      "recall": 0.905705996131528,
+      "precision": 0.9564772145417306,
+      "mean_target_distance_px": 0.8311761066741339,
+      "p95_target_distance_px": 2.0
+    },
+    "fitted": {
+      "recall": 0.14119922630560927,
+      "precision": 0.792169776802049,
+      "mean_target_distance_px": 42.6643809866029,
+      "p95_target_distance_px": 114.36735021056933
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "reference_hole_index": 0,
+      "fitted_all": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": 3.268496720111269,
+        "p95_target_distance_px": 4.083368334205461
+      },
+      "closed_paths_only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "mean_target_distance_px": null,
+        "p95_target_distance_px": null
+      }
+    }
+  ],
+  "vector": {
+    "paths": 10,
+    "cubics": 117,
+    "tiny_bbox_le2px": 0,
+    "tiny_stroke_area_proxy_fraction": 0.0,
+    "microgeometry": "Lengthtimesconstantwidthproxy,notactualvisiblefacearea",
+    "half_grid_fraction": 0.10757409440175632,
+    "axis_sample_length_fraction": 0.1450806099722404,
+    "svg_bytes": 10638,
+    "filled_regions": 0,
+    "tiny_cubic_span_le2px": 67,
+    "tiny_cubic_length_weighted_fraction": 0.2905282453073514,
+    "median_cubic_length_px": 2.856365032378167,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  }
+}

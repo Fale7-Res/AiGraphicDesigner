@@ -1,0 +1,421 @@
+{
+  "case": "G06_arabic",
+  "arm": "Classical",
+  "condition": "Q",
+  "loss": {
+    "raw_trace_count": 8,
+    "selected_traces": 8,
+    "raw_length_px": 2391.4053377838823,
+    "selected_length_px": 2391.4053377838823,
+    "accepted_length_px": 2383.162697096763,
+    "lost_length_px": 8.242640687119286,
+    "output_paths": 8,
+    "cubics": 827,
+    "closed_source_traces": 7,
+    "closed_retained_traces": 6,
+    "loss_by_reason": {
+      "accepted": {
+        "intervals": 767,
+        "length_px": 2383.162697096758
+      },
+      "periodic_deviation_gate": {
+        "intervals": 1,
+        "length_px": 8.242640687119286
+      }
+    }
+  },
+  "retained_selected_length_fraction": 0.9965532230956892,
+  "retained_total_length_fraction": 0.9965532230956892,
+  "reference": "source-thresholdproxy;notindependentglyph/vectortruth",
+  "geometry": "NOT_ACCEPTED",
+  "source_predictions_changed": false,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [
+      {
+        "trace_id": 1,
+        "raw_signed_area_px2": 6502.0,
+        "fitted_signed_area_px2": 6499.575518708634,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9886798126264397,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 3,
+        "raw_signed_area_px2": 3004.5,
+        "fitted_signed_area_px2": 3009.3930180751486,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9917010962712478,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 7,
+        "raw_signed_area_px2": 2033.5,
+        "fitted_signed_area_px2": 2034.6455483021437,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9887652035350089,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5,
+        "raw_signed_area_px2": 770.5,
+        "fitted_signed_area_px2": 774.6741859887643,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9844712143688269,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 6,
+        "raw_signed_area_px2": -1907.5,
+        "fitted_signed_area_px2": -1910.158336160106,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9926033262876754,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 4,
+        "raw_signed_area_px2": 104.5,
+        "fitted_signed_area_px2": 111.63767173853557,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9340538522346827,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [
+      {
+        "trace_pair": [
+          3,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          7,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          7,
+          3
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5,
+          3
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5,
+          7
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          6,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          6,
+          3
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          6,
+          7
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          6,
+          5
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4,
+          3
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4,
+          7
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4,
+          5
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4,
+          6
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      }
+    ],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "render_seconds": {
+    "1x": 0.02530259999912232,
+    "4x": 0.06475670001236722,
+    "detail1x": 0.019570899952668697,
+    "detail4x": 0.026264699990861118,
+    "detail16x": 0.0817172999959439
+  },
+  "boundary_1_25px": {
+    "raw_all": {
+      "recall": 0.9729977116704805,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.2367439420776514,
+      "p95_target_distance_px": 1.0
+    },
+    "selected": {
+      "recall": 0.9729977116704805,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.2367439420776514,
+      "p95_target_distance_px": 1.0
+    },
+    "fitted": {
+      "recall": 0.9711670480549199,
+      "precision": 0.9998287280200959,
+      "mean_target_distance_px": 0.24942892905067318,
+      "p95_target_distance_px": 0.9587965484478516
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "reference_hole_index": 0,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0005138159397122631,
+        "mean_target_distance_px": 0.8032250805031477,
+        "p95_target_distance_px": 0.8032250805031477
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0005486132276744895,
+        "mean_target_distance_px": 0.8032250805031477,
+        "p95_target_distance_px": 0.8032250805031477
+      }
+    },
+    {
+      "reference_hole_index": 1,
+      "fitted_all": {
+        "recall": 0.47368421052631576,
+        "precision": 0.009762502854533,
+        "mean_target_distance_px": 1.5137470999112173,
+        "p95_target_distance_px": 2.4757844885740896
+      },
+      "closed_paths_only": {
+        "recall": 0.47368421052631576,
+        "precision": 0.010423651325815301,
+        "mean_target_distance_px": 1.5137470999112173,
+        "p95_target_distance_px": 2.4757844885740896
+      }
+    },
+    {
+      "reference_hole_index": 2,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0005709065996802923,
+        "mean_target_distance_px": 0.9485599698794739,
+        "p95_target_distance_px": 0.9485599698794739
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0006095702529716549,
+        "mean_target_distance_px": 0.9485599698794739,
+        "p95_target_distance_px": 0.9485599698794739
+      }
+    },
+    {
+      "reference_hole_index": 3,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0005138159397122631,
+        "mean_target_distance_px": 1.1017534317382005,
+        "p95_target_distance_px": 1.1017534317382005
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0005486132276744895,
+        "mean_target_distance_px": 1.1017534317382005,
+        "p95_target_distance_px": 1.1017534317382005
+      }
+    },
+    {
+      "reference_hole_index": 4,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0005709065996802923,
+        "mean_target_distance_px": 1.0545195815041466,
+        "p95_target_distance_px": 1.0545195815041466
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0006095702529716549,
+        "mean_target_distance_px": 1.0545195815041466,
+        "p95_target_distance_px": 1.0545195815041466
+      }
+    },
+    {
+      "reference_hole_index": 5,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0003996346197762046,
+        "mean_target_distance_px": 0.9089368601998203,
+        "p95_target_distance_px": 0.9089368601998203
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0004266991770801585,
+        "mean_target_distance_px": 0.9089368601998203,
+        "p95_target_distance_px": 0.9089368601998203
+      }
+    },
+    {
+      "reference_hole_index": 6,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.00074217857958438,
+        "mean_target_distance_px": 0.9758608422993436,
+        "p95_target_distance_px": 0.9758608422993436
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0007924413288631515,
+        "mean_target_distance_px": 0.9758608422993436,
+        "p95_target_distance_px": 0.9758608422993436
+      }
+    },
+    {
+      "reference_hole_index": 7,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.0010847225393925553,
+        "mean_target_distance_px": 0.9587965484478542,
+        "p95_target_distance_px": 0.9587965484478542
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.0011581834806461445,
+        "mean_target_distance_px": 0.9587965484478542,
+        "p95_target_distance_px": 0.9587965484478542
+      }
+    },
+    {
+      "reference_hole_index": 8,
+      "fitted_all": {
+        "recall": 0.5,
+        "precision": 0.0010847225393925553,
+        "mean_target_distance_px": 1.057747814439603,
+        "p95_target_distance_px": 1.378566987579746
+      },
+      "closed_paths_only": {
+        "recall": 0.5,
+        "precision": 0.0011581834806461445,
+        "mean_target_distance_px": 1.057747814439603,
+        "p95_target_distance_px": 1.378566987579746
+      }
+    }
+  ],
+  "vector": {
+    "paths": 8,
+    "cubics": 827,
+    "tiny_bbox_le2px": 0,
+    "tiny_stroke_area_proxy_fraction": 0.0,
+    "microgeometry": "Lengthtimesconstantwidthproxy,notactualvisiblefacearea",
+    "half_grid_fraction": 0.08323818223338662,
+    "axis_sample_length_fraction": 0.025179454887818614,
+    "svg_bytes": 72760,
+    "filled_regions": 0,
+    "tiny_cubic_span_le2px": 568,
+    "tiny_cubic_length_weighted_fraction": 0.3760858717008617,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  }
+}

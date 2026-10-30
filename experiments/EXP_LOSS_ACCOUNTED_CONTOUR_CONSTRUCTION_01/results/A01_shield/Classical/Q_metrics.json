@@ -1,0 +1,566 @@
+{
+  "case": "A01_shield",
+  "arm": "Classical",
+  "condition": "Q",
+  "loss": {
+    "raw_trace_count": 2330,
+    "selected_traces": 128,
+    "raw_length_px": 9157.228206660466,
+    "selected_length_px": 4158.596246642893,
+    "accepted_length_px": 4158.596246642892,
+    "lost_length_px": 4998.631960017574,
+    "output_paths": 128,
+    "cubics": 1122,
+    "closed_source_traces": 1,
+    "closed_retained_traces": 0,
+    "loss_by_reason": {
+      "accepted": {
+        "intervals": 1061,
+        "length_px": 4158.596246642848
+      },
+      "proposal_budget": {
+        "intervals": 112,
+        "length_px": 839.3279938488586
+      },
+      "short_chain": {
+        "intervals": 2090,
+        "length_px": 4159.303966168602
+      }
+    }
+  },
+  "retained_selected_length_fraction": 0.9999999999999998,
+  "retained_total_length_fraction": 0.4541326428468996,
+  "reference": "No independent full contour truth",
+  "geometry": "NOT_ACCEPTED",
+  "source_predictions_changed": false,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [
+      [
+        3,
+        7
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        12,
+        17
+      ],
+      [
+        6,
+        17
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        18,
+        45
+      ],
+      [
+        26,
+        54
+      ],
+      [
+        26,
+        56
+      ],
+      [
+        11,
+        58
+      ],
+      [
+        22,
+        61
+      ],
+      [
+        18,
+        64
+      ],
+      [
+        15,
+        68
+      ],
+      [
+        35,
+        76
+      ],
+      [
+        7,
+        77
+      ],
+      [
+        40,
+        80
+      ],
+      [
+        21,
+        84
+      ],
+      [
+        65,
+        85
+      ],
+      [
+        73,
+        88
+      ],
+      [
+        14,
+        90
+      ],
+      [
+        87,
+        97
+      ],
+      [
+        44,
+        98
+      ],
+      [
+        60,
+        99
+      ],
+      [
+        62,
+        107
+      ],
+      [
+        91,
+        109
+      ],
+      [
+        34,
+        115
+      ]
+    ],
+    "closed_loops": [],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 1473,
+    "complete_incidence_junctions_retained": 2,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "render_seconds": {
+    "1x": 0.03210910002235323,
+    "4x": 0.12768699997104704,
+    "detail1x": 0.03840359998866916,
+    "detail4x": 0.051717499969527125,
+    "detail16x": 0.23863619996700436
+  },
+  "critical_guides": [
+    {
+      "id": "shield_outer_silhouette",
+      "uncertainty_px": 1.8,
+      "required": true,
+      "raw": {
+        "recall": 0.999327731092437,
+        "precision": 0.10721350389028089,
+        "mean_target_distance_px": 0.6930707290663317,
+        "p95_target_distance_px": 1.4163943093313234
+      },
+      "selected": {
+        "recall": 0.788235294117647,
+        "precision": 0.1506223012446025,
+        "mean_target_distance_px": 2.450847994367155,
+        "p95_target_distance_px": 13.33934912242534
+      },
+      "fitted": {
+        "recall": 0.788235294117647,
+        "precision": 0.1573931404439879,
+        "mean_target_distance_px": 2.371806071223885,
+        "p95_target_distance_px": 13.282211022132676
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "metallic_outer_bevel_ridge",
+      "uncertainty_px": 1.8,
+      "required": true,
+      "raw": {
+        "recall": 0.41166139796276785,
+        "precision": 0.0356059607015693,
+        "mean_target_distance_px": 2.0481305634592184,
+        "p95_target_distance_px": 4.72437059160452
+      },
+      "selected": {
+        "recall": 0.303477344573235,
+        "precision": 0.04749809499618999,
+        "mean_target_distance_px": 3.717728191026159,
+        "p95_target_distance_px": 11.45675250280101
+      },
+      "fitted": {
+        "recall": 0.3083948015454865,
+        "precision": 0.05261656109113736,
+        "mean_target_distance_px": 3.6934603974020366,
+        "p95_target_distance_px": 11.45675250280101
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "metallic_inner_bevel_ridge",
+      "uncertainty_px": 1.5,
+      "required": true,
+      "raw": {
+        "recall": 0.796142208774584,
+        "precision": 0.07569563497296584,
+        "mean_target_distance_px": 0.9848350728741125,
+        "p95_target_distance_px": 2.5407911113677533
+      },
+      "selected": {
+        "recall": 0.37632375189107414,
+        "precision": 0.06121412242824486,
+        "mean_target_distance_px": 4.0125476507711015,
+        "p95_target_distance_px": 9.108129482045403
+      },
+      "fitted": {
+        "recall": 0.3774583963691377,
+        "precision": 0.05809507504422759,
+        "mean_target_distance_px": 3.9828530374751745,
+        "p95_target_distance_px": 9.108129482045403
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "red_gold_material_interface",
+      "uncertainty_px": 1.2,
+      "required": true,
+      "raw": {
+        "recall": 0.6438193343898574,
+        "precision": 0.0626401160490571,
+        "mean_target_distance_px": 0.9777399525678951,
+        "p95_target_distance_px": 1.8300393577634277
+      },
+      "selected": {
+        "recall": 0.12559429477020603,
+        "precision": 0.0190500381000762,
+        "mean_target_distance_px": 3.424673324477581,
+        "p95_target_distance_px": 11.32633067575906
+      },
+      "fitted": {
+        "recall": 0.13114104595879555,
+        "precision": 0.016435541859270673,
+        "mean_target_distance_px": 3.413851472413605,
+        "p95_target_distance_px": 11.2120995492749
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_complete_visible_outline",
+      "uncertainty_px": 1.7,
+      "required": true,
+      "raw": {
+        "recall": 0.8501270110076207,
+        "precision": 0.07516813925886852,
+        "mean_target_distance_px": 0.9718336982490062,
+        "p95_target_distance_px": 2.4533976543569445
+      },
+      "selected": {
+        "recall": 0.3018628281117697,
+        "precision": 0.036830073660147324,
+        "mean_target_distance_px": 4.522840462354126,
+        "p95_target_distance_px": 13.631393674604283
+      },
+      "fitted": {
+        "recall": 0.3035563082133785,
+        "precision": 0.03920561547680192,
+        "mean_target_distance_px": 4.49242277589372,
+        "p95_target_distance_px": 13.631393674604283
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_left_tip_and_flank",
+      "uncertainty_px": 1.5,
+      "required": true,
+      "raw": {
+        "recall": 0.706766917293233,
+        "precision": 0.012264275352762758,
+        "mean_target_distance_px": 1.0675223046992515,
+        "p95_target_distance_px": 2.5162444334027376
+      },
+      "selected": {
+        "recall": 0.06516290726817042,
+        "precision": 0.001778003556007112,
+        "mean_target_distance_px": 6.926369455101958,
+        "p95_target_distance_px": 18.244162906014342
+      },
+      "fitted": {
+        "recall": 0.06766917293233082,
+        "precision": 0.0018832391713747645,
+        "mean_target_distance_px": 6.918066686199265,
+        "p95_target_distance_px": 18.244162906014342
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_left_inner_tip",
+      "uncertainty_px": 1.5,
+      "required": true,
+      "raw": {
+        "recall": 0.7024221453287197,
+        "precision": 0.00712119214031386,
+        "mean_target_distance_px": 1.1953862326108604,
+        "p95_target_distance_px": 3.3344730468073225
+      },
+      "selected": {
+        "recall": 0.24567474048442905,
+        "precision": 0.003302006604013208,
+        "mean_target_distance_px": 3.7998113466472656,
+        "p95_target_distance_px": 7.2584387034613815
+      },
+      "fitted": {
+        "recall": 0.24567474048442905,
+        "precision": 0.0035952747817154596,
+        "mean_target_distance_px": 3.7603976008392355,
+        "p95_target_distance_px": 7.2584387034613815
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_center_tip_and_lobes",
+      "uncertainty_px": 1.7,
+      "required": true,
+      "raw": {
+        "recall": 0.8622848200312989,
+        "precision": 0.021231702492417247,
+        "mean_target_distance_px": 1.0181841910737655,
+        "p95_target_distance_px": 2.529173246923093
+      },
+      "selected": {
+        "recall": 0.3411580594679186,
+        "precision": 0.011176022352044705,
+        "mean_target_distance_px": 3.704299409788758,
+        "p95_target_distance_px": 7.905694150420948
+      },
+      "fitted": {
+        "recall": 0.3427230046948357,
+        "precision": 0.01369628488272556,
+        "mean_target_distance_px": 3.6717549543332413,
+        "p95_target_distance_px": 7.905694150420948
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_right_inner_tip",
+      "uncertainty_px": 1.5,
+      "required": true,
+      "raw": {
+        "recall": 0.7933579335793358,
+        "precision": 0.007516813925886852,
+        "mean_target_distance_px": 1.042007968643025,
+        "p95_target_distance_px": 2.147193905980258
+      },
+      "selected": {
+        "recall": 0.28413284132841327,
+        "precision": 0.004064008128016256,
+        "mean_target_distance_px": 2.978704588943725,
+        "p95_target_distance_px": 9.369267069459811
+      },
+      "fitted": {
+        "recall": 0.2988929889298893,
+        "precision": 0.005307310392056155,
+        "mean_target_distance_px": 2.9420711594308835,
+        "p95_target_distance_px": 9.369267069459811
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_right_tip_and_flank",
+      "uncertainty_px": 1.7,
+      "required": true,
+      "raw": {
+        "recall": 0.8171428571428572,
+        "precision": 0.009626796782276145,
+        "mean_target_distance_px": 1.019700010891829,
+        "p95_target_distance_px": 2.3862827449519894
+      },
+      "selected": {
+        "recall": 0.1457142857142857,
+        "precision": 0.00254000508001016,
+        "mean_target_distance_px": 8.15333544679319,
+        "p95_target_distance_px": 15.583156784095252
+      },
+      "fitted": {
+        "recall": 0.14857142857142858,
+        "precision": 0.0024539177081549964,
+        "mean_target_distance_px": 8.137454605869259,
+        "p95_target_distance_px": 15.583156784095252
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "central_ornament_internal_fold",
+      "uncertainty_px": 2.0,
+      "required": false,
+      "raw": {
+        "recall": 0.9662162162162162,
+        "precision": 0.005538704998021891,
+        "mean_target_distance_px": 0.7562477230613219,
+        "p95_target_distance_px": 1.8380241382941869
+      },
+      "selected": {
+        "recall": 0.7702702702702703,
+        "precision": 0.00762001524003048,
+        "mean_target_distance_px": 1.7288419609244003,
+        "p95_target_distance_px": 6.935675880975307
+      },
+      "fitted": {
+        "recall": 0.7702702702702703,
+        "precision": 0.007361753124464989,
+        "mean_target_distance_px": 1.6568395771537228,
+        "p95_target_distance_px": 6.935675880975307
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "lower_band_upper_edge",
+      "uncertainty_px": 1.2,
+      "required": true,
+      "raw": {
+        "recall": 0.7859078590785907,
+        "precision": 0.01054991428194646,
+        "mean_target_distance_px": 0.8226353772636704,
+        "p95_target_distance_px": 1.5569595510803338
+      },
+      "selected": {
+        "recall": 0.20596205962059622,
+        "precision": 0.004318008636017272,
+        "mean_target_distance_px": 3.1449025567131836,
+        "p95_target_distance_px": 7.159716915070594
+      },
+      "fitted": {
+        "recall": 0.2140921409214092,
+        "precision": 0.003709410489071506,
+        "mean_target_distance_px": 3.129794980793054,
+        "p95_target_distance_px": 7.159716915070594
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "lower_band_lower_edge",
+      "uncertainty_px": 1.5,
+      "required": true,
+      "raw": {
+        "recall": 0.9131652661064426,
+        "precision": 0.012791771066860082,
+        "mean_target_distance_px": 0.8487568733270735,
+        "p95_target_distance_px": 1.6099103651645408
+      },
+      "selected": {
+        "recall": 0.5966386554621849,
+        "precision": 0.0127000254000508,
+        "mean_target_distance_px": 2.038896969121067,
+        "p95_target_distance_px": 6.804825228966698
+      },
+      "fitted": {
+        "recall": 0.6134453781512605,
+        "precision": 0.011584774296638704,
+        "mean_target_distance_px": 2.004823758450704,
+        "p95_target_distance_px": 6.804825228966698
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "specular_upper_right_red",
+      "uncertainty_px": 4.0,
+      "required": false,
+      "raw": {
+        "recall": 1.0,
+        "precision": 0.014506132137676382,
+        "mean_target_distance_px": 1.1189858296283508,
+        "p95_target_distance_px": 2.560650887181594
+      },
+      "selected": {
+        "recall": 0.8159203980099502,
+        "precision": 0.01651003302006604,
+        "mean_target_distance_px": 1.8447232034408994,
+        "p95_target_distance_px": 5.2747584705915145
+      },
+      "fitted": {
+        "recall": 0.8159203980099502,
+        "precision": 0.017748102493865207,
+        "mean_target_distance_px": 1.7843012322956073,
+        "p95_target_distance_px": 5.2539362533100995
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "crown_inner_horizontal_highlight",
+      "uncertainty_px": 2.0,
+      "required": false,
+      "raw": {
+        "recall": 0.8664772727272727,
+        "precision": 0.01411051035210339,
+        "mean_target_distance_px": 1.176067653349942,
+        "p95_target_distance_px": 2.6262555910500973
+      },
+      "selected": {
+        "recall": 0.4375,
+        "precision": 0.009398018796037593,
+        "mean_target_distance_px": 2.7842207810841875,
+        "p95_target_distance_px": 6.807530896688113
+      },
+      "fitted": {
+        "recall": 0.44886363636363635,
+        "precision": 0.008788449466415568,
+        "mean_target_distance_px": 2.752539296714593,
+        "p95_target_distance_px": 6.804056471672074
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    },
+    {
+      "id": "red_center_shading_axis",
+      "uncertainty_px": 3.5,
+      "required": false,
+      "raw": {
+        "recall": 1.0,
+        "precision": 0.036660952129763946,
+        "mean_target_distance_px": 0.7788268462116331,
+        "p95_target_distance_px": 1.8027756377319946
+      },
+      "selected": {
+        "recall": 0.8293299620733249,
+        "precision": 0.04749809499618999,
+        "mean_target_distance_px": 1.9255274705449135,
+        "p95_target_distance_px": 8.45167927742595
+      },
+      "fitted": {
+        "recall": 0.8293299620733249,
+        "precision": 0.04468412942989214,
+        "mean_target_distance_px": 1.848165502552028,
+        "p95_target_distance_px": 8.44529726091576
+      },
+      "limit": "Approximateagentguide;nostrict1px/humanorsemanticcorrespondencetruth"
+    }
+  ],
+  "vector": {
+    "paths": 128,
+    "cubics": 1122,
+    "tiny_bbox_le2px": 0,
+    "tiny_stroke_area_proxy_fraction": 0.0,
+    "microgeometry": "Lengthtimesconstantwidthproxy,notactualvisiblefacearea",
+    "half_grid_fraction": 0.3889174228157279,
+    "axis_sample_length_fraction": 0.6704741277095619,
+    "svg_bytes": 90171,
+    "filled_regions": 0,
+    "tiny_cubic_span_le2px": 748,
+    "tiny_cubic_length_weighted_fraction": 0.2777469848436917,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  }
+}

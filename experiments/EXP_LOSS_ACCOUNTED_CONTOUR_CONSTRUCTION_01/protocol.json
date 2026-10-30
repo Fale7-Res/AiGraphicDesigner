@@ -1,0 +1,408 @@
+{
+  "id": "EXP_LOSS_ACCOUNTED_CONTOUR_CONSTRUCTION_01",
+  "frozen_utc": "2026-10-30T08:40:39.337014+00:00",
+  "baseline_commit": "3922fc393cd7fbb3675cae9cfec21d097e74fcbd",
+  "geometry": "NOT_ACCEPTED",
+  "architecture": "NOT_APPROVED",
+  "hypothesis": "Principled partitioning prevents wholesale loss of useful frozen source traces; dedicated periodic handles preserve smooth closed-loop seams without changing detection. Gains do not establish new source discovery or filled-region correctness.",
+  "cases": {
+    "A01_shield": {
+      "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\A01_shield\\working.png",
+      "base": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield",
+      "rights": "inherited benchmark/data provenance unchanged"
+    },
+    "G06_arabic": {
+      "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\G06_arabic\\working.png",
+      "base": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic",
+      "rights": "inherited benchmark/data provenance unchanged"
+    },
+    "K01_linear_corner_hole": {
+      "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\K01_linear_corner_hole\\working.png",
+      "base": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole",
+      "rights": "inherited benchmark/data provenance unchanged"
+    },
+    "fine_features": {
+      "source": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\working.png",
+      "base": "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features",
+      "rights": "LOCAL_ONLY_ARENA_PENDING_RIGHTS"
+    },
+    "H01_horse": {
+      "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\H01_horse\\working.png",
+      "base": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse",
+      "rights": "inherited benchmark/data provenance unchanged"
+    },
+    "H02_astronaut": {
+      "source": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\H02_astronaut\\working.png",
+      "base": "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut",
+      "rights": "inherited benchmark/data provenance unchanged"
+    }
+  },
+  "arms": [
+    "Classical",
+    "ML",
+    "Hybrid"
+  ],
+  "conditions": {
+    "O": "Saved stable construction SVG/accepted controls, no fit or detector rerun",
+    "P": "Frozen same-selected traces partitioned at60degreecorners,35degree accumulatedcurvature or<=32pxarclength, reuse stablefitter .35RDP/.6deviation",
+    "Q": "Same partitions/curves; smooth all noncorner closed-loop joins incl seam with bounded C1 handles; revalidate every modified part, unsafe parts rejected; open traces identicalP"
+  },
+  "selection": {
+    "minimum_raw_length_px": 6,
+    "maximum_selected_traces_per_arm": 128,
+    "policy": "Exactly old eligibility/ranking; all other traces explicitly retained in loss ledger as short/proposalbudget. No new detector/source thresholds or retracing. No reassignment of junctions."
+  },
+  "budgets": {
+    "cubics_per_partition": 64,
+    "cubics_per_raw_trace": 512,
+    "cubics_per_case_arm_condition": 4096,
+    "iterations_per_partition": 8,
+    "maximum_partition_arc_px": 32,
+    "condition_wall_seconds": 120,
+    "case_arm_worker_wall_seconds": 300,
+    "worker_tree_RSS_mib": 768,
+    "minimum_available_RAM_mib": 700,
+    "construction_total_wall_seconds": 3600,
+    "active_engineering_hours": 6,
+    "monitor_interval_seconds": 0.1
+  },
+  "safety": {
+    "input": "Saved source_points_xy only; no source/evaluator masks/guide curves in fitter",
+    "edge_accounting": "Intervals[lo,hi] cover every original edge exactlyonce; accepted+rejected/skipped rawarclength equals total at1e-8 relative tolerance; sharedanchor allowed no duplicate edge",
+    "closure": "Exact endpoints; only full accepted cycles may close; preserve nonzero signedarea orientation and raw nesting diagnostics; corners remainC0, periodic smooth joinsC1",
+    "intersections": "Reject new propercross/overlap relative same frozen source-tracepair; allow inheritedsharedendpoints, document nearcontacts/uncertainty; rollback affectedchains before finalSVG",
+    "fallback": "No raw-grid/polyline/rectangles/rasterfallback; unsafe subsegments explicitly rejected"
+  },
+  "evaluation": {
+    "comparison": "Rawall / selected / savedO / P / Q. Same predictions and references; selection loss separated from construction loss. No deploying based on evaluator GT.",
+    "geometry": [
+      "retained/lost rawarclength byreason and trace",
+      "same1.25px knownboundaryrecall/precision; rawselected\u2192fit",
+      "Shield13nameduncertainguides and3appearance-onlyguides",
+      "endpoint/junction exactness,closedloopcount,seamangle,sourcewinding/area/nesting",
+      "newcrossings,selfintersections,nearcontacts",
+      "toleranceddeviationvsfrozenrawsource; no exactcertificate",
+      "complexity,tinybbox/lattice/axislength/strokeareaproxy",
+      "actualnative/full4x/16xROIresvg"
+    ],
+    "acceptance": "Construction hypothesis supported only if source-supportedretention improves without new crossing/falsejoin/duplicateedge, and knownclosedloopcontrol is represented. Whole geometry NOT_ACCEPTED if significant sourcefeatures remain missing or region/topologyintegration unverified. No filledregion/holeownership claim from openstrokes. Better retention of shading/texture is not structural success.",
+    "reference_limits": "Shield1.2\u20132pxagentguides not strict1px/humantruth; Arabicthresholdproxy not fontoutline; photographnoexactgeometrytruth. All2Dannotations evaluator-only."
+  },
+  "provenance": "No modeldownload/inference/training/thresholdchanges. Fine source/derivatives staylocalonly. Originalvisionandhistoricalfilesunchanged. Source hashes beforebenchmarkcandidates.",
+  "pins": {
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\A01_shield\\working.png": {
+      "sha256": "900b7ee76d9428ab30b654e584a6dd72ea924c55cc116420edfa387527a134f1",
+      "bytes": 123781
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Classical\\construction.json": {
+      "sha256": "df711ebcfafe314a42c36913cb40574269cf64fd4bddd2328b71743b5dda8938",
+      "bytes": 1509201
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Classical\\discovery.npz": {
+      "sha256": "2cba9b4e2290001a24f2d317af1e34742a0882216b5585044d1b2a46159e052f",
+      "bytes": 10101
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Classical\\stable.svg": {
+      "sha256": "13aecb0f301e4c6c85cf44f653329669d99e978c51f8123a0314c98bd48449e7",
+      "bytes": 100085
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\ML\\construction.json": {
+      "sha256": "449b04bafed661f4007cadeaf7e8e50bea57d59e1e853a749896c98dc1cfab64",
+      "bytes": 319172
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\ML\\discovery.npz": {
+      "sha256": "bd24c7f62875de2c0515074b220a4688a89a4114df817bc5dfaa27c50b2844f0",
+      "bytes": 5362
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\ML\\stable.svg": {
+      "sha256": "9157fc084f67ab2c65d4d80a07b8c44f3a6637b000968a76a583bc5ccfb6fb9d",
+      "bytes": 28980
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Hybrid\\construction.json": {
+      "sha256": "7d6750a982519bcab1eaea108868dd4321238dff5d592bcad7348f640ecf0e69",
+      "bytes": 342933
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Hybrid\\discovery.npz": {
+      "sha256": "daf6ee73d73a132fa0cb9f3501c4e213b4aa68431540f4280c89bb2806b5cabb",
+      "bytes": 5322
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\Hybrid\\stable.svg": {
+      "sha256": "30f52707876651e9f6e3516776e82b6ac005eccdf141038aaf9550618818ee86",
+      "bytes": 34866
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\A01_shield\\ML\\predictions.npz": {
+      "sha256": "28042d61817622f9d4f253efca78be417b59c8d1c0d09bdc3842e189c150be18",
+      "bytes": 585652
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\G06_arabic\\working.png": {
+      "sha256": "f32f3b77918d691f977f782055dfb371a551027224c657bf0bfd6fe109e9d32d",
+      "bytes": 18606
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Classical\\construction.json": {
+      "sha256": "1673607d6d14442651383c0584405044c5a9824aa33dbbe0b5ebd5aa691022f9",
+      "bytes": 137779
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Classical\\discovery.npz": {
+      "sha256": "fa8ad1ec861fdf5e16443d10fd091fd97aba3969c42f4e11936840081e851012",
+      "bytes": 4867
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Classical\\stable.svg": {
+      "sha256": "7c5829b5b9764a85a071556259a19ed48bb2898fbf702b3efa9d436554406cbb",
+      "bytes": 3047
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\ML\\construction.json": {
+      "sha256": "32faef27f8ebe73c38b26d3b74249704e0f76bda0fe502ac294d2fc29511af6e",
+      "bytes": 312734
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\ML\\discovery.npz": {
+      "sha256": "d2551c1427d39c5d3f82703b6b70363722593b6f608b899c08e095ec0293a65c",
+      "bytes": 4866
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\ML\\stable.svg": {
+      "sha256": "91b20ef61531b6e21f9c8f00ef8002d49b3f721437b49457953e5a380a07f580",
+      "bytes": 39471
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Hybrid\\construction.json": {
+      "sha256": "c4be4bd9e7797a5df8990713fa224609ef586f9467fe193dc95ea8bdf289b6b3",
+      "bytes": 284147
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Hybrid\\discovery.npz": {
+      "sha256": "e6b4b02e4440f668003e3e3a6480152cf0eb7ddb7187917fb38b62077952d01c",
+      "bytes": 4853
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\Hybrid\\stable.svg": {
+      "sha256": "3a802d938d1fadd9ffaeeece9c76a84d684d0fdbdff533a7599fdb560d38de42",
+      "bytes": 32415
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\G06_arabic\\ML\\predictions.npz": {
+      "sha256": "3d7412a7f649a3647958cdefe218cac0e31ed15a667fc711859512ff03bf1632",
+      "bytes": 489950
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\K01_linear_corner_hole\\working.png": {
+      "sha256": "a02ae223a4bce0cd2c6644557ad85c66f041cda7872786735ff23534c8681e20",
+      "bytes": 3837
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Classical\\construction.json": {
+      "sha256": "d7d4acc4e85bfcbf58937f97e8ca639b066b158f6bd20d5ff46a0b0280911935",
+      "bytes": 50069
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Classical\\discovery.npz": {
+      "sha256": "ab14dd50fa571ef86ef65e5e4749114e237671ba18e8848530676c58266c624d",
+      "bytes": 1848
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Classical\\stable.svg": {
+      "sha256": "e878a1184ef7e8b861ef4cb577a30f730e0ff2cb980414c574b8a2f1948bcc2e",
+      "bytes": 93
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\ML\\construction.json": {
+      "sha256": "5c0861aa4c3296e5e50cb6b55763f51b48a72c258d48cde827880c081d978493",
+      "bytes": 50183
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\ML\\discovery.npz": {
+      "sha256": "6f6a6b68d4b8cd695be0bda3175f7f3b0b337088020c6b8cab554e9907067313",
+      "bytes": 1917
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\ML\\stable.svg": {
+      "sha256": "e878a1184ef7e8b861ef4cb577a30f730e0ff2cb980414c574b8a2f1948bcc2e",
+      "bytes": 93
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Hybrid\\construction.json": {
+      "sha256": "043ec19b4676cf656ed859a343a6678d18f059cd8ad47a7af7f0abf843b05660",
+      "bytes": 50186
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Hybrid\\discovery.npz": {
+      "sha256": "6f6a6b68d4b8cd695be0bda3175f7f3b0b337088020c6b8cab554e9907067313",
+      "bytes": 1917
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\Hybrid\\stable.svg": {
+      "sha256": "e878a1184ef7e8b861ef4cb577a30f730e0ff2cb980414c574b8a2f1948bcc2e",
+      "bytes": 93
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\K01_linear_corner_hole\\ML\\predictions.npz": {
+      "sha256": "2fbae0ee79bba24ce79a34a6f41a1f97a9cbf5d896fb6f01cbf7522a763490d4",
+      "bytes": 347036
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\working.png": {
+      "sha256": "42b7ccef92cfc14754ccfad56735f29c533e94fed1ee8e8707c4ddd8e5a910e4",
+      "bytes": 2682
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Classical\\construction.json": {
+      "sha256": "c8bf40b0c1902a8f63c396270243dd8bc659b8e107a4ab8a887a87f92ccbcb0f",
+      "bytes": 84949
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Classical\\discovery.npz": {
+      "sha256": "0227bc6bc57f5ec47dad0354dbd8c3a3abbef0f12a92cdabd32a02071ddd8aae",
+      "bytes": 1121
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Classical\\stable.svg": {
+      "sha256": "efe6b5e98090e49d9a55ee83be5f114d87c3b39611dfc026d36936586d038a13",
+      "bytes": 5314
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\ML\\construction.json": {
+      "sha256": "d62f12790edc0fd4cfedbe8327b2c04138c5d388961716f851460eb4a1df7142",
+      "bytes": 34168
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\ML\\discovery.npz": {
+      "sha256": "dc7e4ac2381e6dcbe2de1ee4c2f700b7301cdad20bcb1374dc98bf4eee68df14",
+      "bytes": 1013
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\ML\\stable.svg": {
+      "sha256": "fce639abfd19d5e9618d83ffdbf2ecb92c68a5d756de76828c0fc894da3c480a",
+      "bytes": 3367
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Hybrid\\construction.json": {
+      "sha256": "f33ce776f861b3bce043bc1efd76744b0ff863a2c6d642b0475f1ad6988ff963",
+      "bytes": 34173
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Hybrid\\discovery.npz": {
+      "sha256": "dc7e4ac2381e6dcbe2de1ee4c2f700b7301cdad20bcb1374dc98bf4eee68df14",
+      "bytes": 1013
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\Hybrid\\stable.svg": {
+      "sha256": "fce639abfd19d5e9618d83ffdbf2ecb92c68a5d756de76828c0fc894da3c480a",
+      "bytes": 3367
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\ml_geometry\\local_only\\fine_features\\ML\\predictions.npz": {
+      "sha256": "6db23178fc415c5839a8ace100c6d0b394807c2e4199df70afe9e68e28259157",
+      "bytes": 273868
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\H01_horse\\working.png": {
+      "sha256": "537095f128f0781a747b8e866248defc611286a4e51418fed0ac624438183c85",
+      "bytes": 2838
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Classical\\construction.json": {
+      "sha256": "20903ed91413d36b38ebad1f3136a057e593d76ea064e7987786f999fc29d785",
+      "bytes": 121725
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Classical\\discovery.npz": {
+      "sha256": "88cedb450a234f1866d1ed299121cd6e865ba7afb5913b6805d629266fa14734",
+      "bytes": 4986
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Classical\\stable.svg": {
+      "sha256": "8832b1bf5afdb45f04d997b8bf8843a43a73e536eb9f5efd09ceb605b9c769fb",
+      "bytes": 680
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\ML\\construction.json": {
+      "sha256": "04215f6a130b80e6b3f92d93aee9675087dc7079cdef5273cb92b3e9c3108db7",
+      "bytes": 158910
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\ML\\discovery.npz": {
+      "sha256": "75183873c8be7911c8e39456d1d2ba61ffbbf52becf3ca367890805898924713",
+      "bytes": 5067
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\ML\\stable.svg": {
+      "sha256": "748cf5a6bfef2277db9be2111905e99eb63c83ece70b149f874596d72e898809",
+      "bytes": 8158
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Hybrid\\construction.json": {
+      "sha256": "9e84866b76813fa0621f6aa49e8ba685de1e7e7cd4ed2e9c52833fa4b8846a37",
+      "bytes": 173462
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Hybrid\\discovery.npz": {
+      "sha256": "43625231ab6740dfc18ce747b3b26c9477d27ec6d9827106acb821925fffb058",
+      "bytes": 5042
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\Hybrid\\stable.svg": {
+      "sha256": "29f7326e5439fb2d5c7153bf85801969c9ec7f26ae2bd3bdd9a54123314e924d",
+      "bytes": 10638
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H01_horse\\ML\\predictions.npz": {
+      "sha256": "4fc88743ea9ccf48f1a7954a0a21ad98a96b1b8da63111407c205b73d9c33449",
+      "bytes": 728577
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\inputs\\H02_astronaut\\working.png": {
+      "sha256": "a09bd3f6dedcdd7c81202e69f9e8fc0e90f3d2ee2837ada229631f2bf09ec500",
+      "bytes": 440418
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Classical\\construction.json": {
+      "sha256": "bbdb029d6516f3b0b3dab4b125ba29755d729c943ee8ad1d32e4077b95d19766",
+      "bytes": 4792065
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Classical\\discovery.npz": {
+      "sha256": "1012d2aec5a0cc077fc6fb02242b878729d8531af32c53053d068584a9b44983",
+      "bytes": 47497
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Classical\\stable.svg": {
+      "sha256": "ba9574799ba1c03eb800229a425b848c2085d5e09909a118c32c5f17089eb469",
+      "bytes": 191308
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\ML\\construction.json": {
+      "sha256": "8ce0c409a55378ab07f8b7601b7e485c96deacd0fd09b962f7bfc543bed24b63",
+      "bytes": 1379556
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\ML\\discovery.npz": {
+      "sha256": "3be1aec5dd47d092dc846e033de7a382d60e9a1d4a61ae30ff5e82cb61b81769",
+      "bytes": 18013
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\ML\\stable.svg": {
+      "sha256": "953acf2444b45d9659788e0313d60e05bf9873c116e4d6e68fd66b5ef1ed316f",
+      "bytes": 179071
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Hybrid\\construction.json": {
+      "sha256": "3892d3664b6878c3077e9608cc853b7e774fdc3b30c3c63b216d6364d26a006b",
+      "bytes": 1610511
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Hybrid\\discovery.npz": {
+      "sha256": "290023a8267eaf9c241dc19e2ad00befbf4d407856152a087fb316af06d4e56d",
+      "bytes": 21003
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\Hybrid\\stable.svg": {
+      "sha256": "e6c350a6c474c205d5bf0501da489364bf03a414a30a52294efc390a9c9264c7",
+      "bytes": 168765
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\results\\H02_astronaut\\ML\\predictions.npz": {
+      "sha256": "cb21455af6652ad2bf77f22715277db0f0b68c8c0152819e694835588f9632e6",
+      "bytes": 1231953
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\stable_fit.py": {
+      "sha256": "87b1e442a53c6d7a412b0a7e90994575c33e0c2f4e273afc72d825a943a7c471",
+      "bytes": 6210
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\construct_geometry.py": {
+      "sha256": "bc972b391349754cc88e4826a2bf6f491fa7568b018350221840b8a8733194c3",
+      "bytes": 5836
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01\\evaluate_results.py": {
+      "sha256": "02f006773e45225d12acc2854fed434ee562bd92fb93bbaffdc170a7479ae85d",
+      "bytes": 8749
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_EXPORTER_DISCOVERY_01\\svg_exporter.py": {
+      "sha256": "934c0a68f613e46b63127e48f700b1f51e399f1549a69e14781523a19878a8ea",
+      "bytes": 5485
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COMPLETE_GEOMETRY_ISOLATION_01\\references\\shield_complete_boundary_reference.json": {
+      "sha256": "d35f79ec802ce775e0228e588718bd82a3c0e90689745b78d5fe28802529d4c7",
+      "bytes": 31361
+    },
+    "C:\\Users\\Mohamed\\Desktop\\AiGraphicDesigner\\experiments\\EXP_COMPLETE_GEOMETRY_ISOLATION_01\\references\\known_control_reference_manifest.json": {
+      "sha256": "8cb95cf862c3f0a2657857a512bc39817004836fa885e503f46666b1fde243b4",
+      "bytes": 10592
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\contour_construction\\implementation\\design_constants.json": {
+      "sha256": "8da93f7ff7b7e9018608f24d673be74c9e878c93d434781d1443617b9e713405",
+      "bytes": 960
+    },
+    "C:\\Users\\Mohamed\\Documents\\Codex\\2026-10-27\\https-chatgpt-com-codex-desktop-auth\\work\\contour_construction\\implementation\\partition_fit.py": {
+      "sha256": "d3640af379e479eb4825958e5927283576ae5fc528787e55e5c07d4abde900e8",
+      "bytes": 9254
+    }
+  },
+  "design": {
+    "created_utc": "2026-10-30T08:37:34Z",
+    "author": "contour_partition",
+    "maximum_deviation_px": 0.6,
+    "rdp_epsilon_px": 0.35,
+    "corner_evidence": "RDP .35 support turns; raw stair-step turns are not independent partition anchors",
+    "corner_turn_degrees": 60,
+    "accumulated_turn_degrees": 35,
+    "partition_maximum_arc_px": 32,
+    "maximum_cubics_per_partition": 64,
+    "maximum_cubics_per_original_trace": 512,
+    "maximum_subdivision_rounds_per_partition": 8,
+    "minimum_trace_length_px": 6,
+    "maximum_active_seconds_per_arm": 120,
+    "P": "Exact source-index partitions, unchanged stable fitter with open endpoint treatment",
+    "Q": "Same partitions and fitter; genuinely closed source traces have source-derived periodic tangent handles at smooth partition joins including closure, with unchanged gates",
+    "guarantee_limit": "Numerical envelope and sampled flatten predicates, not exact continuous certification. No regions or ownership inferred."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "case": "K01_linear_corner_hole",
+  "arm": "Hybrid",
+  "condition": "Q",
+  "loss": {
+    "raw_trace_count": 3,
+    "selected_traces": 3,
+    "raw_length_px": 906.9015869776647,
+    "selected_length_px": 906.9015869776647,
+    "accepted_length_px": 906.9015869776647,
+    "lost_length_px": 0,
+    "output_paths": 3,
+    "cubics": 240,
+    "closed_source_traces": 3,
+    "closed_retained_traces": 3,
+    "loss_by_reason": {
+      "accepted": {
+        "intervals": 215,
+        "length_px": 906.901586977666
+      }
+    }
+  },
+  "retained_selected_length_fraction": 1.0,
+  "retained_total_length_fraction": 1.0,
+  "reference": "independent8xsource-vector sampled mask",
+  "geometry": "NOT_ACCEPTED",
+  "source_predictions_changed": false,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [
+      {
+        "trace_id": 0,
+        "raw_signed_area_px2": 18984.5,
+        "fitted_signed_area_px2": 18993.204849520982,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9979837515937815,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 2,
+        "raw_signed_area_px2": -2473.5,
+        "fitted_signed_area_px2": -2476.968278328988,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9957656100345097,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 1,
+        "raw_signed_area_px2": 1709.0,
+        "fitted_signed_area_px2": 1714.4992621338488,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9923077377231848,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [
+      {
+        "trace_pair": [
+          2,
+          0
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          0
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          2
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      }
+    ],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "render_seconds": {
+    "1x": 0.020086899981833994,
+    "4x": 0.037137000006623566,
+    "detail1x": 0.01839109999127686,
+    "detail4x": 0.022949200007133186,
+    "detail16x": 0.08127279998734593
+  },
+  "boundary_1_25px": {
+    "raw_all": {
+      "recall": 0.9885079859758473,
+      "precision": 0.7601918465227818,
+      "mean_target_distance_px": 0.5540702442967412,
+      "p95_target_distance_px": 1.0789172813520043
+    },
+    "selected": {
+      "recall": 0.9885079859758473,
+      "precision": 0.7598566308243727,
+      "mean_target_distance_px": 0.5540702442967412,
+      "p95_target_distance_px": 1.0789172813520043
+    },
+    "fitted": {
+      "recall": 0.9922088040514219,
+      "precision": 0.7473806752037253,
+      "mean_target_distance_px": 0.44513409768169626,
+      "p95_target_distance_px": 1.0578687128431812
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "reference_hole_index": 0,
+      "fitted_all": {
+        "recall": 1.0,
+        "precision": 0.19507733244636621,
+        "mean_target_distance_px": 0.4448266568458899,
+        "p95_target_distance_px": 0.9028274213073698
+      },
+      "closed_paths_only": {
+        "recall": 1.0,
+        "precision": 0.19507733244636621,
+        "mean_target_distance_px": 0.4448266568458899,
+        "p95_target_distance_px": 0.9028274213073698
+      }
+    }
+  ],
+  "vector": {
+    "paths": 3,
+    "cubics": 240,
+    "tiny_bbox_le2px": 0,
+    "tiny_stroke_area_proxy_fraction": 0.0,
+    "microgeometry": "Lengthtimesconstantwidthproxy,notactualvisiblefacearea",
+    "half_grid_fraction": 0.06901712955263596,
+    "axis_sample_length_fraction": 0.007725487971277497,
+    "svg_bytes": 21236,
+    "filled_regions": 0,
+    "tiny_cubic_span_le2px": 135,
+    "tiny_cubic_length_weighted_fraction": 0.23808243904090223,
+    "median_cubic_length_px": 2.0308702330698485,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  }
+}

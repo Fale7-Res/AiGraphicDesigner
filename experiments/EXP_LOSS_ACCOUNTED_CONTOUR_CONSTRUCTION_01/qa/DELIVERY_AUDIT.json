@@ -1,0 +1,400 @@
+{
+  "saved_O_identical_count": 18,
+  "stage0_skeleton_coverage": [
+    {
+      "case": "A01_shield",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 1,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "A01_shield",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "A01_shield",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "G06_arabic",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "G06_arabic",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "G06_arabic",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "K01_linear_corner_hole",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "K01_linear_corner_hole",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "K01_linear_corner_hole",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "fine_features",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "fine_features",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "fine_features",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H01_horse",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H01_horse",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H01_horse",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H02_astronaut",
+      "arm": "Classical",
+      "skeleton_vertices_absent_from_source_traces": 5,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H02_astronaut",
+      "arm": "ML",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    },
+    {
+      "case": "H02_astronaut",
+      "arm": "Hybrid",
+      "skeleton_vertices_absent_from_source_traces": 0,
+      "all_omitted_vertices_isolated": true
+    }
+  ],
+  "known_control_nesting": [
+    {
+      "arm": "Classical",
+      "condition": "P",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    },
+    {
+      "arm": "Classical",
+      "condition": "Q",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    },
+    {
+      "arm": "ML",
+      "condition": "P",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    },
+    {
+      "arm": "ML",
+      "condition": "Q",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    },
+    {
+      "arm": "Hybrid",
+      "condition": "P",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    },
+    {
+      "arm": "Hybrid",
+      "condition": "Q",
+      "raw_valid": true,
+      "closed_fitted": 3,
+      "fitted_valid": true,
+      "relationships": [
+        {
+          "outer_trace": 0,
+          "inner_trace": 2,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 0,
+          "inner_trace": 1,
+          "raw_contains": true,
+          "fitted_contains": true
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 2,
+          "inner_trace": 1,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 0,
+          "raw_contains": false,
+          "fitted_contains": false
+        },
+        {
+          "outer_trace": 1,
+          "inner_trace": 2,
+          "raw_contains": false,
+          "fitted_contains": false
+        }
+      ],
+      "claim_limit": "Closed contour containment only; no filled region or hole ownership inferred."
+    }
+  ],
+  "resource_workers": 18,
+  "resource_max_sampled_tree_RSS_mib": 159.875,
+  "resource_total_wall_seconds": 661.1764314998873,
+  "packaged_execution_AST_matches": [
+    "run_case.py",
+    "monitor.py",
+    "partition_fit.py"
+  ],
+  "PNG_decode_count": 296
+}
