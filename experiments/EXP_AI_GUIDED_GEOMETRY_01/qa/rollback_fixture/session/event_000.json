@@ -1,0 +1,39 @@
+{
+  "sequence": 0,
+  "tool": "get_candidates",
+  "arguments": {
+    "roi": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "limit": 4
+  },
+  "status": "ok",
+  "result": {
+    "candidates": [
+      {
+        "trace_id": 0,
+        "score": 0.20454545454545453,
+        "source_gradient_support": 0.09090909090909091,
+        "length_px": 21.0,
+        "closed_source": false,
+        "bbox_xyxy": [
+          2.0,
+          8.0,
+          23.0,
+          8.0
+        ],
+        "eligible": true,
+        "structure_vs_lighting": "UNVERIFIED"
+      }
+    ],
+    "total_candidates_in_roi": 1,
+    "policy": "unchanged >=6px eligibility first, then fixed source-gradient/closure/local-support; no evaluator evidence"
+  },
+  "before_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "after_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "previous_record_hash": "85eb2576e516e3283258989537c71c2b748c625a4838c2ee4f84dc4ca92a7166",
+  "record_hash": "512fc9cd54fc3ad649bb5d9a0db1ee0cc8dfbb807a0481f186772757508b0b98"
+}

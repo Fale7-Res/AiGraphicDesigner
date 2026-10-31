@@ -1,0 +1,149 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "inspect_region",
+      "description": "Bounded local geometry operation: inspect_region",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "roi": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "roi"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_candidates",
+      "description": "Bounded local geometry operation: get_candidates",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "roi": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 16
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "roi",
+          "limit"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "stage_candidates",
+      "description": "Bounded local geometry operation: stage_candidates",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trace_ids": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "minItems": 1,
+            "maxItems": 4,
+            "uniqueItems": true
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "trace_ids"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "commit_change",
+      "description": "Bounded local geometry operation: commit_change",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rollback_change",
+      "description": "Bounded local geometry operation: rollback_change",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "validate_geometry",
+      "description": "Bounded local geometry operation: validate_geometry",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "render_geometry",
+      "description": "Bounded local geometry operation: render_geometry",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "scale": {
+            "type": "integer",
+            "enum": [
+              1,
+              4,
+              16
+            ],
+            "minimum": 1,
+            "maximum": 16
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "scale"
+        ]
+      }
+    }
+  }
+]

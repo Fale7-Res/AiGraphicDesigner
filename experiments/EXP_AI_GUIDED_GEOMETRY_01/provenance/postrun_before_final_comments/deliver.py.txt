@@ -1,0 +1,130 @@
+# START CHANGE AGD-AGENTIC-DELIVER | 2026-10-31T15:00:00Z | CREATED | Author: root
+from pathlib import Path
+import sys,json,html,hashlib,shutil,datetime
+R=Path(r'C:\Users\Mohamed\Desktop\AiGraphicDesigner');E=R/'experiments/EXP_AI_GUIDED_GEOMETRY_01';W=Path.cwd()/'work';O=Path.cwd()/'outputs/agentic_geometry_review';O.mkdir(exist_ok=True)
+p=json.loads((E/'protocol.json').read_text());metrics=json.loads((E/'reports/METRICS.json').read_text());look={(r['case'],r['condition']):r for r in metrics};resources=json.loads((E/'reports/RESOURCES.json').read_text());retry=json.loads((E/'reports/RESOURCE_RETRY.json').read_text());evaluation=json.loads((E/'reports/EVALUATION_RESOURCES.json').read_text())
+report='''# AI-guided geometry tool proof of concept — offline evidence and live decision
+
+Geometry **NOT_ACCEPTED**. Production architecture **NOT_APPROVED**. Real AI performance **NOT_TESTED**.
+
+## Decision and verified state
+
+**VERIFIED:** a restricted local tool engine executes recorded sessions end-to-end: source inspection, source-derived candidate queries, partitioned cubic fitting, transactional staging/commit/rejection, rendering, validation and exact rollback/replay controls. Fourteen deterministic/mock sessions across seven cases produced168 immutable linked events and real SVGs. This validates infrastructure, not a vision model or architectural superiority.
+
+**SUPPORTED BUT LIMITED:** the deterministic controller adds small amounts of source-supported geometry in Shield, Burger, Logo and Astronaut. It does not recover complete artwork. Arabic, K01 and the new known-vector holdout receive no additions. Atomic region counts stay unchanged. The mock is explicitly NOT AI.
+
+**NOT ESTABLISHED:** better AI planning, complete crown/Burger/Arabic geometry, semantic hole ownership, universal reconstruction, final visual fidelity or production readiness. No real Groq inference, image upload or billable request occurred; actual API requests0, costUSD0 because nothing was requested. Synthetic transport tests that return a LIVE status are fixtures, not provider execution.
+
+Starting clean local main and actual remote main were `46870cbf109454dfd243a7bffab692a692bc2b52`. The owner-published Universal Region/Coherence package is present. Original vision was read completely and remains unchanged: image generation, future professional SVG, Arabic typography, semantic layers, Magic Layers, editability and visual QA remain future requirements. No final appearance code was added.
+
+## Architecture implemented and reused
+
+Provider-neutral planner contract: structured local function proposals. The optional Groq adapter handles only the fixed Groq HTTPS API; it never executes model tool names. The host allowlist validates tool arguments, and mandatory geometry guards cannot be overridden by the model. Images and model/tool text are untrusted observations. No arbitrary Python, shell, file, network or Git command is exposed to the planner.
+
+The minimal engine tools are `inspect_region`, `get_candidates`, `stage_candidates`, `commit_change`, `rollback_change`, `validate_geometry`, `render_geometry`. Geometry edits select frozen trace IDs, not emitted control coordinates. Only normalized inspection ROI coordinates are accepted. Immutable per-call event files record validated arguments, source/state hashes, outcomes and rejection ledgers. Exclusive-file creation prevents accidental overwrite. Hash links detect tampering but do not make local disk tamper-proof against its owner.
+
+Reused: frozen Classical evidence/traces, P source partitioning and cubic fitter,0.6px numerical deviation gate, conservative raw-vs-fitted crossing guards, corrected compound-path SVG serializer, resvg, process-tree monitoring, independent reference definitions and geometry diagnostics. Region integration is reused by the evaluator to assess potential faces; it is not exposed as a completed model-editing tool. No old model inference or benchmark search was repeated.
+
+The engine can query and add excluded existing source contours. It currently cannot discover a wholly absent boundary, move/refine accepted geometry, create missing junctions, repair segmentation, establish object/hole ownership or perform region topology edits. Visual reasoning cannot compensate for missing execution capabilities. This is a meaningful but deliberately restricted tool-controller proof of concept, not the full proposed universal engine.
+
+## Frozen controls, fairness and resource bounds
+
+Protocol/source/schema/constructor pins were frozen before new candidate sessions. Six automatic baselines are exact saved Classical P outputs. H03 is a new first-party analytic vector illustration, rendered to a raster and processed with unchanged classical extraction/P; its source SVG enters evaluation only, never tools or prompts. It is a previously unoptimized synthetic holdout, not proof of real-world unseen-image generalization. Shield/Burger/Arabic/Logo/K01/Astronaut cover the other required categories. No image-specific engine thresholds/templates/geometry are used.
+
+A = saved automatic P. B = non-AI full-frame candidate controller. M = non-AI fixed recorded top-half/bottom-half ROI plan. B and M each use12 calls, at most2commits and2candidate IDs per edit,144paths/4096cubics. The engine schema has a general4-ID ceiling, but both comparison controllers and the optional live-host schema enforce the matched2-ID limit. C = real Groq-guided control, NOT_TESTED. A's zero extra actions is contextual baseline; any B-versus-A gain is not evidence of AI value. C must beat B under matched operation budgets to support the AI hypothesis.
+
+Candidate queries prioritize eligible>=6px traces, then fixed source-gradient/closure/local-support rank. Short ineligible traces cannot hide usable candidates, but the inherited6px construction limit still blocks them. Mean-RGB gradient can miss isoluminant color edges and score lighting/texture highly. No semantic structural precision follows from this confidence.
+
+Each edit stages a separate snapshot; numerical source fitting and duplicate/new-crossing/complexity checks precede commit. Rollback restores previous committed geometry exactly and does not replenish budgets. Every rejection also consumes calls. Existing raw crossings remain uncertain; inherited-validity is not retrospectively certified. Numerical flattening/deviation checks are not continuous exact-arithmetic proofs.
+
+Budgets: CPU-only, one thread;20s cooperative staging,30s trusted-render timeout,300s worker,768MiB sampled process-tree cap,700MiB available-RAM reserve,3600s study limit and150MiB public artifact target. No global installation or model download.
+
+## Per-image actual results
+
+Source recall is proximity to frozen trace evidence at1.25px, NOT semantic structural precision; retaining a reflection can improve it. B/M are not AI. All geometry gates remain NOT_ACCEPTED.
+
+|Case|A source recall|B source recall|M source recall|Paths A/B/M|Atomic faces A/B/M|
+|---|---:|---:|---:|---|---|
+'''
+for case in p['cases']:
+ a,b,m=[look[(case,c)] for c in ['A','B','M']];report+=f'|{case}|{a["source_trace_support"]["recall"]:.4f}|{b["source_trace_support"]["recall"]:.4f}|{m["source_trace_support"]["recall"]:.4f}|{a["paths"]}/{b["paths"]}/{m["paths"]}|{a["atomic_faces"]}/{b["atomic_faces"]}/{m["atomic_faces"]}|\n'
+report+='''
+Shield uncertain crown-guide recall A0.3036/B0.3082/M0.3201. The central ornament fold remains0.7703 and upper/lower band support0.2141/0.6134; crown tips and material separation are still incomplete. Guide uncertainty is1.2–2px, without independently human-certified1px contours. More source proximity is not complete crown correspondence.
+
+Burger receives four added strokes per controller but constituent boundaries, fillings/lettuce/cheese and seeds are not completed. Logo and Astronaut similarly receive small additions rather than complete regions; physical edges versus texture/lighting remain ambiguous. Arabic proxy recall stays0.9730, K01 known-boundary recall0.9994, and H03 analytic boundary recall0.9975. These boundary numbers do not establish true Arabic font outlines, semantic counters or filled-region ownership. K01's reference foreground excludes an intended interior decoration, limiting full-artwork precision interpretation.
+
+All21 measured outputs have zero measured proper-cross/overlap pairs, but this numerical screen is not a certified topology proof. New B/M paths total32; independent257-point Bernstein samples per cubic found maximum curve-to-raw displacement0.515955px. That audit is one-sided sampled corroboration; the inherited fitter supplies its own bidirectional numerical gate. No threshold was relaxed. Microgeometry remains: short-cubic length fraction generally increases slightly after additions, and actual16x views show staircases. No raster embedding, rectangle mosaic or source-grid fallback was introduced; that alone is not professional vector acceptance.
+
+## Replay, negative results and independent QA
+
+All seven M sessions replay to identical geometry and semantic-decision hashes. Per-run event hashes can differ because observational fitter/render times differ; timings are excluded from deterministic decision identity. Failed/rejected/no-op states and their ledgers remain explicit. All168 B/M calls preserve the original P prefix, have no unresolved pending transaction and respect the common call/commit/complexity limits.
+
+Packaged tests:12 engine,10 provider and4 planner-loop controls. Independent QA adds seven adversarial/parser tests and separate saved-output audits. They cover strict closed schemas, finite bounds/huge integers, unknown tool/path/code injection, transactions, rollback without budget refund, duplicates, loops/corners/junctions, real rendering, hash-chain integrity/replay, safe provider errors, no unauthorized network/env access, duplicate JSON keys and matched live-host IDs. Source/reference separation and real SVG path controls were independently inspected. See `qa/FINAL_QA.md`; passing infrastructure does not accept reconstructed artwork.
+
+Burger's first worker was stopped by the existing available-RAM safety gate. Its complete partial attempt remains `results/A03_burger_attempt01_STOPPED_RAM`. After system available RAM recovered to1955MiB, one identical-code/input/budget retry completed; no resource threshold was weakened. Failed attempt and retry telemetry remain separate. This was not hidden as an uninterrupted pass.
+
+'''
+report+=f'Primary workers including the stopped attempt took{sum(x["wall_seconds"] for x in resources):.3f}s summed monitored wall; retry{retry["wall_seconds"]:.3f}s. Maximum sampled tree RSS across these sessions{max([x["sampled_tree_RSS_peak_mib"] for x in resources]+[retry["sampled_tree_RSS_peak_mib"]]):.3f}MiB. Evaluation/rendering separately completed in{evaluation["wall_seconds"]:.3f}s at sampled tree peak{evaluation["sampled_tree_RSS_peak_mib"]:.3f}MiB. Monitor includes descendants/renderer processes; summed RSS can double-count shared pages and sampling misses transient peaks. The same pinned monitor was previously validated with descendant allocation/limit-stop controls.\n\n'
+report+='''## Groq model and live prerequisites
+
+Official Groq [vision documentation](https://console.groq.com/docs/vision) and [model page](https://console.groq.com/docs/model/qwen/qwen3.8-27b) list `qwen/qwen3.8-27b` with image input and tool use. Images count2048 input tokens each, at most3 per request. [Local tool calling](https://console.groq.com/docs/tool-use/local-tool-calling) uses model-proposed functions executed by this application. The geometry engine remains provider-neutral; no xAI integration is used.
+
+The [published free-plan table](https://console.groq.com/docs/rate-limits) lists30RPM,1000RPD,8000TPM,200000TPD for this model, while explicitly directing exact account limits to the organization console. **Account model access, remaining quota, free-plan billing status and no-charge guarantee remain NOT_VERIFIED.** Public documentation, a successful API request, an API-key prefix or remaining-token headers cannot establish those billing facts. No account inference request was made to guess.
+
+`GROQ_API_KEY` is read only by live transport after all gates. The credential pasted in chat was never used, copied or recorded; it should be revoked and replaced locally. No new credential should be posted in chat. Live opt-in requires explicit `--live`, a trusted recent owner-console evidence record confirming free model access/no charges/remaining quota, approved image hashes and bounded request/iteration/token budgets. Neither model output nor images can enable these conditions. Defaults are dry-run. No built-in browser/code/remote tools, arbitrary host URLs, redirects or automatic retry are enabled.
+
+Conservative limits: at most4requests overall,2percase,512completion tokens/request,7500reserved tokens/request,16000total,61s spacing,2MB request bytes, at most3images/request, allowed costUSD0. Input reservations use a conservative text-byte bound plus published image tokens, not an exact tokenizer. If a schema/context cannot fit, the adapter stops rather than raising limits. Usage is validated after responses. Zero cost is conditional on externally verified free-only access, not magically enforced by a token estimate on a paid account.
+
+The optional pilot loop passes source/current-geometry contact sheets plus source-only candidate summaries; it processes validated function proposals locally, commits only safe stages, renders actual output, and sends action outcomes, mandatory diagnostics and a current preview into the next turn. It follows assistant/tool-result message identities. No evaluator guides/masks are sent. Invalid stages cannot undo a prior valid commit accidentally. All live outputs remain untested; transport fixtures are clearly labeled tests.
+
+**Proposed first live pilot, pending owner verification:** Burger only, two requests/iterations, common12-tool-call/2commit/2-ID budget, at most16000reserved tokens and1024completion tokens overall; USD0maximum, free-only. Transmissions would be local contact-sheet PNGs containing the published Burger source and current boundary geometry, plus candidate IDs/diagnostics—not repository files or secrets. The first dry-run preview is recorded by hash under `results/A03_burger/C_dry_run`. A changed second preview has an unknown hash until the first edit; the current gate intentionally rejects it unless separately authorized. A trusted derived-preview approval/resume workflow must be established before claiming unattended two-turn live readiness. No silent allowlist expansion occurs.
+
+Privacy: image pixels and geometry diagnostics would leave the laptop for GroqCloud. [Groq data policies](https://console.groq.com/docs/your-data) must be reviewed for the selected account; this is not local/private inference. Owner rights and provider-transmission permission must cover the exact source and previews. Fine Features/private Arena assets are excluded. Account proof stays outside Git and is never sent to the provider.
+
+## Engineering judgment and next decision
+
+The hypothesis is technically plausible: a vision planner could prioritize meaningful source-supported contours and reject illumination fragments while deterministic tools provide precision. Recognition is not geometry, however. Current tools cannot recover structure absent from their trace pool or form missing source-supported junctions; no planner can overcome that by merely describing a crown.
+
+Keep network-aware diagnostics as a core capability, and evaluate source-supported network assembly as an independent future tool. Do not throw away the prior evidence that per-trace eligibility destroys closure. Do not simultaneously change the detector/geometry engine and claim that a better planner caused the result.
+
+**GO:** preserve this offline tool infrastructure and, only after account/quota/image/derived-preview gates are independently satisfied, authorize a matched zero-charge pilot against B. **NO-GO:** claim AI improvement now, promote a production architecture, start appearance, or promise universal reconstruction. If live prerequisites cannot be established, stop with AI NOT_TESTED. Current evidence does not justify replacing the engine. A later richer toolset (network assembly/refinement/region edits) requires its own bounded controls and owner decision.
+
+## Publication and reproduction
+
+New work is isolated in `EXP_AI_GUIDED_GEOMETRY_01`. One scoped Git staging attempt failed on `.git/index.lock: Permission denied`; no ACL/security bypass or repeated denied write. New work is uncommitted/unpublished. `Publish-Research.ps1` checks main/origin, staged scope, fetch/ancestry, commits only if needed, pushes normally and verifies remote SHA. Run it in the owner terminal. No API keys, model weights, environments or private account records belong in Git.
+
+The seven candidate sessions are complete: do not rerun them. Source pins/decisions and actualSVG/PNG evidence permit independent replay in a separate empty workspace. `run_sessions.py` refuses existing output folders. `groq_pilot.py` defaults to dry-run and also refuses an existing session directory. Original candidate code/schema pins remain immutable; the optional provider-loop implementation/tests and evaluation/dashboard code were finalized after offline construction and are recorded separately. No new AI performance measurement results from those infrastructure tests.
+'''
+(E/'REPORT.md').write_text(report,encoding='utf-8');shutil.copy2(E/'REPORT.md',O/'REPORT.md')
+for name in ['FINAL_QA.md','SESSION_AUDIT.json','INDEPENDENT_TESTS.txt','PREFLIGHT.md']:
+ file=W/'agentic_geometry/qa'/name
+ if file.exists():shutil.copy2(file,E/'qa'/name)
+for file in (W/'agentic_geometry/qa').glob('*.py'):shutil.copy2(file,E/'qa'/file.name)
+
+def review_page(local):
+ page=['<!doctype html><meta charset="utf-8"><title>Restricted geometry tools — offline evidence</title><style>body{font:16px system-ui;background:#eef2f5;color:#17242d;margin:24px}section{background:white;border-radius:12px;margin:20px 0;padding:20px}.grid{display:grid;grid-template-columns:repeat(4,minmax(200px,1fr));gap:12px}figure{margin:0}img{max-width:100%;background:white;border:1px solid #bcc}figcaption{font-weight:bold;padding:6px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:8px;border:1px solid #bbc}.warning{background:#ffe0dc;padding:16px}.note{background:#fff1c4;padding:14px}.zoom{overflow:auto;max-height:550px}.zoom img{max-width:none}details{margin:12px 0}a{color:#0753a2}</style><h1>Geometry tool-controller proof of concept</h1><p><b>Geometry NOT_ACCEPTED · Architecture NOT_APPROVED</b></p><p class="warning"><b>Real Groq inference: NOT_TESTED.</b> No API requests or image uploads. B is deterministic; M is a fixed mock, NOT AI. Current account free-tier, quota and billing state are unverified. No AI result is represented by these SVGs.</p><p>Actual seven-case A/B/M comparison. A=automatic P; B=full-frame tool controller; M=fixed top/bottom plan. Both use12calls/2commits, same tools. Tiny support gains do not complete crown, Burger, Arabic or regions. C remains unavailable until verified free-only access and image permission.</p>']
+ for case in p['cases']:
+  out=E/'results'/case;base=out.as_uri()+'/' if local else f'results/{case}/';page.append(f'<section id="{case}"><h2>{case}</h2><div class="grid">')
+  a_caption='A automatic P (new holdout control)' if case=='H03_original_vector' else 'A saved automatic P'
+  for title,name in [('Source raster','source.png'),(a_caption,'A_1x.png'),('B deterministic tools','B_1x.png'),('M FIXED MOCK — NOT AI','M_1x.png')]:page.append(f'<figure><img loading="lazy" src="{base+name}"><figcaption>{title}</figcaption></figure>')
+  page.append('</div><p>Actual vector files: '+ ' · '.join(f'<a href="{base+c}.svg">{c} SVG</a>' for c in ['A','B','M'])+f' · <a href="{base}REPLAY.json">deterministic mock replay</a></p><p class="warning">C Groq-guided result: NOT_TESTED. No image shown as a substitute.</p>')
+  page.append('<table><tr><th>Control</th><th>Paths/cubics</th><th>Source support proxy</th><th>Known/proxy recall</th><th>Atomic faces</th><th>Tiny cubic length fraction</th></tr>')
+  for c in ['A','B','M']:
+   m=look[(case,c)];t=m.get('boundary_1_25px',{}).get('recall');page.append(f'<tr><td>{c}</td><td>{m["paths"]}/{m["cubics"]}</td><td>{m["source_trace_support"]["recall"]:.4f}</td><td>{f"{t:.4f}" if t is not None else "No exact truth"}</td><td>{m["atomic_faces"]}</td><td>{m["micro"]["tiny_cubic_length_weighted_fraction"]:.4f}</td></tr>')
+  page.append('</table><p class="note">Source trace support includes texture/reflections; it is not structural precision. Atomic faces are evaluator diagnostics, not reconstructed semantic objects. Arabic uses threshold proxies; Shield guides have1.2–2px uncertainty.</p>')
+  if case=='A01_shield':page.append('<h3>Crown, ornament, tips and lower band</h3><p>Crown guide recall A0.3036 / B0.3082 / M0.3201. Central ornament and upper/lower band support are unchanged. Complete internal geometry still fails.</p>')
+  for scale in [1,4,16]:
+   page.append(f'<details><summary>True SVG-rendered detail {scale}×'+(' — crown' if case=='A01_shield' else '')+'</summary><div class="grid">')
+   for c in ['A','B','M']:page.append(f'<figure><figcaption>{c}</figcaption><div class="zoom"><img loading="lazy" src="{base+c}_detail_{scale}x.png"></div><a href="{base+c}_detail.svg">Detail SVG</a></figure>')
+   page.append('</div></details>')
+  page.append('<details><summary>Missing frozen source evidence (magenta), not verified missing artwork</summary><div class="grid">'+''.join(f'<figure><figcaption>{c}</figcaption><img loading="lazy" src="{base+c}_missing_source_trace.png"></figure>' for c in ['A','B','M'])+'</div></details>')
+  for c in ['B','M']:
+   data=json.loads((out/(c+'.json')).read_text());page.append(f'<details><summary>{c} tool-call timeline — {data["calls"]} calls / {data["commits"]} commits; no model</summary><table><tr><th>#</th><th>Tool/arguments</th><th>Outcome</th><th>State changed</th><th>Immutable record</th></tr>')
+   for ev in data['tool_events']:
+    result=ev['result'];summary={k:result[k] for k in ['status','error','added_paths','paths','pending','geometry'] if k in result};page.append(f'<tr><td>{ev["sequence"]}</td><td>{html.escape(ev["tool"])} {html.escape(json.dumps(ev["arguments"]))}</td><td>{html.escape(json.dumps(summary))}</td><td>{ev["before_hash"]!=ev["after_hash"]}</td><td><a href="{base+c}/event_{ev["sequence"]:03d}.json">event JSON</a></td></tr>')
+   page.append('</table></details>')
+  page.append('</section>')
+ page.append('<section><h2>Live gate / reproduction</h2><p>Selected provider Groq Cloud; requested model qwen/qwen3.8-27b verified in official docs. Account access/free billing/quota NOT_VERIFIED. The actual dry-run request and local contact sheet are preserved; generated second previews require explicit authorization. Zero live calls; AI value NOT_TESTED.</p><p>Burger first attempt hit available-RAM reserve and is preserved; same-budget retry completed. The main seven-case outputs include that disclosed retry. See report and resource records.</p><p>No secret, external private image, final appearance or arbitrary executable is exposed as a tool. Use the scoped publisher in the owner terminal; publication remains unverified until remote SHA matches.</p></section>')
+ return ''.join(page)
+(E/'review.html').write_text(review_page(False),encoding='utf-8');(O/'review.html').write_text(review_page(True),encoding='utf-8');print('Report/dashboard saved')
+# END CHANGE AGD-AGENTIC-DELIVER | 2026-10-31T15:00:00Z | CREATED | Author: root

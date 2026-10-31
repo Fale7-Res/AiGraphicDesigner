@@ -1,0 +1,16 @@
+# START CHANGE AGD-AGENTIC-REPLAY | 2026-10-31T15:16:13Z | EDITED | Author: root
+"""Owner-run deterministic replay into a new isolated output directory."""
+from run_sessions import R,W,E
+from geometry_engine import GeometryToolEngine
+from pathlib import Path
+import argparse,json
+import numpy as np
+from PIL import Image
+def replay_saved():
+ protocol=json.loads((E/'protocol.json').read_text());parser=argparse.ArgumentParser();parser.add_argument('--case',choices=list(protocol['cases']),default='K01_linear_corner_hole');parser.add_argument('--condition',choices=['B','M'],default='M');args=parser.parse_args()
+ saved=E/'results'/args.case;output=W/'agentic_geometry/owner_replay'/args.case/args.condition
+ rgb=np.asarray(Image.open(saved/'source.png').convert('RGB'));traces=json.loads((saved/'frozen_traces.json').read_text())['traces'];initial=json.loads((saved/'A.json').read_text())['accepted'];expected=json.loads((saved/(args.condition+'.json')).read_text());engine=GeometryToolEngine(rgb,traces,initial,output,R,W)
+ for event in expected['tool_events']:engine.dispatch(event['tool'],event['arguments'])
+ assert engine.state_hash()==expected['state_hash'];assert engine.replay_decision_hash()==expected['decision_hash'];result=dict(replay_passed=True,geometry_hash=engine.state_hash(),decision_hash=engine.replay_decision_hash(),events=len(engine.events),AI_performance='NOT_TESTED');(output/'REPLAY_RESULT.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
+if __name__=='__main__':replay_saved()
+# END CHANGE AGD-AGENTIC-REPLAY | 2026-10-31T15:16:13Z | EDITED | Author: root

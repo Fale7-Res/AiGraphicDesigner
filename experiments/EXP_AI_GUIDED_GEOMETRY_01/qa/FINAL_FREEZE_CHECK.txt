@@ -1,0 +1,55 @@
+{
+  "pins": 38,
+  "errors": [],
+  "frozen": "2026-10-31T11:57:23.830608+00:00",
+  "case_results_present": true
+}
+test_actual_svg_renderer (test_geometry_engine.EngineContractTests.test_actual_svg_renderer) ... ok
+test_allowlisted_tool_does_not_accept_path_or_code (test_geometry_engine.EngineContractTests.test_allowlisted_tool_does_not_accept_path_or_code) ... ok
+test_atomic_commit_and_exact_rollback (test_geometry_engine.EngineContractTests.test_atomic_commit_and_exact_rollback) ... ok
+test_closed_loop_corner_and_junction_contract (test_geometry_engine.EngineContractTests.test_closed_loop_corner_and_junction_contract) ... ok
+test_duplicate_geometry_different_source_id (test_geometry_engine.EngineContractTests.test_duplicate_geometry_different_source_id) ... ok
+test_existing_trace_not_duplicated (test_geometry_engine.EngineContractTests.test_existing_trace_not_duplicated) ... ok
+test_nested_closed_boundaries_not_semantic_holes (test_geometry_engine.EngineContractTests.test_nested_closed_boundaries_not_semantic_holes) ... ok
+test_pending_rejection_and_rollback (test_geometry_engine.EngineContractTests.test_pending_rejection_and_rollback) ... ok
+test_replay_same_geometry_hash (test_geometry_engine.EngineContractTests.test_replay_same_geometry_hash) ... ok
+test_roi_and_scale_bounds (test_geometry_engine.EngineContractTests.test_roi_and_scale_bounds) ... ok
+test_strict_tools_schema (test_geometry_engine.EngineContractTests.test_strict_tools_schema) ... ok
+test_usable_candidate_not_hidden_by_short_noise (test_geometry_engine.EngineContractTests.test_usable_candidate_not_hidden_by_short_noise) ... ok
+test_dry_run_never_reads_environment_or_calls_transport (test_groq_adapter.GroqAdapterTests.test_dry_run_never_reads_environment_or_calls_transport) ... ok
+test_error_never_echoes_credential_and_failure_consumes_budget (test_groq_adapter.GroqAdapterTests.test_error_never_echoes_credential_and_failure_consumes_budget) ... ok
+test_expired_wrong_plan_or_no_zero_charge_evidence_denied (test_groq_adapter.GroqAdapterTests.test_expired_wrong_plan_or_no_zero_charge_evidence_denied) ... ok
+test_image_consent_and_quota_gate (test_groq_adapter.GroqAdapterTests.test_image_consent_and_quota_gate) ... ok
+test_invalid_budgets_schemas_and_nonfinite_arguments_denied (test_groq_adapter.GroqAdapterTests.test_invalid_budgets_schemas_and_nonfinite_arguments_denied) ... ok
+test_mock_transport_tool_call_is_returned_not_executed (test_groq_adapter.GroqAdapterTests.test_mock_transport_tool_call_is_returned_not_executed) ... ok
+test_rate_and_iteration_limits_no_automatic_retry (test_groq_adapter.GroqAdapterTests.test_rate_and_iteration_limits_no_automatic_retry) ... ok
+test_remote_urls_and_more_than_three_images_denied (test_groq_adapter.GroqAdapterTests.test_remote_urls_and_more_than_three_images_denied) ... ok
+test_reply_credential_echo_is_redacted (test_groq_adapter.GroqAdapterTests.test_reply_credential_echo_is_redacted) ... ok
+test_unverified_live_denied_before_env_access (test_groq_adapter.GroqAdapterTests.test_unverified_live_denied_before_env_access) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.637s
+
+OK
+
+{
+  "verified_at_utc": "2026-10-31T15:13:04.165543+00:00",
+  "all_protocol_pins_match": true,
+  "files": {
+    "geometry_engine.py": {
+      "sha256": "ff3a7576392c059c9e4d3ffc5c355bc43731aef74855ba11966cda02400a83b3",
+      "bytes": 18491,
+      "unchanged_from_frozen_protocol": true
+    },
+    "run_sessions.py": {
+      "sha256": "b59cb20e3984efa3371060ae6e7d96a36cbd6cf5d1ce35cd9e44bda5e807ece0",
+      "bytes": 4639,
+      "unchanged_from_frozen_protocol": true
+    },
+    "groq_adapter.py": {
+      "sha256": "e6dfe0a9d09005a044bff7d06c67ac6bc473ef746f0da810245ccd1a7014efff",
+      "bytes": 13205,
+      "unchanged_from_frozen_protocol": true
+    }
+  }
+}

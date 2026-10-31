@@ -1,0 +1,79 @@
+{
+  "sequence": 1,
+  "tool": "stage_candidates",
+  "arguments": {
+    "trace_ids": [
+      0
+    ]
+  },
+  "status": "ok",
+  "result": {
+    "status": "pending_validation",
+    "added_paths": 1,
+    "ledger": [
+      {
+        "trace_id": 0,
+        "interval_ledger": [
+          {
+            "partition_id": 0,
+            "lo": 0,
+            "hi": 21,
+            "length_px": 21.0,
+            "status": "accepted",
+            "reason": "accepted",
+            "initial_fit": {
+              "raw_to_curve_max_px": 0.0,
+              "curve_to_raw_max_px": 0.0,
+              "numerical_upper_envelope_px": 0.007,
+              "curve_to_raw_worst_xy": [
+                2.0,
+                8.0
+              ],
+              "raw_to_curve_worst_xy": [
+                2.0,
+                8.0
+              ],
+              "flatten_tolerance_px": 0.002,
+              "sampling_step_px": 0.01,
+              "curve_is_simple_numerical": true,
+              "continuous_exact_certification": false,
+              "reason": "accepted",
+              "segments": 1,
+              "subdivision_rounds": 0,
+              "intentional_corner_count": 0,
+              "wall_seconds": 0.0036543000023812056
+            },
+            "final_fit": {
+              "raw_to_curve_max_px": 0.0,
+              "curve_to_raw_max_px": 0.0,
+              "numerical_upper_envelope_px": 0.007,
+              "curve_to_raw_worst_xy": [
+                2.0,
+                8.0
+              ],
+              "raw_to_curve_worst_xy": [
+                2.0,
+                8.0
+              ],
+              "flatten_tolerance_px": 0.002,
+              "sampling_step_px": 0.01,
+              "curve_is_simple_numerical": true,
+              "continuous_exact_certification": false
+            },
+            "cubics": 1
+          }
+        ],
+        "accepted_paths": 1,
+        "rejections": [],
+        "status": "staged"
+      }
+    ],
+    "before_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "pending_hash": "a5089cdfa1d89508c4e490512c629207de0fb55c68e902f6c9d66d22a346f876",
+    "geometry_accepted": false
+  },
+  "before_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "after_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "previous_record_hash": "512fc9cd54fc3ad649bb5d9a0db1ee0cc8dfbb807a0481f186772757508b0b98",
+  "record_hash": "9897290f1996948cef3c8dc185b81221fcc290f719303fe6f88b8fb52b638cef"
+}

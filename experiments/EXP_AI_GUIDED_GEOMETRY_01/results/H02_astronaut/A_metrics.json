@@ -1,0 +1,94 @@
+{
+  "case": "H02_astronaut",
+  "condition": "A",
+  "AI_performance": "NOT_TESTED",
+  "reference": "No independent full contour truth",
+  "paths": 128,
+  "cubics": 2032,
+  "source_trace_support": {
+    "recall": 0.19507205666829508,
+    "precision": 1.0,
+    "mean_target_distance_px": 13.172803570964193,
+    "p95_target_distance_px": 39.44616584663204
+  },
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [
+      [
+        6,
+        42
+      ],
+      [
+        14,
+        62
+      ],
+      [
+        45,
+        63
+      ],
+      [
+        33,
+        86
+      ],
+      [
+        0,
+        92
+      ],
+      [
+        44,
+        99
+      ],
+      [
+        87,
+        103
+      ],
+      [
+        93,
+        103
+      ],
+      [
+        23,
+        124
+      ]
+    ],
+    "closed_loops": [
+      {
+        "trace_id": 2626,
+        "raw_signed_area_px2": 66.0,
+        "fitted_signed_area_px2": 66.09526794736303,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9985586268074615,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 5779,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 1272,
+    "tiny_cubic_length_weighted_fraction": 0.2999736038065449,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "atomic_faces": 1,
+  "integration_limit": "Evaluation only. Engine outputs boundary proposals; atomic partitions are not semantic regions/holes.",
+  "render_seconds": {
+    "1": 0.031308399979025126,
+    "4": 0.1616203999146819,
+    "detail1": 0.019211800070479512,
+    "detail4": 0.03543970000464469,
+    "detail16": 0.15575879998505116
+  },
+  "api_requests": 0,
+  "actual_api_cost_usd": 0,
+  "geometry": "NOT_ACCEPTED",
+  "missing_overlay_limit": "Magenta absent raw trace evidence, may be lighting/texture; not exact missing artwork truth."
+}

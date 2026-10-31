@@ -1,0 +1,2415 @@
+{
+  "case": "A03_burger",
+  "condition": "B",
+  "AI_performance": "NOT_TESTED",
+  "reference": "No independent full contour truth",
+  "paths": 132,
+  "cubics": 974,
+  "source_trace_support": {
+    "recall": 0.18604129263913824,
+    "precision": 1.0,
+    "mean_target_distance_px": 8.838054416048733,
+    "p95_target_distance_px": 22.47220505424423
+  },
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [
+      [
+        14,
+        23
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        14,
+        24
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        9,
+        30
+      ],
+      [
+        56,
+        65
+      ],
+      [
+        62,
+        71
+      ],
+      [
+        28,
+        84
+      ],
+      [
+        29,
+        84
+      ],
+      [
+        37,
+        85
+      ],
+      [
+        23,
+        94
+      ],
+      [
+        88,
+        97
+      ],
+      [
+        55,
+        116
+      ],
+      [
+        98,
+        123
+      ]
+    ],
+    "closed_loops": [
+      {
+        "trace_id": 1437,
+        "raw_signed_area_px2": -33.0,
+        "fitted_signed_area_px2": -33.28635565462446,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9765521435088903,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 985,
+        "raw_signed_area_px2": -30.0,
+        "fitted_signed_area_px2": -30.38178710200191,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9874336851641645,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 549,
+        "raw_signed_area_px2": 30.0,
+        "fitted_signed_area_px2": 30.57334195211115,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9651776256520184,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 947,
+        "raw_signed_area_px2": 30.5,
+        "fitted_signed_area_px2": 30.40473205262424,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9968764607418692,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5945,
+        "raw_signed_area_px2": 22.0,
+        "fitted_signed_area_px2": 21.866503648706384,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9677456422599954,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 1019,
+        "raw_signed_area_px2": -24.5,
+        "fitted_signed_area_px2": -24.690699394745934,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9922764684912828,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5942,
+        "raw_signed_area_px2": 23.0,
+        "fitted_signed_area_px2": 23.286355654624913,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9877028566053199,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5943,
+        "raw_signed_area_px2": 23.0,
+        "fitted_signed_area_px2": 23.095267947371212,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9958750014249631,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5941,
+        "raw_signed_area_px2": 19.5,
+        "fitted_signed_area_px2": 19.786355654624458,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9855276201629627,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5947,
+        "raw_signed_area_px2": 21.5,
+        "fitted_signed_area_px2": 21.690699394743206,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9912082413168382,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 372,
+        "raw_signed_area_px2": 21.0,
+        "fitted_signed_area_px2": 21.860337008528404,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9606439274841403,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 317,
+        "raw_signed_area_px2": 16.0,
+        "fitted_signed_area_px2": 16.605402550642793,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9635418323164369,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 517,
+        "raw_signed_area_px2": -21.0,
+        "fitted_signed_area_px2": -21.190699394744115,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.991000797510492,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5946,
+        "raw_signed_area_px2": -20.0,
+        "fitted_signed_area_px2": -20.60540255064916,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9706192320603079,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 164,
+        "raw_signed_area_px2": -20.5,
+        "fitted_signed_area_px2": -20.78635565462355,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9862238643761138,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 295,
+        "raw_signed_area_px2": -18.5,
+        "fitted_signed_area_px2": -18.850193646328535,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.981422278577127,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 5944,
+        "raw_signed_area_px2": 15.5,
+        "fitted_signed_area_px2": 15.595267947373031,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9938912272816042,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 4532,
+        "raw_signed_area_px2": 15.0,
+        "fitted_signed_area_px2": 15.28635565462173,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9812672385037802,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 234,
+        "raw_signed_area_px2": -2.5,
+        "fitted_signed_area_px2": -2.595267947373941,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9632916718794207,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 291,
+        "raw_signed_area_px2": -12.0,
+        "fitted_signed_area_px2": -12.190699394748663,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9843569766940696,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 297,
+        "raw_signed_area_px2": -2.5,
+        "fitted_signed_area_px2": -2.5952679473730313,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9632916718794133,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 520,
+        "raw_signed_area_px2": 7.5,
+        "fitted_signed_area_px2": 7.786355654622639,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9632234042052213,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [
+      {
+        "trace_pair": [
+          985,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          549,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          549,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          947,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          947,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          947,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5945,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5945,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5945,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5945,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1019,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1019,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1019,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1019,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1019,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5942,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5943,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5941,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5947,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          372,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          317,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          517,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5946,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          164,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          295,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          5944,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          4532,
+          5944
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          5944
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          234,
+          4532
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          5944
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          4532
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          291,
+          234
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          5944
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          4532
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          234
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          297,
+          291
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          1437
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          985
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          549
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5945
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          1019
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5942
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5943
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5941
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5947
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          372
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          317
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          517
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5946
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          164
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          295
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          5944
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          4532
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          234
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          291
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          520,
+          297
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      }
+    ],
+    "source_endpoint_junctions": 3727,
+    "complete_incidence_junctions_retained": 2,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 666,
+    "tiny_cubic_length_weighted_fraction": 0.32859443601182586,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "atomic_faces": 18,
+  "integration_limit": "Evaluation only. Engine outputs boundary proposals; atomic partitions are not semantic regions/holes.",
+  "render_seconds": {
+    "1": 0.02235709992237389,
+    "4": 0.06385389994829893,
+    "detail1": 0.01782960002310574,
+    "detail4": 0.02292899996973574,
+    "detail16": 0.09685390000231564
+  },
+  "api_requests": 0,
+  "actual_api_cost_usd": 0,
+  "geometry": "NOT_ACCEPTED",
+  "missing_overlay_limit": "Magenta absent raw trace evidence, may be lighting/texture; not exact missing artwork truth.",
+  "calls": 12,
+  "commits": 2,
+  "decision_hash": "f83f361122c586a89cd9c232401a0090e4e1c615c837113917ee4429bdb5390d",
+  "event_status_counts": {
+    "ok": 12,
+    "rejected": 0
+  }
+}

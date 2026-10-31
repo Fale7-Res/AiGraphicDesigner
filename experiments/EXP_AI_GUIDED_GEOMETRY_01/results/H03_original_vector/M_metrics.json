@@ -1,0 +1,202 @@
+{
+  "case": "H03_original_vector",
+  "condition": "M",
+  "AI_performance": "NOT_TESTED",
+  "reference": "Independent first-party source-vector8x mask boundary; evaluator-only",
+  "paths": 5,
+  "cubics": 364,
+  "source_trace_support": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.030989118358601044,
+    "p95_target_distance_px": 0.27107115789730263
+  },
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [
+      {
+        "trace_id": 4,
+        "raw_signed_area_px2": 471.0,
+        "fitted_signed_area_px2": 469.72876443398036,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9905108899997528,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 0,
+        "raw_signed_area_px2": 3773.5,
+        "fitted_signed_area_px2": 3770.709906214802,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9976055101079132,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 1,
+        "raw_signed_area_px2": 2548.0,
+        "fitted_signed_area_px2": 2551.263674223919,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9982071438014455,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 2,
+        "raw_signed_area_px2": 1023.5,
+        "fitted_signed_area_px2": 1023.1498063536709,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9977060091299865,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 3,
+        "raw_signed_area_px2": -203.5,
+        "fitted_signed_area_px2": -203.36349384861387,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9840923292732902,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [
+      {
+        "trace_pair": [
+          0,
+          4
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          4
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          0
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          2,
+          4
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          2,
+          0
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          2,
+          1
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          3,
+          4
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          3,
+          0
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          3,
+          1
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          3,
+          2
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      }
+    ],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 263,
+    "tiny_cubic_length_weighted_fraction": 0.45025276491759997,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "atomic_faces": 5,
+  "integration_limit": "Evaluation only. Engine outputs boundary proposals; atomic partitions are not semantic regions/holes.",
+  "render_seconds": {
+    "1": 0.01686360000167042,
+    "4": 0.025036600069142878,
+    "detail1": 0.013446700060740113,
+    "detail4": 0.01617339998483658,
+    "detail16": 0.05128310003783554
+  },
+  "api_requests": 0,
+  "actual_api_cost_usd": 0,
+  "geometry": "NOT_ACCEPTED",
+  "boundary_1_25px": {
+    "recall": 0.9974948423224286,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.2692259415171449,
+    "p95_target_distance_px": 0.6215180787573554
+  },
+  "hole_support_NOT_ownership": [],
+  "missing_overlay_limit": "Magenta absent raw trace evidence, may be lighting/texture; not exact missing artwork truth.",
+  "calls": 12,
+  "commits": 0,
+  "decision_hash": "37c94f9551e97f2feca64911f940c0dfd4eed7e360404794d36c4af1543abce6",
+  "event_status_counts": {
+    "ok": 12,
+    "rejected": 0
+  }
+}

@@ -1,0 +1,3361 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 46
+    },
+    {
+      "path": "API.md",
+      "bytes": 1344
+    },
+    {
+      "path": "deliver.py",
+      "bytes": 23785
+    },
+    {
+      "path": "ENGINE_API.md",
+      "bytes": 5068
+    },
+    {
+      "path": "evaluate_sessions.py",
+      "bytes": 5592
+    },
+    {
+      "path": "geometry_engine.py",
+      "bytes": 18491
+    },
+    {
+      "path": "groq_adapter.py",
+      "bytes": 13205
+    },
+    {
+      "path": "groq_pilot.py",
+      "bytes": 9084
+    },
+    {
+      "path": "inputs/H03_source.png",
+      "bytes": 3762
+    },
+    {
+      "path": "LIVE_PILOT_PLAN.json",
+      "bytes": 981
+    },
+    {
+      "path": "memory/code_mirrors/deliver.py.md",
+      "bytes": 8710
+    },
+    {
+      "path": "memory/code_mirrors/evaluate_sessions.py.md",
+      "bytes": 7686
+    },
+    {
+      "path": "memory/code_mirrors/geometry_engine.py.md",
+      "bytes": 44150
+    },
+    {
+      "path": "memory/code_mirrors/groq_adapter.py.md",
+      "bytes": 30451
+    },
+    {
+      "path": "memory/code_mirrors/groq_pilot.py.md",
+      "bytes": 14148
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_dashboard.py.md",
+      "bytes": 3883
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_freeze.py.md",
+      "bytes": 2143
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_new_geometry.py.md",
+      "bytes": 2161
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_package.py.md",
+      "bytes": 2146
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_sessions.py.md",
+      "bytes": 6787
+    },
+    {
+      "path": "memory/code_mirrors/qa__test_independent_contract.py.md",
+      "bytes": 17260
+    },
+    {
+      "path": "memory/code_mirrors/qa__test_independent_pilot.py.md",
+      "bytes": 5085
+    },
+    {
+      "path": "memory/code_mirrors/replay_saved_session.py.md",
+      "bytes": 4230
+    },
+    {
+      "path": "memory/code_mirrors/run_sessions.py.md",
+      "bytes": 7591
+    },
+    {
+      "path": "memory/code_mirrors/test_geometry_engine.py.md",
+      "bytes": 24258
+    },
+    {
+      "path": "memory/code_mirrors/test_groq_adapter.py.md",
+      "bytes": 23560
+    },
+    {
+      "path": "memory/code_mirrors/test_pilot.py.md",
+      "bytes": 15513
+    },
+    {
+      "path": "memory/DOCUMENT_PROVENANCE.json",
+      "bytes": 5303
+    },
+    {
+      "path": "memory/FUNCTION_REGISTRY.md",
+      "bytes": 26640
+    },
+    {
+      "path": "memory/mirror_metadata.json",
+      "bytes": 10096
+    },
+    {
+      "path": "memory/session/ACTIVE_SESSION_WAL.md",
+      "bytes": 410
+    },
+    {
+      "path": "memory/session/CURRENT_TASK_CHECKPOINT.md",
+      "bytes": 389
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 17353
+    },
+    {
+      "path": "provenance/postrun_before_final_comments/deliver.py.txt",
+      "bytes": 23787
+    },
+    {
+      "path": "provenance/postrun_before_final_comments/evaluate_sessions.py.txt",
+      "bytes": 5594
+    },
+    {
+      "path": "provenance/postrun_before_final_comments/groq_pilot.py.txt",
+      "bytes": 9086
+    },
+    {
+      "path": "provenance/postrun_before_final_comments/replay_saved_session.py.txt",
+      "bytes": 1609
+    },
+    {
+      "path": "provenance/postrun_before_final_comments/test_pilot.py.txt",
+      "bytes": 3298
+    },
+    {
+      "path": "PROVIDER_RESEARCH.md",
+      "bytes": 7452
+    },
+    {
+      "path": "Publish-Research.ps1",
+      "bytes": 4512
+    },
+    {
+      "path": "qa/audit_dashboard.py",
+      "bytes": 1727
+    },
+    {
+      "path": "qa/audit_freeze.py",
+      "bytes": 1563
+    },
+    {
+      "path": "qa/audit_new_geometry.py",
+      "bytes": 2585
+    },
+    {
+      "path": "qa/audit_package.py",
+      "bytes": 1408
+    },
+    {
+      "path": "qa/audit_sessions.py",
+      "bytes": 4810
+    },
+    {
+      "path": "qa/DASHBOARD_AUDIT.json",
+      "bytes": 422
+    },
+    {
+      "path": "qa/FINAL_FREEZE_CHECK.txt",
+      "bytes": 3903
+    },
+    {
+      "path": "qa/FINAL_FROZEN_SOURCE_SNAPSHOT.json",
+      "bytes": 682
+    },
+    {
+      "path": "qa/FINAL_PACKAGED_TESTS.txt",
+      "bytes": 3736
+    },
+    {
+      "path": "qa/FINAL_QA.md",
+      "bytes": 15231
+    },
+    {
+      "path": "qa/INDEPENDENT_TESTS.txt",
+      "bytes": 823
+    },
+    {
+      "path": "qa/NEW_GEOMETRY_AUDIT.json",
+      "bytes": 5501
+    },
+    {
+      "path": "qa/PACKAGE_AUDIT.json",
+      "bytes": 164
+    },
+    {
+      "path": "qa/PREFLIGHT.md",
+      "bytes": 2556
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_000.json",
+      "bytes": 1104
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_001.json",
+      "bytes": 2567
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_002.json",
+      "bytes": 625
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_003.json",
+      "bytes": 699
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_004.json",
+      "bytes": 591
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_005.json",
+      "bytes": 699
+    },
+    {
+      "path": "qa/rollback_fixture/replay/event_006.json",
+      "bytes": 754
+    },
+    {
+      "path": "qa/rollback_fixture/replay/geometry_03_1x.png",
+      "bytes": 134
+    },
+    {
+      "path": "qa/rollback_fixture/replay/geometry_03_1x.svg",
+      "bytes": 184
+    },
+    {
+      "path": "qa/rollback_fixture/replay/geometry_05_1x.png",
+      "bytes": 99
+    },
+    {
+      "path": "qa/rollback_fixture/replay/geometry_05_1x.svg",
+      "bytes": 89
+    },
+    {
+      "path": "qa/rollback_fixture/RESULT.json",
+      "bytes": 269
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_000.json",
+      "bytes": 1104
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_001.json",
+      "bytes": 2568
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_002.json",
+      "bytes": 625
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_003.json",
+      "bytes": 699
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_004.json",
+      "bytes": 591
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_005.json",
+      "bytes": 699
+    },
+    {
+      "path": "qa/rollback_fixture/session/event_006.json",
+      "bytes": 754
+    },
+    {
+      "path": "qa/rollback_fixture/session/geometry_03_1x.png",
+      "bytes": 134
+    },
+    {
+      "path": "qa/rollback_fixture/session/geometry_03_1x.svg",
+      "bytes": 184
+    },
+    {
+      "path": "qa/rollback_fixture/session/geometry_05_1x.png",
+      "bytes": 99
+    },
+    {
+      "path": "qa/rollback_fixture/session/geometry_05_1x.svg",
+      "bytes": 89
+    },
+    {
+      "path": "qa/rollback_fixture/source.png",
+      "bytes": 127
+    },
+    {
+      "path": "qa/SESSION_AUDIT.json",
+      "bytes": 5199
+    },
+    {
+      "path": "qa/test_independent_contract.py",
+      "bytes": 6278
+    },
+    {
+      "path": "qa/test_independent_pilot.py",
+      "bytes": 1302
+    },
+    {
+      "path": "qa/UNIT_TESTS.txt",
+      "bytes": 3098
+    },
+    {
+      "path": "README.md",
+      "bytes": 1078
+    },
+    {
+      "path": "references/H03_source.svg",
+      "bytes": 505
+    },
+    {
+      "path": "replay_saved_session.py",
+      "bytes": 1607
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 18443
+    },
+    {
+      "path": "reports/A01_shield.log",
+      "bytes": 22
+    },
+    {
+      "path": "reports/A03_burger.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/A03_burger_retry01.log",
+      "bytes": 22
+    },
+    {
+      "path": "reports/A10_logo.log",
+      "bytes": 20
+    },
+    {
+      "path": "reports/evaluation.log",
+      "bytes": 176
+    },
+    {
+      "path": "reports/EVALUATION_RESOURCES.json",
+      "bytes": 1213
+    },
+    {
+      "path": "reports/FINAL_SOURCE_LOCK.json",
+      "bytes": 1900
+    },
+    {
+      "path": "reports/G06_arabic.log",
+      "bytes": 22
+    },
+    {
+      "path": "reports/H02_astronaut.log",
+      "bytes": 25
+    },
+    {
+      "path": "reports/H03_original_vector.log",
+      "bytes": 31
+    },
+    {
+      "path": "reports/K01_linear_corner_hole.log",
+      "bytes": 34
+    },
+    {
+      "path": "reports/METRICS.json",
+      "bytes": 329563
+    },
+    {
+      "path": "reports/PUBLICATION.json",
+      "bytes": 507
+    },
+    {
+      "path": "reports/RESOURCE_RETRY.json",
+      "bytes": 858
+    },
+    {
+      "path": "reports/RESOURCES.json",
+      "bytes": 4598
+    },
+    {
+      "path": "reports/ROOT_GOVERNANCE.txt",
+      "bytes": 61128
+    },
+    {
+      "path": "reports/SCOPED_GOVERNANCE.json",
+      "bytes": 230
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 3274
+    },
+    {
+      "path": "results/A01_shield/A.json",
+      "bytes": 121928
+    },
+    {
+      "path": "results/A01_shield/A.svg",
+      "bytes": 90171
+    },
+    {
+      "path": "results/A01_shield/A_1x.png",
+      "bytes": 8643
+    },
+    {
+      "path": "results/A01_shield/A_4x.png",
+      "bytes": 38413
+    },
+    {
+      "path": "results/A01_shield/A_detail.svg",
+      "bytes": 90826
+    },
+    {
+      "path": "results/A01_shield/A_detail_16x.png",
+      "bytes": 54612
+    },
+    {
+      "path": "results/A01_shield/A_detail_1x.png",
+      "bytes": 2785
+    },
+    {
+      "path": "results/A01_shield/A_detail_4x.png",
+      "bytes": 10632
+    },
+    {
+      "path": "results/A01_shield/A_metrics.json",
+      "bytes": 8399
+    },
+    {
+      "path": "results/A01_shield/A_missing_source_trace.png",
+      "bytes": 124597
+    },
+    {
+      "path": "results/A01_shield/A_overlay.png",
+      "bytes": 143177
+    },
+    {
+      "path": "results/A01_shield/B/crop_00.png",
+      "bytes": 123781
+    },
+    {
+      "path": "results/A01_shield/B/crop_05.png",
+      "bytes": 123781
+    },
+    {
+      "path": "results/A01_shield/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A01_shield/B/event_001.json",
+      "bytes": 6501
+    },
+    {
+      "path": "results/A01_shield/B/event_002.json",
+      "bytes": 11725
+    },
+    {
+      "path": "results/A01_shield/B/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/B/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A01_shield/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A01_shield/B/event_006.json",
+      "bytes": 6506
+    },
+    {
+      "path": "results/A01_shield/B/event_007.json",
+      "bytes": 9825
+    },
+    {
+      "path": "results/A01_shield/B/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/B/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A01_shield/B/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/B/geometry_04_1x.png",
+      "bytes": 8687
+    },
+    {
+      "path": "results/A01_shield/B/geometry_04_1x.svg",
+      "bytes": 90851
+    },
+    {
+      "path": "results/A01_shield/B/geometry_09_1x.png",
+      "bytes": 8792
+    },
+    {
+      "path": "results/A01_shield/B/geometry_09_1x.svg",
+      "bytes": 91447
+    },
+    {
+      "path": "results/A01_shield/B/geometry_11_4x.png",
+      "bytes": 39075
+    },
+    {
+      "path": "results/A01_shield/B/geometry_11_4x.svg",
+      "bytes": 91447
+    },
+    {
+      "path": "results/A01_shield/B.json",
+      "bytes": 150399
+    },
+    {
+      "path": "results/A01_shield/B.svg",
+      "bytes": 91447
+    },
+    {
+      "path": "results/A01_shield/B_1x.png",
+      "bytes": 8792
+    },
+    {
+      "path": "results/A01_shield/B_4x.png",
+      "bytes": 39075
+    },
+    {
+      "path": "results/A01_shield/B_detail.svg",
+      "bytes": 92122
+    },
+    {
+      "path": "results/A01_shield/B_detail_16x.png",
+      "bytes": 55233
+    },
+    {
+      "path": "results/A01_shield/B_detail_1x.png",
+      "bytes": 2814
+    },
+    {
+      "path": "results/A01_shield/B_detail_4x.png",
+      "bytes": 10772
+    },
+    {
+      "path": "results/A01_shield/B_metrics.json",
+      "bytes": 8983
+    },
+    {
+      "path": "results/A01_shield/B_missing_source_trace.png",
+      "bytes": 124645
+    },
+    {
+      "path": "results/A01_shield/B_overlay.png",
+      "bytes": 143184
+    },
+    {
+      "path": "results/A01_shield/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/A01_shield/comparison.png",
+      "bytes": 125975
+    },
+    {
+      "path": "results/A01_shield/frozen_traces.json",
+      "bytes": 651497
+    },
+    {
+      "path": "results/A01_shield/M/crop_00.png",
+      "bytes": 63990
+    },
+    {
+      "path": "results/A01_shield/M/crop_05.png",
+      "bytes": 60835
+    },
+    {
+      "path": "results/A01_shield/M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A01_shield/M/event_001.json",
+      "bytes": 6502
+    },
+    {
+      "path": "results/A01_shield/M/event_002.json",
+      "bytes": 11726
+    },
+    {
+      "path": "results/A01_shield/M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A01_shield/M/event_006.json",
+      "bytes": 6886
+    },
+    {
+      "path": "results/A01_shield/M/event_007.json",
+      "bytes": 12722
+    },
+    {
+      "path": "results/A01_shield/M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A01_shield/M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/M/geometry_04_1x.png",
+      "bytes": 8687
+    },
+    {
+      "path": "results/A01_shield/M/geometry_04_1x.svg",
+      "bytes": 90851
+    },
+    {
+      "path": "results/A01_shield/M/geometry_09_1x.png",
+      "bytes": 8726
+    },
+    {
+      "path": "results/A01_shield/M/geometry_09_1x.svg",
+      "bytes": 91472
+    },
+    {
+      "path": "results/A01_shield/M/geometry_11_4x.png",
+      "bytes": 38745
+    },
+    {
+      "path": "results/A01_shield/M/geometry_11_4x.svg",
+      "bytes": 91472
+    },
+    {
+      "path": "results/A01_shield/M.json",
+      "bytes": 152308
+    },
+    {
+      "path": "results/A01_shield/M.svg",
+      "bytes": 91472
+    },
+    {
+      "path": "results/A01_shield/M_1x.png",
+      "bytes": 8726
+    },
+    {
+      "path": "results/A01_shield/M_4x.png",
+      "bytes": 38745
+    },
+    {
+      "path": "results/A01_shield/M_detail.svg",
+      "bytes": 92147
+    },
+    {
+      "path": "results/A01_shield/M_detail_16x.png",
+      "bytes": 55434
+    },
+    {
+      "path": "results/A01_shield/M_detail_1x.png",
+      "bytes": 2840
+    },
+    {
+      "path": "results/A01_shield/M_detail_4x.png",
+      "bytes": 10812
+    },
+    {
+      "path": "results/A01_shield/M_metrics.json",
+      "bytes": 8994
+    },
+    {
+      "path": "results/A01_shield/M_missing_source_trace.png",
+      "bytes": 124674
+    },
+    {
+      "path": "results/A01_shield/M_overlay.png",
+      "bytes": 143187
+    },
+    {
+      "path": "results/A01_shield/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/A01_shield/replay_M/crop_00.png",
+      "bytes": 63990
+    },
+    {
+      "path": "results/A01_shield/replay_M/crop_05.png",
+      "bytes": 60835
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_001.json",
+      "bytes": 6502
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_002.json",
+      "bytes": 11725
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_006.json",
+      "bytes": 6886
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_007.json",
+      "bytes": 12722
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A01_shield/replay_M/event_011.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_04_1x.png",
+      "bytes": 8687
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_04_1x.svg",
+      "bytes": 90851
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_09_1x.png",
+      "bytes": 8726
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_09_1x.svg",
+      "bytes": 91472
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_11_4x.png",
+      "bytes": 38745
+    },
+    {
+      "path": "results/A01_shield/replay_M/geometry_11_4x.svg",
+      "bytes": 91472
+    },
+    {
+      "path": "results/A01_shield/source.png",
+      "bytes": 123781
+    },
+    {
+      "path": "results/A01_shield/source_rgba.png",
+      "bytes": 140109
+    },
+    {
+      "path": "results/A01_shield/WORKER.json",
+      "bytes": 107
+    },
+    {
+      "path": "results/A03_burger/A.json",
+      "bytes": 103963
+    },
+    {
+      "path": "results/A03_burger/A.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger/A_1x.png",
+      "bytes": 7860
+    },
+    {
+      "path": "results/A03_burger/A_4x.png",
+      "bytes": 35596
+    },
+    {
+      "path": "results/A03_burger/A_detail.svg",
+      "bytes": 78387
+    },
+    {
+      "path": "results/A03_burger/A_detail_16x.png",
+      "bytes": 39178
+    },
+    {
+      "path": "results/A03_burger/A_detail_1x.png",
+      "bytes": 2005
+    },
+    {
+      "path": "results/A03_burger/A_detail_4x.png",
+      "bytes": 7807
+    },
+    {
+      "path": "results/A03_burger/A_metrics.json",
+      "bytes": 39431
+    },
+    {
+      "path": "results/A03_burger/A_missing_source_trace.png",
+      "bytes": 179857
+    },
+    {
+      "path": "results/A03_burger/A_overlay.png",
+      "bytes": 201229
+    },
+    {
+      "path": "results/A03_burger/B/crop_00.png",
+      "bytes": 174004
+    },
+    {
+      "path": "results/A03_burger/B/crop_05.png",
+      "bytes": 174004
+    },
+    {
+      "path": "results/A03_burger/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A03_burger/B/event_001.json",
+      "bytes": 6585
+    },
+    {
+      "path": "results/A03_burger/B/event_002.json",
+      "bytes": 20408
+    },
+    {
+      "path": "results/A03_burger/B/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/B/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A03_burger/B/event_006.json",
+      "bytes": 6589
+    },
+    {
+      "path": "results/A03_burger/B/event_007.json",
+      "bytes": 16980
+    },
+    {
+      "path": "results/A03_burger/B/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/B/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/B/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A03_burger/B/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger/B/geometry_04_1x.png",
+      "bytes": 7929
+    },
+    {
+      "path": "results/A03_burger/B/geometry_04_1x.svg",
+      "bytes": 78898
+    },
+    {
+      "path": "results/A03_burger/B/geometry_09_1x.png",
+      "bytes": 7988
+    },
+    {
+      "path": "results/A03_burger/B/geometry_09_1x.svg",
+      "bytes": 79937
+    },
+    {
+      "path": "results/A03_burger/B/geometry_11_4x.png",
+      "bytes": 36157
+    },
+    {
+      "path": "results/A03_burger/B/geometry_11_4x.svg",
+      "bytes": 79937
+    },
+    {
+      "path": "results/A03_burger/B.json",
+      "bytes": 143198
+    },
+    {
+      "path": "results/A03_burger/B.svg",
+      "bytes": 79937
+    },
+    {
+      "path": "results/A03_burger/B_1x.png",
+      "bytes": 7988
+    },
+    {
+      "path": "results/A03_burger/B_4x.png",
+      "bytes": 36157
+    },
+    {
+      "path": "results/A03_burger/B_detail.svg",
+      "bytes": 80609
+    },
+    {
+      "path": "results/A03_burger/B_detail_16x.png",
+      "bytes": 39178
+    },
+    {
+      "path": "results/A03_burger/B_detail_1x.png",
+      "bytes": 2005
+    },
+    {
+      "path": "results/A03_burger/B_detail_4x.png",
+      "bytes": 7807
+    },
+    {
+      "path": "results/A03_burger/B_metrics.json",
+      "bytes": 56352
+    },
+    {
+      "path": "results/A03_burger/B_missing_source_trace.png",
+      "bytes": 179850
+    },
+    {
+      "path": "results/A03_burger/B_overlay.png",
+      "bytes": 201236
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/event_000.json",
+      "bytes": 3689
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/event_001.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/geometry_01_1x.png",
+      "bytes": 7860
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/geometry_01_1x.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/planner_preview_02.png",
+      "bytes": 143915
+    },
+    {
+      "path": "results/A03_burger/C_dry_run/PROVIDER_STATUS.json",
+      "bytes": 401
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/event_000.json",
+      "bytes": 3689
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/event_001.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/geometry_01_1x.png",
+      "bytes": 7860
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/geometry_01_1x.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/planner_call_00.json",
+      "bytes": 253
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/planner_preview_02.png",
+      "bytes": 143915
+    },
+    {
+      "path": "results/A03_burger/C_dry_run_final_validation/PROVIDER_STATUS.json",
+      "bytes": 401
+    },
+    {
+      "path": "results/A03_burger/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/A03_burger/comparison.png",
+      "bytes": 154961
+    },
+    {
+      "path": "results/A03_burger/frozen_traces.json",
+      "bytes": 1107496
+    },
+    {
+      "path": "results/A03_burger/M/crop_00.png",
+      "bytes": 81162
+    },
+    {
+      "path": "results/A03_burger/M/crop_05.png",
+      "bytes": 93830
+    },
+    {
+      "path": "results/A03_burger/M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A03_burger/M/event_001.json",
+      "bytes": 6586
+    },
+    {
+      "path": "results/A03_burger/M/event_002.json",
+      "bytes": 20405
+    },
+    {
+      "path": "results/A03_burger/M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A03_burger/M/event_006.json",
+      "bytes": 6550
+    },
+    {
+      "path": "results/A03_burger/M/event_007.json",
+      "bytes": 19633
+    },
+    {
+      "path": "results/A03_burger/M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A03_burger/M/event_011.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/M/geometry_04_1x.png",
+      "bytes": 7929
+    },
+    {
+      "path": "results/A03_burger/M/geometry_04_1x.svg",
+      "bytes": 78898
+    },
+    {
+      "path": "results/A03_burger/M/geometry_09_1x.png",
+      "bytes": 7975
+    },
+    {
+      "path": "results/A03_burger/M/geometry_09_1x.svg",
+      "bytes": 80070
+    },
+    {
+      "path": "results/A03_burger/M/geometry_11_4x.png",
+      "bytes": 36176
+    },
+    {
+      "path": "results/A03_burger/M/geometry_11_4x.svg",
+      "bytes": 80070
+    },
+    {
+      "path": "results/A03_burger/M.json",
+      "bytes": 144584
+    },
+    {
+      "path": "results/A03_burger/M.svg",
+      "bytes": 80070
+    },
+    {
+      "path": "results/A03_burger/M_1x.png",
+      "bytes": 7975
+    },
+    {
+      "path": "results/A03_burger/M_4x.png",
+      "bytes": 36176
+    },
+    {
+      "path": "results/A03_burger/M_detail.svg",
+      "bytes": 80742
+    },
+    {
+      "path": "results/A03_burger/M_detail_16x.png",
+      "bytes": 39178
+    },
+    {
+      "path": "results/A03_burger/M_detail_1x.png",
+      "bytes": 2005
+    },
+    {
+      "path": "results/A03_burger/M_detail_4x.png",
+      "bytes": 7807
+    },
+    {
+      "path": "results/A03_burger/M_metrics.json",
+      "bytes": 56365
+    },
+    {
+      "path": "results/A03_burger/M_missing_source_trace.png",
+      "bytes": 179864
+    },
+    {
+      "path": "results/A03_burger/M_overlay.png",
+      "bytes": 201231
+    },
+    {
+      "path": "results/A03_burger/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/A03_burger/replay_M/crop_00.png",
+      "bytes": 81162
+    },
+    {
+      "path": "results/A03_burger/replay_M/crop_05.png",
+      "bytes": 93830
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_001.json",
+      "bytes": 6586
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_002.json",
+      "bytes": 20408
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_006.json",
+      "bytes": 6550
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_007.json",
+      "bytes": 19634
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/A03_burger/replay_M/event_011.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_04_1x.png",
+      "bytes": 7929
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_04_1x.svg",
+      "bytes": 78898
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_09_1x.png",
+      "bytes": 7975
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_09_1x.svg",
+      "bytes": 80070
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_11_4x.png",
+      "bytes": 36176
+    },
+    {
+      "path": "results/A03_burger/replay_M/geometry_11_4x.svg",
+      "bytes": 80070
+    },
+    {
+      "path": "results/A03_burger/source.png",
+      "bytes": 169758
+    },
+    {
+      "path": "results/A03_burger/source_rgba.png",
+      "bytes": 199575
+    },
+    {
+      "path": "results/A03_burger/WORKER.json",
+      "bytes": 108
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/A.json",
+      "bytes": 103963
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/A.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/crop_00.png",
+      "bytes": 174004
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/crop_05.png",
+      "bytes": 174004
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_001.json",
+      "bytes": 6585
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_002.json",
+      "bytes": 20404
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/geometry_04_1x.png",
+      "bytes": 7929
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/B/geometry_04_1x.svg",
+      "bytes": 78898
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/frozen_traces.json",
+      "bytes": 1107496
+    },
+    {
+      "path": "results/A03_burger_attempt01_STOPPED_RAM/source.png",
+      "bytes": 169758
+    },
+    {
+      "path": "results/A10_logo/A.json",
+      "bytes": 184447
+    },
+    {
+      "path": "results/A10_logo/A.svg",
+      "bytes": 133878
+    },
+    {
+      "path": "results/A10_logo/A_1x.png",
+      "bytes": 12739
+    },
+    {
+      "path": "results/A10_logo/A_4x.png",
+      "bytes": 59917
+    },
+    {
+      "path": "results/A10_logo/A_detail.svg",
+      "bytes": 134530
+    },
+    {
+      "path": "results/A10_logo/A_detail_16x.png",
+      "bytes": 59825
+    },
+    {
+      "path": "results/A10_logo/A_detail_1x.png",
+      "bytes": 2914
+    },
+    {
+      "path": "results/A10_logo/A_detail_4x.png",
+      "bytes": 12101
+    },
+    {
+      "path": "results/A10_logo/A_metrics.json",
+      "bytes": 16328
+    },
+    {
+      "path": "results/A10_logo/A_missing_source_trace.png",
+      "bytes": 133310
+    },
+    {
+      "path": "results/A10_logo/A_overlay.png",
+      "bytes": 150742
+    },
+    {
+      "path": "results/A10_logo/B/crop_00.png",
+      "bytes": 134121
+    },
+    {
+      "path": "results/A10_logo/B/crop_05.png",
+      "bytes": 134121
+    },
+    {
+      "path": "results/A10_logo/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A10_logo/B/event_001.json",
+      "bytes": 6595
+    },
+    {
+      "path": "results/A10_logo/B/event_002.json",
+      "bytes": 13109
+    },
+    {
+      "path": "results/A10_logo/B/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/B/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A10_logo/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/A10_logo/B/event_006.json",
+      "bytes": 6651
+    },
+    {
+      "path": "results/A10_logo/B/event_007.json",
+      "bytes": 6002
+    },
+    {
+      "path": "results/A10_logo/B/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A10_logo/B/event_010.json",
+      "bytes": 761
+    },
+    {
+      "path": "results/A10_logo/B/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A10_logo/B/geometry_04_1x.png",
+      "bytes": 12771
+    },
+    {
+      "path": "results/A10_logo/B/geometry_04_1x.svg",
+      "bytes": 134540
+    },
+    {
+      "path": "results/A10_logo/B/geometry_09_1x.png",
+      "bytes": 12796
+    },
+    {
+      "path": "results/A10_logo/B/geometry_09_1x.svg",
+      "bytes": 134902
+    },
+    {
+      "path": "results/A10_logo/B/geometry_11_4x.png",
+      "bytes": 60134
+    },
+    {
+      "path": "results/A10_logo/B/geometry_11_4x.svg",
+      "bytes": 134902
+    },
+    {
+      "path": "results/A10_logo/B.json",
+      "bytes": 211090
+    },
+    {
+      "path": "results/A10_logo/B.svg",
+      "bytes": 134902
+    },
+    {
+      "path": "results/A10_logo/B_1x.png",
+      "bytes": 12796
+    },
+    {
+      "path": "results/A10_logo/B_4x.png",
+      "bytes": 60134
+    },
+    {
+      "path": "results/A10_logo/B_detail.svg",
+      "bytes": 135574
+    },
+    {
+      "path": "results/A10_logo/B_detail_16x.png",
+      "bytes": 60044
+    },
+    {
+      "path": "results/A10_logo/B_detail_1x.png",
+      "bytes": 2941
+    },
+    {
+      "path": "results/A10_logo/B_detail_4x.png",
+      "bytes": 12203
+    },
+    {
+      "path": "results/A10_logo/B_metrics.json",
+      "bytes": 16604
+    },
+    {
+      "path": "results/A10_logo/B_missing_source_trace.png",
+      "bytes": 133309
+    },
+    {
+      "path": "results/A10_logo/B_overlay.png",
+      "bytes": 150737
+    },
+    {
+      "path": "results/A10_logo/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/A10_logo/comparison.png",
+      "bytes": 138453
+    },
+    {
+      "path": "results/A10_logo/frozen_traces.json",
+      "bytes": 458389
+    },
+    {
+      "path": "results/A10_logo/M/crop_00.png",
+      "bytes": 65942
+    },
+    {
+      "path": "results/A10_logo/M/crop_05.png",
+      "bytes": 69452
+    },
+    {
+      "path": "results/A10_logo/M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A10_logo/M/event_001.json",
+      "bytes": 6690
+    },
+    {
+      "path": "results/A10_logo/M/event_002.json",
+      "bytes": 13107
+    },
+    {
+      "path": "results/A10_logo/M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A10_logo/M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A10_logo/M/event_006.json",
+      "bytes": 6705
+    },
+    {
+      "path": "results/A10_logo/M/event_007.json",
+      "bytes": 7827
+    },
+    {
+      "path": "results/A10_logo/M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A10_logo/M/event_010.json",
+      "bytes": 761
+    },
+    {
+      "path": "results/A10_logo/M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A10_logo/M/geometry_04_1x.png",
+      "bytes": 12771
+    },
+    {
+      "path": "results/A10_logo/M/geometry_04_1x.svg",
+      "bytes": 134540
+    },
+    {
+      "path": "results/A10_logo/M/geometry_09_1x.png",
+      "bytes": 12784
+    },
+    {
+      "path": "results/A10_logo/M/geometry_09_1x.svg",
+      "bytes": 134912
+    },
+    {
+      "path": "results/A10_logo/M/geometry_11_4x.png",
+      "bytes": 60039
+    },
+    {
+      "path": "results/A10_logo/M/geometry_11_4x.svg",
+      "bytes": 134912
+    },
+    {
+      "path": "results/A10_logo/M.json",
+      "bytes": 212389
+    },
+    {
+      "path": "results/A10_logo/M.svg",
+      "bytes": 134912
+    },
+    {
+      "path": "results/A10_logo/M_1x.png",
+      "bytes": 12784
+    },
+    {
+      "path": "results/A10_logo/M_4x.png",
+      "bytes": 60039
+    },
+    {
+      "path": "results/A10_logo/M_detail.svg",
+      "bytes": 135584
+    },
+    {
+      "path": "results/A10_logo/M_detail_16x.png",
+      "bytes": 60122
+    },
+    {
+      "path": "results/A10_logo/M_detail_1x.png",
+      "bytes": 2935
+    },
+    {
+      "path": "results/A10_logo/M_detail_4x.png",
+      "bytes": 12176
+    },
+    {
+      "path": "results/A10_logo/M_metrics.json",
+      "bytes": 16609
+    },
+    {
+      "path": "results/A10_logo/M_missing_source_trace.png",
+      "bytes": 133357
+    },
+    {
+      "path": "results/A10_logo/M_overlay.png",
+      "bytes": 150733
+    },
+    {
+      "path": "results/A10_logo/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/A10_logo/replay_M/crop_00.png",
+      "bytes": 65942
+    },
+    {
+      "path": "results/A10_logo/replay_M/crop_05.png",
+      "bytes": 69452
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_001.json",
+      "bytes": 6690
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_002.json",
+      "bytes": 13109
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_004.json",
+      "bytes": 697
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_006.json",
+      "bytes": 6705
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_007.json",
+      "bytes": 7824
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_010.json",
+      "bytes": 761
+    },
+    {
+      "path": "results/A10_logo/replay_M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_04_1x.png",
+      "bytes": 12771
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_04_1x.svg",
+      "bytes": 134540
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_09_1x.png",
+      "bytes": 12784
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_09_1x.svg",
+      "bytes": 134912
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_11_4x.png",
+      "bytes": 60039
+    },
+    {
+      "path": "results/A10_logo/replay_M/geometry_11_4x.svg",
+      "bytes": 134912
+    },
+    {
+      "path": "results/A10_logo/source.png",
+      "bytes": 131607
+    },
+    {
+      "path": "results/A10_logo/source_rgba.png",
+      "bytes": 149565
+    },
+    {
+      "path": "results/A10_logo/WORKER.json",
+      "bytes": 106
+    },
+    {
+      "path": "results/G06_arabic/A.json",
+      "bytes": 85923
+    },
+    {
+      "path": "results/G06_arabic/A.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/A_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/A_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/A_detail.svg",
+      "bytes": 60116
+    },
+    {
+      "path": "results/G06_arabic/A_detail_16x.png",
+      "bytes": 26118
+    },
+    {
+      "path": "results/G06_arabic/A_detail_1x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/G06_arabic/A_detail_4x.png",
+      "bytes": 4754
+    },
+    {
+      "path": "results/G06_arabic/A_metrics.json",
+      "bytes": 10450
+    },
+    {
+      "path": "results/G06_arabic/A_missing_source_trace.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/A_overlay.png",
+      "bytes": 21528
+    },
+    {
+      "path": "results/G06_arabic/B/crop_00.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/B/crop_05.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/G06_arabic/B/event_001.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/G06_arabic/B/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/B/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/B/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/G06_arabic/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/G06_arabic/B/event_006.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/G06_arabic/B/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/B/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/G06_arabic/B/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/G06_arabic/B/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_04_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_04_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_09_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_09_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_11_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/B/geometry_11_4x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/B.json",
+      "bytes": 94285
+    },
+    {
+      "path": "results/G06_arabic/B.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/B_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/B_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/B_detail.svg",
+      "bytes": 60116
+    },
+    {
+      "path": "results/G06_arabic/B_detail_16x.png",
+      "bytes": 26118
+    },
+    {
+      "path": "results/G06_arabic/B_detail_1x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/G06_arabic/B_detail_4x.png",
+      "bytes": 4754
+    },
+    {
+      "path": "results/G06_arabic/B_metrics.json",
+      "bytes": 10637
+    },
+    {
+      "path": "results/G06_arabic/B_missing_source_trace.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/B_overlay.png",
+      "bytes": 21528
+    },
+    {
+      "path": "results/G06_arabic/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/G06_arabic/comparison.png",
+      "bytes": 36831
+    },
+    {
+      "path": "results/G06_arabic/frozen_traces.json",
+      "bytes": 40402
+    },
+    {
+      "path": "results/G06_arabic/M/crop_00.png",
+      "bytes": 9641
+    },
+    {
+      "path": "results/G06_arabic/M/crop_05.png",
+      "bytes": 9226
+    },
+    {
+      "path": "results/G06_arabic/M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/G06_arabic/M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/G06_arabic/M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/G06_arabic/M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/G06_arabic/M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/G06_arabic/M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/G06_arabic/M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/G06_arabic/M/event_011.json",
+      "bytes": 700
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_04_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_04_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_09_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_09_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_11_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/M/geometry_11_4x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/M.json",
+      "bytes": 94294
+    },
+    {
+      "path": "results/G06_arabic/M.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/M_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/M_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/M_detail.svg",
+      "bytes": 60116
+    },
+    {
+      "path": "results/G06_arabic/M_detail_16x.png",
+      "bytes": 26118
+    },
+    {
+      "path": "results/G06_arabic/M_detail_1x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/G06_arabic/M_detail_4x.png",
+      "bytes": 4754
+    },
+    {
+      "path": "results/G06_arabic/M_metrics.json",
+      "bytes": 10639
+    },
+    {
+      "path": "results/G06_arabic/M_missing_source_trace.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/M_overlay.png",
+      "bytes": 21528
+    },
+    {
+      "path": "results/G06_arabic/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/G06_arabic/replay_M/crop_00.png",
+      "bytes": 9641
+    },
+    {
+      "path": "results/G06_arabic/replay_M/crop_05.png",
+      "bytes": 9226
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/G06_arabic/replay_M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_04_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_04_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_09_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_09_1x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_11_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/replay_M/geometry_11_4x.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/source.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/source_rgba.png",
+      "bytes": 19903
+    },
+    {
+      "path": "results/G06_arabic/WORKER.json",
+      "bytes": 108
+    },
+    {
+      "path": "results/H02_astronaut/A.json",
+      "bytes": 212282
+    },
+    {
+      "path": "results/H02_astronaut/A.svg",
+      "bytes": 153726
+    },
+    {
+      "path": "results/H02_astronaut/A_1x.png",
+      "bytes": 20664
+    },
+    {
+      "path": "results/H02_astronaut/A_4x.png",
+      "bytes": 93706
+    },
+    {
+      "path": "results/H02_astronaut/A_detail.svg",
+      "bytes": 154380
+    },
+    {
+      "path": "results/H02_astronaut/A_detail_16x.png",
+      "bytes": 35827
+    },
+    {
+      "path": "results/H02_astronaut/A_detail_1x.png",
+      "bytes": 1499
+    },
+    {
+      "path": "results/H02_astronaut/A_detail_4x.png",
+      "bytes": 6308
+    },
+    {
+      "path": "results/H02_astronaut/A_metrics.json",
+      "bytes": 2670
+    },
+    {
+      "path": "results/H02_astronaut/A_missing_source_trace.png",
+      "bytes": 462603
+    },
+    {
+      "path": "results/H02_astronaut/A_overlay.png",
+      "bytes": 514653
+    },
+    {
+      "path": "results/H02_astronaut/B/crop_00.png",
+      "bytes": 440418
+    },
+    {
+      "path": "results/H02_astronaut/B/crop_05.png",
+      "bytes": 440418
+    },
+    {
+      "path": "results/H02_astronaut/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/H02_astronaut/B/event_001.json",
+      "bytes": 6618
+    },
+    {
+      "path": "results/H02_astronaut/B/event_002.json",
+      "bytes": 20055
+    },
+    {
+      "path": "results/H02_astronaut/B/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/B/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/H02_astronaut/B/event_006.json",
+      "bytes": 6573
+    },
+    {
+      "path": "results/H02_astronaut/B/event_007.json",
+      "bytes": 21658
+    },
+    {
+      "path": "results/H02_astronaut/B/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H02_astronaut/B/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/H02_astronaut/B/event_011.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_04_1x.png",
+      "bytes": 20738
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_04_1x.svg",
+      "bytes": 154936
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_09_1x.png",
+      "bytes": 20820
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_09_1x.svg",
+      "bytes": 156223
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_11_4x.png",
+      "bytes": 94453
+    },
+    {
+      "path": "results/H02_astronaut/B/geometry_11_4x.svg",
+      "bytes": 156223
+    },
+    {
+      "path": "results/H02_astronaut/B.json",
+      "bytes": 254059
+    },
+    {
+      "path": "results/H02_astronaut/B.svg",
+      "bytes": 156223
+    },
+    {
+      "path": "results/H02_astronaut/B_1x.png",
+      "bytes": 20820
+    },
+    {
+      "path": "results/H02_astronaut/B_4x.png",
+      "bytes": 94453
+    },
+    {
+      "path": "results/H02_astronaut/B_detail.svg",
+      "bytes": 156897
+    },
+    {
+      "path": "results/H02_astronaut/B_detail_16x.png",
+      "bytes": 35827
+    },
+    {
+      "path": "results/H02_astronaut/B_detail_1x.png",
+      "bytes": 1499
+    },
+    {
+      "path": "results/H02_astronaut/B_detail_4x.png",
+      "bytes": 6308
+    },
+    {
+      "path": "results/H02_astronaut/B_metrics.json",
+      "bytes": 6381
+    },
+    {
+      "path": "results/H02_astronaut/B_missing_source_trace.png",
+      "bytes": 462600
+    },
+    {
+      "path": "results/H02_astronaut/B_overlay.png",
+      "bytes": 514692
+    },
+    {
+      "path": "results/H02_astronaut/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/H02_astronaut/comparison.png",
+      "bytes": 153262
+    },
+    {
+      "path": "results/H02_astronaut/frozen_traces.json",
+      "bytes": 1940631
+    },
+    {
+      "path": "results/H02_astronaut/M/crop_00.png",
+      "bytes": 230690
+    },
+    {
+      "path": "results/H02_astronaut/M/crop_05.png",
+      "bytes": 210015
+    },
+    {
+      "path": "results/H02_astronaut/M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/H02_astronaut/M/event_001.json",
+      "bytes": 6531
+    },
+    {
+      "path": "results/H02_astronaut/M/event_002.json",
+      "bytes": 20131
+    },
+    {
+      "path": "results/H02_astronaut/M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/H02_astronaut/M/event_006.json",
+      "bytes": 6630
+    },
+    {
+      "path": "results/H02_astronaut/M/event_007.json",
+      "bytes": 20052
+    },
+    {
+      "path": "results/H02_astronaut/M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/H02_astronaut/M/event_011.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_04_1x.png",
+      "bytes": 20718
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_04_1x.svg",
+      "bytes": 154874
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_09_1x.png",
+      "bytes": 20792
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_09_1x.svg",
+      "bytes": 156084
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_11_4x.png",
+      "bytes": 94486
+    },
+    {
+      "path": "results/H02_astronaut/M/geometry_11_4x.svg",
+      "bytes": 156084
+    },
+    {
+      "path": "results/H02_astronaut/M.json",
+      "bytes": 253055
+    },
+    {
+      "path": "results/H02_astronaut/M.svg",
+      "bytes": 156084
+    },
+    {
+      "path": "results/H02_astronaut/M_1x.png",
+      "bytes": 20792
+    },
+    {
+      "path": "results/H02_astronaut/M_4x.png",
+      "bytes": 94486
+    },
+    {
+      "path": "results/H02_astronaut/M_detail.svg",
+      "bytes": 156758
+    },
+    {
+      "path": "results/H02_astronaut/M_detail_16x.png",
+      "bytes": 35827
+    },
+    {
+      "path": "results/H02_astronaut/M_detail_1x.png",
+      "bytes": 1499
+    },
+    {
+      "path": "results/H02_astronaut/M_detail_4x.png",
+      "bytes": 6308
+    },
+    {
+      "path": "results/H02_astronaut/M_metrics.json",
+      "bytes": 5254
+    },
+    {
+      "path": "results/H02_astronaut/M_missing_source_trace.png",
+      "bytes": 462602
+    },
+    {
+      "path": "results/H02_astronaut/M_overlay.png",
+      "bytes": 514681
+    },
+    {
+      "path": "results/H02_astronaut/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/crop_00.png",
+      "bytes": 230690
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/crop_05.png",
+      "bytes": 210015
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_000.json",
+      "bytes": 744
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_001.json",
+      "bytes": 6531
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_002.json",
+      "bytes": 20133
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_003.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_005.json",
+      "bytes": 746
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_006.json",
+      "bytes": 6630
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_007.json",
+      "bytes": 20055
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_008.json",
+      "bytes": 627
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_010.json",
+      "bytes": 760
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_04_1x.png",
+      "bytes": 20718
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_04_1x.svg",
+      "bytes": 154874
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_09_1x.png",
+      "bytes": 20792
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_09_1x.svg",
+      "bytes": 156084
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_11_4x.png",
+      "bytes": 94486
+    },
+    {
+      "path": "results/H02_astronaut/replay_M/geometry_11_4x.svg",
+      "bytes": 156084
+    },
+    {
+      "path": "results/H02_astronaut/source.png",
+      "bytes": 440418
+    },
+    {
+      "path": "results/H02_astronaut/source_rgba.png",
+      "bytes": 509401
+    },
+    {
+      "path": "results/H02_astronaut/WORKER.json",
+      "bytes": 110
+    },
+    {
+      "path": "results/H03_original_vector/A.json",
+      "bytes": 37366
+    },
+    {
+      "path": "results/H03_original_vector/A.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/A_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/A_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/A_detail.svg",
+      "bytes": 26461
+    },
+    {
+      "path": "results/H03_original_vector/A_detail_16x.png",
+      "bytes": 20330
+    },
+    {
+      "path": "results/H03_original_vector/A_detail_1x.png",
+      "bytes": 1103
+    },
+    {
+      "path": "results/H03_original_vector/A_detail_4x.png",
+      "bytes": 4046
+    },
+    {
+      "path": "results/H03_original_vector/A_metrics.json",
+      "bytes": 5977
+    },
+    {
+      "path": "results/H03_original_vector/A_missing_source_trace.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/A_overlay.png",
+      "bytes": 5074
+    },
+    {
+      "path": "results/H03_original_vector/B/crop_00.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/B/crop_05.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/H03_original_vector/B/event_001.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/H03_original_vector/B/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/B/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/B/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H03_original_vector/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/H03_original_vector/B/event_006.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/H03_original_vector/B/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/B/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H03_original_vector/B/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/H03_original_vector/B/event_011.json",
+      "bytes": 700
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_04_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_04_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_09_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_09_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_11_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/B/geometry_11_4x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/B.json",
+      "bytes": 45730
+    },
+    {
+      "path": "results/H03_original_vector/B.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/B_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/B_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/B_detail.svg",
+      "bytes": 26461
+    },
+    {
+      "path": "results/H03_original_vector/B_detail_16x.png",
+      "bytes": 20330
+    },
+    {
+      "path": "results/H03_original_vector/B_detail_1x.png",
+      "bytes": 1103
+    },
+    {
+      "path": "results/H03_original_vector/B_detail_4x.png",
+      "bytes": 4046
+    },
+    {
+      "path": "results/H03_original_vector/B_metrics.json",
+      "bytes": 6161
+    },
+    {
+      "path": "results/H03_original_vector/B_missing_source_trace.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/B_overlay.png",
+      "bytes": 5074
+    },
+    {
+      "path": "results/H03_original_vector/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/H03_original_vector/comparison.png",
+      "bytes": 47742
+    },
+    {
+      "path": "results/H03_original_vector/frozen_traces.json",
+      "bytes": 13778
+    },
+    {
+      "path": "results/H03_original_vector/M/crop_00.png",
+      "bytes": 2121
+    },
+    {
+      "path": "results/H03_original_vector/M/crop_05.png",
+      "bytes": 1847
+    },
+    {
+      "path": "results/H03_original_vector/M/event_000.json",
+      "bytes": 743
+    },
+    {
+      "path": "results/H03_original_vector/M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/H03_original_vector/M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H03_original_vector/M/event_005.json",
+      "bytes": 745
+    },
+    {
+      "path": "results/H03_original_vector/M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/H03_original_vector/M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H03_original_vector/M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/H03_original_vector/M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_04_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_04_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_09_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_09_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_11_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/M/geometry_11_4x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/M.json",
+      "bytes": 45735
+    },
+    {
+      "path": "results/H03_original_vector/M.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/M_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/M_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/M_detail.svg",
+      "bytes": 26461
+    },
+    {
+      "path": "results/H03_original_vector/M_detail_16x.png",
+      "bytes": 20330
+    },
+    {
+      "path": "results/H03_original_vector/M_detail_1x.png",
+      "bytes": 1103
+    },
+    {
+      "path": "results/H03_original_vector/M_detail_4x.png",
+      "bytes": 4046
+    },
+    {
+      "path": "results/H03_original_vector/M_metrics.json",
+      "bytes": 6164
+    },
+    {
+      "path": "results/H03_original_vector/M_missing_source_trace.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/M_overlay.png",
+      "bytes": 5074
+    },
+    {
+      "path": "results/H03_original_vector/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/crop_00.png",
+      "bytes": 2121
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/crop_05.png",
+      "bytes": 1847
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_000.json",
+      "bytes": 743
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_004.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_005.json",
+      "bytes": 745
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_009.json",
+      "bytes": 698
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/event_011.json",
+      "bytes": 700
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_04_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_04_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_09_1x.png",
+      "bytes": 2708
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_09_1x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_11_4x.png",
+      "bytes": 12333
+    },
+    {
+      "path": "results/H03_original_vector/replay_M/geometry_11_4x.svg",
+      "bytes": 26426
+    },
+    {
+      "path": "results/H03_original_vector/source.png",
+      "bytes": 3762
+    },
+    {
+      "path": "results/H03_original_vector/source_rgba.png",
+      "bytes": 3642
+    },
+    {
+      "path": "results/H03_original_vector/truth_8x.png",
+      "bytes": 34759
+    },
+    {
+      "path": "results/H03_original_vector/WORKER.json",
+      "bytes": 117
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A.json",
+      "bytes": 24266
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_detail.svg",
+      "bytes": 17139
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_detail_16x.png",
+      "bytes": 20084
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_detail_1x.png",
+      "bytes": 912
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_detail_4x.png",
+      "bytes": 3666
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_metrics.json",
+      "bytes": 4042
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_missing_source_trace.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/A_overlay.png",
+      "bytes": 5279
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/crop_00.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/crop_05.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_000.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_001.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_005.json",
+      "bytes": 742
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_006.json",
+      "bytes": 726
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/event_011.json",
+      "bytes": 700
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_04_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_04_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_09_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_09_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_11_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B/geometry_11_4x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B.json",
+      "bytes": 32630
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_detail.svg",
+      "bytes": 17139
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_detail_16x.png",
+      "bytes": 20084
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_detail_1x.png",
+      "bytes": 912
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_detail_4x.png",
+      "bytes": 3666
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_metrics.json",
+      "bytes": 4231
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_missing_source_trace.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/B_overlay.png",
+      "bytes": 5279
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_STATUS.json",
+      "bytes": 144
+    },
+    {
+      "path": "results/K01_linear_corner_hole/comparison.png",
+      "bytes": 32369
+    },
+    {
+      "path": "results/K01_linear_corner_hole/frozen_traces.json",
+      "bytes": 14420
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/crop_00.png",
+      "bytes": 1894
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/crop_05.png",
+      "bytes": 2159
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_000.json",
+      "bytes": 743
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_005.json",
+      "bytes": 745
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_04_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_04_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_09_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_09_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_11_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M/geometry_11_4x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M.json",
+      "bytes": 32636
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_detail.svg",
+      "bytes": 17139
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_detail_16x.png",
+      "bytes": 20084
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_detail_1x.png",
+      "bytes": 912
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_detail_4x.png",
+      "bytes": 3666
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_metrics.json",
+      "bytes": 4230
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_missing_source_trace.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/M_overlay.png",
+      "bytes": 5279
+    },
+    {
+      "path": "results/K01_linear_corner_hole/REPLAY.json",
+      "bytes": 243
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/crop_00.png",
+      "bytes": 1894
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/crop_05.png",
+      "bytes": 2159
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_000.json",
+      "bytes": 743
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_001.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_002.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_003.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_004.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_005.json",
+      "bytes": 745
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_006.json",
+      "bytes": 728
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_007.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_008.json",
+      "bytes": 756
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_009.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_010.json",
+      "bytes": 757
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/event_011.json",
+      "bytes": 699
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_04_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_04_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_09_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_09_1x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_11_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/replay_M/geometry_11_4x.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/source.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/source_rgba.png",
+      "bytes": 4067
+    },
+    {
+      "path": "results/K01_linear_corner_hole/WORKER.json",
+      "bytes": 120
+    },
+    {
+      "path": "review.html",
+      "bytes": 67650
+    },
+    {
+      "path": "run_sessions.py",
+      "bytes": 4639
+    },
+    {
+      "path": "test_geometry_engine.py",
+      "bytes": 7587
+    },
+    {
+      "path": "test_groq_adapter.py",
+      "bytes": 7074
+    },
+    {
+      "path": "test_pilot.py",
+      "bytes": 3296
+    },
+    {
+      "path": "tool_schemas.json",
+      "bytes": 3476
+    }
+  ],
+  "total_bytes": 35105691
+}
