@@ -1,0 +1,195 @@
+{
+  "case": "K01_linear_corner_hole",
+  "condition": "P",
+  "paths": 3,
+  "cubics": 239,
+  "closed_curves": 3,
+  "reference": "independent8xsource-vector sampled mask",
+  "source_edge_agreement_proxy": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.029282464613559062,
+    "p95_target_distance_px": 0.2808838995433099
+  },
+  "selected_source_edge_agreement_proxy": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.0,
+    "p95_target_distance_px": 0.0
+  },
+  "loss": {
+    "raw_trace_count": 3,
+    "selected_traces": 3,
+    "raw_length_px": 901.2447327281723,
+    "selected_length_px": 901.2447327281723,
+    "accepted_length_px": 901.2447327281724,
+    "lost_length_px": 0,
+    "output_paths": 3,
+    "cubics": 239,
+    "closed_source_traces": 3,
+    "closed_retained_traces": 3,
+    "loss_by_reason": {
+      "accepted": {
+        "intervals": 220,
+        "length_px": 901.2447327281736
+      }
+    }
+  },
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [
+      {
+        "trace_id": 0,
+        "raw_signed_area_px2": 18886.5,
+        "fitted_signed_area_px2": 18888.980050792758,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9990345444902796,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 2,
+        "raw_signed_area_px2": 2460.5,
+        "fitted_signed_area_px2": 2459.2893861353195,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9995079805467671,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      },
+      {
+        "trace_id": 1,
+        "raw_signed_area_px2": 1658.0,
+        "fitted_signed_area_px2": 1656.0899683735133,
+        "winding_preserved": true,
+        "source_polygon_fit_iou": 0.9976654240651209,
+        "is_simple": true,
+        "closed_exactly": true,
+        "limits": "SourcepolygonIoU is raw-evidence fit, not independent artwork/region/holetruth"
+      }
+    ],
+    "valid_closed_loop_nesting": [
+      {
+        "trace_pair": [
+          2,
+          0
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          0
+        ],
+        "source_relation": "within",
+        "fitted_relation": "within",
+        "preserved": true
+      },
+      {
+        "trace_pair": [
+          1,
+          2
+        ],
+        "source_relation": "disjoint",
+        "fitted_relation": "disjoint",
+        "preserved": true
+      }
+    ],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 138,
+    "tiny_cubic_length_weighted_fraction": 0.2380649556831351,
+    "median_cubic_length_px": 2.0,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "quality": [
+    {
+      "cubics": 119,
+      "sampled_curve_length_px": 536.9296859517988,
+      "short_cubic_count": 56,
+      "length_fraction_cubic_span_le2px": 0.14946025000305427,
+      "maximum_tangent_jump_degrees": 56.30993247402017,
+      "tangent_jump_sum_degrees": 4608.683366198113,
+      "within_cubic_absolute_turn_radians": 9.298998748147948,
+      "sampled_curvature_max": 1.1591365947537124,
+      "sampled_curvature_p95": 0.20298682350488823,
+      "sampled_integer_lattice_fraction": 0.028175976272862086
+    },
+    {
+      "cubics": 63,
+      "sampled_curve_length_px": 206.74197386056852,
+      "short_cubic_count": 32,
+      "length_fraction_cubic_span_le2px": 0.22262583002659989,
+      "maximum_tangent_jump_degrees": 45.00000000000122,
+      "tangent_jump_sum_degrees": 2700.0000000000227,
+      "within_cubic_absolute_turn_radians": 1.2786057598027778,
+      "sampled_curvature_max": 1.0823922002923865,
+      "sampled_curvature_p95": 9.043732562018351e-14,
+      "sampled_integer_lattice_fraction": 0.029878618113912233
+    },
+    {
+      "cubics": 57,
+      "sampled_curve_length_px": 153.4653886426238,
+      "short_cubic_count": 36,
+      "length_fraction_cubic_span_le2px": 0.31591288039999693,
+      "maximum_tangent_jump_degrees": 90.00000000000122,
+      "tangent_jump_sum_degrees": 2277.783926412218,
+      "within_cubic_absolute_turn_radians": 4.353551133089124,
+      "sampled_curvature_max": 1.1591365947537249,
+      "sampled_curvature_p95": 0.31220768548347905,
+      "sampled_integer_lattice_fraction": 0.034055727554179564
+    }
+  ],
+  "render_seconds": {
+    "1": 0.018408200005069375,
+    "4": 0.031760000041686,
+    "detail1": 0.01898219995200634,
+    "detail4": 0.024020800017751753,
+    "detail16": 0.07671960000880063
+  },
+  "filled_atomic_faces": 0,
+  "semantic_ownership": "NOT_ESTABLISHED",
+  "geometry": "NOT_ACCEPTED",
+  "boundary_1_25px": {
+    "raw": {
+      "recall": 0.9970783015192832,
+      "precision": 0.7662650602409639,
+      "mean_target_distance_px": 0.4653658119563784,
+      "p95_target_distance_px": 0.8705242673240075
+    },
+    "selected": {
+      "recall": 0.9970783015192832,
+      "precision": 0.765906362545018,
+      "mean_target_distance_px": 0.4653658119563784,
+      "p95_target_distance_px": 0.8705242673240075
+    },
+    "fitted": {
+      "recall": 0.9994156603038566,
+      "precision": 0.7759477124183006,
+      "mean_target_distance_px": 0.3393636723589922,
+      "p95_target_distance_px": 0.8149003006503311
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "recall": 1.0,
+      "precision": 0.17620915032679738,
+      "mean_target_distance_px": 0.3370919722612853,
+      "p95_target_distance_px": 0.8149003006503311
+    }
+  ],
+  "svg_bytes": 17114,
+  "rendered_coverage_fraction": 0.029720052083333334,
+  "coverage_limit": "Stroke or diagnostic atomic-face footprint, not reconstruction silhouette correctness. Atomic nested faces include material islands and potential voids."
+}

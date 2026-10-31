@@ -1,0 +1,114 @@
+# START CHANGE AGD-UNIVERSAL-REGION-R | 2026-10-31T11:07:29Z | EDITED | Author: region_integration
+import unittest
+import math
+import copy
+import sys
+import subprocess
+import tempfile
+from pathlib import Path
+import numpy as np
+sys.path[:0]=[str(Path(__file__).parent),r'C:\Users\Mohamed\Desktop\AiGraphicDesigner\experiments\EXP_EXPORTER_DISCOVERY_01']
+from region_integration import integrate,_flat
+from svg_exporter import svg_graph
+
+
+def line(a,b):
+    a=np.array(a,float);b=np.array(b,float)
+    return [a.tolist(),(a+(b-a)/3).tolist(),(a+2*(b-a)/3).tolist(),b.tolist()]
+
+
+def path(points):return {'curves':[line(a,b) for a,b in zip(points,points[1:])]}
+
+
+def square(x,y,s):return path([(x,y),(x+s,y),(x+s,y+s),(x,y+s),(x,y)])
+
+
+class RegionTests(unittest.TestCase):
+    def run_case(self,items):
+        before=copy.deepcopy(items);g,a=integrate(items,32,32,np.full((32,32,3),255,np.uint8))
+        self.assertEqual(before,items)
+        svg=svg_graph(g,regions=True);self.assertNotIn('<image',svg)
+        self.assertEqual(a['integrated_paths']+a['preserved_unintegrated_paths'],len(items))
+        return g,a
+
+    def test_single_square_closed(self):
+        g,a=self.run_case([square(2,2,20)])
+        self.assertEqual(len(g['faces']),1);self.assertAlmostEqual(a['faces'][0]['area_px2'],400)
+        self.assertEqual(a['endpoint_movement_px'],0)
+
+    def test_open_stroke_preserved(self):
+        g,a=self.run_case([path([(2,2),(12,5)])])
+        self.assertFalse(g['faces']);self.assertEqual(len(g['chains']),1)
+        self.assertEqual(a['unintegrated'][0]['reasons'],['open_or_dangling_unbounded_stroke'])
+
+    def test_shared_junction_square(self):
+        items=[path([(2,2),(12,2)]),path([(12,2),(22,2)]),path([(22,2),(22,22)]),path([(22,22),(12,22)]),path([(12,22),(2,22)]),path([(2,22),(2,2)]),path([(12,2),(12,22)])]
+        g,a=self.run_case(items)
+        self.assertEqual(len(g['faces']),2)
+        self.assertEqual(sorted(g['chains'][6]['adjacent_face_labels']),[1,2])
+        self.assertAlmostEqual(sum(x['area_px2'] for x in a['faces']),400)
+
+    def test_hole_and_interior_island_all_atomic(self):
+        g,a=self.run_case([square(1,1,28),square(5,5,20),square(10,10,10)])
+        self.assertEqual(len(g['faces']),3)
+        self.assertEqual(sorted(len(x) for x in g['faces'].values()),[1,2,2])
+        self.assertAlmostEqual(sum(x['area_px2'] for x in a['faces']),784)
+        self.assertTrue(all(x['semantic_hole']=='NOT_ESTABLISHED' for x in a['faces']))
+
+    def test_dangling_t_no_invented_region(self):
+        g,a=self.run_case([path([(2,10),(10,10)]),path([(10,10),(20,10)]),path([(10,10),(10,20)])])
+        self.assertFalse(g['faces']);self.assertEqual(len(a['unintegrated']),3)
+
+    def test_crossing_rejected_not_deleted(self):
+        g,a=self.run_case([path([(2,2),(20,20)]),path([(2,20),(20,2)])])
+        self.assertFalse(g['faces']);self.assertEqual(len(g['chains']),2)
+        self.assertTrue(all('crossing_overlap_or_nonendpoint_contact' in r['reasons'] for r in a['rows']))
+
+    def test_tangent_ambiguity_rejected(self):
+        g,a=self.run_case([path([(2,2),(10,2)]),path([(2,2),(10,2),(10,10)])])
+        self.assertFalse(g['faces']);self.assertTrue(all(r['reasons'] for r in a['rows']))
+
+    def test_exact_no_snapping(self):
+        g,a=self.run_case([path([(1,1),(20,1),(20,20),(1,20),(1,1.00001)])])
+        self.assertFalse(g['faces']);self.assertEqual(a['endpoint_movement_px'],0)
+
+    def test_numerical_selfintersection_rejected(self):
+        g,a=self.run_case([path([(1,1),(20,20),(1,20),(20,1),(1,1)])])
+        self.assertFalse(g['faces']);self.assertIn('inherited_or_fitted_selfintersection',a['rows'][0]['reasons'])
+
+    def test_curved_loop_exact_cubics(self):
+        k=.5522847498307936;cx=16;cy=16;r=10
+        cc=np.array([[[1,0],[1,k],[k,1],[0,1]],[[0,1],[-k,1],[-1,k],[-1,0]],[[-1,0],[-1,-k],[-k,-1],[0,-1]],[[0,-1],[k,-1],[1,-k],[1,0]]])*r+[cx,cy]
+        g,a=self.run_case([{'curves':cc.tolist()}])
+        self.assertEqual(len(g['faces']),1)
+        self.assertEqual([s['p1'] for s in g['chains'][0]['segments']],cc[:,1].tolist())
+        self.assertAlmostEqual(a['faces'][0]['area_px2'],math.pi*r*r,delta=.2)
+
+    def test_collinear_overshoot_not_flattened_to_chord(self):
+        c=np.array([[0,0],[40,0],[-40,0],[1,0]],float)
+        p=np.array(_flat(c))
+        self.assertGreater(len(p),2)
+        self.assertGreater(p[:,0].max(),10)
+        self.assertLess(p[:,0].min(),-10)
+        g,a=self.run_case([{'curves':[c.tolist()]}])
+        self.assertFalse(g['faces'])
+        self.assertIn('inherited_or_fitted_selfintersection',a['rows'][0]['reasons'])
+
+    def test_real_resvg_nested_atomic_faces_1_4_16(self):
+        from PIL import Image
+        renderer=Path.cwd()/'work/resvg/resvg.exe'
+        self.assertTrue(renderer.exists())
+        g,a=self.run_case([square(1,1,28),square(5,5,20),square(10,10,10)])
+        with tempfile.TemporaryDirectory() as tmp:
+            svg=Path(tmp)/'atomic.svg';svg.write_text(svg_graph(g,regions=True))
+            for scale in (1,4,16):
+                png=Path(tmp)/f'{scale}.png'
+                subprocess.run([str(renderer),'--zoom',str(scale),str(svg),str(png)],check=True,capture_output=True)
+                pixels=np.asarray(Image.open(png).convert('RGBA'))
+                self.assertEqual(pixels.shape[:2],(32*scale,32*scale))
+                colors=[tuple(pixels[y*scale,x*scale,:3]) for x,y in [(3,3),(7,7),(15,15)]]
+                self.assertEqual(len(set(colors)),3)
+                self.assertTrue(all(pixels[y*scale,x*scale,3]==255 for x,y in [(3,3),(7,7),(15,15)]))
+
+if __name__=='__main__':unittest.main()
+# END CHANGE AGD-UNIVERSAL-REGION-R | 2026-10-31T11:07:29Z | EDITED | Author: region_integration

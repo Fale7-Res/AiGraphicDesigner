@@ -1,0 +1,180 @@
+{
+  "case": "H01_horse",
+  "condition": "R",
+  "paths": 2,
+  "cubics": 518,
+  "closed_curves": 0,
+  "reference": "source-thresholdproxy;notindependentglyph/vectortruth",
+  "source_edge_agreement_proxy": {
+    "recall": 0.7144963144963145,
+    "precision": 1.0,
+    "mean_target_distance_px": 13.480901763043434,
+    "p95_target_distance_px": 77.94542595054506
+  },
+  "selected_source_edge_agreement_proxy": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.0,
+    "p95_target_distance_px": 0.0
+  },
+  "loss": null,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 351,
+    "tiny_cubic_length_weighted_fraction": 0.329795441574139,
+    "median_cubic_length_px": 1.4142135623730951,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "quality": [
+    {
+      "cubics": 512,
+      "sampled_curve_length_px": 1602.0035196524473,
+      "short_cubic_count": 325,
+      "length_fraction_cubic_span_le2px": 0.29181873269263375,
+      "maximum_tangent_jump_degrees": 90.00000000000183,
+      "tangent_jump_sum_degrees": 21816.996717909336,
+      "within_cubic_absolute_turn_radians": 18.304033413922078,
+      "sampled_curvature_max": 1.1591365947539556,
+      "sampled_curvature_p95": 0.10685967817428027,
+      "sampled_integer_lattice_fraction": 0.03205422794117647
+    },
+    {
+      "cubics": 6,
+      "sampled_curve_length_px": 13.242640687119286,
+      "short_cubic_count": 4,
+      "length_fraction_cubic_span_le2px": 0.4714045207910317,
+      "maximum_tangent_jump_degrees": 90.00000000000122,
+      "tangent_jump_sum_degrees": 269.9999999999988,
+      "within_cubic_absolute_turn_radians": 9.592326932761353e-14,
+      "sampled_curvature_max": 4.5218662810090304e-14,
+      "sampled_curvature_p95": 4.493604616752721e-14,
+      "sampled_integer_lattice_fraction": 0.029411764705882353
+    }
+  ],
+  "render_seconds": {
+    "1": 0.027333299978636205,
+    "4": 0.08563359989784658,
+    "detail1": 0.021699899923987687,
+    "detail4": 0.025588199961930513,
+    "detail16": 0.10864079999737442
+  },
+  "filled_atomic_faces": 0,
+  "semantic_ownership": "NOT_ESTABLISHED",
+  "geometry": "NOT_ACCEPTED",
+  "boundary_1_25px": {
+    "raw": {
+      "recall": 0.9927466150870407,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.5048213552942347,
+      "p95_target_distance_px": 1.0
+    },
+    "selected": {
+      "recall": 0.9927466150870407,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.5048213552942347,
+      "p95_target_distance_px": 1.0
+    },
+    "fitted": {
+      "recall": 0.7108317214700194,
+      "precision": 0.9985259433962265,
+      "mean_target_distance_px": 13.526042586489199,
+      "p95_target_distance_px": 77.05023201713402
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "recall": 1.0,
+      "precision": 0.006191037735849057,
+      "mean_target_distance_px": 0.7845177968644247,
+      "p95_target_distance_px": 1.0
+    }
+  ],
+  "svg_bytes": 93,
+  "rendered_coverage_fraction": 0.0,
+  "coverage_limit": "Stroke or diagnostic atomic-face footprint, not reconstruction silhouette correctness. Atomic nested faces include material islands and potential voids.",
+  "integration": {
+    "policy": "design.json",
+    "rows": [
+      {
+        "chain_id": 0,
+        "trace_id": 0,
+        "integrated": false,
+        "reasons": [
+          "open_or_dangling_unbounded_stroke"
+        ]
+      },
+      {
+        "chain_id": 1,
+        "trace_id": 1,
+        "integrated": false,
+        "reasons": [
+          "open_or_dangling_unbounded_stroke"
+        ]
+      }
+    ],
+    "faces": [],
+    "unintegrated": [
+      {
+        "chain_id": 0,
+        "trace_id": 0,
+        "integrated": false,
+        "reasons": [
+          "open_or_dangling_unbounded_stroke"
+        ]
+      },
+      {
+        "chain_id": 1,
+        "trace_id": 1,
+        "integrated": false,
+        "reasons": [
+          "open_or_dangling_unbounded_stroke"
+        ]
+      }
+    ],
+    "limits": {
+      "paths": 128,
+      "cubics": 4096,
+      "wall_seconds": 30
+    },
+    "semantic_ownership": "NOT_ESTABLISHED",
+    "continuous_intersection_certificate": "NOT_ESTABLISHED",
+    "bounded_atomic_faces": 0,
+    "invalid_walks": [],
+    "input_paths": 2,
+    "input_cubics": 518,
+    "integrated_paths": 0,
+    "preserved_unintegrated_paths": 2,
+    "wall_seconds": 0.05120250000618398,
+    "flattening_tolerance_px": 0.005,
+    "endpoint_movement_px": 0,
+    "geometry": "NOT_ACCEPTED"
+  },
+  "metric_geometry_scope": "Default topology/contour metrics describe ALL preserved P/S proposals including unintegrated strokes. Region SVG shows only integrated atomic faces; separate integrated_only metrics below. A filled region is not inferred from successful stroke rendering.",
+  "integrated_only": {
+    "paths": 0,
+    "source_proxy": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "mean_target_distance_px": null,
+      "p95_target_distance_px": null
+    },
+    "boundary": {
+      "recall": 0.0,
+      "precision": 0.0,
+      "mean_target_distance_px": null,
+      "p95_target_distance_px": null
+    }
+  }
+}

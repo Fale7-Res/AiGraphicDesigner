@@ -1,0 +1,95 @@
+{
+  "case": "H01_horse",
+  "condition": "O",
+  "paths": 1,
+  "cubics": 6,
+  "closed_curves": 0,
+  "reference": "source-thresholdproxy;notindependentglyph/vectortruth",
+  "source_edge_agreement_proxy": {
+    "recall": 0.0063882063882063885,
+    "precision": 1.0,
+    "mean_target_distance_px": 168.55409374777483,
+    "p95_target_distance_px": 383.09271167337863
+  },
+  "selected_source_edge_agreement_proxy": {
+    "recall": 1.0,
+    "precision": 1.0,
+    "mean_target_distance_px": 0.0,
+    "p95_target_distance_px": 0.0
+  },
+  "loss": null,
+  "topology": {
+    "self_intersecting_paths": [],
+    "proper_cross_or_overlap_pairs": [],
+    "new_cross_or_overlap_pairs_vs_same_raw_pair": [],
+    "touch_pairs_including_shared_junctions": [],
+    "closed_loops": [],
+    "valid_closed_loop_nesting": [],
+    "source_endpoint_junctions": 0,
+    "complete_incidence_junctions_retained": 0,
+    "reference_junction_definition": "degree>=3 from frozen trace endpoints, not semantic artworktruth",
+    "new_endpoint_junctions": 0,
+    "closed_regions_and_holes": "NOT_ESTABLISHED; independent curve/contour closure and nesting is not filledfaceownership"
+  },
+  "micro": {
+    "tiny_cubic_span_le2px": 4,
+    "tiny_cubic_length_weighted_fraction": 0.4711463872897098,
+    "median_cubic_length_px": 1.7272006073586308,
+    "anti_mosaic_limit": "No pixelcellsorrawfallback; shortcubicspansandremaininggridoscillationcanstillfailprofessionalgeometry. Pathbboxaloneisinsufficient."
+  },
+  "quality": [
+    {
+      "cubics": 6,
+      "sampled_curve_length_px": 13.393288897068883,
+      "short_cubic_count": 3,
+      "length_fraction_cubic_span_le2px": 0.32037724101704085,
+      "maximum_tangent_jump_degrees": 90.00000000000122,
+      "tangent_jump_sum_degrees": 90.00000000000122,
+      "within_cubic_absolute_turn_radians": 4.857128655043418,
+      "sampled_curvature_max": 1.6235883004385732,
+      "sampled_curvature_p95": 1.273184214169542,
+      "sampled_integer_lattice_fraction": 0.00980392156862745
+    }
+  ],
+  "render_seconds": {
+    "1": 0.03089000005275011,
+    "4": 0.10314160003326833,
+    "detail1": 0.03556700004264712,
+    "detail4": 0.02954320004209876,
+    "detail16": 0.19187420001253486
+  },
+  "filled_atomic_faces": 0,
+  "semantic_ownership": "NOT_ESTABLISHED",
+  "geometry": "NOT_ACCEPTED",
+  "boundary_1_25px": {
+    "raw": {
+      "recall": 0.9927466150870407,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.5048213552942347,
+      "p95_target_distance_px": 1.0
+    },
+    "selected": {
+      "recall": 0.9927466150870407,
+      "precision": 1.0,
+      "mean_target_distance_px": 0.5048213552942347,
+      "p95_target_distance_px": 1.0
+    },
+    "fitted": {
+      "recall": 0.007736943907156673,
+      "precision": 1.0,
+      "mean_target_distance_px": 168.144013405473,
+      "p95_target_distance_px": 382.8406053628443
+    }
+  },
+  "hole_boundary_support_NOT_ownership": [
+    {
+      "recall": 1.0,
+      "precision": 0.7413793103448276,
+      "mean_target_distance_px": 0.7857681012180596,
+      "p95_target_distance_px": 1.0548171359674006
+    }
+  ],
+  "svg_bytes": 680,
+  "rendered_coverage_fraction": 0.0001448170731707317,
+  "coverage_limit": "Stroke or diagnostic atomic-face footprint, not reconstruction silhouette correctness. Atomic nested faces include material islands and potential voids."
+}

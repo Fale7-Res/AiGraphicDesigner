@@ -1,0 +1,2965 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 21
+    },
+    {
+      "path": "API.md",
+      "bytes": 1922
+    },
+    {
+      "path": "build_review.py",
+      "bytes": 8060
+    },
+    {
+      "path": "COHERENCE_DESIGN.md",
+      "bytes": 4664
+    },
+    {
+      "path": "coherence_refine.py",
+      "bytes": 11678
+    },
+    {
+      "path": "combined_control.py",
+      "bytes": 2649
+    },
+    {
+      "path": "evaluate_universal.py",
+      "bytes": 7419
+    },
+    {
+      "path": "graph_diagnostic.py",
+      "bytes": 1998
+    },
+    {
+      "path": "inputs/camera.png",
+      "bytes": 224180
+    },
+    {
+      "path": "launch.py",
+      "bytes": 2228
+    },
+    {
+      "path": "memory/code_mirrors/build_review.py.md",
+      "bytes": 16949
+    },
+    {
+      "path": "memory/code_mirrors/coherence_refine.py.md",
+      "bytes": 16297
+    },
+    {
+      "path": "memory/code_mirrors/combined_control.py.md",
+      "bytes": 4856
+    },
+    {
+      "path": "memory/code_mirrors/evaluate_universal.py.md",
+      "bytes": 10129
+    },
+    {
+      "path": "memory/code_mirrors/graph_diagnostic.py.md",
+      "bytes": 5598
+    },
+    {
+      "path": "memory/code_mirrors/launch.py.md",
+      "bytes": 4688
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_ast.py.md",
+      "bytes": 2134
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_candidates.py.md",
+      "bytes": 5376
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_delivery.py.md",
+      "bytes": 3830
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_endpoint_graph.py.md",
+      "bytes": 2167
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_freeze.py.md",
+      "bytes": 2143
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_geometry.py.md",
+      "bytes": 3379
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_regions.py.md",
+      "bytes": 2830
+    },
+    {
+      "path": "memory/code_mirrors/qa__audit_resources.py.md",
+      "bytes": 2152
+    },
+    {
+      "path": "memory/code_mirrors/region_integration.py.md",
+      "bytes": 14528
+    },
+    {
+      "path": "memory/code_mirrors/region_scope_metrics.py.md",
+      "bytes": 4780
+    },
+    {
+      "path": "memory/code_mirrors/test_coherence.py.md",
+      "bytes": 13216
+    },
+    {
+      "path": "memory/code_mirrors/test_region_integration.py.md",
+      "bytes": 20709
+    },
+    {
+      "path": "memory/code_mirrors/test_selection.py.md",
+      "bytes": 5464
+    },
+    {
+      "path": "memory/code_mirrors/universal_run.py.md",
+      "bytes": 9728
+    },
+    {
+      "path": "memory/code_mirrors/write_report.py.md",
+      "bytes": 2585
+    },
+    {
+      "path": "memory/DOCUMENT_PROVENANCE.json",
+      "bytes": 4674
+    },
+    {
+      "path": "memory/FUNCTION_REGISTRY.md",
+      "bytes": 16899
+    },
+    {
+      "path": "memory/mirror_metadata.json",
+      "bytes": 12462
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 31678
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/build_review.py.txt",
+      "bytes": 8013
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/coherence_refine.py.txt",
+      "bytes": 11499
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/combined_control.py.txt",
+      "bytes": 2623
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/evaluate_universal.py.txt",
+      "bytes": 7346
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/graph_diagnostic.py.txt",
+      "bytes": 1977
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/launch.py.txt",
+      "bytes": 2207
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/region_integration.py.txt",
+      "bytes": 9759
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/region_scope_metrics.py.txt",
+      "bytes": 2250
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/test_coherence.py.txt",
+      "bytes": 3919
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/test_region_integration.py.txt",
+      "bytes": 5858
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/test_selection.py.txt",
+      "bytes": 1055
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/universal_run.py.txt",
+      "bytes": 6644
+    },
+    {
+      "path": "provenance/executed_and_measurement_sources/write_report.py.txt",
+      "bytes": 21036
+    },
+    {
+      "path": "Publish-Research.ps1",
+      "bytes": 4521
+    },
+    {
+      "path": "qa/audit_ast.py",
+      "bytes": 1406
+    },
+    {
+      "path": "qa/audit_candidates.py",
+      "bytes": 8546
+    },
+    {
+      "path": "qa/audit_delivery.py",
+      "bytes": 2508
+    },
+    {
+      "path": "qa/audit_endpoint_graph.py",
+      "bytes": 2621
+    },
+    {
+      "path": "qa/audit_freeze.py",
+      "bytes": 1607
+    },
+    {
+      "path": "qa/audit_geometry.py",
+      "bytes": 4459
+    },
+    {
+      "path": "qa/audit_regions.py",
+      "bytes": 3689
+    },
+    {
+      "path": "qa/audit_resources.py",
+      "bytes": 1544
+    },
+    {
+      "path": "qa/CANDIDATE_AUDIT.json",
+      "bytes": 3085
+    },
+    {
+      "path": "qa/DELIVERY_AUDIT.json",
+      "bytes": 705
+    },
+    {
+      "path": "qa/ENDPOINT_GRAPH_AUDIT.json",
+      "bytes": 8214
+    },
+    {
+      "path": "qa/FINAL_FREEZE_AUDIT.json",
+      "bytes": 39208
+    },
+    {
+      "path": "qa/FINAL_QA.md",
+      "bytes": 15967
+    },
+    {
+      "path": "qa/FLATTEN_PROBE.json",
+      "bytes": 1066
+    },
+    {
+      "path": "qa/FREEZE_AUDIT.json",
+      "bytes": 34743
+    },
+    {
+      "path": "qa/GEOMETRY_AUDIT.json",
+      "bytes": 3059
+    },
+    {
+      "path": "qa/INDEPENDENT_TESTS.txt",
+      "bytes": 2290
+    },
+    {
+      "path": "qa/PRE_EXECUTION_REVIEW.txt",
+      "bytes": 3076
+    },
+    {
+      "path": "qa/PREFLIGHT_QA.txt",
+      "bytes": 3004
+    },
+    {
+      "path": "qa/QA_RESEARCH.md",
+      "bytes": 12586
+    },
+    {
+      "path": "qa/REGION_AUDIT.json",
+      "bytes": 4479
+    },
+    {
+      "path": "qa/RESOURCE_AUDIT.json",
+      "bytes": 345
+    },
+    {
+      "path": "qa/SOURCE_AST_AUDIT.json",
+      "bytes": 829
+    },
+    {
+      "path": "qa/SOURCE_AST_SNAPSHOT.json",
+      "bytes": 1799
+    },
+    {
+      "path": "qa/UNIT_TESTS.txt",
+      "bytes": 2290
+    },
+    {
+      "path": "README.md",
+      "bytes": 982
+    },
+    {
+      "path": "region_design.json",
+      "bytes": 1907
+    },
+    {
+      "path": "region_integration.py",
+      "bytes": 9926
+    },
+    {
+      "path": "region_scope_metrics.py",
+      "bytes": 2273
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 17474
+    },
+    {
+      "path": "reports/A01_shield.log",
+      "bytes": 53
+    },
+    {
+      "path": "reports/A03_burger.log",
+      "bytes": 53
+    },
+    {
+      "path": "reports/A10_logo.log",
+      "bytes": 52
+    },
+    {
+      "path": "reports/COMBINATION_GATE.json",
+      "bytes": 470
+    },
+    {
+      "path": "reports/combined.log",
+      "bytes": 180
+    },
+    {
+      "path": "reports/COMBINED_RESOURCES.json",
+      "bytes": 812
+    },
+    {
+      "path": "reports/ENDPOINT_GRAPH_DIAGNOSTIC.json",
+      "bytes": 12497
+    },
+    {
+      "path": "reports/fine_features.log",
+      "bytes": 54
+    },
+    {
+      "path": "reports/G06_arabic.log",
+      "bytes": 49
+    },
+    {
+      "path": "reports/H01_horse.log",
+      "bytes": 48
+    },
+    {
+      "path": "reports/H02_astronaut.log",
+      "bytes": 54
+    },
+    {
+      "path": "reports/K01_linear_corner_hole.log",
+      "bytes": 60
+    },
+    {
+      "path": "reports/METRICS.json",
+      "bytes": 8208641
+    },
+    {
+      "path": "reports/monitor_normal.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/monitor_stopped.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/MONITOR_VALIDATION.json",
+      "bytes": 1268
+    },
+    {
+      "path": "reports/POST_EXECUTION_PROVENANCE.json",
+      "bytes": 6555
+    },
+    {
+      "path": "reports/PUBLICATION.json",
+      "bytes": 913
+    },
+    {
+      "path": "reports/RESOURCES.json",
+      "bytes": 5347
+    },
+    {
+      "path": "reports/SCOPED_GOVERNANCE.json",
+      "bytes": 238
+    },
+    {
+      "path": "reports/U01_camera.log",
+      "bytes": 53
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 3016
+    },
+    {
+      "path": "results/A01_shield/C.json",
+      "bytes": 119546
+    },
+    {
+      "path": "results/A01_shield/C.svg",
+      "bytes": 88836
+    },
+    {
+      "path": "results/A01_shield/C_1x.png",
+      "bytes": 9149
+    },
+    {
+      "path": "results/A01_shield/C_4x.png",
+      "bytes": 39110
+    },
+    {
+      "path": "results/A01_shield/C_audit.json",
+      "bytes": 259397
+    },
+    {
+      "path": "results/A01_shield/C_detail.svg",
+      "bytes": 89491
+    },
+    {
+      "path": "results/A01_shield/C_detail_16x.png",
+      "bytes": 54376
+    },
+    {
+      "path": "results/A01_shield/C_detail_1x.png",
+      "bytes": 2858
+    },
+    {
+      "path": "results/A01_shield/C_detail_4x.png",
+      "bytes": 10665
+    },
+    {
+      "path": "results/A01_shield/C_metrics.json",
+      "bytes": 502488
+    },
+    {
+      "path": "results/A01_shield/C_source_overlay.png",
+      "bytes": 126390
+    },
+    {
+      "path": "results/A01_shield/comparison.png",
+      "bytes": 128119
+    },
+    {
+      "path": "results/A01_shield/endpoint_graph_diagnostic.json",
+      "bytes": 1314
+    },
+    {
+      "path": "results/A01_shield/evidence.npz",
+      "bytes": 10101
+    },
+    {
+      "path": "results/A01_shield/evidence.png",
+      "bytes": 6054
+    },
+    {
+      "path": "results/A01_shield/frozen_traces.json",
+      "bytes": 651497
+    },
+    {
+      "path": "results/A01_shield/O.json",
+      "bytes": 190920
+    },
+    {
+      "path": "results/A01_shield/O.svg",
+      "bytes": 100085
+    },
+    {
+      "path": "results/A01_shield/O_1x.png",
+      "bytes": 17510
+    },
+    {
+      "path": "results/A01_shield/O_4x.png",
+      "bytes": 81392
+    },
+    {
+      "path": "results/A01_shield/O_detail.svg",
+      "bytes": 100735
+    },
+    {
+      "path": "results/A01_shield/O_detail_16x.png",
+      "bytes": 128591
+    },
+    {
+      "path": "results/A01_shield/O_detail_1x.png",
+      "bytes": 5365
+    },
+    {
+      "path": "results/A01_shield/O_detail_4x.png",
+      "bytes": 21857
+    },
+    {
+      "path": "results/A01_shield/O_metrics.json",
+      "bytes": 76436
+    },
+    {
+      "path": "results/A01_shield/O_source_overlay.png",
+      "bytes": 127046
+    },
+    {
+      "path": "results/A01_shield/P.json",
+      "bytes": 2207673
+    },
+    {
+      "path": "results/A01_shield/P.svg",
+      "bytes": 90171
+    },
+    {
+      "path": "results/A01_shield/P_1x.png",
+      "bytes": 8643
+    },
+    {
+      "path": "results/A01_shield/P_4x.png",
+      "bytes": 38413
+    },
+    {
+      "path": "results/A01_shield/P_detail.svg",
+      "bytes": 90826
+    },
+    {
+      "path": "results/A01_shield/P_detail_16x.png",
+      "bytes": 54612
+    },
+    {
+      "path": "results/A01_shield/P_detail_1x.png",
+      "bytes": 2785
+    },
+    {
+      "path": "results/A01_shield/P_detail_4x.png",
+      "bytes": 10632
+    },
+    {
+      "path": "results/A01_shield/P_ledger.csv",
+      "bytes": 134864
+    },
+    {
+      "path": "results/A01_shield/P_loss_overlay.png",
+      "bytes": 124841
+    },
+    {
+      "path": "results/A01_shield/P_metrics.json",
+      "bytes": 78186
+    },
+    {
+      "path": "results/A01_shield/P_source_overlay.png",
+      "bytes": 126432
+    },
+    {
+      "path": "results/A01_shield/R.json",
+      "bytes": 121928
+    },
+    {
+      "path": "results/A01_shield/R.svg",
+      "bytes": 93
+    },
+    {
+      "path": "results/A01_shield/R_1x.png",
+      "bytes": 920
+    },
+    {
+      "path": "results/A01_shield/R_4x.png",
+      "bytes": 7937
+    },
+    {
+      "path": "results/A01_shield/R_audit.json",
+      "bytes": 27749
+    },
+    {
+      "path": "results/A01_shield/R_detail.svg",
+      "bytes": 100
+    },
+    {
+      "path": "results/A01_shield/R_detail_16x.png",
+      "bytes": 18108
+    },
+    {
+      "path": "results/A01_shield/R_detail_1x.png",
+      "bytes": 306
+    },
+    {
+      "path": "results/A01_shield/R_detail_4x.png",
+      "bytes": 1780
+    },
+    {
+      "path": "results/A01_shield/R_diagnostics.json",
+      "bytes": 43086
+    },
+    {
+      "path": "results/A01_shield/R_graph.json",
+      "bytes": 160615
+    },
+    {
+      "path": "results/A01_shield/R_metrics.json",
+      "bytes": 128647
+    },
+    {
+      "path": "results/A01_shield/R_rejection_overlay.png",
+      "bytes": 124694
+    },
+    {
+      "path": "results/A01_shield/R_source_overlay.png",
+      "bytes": 123781
+    },
+    {
+      "path": "results/A01_shield/R_strokes.svg",
+      "bytes": 90171
+    },
+    {
+      "path": "results/A01_shield/S.json",
+      "bytes": 2335942
+    },
+    {
+      "path": "results/A01_shield/S.svg",
+      "bytes": 68328
+    },
+    {
+      "path": "results/A01_shield/S_1x.png",
+      "bytes": 6521
+    },
+    {
+      "path": "results/A01_shield/S_4x.png",
+      "bytes": 30303
+    },
+    {
+      "path": "results/A01_shield/S_detail.svg",
+      "bytes": 68983
+    },
+    {
+      "path": "results/A01_shield/S_detail_16x.png",
+      "bytes": 46174
+    },
+    {
+      "path": "results/A01_shield/S_detail_1x.png",
+      "bytes": 2302
+    },
+    {
+      "path": "results/A01_shield/S_detail_4x.png",
+      "bytes": 9091
+    },
+    {
+      "path": "results/A01_shield/S_ledger.csv",
+      "bytes": 123286
+    },
+    {
+      "path": "results/A01_shield/S_loss_overlay.png",
+      "bytes": 124844
+    },
+    {
+      "path": "results/A01_shield/S_metrics.json",
+      "bytes": 78990
+    },
+    {
+      "path": "results/A01_shield/S_source_overlay.png",
+      "bytes": 124522
+    },
+    {
+      "path": "results/A01_shield/source.png",
+      "bytes": 123781
+    },
+    {
+      "path": "results/A01_shield/SR.json",
+      "bytes": 90640
+    },
+    {
+      "path": "results/A01_shield/SR.svg",
+      "bytes": 1549
+    },
+    {
+      "path": "results/A01_shield/SR_1x.png",
+      "bytes": 1125
+    },
+    {
+      "path": "results/A01_shield/SR_4x.png",
+      "bytes": 8319
+    },
+    {
+      "path": "results/A01_shield/SR_audit.json",
+      "bytes": 27489
+    },
+    {
+      "path": "results/A01_shield/SR_detail.svg",
+      "bytes": 1574
+    },
+    {
+      "path": "results/A01_shield/SR_detail_16x.png",
+      "bytes": 18599
+    },
+    {
+      "path": "results/A01_shield/SR_detail_1x.png",
+      "bytes": 365
+    },
+    {
+      "path": "results/A01_shield/SR_detail_4x.png",
+      "bytes": 1969
+    },
+    {
+      "path": "results/A01_shield/SR_graph.json",
+      "bytes": 119048
+    },
+    {
+      "path": "results/A01_shield/SR_metrics.json",
+      "bytes": 130273
+    },
+    {
+      "path": "results/A01_shield/SR_strokes.svg",
+      "bytes": 68328
+    },
+    {
+      "path": "results/A01_shield/WORKER.json",
+      "bytes": 190
+    },
+    {
+      "path": "results/A03_burger/C.json",
+      "bytes": 103794
+    },
+    {
+      "path": "results/A03_burger/C.svg",
+      "bytes": 77660
+    },
+    {
+      "path": "results/A03_burger/C_1x.png",
+      "bytes": 7909
+    },
+    {
+      "path": "results/A03_burger/C_4x.png",
+      "bytes": 35546
+    },
+    {
+      "path": "results/A03_burger/C_audit.json",
+      "bytes": 101348
+    },
+    {
+      "path": "results/A03_burger/C_detail.svg",
+      "bytes": 78312
+    },
+    {
+      "path": "results/A03_burger/C_detail_16x.png",
+      "bytes": 39048
+    },
+    {
+      "path": "results/A03_burger/C_detail_1x.png",
+      "bytes": 2024
+    },
+    {
+      "path": "results/A03_burger/C_detail_4x.png",
+      "bytes": 7804
+    },
+    {
+      "path": "results/A03_burger/C_metrics.json",
+      "bytes": 248447
+    },
+    {
+      "path": "results/A03_burger/C_source_overlay.png",
+      "bytes": 175511
+    },
+    {
+      "path": "results/A03_burger/comparison.png",
+      "bytes": 151903
+    },
+    {
+      "path": "results/A03_burger/endpoint_graph_diagnostic.json",
+      "bytes": 1322
+    },
+    {
+      "path": "results/A03_burger/evidence.npz",
+      "bytes": 21208
+    },
+    {
+      "path": "results/A03_burger/evidence.png",
+      "bytes": 13339
+    },
+    {
+      "path": "results/A03_burger/frozen_traces.json",
+      "bytes": 1107496
+    },
+    {
+      "path": "results/A03_burger/O.json",
+      "bytes": 100971
+    },
+    {
+      "path": "results/A03_burger/O.svg",
+      "bytes": 80597
+    },
+    {
+      "path": "results/A03_burger/O_1x.png",
+      "bytes": 15604
+    },
+    {
+      "path": "results/A03_burger/O_4x.png",
+      "bytes": 68503
+    },
+    {
+      "path": "results/A03_burger/O_detail.svg",
+      "bytes": 81179
+    },
+    {
+      "path": "results/A03_burger/O_detail_16x.png",
+      "bytes": 87272
+    },
+    {
+      "path": "results/A03_burger/O_detail_1x.png",
+      "bytes": 3766
+    },
+    {
+      "path": "results/A03_burger/O_detail_4x.png",
+      "bytes": 15414
+    },
+    {
+      "path": "results/A03_burger/O_metrics.json",
+      "bytes": 61411
+    },
+    {
+      "path": "results/A03_burger/O_source_overlay.png",
+      "bytes": 176152
+    },
+    {
+      "path": "results/A03_burger/P.json",
+      "bytes": 3525063
+    },
+    {
+      "path": "results/A03_burger/P.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger/P_1x.png",
+      "bytes": 7860
+    },
+    {
+      "path": "results/A03_burger/P_4x.png",
+      "bytes": 35596
+    },
+    {
+      "path": "results/A03_burger/P_detail.svg",
+      "bytes": 78387
+    },
+    {
+      "path": "results/A03_burger/P_detail_16x.png",
+      "bytes": 39178
+    },
+    {
+      "path": "results/A03_burger/P_detail_1x.png",
+      "bytes": 2005
+    },
+    {
+      "path": "results/A03_burger/P_detail_4x.png",
+      "bytes": 7807
+    },
+    {
+      "path": "results/A03_burger/P_ledger.csv",
+      "bytes": 280733
+    },
+    {
+      "path": "results/A03_burger/P_loss_overlay.png",
+      "bytes": 178672
+    },
+    {
+      "path": "results/A03_burger/P_metrics.json",
+      "bytes": 107393
+    },
+    {
+      "path": "results/A03_burger/P_source_overlay.png",
+      "bytes": 175508
+    },
+    {
+      "path": "results/A03_burger/R.json",
+      "bytes": 103963
+    },
+    {
+      "path": "results/A03_burger/R.svg",
+      "bytes": 12305
+    },
+    {
+      "path": "results/A03_burger/R_1x.png",
+      "bytes": 2912
+    },
+    {
+      "path": "results/A03_burger/R_4x.png",
+      "bytes": 12010
+    },
+    {
+      "path": "results/A03_burger/R_audit.json",
+      "bytes": 29436
+    },
+    {
+      "path": "results/A03_burger/R_detail.svg",
+      "bytes": 12407
+    },
+    {
+      "path": "results/A03_burger/R_detail_16x.png",
+      "bytes": 18245
+    },
+    {
+      "path": "results/A03_burger/R_detail_1x.png",
+      "bytes": 669
+    },
+    {
+      "path": "results/A03_burger/R_detail_4x.png",
+      "bytes": 2404
+    },
+    {
+      "path": "results/A03_burger/R_diagnostics.json",
+      "bytes": 44958
+    },
+    {
+      "path": "results/A03_burger/R_graph.json",
+      "bytes": 137721
+    },
+    {
+      "path": "results/A03_burger/R_metrics.json",
+      "bytes": 156054
+    },
+    {
+      "path": "results/A03_burger/R_rejection_overlay.png",
+      "bytes": 174883
+    },
+    {
+      "path": "results/A03_burger/R_source_overlay.png",
+      "bytes": 173736
+    },
+    {
+      "path": "results/A03_burger/R_strokes.svg",
+      "bytes": 77735
+    },
+    {
+      "path": "results/A03_burger/S.json",
+      "bytes": 4358137
+    },
+    {
+      "path": "results/A03_burger/S.svg",
+      "bytes": 54024
+    },
+    {
+      "path": "results/A03_burger/S_1x.png",
+      "bytes": 6001
+    },
+    {
+      "path": "results/A03_burger/S_4x.png",
+      "bytes": 27693
+    },
+    {
+      "path": "results/A03_burger/S_detail.svg",
+      "bytes": 54676
+    },
+    {
+      "path": "results/A03_burger/S_detail_16x.png",
+      "bytes": 31829
+    },
+    {
+      "path": "results/A03_burger/S_detail_1x.png",
+      "bytes": 1469
+    },
+    {
+      "path": "results/A03_burger/S_detail_4x.png",
+      "bytes": 6067
+    },
+    {
+      "path": "results/A03_burger/S_ledger.csv",
+      "bytes": 267013
+    },
+    {
+      "path": "results/A03_burger/S_loss_overlay.png",
+      "bytes": 178671
+    },
+    {
+      "path": "results/A03_burger/S_metrics.json",
+      "bytes": 123079
+    },
+    {
+      "path": "results/A03_burger/S_source_overlay.png",
+      "bytes": 174211
+    },
+    {
+      "path": "results/A03_burger/source.png",
+      "bytes": 169758
+    },
+    {
+      "path": "results/A03_burger/SR.json",
+      "bytes": 69706
+    },
+    {
+      "path": "results/A03_burger/SR.svg",
+      "bytes": 16564
+    },
+    {
+      "path": "results/A03_burger/SR_1x.png",
+      "bytes": 3377
+    },
+    {
+      "path": "results/A03_burger/SR_4x.png",
+      "bytes": 12885
+    },
+    {
+      "path": "results/A03_burger/SR_audit.json",
+      "bytes": 29497
+    },
+    {
+      "path": "results/A03_burger/SR_detail.svg",
+      "bytes": 16701
+    },
+    {
+      "path": "results/A03_burger/SR_detail_16x.png",
+      "bytes": 18523
+    },
+    {
+      "path": "results/A03_burger/SR_detail_1x.png",
+      "bytes": 756
+    },
+    {
+      "path": "results/A03_burger/SR_detail_4x.png",
+      "bytes": 2542
+    },
+    {
+      "path": "results/A03_burger/SR_graph.json",
+      "bytes": 92378
+    },
+    {
+      "path": "results/A03_burger/SR_metrics.json",
+      "bytes": 172334
+    },
+    {
+      "path": "results/A03_burger/SR_strokes.svg",
+      "bytes": 54024
+    },
+    {
+      "path": "results/A03_burger/WORKER.json",
+      "bytes": 191
+    },
+    {
+      "path": "results/A10_logo/C.json",
+      "bytes": 179542
+    },
+    {
+      "path": "results/A10_logo/C.svg",
+      "bytes": 131131
+    },
+    {
+      "path": "results/A10_logo/C_1x.png",
+      "bytes": 14048
+    },
+    {
+      "path": "results/A10_logo/C_4x.png",
+      "bytes": 61456
+    },
+    {
+      "path": "results/A10_logo/C_audit.json",
+      "bytes": 449635
+    },
+    {
+      "path": "results/A10_logo/C_detail.svg",
+      "bytes": 131783
+    },
+    {
+      "path": "results/A10_logo/C_detail_16x.png",
+      "bytes": 59077
+    },
+    {
+      "path": "results/A10_logo/C_detail_1x.png",
+      "bytes": 3016
+    },
+    {
+      "path": "results/A10_logo/C_detail_4x.png",
+      "bytes": 12188
+    },
+    {
+      "path": "results/A10_logo/C_metrics.json",
+      "bytes": 852746
+    },
+    {
+      "path": "results/A10_logo/C_source_overlay.png",
+      "bytes": 135490
+    },
+    {
+      "path": "results/A10_logo/comparison.png",
+      "bytes": 149497
+    },
+    {
+      "path": "results/A10_logo/endpoint_graph_diagnostic.json",
+      "bytes": 1313
+    },
+    {
+      "path": "results/A10_logo/evidence.npz",
+      "bytes": 10101
+    },
+    {
+      "path": "results/A10_logo/evidence.png",
+      "bytes": 6166
+    },
+    {
+      "path": "results/A10_logo/frozen_traces.json",
+      "bytes": 458389
+    },
+    {
+      "path": "results/A10_logo/O.json",
+      "bytes": 170219
+    },
+    {
+      "path": "results/A10_logo/O.svg",
+      "bytes": 133783
+    },
+    {
+      "path": "results/A10_logo/O_1x.png",
+      "bytes": 23028
+    },
+    {
+      "path": "results/A10_logo/O_4x.png",
+      "bytes": 102732
+    },
+    {
+      "path": "results/A10_logo/O_detail.svg",
+      "bytes": 134380
+    },
+    {
+      "path": "results/A10_logo/O_detail_16x.png",
+      "bytes": 134710
+    },
+    {
+      "path": "results/A10_logo/O_detail_1x.png",
+      "bytes": 5862
+    },
+    {
+      "path": "results/A10_logo/O_detail_4x.png",
+      "bytes": 22834
+    },
+    {
+      "path": "results/A10_logo/O_metrics.json",
+      "bytes": 63564
+    },
+    {
+      "path": "results/A10_logo/O_source_overlay.png",
+      "bytes": 136403
+    },
+    {
+      "path": "results/A10_logo/P.json",
+      "bytes": 2283883
+    },
+    {
+      "path": "results/A10_logo/P.svg",
+      "bytes": 133878
+    },
+    {
+      "path": "results/A10_logo/P_1x.png",
+      "bytes": 12739
+    },
+    {
+      "path": "results/A10_logo/P_4x.png",
+      "bytes": 59917
+    },
+    {
+      "path": "results/A10_logo/P_detail.svg",
+      "bytes": 134530
+    },
+    {
+      "path": "results/A10_logo/P_detail_16x.png",
+      "bytes": 59825
+    },
+    {
+      "path": "results/A10_logo/P_detail_1x.png",
+      "bytes": 2914
+    },
+    {
+      "path": "results/A10_logo/P_detail_4x.png",
+      "bytes": 12101
+    },
+    {
+      "path": "results/A10_logo/P_ledger.csv",
+      "bytes": 105498
+    },
+    {
+      "path": "results/A10_logo/P_loss_overlay.png",
+      "bytes": 128658
+    },
+    {
+      "path": "results/A10_logo/P_metrics.json",
+      "bytes": 83286
+    },
+    {
+      "path": "results/A10_logo/P_source_overlay.png",
+      "bytes": 135441
+    },
+    {
+      "path": "results/A10_logo/R.json",
+      "bytes": 184447
+    },
+    {
+      "path": "results/A10_logo/R.svg",
+      "bytes": 20110
+    },
+    {
+      "path": "results/A10_logo/R_1x.png",
+      "bytes": 4126
+    },
+    {
+      "path": "results/A10_logo/R_4x.png",
+      "bytes": 14945
+    },
+    {
+      "path": "results/A10_logo/R_audit.json",
+      "bytes": 28495
+    },
+    {
+      "path": "results/A10_logo/R_detail.svg",
+      "bytes": 20182
+    },
+    {
+      "path": "results/A10_logo/R_detail_16x.png",
+      "bytes": 18735
+    },
+    {
+      "path": "results/A10_logo/R_detail_1x.png",
+      "bytes": 753
+    },
+    {
+      "path": "results/A10_logo/R_detail_4x.png",
+      "bytes": 2535
+    },
+    {
+      "path": "results/A10_logo/R_diagnostics.json",
+      "bytes": 43877
+    },
+    {
+      "path": "results/A10_logo/R_graph.json",
+      "bytes": 244080
+    },
+    {
+      "path": "results/A10_logo/R_metrics.json",
+      "bytes": 130814
+    },
+    {
+      "path": "results/A10_logo/R_rejection_overlay.png",
+      "bytes": 129650
+    },
+    {
+      "path": "results/A10_logo/R_source_overlay.png",
+      "bytes": 130856
+    },
+    {
+      "path": "results/A10_logo/R_strokes.svg",
+      "bytes": 133878
+    },
+    {
+      "path": "results/A10_logo/S.json",
+      "bytes": 2351247
+    },
+    {
+      "path": "results/A10_logo/S.svg",
+      "bytes": 123208
+    },
+    {
+      "path": "results/A10_logo/S_1x.png",
+      "bytes": 11611
+    },
+    {
+      "path": "results/A10_logo/S_4x.png",
+      "bytes": 54606
+    },
+    {
+      "path": "results/A10_logo/S_detail.svg",
+      "bytes": 123860
+    },
+    {
+      "path": "results/A10_logo/S_detail_16x.png",
+      "bytes": 53892
+    },
+    {
+      "path": "results/A10_logo/S_detail_1x.png",
+      "bytes": 2675
+    },
+    {
+      "path": "results/A10_logo/S_detail_4x.png",
+      "bytes": 10992
+    },
+    {
+      "path": "results/A10_logo/S_ledger.csv",
+      "bytes": 99834
+    },
+    {
+      "path": "results/A10_logo/S_loss_overlay.png",
+      "bytes": 128675
+    },
+    {
+      "path": "results/A10_logo/S_metrics.json",
+      "bytes": 81849
+    },
+    {
+      "path": "results/A10_logo/S_source_overlay.png",
+      "bytes": 134600
+    },
+    {
+      "path": "results/A10_logo/source.png",
+      "bytes": 131607
+    },
+    {
+      "path": "results/A10_logo/SR.json",
+      "bytes": 169107
+    },
+    {
+      "path": "results/A10_logo/SR.svg",
+      "bytes": 20973
+    },
+    {
+      "path": "results/A10_logo/SR_1x.png",
+      "bytes": 4199
+    },
+    {
+      "path": "results/A10_logo/SR_4x.png",
+      "bytes": 14916
+    },
+    {
+      "path": "results/A10_logo/SR_audit.json",
+      "bytes": 28107
+    },
+    {
+      "path": "results/A10_logo/SR_detail.svg",
+      "bytes": 21050
+    },
+    {
+      "path": "results/A10_logo/SR_detail_16x.png",
+      "bytes": 18742
+    },
+    {
+      "path": "results/A10_logo/SR_detail_1x.png",
+      "bytes": 803
+    },
+    {
+      "path": "results/A10_logo/SR_detail_4x.png",
+      "bytes": 2558
+    },
+    {
+      "path": "results/A10_logo/SR_graph.json",
+      "bytes": 223781
+    },
+    {
+      "path": "results/A10_logo/SR_metrics.json",
+      "bytes": 129438
+    },
+    {
+      "path": "results/A10_logo/SR_strokes.svg",
+      "bytes": 123208
+    },
+    {
+      "path": "results/A10_logo/WORKER.json",
+      "bytes": 190
+    },
+    {
+      "path": "results/G06_arabic/C.json",
+      "bytes": 81726
+    },
+    {
+      "path": "results/G06_arabic/C.svg",
+      "bytes": 57716
+    },
+    {
+      "path": "results/G06_arabic/C_1x.png",
+      "bytes": 7213
+    },
+    {
+      "path": "results/G06_arabic/C_4x.png",
+      "bytes": 33371
+    },
+    {
+      "path": "results/G06_arabic/C_audit.json",
+      "bytes": 351179
+    },
+    {
+      "path": "results/G06_arabic/C_detail.svg",
+      "bytes": 57768
+    },
+    {
+      "path": "results/G06_arabic/C_detail_16x.png",
+      "bytes": 25621
+    },
+    {
+      "path": "results/G06_arabic/C_detail_1x.png",
+      "bytes": 1187
+    },
+    {
+      "path": "results/G06_arabic/C_detail_4x.png",
+      "bytes": 4723
+    },
+    {
+      "path": "results/G06_arabic/C_metrics.json",
+      "bytes": 641105
+    },
+    {
+      "path": "results/G06_arabic/C_source_overlay.png",
+      "bytes": 20081
+    },
+    {
+      "path": "results/G06_arabic/comparison.png",
+      "bytes": 52102
+    },
+    {
+      "path": "results/G06_arabic/endpoint_graph_diagnostic.json",
+      "bytes": 1276
+    },
+    {
+      "path": "results/G06_arabic/evidence.npz",
+      "bytes": 4867
+    },
+    {
+      "path": "results/G06_arabic/evidence.png",
+      "bytes": 2719
+    },
+    {
+      "path": "results/G06_arabic/frozen_traces.json",
+      "bytes": 40402
+    },
+    {
+      "path": "results/G06_arabic/O.json",
+      "bytes": 4357
+    },
+    {
+      "path": "results/G06_arabic/O.svg",
+      "bytes": 3047
+    },
+    {
+      "path": "results/G06_arabic/O_1x.png",
+      "bytes": 1818
+    },
+    {
+      "path": "results/G06_arabic/O_4x.png",
+      "bytes": 9993
+    },
+    {
+      "path": "results/G06_arabic/O_detail.svg",
+      "bytes": 3064
+    },
+    {
+      "path": "results/G06_arabic/O_detail_16x.png",
+      "bytes": 12961
+    },
+    {
+      "path": "results/G06_arabic/O_detail_1x.png",
+      "bytes": 285
+    },
+    {
+      "path": "results/G06_arabic/O_detail_4x.png",
+      "bytes": 1472
+    },
+    {
+      "path": "results/G06_arabic/O_metrics.json",
+      "bytes": 4760
+    },
+    {
+      "path": "results/G06_arabic/O_source_overlay.png",
+      "bytes": 19087
+    },
+    {
+      "path": "results/G06_arabic/P.json",
+      "bytes": 850829
+    },
+    {
+      "path": "results/G06_arabic/P.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/P_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/P_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/P_detail.svg",
+      "bytes": 60116
+    },
+    {
+      "path": "results/G06_arabic/P_detail_16x.png",
+      "bytes": 26118
+    },
+    {
+      "path": "results/G06_arabic/P_detail_1x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/G06_arabic/P_detail_4x.png",
+      "bytes": 4754
+    },
+    {
+      "path": "results/G06_arabic/P_ledger.csv",
+      "bytes": 30895
+    },
+    {
+      "path": "results/G06_arabic/P_loss_overlay.png",
+      "bytes": 15362
+    },
+    {
+      "path": "results/G06_arabic/P_metrics.json",
+      "bytes": 15731
+    },
+    {
+      "path": "results/G06_arabic/P_source_overlay.png",
+      "bytes": 19977
+    },
+    {
+      "path": "results/G06_arabic/R.json",
+      "bytes": 85923
+    },
+    {
+      "path": "results/G06_arabic/R.svg",
+      "bytes": 58307
+    },
+    {
+      "path": "results/G06_arabic/R_1x.png",
+      "bytes": 7624
+    },
+    {
+      "path": "results/G06_arabic/R_4x.png",
+      "bytes": 23366
+    },
+    {
+      "path": "results/G06_arabic/R_audit.json",
+      "bytes": 2809
+    },
+    {
+      "path": "results/G06_arabic/R_detail.svg",
+      "bytes": 58354
+    },
+    {
+      "path": "results/G06_arabic/R_detail_16x.png",
+      "bytes": 21908
+    },
+    {
+      "path": "results/G06_arabic/R_detail_1x.png",
+      "bytes": 1306
+    },
+    {
+      "path": "results/G06_arabic/R_detail_4x.png",
+      "bytes": 3889
+    },
+    {
+      "path": "results/G06_arabic/R_diagnostics.json",
+      "bytes": 4326
+    },
+    {
+      "path": "results/G06_arabic/R_graph.json",
+      "bytes": 113762
+    },
+    {
+      "path": "results/G06_arabic/R_metrics.json",
+      "bytes": 20279
+    },
+    {
+      "path": "results/G06_arabic/R_rejection_overlay.png",
+      "bytes": 15379
+    },
+    {
+      "path": "results/G06_arabic/R_source_overlay.png",
+      "bytes": 17951
+    },
+    {
+      "path": "results/G06_arabic/R_strokes.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/S.json",
+      "bytes": 852224
+    },
+    {
+      "path": "results/G06_arabic/S.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/S_1x.png",
+      "bytes": 6695
+    },
+    {
+      "path": "results/G06_arabic/S_4x.png",
+      "bytes": 32428
+    },
+    {
+      "path": "results/G06_arabic/S_detail.svg",
+      "bytes": 60116
+    },
+    {
+      "path": "results/G06_arabic/S_detail_16x.png",
+      "bytes": 26118
+    },
+    {
+      "path": "results/G06_arabic/S_detail_1x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/G06_arabic/S_detail_4x.png",
+      "bytes": 4754
+    },
+    {
+      "path": "results/G06_arabic/S_ledger.csv",
+      "bytes": 30895
+    },
+    {
+      "path": "results/G06_arabic/S_loss_overlay.png",
+      "bytes": 15362
+    },
+    {
+      "path": "results/G06_arabic/S_metrics.json",
+      "bytes": 15735
+    },
+    {
+      "path": "results/G06_arabic/S_source_overlay.png",
+      "bytes": 19977
+    },
+    {
+      "path": "results/G06_arabic/source.png",
+      "bytes": 18606
+    },
+    {
+      "path": "results/G06_arabic/SR.json",
+      "bytes": 85923
+    },
+    {
+      "path": "results/G06_arabic/SR.svg",
+      "bytes": 58307
+    },
+    {
+      "path": "results/G06_arabic/SR_1x.png",
+      "bytes": 7554
+    },
+    {
+      "path": "results/G06_arabic/SR_4x.png",
+      "bytes": 23595
+    },
+    {
+      "path": "results/G06_arabic/SR_audit.json",
+      "bytes": 2810
+    },
+    {
+      "path": "results/G06_arabic/SR_detail.svg",
+      "bytes": 58354
+    },
+    {
+      "path": "results/G06_arabic/SR_detail_16x.png",
+      "bytes": 21947
+    },
+    {
+      "path": "results/G06_arabic/SR_detail_1x.png",
+      "bytes": 1295
+    },
+    {
+      "path": "results/G06_arabic/SR_detail_4x.png",
+      "bytes": 3906
+    },
+    {
+      "path": "results/G06_arabic/SR_graph.json",
+      "bytes": 113762
+    },
+    {
+      "path": "results/G06_arabic/SR_metrics.json",
+      "bytes": 20746
+    },
+    {
+      "path": "results/G06_arabic/SR_strokes.svg",
+      "bytes": 60064
+    },
+    {
+      "path": "results/G06_arabic/WORKER.json",
+      "bytes": 191
+    },
+    {
+      "path": "results/H01_horse/C.json",
+      "bytes": 53117
+    },
+    {
+      "path": "results/H01_horse/C.svg",
+      "bytes": 37322
+    },
+    {
+      "path": "results/H01_horse/C_1x.png",
+      "bytes": 5255
+    },
+    {
+      "path": "results/H01_horse/C_4x.png",
+      "bytes": 25998
+    },
+    {
+      "path": "results/H01_horse/C_audit.json",
+      "bytes": 223817
+    },
+    {
+      "path": "results/H01_horse/C_detail.svg",
+      "bytes": 37345
+    },
+    {
+      "path": "results/H01_horse/C_detail_16x.png",
+      "bytes": 19588
+    },
+    {
+      "path": "results/H01_horse/C_detail_1x.png",
+      "bytes": 530
+    },
+    {
+      "path": "results/H01_horse/C_detail_4x.png",
+      "bytes": 2601
+    },
+    {
+      "path": "results/H01_horse/C_metrics.json",
+      "bytes": 402390
+    },
+    {
+      "path": "results/H01_horse/C_source_overlay.png",
+      "bytes": 5610
+    },
+    {
+      "path": "results/H01_horse/comparison.png",
+      "bytes": 23462
+    },
+    {
+      "path": "results/H01_horse/endpoint_graph_diagnostic.json",
+      "bytes": 1275
+    },
+    {
+      "path": "results/H01_horse/evidence.npz",
+      "bytes": 4986
+    },
+    {
+      "path": "results/H01_horse/evidence.png",
+      "bytes": 2667
+    },
+    {
+      "path": "results/H01_horse/frozen_traces.json",
+      "bytes": 34141
+    },
+    {
+      "path": "results/H01_horse/O.json",
+      "bytes": 1260
+    },
+    {
+      "path": "results/H01_horse/O.svg",
+      "bytes": 680
+    },
+    {
+      "path": "results/H01_horse/O_1x.png",
+      "bytes": 1404
+    },
+    {
+      "path": "results/H01_horse/O_4x.png",
+      "bytes": 11656
+    },
+    {
+      "path": "results/H01_horse/O_detail.svg",
+      "bytes": 698
+    },
+    {
+      "path": "results/H01_horse/O_detail_16x.png",
+      "bytes": 15857
+    },
+    {
+      "path": "results/H01_horse/O_detail_1x.png",
+      "bytes": 296
+    },
+    {
+      "path": "results/H01_horse/O_detail_4x.png",
+      "bytes": 1615
+    },
+    {
+      "path": "results/H01_horse/O_metrics.json",
+      "bytes": 3429
+    },
+    {
+      "path": "results/H01_horse/O_source_overlay.png",
+      "bytes": 2966
+    },
+    {
+      "path": "results/H01_horse/P.json",
+      "bytes": 742762
+    },
+    {
+      "path": "results/H01_horse/P.svg",
+      "bytes": 36960
+    },
+    {
+      "path": "results/H01_horse/P_1x.png",
+      "bytes": 5021
+    },
+    {
+      "path": "results/H01_horse/P_4x.png",
+      "bytes": 25745
+    },
+    {
+      "path": "results/H01_horse/P_detail.svg",
+      "bytes": 36983
+    },
+    {
+      "path": "results/H01_horse/P_detail_16x.png",
+      "bytes": 19255
+    },
+    {
+      "path": "results/H01_horse/P_detail_1x.png",
+      "bytes": 531
+    },
+    {
+      "path": "results/H01_horse/P_detail_4x.png",
+      "bytes": 2563
+    },
+    {
+      "path": "results/H01_horse/P_ledger.csv",
+      "bytes": 32277
+    },
+    {
+      "path": "results/H01_horse/P_loss_overlay.png",
+      "bytes": 3342
+    },
+    {
+      "path": "results/H01_horse/P_metrics.json",
+      "bytes": 4564
+    },
+    {
+      "path": "results/H01_horse/P_source_overlay.png",
+      "bytes": 5471
+    },
+    {
+      "path": "results/H01_horse/R.json",
+      "bytes": 53453
+    },
+    {
+      "path": "results/H01_horse/R.svg",
+      "bytes": 93
+    },
+    {
+      "path": "results/H01_horse/R_1x.png",
+      "bytes": 1187
+    },
+    {
+      "path": "results/H01_horse/R_4x.png",
+      "bytes": 11083
+    },
+    {
+      "path": "results/H01_horse/R_audit.json",
+      "bytes": 910
+    },
+    {
+      "path": "results/H01_horse/R_detail.svg",
+      "bytes": 98
+    },
+    {
+      "path": "results/H01_horse/R_detail_16x.png",
+      "bytes": 15857
+    },
+    {
+      "path": "results/H01_horse/R_detail_1x.png",
+      "bytes": 296
+    },
+    {
+      "path": "results/H01_horse/R_detail_4x.png",
+      "bytes": 1615
+    },
+    {
+      "path": "results/H01_horse/R_diagnostics.json",
+      "bytes": 1629
+    },
+    {
+      "path": "results/H01_horse/R_graph.json",
+      "bytes": 70308
+    },
+    {
+      "path": "results/H01_horse/R_metrics.json",
+      "bytes": 5958
+    },
+    {
+      "path": "results/H01_horse/R_rejection_overlay.png",
+      "bytes": 3370
+    },
+    {
+      "path": "results/H01_horse/R_source_overlay.png",
+      "bytes": 2838
+    },
+    {
+      "path": "results/H01_horse/R_strokes.svg",
+      "bytes": 36960
+    },
+    {
+      "path": "results/H01_horse/S.json",
+      "bytes": 743089
+    },
+    {
+      "path": "results/H01_horse/S.svg",
+      "bytes": 36960
+    },
+    {
+      "path": "results/H01_horse/S_1x.png",
+      "bytes": 5021
+    },
+    {
+      "path": "results/H01_horse/S_4x.png",
+      "bytes": 25745
+    },
+    {
+      "path": "results/H01_horse/S_detail.svg",
+      "bytes": 36983
+    },
+    {
+      "path": "results/H01_horse/S_detail_16x.png",
+      "bytes": 19255
+    },
+    {
+      "path": "results/H01_horse/S_detail_1x.png",
+      "bytes": 531
+    },
+    {
+      "path": "results/H01_horse/S_detail_4x.png",
+      "bytes": 2563
+    },
+    {
+      "path": "results/H01_horse/S_ledger.csv",
+      "bytes": 32277
+    },
+    {
+      "path": "results/H01_horse/S_loss_overlay.png",
+      "bytes": 3342
+    },
+    {
+      "path": "results/H01_horse/S_metrics.json",
+      "bytes": 4565
+    },
+    {
+      "path": "results/H01_horse/S_source_overlay.png",
+      "bytes": 5471
+    },
+    {
+      "path": "results/H01_horse/source.png",
+      "bytes": 2838
+    },
+    {
+      "path": "results/H01_horse/SR.json",
+      "bytes": 53453
+    },
+    {
+      "path": "results/H01_horse/SR.svg",
+      "bytes": 93
+    },
+    {
+      "path": "results/H01_horse/SR_1x.png",
+      "bytes": 1187
+    },
+    {
+      "path": "results/H01_horse/SR_4x.png",
+      "bytes": 11083
+    },
+    {
+      "path": "results/H01_horse/SR_audit.json",
+      "bytes": 910
+    },
+    {
+      "path": "results/H01_horse/SR_detail.svg",
+      "bytes": 98
+    },
+    {
+      "path": "results/H01_horse/SR_detail_16x.png",
+      "bytes": 15857
+    },
+    {
+      "path": "results/H01_horse/SR_detail_1x.png",
+      "bytes": 296
+    },
+    {
+      "path": "results/H01_horse/SR_detail_4x.png",
+      "bytes": 1615
+    },
+    {
+      "path": "results/H01_horse/SR_graph.json",
+      "bytes": 70308
+    },
+    {
+      "path": "results/H01_horse/SR_metrics.json",
+      "bytes": 6543
+    },
+    {
+      "path": "results/H01_horse/SR_strokes.svg",
+      "bytes": 36960
+    },
+    {
+      "path": "results/H01_horse/WORKER.json",
+      "bytes": 190
+    },
+    {
+      "path": "results/H02_astronaut/C.json",
+      "bytes": 209715
+    },
+    {
+      "path": "results/H02_astronaut/C.svg",
+      "bytes": 152343
+    },
+    {
+      "path": "results/H02_astronaut/C_1x.png",
+      "bytes": 21221
+    },
+    {
+      "path": "results/H02_astronaut/C_4x.png",
+      "bytes": 94700
+    },
+    {
+      "path": "results/H02_astronaut/C_audit.json",
+      "bytes": 295804
+    },
+    {
+      "path": "results/H02_astronaut/C_detail.svg",
+      "bytes": 152997
+    },
+    {
+      "path": "results/H02_astronaut/C_detail_16x.png",
+      "bytes": 36029
+    },
+    {
+      "path": "results/H02_astronaut/C_detail_1x.png",
+      "bytes": 1599
+    },
+    {
+      "path": "results/H02_astronaut/C_detail_4x.png",
+      "bytes": 6353
+    },
+    {
+      "path": "results/H02_astronaut/C_metrics.json",
+      "bytes": 564966
+    },
+    {
+      "path": "results/H02_astronaut/C_source_overlay.png",
+      "bytes": 445176
+    },
+    {
+      "path": "results/H02_astronaut/comparison.png",
+      "bytes": 170200
+    },
+    {
+      "path": "results/H02_astronaut/endpoint_graph_diagnostic.json",
+      "bytes": 1324
+    },
+    {
+      "path": "results/H02_astronaut/evidence.npz",
+      "bytes": 47497
+    },
+    {
+      "path": "results/H02_astronaut/evidence.png",
+      "bytes": 29795
+    },
+    {
+      "path": "results/H02_astronaut/frozen_traces.json",
+      "bytes": 1940631
+    },
+    {
+      "path": "results/H02_astronaut/O.json",
+      "bytes": 311010
+    },
+    {
+      "path": "results/H02_astronaut/O.svg",
+      "bytes": 191308
+    },
+    {
+      "path": "results/H02_astronaut/O_1x.png",
+      "bytes": 42327
+    },
+    {
+      "path": "results/H02_astronaut/O_4x.png",
+      "bytes": 199889
+    },
+    {
+      "path": "results/H02_astronaut/O_detail.svg",
+      "bytes": 191957
+    },
+    {
+      "path": "results/H02_astronaut/O_detail_16x.png",
+      "bytes": 61447
+    },
+    {
+      "path": "results/H02_astronaut/O_detail_1x.png",
+      "bytes": 2402
+    },
+    {
+      "path": "results/H02_astronaut/O_detail_4x.png",
+      "bytes": 9893
+    },
+    {
+      "path": "results/H02_astronaut/O_metrics.json",
+      "bytes": 69076
+    },
+    {
+      "path": "results/H02_astronaut/O_source_overlay.png",
+      "bytes": 446343
+    },
+    {
+      "path": "results/H02_astronaut/P.json",
+      "bytes": 5954926
+    },
+    {
+      "path": "results/H02_astronaut/P.svg",
+      "bytes": 153726
+    },
+    {
+      "path": "results/H02_astronaut/P_1x.png",
+      "bytes": 20664
+    },
+    {
+      "path": "results/H02_astronaut/P_4x.png",
+      "bytes": 93706
+    },
+    {
+      "path": "results/H02_astronaut/P_detail.svg",
+      "bytes": 154380
+    },
+    {
+      "path": "results/H02_astronaut/P_detail_16x.png",
+      "bytes": 35827
+    },
+    {
+      "path": "results/H02_astronaut/P_detail_1x.png",
+      "bytes": 1499
+    },
+    {
+      "path": "results/H02_astronaut/P_detail_4x.png",
+      "bytes": 6308
+    },
+    {
+      "path": "results/H02_astronaut/P_ledger.csv",
+      "bytes": 463540
+    },
+    {
+      "path": "results/H02_astronaut/P_loss_overlay.png",
+      "bytes": 462335
+    },
+    {
+      "path": "results/H02_astronaut/P_metrics.json",
+      "bytes": 71201
+    },
+    {
+      "path": "results/H02_astronaut/P_source_overlay.png",
+      "bytes": 445199
+    },
+    {
+      "path": "results/H02_astronaut/R.json",
+      "bytes": 212282
+    },
+    {
+      "path": "results/H02_astronaut/R.svg",
+      "bytes": 1043
+    },
+    {
+      "path": "results/H02_astronaut/R_1x.png",
+      "bytes": 2330
+    },
+    {
+      "path": "results/H02_astronaut/R_4x.png",
+      "bytes": 21403
+    },
+    {
+      "path": "results/H02_astronaut/R_audit.json",
+      "bytes": 27972
+    },
+    {
+      "path": "results/H02_astronaut/R_detail.svg",
+      "bytes": 1062
+    },
+    {
+      "path": "results/H02_astronaut/R_detail_16x.png",
+      "bytes": 15857
+    },
+    {
+      "path": "results/H02_astronaut/R_detail_1x.png",
+      "bytes": 296
+    },
+    {
+      "path": "results/H02_astronaut/R_detail_4x.png",
+      "bytes": 1615
+    },
+    {
+      "path": "results/H02_astronaut/R_diagnostics.json",
+      "bytes": 43324
+    },
+    {
+      "path": "results/H02_astronaut/R_graph.json",
+      "bytes": 281736
+    },
+    {
+      "path": "results/H02_astronaut/R_metrics.json",
+      "bytes": 118158
+    },
+    {
+      "path": "results/H02_astronaut/R_rejection_overlay.png",
+      "bytes": 445699
+    },
+    {
+      "path": "results/H02_astronaut/R_source_overlay.png",
+      "bytes": 440373
+    },
+    {
+      "path": "results/H02_astronaut/R_strokes.svg",
+      "bytes": 153726
+    },
+    {
+      "path": "results/H02_astronaut/S.json",
+      "bytes": 6316340
+    },
+    {
+      "path": "results/H02_astronaut/S.svg",
+      "bytes": 51993
+    },
+    {
+      "path": "results/H02_astronaut/S_1x.png",
+      "bytes": 9314
+    },
+    {
+      "path": "results/H02_astronaut/S_4x.png",
+      "bytes": 46626
+    },
+    {
+      "path": "results/H02_astronaut/S_detail.svg",
+      "bytes": 52647
+    },
+    {
+      "path": "results/H02_astronaut/S_detail_16x.png",
+      "bytes": 22312
+    },
+    {
+      "path": "results/H02_astronaut/S_detail_1x.png",
+      "bytes": 860
+    },
+    {
+      "path": "results/H02_astronaut/S_detail_4x.png",
+      "bytes": 3553
+    },
+    {
+      "path": "results/H02_astronaut/S_ledger.csv",
+      "bytes": 407777
+    },
+    {
+      "path": "results/H02_astronaut/S_loss_overlay.png",
+      "bytes": 461670
+    },
+    {
+      "path": "results/H02_astronaut/S_metrics.json",
+      "bytes": 67234
+    },
+    {
+      "path": "results/H02_astronaut/S_source_overlay.png",
+      "bytes": 440893
+    },
+    {
+      "path": "results/H02_astronaut/source.png",
+      "bytes": 440418
+    },
+    {
+      "path": "results/H02_astronaut/SR.json",
+      "bytes": 67129
+    },
+    {
+      "path": "results/H02_astronaut/SR.svg",
+      "bytes": 1526
+    },
+    {
+      "path": "results/H02_astronaut/SR_1x.png",
+      "bytes": 2371
+    },
+    {
+      "path": "results/H02_astronaut/SR_4x.png",
+      "bytes": 21636
+    },
+    {
+      "path": "results/H02_astronaut/SR_audit.json",
+      "bytes": 28104
+    },
+    {
+      "path": "results/H02_astronaut/SR_detail.svg",
+      "bytes": 1550
+    },
+    {
+      "path": "results/H02_astronaut/SR_detail_16x.png",
+      "bytes": 15857
+    },
+    {
+      "path": "results/H02_astronaut/SR_detail_1x.png",
+      "bytes": 296
+    },
+    {
+      "path": "results/H02_astronaut/SR_detail_4x.png",
+      "bytes": 1615
+    },
+    {
+      "path": "results/H02_astronaut/SR_graph.json",
+      "bytes": 87875
+    },
+    {
+      "path": "results/H02_astronaut/SR_metrics.json",
+      "bytes": 115021
+    },
+    {
+      "path": "results/H02_astronaut/SR_strokes.svg",
+      "bytes": 51993
+    },
+    {
+      "path": "results/H02_astronaut/WORKER.json",
+      "bytes": 189
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C.json",
+      "bytes": 23350
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C.svg",
+      "bytes": 16729
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_1x.png",
+      "bytes": 2735
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_4x.png",
+      "bytes": 11550
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_audit.json",
+      "bytes": 101940
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_detail.svg",
+      "bytes": 16754
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_detail_16x.png",
+      "bytes": 19946
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_detail_1x.png",
+      "bytes": 963
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_detail_4x.png",
+      "bytes": 3781
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_metrics.json",
+      "bytes": 187240
+    },
+    {
+      "path": "results/K01_linear_corner_hole/C_source_overlay.png",
+      "bytes": 4963
+    },
+    {
+      "path": "results/K01_linear_corner_hole/comparison.png",
+      "bytes": 40798
+    },
+    {
+      "path": "results/K01_linear_corner_hole/endpoint_graph_diagnostic.json",
+      "bytes": 1288
+    },
+    {
+      "path": "results/K01_linear_corner_hole/evidence.npz",
+      "bytes": 1848
+    },
+    {
+      "path": "results/K01_linear_corner_hole/evidence.png",
+      "bytes": 985
+    },
+    {
+      "path": "results/K01_linear_corner_hole/frozen_traces.json",
+      "bytes": 14420
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O.json",
+      "bytes": 16
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O.svg",
+      "bytes": 93
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_1x.png",
+      "bytes": 480
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_4x.png",
+      "bytes": 3279
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_detail.svg",
+      "bytes": 95
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_detail_16x.png",
+      "bytes": 10495
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_detail_1x.png",
+      "bytes": 241
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_detail_4x.png",
+      "bytes": 1159
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_metrics.json",
+      "bytes": 2782
+    },
+    {
+      "path": "results/K01_linear_corner_hole/O_source_overlay.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P.json",
+      "bytes": 244999
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_detail.svg",
+      "bytes": 17139
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_detail_16x.png",
+      "bytes": 20084
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_detail_1x.png",
+      "bytes": 912
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_detail_4x.png",
+      "bytes": 3666
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_ledger.csv",
+      "bytes": 8861
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_loss_overlay.png",
+      "bytes": 2840
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_metrics.json",
+      "bytes": 6745
+    },
+    {
+      "path": "results/K01_linear_corner_hole/P_source_overlay.png",
+      "bytes": 4950
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R.json",
+      "bytes": 24266
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R.svg",
+      "bytes": 25262
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_1x.png",
+      "bytes": 2762
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_4x.png",
+      "bytes": 8793
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_audit.json",
+      "bytes": 1416
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_detail.svg",
+      "bytes": 25287
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_detail_16x.png",
+      "bytes": 16749
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_detail_1x.png",
+      "bytes": 1121
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_detail_4x.png",
+      "bytes": 2984
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_diagnostics.json",
+      "bytes": 2278
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_graph.json",
+      "bytes": 32502
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_metrics.json",
+      "bytes": 9128
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_rejection_overlay.png",
+      "bytes": 2940
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_source_overlay.png",
+      "bytes": 4093
+    },
+    {
+      "path": "results/K01_linear_corner_hole/R_strokes.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S.json",
+      "bytes": 245430
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_1x.png",
+      "bytes": 2582
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_4x.png",
+      "bytes": 11251
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_detail.svg",
+      "bytes": 17139
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_detail_16x.png",
+      "bytes": 20084
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_detail_1x.png",
+      "bytes": 912
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_detail_4x.png",
+      "bytes": 3666
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_ledger.csv",
+      "bytes": 8861
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_loss_overlay.png",
+      "bytes": 2840
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_metrics.json",
+      "bytes": 6745
+    },
+    {
+      "path": "results/K01_linear_corner_hole/S_source_overlay.png",
+      "bytes": 4950
+    },
+    {
+      "path": "results/K01_linear_corner_hole/source.png",
+      "bytes": 3837
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR.json",
+      "bytes": 24266
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR.svg",
+      "bytes": 25262
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_1x.png",
+      "bytes": 2769
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_4x.png",
+      "bytes": 8880
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_audit.json",
+      "bytes": 1417
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_detail.svg",
+      "bytes": 25287
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_detail_16x.png",
+      "bytes": 16915
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_detail_1x.png",
+      "bytes": 1141
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_detail_4x.png",
+      "bytes": 3051
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_graph.json",
+      "bytes": 32502
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_metrics.json",
+      "bytes": 9586
+    },
+    {
+      "path": "results/K01_linear_corner_hole/SR_strokes.svg",
+      "bytes": 17114
+    },
+    {
+      "path": "results/K01_linear_corner_hole/WORKER.json",
+      "bytes": 190
+    },
+    {
+      "path": "results/U01_camera/C.json",
+      "bytes": 312492
+    },
+    {
+      "path": "results/U01_camera/C.svg",
+      "bytes": 225294
+    },
+    {
+      "path": "results/U01_camera/C_1x.png",
+      "bytes": 22906
+    },
+    {
+      "path": "results/U01_camera/C_4x.png",
+      "bytes": 107360
+    },
+    {
+      "path": "results/U01_camera/C_audit.json",
+      "bytes": 659460
+    },
+    {
+      "path": "results/U01_camera/C_detail.svg",
+      "bytes": 225948
+    },
+    {
+      "path": "results/U01_camera/C_detail_16x.png",
+      "bytes": 52130
+    },
+    {
+      "path": "results/U01_camera/C_detail_1x.png",
+      "bytes": 2560
+    },
+    {
+      "path": "results/U01_camera/C_detail_4x.png",
+      "bytes": 10365
+    },
+    {
+      "path": "results/U01_camera/C_metrics.json",
+      "bytes": 1226917
+    },
+    {
+      "path": "results/U01_camera/C_source_overlay.png",
+      "bytes": 242473
+    },
+    {
+      "path": "results/U01_camera/comparison.png",
+      "bytes": 125645
+    },
+    {
+      "path": "results/U01_camera/endpoint_graph_diagnostic.json",
+      "bytes": 1322
+    },
+    {
+      "path": "results/U01_camera/evidence.npz",
+      "bytes": 42546
+    },
+    {
+      "path": "results/U01_camera/evidence.png",
+      "bytes": 27394
+    },
+    {
+      "path": "results/U01_camera/frozen_traces.json",
+      "bytes": 1595913
+    },
+    {
+      "path": "results/U01_camera/O.json",
+      "bytes": 254964
+    },
+    {
+      "path": "results/U01_camera/O.svg",
+      "bytes": 197289
+    },
+    {
+      "path": "results/U01_camera/O_1x.png",
+      "bytes": 38716
+    },
+    {
+      "path": "results/U01_camera/O_4x.png",
+      "bytes": 184380
+    },
+    {
+      "path": "results/U01_camera/O_detail.svg",
+      "bytes": 197888
+    },
+    {
+      "path": "results/U01_camera/O_detail_16x.png",
+      "bytes": 125357
+    },
+    {
+      "path": "results/U01_camera/O_detail_1x.png",
+      "bytes": 5306
+    },
+    {
+      "path": "results/U01_camera/O_detail_4x.png",
+      "bytes": 21109
+    },
+    {
+      "path": "results/U01_camera/O_metrics.json",
+      "bytes": 63687
+    },
+    {
+      "path": "results/U01_camera/O_source_overlay.png",
+      "bytes": 243936
+    },
+    {
+      "path": "results/U01_camera/P.json",
+      "bytes": 6044002
+    },
+    {
+      "path": "results/U01_camera/P.svg",
+      "bytes": 226956
+    },
+    {
+      "path": "results/U01_camera/P_1x.png",
+      "bytes": 21716
+    },
+    {
+      "path": "results/U01_camera/P_4x.png",
+      "bytes": 105285
+    },
+    {
+      "path": "results/U01_camera/P_detail.svg",
+      "bytes": 227610
+    },
+    {
+      "path": "results/U01_camera/P_detail_16x.png",
+      "bytes": 52171
+    },
+    {
+      "path": "results/U01_camera/P_detail_1x.png",
+      "bytes": 2542
+    },
+    {
+      "path": "results/U01_camera/P_detail_4x.png",
+      "bytes": 10330
+    },
+    {
+      "path": "results/U01_camera/P_ledger.csv",
+      "bytes": 412975
+    },
+    {
+      "path": "results/U01_camera/P_loss_overlay.png",
+      "bytes": 282180
+    },
+    {
+      "path": "results/U01_camera/P_metrics.json",
+      "bytes": 72426
+    },
+    {
+      "path": "results/U01_camera/P_source_overlay.png",
+      "bytes": 242339
+    },
+    {
+      "path": "results/U01_camera/R.json",
+      "bytes": 316409
+    },
+    {
+      "path": "results/U01_camera/R.svg",
+      "bytes": 18487
+    },
+    {
+      "path": "results/U01_camera/R_1x.png",
+      "bytes": 3893
+    },
+    {
+      "path": "results/U01_camera/R_4x.png",
+      "bytes": 25941
+    },
+    {
+      "path": "results/U01_camera/R_audit.json",
+      "bytes": 27972
+    },
+    {
+      "path": "results/U01_camera/R_detail.svg",
+      "bytes": 18521
+    },
+    {
+      "path": "results/U01_camera/R_detail_16x.png",
+      "bytes": 19327
+    },
+    {
+      "path": "results/U01_camera/R_detail_1x.png",
+      "bytes": 628
+    },
+    {
+      "path": "results/U01_camera/R_detail_4x.png",
+      "bytes": 2633
+    },
+    {
+      "path": "results/U01_camera/R_diagnostics.json",
+      "bytes": 43287
+    },
+    {
+      "path": "results/U01_camera/R_graph.json",
+      "bytes": 417942
+    },
+    {
+      "path": "results/U01_camera/R_metrics.json",
+      "bytes": 119335
+    },
+    {
+      "path": "results/U01_camera/R_rejection_overlay.png",
+      "bytes": 237961
+    },
+    {
+      "path": "results/U01_camera/R_source_overlay.png",
+      "bytes": 225125
+    },
+    {
+      "path": "results/U01_camera/R_strokes.svg",
+      "bytes": 226956
+    },
+    {
+      "path": "results/U01_camera/S.json",
+      "bytes": 5856757
+    },
+    {
+      "path": "results/U01_camera/S.svg",
+      "bytes": 118014
+    },
+    {
+      "path": "results/U01_camera/S_1x.png",
+      "bytes": 11239
+    },
+    {
+      "path": "results/U01_camera/S_4x.png",
+      "bytes": 61244
+    },
+    {
+      "path": "results/U01_camera/S_detail.svg",
+      "bytes": 118668
+    },
+    {
+      "path": "results/U01_camera/S_detail_16x.png",
+      "bytes": 24160
+    },
+    {
+      "path": "results/U01_camera/S_detail_1x.png",
+      "bytes": 906
+    },
+    {
+      "path": "results/U01_camera/S_detail_4x.png",
+      "bytes": 3881
+    },
+    {
+      "path": "results/U01_camera/S_ledger.csv",
+      "bytes": 352644
+    },
+    {
+      "path": "results/U01_camera/S_loss_overlay.png",
+      "bytes": 281023
+    },
+    {
+      "path": "results/U01_camera/S_metrics.json",
+      "bytes": 221993
+    },
+    {
+      "path": "results/U01_camera/S_source_overlay.png",
+      "bytes": 231077
+    },
+    {
+      "path": "results/U01_camera/source.png",
+      "bytes": 224180
+    },
+    {
+      "path": "results/U01_camera/SR.json",
+      "bytes": 159334
+    },
+    {
+      "path": "results/U01_camera/SR.svg",
+      "bytes": 44216
+    },
+    {
+      "path": "results/U01_camera/SR_1x.png",
+      "bytes": 7295
+    },
+    {
+      "path": "results/U01_camera/SR_4x.png",
+      "bytes": 33249
+    },
+    {
+      "path": "results/U01_camera/SR_audit.json",
+      "bytes": 30984
+    },
+    {
+      "path": "results/U01_camera/SR_detail.svg",
+      "bytes": 44435
+    },
+    {
+      "path": "results/U01_camera/SR_detail_16x.png",
+      "bytes": 19133
+    },
+    {
+      "path": "results/U01_camera/SR_detail_1x.png",
+      "bytes": 639
+    },
+    {
+      "path": "results/U01_camera/SR_detail_4x.png",
+      "bytes": 2607
+    },
+    {
+      "path": "results/U01_camera/SR_graph.json",
+      "bytes": 211194
+    },
+    {
+      "path": "results/U01_camera/SR_metrics.json",
+      "bytes": 272780
+    },
+    {
+      "path": "results/U01_camera/SR_strokes.svg",
+      "bytes": 118014
+    },
+    {
+      "path": "results/U01_camera/WORKER.json",
+      "bytes": 205
+    },
+    {
+      "path": "review.html",
+      "bytes": 67273
+    },
+    {
+      "path": "test_coherence.py",
+      "bytes": 3981
+    },
+    {
+      "path": "test_region_integration.py",
+      "bytes": 5856
+    },
+    {
+      "path": "test_selection.py",
+      "bytes": 1068
+    },
+    {
+      "path": "universal_run.py",
+      "bytes": 6722
+    },
+    {
+      "path": "write_report.py",
+      "bytes": 21162
+    }
+  ],
+  "total_bytes": 103123549
+}

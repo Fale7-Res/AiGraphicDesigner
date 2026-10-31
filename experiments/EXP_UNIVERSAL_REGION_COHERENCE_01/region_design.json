@@ -1,0 +1,15 @@
+{
+  "change_id": "AGD-UNIVERSAL-REGION-R",
+  "frozen_before_benchmark": true,
+  "created_at_utc": "2026-10-31T10:45:00Z",
+  "hypothesis": "Exact-endpoint cubic halfedge traversal can recover bounded atomic faces from admissible contour subsets without moving, deleting or flattening exported curves.",
+  "inputs": "Accepted P or S cubic chains, native RGB, width and height only; no references, case identifiers or evaluation annotations.",
+  "limits": {"paths":128,"cubics":4096,"wall_seconds":30,"endpoint_snapping_px":0},
+  "rotation": "Outgoing oriented endpoint cubic tangent; fallback to next nonzero control chord. Equal directions within 1e-10 radians are ambiguous and reject their incident chains.",
+  "intersection": "Adaptive diagnostic flattening <=0.005px, reject detected proper crossings, overlaps, non-endpoint touches and nonsimple chains. This is conservative numerical screening, NOT exact continuous intersection certification.",
+  "faces": "Directed halfedge next is clockwise predecessor of twin. Keep positive-area simple bounded cycles. Reverse immediate contained child cycles as holes in parent atomic face, while also keeping every child as its own atomic face.",
+  "holes": "Containment is geometric only; RGB median-border Lab distance<=8 on>=90% sampled atomic interior is a source-background hint, never deletes a face and is not semantic hole truth.",
+  "preservation": "Output exact original C control points, no synthetic lines, no moved endpoints, no pixel fallback. Rejected/open chains retained as separate unintegrated strokes and explicit audit rows.",
+  "semantics": "Semantic objects, occlusion, intentional crossing interpretation and complete reconstruction NOT_ESTABLISHED.",
+  "export": "Corrected svg_exporter.svg_graph with exact chain references and evenodd atomic faces; diagnostic region-ID fills only. Export open/rejected proposal strokes separately."
+}

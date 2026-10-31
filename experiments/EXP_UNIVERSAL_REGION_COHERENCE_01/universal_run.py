@@ -1,0 +1,80 @@
+# START CHANGE AGD-UNIVERSAL-RUN | 2026-10-31T11:07:29Z | EDITED | Author: root
+"""Isolated source-only comparison; no evaluator imports or model inference."""
+import os
+os.environ['OPENBLAS_NUM_THREADS']='1';os.environ['OMP_NUM_THREADS']='1'
+from pathlib import Path
+import sys,json,time,copy,shutil,hashlib,collections
+R=Path(r'C:\Users\Mohamed\Desktop\AiGraphicDesigner');W=Path.cwd()/'work';E=R/'experiments/EXP_UNIVERSAL_REGION_COHERENCE_01';L=R/'experiments/EXP_LOSS_ACCOUNTED_CONTOUR_CONSTRUCTION_01';M=R/'experiments/EXP_ML_CLASSICAL_HYBRID_GEOMETRY_01'
+sys.path[:0]=[str(E),str(L),str(M),str(R/'experiments/EXP_EXPORTER_DISCOVERY_01'),str(R/'experiments/EXP_RAW_FACE_JUNCTION_01'),str(W/'geometry-deps')]
+import numpy as np,cv2
+from PIL import Image
+from scipy import ndimage
+from skimage.morphology import skeletonize
+from skimage import data
+from run_case import construct_condition
+from construct_geometry import chain_graph
+from source_evidence_probe import extract
+from discovery_strokes import _trace
+from stable_fit import fit
+from svg_exporter import svg_graph
+from region_integration import integrate
+from coherence_refine import refine
+
+def output_folder(case):
+ return (W/'universal_geometry/local_only'/case if case=='fine_features' else E/'results'/case)
+
+def selection_rank(traces,rgb):
+ """Fixed score, all source features only; no length term or image identifiers."""
+ lab=cv2.cvtColor(rgb,cv2.COLOR_RGB2LAB).astype(float)/255.;h,w=rgb.shape[:2];fields=[]
+ for sigma in [.6,1.2]:
+  smooth=ndimage.gaussian_filter(lab,(sigma,sigma,0));gx=ndimage.sobel(smooth,axis=1)/8;gy=ndimage.sobel(smooth,axis=0)/8;fields.append(np.sqrt((gx*gx+gy*gy).sum(axis=2)))
+ thresholds=[max(float(np.quantile(g,.65)),1e-6) for g in fields];near=[ndimage.distance_transform_edt(~(g>=t))<=1 for g,t in zip(fields,thresholds)]
+ scale=max(float(np.quantile(fields[0],.9)),1e-6);ends=collections.Counter()
+ for t in traces:
+  p=np.asarray(t['source_points_xy']);ends[tuple(p[0])]+=1;ends[tuple(p[-1])]+=1
+ rows=[]
+ for t in traces:
+  p=np.asarray(t['source_points_xy']);ix=np.clip(p[:,0].astype(int),0,w-1);iy=np.clip(p[:,1].astype(int),0,h-1)
+  persistent=float(np.mean(near[0][iy,ix]&near[1][iy,ix]));contrast=float(np.mean(np.clip(fields[0][iy,ix]/scale,0,1)))
+  closed=bool(np.array_equal(p[0],p[-1]));junction=sum(ends[tuple(q)]>=3 for q in [p[0],p[-1]])/2
+  simple=cv2.approxPolyDP(p.astype('float32'),.35,False).reshape(-1,2);v=np.diff(simple,axis=0);angles=np.unwrap(np.arctan2(v[:,1],v[:,0]));turn=float(np.median(abs(np.diff(angles)))) if len(angles)>1 else 0.;coherence=float(np.exp(-turn/np.pi))
+  score=.35*persistent+.25*contrast+.15*closed+.15*junction+.10*coherence
+  rows.append(dict(trace_id=t['trace_id'],score=score,persistence=persistent,contrast=contrast,closed=closed,junction=junction,coherence=coherence,length_px=t['length_px'],eligible=t['length_px']>=6))
+ rank={r['trace_id']:r['score'] for r in rows};ordered=sorted(traces,key=lambda t:(-rank[t['trace_id']],t['trace_id']))
+ return ordered,rows
+
+def new_classical(rgb):
+ arrays,meta=extract(rgb);support=arrays['persistent_edges'];sk=skeletonize(support);raw,_=_trace(sk)
+ traces=[]
+ for tid,p in enumerate(raw):traces.append(dict(trace_id=tid,length_px=float(np.linalg.norm(np.diff(p,axis=0),axis=1).sum()),source_points_xy=p.tolist(),reason='not_fitted'))
+ traces.sort(key=lambda t:(-t['length_px'],t['trace_id']));accepted=[];start=time.monotonic();eligible=0
+ for t in traces:
+  if t['length_px']<6:t['reason']='short_chain';continue
+  eligible+=1
+  if eligible>128:t['reason']='proposal_budget';continue
+  if time.monotonic()-start>120:t['reason']='case_wall_budget';continue
+  cc,meta=fit(np.asarray(t['source_points_xy']));t['stable_fit']=meta
+  if cc is None:t['reason']=meta['reason']
+  else:t['reason']='accepted';accepted.append(dict(trace_id=t['trace_id'],curves=cc.tolist(),length_px=t['length_px']))
+ return dict(traces=traces,accepted=accepted),support,sk
+
+def run_universal_case(case):
+ protocol=json.loads((E/'protocol.json').read_text());config=protocol['cases'][case];out=output_folder(case);out.mkdir(parents=True,exist_ok=False);start=time.monotonic()
+ source=Path(config['source']);assert hashlib.sha256(source.read_bytes()).hexdigest()==protocol['pins'][str(source)]['sha256'];rgb=np.asarray(Image.open(source).convert('RGB'));shutil.copy2(source,out/'source.png')
+ h,w=rgb.shape[:2]
+ if config['cached']:
+  base=Path(config['baseline']);pbase=Path(config['partitioned']);frozen=json.loads((base/'construction.json').read_text());p=json.loads((pbase/'P.json').read_text());disc=np.load(base/'discovery.npz');support=disc['support'];sk=disc['skeleton']
+  shutil.copy2(base/'stable.svg',out/'O.svg');shutil.copy2(pbase/'P.svg',out/'P.svg')
+ else:
+  frozen,support,sk=new_classical(rgb);p=construct_condition(frozen,'P',time.monotonic()+120)
+  for tag,items in [('O',frozen['accepted']),('P',p['accepted'])]:(out/(tag+'.svg')).write_text(svg_graph(chain_graph(items,w,h)))
+ (out/'frozen_traces.json').write_text(json.dumps(frozen));(out/'P.json').write_text(json.dumps(p));(out/'O.json').write_text(json.dumps(dict(accepted=frozen['accepted'])))
+ Image.fromarray((support*255).astype('uint8')).save(out/'evidence.png');np.savez_compressed(out/'evidence.npz',support=support,skeleton=sk)
+ selected,score=selection_rank(frozen['traces'],rgb);sinput=dict(frozen,traces=selected);s=construct_condition(sinput,'P',time.monotonic()+120);s['condition']='S';s['selection_scores']=score
+ (out/'S.json').write_text(json.dumps(s));(out/'S.svg').write_text(svg_graph(chain_graph(s['accepted'],w,h)))
+ graph,audit=integrate(p['accepted'],w,h,rgb);(out/'R_graph.json').write_text(json.dumps(graph));(out/'R_audit.json').write_text(json.dumps(audit));(out/'R.svg').write_text(svg_graph(graph,regions=True));(out/'R_strokes.svg').write_text(svg_graph(graph));(out/'R.json').write_text(json.dumps(dict(accepted=p['accepted'])))
+ c,caudit=refine(p['accepted'],frozen['traces']);(out/'C_audit.json').write_text(json.dumps(caudit));(out/'C.json').write_text(json.dumps(dict(accepted=c)));(out/'C.svg').write_text(svg_graph(chain_graph(c,w,h)))
+ (out/'WORKER.json').write_text(json.dumps(dict(wall_seconds=time.monotonic()-start,source_sha256=hashlib.sha256((out/'source.png').read_bytes()).hexdigest(),cached=config['cached'],holdout=config['split'],geometry='NOT_ACCEPTED')))
+ print(case,'completed',len(p['accepted']),len(s['accepted']),audit['bounded_atomic_faces'],caudit['accepted_changes'],time.monotonic()-start,flush=True)
+if __name__=='__main__':run_universal_case(sys.argv[1])
+# END CHANGE AGD-UNIVERSAL-RUN | 2026-10-31T11:07:29Z | EDITED | Author: root

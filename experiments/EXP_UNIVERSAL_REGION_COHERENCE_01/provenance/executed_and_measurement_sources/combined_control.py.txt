@@ -1,0 +1,28 @@
+# START CHANGE AGD-UNIVERSAL-COMBINE | 2026-10-31T10:56:00Z | CREATED | Author: root
+"""Conditional unchanged S curves through unchanged R, no tuning or fitting."""
+from universal_run import E,W,output_folder,integrate,svg_graph
+from pathlib import Path
+import sys,json,time,copy
+import numpy as np
+from PIL import Image
+from xml.etree import ElementTree as ET
+from evaluate_results import render
+from monitor import supervise
+def combined_worker():
+ gate=json.loads((E/'reports/COMBINATION_GATE.json').read_text());assert gate['execute'];protocol=json.loads((E/'protocol.json').read_text())
+ rows=json.loads((E/'reports/METRICS.json').read_text())
+ for case in protocol['cases']:
+  out=output_folder(case);s=json.loads((out/'S.json').read_text());rgb=np.asarray(Image.open(out/'source.png').convert('RGB'));h,w=rgb.shape[:2];graph,audit=integrate(s['accepted'],w,h,rgb)
+  (out/'SR_graph.json').write_text(json.dumps(graph));(out/'SR_audit.json').write_text(json.dumps(audit));(out/'SR.svg').write_text(svg_graph(graph,regions=True));(out/'SR_strokes.svg').write_text(svg_graph(graph));(out/'SR.json').write_text(json.dumps(dict(accepted=s['accepted'])))
+  m=copy.deepcopy(next(m for m in rows if m['case']==case and m['condition']=='S'));m.update(condition='SR',integration=audit,filled_atomic_faces=audit['bounded_atomic_faces'],render_seconds={})
+  for scale in [1,4]:m['render_seconds'][str(scale)]=render(out/'SR.svg',out/f'SR_{scale}x.png',w,h,scale)
+  root=ET.parse(out/'S_detail.svg').getroot();roi=root.attrib['viewBox'];dim=list(map(float,roi.split()));g=ET.parse(out/'SR.svg').getroot();g.set('viewBox',roi);g.set('width',str(int(dim[2])));g.set('height',str(int(dim[3])));(out/'SR_detail.svg').write_text(ET.tostring(g,encoding='unicode'))
+  for scale in [1,4,16]:m['render_seconds']['detail'+str(scale)]=render(out/'SR_detail.svg',out/f'SR_detail_{scale}x.png',int(dim[2]),int(dim[3]),scale)
+  m['svg_bytes']=(out/'SR.svg').stat().st_size;m['rendered_coverage_fraction']=float((np.asarray(Image.open(out/'SR_1x.png').convert('RGBA'))[...,3]>0).mean());(out/'SR_metrics.json').write_text(json.dumps(m,indent=2));rows.append(m)
+  print(case,'S+R',audit['bounded_atomic_faces'],flush=True)
+ (E/'reports/METRICS.json').write_text(json.dumps(rows,indent=2))
+if __name__=='__main__':
+ if '--worker' in sys.argv:combined_worker()
+ else:
+  result=supervise([sys.executable,Path(__file__),'--worker'],E/'reports/combined.log',wall_seconds=600);(E/'reports/COMBINED_RESOURCES.json').write_text(json.dumps(result,indent=2));print(result)
+# END CHANGE AGD-UNIVERSAL-COMBINE | 2026-10-31T10:56:00Z | CREATED | Author: root

@@ -1,0 +1,23 @@
+# START CHANGE AGD-UNIVERSAL-GRAPH-DIAG | 2026-10-31T11:07:29Z | EDITED | Author: root
+"""Post-run attribution diagnostic only; never selects or edits candidates."""
+from universal_run import E,output_folder
+import json,collections
+def endpoint_graph_stats(paths):
+ parent={};degree=collections.Counter()
+ def find(a):
+  parent.setdefault(a,a)
+  if parent[a]!=a:parent[a]=find(parent[a])
+  return parent[a]
+ for p in paths:
+  a,b=tuple(p[0]),tuple(p[-1]);ra,rb=find(a),find(b);parent[ra]=rb;degree[a]+=1;degree[b]+=1
+ components=len({find(a) for a in parent});return dict(edges=len(paths),vertices=len(parent),components=components,cycle_rank=len(paths)-len(parent)+components,junctions=sum(d>=3 for d in degree.values()),degree1_ends=sum(d==1 for d in degree.values()),limit='Exact trace-endpoint multigraph potential only; cycles are not validated simple faces, physical regions or semantic holes.')
+def graph_diagnostic():
+ rows=[]
+ for case in json.loads((E/'protocol.json').read_text())['cases']:
+  out=output_folder(case);f=json.loads((out/'frozen_traces.json').read_text());raw={t['trace_id']:t for t in f['traces']};p=json.loads((out/'P.json').read_text());s=json.loads((out/'S.json').read_text())
+  paths={'all_raw':[t['source_points_xy'] for t in f['traces']],'eligible6':[t['source_points_xy'] for t in f['traces'] if t['length_px']>=6]}
+  for tag,d in [('P_selected',p),('S_selected',s)]:paths[tag]=[raw[t['trace_id']]['source_points_xy'] for t in d['traces'] if t['selection']=='selected']
+  row=dict(case=case,stages={k:endpoint_graph_stats(v) for k,v in paths.items()});rows.append(row);(out/'endpoint_graph_diagnostic.json').write_text(json.dumps(row,indent=2));print(case,[(k,v['cycle_rank'],v['degree1_ends']) for k,v in row['stages'].items()])
+ (E/'reports/ENDPOINT_GRAPH_DIAGNOSTIC.json').write_text(json.dumps(rows,indent=2))
+if __name__=='__main__':graph_diagnostic()
+# END CHANGE AGD-UNIVERSAL-GRAPH-DIAG | 2026-10-31T11:07:29Z | EDITED | Author: root

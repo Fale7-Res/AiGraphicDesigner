@@ -1,0 +1,182 @@
+{
+  "policy": "design.json",
+  "rows": [
+    {
+      "chain_id": 0,
+      "trace_id": 1,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 1,
+      "trace_id": 3,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 2,
+      "trace_id": 7,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 3,
+      "trace_id": 5,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 4,
+      "trace_id": 6,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 5,
+      "trace_id": 0,
+      "integrated": false,
+      "reasons": [
+        "open_or_dangling_unbounded_stroke"
+      ]
+    },
+    {
+      "chain_id": 6,
+      "trace_id": 2,
+      "integrated": true,
+      "reasons": []
+    },
+    {
+      "chain_id": 7,
+      "trace_id": 4,
+      "integrated": true,
+      "reasons": []
+    }
+  ],
+  "faces": [
+    {
+      "region_id": 1,
+      "area_px2": 6494.981926184926,
+      "parent_cycle": null,
+      "child_cycles": [],
+      "boundary_chains": [
+        0
+      ],
+      "source_background_fraction": 0.0,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 2,
+      "area_px2": 2897.641607588563,
+      "parent_cycle": null,
+      "child_cycles": [
+        6
+      ],
+      "boundary_chains": [
+        1,
+        7
+      ],
+      "source_background_fraction": 0.0,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 3,
+      "area_px2": 2034.1003063292587,
+      "parent_cycle": null,
+      "child_cycles": [],
+      "boundary_chains": [
+        2
+      ],
+      "source_background_fraction": 0.023529411764705882,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 4,
+      "area_px2": 773.0900465923077,
+      "parent_cycle": null,
+      "child_cycles": [],
+      "boundary_chains": [
+        3
+      ],
+      "source_background_fraction": 0.012987012987012988,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 5,
+      "area_px2": 1907.753814549511,
+      "parent_cycle": null,
+      "child_cycles": [],
+      "boundary_chains": [
+        4
+      ],
+      "source_background_fraction": 0.0,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 6,
+      "area_px2": 513.717656147093,
+      "parent_cycle": null,
+      "child_cycles": [],
+      "boundary_chains": [
+        6
+      ],
+      "source_background_fraction": 0.0,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    },
+    {
+      "region_id": 7,
+      "area_px2": 104.31065531955156,
+      "parent_cycle": 1,
+      "child_cycles": [],
+      "boundary_chains": [
+        7
+      ],
+      "source_background_fraction": 0.865979381443299,
+      "background_supported_void_hint": false,
+      "semantic_hole": "NOT_ESTABLISHED"
+    }
+  ],
+  "unintegrated": [
+    {
+      "chain_id": 5,
+      "trace_id": 0,
+      "integrated": false,
+      "reasons": [
+        "open_or_dangling_unbounded_stroke"
+      ]
+    }
+  ],
+  "limits": {
+    "paths": 128,
+    "cubics": 4096,
+    "wall_seconds": 30
+  },
+  "semantic_ownership": "NOT_ESTABLISHED",
+  "continuous_intersection_certificate": "NOT_ESTABLISHED",
+  "bounded_atomic_faces": 7,
+  "invalid_walks": [],
+  "input_paths": 8,
+  "input_cubics": 829,
+  "integrated_paths": 7,
+  "preserved_unintegrated_paths": 1,
+  "wall_seconds": 0.1291675999527797,
+  "flattening_tolerance_px": 0.005,
+  "endpoint_movement_px": 0,
+  "geometry": "NOT_ACCEPTED",
+  "microfaces": {
+    "count_le4px2": 0,
+    "count_le16px2": 0,
+    "visible_atomic_area_fraction_le4px2": 0.0,
+    "limits": "Numerical .005px flattened disjoint atomic region area; not semantic objects. Strokes use length-weighted proxy separately."
+  },
+  "shared_interfaces": 1,
+  "overassigned_interfaces": 0,
+  "unintegrated_reasons": {
+    "open_or_dangling_unbounded_stroke": 1
+  }
+}
