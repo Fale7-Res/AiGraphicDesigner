@@ -1,0 +1,76 @@
+{
+  "files": {
+    "hardened_pilot.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-PILOT-CLI | 2026-10-31T16:16:43Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "pilot_control.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-PILOT-HARDEN | 2026-11-04T15:37:25Z | EDITED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "synthetic_session.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-PILOT-SYNTHETIC | 2026-10-31T16:16:43Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    },
+    "test_pilot_control.py": {
+      "role": "Isolated Windows fidelity validation experiment",
+      "summary": "# START CHANGE AGD-PILOT-TEST | 2026-10-31T16:16:43Z | CREATED | Author: root",
+      "takes_from": [
+        {
+          "source": "historical adaptive optimizer and fidelity evaluator",
+          "payload": "source images, candidate configurations, metric arrays",
+          "impact": "preserve baseline behavior; native execution only"
+        }
+      ],
+      "throws_to": [
+        {
+          "target": "isolated experiment reports and SVG/render trial directories",
+          "payload": "generated vectors, PNGs, metrics, process measurements",
+          "impact": "research evidence only; architecture NOT_APPROVED"
+        }
+      ]
+    }
+  }
+}

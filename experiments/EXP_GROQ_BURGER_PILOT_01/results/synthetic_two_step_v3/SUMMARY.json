@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "requests_synthetic": 2,
+  "real_requests": 0,
+  "real_cost_usd": 0,
+  "AI_performance": "NOT_TESTED",
+  "reserved_tokens": 11609,
+  "synthetic_completion_tokens": 100,
+  "tool_calls": 10,
+  "commits": 2,
+  "observations": [
+    {
+      "authority": "UNTRUSTED_PLANNER_OBSERVATION",
+      "chosen_action": "Test existing candidate transaction; not AI reasoning",
+      "missing_components": [
+        "Synthetic test observation: contour completeness is unverified"
+      ],
+      "roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "stop_reason": "",
+      "unavailable_capabilities": [
+        "wholly new boundaries",
+        "accepted curve movement"
+      ],
+      "uncertainty": 0.8
+    },
+    {
+      "missing_components": [
+        "Synthetic test observation: contour completeness is unverified"
+      ],
+      "roi": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "uncertainty": 0.8,
+      "chosen_action": "Test existing candidate transaction; not AI reasoning",
+      "unavailable_capabilities": [
+        "wholly new boundaries",
+        "accepted curve movement"
+      ],
+      "stop_reason": "fixture complete",
+      "authority": "UNTRUSTED_PLANNER_OBSERVATION"
+    }
+  ],
+  "geometry_hash": "a0fb8f0fb28356f02b90c5e7f0783c352e4343959b1c51e59681e5b184442a50",
+  "final_preview": {
+    "file": "preview_02.png",
+    "sha256": "2e013575ff178e70a87bb2e9518189c47ec2623e7a8a4781ac041fa4c74d4b54",
+    "bytes": 144166
+  },
+  "paths": 132,
+  "actions": [
+    {
+      "tool": "stage_candidates",
+      "added_paths": 2,
+      "decision": {
+        "geometry_accepted": false,
+        "paths": 130,
+        "state_hash": "e4e9a36a544e4964cbbfa1d57168527f77d28c4c856dfa178ef6e28f4cdc3468",
+        "status": "committed"
+      }
+    },
+    {
+      "tool": "stage_candidates",
+      "added_paths": 2,
+      "decision": {
+        "status": "committed",
+        "state_hash": "a0fb8f0fb28356f02b90c5e7f0783c352e4343959b1c51e59681e5b184442a50",
+        "paths": 132,
+        "geometry_accepted": false
+      }
+    }
+  ]
+}
